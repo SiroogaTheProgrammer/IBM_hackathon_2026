@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { Activity } from "@/data/activities";
 import { getQuizQuestions, type QuizQuestion } from "@/data/quizzes";
+import { emitTaskSignal } from "@/lib/tasks/signals";
 
 /**
  * `/mod/quiz/<id>` — the quiz view page and its whole attempt flow.
@@ -137,6 +138,9 @@ export default function QuizBody({ activity }: QuizBodyProps) {
             onConfirm={() => {
               setConfirmOpen(false);
               setPhase("review");
+              // The scripted run in `TaskPanel` counts a quiz task done here
+              // and nowhere else: reaching the page is not attempting it.
+              emitTaskSignal({ kind: "quiz-submitted", activityId: activity.id });
             }}
           />
         ) : null}

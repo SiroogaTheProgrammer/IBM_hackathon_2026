@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import BiometricsWidget from "@/components/BiometricsWidget";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import TaskPanel from "@/components/TaskPanel";
 import { getCurrentUser } from "@/data/currentUser";
 
 /**
@@ -24,6 +25,7 @@ export default async function SiteLayout({
       <Navbar user={user} />
       <div className="mc-content">{children}</div>
       <Footer user={user} />
+      <TaskPanel />
       <BiometricsWidget />
     </>
   );

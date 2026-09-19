@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import { emitTaskSignal } from "@/lib/tasks/signals";
 
 /**
  * Global floating HUD: captures mouse, keystroke and route-navigation
@@ -298,6 +299,16 @@ export default function BiometricsWidget() {
         setData(json);
         setUnreachable(false);
         setRiskHistory((prev) => [...prev, json.composite_risk ?? 0].slice(-RISK_HISTORY_LEN));
+        // The scripted run in `TaskPanel` holds the test pass back until the
+        // selected engine has finished enrolling, so every tick reports it.
+        if (!json.idle) {
+          emitTaskSignal({
+            kind: "bio-status",
+            warming: json.session.status === "warming",
+            gallerySize: json.session.gallery_size,
+            warmupSize: json.session.warmup_size,
+          });
+        }
       } catch {
         setUnreachable(true);
       } finally {
@@ -313,6 +324,8 @@ export default function BiometricsWidget() {
       await fetch(`${API_BASE}/reset`, { method: "POST" });
       setData(null);
       setRiskHistory([]);
+      // Warm-up is gone, so the scripted run starts from task 1 of training.
+      emitTaskSignal({ kind: "bio-reset" });
     } catch {
       setUnreachable(true);
     }
@@ -329,6 +342,7 @@ export default function BiometricsWidget() {
     navBuf.current = [];
     setRiskHistory([]);
     setData(null);
+    emitTaskSignal({ kind: "bio-reset" });
     try {
       await fetch(`${API_BASE}/reset`, { method: "POST" });
       setUnreachable(false);
