@@ -32,10 +32,16 @@ from .feature_extractor import (
     N_FEATURES,
     WINDOW_SECONDS,
     Event,
+    extract_bogazici_session_windows,
     extract_session_windows,
     extract_window_features,
     segment_windows,
 )
+
+# Bogazici_cleaned's ``window`` column categorizes what the user was doing
+# during each session (browsing, development, office, gaming, entertainment,
+# ...). Off-task categories are excluded from base-model training by default.
+BOGAZICI_EXCLUDE_DEFAULT = frozenset({"gaming", "entertainment"})
 
 
 @dataclass
@@ -171,6 +177,95 @@ def load_sessions_cached(
     if verbose:
         print(f"  cached features -> {cache_path.name}")
     return sessions
+
+
+def load_bogazici_sessions(
+    root,
+    max_sessions_per_user: int | None = None,
+    window_seconds: float = WINDOW_SECONDS,
+    min_move_events: int = MIN_MOVE_EVENTS,
+    exclude_categories=BOGAZICI_EXCLUDE_DEFAULT,
+    seed: int = 0,
+    verbose: bool = True,
+) -> list[SessionWindows]:
+    """Load the ``Bogazici_cleaned`` dataset into per-session window matrices.
+
+    Each user directory under ``root`` holds session CSVs nested under
+    arbitrarily named subfolders (``external_tests/``, ``internal_tests/``, ...),
+    unlike this repository's own ``training_files``/``test_files`` layout, so
+    files are discovered recursively. Rows are dropped ahead of windowing when
+    their per-row ``window`` activity category (case-insensitive) is in
+    ``exclude_categories`` (default: gaming/entertainment). Users are labelled
+    with a ``bogazici_`` prefix so their numeric IDs never collide with this
+    repository's own ``userN`` identities.
+    """
+    root = Path(root)
+    rng = np.random.default_rng(seed)
+    sessions: list[SessionWindows] = []
+    users = list_users(root)
+
+    for user_idx, user in enumerate(users, start=1):
+        files = sorted(p for p in (root / user).rglob("*.csv") if p.is_file())
+        if max_sessions_per_user is not None and len(files) > max_sessions_per_user:
+            idx = rng.choice(len(files), size=max_sessions_per_user, replace=False)
+            files = [files[i] for i in sorted(idx)]
+
+        label = f"bogazici_{user}"
+        n_files = len(files)
+        # Print roughly 10 progress updates while working through this user's
+        # files - some users have thousands of sessions, so without this the
+        # process looks hung for a long time with no feedback.
+        progress_step = max(1, n_files // 10)
+        n_windows = 0
+        n_skipped = 0
+        for file_idx, path in enumerate(files, start=1):
+            try:
+                features = extract_bogazici_session_windows(
+                    path, window_seconds, min_move_events, exclude_categories=exclude_categories
+                )
+            except (OSError, UnicodeDecodeError, csv.Error):
+                # Real-world exports occasionally contain a truncated/corrupt
+                # file; skip it rather than aborting a run over one bad file.
+                n_skipped += 1
+                features = None
+            if features is not None and features.shape[0] > 0:
+                sessions.append(SessionWindows(label, path.stem, features))
+                n_windows += features.shape[0]
+            if verbose and (file_idx % progress_step == 0 or file_idx == n_files):
+                print(
+                    f"    [user {user_idx}/{len(users)}] {label}: "
+                    f"{file_idx}/{n_files} files -> {n_windows} windows so far"
+                )
+        if verbose:
+            skip_note = f" ({n_skipped} skipped)" if n_skipped else ""
+            print(f"  {label}: {n_files} sessions -> {n_windows} windows{skip_note}")
+
+    return sessions
+
+
+def load_bogazici_sessions_cached(
+    root,
+    cache_path=None,
+    refresh: bool = False,
+    verbose: bool = True,
+    **kwargs,
+) -> list[SessionWindows]:
+    """Same as :func:`load_bogazici_sessions`, reusing a cached ``.npz`` when possible."""
+    if cache_path is None:
+        return load_bogazici_sessions(root, verbose=verbose, **kwargs)
+
+    cache_path = Path(cache_path)
+    if cache_path.exists() and not refresh:
+        if verbose:
+            print(f"  using cached features: {cache_path.name}")
+        return load_saved_sessions(cache_path)
+
+    sessions = load_bogazici_sessions(root, verbose=verbose, **kwargs)
+    save_sessions(cache_path, sessions)
+    if verbose:
+        print(f"  cached features -> {cache_path.name}")
+    return sessions
+
 
 
 def _numeric_value(raw) -> float | None:

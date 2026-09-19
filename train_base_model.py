@@ -13,6 +13,7 @@ Examples:
     python train_base_model.py --epochs 60 --refresh-cache
     python train_base_model.py --csv main_trainset/dataset_cleaned4.csv
     python train_base_model.py --csv main_trainset/dataset_cleaned4.csv --max-rows 200000
+    python train_base_model.py --include-test-files --bogazici-root Bogazici_cleaned --epochs 60
 """
 
 from __future__ import annotations
@@ -22,7 +23,13 @@ from pathlib import Path
 
 import numpy as np
 
-from behavioral_biometrics_nn.dataset import load_csv_sessions_cached, stack_windows
+from behavioral_biometrics_nn.dataset import (
+    BOGAZICI_EXCLUDE_DEFAULT,
+    load_bogazici_sessions_cached,
+    load_csv_sessions_cached,
+    load_sessions_cached,
+    stack_windows,
+)
 from behavioral_biometrics_nn.encoder import (
     FeatureScaler,
     embed,
@@ -110,6 +117,95 @@ def train_from_csv(
     return out
 
 
+def train_combined(
+    train_root,
+    bogazici_root,
+    artifacts_dir=DEFAULT_ARTIFACTS,
+    cache_dir=DEFAULT_CACHE,
+    cache_name: str = "train_windows_combined.npz",
+    bogazici_cache_name: str = "bogazici_windows.npz",
+    epochs: int = 30,
+    max_sessions_per_user: int | None = None,
+    bogazici_max_sessions_per_user: int | None = None,
+    bogazici_exclude=BOGAZICI_EXCLUDE_DEFAULT,
+    seed: int = 0,
+    refresh_cache: bool = False,
+    verbose: bool = True,
+):
+    """Train the base encoder on this repo's session files pooled with the much
+    larger ``Bogazici_cleaned`` dataset, excluding off-task activity categories
+    (e.g. gaming/entertainment) from the latter.
+
+    Each dataset is loaded (and cached) independently since they use different
+    raw CSV schemas, then their per-session window matrices are concatenated
+    before fitting the scaler/encoder - identical downstream behaviour to
+    :func:`behavioral_biometrics_nn.pipeline.train_base_model`.
+    """
+    if verbose:
+        print("[1/3] Loading training sessions ...")
+    sessions = load_sessions_cached(
+        train_root,
+        cache_path=Path(cache_dir) / cache_name if cache_dir else None,
+        refresh=refresh_cache,
+        max_sessions_per_user=max_sessions_per_user,
+        seed=seed,
+        verbose=verbose,
+    )
+    if verbose:
+        print(f"  -- loading {bogazici_root} --")
+    sessions += load_bogazici_sessions_cached(
+        bogazici_root,
+        cache_path=Path(cache_dir) / bogazici_cache_name if cache_dir else None,
+        refresh=refresh_cache,
+        max_sessions_per_user=bogazici_max_sessions_per_user,
+        exclude_categories=bogazici_exclude,
+        seed=seed,
+        verbose=verbose,
+    )
+
+    X_raw, y = stack_windows(sessions)
+    if X_raw.shape[0] == 0:
+        raise RuntimeError(f"No usable training windows found under {train_root} / {bogazici_root}")
+
+    if verbose:
+        print(f"[2/3] Training generic Siamese encoder on {X_raw.shape[0]} windows "
+              f"from {len(sessions)} sessions ...")
+    scaler = FeatureScaler().fit(X_raw)
+    X = scaler.transform(X_raw)
+    encoder = train_encoder(X, y, epochs=epochs, seed=seed, verbose=verbose)
+
+    if verbose:
+        print("[3/3] Saving base model + standalone weights ...")
+    embeddings = embed(encoder, X)
+    rng = np.random.default_rng(seed)
+    bank_idx = rng.choice(len(embeddings), size=min(4000, len(embeddings)), replace=False)
+
+    out = save_base_model(
+        artifacts_dir,
+        encoder,
+        scaler,
+        embeddings[bank_idx],
+        np.asarray(y)[bank_idx],
+        meta={
+            "train_root": [str(r) for r in train_root] if isinstance(train_root, (list, tuple)) else str(train_root),
+            "bogazici_root": str(bogazici_root),
+            "bogazici_exclude_categories": sorted(bogazici_exclude),
+            "n_train_windows": int(X_raw.shape[0]),
+            "n_train_sessions": len(sessions),
+            "train_users": sorted(set(y.tolist())),
+            "epochs": epochs,
+            "embedding_spread": mean_pairwise_distance(embeddings),
+        },
+    )
+    if verbose:
+        print(f"  saved -> {out.resolve()}")
+
+    weights_path = export_siamese_weights(encoder, Path(artifacts_dir) / "siamese_weights.pt")
+    if verbose:
+        print(f"  standalone weights -> {weights_path.resolve()}")
+    return out
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -130,6 +226,19 @@ def main() -> None:
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--user-col", default="idman")
     parser.add_argument("--refresh-cache", action="store_true")
+    parser.add_argument(
+        "--bogazici-root", type=str, default="",
+        help="path to the Bogazici_cleaned dataset; when set, its sessions are pooled "
+             "with --train-root (and --include-test-files) for a larger combined training set",
+    )
+    parser.add_argument(
+        "--bogazici-max-sessions", type=int, default=0,
+        help="cap Bogazici sessions sampled per user (0 = all, can be tens of thousands)",
+    )
+    parser.add_argument(
+        "--bogazici-exclude", nargs="*", default=sorted(BOGAZICI_EXCLUDE_DEFAULT),
+        help="Bogazici 'window' activity categories to exclude (case-insensitive)",
+    )
     args = parser.parse_args()
 
     if args.csv:
@@ -151,6 +260,22 @@ def main() -> None:
         roots.append(str(ROOT / "test_files"))
     train_root = roots[0] if len(roots) == 1 else roots
     cache_name = "train_windows.npz" if len(roots) == 1 else "train_windows_combined.npz"
+
+    if args.bogazici_root:
+        train_combined(
+            train_root=train_root,
+            bogazici_root=args.bogazici_root,
+            artifacts_dir=args.artifacts,
+            cache_dir=args.cache,
+            cache_name=cache_name,
+            epochs=args.epochs,
+            max_sessions_per_user=args.max_sessions or None,
+            bogazici_max_sessions_per_user=args.bogazici_max_sessions or None,
+            bogazici_exclude=frozenset(c.lower() for c in args.bogazici_exclude),
+            seed=args.seed,
+            refresh_cache=args.refresh_cache,
+        )
+        return
 
     train_base_model(
         train_root=train_root,

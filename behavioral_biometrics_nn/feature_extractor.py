@@ -92,6 +92,59 @@ def read_session_events(session_path) -> list[Event]:
     return events
 
 
+_BOGAZICI_BUTTON_MAP = {
+    "none": "NoButton",
+    "left": "Left",
+    "right": "Right",
+    "middle": "Middle",
+    "scroll": "Scroll",
+}
+
+
+def read_bogazici_events(session_path, exclude_categories=frozenset()) -> list[Event]:
+    """Parse a ``Bogazici_cleaned`` session CSV into chronologically ordered events.
+
+    Header: ``client_timestamp,x,y,button,state,window`` - absolute pixel
+    coordinates plus a per-row ``window`` activity category (e.g. browsing,
+    development, office, gaming, entertainment). Rows whose category
+    (case-insensitive) is in ``exclude_categories`` are dropped so off-task
+    activity (e.g. gaming/entertainment) doesn't get folded into the "normal"
+    mouse behavior the base encoder learns. ``button`` value ``None`` is mapped
+    to this repository's ``NoButton`` vocabulary.
+    """
+    path = Path(session_path)
+    exclude = frozenset(c.strip().lower() for c in exclude_categories)
+    events: list[Event] = []
+    with path.open("r", newline="", encoding="utf-8-sig", errors="replace") as handle:
+        reader = csv.DictReader(handle)
+        if not reader.fieldnames or "client_timestamp" not in reader.fieldnames:
+            # Some files in this dataset are empty or truncated (blank/garbled
+            # header). Skip them rather than aborting a run that's processing
+            # tens of thousands of files - they simply contribute zero events.
+            return events
+        for row in reader:
+            category = (row.get("window") or "").strip().lower()
+            if category in exclude:
+                continue
+            button = _BOGAZICI_BUTTON_MAP.get((row.get("button") or "").strip().lower())
+            if button is None or button not in POINTER_BUTTONS:
+                continue
+            try:
+                events.append(
+                    Event(
+                        t=float(row["client_timestamp"]),
+                        button=button,
+                        state=row["state"],
+                        x=float(row["x"]),
+                        y=float(row["y"]),
+                    )
+                )
+            except (TypeError, ValueError, KeyError):
+                continue  # skip malformed rows
+    events.sort(key=lambda e: e.t)
+    return events
+
+
 def segment_windows(
     events: list[Event],
     window_seconds: float = WINDOW_SECONDS,
@@ -431,6 +484,20 @@ def extract_session_windows(
 ) -> np.ndarray:
     """Return an ``(n_windows, 32)`` matrix for one session file."""
     events = read_session_events(session_path)
+    windows = segment_windows(events, window_seconds, min_move_events)
+    if not windows:
+        return np.empty((0, N_FEATURES), dtype=np.float32)
+    return np.stack([extract_window_features(w) for w in windows])
+
+
+def extract_bogazici_session_windows(
+    session_path,
+    window_seconds: float = WINDOW_SECONDS,
+    min_move_events: int = MIN_MOVE_EVENTS,
+    exclude_categories=frozenset(),
+) -> np.ndarray:
+    """Return an ``(n_windows, 32)`` matrix for one ``Bogazici_cleaned`` session file."""
+    events = read_bogazici_events(session_path, exclude_categories=exclude_categories)
     windows = segment_windows(events, window_seconds, min_move_events)
     if not windows:
         return np.empty((0, N_FEATURES), dtype=np.float32)
