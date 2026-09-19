@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 
 /**
  * Global floating HUD: captures mouse, keystroke and route-navigation
@@ -50,6 +50,7 @@ const DIM = "#8b949e";
 const OK = "#3fb950";
 const WARN = "#d29922";
 const BAD = "#f85149";
+const RISK_HISTORY_LEN = 30; // ~30s of history at one tick/second
 
 function severityColor(risk: number, threshold: number): string {
   if (risk >= threshold) return BAD;
@@ -57,11 +58,62 @@ function severityColor(risk: number, threshold: number): string {
   return OK;
 }
 
+/** Tiny inline SVG line+area chart of the last `RISK_HISTORY_LEN` risk samples. */
+function RiskSparkline({ values, color }: { values: number[]; color: string }) {
+  const width = 224;
+  const height = 44;
+  if (values.length < 2) {
+    return (
+      <div className="flex h-11 items-center justify-center text-[10px] text-white/40">
+        collecting data…
+      </div>
+    );
+  }
+  const stepX = width / (RISK_HISTORY_LEN - 1);
+  const startX = width - (values.length - 1) * stepX;
+  const points = values
+    .map((v, i) => {
+      const x = startX + i * stepX;
+      const y = height - Math.min(1, Math.max(0, v)) * height;
+      return `${x.toFixed(1)},${y.toFixed(1)}`;
+    })
+    .join(" ");
+  const endX = startX + (values.length - 1) * stepX;
+  const areaPoints = `${startX.toFixed(1)},${height} ${points} ${endX.toFixed(1)},${height}`;
+  return (
+    <svg width={width} height={height} className="block overflow-visible">
+      <polyline points={areaPoints} fill={color} fillOpacity={0.15} stroke="none" />
+      <polyline points={points} fill="none" stroke={color} strokeWidth={1.5} strokeLinejoin="round" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+/** Wraps the expanded panel so it grows/fades in on mount instead of popping in instantly. */
+function ExpandedPanel({ children }: { children: ReactNode }) {
+  const [shown, setShown] = useState(false);
+  useEffect(() => {
+    const id = requestAnimationFrame(() => setShown(true));
+    return () => cancelAnimationFrame(id);
+  }, []);
+  return (
+    <div
+      className={`mb-1 w-64 origin-bottom-right rounded-lg border border-white/10 bg-[#161b22] p-3 text-[12px] text-[#e6edf3] shadow-xl transition-all duration-200 ${
+        shown ? "scale-100 opacity-100" : "scale-90 opacity-0"
+      }`}
+    >
+      {children}
+    </div>
+  );
+}
+
 export default function BiometricsWidget() {
   const pathname = usePathname();
   const [data, setData] = useState<TickResponse | null>(null);
   const [unreachable, setUnreachable] = useState(false);
   const [expanded, setExpanded] = useState(false);
+  const [stopped, setStopped] = useState(false);
+  const [riskHistory, setRiskHistory] = useState<number[]>([]);
+  const stoppedRef = useRef(false);
 
   const mouseBuf = useRef<MouseSample[]>([]);
   const keyBuf = useRef<KeySample[]>([]);
@@ -87,12 +139,14 @@ export default function BiometricsWidget() {
     const stamp = () => performance.now() / 1000;
 
     const onMove = (e: MouseEvent) => {
+      if (stoppedRef.current) return;
       mouseBuf.current.push({
         t: stamp(), x: e.clientX, y: e.clientY,
         button: "NoButton", state: buttonDown.current ? "Drag" : "Move",
       });
     };
     const onDown = (e: MouseEvent) => {
+      if (stoppedRef.current) return;
       buttonDown.current = true;
       mouseBuf.current.push({
         t: stamp(), x: e.clientX, y: e.clientY,
@@ -100,6 +154,7 @@ export default function BiometricsWidget() {
       });
     };
     const onUp = (e: MouseEvent) => {
+      if (stoppedRef.current) return;
       buttonDown.current = false;
       mouseBuf.current.push({
         t: stamp(), x: e.clientX, y: e.clientY,
@@ -107,15 +162,18 @@ export default function BiometricsWidget() {
       });
     };
     const onWheel = (e: WheelEvent) => {
+      if (stoppedRef.current) return;
       mouseBuf.current.push({
         t: stamp(), x: e.clientX, y: e.clientY,
         button: "Scroll", state: e.deltaY < 0 ? "Up" : "Down",
       });
     };
     const onKeyDown = (e: KeyboardEvent) => {
+      if (stoppedRef.current) return;
       if (keyDownAt.current[e.key] === undefined) keyDownAt.current[e.key] = stamp();
     };
     const onKeyUp = (e: KeyboardEvent) => {
+      if (stoppedRef.current) return;
       const down = keyDownAt.current[e.key];
       if (down === undefined) return;
       delete keyDownAt.current[e.key];
@@ -146,6 +204,13 @@ export default function BiometricsWidget() {
 
   useEffect(() => {
     const tick = async () => {
+      if (stoppedRef.current) {
+        mouseBuf.current = [];
+        navBuf.current = [];
+        keyBuf.current = [];
+        return;
+      }
+
       const payload = {
         events: mouseBuf.current,
         nav: navBuf.current,
@@ -163,8 +228,10 @@ export default function BiometricsWidget() {
           body: JSON.stringify(payload),
         });
         if (!res.ok) throw new Error(String(res.status));
-        setData((await res.json()) as TickResponse);
+        const json = (await res.json()) as TickResponse;
+        setData(json);
         setUnreachable(false);
+        setRiskHistory((prev) => [...prev, json.composite_risk ?? 0].slice(-RISK_HISTORY_LEN));
       } catch {
         setUnreachable(true);
       }
@@ -177,9 +244,34 @@ export default function BiometricsWidget() {
     try {
       await fetch(`${API_BASE}/reset`, { method: "POST" });
       setData(null);
+      setRiskHistory([]);
     } catch {
       setUnreachable(true);
     }
+  };
+
+  /** Quitting test mode: stop capturing/sending telemetry and wipe the
+   * stored gallery embeddings + risk model server-side, so the next session
+   * starts from a clean slate instead of resuming with old biometric data. */
+  const handleQuit = async () => {
+    stoppedRef.current = true;
+    setStopped(true);
+    mouseBuf.current = [];
+    keyBuf.current = [];
+    navBuf.current = [];
+    setRiskHistory([]);
+    setData(null);
+    try {
+      await fetch(`${API_BASE}/reset`, { method: "POST" });
+      setUnreachable(false);
+    } catch {
+      setUnreachable(true);
+    }
+  };
+
+  const handleResume = () => {
+    stoppedRef.current = false;
+    setStopped(false);
   };
 
   const session = data?.session;
@@ -193,7 +285,10 @@ export default function BiometricsWidget() {
 
   let coreColor = DIM;
   let phaseLabel = "connecting…";
-  if (unreachable) {
+  if (stopped) {
+    coreColor = DIM;
+    phaseLabel = "stopped — embeddings cleared";
+  } else if (unreachable) {
     coreColor = DIM;
     phaseLabel = "backend offline";
   } else if (data?.idle) {
@@ -209,23 +304,44 @@ export default function BiometricsWidget() {
 
   // Conic ring shows warm-up progress; once active it is a solid ring in the
   // current severity color so the blob keeps reading as "alive".
-  const ringPct = isWarming ? trainingPct : 100;
+  const ringPct = stopped ? 0 : isWarming ? trainingPct : 100;
   const ringBackground = `conic-gradient(${coreColor} ${ringPct}%, rgba(255,255,255,.12) 0)`;
 
   return (
     <div className="fixed bottom-5 right-5 z-50 flex select-none flex-col items-end gap-2"
          style={{ fontFamily: "system-ui, sans-serif" }}>
       {expanded && (
-        <div className="mb-1 w-60 rounded-lg border border-white/10 bg-[#161b22] p-3 text-[12px] text-[#e6edf3] shadow-xl">
-          <div className="mb-2 flex items-center justify-between">
+        <ExpandedPanel>
+          <div className="mb-2 flex items-center justify-between gap-2">
             <span className="font-semibold">Behavioral biometrics</span>
-            <button
-              type="button"
-              onClick={handleReset}
-              className="rounded border border-white/15 px-2 py-0.5 text-[11px] hover:border-white/40"
-            >
-              Reset
-            </button>
+            {stopped ? (
+              <button
+                type="button"
+                onClick={handleResume}
+                className="rounded border border-white/15 px-2 py-0.5 text-[11px] hover:border-white/40"
+              >
+                Resume
+              </button>
+            ) : (
+              <div className="flex gap-1">
+                <button
+                  type="button"
+                  onClick={handleReset}
+                  title="Restart warm-up, keep monitoring"
+                  className="rounded border border-white/15 px-2 py-0.5 text-[11px] hover:border-white/40"
+                >
+                  Reset
+                </button>
+                <button
+                  type="button"
+                  onClick={handleQuit}
+                  title="Stop monitoring and clear stored embeddings"
+                  className="rounded border border-white/15 px-2 py-0.5 text-[11px] hover:border-red-400/60 hover:text-red-300"
+                >
+                  Quit
+                </button>
+              </div>
+            )}
           </div>
           <dl className="grid grid-cols-2 gap-x-2 gap-y-1">
             <dt className="text-white/50">Status</dt><dd>{phaseLabel}</dd>
@@ -234,7 +350,14 @@ export default function BiometricsWidget() {
             <dt className="text-white/50">Active modules</dt><dd>{data?.active_modules ?? 0}</dd>
             <dt className="text-white/50">Streak</dt><dd>{data?.streak ?? 0}</dd>
           </dl>
-        </div>
+          <div className="mt-2">
+            <div className="mb-1 flex items-center justify-between text-white/50">
+              <span>Risk (last {RISK_HISTORY_LEN}s)</span>
+              <span>{riskPct}%</span>
+            </div>
+            <RiskSparkline values={riskHistory} color={risk === null ? DIM : coreColor} />
+          </div>
+        </ExpandedPanel>
       )}
 
       <div className="flex items-center gap-2 rounded-full bg-[#161b22]/90 p-2 pl-3 shadow-xl ring-1 ring-white/10">
@@ -249,7 +372,9 @@ export default function BiometricsWidget() {
           aria-label="Behavioral biometrics status"
           title={phaseLabel}
           onClick={() => setExpanded((v) => !v)}
-          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full p-[3px]"
+          className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full p-[3px] transition-transform duration-200 ${
+            expanded ? "scale-110" : "scale-100"
+          }`}
           style={{ background: ringBackground }}
         >
           <span
