@@ -9,6 +9,7 @@ from pathlib import Path
 import numpy as np
 import torch
 
+from behavioral_biometrics_nn.dataset import load_csv_dataset
 from behavioral_biometrics_nn.encoder import (
     EMBEDDING_DIM,
     FeatureScaler,
@@ -16,6 +17,7 @@ from behavioral_biometrics_nn.encoder import (
     batch_all_triplet_loss,
     batch_hard_triplet_loss,
     embed,
+    export_siamese_weights,
     load_base_model,
     mean_pairwise_distance,
     save_base_model,
@@ -127,6 +129,52 @@ class ArtifactTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             with self.assertRaises(FileNotFoundError):
                 load_base_model(tmp)
+
+    def test_csv_dataset_loader_handles_bom_and_semicolon_format(self):
+        csv_text = (
+            '\ufeffidman;duration;angle;distance;velocity;local_date;local_time\n'
+            'u1;10;30;50;12;2024-01-01;12:00:00.1\n'
+            'u1;25;60;100;22;2024-01-01;12:00:00.2\n'
+            'u2;18;45;90;15;2024-01-01;12:00:00.3\n'
+            'u2;32;75;140;27;2024-01-01;12:00:00.4\n'
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / 'dataset.csv'
+            path.write_text(csv_text, encoding='utf-8-sig')
+            X, y = load_csv_dataset(path)
+            self.assertEqual(X.shape[1], 32)
+            self.assertEqual(X.shape[0], 4)
+            self.assertEqual(sorted(set(y.tolist())), ['u1', 'u2'])
+
+    def test_full_checkpoint_keeps_metadata_for_reload(self):
+        X, y = _synthetic_users(per_user=8)
+        scaler = FeatureScaler().fit(X)
+        Xs = scaler.transform(X)
+        model = train_encoder(Xs, y, epochs=2, steps_per_epoch=8, users_per_batch=2,
+                              windows_per_user=4, verbose=False)
+        with tempfile.TemporaryDirectory() as tmp:
+            save_base_model(tmp, model, scaler, Xs[:4], y[:4], meta={'note': 'checkpoint'})
+            enc2, scaler2, bank, bank_users, meta = load_base_model(tmp)
+            self.assertEqual(meta['note'], 'checkpoint')
+            self.assertEqual(enc2.input_dim, model.input_dim)
+            self.assertEqual(scaler2.clip, scaler.clip)
+            self.assertEqual(len(bank), 4)
+            self.assertEqual(len(bank_users), 4)
+
+    def test_export_weights_writes_standalone_state_dict_file(self):
+        X, y = _synthetic_users(per_user=8)
+        scaler = FeatureScaler().fit(X)
+        Xs = scaler.transform(X)
+        model = train_encoder(Xs, y, epochs=2, steps_per_epoch=8, users_per_batch=2,
+                              windows_per_user=4, verbose=False)
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / 'siamese_weights.pt'
+            export_siamese_weights(model, path)
+            restored = SiameseEncoder(model.input_dim, model.embedding_dim)
+            restored.load_state_dict(torch.load(path, map_location='cpu'))
+            base = model(torch.from_numpy(Xs[:5]))
+            reloaded = restored(torch.from_numpy(Xs[:5]))
+            np.testing.assert_allclose(reloaded.detach().numpy(), base.detach().numpy(), atol=1e-6)
 
 
 class ScorerTests(unittest.TestCase):

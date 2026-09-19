@@ -4,12 +4,12 @@
   "modules": {
     "mouse_base_v1":     { "enabled": true,  "weight": 1.0 },
     "tab_navigation_v1": { "enabled": true,  "weight": 0.6, "hard_trigger": 0.95 },
-    "keystroke_v1":      { "enabled": false, "weight": 0.5 },
+    "keystroke_v1":      { "enabled": true,  "weight": 0.5 },
     "device_env_v1":     { "enabled": false, "weight": 0.3 }
   },
 
   "session": {
-    "warmup_size": 30,
+    "warmup_size": 60,
     "gallery_mode": "frozen",
     "smoothing": 5,
     "threshold": 0.8,

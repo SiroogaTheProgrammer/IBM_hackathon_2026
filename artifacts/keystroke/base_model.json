@@ -1,0 +1,16 @@
+{
+  "input_dim": 6,
+  "embedding_dim": 32,
+  "n_background": 4000,
+  "format_version": 2,
+  "model_name": "SiameseEncoder",
+  "train_source": "C:\\Users\\stsyg\\Documents\\GitHub\\IBM_hackathon_2026\\Keystrokes\\files",
+  "n_train_windows": 78602,
+  "n_train_participants": 799,
+  "window_seconds": 1.0,
+  "min_keys_per_window": 4,
+  "n_features": 6,
+  "epochs": 30,
+  "source_type": "keystroke_corpus",
+  "embedding_spread": 1.2341777086257935
+}

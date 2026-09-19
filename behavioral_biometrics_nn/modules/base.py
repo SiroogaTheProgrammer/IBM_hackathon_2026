@@ -48,7 +48,7 @@ class RiskModule(ABC):
 
     @abstractmethod
     def update(self, telemetry: dict) -> ModuleResult:
-        """Process one ~2 s telemetry batch."""
+        """Process one ~1 s telemetry batch."""
 
     def reset(self) -> None:
         """Clear per-session state."""

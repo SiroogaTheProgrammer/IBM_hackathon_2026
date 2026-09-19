@@ -1,7 +1,7 @@
 """Telemetry feature extraction.
 
 Implements the 32-feature vector defined in ``design_choices.txt`` (FILE 2).
-Features are computed per sampling window (2-3 s) over raw pointer events.
+Features are computed per sampling window (1 s) over raw pointer events.
 
 Input data format (Balabit-style session CSV)::
 
@@ -24,8 +24,8 @@ from pathlib import Path
 
 import numpy as np
 
-WINDOW_SECONDS = 2.0
-MIN_MOVE_EVENTS = 8
+WINDOW_SECONDS = 1.0
+MIN_MOVE_EVENTS = 4
 PAUSE_THRESHOLD_S = 0.2
 DOUBLE_CLICK_MAX_S = 1.0
 RESAMPLE_HZ = 50.0

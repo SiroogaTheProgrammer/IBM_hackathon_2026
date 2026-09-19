@@ -1,7 +1,7 @@
 """Local demo server for the continuous behavioral biometrics system.
 
 Standard library only - no extra dependencies. The browser captures raw
-mouse/key/navigation events, posts a batch every 2 s, and the server runs the
+mouse/key/navigation events, posts a batch every 1 s, and the server runs the
 composite risk engine and returns the numbers the dashboard draws.
 
     python run_demo.py
@@ -17,12 +17,45 @@ import threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
+IDLE_ACTIVITY_THRESHOLD = 0.18  # treat a 1 s tick as idle if motion is too small
+IDLE_MAX_EVENT_COUNT = 2
+
 DEMO_DIR = Path(__file__).resolve().parent
 INDEX_FILE = DEMO_DIR / "index.html"
-MAX_BODY_BYTES = 1_000_000  # a 2 s mouse batch is a few KB; cap well above that
+MAX_BODY_BYTES = 1_000_000  # a 1 s mouse batch is a few KB; cap well above that
 
 _engine = None
 _lock = threading.Lock()
+
+
+def _is_idle_tick(payload: dict) -> bool:
+    """True when there is nothing worth scoring in this tick.
+
+    Only mouse motion used to gate this used to drop the *entire* payload,
+    including keystroke and tab-navigation telemetry, whenever the mouse did
+    not move - but typing or switching tabs without also wiggling the mouse
+    is completely normal, and doing so silently starved the keystroke and
+    tab-navigation extensions of data. Any non-trivial key or nav activity
+    keeps the tick alive regardless of mouse movement.
+    """
+    if payload.get("keys") or payload.get("nav"):
+        return False
+
+    events = payload.get("events", [])
+    if len(events) > IDLE_MAX_EVENT_COUNT:
+        return False
+    if not events:
+        return True
+
+    total_distance = 0.0
+    for item in events:
+        try:
+            x = float(item.get("x", 0.0))
+            y = float(item.get("y", 0.0))
+            total_distance += abs(x) + abs(y)
+        except (TypeError, ValueError):
+            continue
+    return total_distance <= IDLE_ACTIVITY_THRESHOLD
 
 
 class DemoHandler(BaseHTTPRequestHandler):
@@ -42,6 +75,19 @@ class DemoHandler(BaseHTTPRequestHandler):
         if self.path == "/api/tick":
             payload = self._read_json()
             if payload is None:
+                return
+            if _is_idle_tick(payload):
+                self._send_json({
+                    "idle": True,
+                    "composite_risk": 0.0,
+                    "verdict": "IDLE",
+                    "modules": [],
+                    "session": {"status": "idle", "gallery_size": 0, "warmup_size": 0, "gallery_mode": ""},
+                    "threshold": 0.8,
+                    "streak": 0,
+                    "active_modules": 0,
+                    "escalated": False,
+                })
                 return
             with _lock:
                 result = _engine.update(payload)

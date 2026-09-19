@@ -49,6 +49,37 @@
           background:#3d1518;border:1px solid var(--bad);color:#ffb4ad;font-weight:600}
   input[type=text]{background:#0d1117;border:1px solid var(--line);color:var(--txt);
                    border-radius:6px;padding:8px;width:100%;margin-top:8px}
+  body.light{
+    --bg:#f6f8fa; --panel:#ffffff; --line:#d0d7de; --txt:#1f2328; --dim:#57606a;
+  }
+  .hidden{display:none !important}
+  .quickrow{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+  .check{display:flex;align-items:center;gap:8px;padding:8px 0;cursor:pointer;font-size:13px}
+  .check input{cursor:pointer}
+  th[data-key]{cursor:pointer;user-select:none}
+  th[data-key]:hover{color:var(--txt)}
+  th[data-key] .arrow{color:var(--accent);margin-left:4px}
+  .cards{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+  .card{flex:1;min-width:140px;border:1px solid var(--line);border-radius:8px;
+        padding:12px;cursor:pointer;background:#0d1117}
+  .card:hover{border-color:var(--accent)}
+  .card.selected{border-color:var(--accent);background:rgba(88,166,255,.12)}
+  .card .price{font-size:20px;font-weight:700;margin:6px 0}
+  .dirrow{border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:8px;
+          cursor:pointer}
+  .dirrow:hover{border-color:var(--accent)}
+  .dirrow .row1{display:flex;justify-content:space-between;align-items:center}
+  .dirdetail{margin-top:8px;padding-top:8px;border-top:1px solid var(--line);font-size:12.5px;
+             color:var(--dim)}
+  tr.logrow{cursor:pointer}
+  tr.logrow:hover td{color:var(--txt)}
+  tr.logrow.selected td{color:var(--accent);font-weight:600}
+  textarea{background:#0d1117;border:1px solid var(--line);color:var(--txt);
+           border-radius:6px;padding:8px;width:100%;margin-top:10px;font:inherit;resize:vertical}
+  .inline-input{width:auto !important;margin-top:0 !important;flex:1}
+  .todorow{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #21262d}
+  .todorow span{flex:1}
+  .todorow button{padding:2px 9px;font-size:12px}
 </style>
 </head>
 <body>
@@ -68,13 +99,66 @@
     <div class="panel">
       <h2>Mock enterprise dashboard</h2>
       <div class="tabs" id="tabs"></div>
-      <div id="playground">
-        Move the mouse in here, click, scroll and switch tabs.<br>
-        The first 30 windows (~60&nbsp;s) build your baseline gallery.<br>
-        Then try moving in a deliberately different style to watch the risk climb.
+
+      <div id="pane-Home" class="tabpane">
+        <div id="playground">
+          Move the mouse in here, click, scroll and switch tabs.<br>
+          The first 30 windows (~60&nbsp;s) build your baseline gallery.<br>
+          Then try moving in a deliberately different style to watch the risk climb.
+        </div>
+        <div class="quickrow">
+          <button id="qaRefresh">Refresh widgets</button>
+          <button id="qaExport">Export report</button>
+          <button id="qaNewTicket">New ticket</button>
+        </div>
+        <input type="text" id="typing" placeholder="Type here to feed the keystroke addon (if enabled)…">
+        <textarea id="composeBox" rows="3"
+                  placeholder="Compose a support reply… longer typing bursts build a better keystroke baseline"></textarea>
+        <div class="quickrow">
+          <button id="qaSend">Send reply</button>
+          <span class="note" id="composeNote"></span>
+        </div>
+        <div style="margin-top:16px;padding-top:12px;border-top:1px solid var(--line)">
+          <h2>To-do list</h2>
+          <div class="quickrow">
+            <input type="text" id="todoInput" class="inline-input" placeholder="Add a task and press Enter…">
+            <button id="todoAddBtn">Add</button>
+          </div>
+          <div id="todoList" style="margin-top:10px"></div>
+        </div>
+        <div class="note" id="eventNote">0 events buffered</div>
       </div>
-      <input type="text" id="typing" placeholder="Type here to feed the keystroke addon (if enabled)…">
-      <div class="note" id="eventNote">0 events buffered</div>
+
+      <div id="pane-Analytics" class="tabpane hidden">
+        <table id="analyticsTable">
+          <thead><tr>
+            <th data-key="page">Page</th><th data-key="views">Views</th><th data-key="bounce">Bounce %</th>
+          </tr></thead>
+          <tbody id="analyticsRows"></tbody>
+        </table>
+        <div class="note">Click a column header to sort. Click a row to filter the report below.</div>
+        <div class="note" id="analyticsDetail"></div>
+      </div>
+
+      <div id="pane-Settings" class="tabpane hidden">
+        <label class="check"><input type="checkbox" id="chkConsole" checked> Log risk diagnostics to browser console</label>
+        <label class="check"><input type="checkbox" id="chkTheme"> Light theme</label>
+        <label class="check"><input type="checkbox" id="chkNotify" checked> Email me on escalation (mock)</label>
+        <div class="quickrow">
+          <button id="clearLogBtn">Clear session log</button>
+          <button id="settingsResetBtn">Reset session</button>
+        </div>
+      </div>
+
+      <div id="pane-Billing" class="tabpane hidden">
+        <div class="cards" id="planCards"></div>
+        <div class="note" id="planDetail"></div>
+      </div>
+
+      <div id="pane-Admin" class="tabpane hidden">
+        <input type="text" id="dirSearch" placeholder="Search directory by name or role…">
+        <div id="directoryList" style="margin-top:10px"></div>
+      </div>
     </div>
 
     <div class="panel" style="margin-top:16px">
@@ -84,6 +168,15 @@
         Blue = composite risk per 2&nbsp;s window. Red dashed = escalation threshold.
         Grey band = warm-up (no score produced yet).
       </div>
+    </div>
+
+    <div class="panel" style="margin-top:16px">
+      <h2>Session log</h2>
+      <table>
+        <thead><tr><th>Tick</th><th>Risk</th><th>Verdict</th><th>Cos min</th></tr></thead>
+        <tbody id="logRows"><tr><td colspan="4" class="note">no scored ticks yet</td></tr></tbody>
+      </table>
+      <div class="note" id="logDetail">Click a row to inspect the full deviation detail for that tick.</div>
     </div>
   </div>
 
@@ -126,7 +219,7 @@
 </div>
 
 <script>
-const TICK_MS = 2000;
+const TICK_MS = 1000;
 let buffer = [], navVisits = [], keyBuffer = [], keyDown = {}, lastKeyUp = null;
 let device = {blur_count:0, resize_count:0, screen:`${screen.width}x${screen.height}`};
 let currentTab = "Home", tabEnteredAt = performance.now();
@@ -134,6 +227,9 @@ let history = [], warmTicks = 0, config = null;
 
 const TABS = ["Home", "Analytics", "Settings", "Billing", "Admin"];
 const $ = id => document.getElementById(id);
+let tickLog = [], selectedLogTick = null;
+let consoleDiagnosticsEnabled = true;
+let dirFilter = "";
 
 // ---------- mock dashboard tabs ----------
 TABS.forEach((name, i) => {
@@ -143,12 +239,191 @@ TABS.forEach((name, i) => {
   b.onclick = () => {
     document.querySelectorAll("#tabs button").forEach(x => x.classList.remove("active"));
     b.classList.add("active");
+    document.querySelectorAll(".tabpane").forEach(p => p.classList.add("hidden"));
+    $(`pane-${name}`).classList.remove("hidden");
     const now = performance.now();
     navVisits.push({tab: name, dwell: (now - tabEnteredAt) / 1000});
     tabEnteredAt = now; currentTab = name;
   };
   $("tabs").appendChild(b);
 });
+
+// ---------- Analytics pane: sortable fake report table ----------
+const ANALYTICS_ROWS = [
+  {page: "/dashboard", views: 4821, bounce: 22.1},
+  {page: "/reports", views: 3190, bounce: 31.4},
+  {page: "/billing", views: 1207, bounce: 44.8},
+  {page: "/admin/users", views: 902, bounce: 18.6},
+  {page: "/settings", views: 640, bounce: 27.3},
+  {page: "/tickets", views: 2114, bounce: 35.9},
+];
+let analyticsSortKey = "views", analyticsSortAsc = false;
+
+function renderAnalytics() {
+  const rows = [...ANALYTICS_ROWS].sort((a, b) => {
+    const d = a[analyticsSortKey] > b[analyticsSortKey] ? 1 : -1;
+    return analyticsSortAsc ? d : -d;
+  });
+  const tbody = $("analyticsRows");
+  tbody.textContent = "";
+  rows.forEach(r => {
+    const tr = tbody.insertRow();
+    tr.style.cursor = "pointer";
+    [r.page, r.views.toLocaleString(), r.bounce.toFixed(1) + "%"].forEach(text => {
+      const td = tr.insertCell();
+      td.textContent = text;
+    });
+    tr.onclick = () => { $("analyticsDetail").textContent = `Selected report row: ${r.page} — ${r.views} views, ${r.bounce.toFixed(1)}% bounce.`; };
+  });
+}
+document.querySelectorAll("#analyticsTable th[data-key]").forEach(th => {
+  th.addEventListener("click", () => {
+    const key = th.dataset.key;
+    if (analyticsSortKey === key) analyticsSortAsc = !analyticsSortAsc;
+    else { analyticsSortKey = key; analyticsSortAsc = true; }
+    document.querySelectorAll("#analyticsTable th[data-key] .arrow").forEach(a => a.remove());
+    const arrow = document.createElement("span");
+    arrow.className = "arrow";
+    arrow.textContent = analyticsSortAsc ? "▲" : "▼";
+    th.appendChild(arrow);
+    renderAnalytics();
+  });
+});
+renderAnalytics();
+
+// ---------- Billing pane: clickable plan cards ----------
+const PLANS = [
+  {id: "basic", name: "Basic", price: "$9/mo", blurb: "Core dashboard access."},
+  {id: "pro", name: "Pro", price: "$29/mo", blurb: "Adds analytics + reporting."},
+  {id: "enterprise", name: "Enterprise", price: "$99/mo", blurb: "SSO, audit log, priority support."},
+];
+let selectedPlan = "pro";
+function renderPlans() {
+  const wrap = $("planCards");
+  wrap.textContent = "";
+  PLANS.forEach(p => {
+    const card = document.createElement("div");
+    card.className = "card" + (p.id === selectedPlan ? " selected" : "");
+    const title = document.createElement("div"); title.textContent = p.name; title.style.fontWeight = "600";
+    const price = document.createElement("div"); price.className = "price"; price.textContent = p.price;
+    const blurb = document.createElement("div"); blurb.className = "note"; blurb.textContent = p.blurb;
+    card.append(title, price, blurb);
+    card.onclick = () => { selectedPlan = p.id; renderPlans(); $("planDetail").textContent = `Selected plan: ${p.name}.`; };
+    wrap.appendChild(card);
+  });
+}
+renderPlans();
+
+// ---------- Admin pane: clickable user directory ----------
+const DIRECTORY = [
+  {name: "A. Patel", role: "Admin", lastLogin: "2 h ago"},
+  {name: "J. Kim", role: "Analyst", lastLogin: "1 d ago"},
+  {name: "M. Torres", role: "Support", lastLogin: "3 d ago"},
+  {name: "S. Okafor", role: "Analyst", lastLogin: "5 h ago"},
+];
+function renderDirectory() {
+  const wrap = $("directoryList");
+  wrap.textContent = "";
+  const filter = dirFilter.trim().toLowerCase();
+  const rows = DIRECTORY.filter(u =>
+    !filter || u.name.toLowerCase().includes(filter) || u.role.toLowerCase().includes(filter));
+  if (rows.length === 0) {
+    const note = document.createElement("div");
+    note.className = "note"; note.textContent = "No matching users.";
+    wrap.appendChild(note);
+    return;
+  }
+  rows.forEach(u => {
+    const row = document.createElement("div");
+    row.className = "dirrow";
+    const row1 = document.createElement("div"); row1.className = "row1";
+    const nameEl = document.createElement("span"); nameEl.textContent = `${u.name} — ${u.role}`;
+    const statusEl = document.createElement("span"); statusEl.className = "pill s-active"; statusEl.textContent = "active";
+    row1.append(nameEl, statusEl);
+    const detail = document.createElement("div");
+    detail.className = "dirdetail hidden";
+    detail.textContent = `Last login: ${u.lastLogin}`;
+    const btn = document.createElement("button");
+    btn.textContent = "Deactivate"; btn.style.marginTop = "6px";
+    btn.onclick = (ev) => {
+      ev.stopPropagation();
+      const active = statusEl.textContent === "active";
+      statusEl.textContent = active ? "disabled" : "active";
+      statusEl.className = "pill " + (active ? "s-inactive" : "s-active");
+      btn.textContent = active ? "Reactivate" : "Deactivate";
+    };
+    detail.appendChild(document.createElement("br"));
+    detail.appendChild(btn);
+    row.append(row1, detail);
+    row.onclick = () => detail.classList.toggle("hidden");
+    wrap.appendChild(row);
+  });
+}
+renderDirectory();
+$("dirSearch").addEventListener("input", e => { dirFilter = e.target.value; renderDirectory(); });
+
+// ---------- Home pane: compose-reply box (mock, gives longer typing bursts) ----------
+let sentCount = 0;
+$("qaSend").onclick = () => {
+  const val = $("composeBox").value.trim();
+  if (!val) return;
+  sentCount++;
+  $("composeNote").textContent = `Sent ${sentCount} repl${sentCount === 1 ? "y" : "ies"} (${val.length} chars).`;
+  $("composeBox").value = "";
+};
+
+// ---------- Home pane: to-do list (mock, typing + clicking) ----------
+let todos = [
+  {text: "Review pending access requests", done: false},
+  {text: "Rotate API keys", done: false},
+];
+function renderTodos() {
+  const wrap = $("todoList");
+  wrap.textContent = "";
+  if (todos.length === 0) {
+    const note = document.createElement("div");
+    note.className = "note"; note.textContent = "No tasks yet.";
+    wrap.appendChild(note);
+    return;
+  }
+  todos.forEach((t, i) => {
+    const row = document.createElement("div");
+    row.className = "todorow";
+    const cb = document.createElement("input");
+    cb.type = "checkbox"; cb.checked = t.done;
+    cb.onchange = () => { t.done = cb.checked; renderTodos(); };
+    const span = document.createElement("span");
+    span.textContent = t.text;
+    span.style.textDecoration = t.done ? "line-through" : "none";
+    span.style.color = t.done ? "var(--dim)" : "var(--txt)";
+    const del = document.createElement("button");
+    del.textContent = "✕";
+    del.onclick = () => { todos.splice(i, 1); renderTodos(); };
+    row.append(cb, span, del);
+    wrap.appendChild(row);
+  });
+}
+function addTodo() {
+  const val = $("todoInput").value.trim();
+  if (!val) return;
+  todos.push({text: val, done: false});
+  $("todoInput").value = "";
+  renderTodos();
+}
+$("todoAddBtn").onclick = addTodo;
+$("todoInput").addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); addTodo(); } });
+renderTodos();
+
+// ---------- Settings pane wiring ----------
+$("chkConsole").onchange = e => { consoleDiagnosticsEnabled = e.target.checked; };
+$("chkTheme").onchange = e => { document.body.classList.toggle("light", e.target.checked); };
+$("clearLogBtn").onclick = () => { tickLog = []; selectedLogTick = null; renderLog(); };
+
+// ---------- Home pane quick-action buttons (mock, just for realistic clicking) ----------
+let refreshCount = 0, exportCount = 0, ticketCount = 0;
+$("qaRefresh").onclick = () => { refreshCount++; $("qaRefresh").textContent = `Refresh widgets (${refreshCount})`; };
+$("qaExport").onclick = () => { exportCount++; $("qaExport").textContent = `Export report (${exportCount})`; };
+$("qaNewTicket").onclick = () => { ticketCount++; $("qaNewTicket").textContent = `New ticket (${ticketCount})`; };
 
 // ---------- telemetry capture ----------
 let buttonDown = false;
@@ -187,7 +462,7 @@ addEventListener("resize", () => device.resize_count++);
 
 setInterval(() => { $("eventNote").textContent = `${buffer.length} events buffered`; }, 400);
 
-// ---------- 2 s tick ----------
+// ---------- 1 s tick ----------
 async function tick() {
   const payload = {events: buffer, nav: navVisits, keys: keyBuffer, device: device};
   buffer = []; navVisits = []; keyBuffer = [];
@@ -208,7 +483,7 @@ async function tick() {
 function render(d) {
   $("tickLabel").textContent = `tick ${history.length + warmTicks}`;
   const sess = d.session || {};
-  const warm = sess.warmup_size || 30;
+  const warm = sess.warmup_size || 60;
 
   $("gallerySize").textContent = `${sess.gallery_size || 0} / ${warm}`;
   $("warmBar").style.width = (100 * (sess.gallery_size || 0) / warm) + "%";
@@ -217,7 +492,10 @@ function render(d) {
   $("streak").textContent = d.streak ?? 0;
   $("activeMods").textContent = d.active_modules ?? 0;
 
-  if (sess.status === "warming") {
+  if (d.idle) {
+    $("phase").textContent = "idle — no activity";
+    $("phase").className = "pill s-inactive";
+  } else if (sess.status === "warming") {
     warmTicks++;
     $("phase").textContent = `warming up — ${warm - (sess.gallery_size || 0)} windows left`;
     $("phase").className = "pill s-warming";
@@ -250,6 +528,9 @@ function render(d) {
   $("cosMean").textContent = fmt(det.cos_mean);
   $("cosCentroid").textContent = fmt(det.cos_centroid);
 
+  logTick(d, sess, det, warm);
+  recordLogEntry(d, sess, det, warm);
+
   const tbody = $("moduleRows");
   tbody.textContent = "";
   (d.modules || []).forEach(m => {
@@ -270,6 +551,78 @@ function render(d) {
   });
 
   drawChart(d.threshold ?? 0.8);
+}
+
+// ---------- console diagnostics: risk score + deviation from the baseline gallery ----------
+// The baseline gallery is the set of 128-D embeddings captured during warm-up
+// (your "prior" enrolled behaviour); cos_min/cos_mean/cos_centroid measure how
+// far the current window's embedding sits from that prior baseline.
+function logTick(d, sess, det, warm) {
+  const tick = history.length + warmTicks;
+  if (!consoleDiagnosticsEnabled) return;
+  if (d.idle) {
+    console.log(`[tick ${tick}] idle — no meaningful pointer activity, tick skipped (not scored)`);
+    return;
+  }
+  if (sess.status === "warming" || d.composite_risk === null || d.composite_risk === undefined) {
+    console.log(
+      `[tick ${tick}] warming up — baseline gallery ${sess.gallery_size || 0}/${warm} windows collected`
+    );
+    return;
+  }
+  const r = d.composite_risk;
+  console.log(
+    `[tick ${tick}] risk=${r.toFixed(4)} threshold=${(d.threshold ?? 0).toFixed(3)} ` +
+    `verdict=${d.verdict} streak=${d.streak ?? 0}`,
+    {
+      deviationFromPriorEmbedding: {
+        nearestGalleryVector: det.cos_min,
+        meanOverGallery: det.cos_mean,
+        toGalleryCentroid: det.cos_centroid,
+      },
+    }
+  );
+}
+
+// ---------- clickable session log: records every scored tick for later inspection ----------
+function recordLogEntry(d, sess, det, warm) {
+  if (d.idle || sess.status === "warming" || d.composite_risk === null || d.composite_risk === undefined) return;
+  const tick = history.length + warmTicks;
+  tickLog.unshift({
+    tick, risk: d.composite_risk, verdict: d.verdict, threshold: d.threshold ?? 0,
+    streak: d.streak ?? 0, cosMin: det.cos_min, cosMean: det.cos_mean, cosCentroid: det.cos_centroid,
+  });
+  if (tickLog.length > 100) tickLog.length = 100;
+  renderLog();
+}
+
+function renderLog() {
+  const tbody = $("logRows");
+  tbody.textContent = "";
+  if (tickLog.length === 0) {
+    const tr = tbody.insertRow();
+    const td = tr.insertCell();
+    td.colSpan = 4; td.className = "note"; td.textContent = "no scored ticks yet";
+    return;
+  }
+  tickLog.slice(0, 40).forEach(entry => {
+    const tr = tbody.insertRow();
+    tr.className = "logrow" + (selectedLogTick === entry.tick ? " selected" : "");
+    const fmt = v => (typeof v === "number" ? v.toFixed(4) : "—");
+    [`#${entry.tick}`, entry.risk.toFixed(4), entry.verdict, fmt(entry.cosMin)].forEach(text => {
+      const td = tr.insertCell();
+      td.textContent = text;
+    });
+    tr.onclick = () => {
+      selectedLogTick = entry.tick;
+      renderLog();
+      $("logDetail").textContent =
+        `Tick #${entry.tick}: risk=${entry.risk.toFixed(4)} threshold=${entry.threshold.toFixed(3)} ` +
+        `verdict=${entry.verdict} streak=${entry.streak} | deviation from prior embedding — ` +
+        `nearest=${fmt(entry.cosMin)} mean=${fmt(entry.cosMean)} centroid=${fmt(entry.cosCentroid)}`;
+    };
+    tbody.appendChild(tr);
+  });
 }
 
 function drawChart(threshold) {
@@ -308,9 +661,11 @@ fetch("/api/config").then(r => r.json()).then(c => {
 
 $("resetBtn").onclick = async () => {
   await fetch("/api/reset", {method: "POST"});
-  history = []; warmTicks = 0; $("banner").style.display = "none";
-  $("riskBig").textContent = "—"; drawChart(0.8);
+  history = []; warmTicks = 0; tickLog = []; selectedLogTick = null;
+  $("banner").style.display = "none";
+  $("riskBig").textContent = "—"; drawChart(0.8); renderLog();
 };
+$("settingsResetBtn").onclick = () => $("resetBtn").click();
 
 setInterval(tick, TICK_MS);
 </script>

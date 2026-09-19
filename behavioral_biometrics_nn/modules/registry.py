@@ -14,6 +14,7 @@ import json
 from pathlib import Path
 
 from ..encoder import load_base_model
+from ..feature_extractor import WINDOW_SECONDS
 from ..live import LiveSession
 from ..scorer import ESCALATION_CYCLES, GALLERY_SIZE, RISK_THRESHOLD, SMOOTHING_WINDOW
 from .base import RiskModule
@@ -34,7 +35,7 @@ DEFAULT_CONFIG = {
     "modules": {
         MouseBaseModule.plugin_id: {"enabled": True, "weight": 1.0},
         TabNavigationModule.plugin_id: {"enabled": True, "weight": 0.6, "hard_trigger": 0.95},
-        KeystrokeModule.plugin_id: {"enabled": False, "weight": 0.5},
+        KeystrokeModule.plugin_id: {"enabled": True, "weight": 0.5},
         DeviceEnvironmentModule.plugin_id: {"enabled": False, "weight": 0.3},
     },
     "session": {
@@ -97,6 +98,7 @@ def build_engine(
         smoothing=int(session_config.get("smoothing", SMOOTHING_WINDOW)),
         cycles=int(session_config.get("cycles", ESCALATION_CYCLES)),
         seed=seed,
+        seconds_per_window=WINDOW_SECONDS,
     )
 
     modules: list[RiskModule] = []

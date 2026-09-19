@@ -17,6 +17,7 @@ WARMUP_TRANSITIONS = 8
 LAPLACE_ALPHA = 1.0
 SURPRISE_CAP_BITS = 6.0       # -log2(p) at p ~= 0.015
 OUT_OF_ORDER_PROB = 0.05
+STICKY_TICKS = 3               # keep the last score alive this many quiet ticks
 
 
 class TabNavigationModule(RiskModule):
@@ -36,10 +37,25 @@ class TabNavigationModule(RiskModule):
         self.recent: deque[str] = deque(maxlen=self.entropy_window)
         self.n_transitions = 0
         self.prev_tab: str | None = None
+        self._last_risk = 0.0
+        self._last_confidence = 0.0
+        self._sticky_remaining = 0
 
     def update(self, telemetry: dict) -> ModuleResult:
         visits = telemetry.get("nav", [])
         if not visits:
+            # A tab switch is a single instantaneous event; without this, the
+            # module goes silent (confidence 0.0) the very next tick and a
+            # genuinely suspicious jump can never survive the 3 consecutive
+            # escalation cycles - it just vanishes. Keep the last verdict
+            # alive for a few quiet ticks so it actually has a chance to be
+            # noticed instead of being a one-tick blip.
+            if self._sticky_remaining > 0:
+                self._sticky_remaining -= 1
+                return ModuleResult(
+                    self.plugin_id, self._last_risk, self._last_confidence, STATUS_ACTIVE,
+                    {"sticky": True, "ticks_left": self._sticky_remaining},
+                )
             return self.inactive("no tab changes in this window")
 
         surprises: list[float] = []
@@ -86,6 +102,9 @@ class TabNavigationModule(RiskModule):
             + 0.15 * min(entropy / math.log2(max(len(self.recent), 2)), 1.0),
         )
         confidence = min(1.0, self.n_transitions / (2 * self.warmup_transitions))
+        self._last_risk = risk
+        self._last_confidence = confidence
+        self._sticky_remaining = STICKY_TICKS
 
         return ModuleResult(
             self.plugin_id, risk, confidence, STATUS_ACTIVE,

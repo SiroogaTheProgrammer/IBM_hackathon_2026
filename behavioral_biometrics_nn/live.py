@@ -2,9 +2,9 @@
 
 This implements the user lifecycle from design_choices.txt FILE 1, section 4:
 
-    Phase 1  Cold start   first 30-60 s   collect 15-30 valid 128D vectors
+    Phase 1  Cold start   first ~60 s      collect the configured gallery size
                                           -> the in-memory Baseline Gallery
-    Phase 2  Continuous   every 2 s       embed -> LightGBM -> risk 0.0-1.0
+    Phase 2  Continuous   every window     embed -> LightGBM -> risk 0.0-1.0
     Phase 3  Escalation   3x consecutive  risk >= threshold -> step-up auth
 
 The generic Siamese encoder is frozen and shared by every user; nothing here
@@ -17,9 +17,11 @@ Gallery modes
     is what the design document specifies.
 ``rolling``
     The gallery is a sliding window of the most recent vectors. Convenient for
-    drift, but it also means an attacker who takes over gradually is absorbed
-    into the baseline and never scores as anomalous. Offered for comparison,
-    not recommended as a security default.
+    drift, but only windows that already score below the risk threshold are
+    enrolled (see ``_score``) - an impostor's spiking windows are never
+    absorbed into the baseline. A patient attacker who stays just under the
+    threshold could still drift the gallery over time, so this mode is still
+    offered mainly for comparison, not recommended as a security default.
 """
 
 from __future__ import annotations
@@ -30,7 +32,6 @@ from dataclasses import dataclass, field, asdict
 import numpy as np
 
 from .encoder import embed
-from .feature_extractor import N_FEATURES
 from .scorer import (
     BACKGROUND_SIZE,
     ESCALATION_CYCLES,
@@ -41,7 +42,7 @@ from .scorer import (
     smooth_risk,
 )
 
-WARMUP_SECONDS_HINT = 2.0  # one window per 2 s, used for the countdown display
+WARMUP_SECONDS_HINT = 1.0  # default seconds per window, used for the countdown display
 GALLERY_MODES = ("frozen", "rolling")
 
 
@@ -83,6 +84,7 @@ class LiveSession:
         cycles: int = ESCALATION_CYCLES,
         threshold: float | None = None,
         seed: int = 0,
+        seconds_per_window: float = WARMUP_SECONDS_HINT,
     ):
         if gallery_mode not in GALLERY_MODES:
             raise ValueError(f"gallery_mode must be one of {GALLERY_MODES}")
@@ -97,6 +99,7 @@ class LiveSession:
         self.cycles = cycles
         self.manual_threshold = threshold
         self.seed = seed
+        self.seconds_per_window = seconds_per_window
 
         rng = np.random.default_rng(seed)
         n = min(background_size, len(background))
@@ -121,10 +124,15 @@ class LiveSession:
 
     # -- main entry point -------------------------------------------------
     def push_features(self, features: np.ndarray) -> LiveUpdate:
-        """Feed one window of 32 features and get the updated risk state."""
+        """Feed one window of features (matching the encoder's input_dim) and
+        get the updated risk state. Generic over feature width, so the same
+        class serves the 32-D mouse encoder and any other pretrained encoder
+        (e.g. the keystroke extension) without modification.
+        """
         features = np.asarray(features, dtype=np.float32).reshape(1, -1)
-        if features.shape[1] != N_FEATURES:
-            raise ValueError(f"expected {N_FEATURES} features, got {features.shape[1]}")
+        expected = self.encoder.input_dim
+        if features.shape[1] != expected:
+            raise ValueError(f"expected {expected} features, got {features.shape[1]}")
 
         vector = embed(self.encoder, self.scaler.transform(features))[0]
         self.index += 1
@@ -145,7 +153,7 @@ class LiveSession:
             status=self.status,
             gallery_size=len(self.embeddings),
             warmup_remaining=remaining,
-            seconds_remaining=remaining * WARMUP_SECONDS_HINT,
+            seconds_remaining=remaining * self.seconds_per_window,
             risk=None,
             smoothed_risk=None,
             threshold=self.threshold,
@@ -175,7 +183,13 @@ class LiveSession:
 
         stats = _distance_stats(query, self.model.gallery)[0]
 
-        if self.gallery_mode == "rolling":
+        if self.gallery_mode == "rolling" and smoothed < self.threshold:
+            # Only windows that already look genuine are absorbed into the
+            # rolling baseline. Without this check an impostor's own spiking
+            # embeddings would slide straight into the gallery and the model
+            # would "learn" the attacker as normal within a few windows -
+            # exactly the drift-vs-security tradeoff called out in the module
+            # docstring. Risky windows are simply never enrolled.
             self.embeddings.append(vector)
             self.model.gallery = np.stack(list(self.embeddings))
 

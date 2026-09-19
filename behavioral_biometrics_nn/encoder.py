@@ -186,10 +186,17 @@ def train_encoder(
     learning_rate: float = 1e-3,
     margin: float = 0.3,
     triplet_weight: float = 1.0,
+    embedding_dim: int = EMBEDDING_DIM,
     seed: int = 0,
     verbose: bool = True,
 ) -> SiameseEncoder:
-    """Pre-train the generic encoder on scaled training windows."""
+    """Pre-train the generic encoder on scaled training windows.
+
+    ``embedding_dim`` defaults to the 128-D mouse layout but can be lowered
+    for a smaller feature space (e.g. the 6-D keystroke extension), since the
+    encoder architecture and every downstream artifact/scoring path are fully
+    generic over both ``input_dim`` and ``embedding_dim``.
+    """
     torch.manual_seed(seed)
     rng = np.random.default_rng(seed)
 
@@ -204,7 +211,7 @@ def train_encoder(
     X_t = torch.from_numpy(X.astype(np.float32))
     y_t = torch.from_numpy(labels)
 
-    model = SiameseEncoder(input_dim=X.shape[1])
+    model = SiameseEncoder(input_dim=X.shape[1], embedding_dim=embedding_dim)
     head = _CosineHead(model.embedding_dim, len(users))
     optimizer = torch.optim.Adam(
         list(model.parameters()) + list(head.parameters()), lr=learning_rate
@@ -252,7 +259,7 @@ def embed(model: SiameseEncoder, X: np.ndarray, batch_size: int = 4096) -> np.nd
         chunk = torch.from_numpy(X[start : start + batch_size].astype(np.float32))
         out.append(model(chunk).numpy())
     if not out:
-        return np.empty((0, EMBEDDING_DIM), np.float32)
+        return np.empty((0, model.embedding_dim), np.float32)
     return np.concatenate(out, axis=0)
 
 
@@ -268,11 +275,21 @@ def save_base_model(
     background_users: np.ndarray,
     meta: dict | None = None,
 ) -> Path:
-    """Persist everything needed to enrol a new user later."""
+    """Persist everything needed to enrol a new user later.
+
+    The checkpoint bundle is intentionally explicit and production-friendly: it
+    stores the model weights, scaler state, background embeddings and a JSON
+    metadata file that can be reloaded without any additional ad hoc logic.
+    """
     directory = Path(directory)
     directory.mkdir(parents=True, exist_ok=True)
 
-    torch.save(encoder.state_dict(), directory / "encoder.pt")
+    torch.save({
+        "state_dict": encoder.state_dict(),
+        "input_dim": encoder.input_dim,
+        "embedding_dim": encoder.embedding_dim,
+        "model_class": SiameseEncoder.__name__,
+    }, directory / "encoder.pt")
     scaler.save(directory / "scaler.npz")
     np.save(directory / "background_embeddings.npy", background.astype(np.float32))
     np.save(directory / "background_users.npy", background_users.astype(str))
@@ -281,10 +298,20 @@ def save_base_model(
         "input_dim": encoder.input_dim,
         "embedding_dim": encoder.embedding_dim,
         "n_background": int(background.shape[0]),
+        "format_version": 2,
+        "model_name": SiameseEncoder.__name__,
         **(meta or {}),
     }
     (directory / "base_model.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
     return directory
+
+
+def export_siamese_weights(model: SiameseEncoder, path) -> Path:
+    """Write a clean state_dict-only checkpoint suitable for separate reuse."""
+    out = Path(path)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    torch.save(model.state_dict(), out)
+    return out
 
 
 def load_base_model(directory):
@@ -298,7 +325,11 @@ def load_base_model(directory):
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
 
     encoder = SiameseEncoder(meta["input_dim"], meta["embedding_dim"])
-    encoder.load_state_dict(torch.load(directory / "encoder.pt", map_location="cpu"))
+    weights = torch.load(directory / "encoder.pt", map_location="cpu")
+    if isinstance(weights, dict) and "state_dict" in weights:
+        encoder.load_state_dict(weights["state_dict"])
+    else:
+        encoder.load_state_dict(weights)
     encoder.eval()
 
     scaler = FeatureScaler.load(directory / "scaler.npz")

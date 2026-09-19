@@ -117,17 +117,21 @@ def train_base_model(
     train_root,
     artifacts_dir=DEFAULT_ARTIFACTS,
     cache_dir=DEFAULT_CACHE,
+    cache_name: str = "train_windows.npz",
     epochs: int = 30,
     max_sessions_per_user: int | None = None,
     seed: int = 0,
     refresh_cache: bool = False,
     verbose: bool = True,
 ) -> Path:
+    """``train_root`` may be a single session-file directory or a list of them
+    (e.g. ``["training_files", "test_files"]``) to pool more per-user data.
+    """
     if verbose:
         print("[1/3] Loading training sessions ...")
     sessions = load_sessions_cached(
         train_root,
-        cache_path=Path(cache_dir) / "train_windows.npz" if cache_dir else None,
+        cache_path=Path(cache_dir) / cache_name if cache_dir else None,
         refresh=refresh_cache,
         max_sessions_per_user=max_sessions_per_user,
         seed=seed,
@@ -158,8 +162,9 @@ def train_base_model(
         embeddings[bank_idx],
         np.asarray(y)[bank_idx],
         meta={
-            "train_root": str(train_root),
+            "train_root": [str(r) for r in train_root] if isinstance(train_root, (list, tuple)) else str(train_root),
             "n_train_windows": int(X_raw.shape[0]),
+            "n_train_sessions": len(sessions),
             "train_users": sorted(set(y.tolist())),
             "epochs": epochs,
             "embedding_spread": mean_pairwise_distance(embeddings),

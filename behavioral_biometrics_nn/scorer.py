@@ -10,7 +10,7 @@ from __future__ import annotations
 import numpy as np
 from lightgbm import LGBMClassifier
 
-GALLERY_SIZE = 30
+GALLERY_SIZE = 60
 CALIBRATION_SIZE = 300
 BACKGROUND_SIZE = 150
 RISK_THRESHOLD = 0.80

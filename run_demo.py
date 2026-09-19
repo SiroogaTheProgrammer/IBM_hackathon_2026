@@ -20,6 +20,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
 from behavioral_biometrics_nn.modules import REGISTRY, build_engine, load_config  # noqa: E402
+from behavioral_biometrics_nn.feature_extractor import WINDOW_SECONDS  # noqa: E402
 from behavioral_biometrics_nn.pipeline import DEFAULT_ARTIFACTS  # noqa: E402
 from demo.server import serve  # noqa: E402
 
@@ -63,7 +64,7 @@ def main() -> None:
         trigger = f", hard-trigger {module['hard_trigger']}" if module["hard_trigger"] else ""
         print(f"    - {module['plugin_id']:<20} weight {module['weight']}{trigger}")
     print(f"\n  warm-up: {config['session']['warmup_size']} windows "
-          f"(~{config['session']['warmup_size'] * 2} s), "
+          f"(~{config['session']['warmup_size'] * WINDOW_SECONDS:.0f} s), "
           f"gallery mode: {config['session']['gallery_mode']}")
 
     url = f"http://127.0.0.1:{args.port}"
