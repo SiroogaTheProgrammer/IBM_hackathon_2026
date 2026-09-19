@@ -1,0 +1,3415 @@
+client_timestamp,x,y,button,state,window
+1568278467.514,159,296,None,Move,file system
+1568278467.522,165,301,None,Move,file system
+1568278467.532,171,305,None,Move,file system
+1568278467.541,176,308,None,Move,file system
+1568278467.55,178,310,None,Move,file system
+1568278467.563,182,314,None,Move,file system
+1568278467.572,184,315,None,Move,file system
+1568278467.583,185,317,None,Move,file system
+1568278467.585,187,318,None,Move,file system
+1568278467.594,187,318,None,Move,file system
+1568279763.2,187,319,None,Move,file system
+1568279763.22,186,321,None,Move,file system
+1568279763.39,185,321,None,Move,file system
+1568279763.396,182,326,None,Move,file system
+1568279763.404,177,332,None,Move,file system
+1568279763.4120002,171,339,None,Move,file system
+1568279763.424,163,348,None,Move,file system
+1568279763.4320002,139,367,None,Move,file system
+1568279763.44,118,388,None,Move,file system
+1568279763.448,94,414,None,Move,file system
+1568279763.457,61,444,None,Move,file system
+1568279763.464,27,472,None,Move,file system
+1568279763.4729998,-12,505,None,Move,file system
+1568279763.481,-46,541,None,Move,file system
+1568279763.486,-36,568,None,Move,file system
+1568279763.495,-32,583,None,Move,file system
+1568279763.502,-29,599,None,Move,file system
+1568279763.51,-20,609,None,Move,file system
+1568279763.518,-9,616,None,Move,file system
+1568279763.526,-6,622,None,Move,file system
+1568279763.534,-5,626,None,Move,file system
+1568279763.542,-2,630,None,Move,file system
+1568279763.548,-1,634,None,Move,file system
+1568279763.5570002,-1,638,None,Move,file system
+1568279763.565,-1,641,None,Move,file system
+1568279763.572,0,643,None,Move,file system
+1568279763.58,0,644,None,Move,file system
+1568279763.654,0,644,None,Move,file system
+1568279763.6620002,1,643,None,Move,file system
+1568279763.67,2,642,None,Move,file system
+1568279763.679,4,641,None,Move,file system
+1568279763.684,5,639,None,Move,file system
+1568279763.6920002,7,638,None,Move,file system
+1568279763.7,8,636,None,Move,file system
+1568279763.708,9,635,None,Move,file system
+1568279763.716,13,632,None,Move,file system
+1568279763.724,16,631,None,Move,file system
+1568279763.732,20,630,None,Move,file system
+1568279763.74,26,628,None,Move,file system
+1568279763.748,31,628,None,Move,file system
+1568279763.754,40,627,None,Move,file system
+1568279763.762,47,625,None,Move,file system
+1568279763.771,54,623,None,Move,file system
+1568279763.779,61,621,None,Move,file system
+1568279763.786,67,618,None,Move,file system
+1568279763.795,73,615,None,Move,file system
+1568279763.802,77,612,None,Move,file system
+1568279763.81,81,609,None,Move,file system
+1568279763.8179998,83,607,None,Move,file system
+1568279763.824,85,605,None,Move,file system
+1568279763.833,86,604,None,Move,file system
+1568279763.842,87,602,None,Move,file system
+1568279763.8479998,89,599,None,Move,file system
+1568279763.856,91,596,None,Move,file system
+1568279763.8639998,93,591,None,Move,file system
+1568279763.8720002,95,589,None,Move,file system
+1568279763.88,96,587,None,Move,file system
+1568279763.8879998,98,586,None,Move,file system
+1568279763.894,99,584,None,Move,file system
+1568279763.9020002,101,583,None,Move,file system
+1568279763.9120002,101,582,None,Move,file system
+1568279764.083,101,582,Left,Pressed,file system
+1568279764.2029998,101,582,Left,Released,file system
+1568279764.585,101,581,None,Move,file system
+1568279764.593,105,576,None,Move,file system
+1568279764.603,109,571,None,Move,file system
+1568279764.61,112,566,None,Move,file system
+1568279764.617,113,565,None,Move,file system
+1568279764.6260002,114,563,None,Move,file system
+1568279764.6320002,116,560,None,Move,file system
+1568279764.639,117,559,None,Move,file system
+1568279764.647,119,558,None,Move,file system
+1568279764.655,120,555,None,Move,file system
+1568279764.6620002,122,553,None,Move,file system
+1568279764.671,124,549,None,Move,file system
+1568279764.679,127,545,None,Move,file system
+1568279764.687,130,539,None,Move,file system
+1568279764.694,133,533,None,Move,file system
+1568279764.701,136,528,None,Move,file system
+1568279764.71,138,522,None,Move,file system
+1568279764.717,141,516,None,Move,file system
+1568279764.725,143,510,None,Move,file system
+1568279764.732,147,504,None,Move,file system
+1568279764.7410002,150,498,None,Move,file system
+1568279764.748,154,492,None,Move,file system
+1568279764.7570002,159,486,None,Move,file system
+1568279764.762,164,480,None,Move,file system
+1568279764.771,169,474,None,Move,file system
+1568279764.779,174,469,None,Move,file system
+1568279764.7870002,177,465,None,Move,file system
+1568279764.795,180,461,None,Move,file system
+1568279764.813,183,458,None,Move,file system
+1568279764.819,189,452,None,Move,file system
+1568279764.827,192,449,None,Move,file system
+1568279764.833,194,447,None,Move,file system
+1568279764.841,196,446,None,Move,file system
+1568279764.851,197,444,None,Move,file system
+1568279764.857,200,443,None,Move,file system
+1568279764.865,204,441,None,Move,file system
+1568279764.873,209,438,None,Move,file system
+1568279764.88,213,437,None,Move,file system
+1568279764.8879998,220,435,None,Move,file system
+1568279764.896,226,434,None,Move,file system
+1568279764.903,232,434,None,Move,file system
+1568279764.91,238,434,None,Move,file system
+1568279764.918,246,434,None,Move,file system
+1568279764.926,254,434,None,Move,file system
+1568279764.934,266,435,None,Move,file system
+1568279764.9420002,278,438,None,Move,file system
+1568279764.95,292,443,None,Move,file system
+1568279764.958,307,449,None,Move,file system
+1568279764.966,322,456,None,Move,file system
+1568279764.972,338,464,None,Move,file system
+1568279764.98,355,472,None,Move,file system
+1568279764.988,371,480,None,Move,file system
+1568279764.996,387,489,None,Move,file system
+1568279765.004,400,496,None,Move,file system
+1568279765.012,415,506,None,Move,file system
+1568279765.02,427,512,None,Move,file system
+1568279765.028,435,519,None,Move,file system
+1568279765.036,444,525,None,Move,file system
+1568279765.044,451,532,None,Move,file system
+1568279765.05,460,538,None,Move,file system
+1568279765.0579998,468,545,None,Move,file system
+1568279765.066,475,551,None,Move,file system
+1568279765.074,481,554,None,Move,file system
+1568279765.082,487,558,None,Move,file system
+1568279765.09,490,560,None,Move,file system
+1568279765.0979998,496,562,None,Move,file system
+1568279765.106,502,566,None,Move,file system
+1568279765.1139998,508,567,None,Move,file system
+1568279765.12,512,569,None,Move,file system
+1568279765.1279998,517,571,None,Move,file system
+1568279765.1360002,520,573,None,Move,file system
+1568279765.144,522,574,None,Move,file system
+1568279765.1520002,524,576,None,Move,file system
+1568279765.16,525,579,None,Move,file system
+1568279765.1720002,525,581,None,Move,file system
+1568279765.18,525,582,None,Move,file system
+1568279765.188,525,583,None,Move,file system
+1568279765.196,525,584,None,Move,file system
+1568279765.202,525,585,None,Move,file system
+1568279765.21,525,587,None,Move,file system
+1568279765.218,524,588,None,Move,file system
+1568279765.226,522,589,None,Move,file system
+1568279765.234,521,591,None,Move,file system
+1568279765.242,519,592,None,Move,file system
+1568279765.25,518,594,None,Move,file system
+1568279765.258,517,594,None,Move,file system
+1568279765.28,517,595,None,Move,file system
+1568279765.288,516,595,None,Move,file system
+1568279765.296,515,595,None,Move,file system
+1568279765.304,513,596,None,Move,file system
+1568279765.312,509,597,None,Move,file system
+1568279765.32,505,598,None,Move,file system
+1568279765.3279998,501,600,None,Move,file system
+1568279765.4020002,500,600,None,Move,file system
+1568279765.41,499,600,None,Move,file system
+1568279765.416,499,599,None,Move,file system
+1568279765.428,498,598,None,Move,file system
+1568279765.438,498,597,None,Move,file system
+1568279765.444,496,596,None,Move,file system
+1568279765.454,495,595,None,Move,file system
+1568279765.461,493,593,None,Move,file system
+1568279765.471,493,592,None,Move,file system
+1568279765.478,491,591,None,Move,file system
+1568279765.4870002,490,589,None,Move,file system
+1568279765.495,489,588,None,Move,file system
+1568279765.502,488,585,None,Move,file system
+1568279765.508,486,581,None,Move,file system
+1568279765.514,484,577,None,Move,file system
+1568279765.522,482,571,None,Move,file system
+1568279765.53,480,567,None,Move,file system
+1568279765.538,478,560,None,Move,file system
+1568279765.546,477,554,None,Move,file system
+1568279765.554,475,549,None,Move,file system
+1568279765.56,473,546,None,Move,file system
+1568279765.57,472,542,None,Move,file system
+1568279765.576,472,538,None,Move,file system
+1568279765.584,470,532,None,Move,file system
+1568279765.592,468,526,None,Move,file system
+1568279765.6,466,519,None,Move,file system
+1568279765.6079998,464,513,None,Move,file system
+1568279765.6160002,463,508,None,Move,file system
+1568279765.6239998,461,501,None,Move,file system
+1568279765.63,461,495,None,Move,file system
+1568279765.6379998,459,490,None,Move,file system
+1568279765.646,457,486,None,Move,file system
+1568279765.654,455,484,None,Move,file system
+1568279765.6620002,455,482,None,Move,file system
+1568279765.67,453,481,None,Move,file system
+1568279765.678,453,480,None,Move,file system
+1568279765.686,452,480,None,Move,file system
+1568279765.694,452,479,None,Move,file system
+1568279765.76,452,479,None,Move,file system
+1568279765.77,450,479,None,Move,file system
+1568279765.778,448,480,None,Move,file system
+1568279765.788,446,482,None,Move,file system
+1568279765.794,443,484,None,Move,file system
+1568279765.802,438,487,None,Move,file system
+1568279765.81,433,491,None,Move,file system
+1568279765.8179998,428,494,None,Move,file system
+1568279765.826,425,497,None,Move,file system
+1568279765.836,420,500,None,Move,file system
+1568279765.842,417,504,None,Move,file system
+1568279765.85,413,506,None,Move,file system
+1568279765.8579998,411,509,None,Move,file system
+1568279765.8639998,407,511,None,Move,file system
+1568279765.8720002,405,515,None,Move,file system
+1568279765.8820002,402,519,None,Move,file system
+1568279765.8879998,400,523,None,Move,file system
+1568279765.896,399,525,None,Move,file system
+1568279765.904,398,526,None,Move,file system
+1568279765.917,397,528,None,Move,file system
+1568279765.923,397,529,None,Move,file system
+1568279765.931,397,530,None,Move,file system
+1568279766.03,397,531,None,Move,file system
+1568279766.0370002,397,532,None,Move,file system
+1568279766.046,397,533,None,Move,file system
+1568279766.052,398,537,None,Move,file system
+1568279766.06,399,539,None,Move,file system
+1568279766.0679998,400,542,None,Move,file system
+1568279766.076,401,545,None,Move,file system
+1568279766.082,402,548,None,Move,file system
+1568279766.09,402,551,None,Move,file system
+1568279766.0979998,402,554,None,Move,file system
+1568279766.106,402,555,None,Move,file system
+1568279766.1160002,402,557,None,Move,file system
+1568279766.1239998,402,559,None,Move,file system
+1568279766.131,403,560,None,Move,file system
+1568279766.144,403,561,None,Move,file system
+1568279766.156,403,562,None,Move,file system
+1568279766.164,403,563,None,Move,file system
+1568279766.188,404,563,None,Move,file system
+1568279766.196,404,564,None,Move,file system
+1568279766.204,404,564,None,Move,file system
+1568279766.246,404,564,Left,Pressed,file system
+1568279766.391,404,564,Left,Released,file system
+1568279772.75,408,560,None,Move,file system
+1568279772.758,437,528,None,Move,file system
+1568279772.766,475,483,None,Move,file system
+1568279772.7729998,500,448,None,Move,file system
+1568279772.78,511,417,None,Move,file system
+1568279772.788,515,392,None,Move,file system
+1568279772.814,504,336,None,Move,file system
+1568279772.83,471,222,None,Move,file system
+1568279772.842,428,128,None,Move,file system
+1568279772.8520002,402,80,None,Move,file system
+1568279772.861,370,31,None,Move,file system
+1568279772.87,333,-15,None,Move,file system
+1568279772.879,301,-44,None,Move,file system
+1568279772.8860002,263,-44,None,Move,file system
+1568279772.895,226,-49,None,Move,file system
+1568279772.906,156,-108,None,Move,file system
+1568279772.917,127,-48,None,Move,file system
+1568279772.928,98,-46,None,Move,file system
+1568279772.938,29,-108,None,Move,file system
+1568279772.947,-4,-54,None,Move,file system
+1568279772.9629998,-68,-92,None,Move,file system
+1568279772.9729998,-28,-46,None,Move,file system
+1568279772.981,-25,-38,None,Move,file system
+1568279772.992,-32,-70,None,Move,file system
+1568279773.0,-13,-26,None,Move,file system
+1568279773.008,-11,-21,None,Move,file system
+1568279773.016,-9,-23,None,Move,file system
+1568279773.024,-8,-18,None,Move,file system
+1568279773.033,-12,-23,None,Move,file system
+1568279773.042,-11,-23,None,Move,file system
+1568279773.049,-6,-15,None,Move,file system
+1568279773.0570002,-4,-12,None,Move,file system
+1568279773.065,-2,-9,None,Move,file system
+1568279773.073,0,-6,None,Move,file system
+1568279773.082,0,-7,None,Move,file system
+1568279773.09,2,-5,None,Move,file system
+1568279773.097,3,-1,None,Move,file system
+1568279773.106,3,-1,None,Move,file system
+1568279773.147,5,1,None,Move,file system
+1568279773.155,10,5,None,Move,file system
+1568279773.1620002,16,11,None,Move,file system
+1568279773.1720002,23,18,None,Move,file system
+1568279773.18,33,27,None,Move,file system
+1568279773.211,73,67,None,Move,file system
+1568279773.222,98,85,None,Move,file system
+1568279773.252,134,97,None,Move,file system
+1568279773.2610002,153,97,None,Move,file system
+1568279773.269,159,97,None,Move,file system
+1568279773.2770002,164,97,None,Move,file system
+1568279773.284,170,96,None,Move,file system
+1568279773.29,175,96,None,Move,file system
+1568279773.299,182,96,None,Move,file system
+1568279773.3070002,189,93,None,Move,file system
+1568279773.315,195,92,None,Move,file system
+1568279773.323,202,90,None,Move,file system
+1568279773.331,209,88,None,Move,file system
+1568279773.343,216,85,None,Move,file system
+1568279773.349,224,81,None,Move,file system
+1568279773.355,233,78,None,Move,file system
+1568279773.361,241,73,None,Move,file system
+1568279773.369,251,66,None,Move,file system
+1568279773.377,260,61,None,Move,file system
+1568279773.385,267,57,None,Move,file system
+1568279773.393,273,53,None,Move,file system
+1568279773.401,279,50,None,Move,file system
+1568279773.409,284,47,None,Move,file system
+1568279773.417,287,44,None,Move,file system
+1568279773.425,291,42,None,Move,file system
+1568279773.431,293,40,None,Move,file system
+1568279773.439,294,39,None,Move,file system
+1568279773.447,296,37,None,Move,file system
+1568279773.454,297,36,None,Move,file system
+1568279773.4629998,298,35,None,Move,file system
+1568279773.471,299,33,None,Move,file system
+1568279773.478,300,32,None,Move,file system
+1568279773.4870002,300,31,None,Move,file system
+1568279773.495,301,29,None,Move,file system
+1568279773.502,302,28,None,Move,file system
+1568279773.508,303,26,None,Move,file system
+1568279773.5170002,304,25,None,Move,file system
+1568279773.5270002,305,24,None,Move,file system
+1568279773.533,307,22,None,Move,file system
+1568279773.541,312,20,None,Move,file system
+1568279773.549,323,17,None,Move,file system
+1568279773.5570002,343,12,None,Move,file system
+1568279773.565,374,9,None,Move,file system
+1568279773.572,416,1,None,Move,file system
+1568279773.579,467,-11,None,Move,file system
+1568279773.587,520,-7,None,Move,file system
+1568279773.595,581,-6,None,Move,file system
+1568279773.603,646,-5,None,Move,file system
+1568279773.611,717,-6,None,Move,file system
+1568279773.619,793,-19,None,Move,file system
+1568279773.627,868,-17,None,Move,file system
+1568279773.6339998,947,-11,None,Move,file system
+1568279773.641,1024,-11,None,Move,file system
+1568279773.649,1103,-2,None,Move,file system
+1568279773.657,1178,0,None,Move,file system
+1568279773.665,1257,0,None,Move,file system
+1568279773.673,1333,1,None,Move,file system
+1568279773.681,1406,-4,None,Move,file system
+1568279773.689,1470,-6,None,Move,file system
+1568279773.697,1524,-4,None,Move,file system
+1568279773.705,1574,-4,None,Move,file system
+1568279773.7129998,1609,0,None,Move,file system
+1568279773.719,1636,0,None,Move,file system
+1568279773.7270002,1657,2,None,Move,file system
+1568279773.735,1670,4,None,Move,file system
+1568279773.7429998,1680,6,None,Move,file system
+1568279773.7510002,1688,7,None,Move,file system
+1568279773.758,1694,8,None,Move,file system
+1568279773.7670002,1698,8,None,Move,file system
+1568279773.775,1702,8,None,Move,file system
+1568279773.783,1703,8,None,Move,file system
+1568279773.789,1704,8,None,Move,file system
+1568279773.7970002,1704,8,None,Move,file system
+1568279773.836,1705,8,None,Move,file system
+1568279773.8479998,1705,8,None,Move,file system
+1568279773.854,1707,7,None,Move,file system
+1568279773.8620002,1709,7,None,Move,file system
+1568279773.87,1712,5,None,Move,file system
+1568279773.8779998,1718,3,None,Move,file system
+1568279773.8860002,1724,1,None,Move,file system
+1568279773.894,1729,0,None,Move,file system
+1568279773.904,1736,0,None,Move,file system
+1568279773.911,1743,0,None,Move,file system
+1568279773.918,1750,0,None,Move,file system
+1568279773.924,1758,1,None,Move,file system
+1568279773.9320002,1766,3,None,Move,file system
+1568279773.94,1773,5,None,Move,file system
+1568279773.948,1777,6,None,Move,file system
+1568279773.956,1780,7,None,Move,file system
+1568279773.964,1783,8,None,Move,file system
+1568279773.972,1787,9,None,Move,file system
+1568279773.98,1793,10,None,Move,file system
+1568279773.988,1797,10,None,Move,file system
+1568279773.994,1801,10,None,Move,file system
+1568279774.002,1805,10,None,Move,file system
+1568279774.01,1807,10,None,Move,file system
+1568279774.018,1809,10,None,Move,file system
+1568279774.026,1810,10,None,Move,file system
+1568279774.035,1811,10,None,Move,file system
+1568279774.043,1812,10,None,Move,file system
+1568279774.05,1814,10,None,Move,file system
+1568279774.059,1814,10,None,Move,file system
+1568279774.064,1816,10,None,Move,file system
+1568279774.073,1817,11,None,Move,file system
+1568279774.08,1818,12,None,Move,file system
+1568279774.089,1820,12,None,Move,file system
+1568279774.096,1821,13,None,Move,file system
+1568279774.104,1822,13,None,Move,file system
+1568279774.1120002,1824,14,None,Move,file system
+1568279774.12,1825,15,None,Move,file system
+1568279774.1279998,1827,16,None,Move,file system
+1568279774.137,1829,17,None,Move,file system
+1568279774.1420002,1832,19,None,Move,file system
+1568279774.15,1834,20,None,Move,file system
+1568279774.159,1836,21,None,Move,file system
+1568279774.167,1838,22,None,Move,file system
+1568279774.175,1839,22,None,Move,file system
+1568279774.1820002,1840,22,None,Move,file system
+1568279774.191,1841,22,None,Move,file system
+1568279774.199,1843,22,None,Move,file system
+1568279774.207,1844,22,None,Move,file system
+1568279774.212,1845,22,None,Move,file system
+1568279774.221,1847,22,None,Move,file system
+1568279774.228,1848,22,None,Move,file system
+1568279774.2370002,1849,22,None,Move,file system
+1568279774.245,1850,22,None,Move,file system
+1568279774.252,1852,22,None,Move,file system
+1568279774.2610002,1854,22,None,Move,file system
+1568279774.269,1855,23,None,Move,file system
+1568279774.276,1856,23,None,Move,file system
+1568279774.283,1858,23,None,Move,file system
+1568279774.291,1859,23,None,Move,file system
+1568279774.299,1860,23,None,Move,file system
+1568279774.3070002,1861,23,None,Move,file system
+1568279774.315,1861,23,None,Move,file system
+1568279774.3379998,1864,23,None,Move,file system
+1568279774.345,1865,23,None,Move,file system
+1568279774.3520002,1867,23,None,Move,file system
+1568279774.357,1868,22,None,Move,file system
+1568279774.363,1869,22,None,Move,file system
+1568279774.369,1870,22,None,Move,file system
+1568279774.3760002,1871,21,None,Move,file system
+1568279774.389,1872,21,None,Move,file system
+1568279774.397,1872,21,None,Move,file system
+1568279774.405,1872,21,None,Move,file system
+1568279774.413,1873,20,None,Move,file system
+1568279774.421,1874,20,None,Move,file system
+1568279774.429,1874,19,None,Move,file system
+1568279774.435,1875,19,None,Move,file system
+1568279774.4429998,1876,18,None,Move,file system
+1568279774.451,1876,17,None,Move,file system
+1568279774.458,1877,17,None,Move,file system
+1568279774.467,1878,16,None,Move,file system
+1568279774.475,1878,16,None,Move,file system
+1568279774.482,1879,16,None,Move,file system
+1568279774.4910002,1881,15,None,Move,file system
+1568279774.4989998,1881,14,None,Move,file system
+1568279774.504,1882,14,None,Move,file system
+1568279774.5129998,1883,13,None,Move,file system
+1568279774.521,1885,13,None,Move,file system
+1568279774.528,1886,12,None,Move,file system
+1568279774.536,1886,11,None,Move,file system
+1568279774.545,1888,11,None,Move,file system
+1568279774.552,1889,10,None,Move,file system
+1568279774.56,1890,9,None,Move,file system
+1568279774.5679998,1892,9,None,Move,file system
+1568279774.574,1893,8,None,Move,file system
+1568279774.582,1895,7,None,Move,file system
+1568279774.59,1896,7,None,Move,file system
+1568279774.5979998,1897,7,None,Move,file system
+1568279774.606,1898,7,None,Move,file system
+1568279774.6139998,1899,7,None,Move,file system
+1568279774.696,1900,7,Left,Pressed,file system
+1568279774.696,1900,7,None,Drag,file system
+1568279774.718,1900,7,None,Drag,file system
+1568279774.73,1901,7,None,Drag,file system
+1568279774.73,1901,7,Left,Released,file system
+1568279774.805,1901,7,None,Move,file system
+1568279774.83,1901,7,None,Move,file system
+1568279774.8479998,1901,7,None,Move,development
+1568279774.8620002,1896,11,None,Move,development
+1568279774.875,1892,14,None,Move,development
+1568279774.887,1885,20,None,Move,development
+1568279774.909,1873,28,None,Move,development
+1568279774.931,1849,45,None,Move,development
+1568279774.967,1787,78,None,Move,development
+1568279774.985,1754,93,None,Move,development
+1568279775.01,1684,118,None,Move,development
+1568279775.022,1623,142,None,Move,development
+1568279775.0370002,1541,166,None,Move,development
+1568279775.046,1489,184,None,Move,development
+1568279775.056,1443,200,None,Move,development
+1568279775.065,1403,209,None,Move,development
+1568279775.074,1311,236,None,Move,development
+1568279775.081,1267,249,None,Move,development
+1568279775.089,1231,254,None,Move,development
+1568279775.096,1198,256,None,Move,development
+1568279775.107,1161,259,None,Move,development
+1568279775.1179998,1125,261,None,Move,development
+1568279775.12,1095,261,None,Move,development
+1568279775.1279998,1071,261,None,Move,development
+1568279775.1360002,1049,261,None,Move,development
+1568279775.144,1036,261,None,Move,development
+1568279775.15,1025,260,None,Move,development
+1568279775.158,1019,258,None,Move,development
+1568279775.166,1016,256,None,Move,development
+1568279775.174,1015,255,None,Move,development
+1568279775.1820002,1013,254,None,Move,development
+1568279775.19,1013,254,None,Move,development
+1568279775.38,1013,252,None,Move,development
+1568279775.3879998,1011,249,None,Move,development
+1568279775.396,1010,246,None,Move,development
+1568279775.404,1009,243,None,Move,development
+1568279775.413,1008,238,None,Move,development
+1568279775.42,1007,236,None,Move,development
+1568279775.428,1006,235,None,Move,development
+1568279775.434,1006,234,None,Move,development
+1568279775.4420002,1006,232,None,Move,development
+1568279775.45,1006,231,None,Move,development
+1568279775.458,1005,230,None,Move,development
+1568279775.466,1004,230,None,Move,development
+1568279775.474,1000,230,None,Move,development
+1568279775.482,993,235,None,Move,development
+1568279775.49,982,242,None,Move,development
+1568279775.498,971,250,None,Move,development
+1568279775.504,962,255,None,Move,development
+1568279775.6520002,962,256,None,Move,development
+1568279775.7,962,256,None,Move,development
+1568279775.708,963,252,None,Move,development
+1568279775.714,968,248,None,Move,development
+1568279775.722,971,247,None,Move,development
+1568279775.73,973,246,None,Move,development
+1568279775.738,974,245,None,Move,development
+1568279775.746,975,245,None,Move,development
+1568279775.754,975,245,None,Move,development
+1568279775.762,975,245,None,Move,development
+1568279775.77,975,246,None,Move,development
+1568279775.778,975,248,None,Move,development
+1568279775.7870002,975,249,None,Move,development
+1568279775.794,974,250,None,Move,development
+1568279775.802,973,252,None,Move,development
+1568279775.8079998,971,257,None,Move,development
+1568279775.816,969,262,None,Move,development
+1568279775.824,966,268,None,Move,development
+1568279775.832,964,274,None,Move,development
+1568279775.84,962,281,None,Move,development
+1568279775.8479998,960,289,None,Move,development
+1568279775.856,957,298,None,Move,development
+1568279775.8620002,952,306,None,Move,development
+1568279775.87,947,315,None,Move,development
+1568279775.8779998,942,324,None,Move,development
+1568279775.8860002,938,331,None,Move,development
+1568279775.894,935,339,None,Move,development
+1568279775.904,932,346,None,Move,development
+1568279775.915,930,353,None,Move,development
+1568279775.921,927,362,None,Move,development
+1568279775.927,924,370,None,Move,development
+1568279775.9320002,922,378,None,Move,development
+1568279775.94,920,387,None,Move,development
+1568279775.948,917,395,None,Move,development
+1568279775.956,914,403,None,Move,development
+1568279775.964,910,412,None,Move,development
+1568279775.972,907,419,None,Move,development
+1568279775.98,904,427,None,Move,development
+1568279775.988,901,433,None,Move,development
+1568279775.996,898,441,None,Move,development
+1568279776.0029998,896,446,None,Move,development
+1568279776.01,894,452,None,Move,development
+1568279776.018,892,460,None,Move,development
+1568279776.026,890,466,None,Move,development
+1568279776.034,888,472,None,Move,development
+1568279776.042,887,477,None,Move,development
+1568279776.05,885,483,None,Move,development
+1568279776.059,885,489,None,Move,development
+1568279776.0670002,884,493,None,Move,development
+1568279776.075,884,497,None,Move,development
+1568279776.081,884,501,None,Move,development
+1568279776.089,885,505,None,Move,development
+1568279776.096,885,507,None,Move,development
+1568279776.104,887,508,None,Move,development
+1568279776.113,887,509,None,Move,development
+1568279776.125,888,509,None,Move,development
+1568279776.1320002,889,509,None,Move,development
+1568279776.141,890,509,None,Move,development
+1568279776.146,891,509,None,Move,development
+1568279776.155,892,510,None,Move,development
+1568279776.163,892,510,None,Move,development
+1568279776.17,893,510,None,Move,development
+1568279776.236,893,510,None,Move,development
+1568279776.244,894,510,None,Move,development
+1568279776.486,893,505,None,Move,development
+1568279776.494,884,488,None,Move,development
+1568279776.502,873,468,None,Move,development
+1568279776.508,861,444,None,Move,development
+1568279776.516,849,416,None,Move,development
+1568279776.524,839,388,None,Move,development
+1568279776.532,829,360,None,Move,development
+1568279776.54,818,332,None,Move,development
+1568279776.548,804,304,None,Move,development
+1568279776.556,791,278,None,Move,development
+1568279776.564,779,254,None,Move,development
+1568279776.572,769,236,None,Move,development
+1568279776.5779998,759,215,None,Move,development
+1568279776.586,751,200,None,Move,development
+1568279776.594,743,184,None,Move,development
+1568279776.6020002,736,171,None,Move,development
+1568279776.61,732,160,None,Move,development
+1568279776.6179998,728,149,None,Move,development
+1568279776.6260002,726,141,None,Move,development
+1568279776.6339998,724,133,None,Move,development
+1568279776.6420002,722,124,None,Move,development
+1568279776.649,721,119,None,Move,development
+1568279776.656,721,113,None,Move,development
+1568279776.664,721,108,None,Move,development
+1568279776.6720002,721,105,None,Move,development
+1568279776.68,722,104,None,Move,development
+1568279776.688,723,102,None,Move,development
+1568279776.696,724,101,None,Move,development
+1568279776.705,725,99,None,Move,development
+1568279776.712,725,99,None,Move,development
+1568279776.718,725,98,None,Move,development
+1568279776.73,726,98,None,Move,development
+1568279776.7670002,726,98,None,Move,development
+1568279776.775,727,97,None,Move,development
+1568279776.783,728,97,None,Move,development
+1568279776.788,729,96,None,Move,development
+1568279776.796,729,96,None,Move,development
+1568279776.805,730,95,None,Move,development
+1568279776.812,730,95,None,Move,development
+1568279776.82,731,95,None,Move,development
+1568279776.8279998,731,95,None,Move,development
+1568279776.837,732,95,None,Move,development
+1568279776.906,733,95,None,Move,development
+1568279776.918,734,95,None,Move,development
+1568279776.926,735,96,None,Move,development
+1568279776.9329998,736,96,None,Move,development
+1568279776.94,737,98,None,Move,development
+1568279776.948,738,99,None,Move,development
+1568279776.956,739,100,None,Move,development
+1568279776.964,741,102,None,Move,development
+1568279776.972,742,103,None,Move,development
+1568279776.98,744,105,None,Move,development
+1568279776.988,747,106,None,Move,development
+1568279776.996,749,108,None,Move,development
+1568279777.004,752,109,None,Move,development
+1568279777.0110002,756,111,None,Move,development
+1568279777.018,761,113,None,Move,development
+1568279777.0270002,767,115,None,Move,development
+1568279777.034,771,117,None,Move,development
+1568279777.043,776,118,None,Move,development
+1568279777.051,780,119,None,Move,development
+1568279777.0579998,784,120,None,Move,development
+1568279777.066,787,120,None,Move,development
+1568279777.074,791,121,None,Move,development
+1568279777.08,795,121,None,Move,development
+1568279777.0879998,798,121,None,Move,development
+1568279777.097,800,121,None,Move,development
+1568279777.104,802,121,None,Move,development
+1568279777.113,803,121,None,Move,development
+1568279777.12,806,121,None,Move,development
+1568279777.129,807,121,None,Move,development
+1568279777.137,809,121,None,Move,development
+1568279777.145,810,120,None,Move,development
+1568279777.15,812,119,None,Move,development
+1568279777.158,813,119,None,Move,development
+1568279777.166,815,118,None,Move,development
+1568279777.175,816,117,None,Move,development
+1568279777.1820002,817,117,None,Move,development
+1568279777.191,819,116,None,Move,development
+1568279777.198,821,114,None,Move,development
+1568279777.206,823,114,None,Move,development
+1568279777.214,826,113,None,Move,development
+1568279777.22,828,112,None,Move,development
+1568279777.228,830,111,None,Move,development
+1568279777.236,831,111,None,Move,development
+1568279777.244,832,110,None,Move,development
+1568279777.252,834,110,None,Move,development
+1568279777.26,834,110,None,Move,development
+1568279777.268,835,110,None,Move,development
+1568279777.2770002,836,110,None,Move,development
+1568279777.285,837,110,None,Move,development
+1568279777.29,837,110,None,Move,development
+1568279777.298,838,110,None,Move,development
+1568279777.3070002,839,110,None,Move,development
+1568279777.314,840,110,None,Move,development
+1568279777.322,841,110,None,Move,development
+1568279777.33,841,110,None,Move,development
+1568279777.3379998,843,110,None,Move,development
+1568279777.354,844,110,None,Move,development
+1568279777.3760002,847,110,None,Move,development
+1568279777.39,850,109,None,Move,development
+1568279777.396,852,109,None,Move,development
+1568279777.4020002,855,109,None,Move,development
+1568279777.409,858,109,None,Move,development
+1568279777.416,861,109,None,Move,development
+1568279777.424,865,108,None,Move,development
+1568279777.4320002,868,107,None,Move,development
+1568279777.438,871,106,None,Move,development
+1568279777.446,873,106,None,Move,development
+1568279777.454,874,106,None,Move,development
+1568279777.462,876,106,None,Move,development
+1568279777.47,876,106,None,Move,development
+1568279777.478,877,106,None,Move,development
+1568279777.586,877,106,Left,Pressed,development
+1568279777.716,877,106,Left,Released,development
+1568279777.786,877,106,None,Move,development
+1568279777.804,877,106,None,Move,development
+1568279777.812,876,106,None,Move,development
+1568279777.82,875,106,None,Move,development
+1568279777.8279998,874,106,None,Move,development
+1568279777.836,872,107,None,Move,development
+1568279777.844,872,107,None,Move,development
+1568279777.8520002,870,107,None,Move,development
+1568279777.86,869,108,None,Move,development
+1568279777.8660002,868,108,None,Move,development
+1568279777.8739998,867,108,None,Move,development
+1568279777.8820002,867,108,None,Move,development
+1568279777.894,866,108,None,Move,development
+1568279777.9020002,866,108,None,Move,development
+1568279777.9220002,865,109,None,Move,development
+1568279778.1079998,865,109,None,Move,development
+1568279778.1160002,866,108,None,Move,development
+1568279778.125,871,107,None,Move,development
+1568279778.1320002,877,106,None,Move,development
+1568279778.14,885,105,None,Move,development
+1568279778.1479998,895,104,None,Move,development
+1568279778.154,910,104,None,Move,development
+1568279778.1620002,933,106,None,Move,development
+1568279778.17,965,106,None,Move,development
+1568279778.178,1001,105,None,Move,development
+1568279778.186,1048,102,None,Move,development
+1568279778.194,1097,102,None,Move,development
+1568279778.202,1147,106,None,Move,development
+1568279778.21,1205,112,None,Move,development
+1568279778.218,1265,109,None,Move,development
+1568279778.224,1333,105,None,Move,development
+1568279778.2329998,1392,105,None,Move,development
+1568279778.24,1455,108,None,Move,development
+1568279778.248,1504,110,None,Move,development
+1568279778.256,1556,110,None,Move,development
+1568279778.264,1608,107,None,Move,development
+1568279778.2729998,1661,99,None,Move,development
+1568279778.28,1714,92,None,Move,development
+1568279778.288,1766,86,None,Move,development
+1568279778.294,1809,78,None,Move,development
+1568279778.302,1846,71,None,Move,development
+1568279778.31,1876,63,None,Move,development
+1568279778.3179998,1902,57,None,Move,development
+1568279778.326,1926,52,None,Move,development
+1568279778.334,1944,50,None,Move,development
+1568279778.342,1957,47,None,Move,development
+1568279778.35,1968,46,None,Move,development
+1568279778.3579998,1976,44,None,Move,development
+1568279778.3639998,1985,42,None,Move,development
+1568279778.3720002,1990,40,None,Move,development
+1568279778.38,1994,39,None,Move,development
+1568279778.3879998,1995,37,None,Move,development
+1568279778.396,1996,36,None,Move,development
+1568279778.404,1996,35,None,Move,development
+1568279778.413,1998,34,None,Move,development
+1568279778.42,1999,33,None,Move,development
+1568279778.428,2001,31,None,Move,development
+1568279778.434,2002,30,None,Move,development
+1568279778.4420002,2003,28,None,Move,development
+1568279778.45,2004,27,None,Move,development
+1568279778.458,2006,26,None,Move,development
+1568279778.466,2006,24,None,Move,development
+1568279778.475,2006,24,None,Move,development
+1568279778.4829998,2006,22,None,Move,development
+1568279778.4910002,2006,21,None,Move,development
+1568279778.498,2006,20,None,Move,development
+1568279778.506,2007,18,None,Move,development
+1568279778.512,2007,18,None,Move,development
+1568279778.521,2007,17,None,Move,development
+1568279778.528,2007,16,None,Move,development
+1568279778.5370002,2007,16,None,Move,development
+1568279778.544,2007,16,None,Move,development
+1568279778.553,2006,15,None,Move,development
+1568279778.56,2004,15,None,Move,development
+1568279778.5670002,2003,15,None,Move,development
+1568279778.577,2002,15,None,Move,development
+1568279778.583,2000,15,None,Move,development
+1568279778.591,1998,15,None,Move,development
+1568279778.599,1994,17,None,Move,development
+1568279778.607,1988,21,None,Move,development
+1568279778.615,1981,25,None,Move,development
+1568279778.623,1973,30,None,Move,development
+1568279778.631,1967,36,None,Move,development
+1568279778.639,1961,42,None,Move,development
+1568279778.647,1955,46,None,Move,development
+1568279778.6520002,1949,52,None,Move,development
+1568279778.661,1943,56,None,Move,development
+1568279778.669,1938,60,None,Move,development
+1568279778.677,1934,62,None,Move,development
+1568279778.685,1931,64,None,Move,development
+1568279778.6929998,1928,66,None,Move,development
+1568279778.701,1926,67,None,Move,development
+1568279778.709,1924,69,None,Move,development
+1568279778.717,1923,70,None,Move,development
+1568279778.7229998,1921,71,None,Move,development
+1568279778.731,1920,71,None,Move,development
+1568279778.7389998,1919,73,None,Move,development
+1568279778.7470002,1918,73,None,Move,development
+1568279778.755,1917,74,None,Move,development
+1568279778.762,1916,75,None,Move,development
+1568279778.771,1915,77,None,Move,development
+1568279778.778,1913,78,None,Move,development
+1568279778.7870002,1912,80,None,Move,development
+1568279778.795,1910,81,None,Move,development
+1568279778.8,1908,82,None,Move,development
+1568279778.8079998,1907,84,None,Move,development
+1568279778.8170002,1905,85,None,Move,development
+1568279778.825,1905,86,None,Move,development
+1568279778.833,1903,86,None,Move,development
+1568279778.841,1902,87,None,Move,development
+1568279778.8479998,1902,87,None,Move,development
+1568279778.856,1901,87,None,Move,development
+1568279778.863,1900,88,None,Move,development
+1568279778.871,1899,89,None,Move,development
+1568279778.8779998,1898,90,None,Move,development
+1568279778.887,1897,90,None,Move,development
+1568279778.894,1896,92,None,Move,development
+1568279778.9020002,1894,93,None,Move,development
+1568279778.91,1893,94,None,Move,development
+1568279778.918,1892,96,None,Move,development
+1568279778.926,1890,98,None,Move,development
+1568279778.9320002,1889,100,None,Move,development
+1568279778.941,1887,102,None,Move,development
+1568279778.948,1886,103,None,Move,development
+1568279778.956,1884,105,None,Move,development
+1568279778.964,1883,106,None,Move,development
+1568279778.972,1881,107,None,Move,development
+1568279778.98,1880,109,None,Move,development
+1568279778.988,1879,111,None,Move,development
+1568279778.996,1878,113,None,Move,development
+1568279779.002,1878,115,None,Move,development
+1568279779.01,1877,117,None,Move,development
+1568279779.018,1877,117,None,Move,development
+1568279779.076,1877,117,None,Move,development
+1568279779.084,1878,116,None,Move,development
+1568279779.092,1880,114,None,Move,development
+1568279779.1,1881,111,None,Move,development
+1568279779.1079998,1883,107,None,Move,development
+1568279779.1160002,1885,101,None,Move,development
+1568279779.125,1887,95,None,Move,development
+1568279779.1320002,1889,89,None,Move,development
+1568279779.14,1891,84,None,Move,development
+1568279779.146,1893,78,None,Move,development
+1568279779.154,1895,72,None,Move,development
+1568279779.1620002,1896,66,None,Move,development
+1568279779.17,1897,62,None,Move,development
+1568279779.178,1898,56,None,Move,development
+1568279779.186,1899,52,None,Move,development
+1568279779.194,1900,46,None,Move,development
+1568279779.202,1900,42,None,Move,development
+1568279779.211,1900,37,None,Move,development
+1568279779.218,1900,34,None,Move,development
+1568279779.224,1900,29,None,Move,development
+1568279779.232,1900,23,None,Move,development
+1568279779.24,1900,19,None,Move,development
+1568279779.248,1900,14,None,Move,development
+1568279779.256,1900,11,None,Move,development
+1568279779.265,1900,9,None,Move,development
+1568279779.272,1900,6,None,Move,development
+1568279779.281,1900,4,None,Move,development
+1568279779.288,1900,3,None,Move,development
+1568279779.294,1900,2,None,Move,development
+1568279779.302,1900,0,None,Move,development
+1568279779.31,1900,-1,None,Move,development
+1568279779.3179998,1900,-1,None,Move,development
+1568279779.326,1900,-1,None,Move,development
+1568279779.3379998,1899,-2,None,Move,development
+1568279779.349,1898,-1,None,Move,development
+1568279779.3620002,1898,-1,None,Move,development
+1568279779.375,1897,-1,None,Move,development
+1568279779.3860002,1897,-1,None,Move,development
+1568279779.446,1896,0,None,Move,development
+1568279779.478,1896,0,Left,Pressed,development
+1568279779.586,1896,0,Left,Released,development
+1568279779.63,1896,0,None,Move,development
+1568279779.6379998,1897,1,None,Move,development
+1568279779.646,1900,4,None,Move,development
+1568279779.6520002,1903,8,None,Move,development
+1568279779.66,1908,14,None,Move,development
+1568279779.668,1915,23,None,Move,development
+1568279779.676,1921,30,None,Move,development
+1568279779.684,1928,39,None,Move,development
+1568279779.6929998,1934,47,None,Move,development
+1568279779.705,1941,56,None,Move,development
+1568279779.7129998,1949,65,None,Move,development
+1568279779.724,1966,82,None,Move,development
+1568279779.736,1974,91,None,Move,development
+1568279779.7429998,1981,97,None,Move,development
+1568279779.7510002,1987,105,None,Move,development
+1568279779.756,1994,112,None,Move,development
+1568279779.765,2000,119,None,Move,development
+1568279779.7729998,2005,126,None,Move,development
+1568279779.781,2009,133,None,Move,development
+1568279779.788,2012,139,None,Move,development
+1568279779.8,2013,145,None,Move,development
+1568279779.8079998,2013,150,None,Move,development
+1568279779.814,2013,156,None,Move,development
+1568279779.819,2013,161,None,Move,development
+1568279779.826,2011,167,None,Move,development
+1568279779.836,2009,173,None,Move,development
+1568279779.844,2007,179,None,Move,development
+1568279779.85,2001,185,None,Move,development
+1568279779.856,1994,191,None,Move,development
+1568279779.8620002,1985,198,None,Move,development
+1568279779.87,1974,204,None,Move,development
+1568279779.8779998,1960,212,None,Move,development
+1568279779.8860002,1944,219,None,Move,development
+1568279779.894,1924,228,None,Move,development
+1568279779.904,1903,238,None,Move,development
+1568279779.91,1883,249,None,Move,development
+1568279779.918,1865,257,None,Move,development
+1568279779.926,1844,267,None,Move,development
+1568279779.934,1819,277,None,Move,development
+1568279779.94,1793,288,None,Move,development
+1568279779.948,1765,298,None,Move,development
+1568279779.956,1740,307,None,Move,development
+1568279779.964,1710,317,None,Move,development
+1568279779.972,1679,329,None,Move,development
+1568279779.98,1638,342,None,Move,development
+1568279779.988,1600,355,None,Move,development
+1568279779.996,1565,366,None,Move,development
+1568279780.004,1529,380,None,Move,development
+1568279780.01,1495,394,None,Move,development
+1568279780.018,1461,408,None,Move,development
+1568279780.026,1435,421,None,Move,development
+1568279780.034,1412,434,None,Move,development
+1568279780.042,1394,442,None,Move,development
+1568279780.05,1376,450,None,Move,development
+1568279780.0579998,1358,459,None,Move,development
+1568279780.066,1338,467,None,Move,development
+1568279780.074,1318,476,None,Move,development
+1568279780.08,1299,480,None,Move,development
+1568279780.0879998,1283,484,None,Move,development
+1568279780.096,1271,487,None,Move,development
+1568279780.104,1260,491,None,Move,development
+1568279780.1120002,1250,494,None,Move,development
+1568279780.12,1242,498,None,Move,development
+1568279780.1279998,1236,500,None,Move,development
+1568279780.1360002,1230,501,None,Move,development
+1568279780.144,1225,503,None,Move,development
+1568279780.15,1219,505,None,Move,development
+1568279780.158,1214,505,None,Move,development
+1568279780.166,1208,505,None,Move,development
+1568279780.174,1202,504,None,Move,development
+1568279780.1820002,1197,502,None,Move,development
+1568279780.19,1191,501,None,Move,development
+1568279780.198,1185,499,None,Move,development
+1568279780.206,1181,497,None,Move,development
+1568279780.214,1175,495,None,Move,development
+1568279780.22,1169,492,None,Move,development
+1568279780.228,1163,489,None,Move,development
+1568279780.236,1156,487,None,Move,development
+1568279780.245,1149,485,None,Move,development
+1568279780.252,1141,483,None,Move,development
+1568279780.26,1132,481,None,Move,development
+1568279780.268,1124,480,None,Move,development
+1568279780.276,1116,479,None,Move,development
+1568279780.284,1108,478,None,Move,development
+1568279780.291,1100,478,None,Move,development
+1568279780.298,1092,478,None,Move,development
+1568279780.306,1085,478,None,Move,development
+1568279780.314,1077,480,None,Move,development
+1568279780.322,1071,482,None,Move,development
+1568279780.33,1064,484,None,Move,development
+1568279780.342,1058,486,None,Move,development
+1568279780.35,1052,489,None,Move,development
+1568279780.357,1046,491,None,Move,development
+1568279780.361,1040,495,None,Move,development
+1568279780.3679998,1034,500,None,Move,development
+1568279780.377,1028,504,None,Move,development
+1568279780.385,1022,509,None,Move,development
+1568279780.393,1016,512,None,Move,development
+1568279780.401,1010,515,None,Move,development
+1568279780.409,1004,518,None,Move,development
+1568279780.417,999,521,None,Move,development
+1568279780.425,994,522,None,Move,development
+1568279780.4320002,991,524,None,Move,development
+1568279780.44,988,526,None,Move,development
+1568279780.447,987,526,None,Move,development
+1568279780.455,987,527,None,Move,development
+1568279780.462,986,527,None,Move,development
+1568279780.471,985,527,None,Move,development
+1568279780.478,984,529,None,Move,development
+1568279780.4870002,984,529,None,Move,development
+1568279780.494,982,531,None,Move,development
+1568279780.502,982,532,None,Move,development
+1568279780.508,981,533,None,Move,development
+1568279780.516,979,535,None,Move,development
+1568279780.525,978,535,None,Move,development
+1568279780.533,977,536,None,Move,development
+1568279780.541,975,536,None,Move,development
+1568279780.549,974,537,None,Move,development
+1568279780.5570002,973,537,None,Move,development
+1568279780.565,972,537,None,Move,development
+1568279780.577,971,537,None,Move,development
+1568279780.599,970,537,None,Move,development
+1568279780.607,970,537,None,Move,development
+1568279780.615,969,537,None,Move,development
+1568279780.623,967,538,None,Move,development
+1568279780.631,965,540,None,Move,development
+1568279780.639,963,540,None,Move,development
+1568279780.646,961,542,None,Move,development
+1568279780.6520002,958,542,None,Move,development
+1568279780.66,956,544,None,Move,development
+1568279780.668,953,546,None,Move,development
+1568279780.676,952,546,None,Move,development
+1568279780.684,949,548,None,Move,development
+1568279780.6920002,948,549,None,Move,development
+1568279780.7,946,551,None,Move,development
+1568279780.708,945,552,None,Move,development
+1568279780.716,944,553,None,Move,development
+1568279780.722,942,555,None,Move,development
+1568279780.73,941,556,None,Move,development
+1568279780.738,939,558,None,Move,development
+1568279780.746,938,559,None,Move,development
+1568279780.754,936,561,None,Move,development
+1568279780.762,936,561,None,Move,development
+1568279780.77,935,562,None,Move,development
+1568279780.914,935,562,Left,Pressed,development
+1568279780.914,935,562,None,Drag,development
+1568279780.914,935,562,Left,Released,development
+1568279780.926,934,563,None,Move,development
+1568279780.935,934,563,None,Move,development
+1568279780.941,933,564,None,Move,development
+1568279780.949,933,565,None,Move,development
+1568279780.956,932,565,None,Move,development
+1568279780.965,931,566,None,Move,development
+1568279780.972,930,566,None,Move,development
+1568279780.981,929,568,None,Move,development
+1568279780.988,928,569,None,Move,development
+1568279780.9970002,927,570,None,Move,development
+1568279781.005,926,571,None,Move,development
+1568279781.0110002,925,572,None,Move,development
+1568279781.018,925,572,None,Move,development
+1568279781.0270002,925,573,None,Move,development
+1568279781.035,925,573,None,Move,development
+1568279781.043,924,574,None,Move,development
+1568279781.051,924,575,None,Move,development
+1568279781.059,924,575,None,Move,development
+1568279781.069,924,575,None,Move,development
+1568279781.075,924,576,None,Move,development
+1568279781.1120002,924,576,Left,Pressed,development
+1568279781.236,924,576,Left,Released,development
+1568279781.742,924,575,None,Move,office
+1568279781.75,924,563,None,Move,office
+1568279781.758,925,550,None,Move,office
+1568279781.766,926,533,None,Move,office
+1568279781.774,926,514,None,Move,office
+1568279781.782,929,491,None,Move,office
+1568279781.79,930,466,None,Move,office
+1568279781.796,932,443,None,Move,office
+1568279781.804,933,421,None,Move,office
+1568279781.812,936,395,None,Move,office
+1568279781.82,939,369,None,Move,office
+1568279781.8279998,942,346,None,Move,office
+1568279781.836,943,329,None,Move,office
+1568279781.844,946,311,None,Move,office
+1568279781.8520002,949,298,None,Move,office
+1568279781.86,954,284,None,Move,office
+1568279781.8679998,959,271,None,Move,office
+1568279781.8739998,965,263,None,Move,office
+1568279781.8820002,968,256,None,Move,office
+1568279781.89,970,253,None,Move,office
+1568279781.8979998,971,252,None,Move,office
+1568279781.911,972,252,None,Move,office
+1568279781.916,973,251,None,Move,office
+1568279781.9220002,973,251,None,Move,office
+1568279782.1360002,973,251,None,Move,office
+1568279782.1479998,972,252,None,Move,office
+1568279782.154,969,254,None,Move,office
+1568279782.1620002,964,260,None,Move,office
+1568279782.17,958,267,None,Move,office
+1568279782.178,952,273,None,Move,office
+1568279782.186,945,279,None,Move,office
+1568279782.194,939,285,None,Move,office
+1568279782.2029998,933,294,None,Move,office
+1568279782.211,926,301,None,Move,office
+1568279782.218,917,310,None,Move,office
+1568279782.226,908,320,None,Move,office
+1568279782.232,899,332,None,Move,office
+1568279782.2410002,889,342,None,Move,office
+1568279782.248,879,352,None,Move,office
+1568279782.256,870,361,None,Move,office
+1568279782.264,861,371,None,Move,office
+1568279782.272,852,380,None,Move,office
+1568279782.28,845,388,None,Move,office
+1568279782.288,837,397,None,Move,office
+1568279782.296,830,408,None,Move,office
+1568279782.302,824,419,None,Move,office
+1568279782.31,817,432,None,Move,office
+1568279782.3179998,811,442,None,Move,office
+1568279782.327,806,451,None,Move,office
+1568279782.34,802,459,None,Move,office
+1568279782.347,798,465,None,Move,office
+1568279782.357,794,472,None,Move,office
+1568279782.3660002,790,479,None,Move,office
+1568279782.3739998,782,492,None,Move,office
+1568279782.3820002,776,498,None,Move,office
+1568279782.3979998,764,510,None,Move,office
+1568279782.407,758,516,None,Move,office
+1568279782.416,751,523,None,Move,office
+1568279782.423,745,529,None,Move,office
+1568279782.431,739,535,None,Move,office
+1568279782.438,733,541,None,Move,office
+1568279782.447,727,546,None,Move,office
+1568279782.455,721,552,None,Move,office
+1568279782.464,716,559,None,Move,office
+1568279782.4729998,713,565,None,Move,office
+1568279782.4829998,709,576,None,Move,office
+1568279782.4929998,707,581,None,Move,office
+1568279782.5010002,705,585,None,Move,office
+1568279782.51,702,589,None,Move,office
+1568279782.518,701,593,None,Move,office
+1568279782.525,699,595,None,Move,office
+1568279782.533,698,597,None,Move,office
+1568279782.541,696,598,None,Move,office
+1568279782.549,695,600,None,Move,office
+1568279782.5570002,695,601,None,Move,office
+1568279782.565,694,602,None,Move,office
+1568279782.574,694,603,None,Move,office
+1568279782.583,692,606,None,Move,office
+1568279782.591,692,607,None,Move,office
+1568279782.5979998,692,608,None,Move,office
+1568279782.606,690,610,None,Move,office
+1568279782.6139998,689,613,None,Move,office
+1568279782.6220002,688,618,None,Move,office
+1568279782.63,687,622,None,Move,office
+1568279782.6379998,685,627,None,Move,office
+1568279782.646,683,634,None,Move,office
+1568279782.653,681,640,None,Move,office
+1568279782.661,678,646,None,Move,office
+1568279782.668,676,651,None,Move,office
+1568279782.676,673,660,None,Move,office
+1568279782.684,671,668,None,Move,office
+1568279782.6929998,668,676,None,Move,office
+1568279782.7,666,685,None,Move,office
+1568279782.708,662,693,None,Move,office
+1568279782.717,660,700,None,Move,office
+1568279782.7229998,657,707,None,Move,office
+1568279782.73,655,713,None,Move,office
+1568279782.738,654,719,None,Move,office
+1568279782.746,652,725,None,Move,office
+1568279782.754,650,729,None,Move,office
+1568279782.762,648,731,None,Move,office
+1568279782.77,647,733,None,Move,office
+1568279782.778,647,734,None,Move,office
+1568279782.786,646,735,None,Move,office
+1568279782.829,646,735,Left,Pressed,office
+1568279782.965,646,735,Left,Released,office
+1568279783.725,646,735,None,Move,office
+1568279783.735,646,734,None,Move,office
+1568279783.7429998,646,733,None,Move,office
+1568279783.752,646,731,None,Move,office
+1568279783.7589998,645,730,None,Move,office
+1568279783.7670002,645,728,None,Move,office
+1568279783.775,644,726,None,Move,office
+1568279783.783,644,724,None,Move,office
+1568279783.791,643,723,None,Move,office
+1568279783.798,642,721,None,Move,office
+1568279783.804,641,720,None,Move,office
+1568279783.812,641,719,None,Move,office
+1568279783.82,640,718,None,Move,office
+1568279784.478,640,717,None,Move,office
+1568279784.486,642,712,None,Move,office
+1568279784.495,647,706,None,Move,office
+1568279784.5029998,654,699,None,Move,office
+1568279784.5110002,663,690,None,Move,office
+1568279784.518,673,680,None,Move,office
+1568279784.524,689,665,None,Move,office
+1568279784.533,709,648,None,Move,office
+1568279784.54,737,628,None,Move,office
+1568279784.548,770,598,None,Move,office
+1568279784.5570002,809,565,None,Move,office
+1568279784.564,853,528,None,Move,office
+1568279784.572,908,486,None,Move,office
+1568279784.58,960,445,None,Move,office
+1568279784.5879998,1023,397,None,Move,office
+1568279784.594,1080,353,None,Move,office
+1568279784.603,1138,306,None,Move,office
+1568279784.611,1192,262,None,Move,office
+1568279784.619,1260,218,None,Move,office
+1568279784.627,1317,178,None,Move,office
+1568279784.6339998,1368,143,None,Move,office
+1568279784.6420002,1428,100,None,Move,office
+1568279784.65,1487,58,None,Move,office
+1568279784.6720002,1547,20,None,Move,office
+1568279784.677,1628,-36,None,Move,office
+1568279784.6820002,1661,-24,None,Move,office
+1568279784.688,1685,-13,None,Move,office
+1568279784.696,1701,-11,None,Move,office
+1568279784.705,1711,-9,None,Move,office
+1568279784.712,1723,-9,None,Move,office
+1568279784.72,1737,-12,None,Move,office
+1568279784.728,1756,-13,None,Move,office
+1568279784.7370002,1770,-10,None,Move,office
+1568279784.742,1779,-8,None,Move,office
+1568279784.7510002,1785,-6,None,Move,office
+1568279784.758,1793,-7,None,Move,office
+1568279784.7670002,1799,-5,None,Move,office
+1568279784.775,1805,-5,None,Move,office
+1568279784.783,1809,-6,None,Move,office
+1568279784.791,1813,-5,None,Move,office
+1568279784.798,1817,-4,None,Move,office
+1568279784.8070002,1822,-7,None,Move,office
+1568279784.813,1828,-5,None,Move,office
+1568279784.821,1836,-6,None,Move,office
+1568279784.829,1843,-6,None,Move,office
+1568279784.837,1850,-7,None,Move,office
+1568279784.844,1857,-5,None,Move,office
+1568279784.853,1860,-5,None,Move,office
+1568279784.861,1862,-4,None,Move,office
+1568279784.869,1865,-6,None,Move,office
+1568279784.877,1868,-4,None,Move,office
+1568279784.883,1873,-6,None,Move,office
+1568279784.89,1879,-7,None,Move,office
+1568279784.8979998,1885,-6,None,Move,office
+1568279784.906,1892,-7,None,Move,office
+1568279784.915,1898,-4,None,Move,office
+1568279784.9220002,1901,-2,None,Move,office
+1568279784.93,1903,-2,None,Move,office
+1568279784.938,1904,-1,None,Move,office
+1568279784.946,1905,-1,None,Move,office
+1568279784.955,1905,0,None,Move,office
+1568279784.961,1905,0,None,Move,office
+1568279785.145,1905,0,None,Move,office
+1568279785.157,1905,0,None,Move,office
+1568279785.165,1904,0,None,Move,office
+1568279785.171,1904,0,None,Move,office
+1568279785.179,1903,0,None,Move,office
+1568279785.187,1903,0,None,Move,office
+1568279785.195,1902,0,None,Move,office
+1568279785.202,1901,0,None,Move,office
+1568279785.21,1901,0,None,Move,office
+1568279785.219,1900,0,None,Move,office
+1568279785.335,1900,0,Left,Pressed,office
+1568279785.446,1900,0,Left,Released,office
+1568279785.5029998,1900,0,None,Move,file system
+1568279785.531,1899,1,None,Move,file system
+1568279785.556,1897,2,None,Move,file system
+1568279785.572,1894,5,None,Move,file system
+1568279785.5879998,1885,13,None,Move,file system
+1568279785.605,1851,33,None,Move,file system
+1568279785.62,1804,55,None,Move,file system
+1568279785.637,1753,79,None,Move,file system
+1568279785.65,1727,90,None,Move,file system
+1568279785.658,1698,104,None,Move,file system
+1568279785.671,1635,139,None,Move,file system
+1568279785.68,1603,157,None,Move,file system
+1568279785.6920002,1541,184,None,Move,file system
+1568279785.7029998,1507,199,None,Move,file system
+1568279785.712,1446,221,None,Move,file system
+1568279785.72,1415,234,None,Move,file system
+1568279785.728,1389,246,None,Move,file system
+1568279785.736,1361,261,None,Move,file system
+1568279785.744,1337,272,None,Move,file system
+1568279785.75,1320,280,None,Move,file system
+1568279785.758,1301,290,None,Move,file system
+1568279785.766,1284,303,None,Move,file system
+1568279785.774,1262,322,None,Move,file system
+1568279785.782,1241,339,None,Move,file system
+1568279785.79,1222,352,None,Move,file system
+1568279785.798,1208,363,None,Move,file system
+1568279785.806,1199,370,None,Move,file system
+1568279785.814,1191,379,None,Move,file system
+1568279785.82,1183,388,None,Move,file system
+1568279785.8279998,1175,395,None,Move,file system
+1568279785.836,1168,402,None,Move,file system
+1568279785.844,1160,409,None,Move,file system
+1568279785.8520002,1154,415,None,Move,file system
+1568279785.86,1148,422,None,Move,file system
+1568279785.8679998,1142,428,None,Move,file system
+1568279785.8760002,1134,434,None,Move,file system
+1568279785.8839998,1128,441,None,Move,file system
+1568279785.89,1119,447,None,Move,file system
+1568279785.8979998,1112,453,None,Move,file system
+1568279785.909,1106,461,None,Move,file system
+1568279785.915,1099,467,None,Move,file system
+1568279785.9220002,1093,473,None,Move,file system
+1568279785.93,1087,478,None,Move,file system
+1568279785.938,1082,484,None,Move,file system
+1568279785.946,1076,487,None,Move,file system
+1568279785.954,1073,490,None,Move,file system
+1568279785.96,1069,492,None,Move,file system
+1568279785.968,1066,494,None,Move,file system
+1568279785.976,1064,496,None,Move,file system
+1568279785.984,1062,497,None,Move,file system
+1568279785.992,1061,499,None,Move,file system
+1568279786.0,1060,499,None,Move,file system
+1568279786.01,1059,499,None,Move,file system
+1568279786.02,1059,500,None,Move,file system
+1568279786.16,1058,498,None,Move,file system
+1568279786.168,1056,486,None,Move,file system
+1568279786.174,1054,467,None,Move,file system
+1568279786.1829998,1050,439,None,Move,file system
+1568279786.19,1047,410,None,Move,file system
+1568279786.198,1041,384,None,Move,file system
+1568279786.207,1031,356,None,Move,file system
+1568279786.214,1022,331,None,Move,file system
+1568279786.222,1013,308,None,Move,file system
+1568279786.23,1000,284,None,Move,file system
+1568279786.2389998,988,263,None,Move,file system
+1568279786.245,978,251,None,Move,file system
+1568279786.2529998,971,243,None,Move,file system
+1568279786.26,963,236,None,Move,file system
+1568279786.268,957,231,None,Move,file system
+1568279786.276,950,226,None,Move,file system
+1568279786.284,943,223,None,Move,file system
+1568279786.292,934,220,None,Move,file system
+1568279786.3,926,218,None,Move,file system
+1568279786.3079998,919,216,None,Move,file system
+1568279786.316,913,214,None,Move,file system
+1568279786.322,911,213,None,Move,file system
+1568279786.331,910,212,None,Move,file system
+1568279786.3379998,909,212,None,Move,file system
+1568279786.3579998,909,212,None,Move,file system
+1568279786.53,909,214,None,Move,file system
+1568279786.5370002,915,219,None,Move,file system
+1568279786.544,921,226,None,Move,file system
+1568279786.552,923,228,None,Move,file system
+1568279786.56,923,228,None,Move,file system
+1568279786.5679998,923,229,None,Move,file system
+1568279786.576,923,230,None,Move,file system
+1568279786.585,923,233,None,Move,file system
+1568279786.592,923,239,None,Move,file system
+1568279786.6,922,244,None,Move,file system
+1568279786.6079998,922,250,None,Move,file system
+1568279786.6139998,921,255,None,Move,file system
+1568279786.6220002,921,261,None,Move,file system
+1568279786.63,921,265,None,Move,file system
+1568279786.6379998,921,268,None,Move,file system
+1568279786.646,921,270,None,Move,file system
+1568279786.654,921,274,None,Move,file system
+1568279786.6620002,921,276,None,Move,file system
+1568279786.67,920,278,None,Move,file system
+1568279786.678,920,280,None,Move,file system
+1568279786.684,920,281,None,Move,file system
+1568279786.6920002,919,282,None,Move,file system
+1568279786.7,919,283,None,Move,file system
+1568279786.708,919,284,None,Move,file system
+1568279786.716,919,285,None,Move,file system
+1568279786.724,919,287,None,Move,file system
+1568279786.778,919,287,None,Move,file system
+1568279786.79,919,285,None,Move,file system
+1568279786.798,917,282,None,Move,file system
+1568279786.8070002,914,277,None,Move,file system
+1568279786.815,910,271,None,Move,file system
+1568279786.82,906,265,None,Move,file system
+1568279786.8279998,903,259,None,Move,file system
+1568279786.836,901,254,None,Move,file system
+1568279786.845,899,247,None,Move,file system
+1568279786.8520002,897,241,None,Move,file system
+1568279786.861,894,234,None,Move,file system
+1568279786.8679998,892,227,None,Move,file system
+1568279786.8760002,890,220,None,Move,file system
+1568279786.8839998,888,213,None,Move,file system
+1568279786.891,885,205,None,Move,file system
+1568279786.8979998,882,198,None,Move,file system
+1568279786.907,880,192,None,Move,file system
+1568279786.915,878,187,None,Move,file system
+1568279786.9220002,878,181,None,Move,file system
+1568279786.93,877,177,None,Move,file system
+1568279786.938,877,175,None,Move,file system
+1568279786.946,877,173,None,Move,file system
+1568279786.955,877,172,None,Move,file system
+1568279786.961,877,171,None,Move,file system
+1568279786.968,877,169,None,Move,file system
+1568279786.9770002,878,169,None,Move,file system
+1568279786.985,879,167,None,Move,file system
+1568279786.9929998,880,166,None,Move,file system
+1568279787.0,883,165,None,Move,file system
+1568279787.008,888,162,None,Move,file system
+1568279787.0170002,897,160,None,Move,file system
+1568279787.024,910,156,None,Move,file system
+1568279787.031,925,153,None,Move,file system
+1568279787.039,943,150,None,Move,file system
+1568279787.0470002,963,148,None,Move,file system
+1568279787.054,987,145,None,Move,file system
+1568279787.063,1015,142,None,Move,file system
+1568279787.07,1049,138,None,Move,file system
+1568279787.0779998,1087,139,None,Move,file system
+1568279787.086,1129,143,None,Move,file system
+1568279787.094,1173,146,None,Move,file system
+1568279787.1020002,1225,148,None,Move,file system
+1568279787.11,1274,145,None,Move,file system
+1568279787.1160002,1325,134,None,Move,file system
+1568279787.1239998,1376,122,None,Move,file system
+1568279787.1320002,1420,107,None,Move,file system
+1568279787.14,1460,96,None,Move,file system
+1568279787.1479998,1491,82,None,Move,file system
+1568279787.165,1554,54,None,Move,file system
+1568279787.173,1585,40,None,Move,file system
+1568279787.206,1682,9,None,Move,file system
+1568279787.211,1698,-1,None,Move,file system
+1568279787.2389998,1729,-21,None,Move,file system
+1568279787.2470002,1736,-4,None,Move,file system
+1568279787.2529998,1741,-3,None,Move,file system
+1568279787.2589998,1742,-1,None,Move,file system
+1568279787.264,1743,-1,None,Move,file system
+1568279787.272,1744,0,None,Move,file system
+1568279787.35,1744,-1,None,Move,file system
+1568279787.3579998,1743,0,None,Move,file system
+1568279787.37,1743,0,None,Move,file system
+1568279787.3779998,1742,0,None,Move,file system
+1568279787.3860002,1742,0,None,Move,file system
+1568279787.394,1741,0,None,Move,file system
+1568279787.4,1741,0,None,Move,file system
+1568279787.4120002,1740,0,None,Move,file system
+1568279787.4320002,1740,0,None,Move,file system
+1568279787.44,1740,0,None,Move,file system
+1568279787.448,1741,1,None,Move,file system
+1568279787.456,1742,2,None,Move,file system
+1568279787.462,1744,3,None,Move,file system
+1568279787.47,1747,3,None,Move,file system
+1568279787.478,1749,3,None,Move,file system
+1568279787.4870002,1751,3,None,Move,file system
+1568279787.494,1752,3,None,Move,file system
+1568279787.502,1753,3,None,Move,file system
+1568279787.51,1753,3,None,Move,file system
+1568279787.597,1753,3,None,Move,file system
+1568279787.606,1753,3,None,Move,file system
+1568279787.6139998,1753,3,None,Move,file system
+1568279787.778,1753,4,Left,Pressed,file system
+1568279787.778,1753,4,None,Drag,file system
+1568279787.79,1753,4,None,Drag,file system
+1568279787.798,1754,5,None,Drag,file system
+1568279787.806,1757,6,None,Drag,file system
+1568279787.816,1762,8,None,Drag,file system
+1568279787.825,1769,10,None,Drag,file system
+1568279787.832,1781,13,None,Drag,file system
+1568279787.84,1795,18,None,Drag,file system
+1568279787.8520002,1848,41,None,Drag,file system
+1568279787.861,1892,56,None,Drag,file system
+1568279787.869,1938,69,None,Drag,file system
+1568279787.8820002,1993,92,None,Drag,file system
+1568279787.89,2057,124,None,Drag,file system
+1568279787.895,2117,149,None,Drag,file system
+1568279787.901,2184,181,None,Drag,file system
+1568279787.916,2325,252,None,Drag,file system
+1568279787.926,2399,287,None,Drag,file system
+1568279787.934,2475,316,None,Drag,file system
+1568279787.951,2644,387,None,Drag,file system
+1568279787.961,2810,449,None,Drag,file system
+1568279787.978,2970,504,None,Drag,file system
+1568279787.9870002,3046,528,None,Drag,file system
+1568279787.994,3110,540,None,Drag,file system
+1568279788.0,3167,554,None,Drag,file system
+1568279788.014,3220,564,None,Drag,file system
+1568279788.025,3313,581,None,Drag,file system
+1568279788.033,3353,590,None,Drag,file system
+1568279788.039,3389,594,None,Drag,file system
+1568279788.0470002,3414,595,None,Drag,file system
+1568279788.055,3434,596,None,Drag,file system
+1568279788.065,3448,594,None,Drag,file system
+1568279788.072,3462,587,None,Drag,file system
+1568279788.082,3472,578,None,Drag,file system
+1568279788.089,3480,568,None,Drag,file system
+1568279788.096,3486,554,None,Drag,file system
+1568279788.103,3489,536,None,Drag,file system
+1568279788.11,3490,511,None,Drag,file system
+1568279788.117,3490,475,None,Drag,file system
+1568279788.125,3490,435,None,Drag,file system
+1568279788.1320002,3492,396,None,Drag,file system
+1568279788.141,3496,352,None,Drag,file system
+1568279788.149,3499,308,None,Drag,file system
+1568279788.157,3506,268,None,Drag,file system
+1568279788.165,3524,219,None,Drag,file system
+1568279788.1720002,3539,177,None,Drag,file system
+1568279788.181,3550,137,None,Drag,file system
+1568279788.186,3554,101,None,Drag,file system
+1568279788.195,3557,75,None,Drag,file system
+1568279788.202,3561,49,None,Drag,file system
+1568279788.211,3570,14,None,Drag,file system
+1568279788.218,3579,-27,None,Drag,file system
+1568279788.2270002,3594,-38,None,Drag,file system
+1568279788.235,3609,-39,None,Drag,file system
+1568279788.242,3619,-33,None,Drag,file system
+1568279788.248,3628,-32,None,Drag,file system
+1568279788.258,3631,-28,None,Drag,file system
+1568279788.265,3631,-22,None,Drag,file system
+1568279788.274,3629,-21,None,Drag,file system
+1568279788.284,3626,-20,None,Drag,file system
+1568279788.289,3624,-18,None,Drag,file system
+1568279788.296,3623,-14,None,Drag,file system
+1568279788.304,3623,-12,None,Drag,file system
+1568279788.313,3623,-13,None,Drag,file system
+1568279788.3179998,3622,-13,None,Drag,file system
+1568279788.327,3619,-12,None,Drag,file system
+1568279788.334,3619,-8,None,Drag,file system
+1568279788.351,3619,-13,None,Drag,file system
+1568279788.363,3620,-5,None,Drag,file system
+1568279788.37,3621,-2,None,Drag,file system
+1568279788.385,3622,-2,None,Drag,file system
+1568279788.385,3622,-2,Left,Released,file system
+1568279788.448,3622,0,None,Move,file system
+1568279788.467,3614,6,None,Move,file system
+1568279788.479,3602,17,None,Move,file system
+1568279788.488,3593,23,None,Move,file system
+1568279788.5010002,3583,31,None,Move,file system
+1568279788.514,3548,50,None,Move,file system
+1568279788.531,3479,86,None,Move,file system
+1568279788.55,3327,156,None,Move,file system
+1568279788.5679998,3206,206,None,Move,file system
+1568279788.586,3072,255,None,Move,file system
+1568279788.604,2848,318,None,Move,file system
+1568279788.6160002,2768,335,None,Move,file system
+1568279788.6260002,2687,359,None,Move,file system
+1568279788.644,2445,445,None,Move,file system
+1568279788.6520002,2362,467,None,Move,file system
+1568279788.6620002,2270,494,None,Move,file system
+1568279788.67,2189,522,None,Move,file system
+1568279788.679,2096,556,None,Move,file system
+1568279788.686,2007,585,None,Move,file system
+1568279788.695,1921,612,None,Move,file system
+1568279788.7029998,1837,634,None,Move,file system
+1568279788.71,1757,646,None,Move,file system
+1568279788.718,1682,668,None,Move,file system
+1568279788.7270002,1613,698,None,Move,file system
+1568279788.735,1550,721,None,Move,file system
+1568279788.744,1483,742,None,Move,file system
+1568279788.752,1370,773,None,Move,file system
+1568279788.76,1320,774,None,Move,file system
+1568279788.7670002,1281,770,None,Move,file system
+1568279788.775,1251,762,None,Move,file system
+1568279788.783,1232,756,None,Move,file system
+1568279788.791,1216,753,None,Move,file system
+1568279788.799,1203,749,None,Move,file system
+1568279788.806,1189,747,None,Move,file system
+1568279788.814,1176,745,None,Move,file system
+1568279788.822,1162,744,None,Move,file system
+1568279788.8279998,1152,742,None,Move,file system
+1568279788.836,1142,742,None,Move,file system
+1568279788.844,1133,742,None,Move,file system
+1568279788.8520002,1126,743,None,Move,file system
+1568279788.86,1120,743,None,Move,file system
+1568279788.8679998,1115,744,None,Move,file system
+1568279788.8760002,1109,746,None,Move,file system
+1568279788.8839998,1104,748,None,Move,file system
+1568279788.8920002,1100,750,None,Move,file system
+1568279788.8979998,1096,751,None,Move,file system
+1568279788.906,1091,751,None,Move,file system
+1568279788.914,1087,751,None,Move,file system
+1568279788.923,1083,750,None,Move,file system
+1568279788.931,1079,748,None,Move,file system
+1568279788.939,1075,747,None,Move,file system
+1568279788.947,1070,745,None,Move,file system
+1568279788.955,1067,743,None,Move,file system
+1568279788.962,1065,742,None,Move,file system
+1568279788.968,1063,740,None,Move,file system
+1568279788.976,1061,739,None,Move,file system
+1568279788.985,1060,737,None,Move,file system
+1568279788.992,1058,736,None,Move,file system
+1568279789.0,1058,734,None,Move,file system
+1568279789.144,1057,734,Left,Pressed,file system
+1568279789.144,1057,734,None,Drag,file system
+1568279789.156,1056,735,None,Drag,file system
+1568279789.164,1050,741,None,Drag,file system
+1568279789.164,1050,741,Left,Released,file system
+1568279789.176,1043,748,None,Move,file system
+1568279789.1829998,1035,755,None,Move,file system
+1568279789.19,1025,764,None,Move,file system
+1568279789.196,1012,773,None,Move,file system
+1568279789.202,1000,783,None,Move,file system
+1568279789.21,990,792,None,Move,file system
+1568279789.218,980,798,None,Move,file system
+1568279789.226,970,807,None,Move,file system
+1568279789.235,961,815,None,Move,file system
+1568279789.242,946,825,None,Move,file system
+1568279789.248,924,843,None,Move,file system
+1568279789.256,894,864,None,Move,file system
+1568279789.264,859,886,None,Move,file system
+1568279789.272,821,908,None,Move,file system
+1568279789.281,779,930,None,Move,file system
+1568279789.288,740,946,None,Move,file system
+1568279789.2970002,699,961,None,Move,file system
+1568279789.305,663,976,None,Move,file system
+1568279789.312,636,982,None,Move,file system
+1568279789.321,609,988,None,Move,file system
+1568279789.326,589,997,None,Move,file system
+1568279789.334,574,1003,None,Move,file system
+1568279789.343,563,1008,None,Move,file system
+1568279789.351,553,1011,None,Move,file system
+1568279789.3579998,545,1013,None,Move,file system
+1568279789.3660002,537,1015,None,Move,file system
+1568279789.375,530,1017,None,Move,file system
+1568279789.3820002,523,1018,None,Move,file system
+1568279789.391,517,1020,None,Move,file system
+1568279789.397,513,1020,None,Move,file system
+1568279789.405,510,1021,None,Move,file system
+1568279789.4120002,508,1021,None,Move,file system
+1568279789.42,507,1021,None,Move,file system
+1568279789.428,506,1021,None,Move,file system
+1568279789.437,505,1021,None,Move,file system
+1568279789.445,504,1021,None,Move,file system
+1568279789.4529998,503,1021,None,Move,file system
+1568279789.461,502,1021,None,Move,file system
+1568279789.466,500,1020,None,Move,file system
+1568279789.474,499,1019,None,Move,file system
+1568279789.4829998,496,1018,None,Move,file system
+1568279789.4910002,491,1017,None,Move,file system
+1568279789.498,486,1017,None,Move,file system
+1568279789.5070002,481,1017,None,Move,file system
+1568279789.515,475,1017,None,Move,file system
+1568279789.522,469,1018,None,Move,file system
+1568279789.531,464,1020,None,Move,file system
+1568279789.536,458,1022,None,Move,file system
+1568279789.545,451,1024,None,Move,file system
+1568279789.553,445,1026,None,Move,file system
+1568279789.561,438,1028,None,Move,file system
+1568279789.5679998,432,1030,None,Move,file system
+1568279789.577,425,1032,None,Move,file system
+1568279789.585,419,1035,None,Move,file system
+1568279789.593,414,1037,None,Move,file system
+1568279789.601,409,1039,None,Move,file system
+1568279789.6079998,408,1040,None,Move,file system
+1568279789.6139998,406,1041,None,Move,file system
+1568279789.6220002,405,1043,None,Move,file system
+1568279789.631,403,1044,None,Move,file system
+1568279789.6379998,402,1046,None,Move,file system
+1568279789.646,401,1047,None,Move,file system
+1568279789.655,398,1049,None,Move,file system
+1568279789.6620002,395,1051,None,Move,file system
+1568279789.671,393,1053,None,Move,file system
+1568279789.677,389,1054,None,Move,file system
+1568279789.685,385,1056,None,Move,file system
+1568279789.6929998,381,1058,None,Move,file system
+1568279789.701,376,1060,None,Move,file system
+1568279789.708,372,1061,None,Move,file system
+1568279789.716,367,1063,None,Move,file system
+1568279789.724,361,1065,None,Move,file system
+1568279789.7329998,357,1067,None,Move,file system
+1568279789.7410002,351,1068,None,Move,file system
+1568279789.746,348,1069,None,Move,file system
+1568279789.755,344,1070,None,Move,file system
+1568279789.762,339,1071,None,Move,file system
+1568279789.77,334,1072,None,Move,file system
+1568279789.778,328,1073,None,Move,file system
+1568279789.7870002,323,1073,None,Move,file system
+1568279789.794,316,1073,None,Move,file system
+1568279789.802,310,1072,None,Move,file system
+1568279789.811,304,1070,None,Move,file system
+1568279789.8170002,300,1068,None,Move,file system
+1568279789.824,297,1067,None,Move,file system
+1568279789.832,294,1065,None,Move,file system
+1568279789.84,292,1064,None,Move,file system
+1568279789.849,290,1062,None,Move,file system
+1568279789.856,289,1062,None,Move,file system
+1568279789.8639998,286,1061,None,Move,file system
+1568279789.8720002,285,1060,None,Move,file system
+1568279789.88,284,1059,None,Move,file system
+1568279789.8879998,281,1058,None,Move,file system
+1568279789.894,280,1057,None,Move,file system
+1568279789.906,278,1055,None,Move,file system
+1568279789.911,276,1054,None,Move,file system
+1568279789.918,275,1053,None,Move,file system
+1568279789.927,273,1052,None,Move,file system
+1568279789.935,272,1050,None,Move,file system
+1568279789.9429998,271,1049,None,Move,file system
+1568279789.951,269,1049,None,Move,file system
+1568279789.958,268,1048,None,Move,file system
+1568279789.964,267,1047,None,Move,file system
+1568279789.9729998,265,1047,None,Move,file system
+1568279789.98,264,1046,None,Move,file system
+1568279789.988,263,1046,None,Move,file system
+1568279789.9970002,260,1046,None,Move,file system
+1568279790.005,258,1046,None,Move,file system
+1568279790.012,253,1046,None,Move,file system
+1568279790.021,247,1048,None,Move,file system
+1568279790.028,242,1050,None,Move,file system
+1568279790.034,236,1052,None,Move,file system
+1568279790.042,231,1054,None,Move,file system
+1568279790.051,229,1055,None,Move,file system
+1568279790.0579998,228,1056,None,Move,file system
+1568279790.066,226,1057,None,Move,file system
+1568279790.075,226,1058,None,Move,file system
+1568279790.082,225,1058,None,Move,file system
+1568279790.094,225,1059,None,Move,file system
+1568279790.113,225,1059,None,Move,file system
+1568279790.133,225,1060,None,Move,file system
+1568279790.16,225,1061,None,Move,file system
+1568279790.168,225,1061,None,Move,file system
+1568279790.174,225,1062,None,Move,file system
+1568279790.1820002,225,1062,None,Move,file system
+1568279790.19,225,1062,None,Move,file system
+1568279790.198,225,1063,None,Move,file system
+1568279790.207,225,1063,None,Move,file system
+1568279790.215,226,1065,None,Move,file system
+1568279790.2229998,226,1065,None,Move,file system
+1568279790.231,226,1066,None,Move,file system
+1568279790.2389998,226,1066,None,Move,file system
+1568279790.246,227,1067,None,Move,file system
+1568279790.252,227,1067,None,Move,file system
+1568279790.305,227,1067,Left,Pressed,file system
+1568279790.4529998,227,1067,Left,Released,file system
+1568279791.272,227,1067,None,Move,file system
+1568279791.28,227,1067,None,Move,file system
+1568279791.288,227,1065,None,Move,file system
+1568279791.296,227,1063,None,Move,file system
+1568279791.304,227,1060,None,Move,file system
+1568279791.312,227,1056,None,Move,file system
+1568279791.32,228,1053,None,Move,file system
+1568279791.326,229,1049,None,Move,file system
+1568279791.3379998,231,1044,None,Move,file system
+1568279791.345,232,1042,None,Move,file system
+1568279791.351,234,1040,None,Move,file system
+1568279791.3579998,234,1038,None,Move,file system
+1568279791.3660002,236,1037,None,Move,file system
+1568279791.3739998,237,1035,None,Move,file system
+1568279791.3820002,239,1034,None,Move,file system
+1568279791.39,239,1033,None,Move,file system
+1568279791.396,241,1032,None,Move,file system
+1568279791.404,241,1031,None,Move,file system
+1568279791.4120002,242,1029,None,Move,file system
+1568279791.42,243,1029,None,Move,file system
+1568279791.429,243,1028,None,Move,file system
+1568279791.436,245,1027,None,Move,file system
+1568279791.444,246,1026,None,Move,file system
+1568279791.452,247,1025,None,Move,file system
+1568279791.461,249,1023,None,Move,file system
+1568279791.466,250,1022,None,Move,file system
+1568279791.475,252,1020,None,Move,file system
+1568279791.4829998,254,1018,None,Move,file system
+1568279791.49,255,1017,None,Move,file system
+1568279791.498,257,1015,None,Move,file system
+1568279791.506,258,1014,None,Move,file system
+1568279791.514,260,1012,None,Move,file system
+1568279791.522,261,1011,None,Move,file system
+1568279791.53,262,1010,None,Move,file system
+1568279791.5370002,264,1008,None,Move,file system
+1568279791.545,265,1007,None,Move,file system
+1568279791.553,267,1005,None,Move,file system
+1568279791.56,268,1004,None,Move,file system
+1568279791.5679998,270,1002,None,Move,file system
+1568279791.576,271,1001,None,Move,file system
+1568279791.586,272,1000,None,Move,file system
+1568279791.593,274,999,None,Move,file system
+1568279791.601,275,998,None,Move,file system
+1568279791.607,277,997,None,Move,file system
+1568279791.615,278,996,None,Move,file system
+1568279791.623,278,996,None,Move,file system
+1568279791.631,279,995,None,Move,file system
+1568279791.6379998,280,995,None,Move,file system
+1568279791.646,280,994,None,Move,file system
+1568279792.12,280,994,Left,Pressed,file system
+1568279792.121,280,994,None,Drag,file system
+1568279792.137,278,994,None,Drag,file system
+1568279792.144,273,994,None,Drag,file system
+1568279792.1520002,269,993,None,Drag,file system
+1568279792.16,263,991,None,Drag,file system
+1568279792.168,257,990,None,Drag,file system
+1568279792.176,250,988,None,Drag,file system
+1568279792.1820002,242,986,None,Drag,file system
+1568279792.19,234,985,None,Drag,file system
+1568279792.198,226,985,None,Drag,file system
+1568279792.206,212,984,None,Drag,file system
+1568279792.214,197,982,None,Drag,file system
+1568279792.222,184,979,None,Drag,file system
+1568279792.235,171,979,None,Drag,file system
+1568279792.255,139,982,None,Drag,file system
+1568279792.272,123,982,None,Drag,file system
+1568279792.284,117,982,None,Drag,file system
+1568279792.3,113,982,None,Drag,file system
+1568279792.3,113,982,Left,Released,file system
+1568279792.436,112,982,None,Move,file system
+1568279792.475,112,982,Left,Pressed,file system
+1568279792.627,112,982,Left,Released,file system
+1568279793.041,112,982,None,Move,file system
+1568279793.05,126,968,None,Move,file system
+1568279793.0570002,155,939,None,Move,file system
+1568279793.066,180,908,None,Move,file system
+1568279793.073,204,875,None,Move,file system
+1568279793.083,230,842,None,Move,file system
+1568279793.092,252,814,None,Move,file system
+1568279793.101,271,794,None,Move,file system
+1568279793.1079998,295,770,None,Move,file system
+1568279793.115,319,744,None,Move,file system
+1568279793.1220002,348,715,None,Move,file system
+1568279793.129,370,690,None,Move,file system
+1568279793.137,393,662,None,Move,file system
+1568279793.146,415,636,None,Move,file system
+1568279793.155,430,617,None,Move,file system
+1568279793.165,449,585,None,Move,file system
+1568279793.173,455,575,None,Move,file system
+1568279793.1820002,462,565,None,Move,file system
+1568279793.1929998,468,556,None,Move,file system
+1568279793.204,477,544,None,Move,file system
+1568279793.214,479,540,None,Move,file system
+1568279793.2229998,481,538,None,Move,file system
+1568279793.232,481,537,None,Move,file system
+1568279793.708,482,537,None,Move,file system
+1568279793.716,501,544,None,Move,file system
+1568279793.724,540,562,None,Move,file system
+1568279793.732,577,579,None,Move,file system
+1568279793.74,602,588,None,Move,file system
+1568279793.748,619,593,None,Move,file system
+1568279793.756,626,595,None,Move,file system
+1568279793.764,630,595,None,Move,file system
+1568279793.77,634,595,None,Move,file system
+1568279793.778,640,597,None,Move,file system
+1568279793.786,645,598,None,Move,file system
+1568279793.794,652,599,None,Move,file system
+1568279793.802,658,600,None,Move,file system
+1568279793.81,663,601,None,Move,file system
+1568279793.8179998,668,601,None,Move,file system
+1568279793.826,671,602,None,Move,file system
+1568279793.834,672,603,None,Move,file system
+1568279793.84,673,604,None,Move,file system
+1568279793.8479998,677,606,None,Move,file system
+1568279793.856,682,607,None,Move,file system
+1568279793.8639998,689,610,None,Move,file system
+1568279793.8720002,695,612,None,Move,file system
+1568279793.881,701,618,None,Move,file system
+1568279793.8879998,709,624,None,Move,file system
+1568279793.8979998,717,630,None,Move,file system
+1568279793.904,726,637,None,Move,file system
+1568279793.91,735,643,None,Move,file system
+1568279793.918,743,649,None,Move,file system
+1568279793.926,751,654,None,Move,file system
+1568279793.934,757,657,None,Move,file system
+1568279793.9420002,762,659,None,Move,file system
+1568279793.951,765,660,None,Move,file system
+1568279793.958,766,661,None,Move,file system
+1568279793.966,767,661,None,Move,file system
+1568279794.033,767,661,None,Move,file system
+1568279794.044,767,661,None,Move,file system
+1568279794.051,767,660,None,Move,file system
+1568279794.0579998,766,660,None,Move,file system
+1568279794.0670002,766,659,None,Move,file system
+1568279794.0779998,766,659,None,Move,file system
+1568279794.087,766,658,None,Move,file system
+1568279794.095,766,657,None,Move,file system
+1568279794.1020002,766,656,None,Move,file system
+1568279794.1139998,766,656,None,Move,file system
+1568279794.12,766,655,None,Move,file system
+1568279794.218,766,655,None,Move,file system
+1568279794.2270002,766,654,None,Move,file system
+1568279794.234,767,654,None,Move,file system
+1568279794.464,767,654,None,Move,file system
+1568279794.5370002,767,654,None,Move,file system
+1568279794.705,767,655,None,Move,file system
+1568279794.717,768,655,None,Move,file system
+1568279794.725,768,656,None,Move,file system
+1568279794.7410002,768,656,None,Move,file system
+1568279794.7489998,768,658,None,Move,file system
+1568279794.7570002,769,658,None,Move,file system
+1568279794.762,769,659,None,Move,file system
+1568279794.771,770,661,None,Move,file system
+1568279794.778,770,662,None,Move,file system
+1568279794.7870002,771,663,None,Move,file system
+1568279794.795,771,664,None,Move,file system
+1568279794.803,772,665,None,Move,file system
+1568279794.811,772,667,None,Move,file system
+1568279794.819,773,668,None,Move,file system
+1568279794.827,774,669,None,Move,file system
+1568279794.833,774,671,None,Move,file system
+1568279794.841,774,671,None,Move,file system
+1568279794.8479998,775,673,None,Move,file system
+1568279794.856,775,673,None,Move,file system
+1568279794.865,777,674,None,Move,file system
+1568279794.8720002,777,675,None,Move,file system
+1568279794.88,778,676,None,Move,file system
+1568279794.8879998,780,678,None,Move,file system
+1568279794.896,781,678,None,Move,file system
+1568279794.905,783,678,None,Move,file system
+1568279794.911,785,678,None,Move,file system
+1568279794.918,787,678,None,Move,file system
+1568279794.926,792,679,None,Move,file system
+1568279794.934,799,679,None,Move,file system
+1568279794.9420002,806,680,None,Move,file system
+1568279794.95,816,682,None,Move,file system
+1568279794.958,830,685,None,Move,file system
+1568279794.967,845,688,None,Move,file system
+1568279794.975,859,690,None,Move,file system
+1568279794.981,872,693,None,Move,file system
+1568279794.988,883,695,None,Move,file system
+1568279794.996,891,697,None,Move,file system
+1568279795.004,897,698,None,Move,file system
+1568279795.012,905,698,None,Move,file system
+1568279795.021,913,699,None,Move,file system
+1568279795.029,922,699,None,Move,file system
+1568279795.0370002,933,698,None,Move,file system
+1568279795.045,947,695,None,Move,file system
+1568279795.05,960,693,None,Move,file system
+1568279795.0579998,973,691,None,Move,file system
+1568279795.066,983,689,None,Move,file system
+1568279795.075,991,687,None,Move,file system
+1568279795.083,997,686,None,Move,file system
+1568279795.091,1002,685,None,Move,file system
+1568279795.099,1008,683,None,Move,file system
+1568279795.106,1014,681,None,Move,file system
+1568279795.115,1018,679,None,Move,file system
+1568279795.12,1023,678,None,Move,file system
+1568279795.129,1024,678,None,Move,file system
+1568279795.137,1025,677,None,Move,file system
+1568279795.144,1025,677,None,Move,file system
+1568279795.181,1025,677,Left,Pressed,file system
+1568279795.335,1025,677,Left,Released,file system
+1568279795.4,1025,677,None,Move,file system
+1568279795.4120002,1025,677,None,Move,file system
+1568279795.42,1025,677,None,Move,file system
+1568279795.4320002,1024,677,None,Move,file system
+1568279795.449,1023,677,None,Move,file system
+1568279795.461,1023,677,None,Move,file system
+1568279795.6620002,1022,677,None,Move,file system
+1568279795.696,1022,677,None,Move,file system
+1568279796.242,1021,677,None,Move,file system
+1568279796.254,1021,677,None,Move,file system
+1568279797.7,1020,677,None,Move,file system
+1568279797.708,1019,677,None,Move,file system
+1568279797.716,1017,678,None,Move,file system
+1568279797.724,1016,679,None,Move,file system
+1568279797.732,1015,680,None,Move,file system
+1568279797.74,1014,681,None,Move,file system
+1568279797.748,1013,682,None,Move,file system
+1568279797.756,1011,684,None,Move,file system
+1568279797.765,1010,685,None,Move,file system
+1568279797.772,1010,686,None,Move,file system
+1568279797.781,1008,688,None,Move,file system
+1568279797.7870002,1008,689,None,Move,file system
+1568279797.794,1006,690,None,Move,file system
+1568279797.802,1005,692,None,Move,file system
+1568279797.81,1003,693,None,Move,file system
+1568279797.8179998,1002,696,None,Move,file system
+1568279797.826,1001,697,None,Move,file system
+1568279797.835,1000,699,None,Move,file system
+1568279797.844,999,701,None,Move,file system
+1568279797.8520002,998,704,None,Move,file system
+1568279797.8579998,997,707,None,Move,file system
+1568279797.8639998,995,709,None,Move,file system
+1568279797.8720002,994,711,None,Move,file system
+1568279797.88,993,714,None,Move,file system
+1568279797.8879998,992,717,None,Move,file system
+1568279797.8979998,991,720,None,Move,file system
+1568279797.913,991,730,None,Move,file system
+1568279797.9329998,991,741,None,Move,file system
+1568279797.947,990,752,None,Move,file system
+1568279797.962,990,760,None,Move,file system
+1568279797.9770002,989,767,None,Move,file system
+1568279797.9989998,989,775,None,Move,file system
+1568279798.016,991,778,None,Move,file system
+1568279798.036,993,783,None,Move,file system
+1568279798.051,995,789,None,Move,file system
+1568279798.059,998,796,None,Move,file system
+1568279798.066,999,799,None,Move,file system
+1568279798.074,1001,801,None,Move,file system
+1568279798.082,1002,804,None,Move,file system
+1568279798.09,1004,808,None,Move,file system
+1568279798.0979998,1006,811,None,Move,file system
+1568279798.106,1007,814,None,Move,file system
+1568279798.1139998,1009,819,None,Move,file system
+1568279798.1220002,1011,823,None,Move,file system
+1568279798.1279998,1013,828,None,Move,file system
+1568279798.1360002,1016,832,None,Move,file system
+1568279798.144,1017,834,None,Move,file system
+1568279798.1520002,1018,835,None,Move,file system
+1568279798.16,1018,837,None,Move,file system
+1568279798.168,1019,838,None,Move,file system
+1568279798.176,1020,839,None,Move,file system
+1568279798.184,1020,839,None,Move,file system
+1568279798.1920002,1020,840,None,Move,file system
+1568279798.266,1020,840,None,Move,file system
+1568279798.276,1020,841,None,Move,file system
+1568279798.285,1020,841,None,Move,file system
+1568279798.304,1020,841,None,Move,file system
+1568279798.3620002,1020,841,Left,Pressed,file system
+1568279798.531,1020,841,Left,Released,file system
+1568279798.654,1020,841,None,Move,file system
+1568279798.666,1020,841,None,Move,file system
+1568279798.674,1020,839,None,Move,file system
+1568279798.687,1020,839,None,Move,file system
+1568279798.695,1020,838,None,Move,file system
+1568279798.7029998,1020,837,None,Move,file system
+1568279798.708,1020,837,None,Move,file system
+1568279798.717,1020,835,None,Move,file system
+1568279798.724,1020,835,None,Move,file system
+1568279798.7329998,1020,834,None,Move,file system
+1568279798.74,1020,834,None,Move,file system
+1568279798.748,1020,833,None,Move,file system
+1568279798.7570002,1020,832,None,Move,file system
+1568279798.764,1020,832,None,Move,file system
+1568279798.77,1020,831,None,Move,file system
+1568279798.778,1020,831,None,Move,file system
+1568279798.7870002,1020,830,None,Move,file system
+1568279798.794,1020,830,None,Move,file system
+1568279798.803,1020,828,None,Move,file system
+1568279798.81,1020,828,None,Move,file system
+1568279798.822,1020,827,None,Move,file system
+1568279798.831,1020,827,None,Move,file system
+1568279798.8379998,1020,826,None,Move,file system
+1568279798.844,1020,826,None,Move,file system
+1568279798.853,1020,825,None,Move,file system
+1568279798.86,1020,824,None,Move,file system
+1568279798.8679998,1021,824,None,Move,file system
+1568279798.8760002,1021,824,None,Move,file system
+1568279798.885,1021,823,None,Move,file system
+1568279798.896,1021,823,None,Move,file system
+1568279798.904,1022,823,None,Move,file system
+1568279798.9120002,1022,822,None,Move,file system
+1568279798.9429998,1023,822,None,Move,file system
+1568279798.966,1023,821,None,Move,file system
+1568279798.975,1024,821,None,Move,file system
+1568279798.982,1024,820,None,Move,file system
+1568279798.9910002,1024,820,None,Move,file system
+1568279798.996,1025,820,None,Move,file system
+1568279799.005,1025,819,None,Move,file system
+1568279799.012,1025,819,None,Move,file system
+1568279799.021,1025,818,None,Move,file system
+1568279799.033,1026,818,None,Move,file system
+1568279799.041,1026,817,None,Move,file system
+1568279799.048,1027,816,None,Move,file system
+1568279799.0570002,1027,816,None,Move,file system
+1568279799.062,1027,816,None,Move,file system
+1568279799.07,1027,815,None,Move,file system
+1568279799.0779998,1028,815,None,Move,file system
+1568279799.087,1028,815,None,Move,file system
+1568279799.094,1029,814,None,Move,file system
+1568279799.103,1029,813,None,Move,file system
+1568279799.111,1030,812,None,Move,file system
+1568279799.119,1031,812,None,Move,file system
+1568279799.1260002,1031,811,None,Move,file system
+1568279799.133,1031,810,None,Move,file system
+1568279799.14,1032,809,None,Move,file system
+1568279799.1479998,1033,807,None,Move,file system
+1568279799.157,1033,807,None,Move,file system
+1568279799.165,1033,806,None,Move,file system
+1568279799.173,1034,805,None,Move,file system
+1568279799.181,1034,804,None,Move,file system
+1568279799.188,1034,804,None,Move,file system
+1568279799.196,1035,803,None,Move,file system
+1568279799.202,1035,803,None,Move,file system
+1568279799.21,1035,802,None,Move,file system
+1568279806.028,1035,802,None,Move,file system
+1568279806.036,1031,803,None,Move,file system
+1568279806.044,1024,805,None,Move,file system
+1568279806.052,1016,807,None,Move,file system
+1568279806.06,1009,809,None,Move,file system
+1568279806.0679998,1001,811,None,Move,file system
+1568279806.076,995,812,None,Move,file system
+1568279806.084,988,813,None,Move,file system
+1568279806.092,983,813,None,Move,file system
+1568279806.0979998,979,813,None,Move,file system
+1568279806.106,975,813,None,Move,file system
+1568279806.1139998,968,812,None,Move,file system
+1568279806.1220002,963,809,None,Move,file system
+1568279806.13,957,807,None,Move,file system
+1568279806.1379998,951,805,None,Move,file system
+1568279806.146,944,803,None,Move,file system
+1568279806.154,934,800,None,Move,file system
+1568279806.1620002,926,797,None,Move,file system
+1568279806.17,915,795,None,Move,file system
+1568279806.176,906,792,None,Move,file system
+1568279806.184,895,788,None,Move,file system
+1568279806.1920002,882,783,None,Move,file system
+1568279806.2,871,777,None,Move,file system
+1568279806.209,860,770,None,Move,file system
+1568279806.216,850,764,None,Move,file system
+1568279806.224,839,760,None,Move,file system
+1568279806.232,830,755,None,Move,file system
+1568279806.24,823,749,None,Move,file system
+1568279806.2470002,817,745,None,Move,file system
+1568279806.254,811,740,None,Move,file system
+1568279806.262,805,736,None,Move,file system
+1568279806.27,800,732,None,Move,file system
+1568279806.278,798,729,None,Move,file system
+1568279806.286,796,726,None,Move,file system
+1568279806.294,795,724,None,Move,file system
+1568279806.302,794,723,None,Move,file system
+1568279806.31,793,721,None,Move,file system
+1568279806.316,792,719,None,Move,file system
+1568279806.324,792,718,None,Move,file system
+1568279806.332,791,716,None,Move,file system
+1568279806.34,790,714,None,Move,file system
+1568279806.3479998,790,713,None,Move,file system
+1568279806.356,788,712,None,Move,file system
+1568279806.3639998,787,710,None,Move,file system
+1568279806.3720002,786,709,None,Move,file system
+1568279806.38,785,707,None,Move,file system
+1568279806.389,783,706,None,Move,file system
+1568279806.394,782,704,None,Move,file system
+1568279806.4020002,780,703,None,Move,file system
+1568279806.41,779,702,None,Move,file system
+1568279806.434,778,702,None,Move,file system
+1568279806.44,775,701,None,Move,file system
+1568279806.447,773,701,None,Move,file system
+1568279806.4529998,771,701,None,Move,file system
+1568279806.459,766,701,None,Move,file system
+1568279806.465,761,701,None,Move,file system
+1568279806.472,756,702,None,Move,file system
+1568279806.48,748,703,None,Move,file system
+1568279806.488,739,704,None,Move,file system
+1568279806.496,731,706,None,Move,file system
+1568279806.504,723,707,None,Move,file system
+1568279806.512,715,707,None,Move,file system
+1568279806.52,708,707,None,Move,file system
+1568279806.526,703,707,None,Move,file system
+1568279806.534,697,707,None,Move,file system
+1568279806.542,694,707,None,Move,file system
+1568279806.55,692,707,None,Move,file system
+1568279806.5579998,691,707,None,Move,file system
+1568279806.566,690,707,None,Move,file system
+1568279806.574,690,707,None,Move,file system
+1568279806.6160002,689,707,None,Move,file system
+1568279806.6320002,689,707,None,Move,file system
+1568279806.64,687,707,None,Move,file system
+1568279806.6479998,686,707,None,Move,file system
+1568279806.661,686,707,None,Move,file system
+1568279806.8179998,686,707,None,Move,file system
+1568279806.826,686,707,None,Move,file system
+1568279806.834,686,707,None,Move,file system
+1568279806.842,686,706,None,Move,file system
+1568279806.851,687,706,None,Move,file system
+1568279806.8660002,687,706,None,Move,file system
+1568279806.8879998,688,706,None,Move,file system
+1568279806.896,688,706,None,Move,file system
+1568279806.905,689,706,None,Move,file system
+1568279806.913,689,706,None,Move,file system
+1568279806.92,689,707,None,Move,file system
+1568279806.928,689,708,None,Move,file system
+1568279806.936,689,708,None,Move,file system
+1568279806.956,689,708,None,Move,file system
+1568279806.962,689,709,None,Move,file system
+1568279806.971,688,710,None,Move,file system
+1568279806.982,687,710,None,Move,file system
+1568279806.992,687,711,None,Move,file system
+1568279806.998,687,711,None,Move,file system
+1568279807.006,687,712,None,Move,file system
+1568279807.014,689,712,None,Move,file system
+1568279807.022,690,713,None,Move,file system
+1568279807.031,692,715,None,Move,file system
+1568279807.036,693,716,None,Move,file system
+1568279807.044,694,717,None,Move,file system
+1568279807.052,695,719,None,Move,file system
+1568279807.061,697,720,None,Move,file system
+1568279807.069,697,722,None,Move,file system
+1568279807.1020002,698,722,None,Move,file system
+1568279807.22,698,722,None,Move,file system
+1568279807.228,700,722,None,Move,file system
+1568279807.236,700,722,None,Move,file system
+1568279807.258,701,722,None,Move,file system
+1568279807.282,701,722,None,Move,file system
+1568279807.29,702,722,None,Move,file system
+1568279807.298,703,721,None,Move,file system
+1568279807.306,705,721,None,Move,file system
+1568279807.315,706,720,None,Move,file system
+1568279807.32,707,720,None,Move,file system
+1568279807.3279998,709,720,None,Move,file system
+1568279807.336,710,719,None,Move,file system
+1568279807.344,711,719,None,Move,file system
+1568279807.356,713,718,None,Move,file system
+1568279807.3620002,714,718,None,Move,file system
+1568279807.369,715,717,None,Move,file system
+1568279807.3760002,717,716,None,Move,file system
+1568279807.3839998,718,716,None,Move,file system
+1568279807.39,719,715,None,Move,file system
+1568279807.3979998,720,714,None,Move,file system
+1568279807.406,721,714,None,Move,file system
+1568279807.414,721,713,None,Move,file system
+1568279807.4220002,722,712,None,Move,file system
+1568279807.43,722,711,None,Move,file system
+1568279807.438,723,711,None,Move,file system
+1568279807.447,723,711,None,Move,file system
+1568279807.52,723,711,None,Move,file system
+1568279807.546,723,711,None,Move,file system
+1568279807.572,724,711,None,Move,file system
+1568279807.678,724,711,None,Move,file system
+1568279807.712,724,711,None,Move,file system
+1568279807.734,724,712,None,Move,file system
+1568279807.744,723,712,None,Move,file system
+1568279807.752,722,713,None,Move,file system
+1568279807.76,721,714,None,Move,file system
+1568279807.768,721,714,None,Move,file system
+1568279807.776,719,716,None,Move,file system
+1568279807.784,718,716,None,Move,file system
+1568279807.794,717,718,None,Move,file system
+1568279807.803,715,718,None,Move,file system
+1568279807.816,714,720,None,Move,file system
+1568279807.824,710,721,None,Move,file system
+1568279807.83,709,722,None,Move,file system
+1568279807.8379998,707,723,None,Move,file system
+1568279807.86,706,723,None,Move,file system
+1568279807.8639998,703,724,None,Move,file system
+1568279807.87,700,725,None,Move,file system
+1568279807.8779998,699,725,None,Move,file system
+1568279807.8860002,697,725,None,Move,file system
+1568279807.893,696,725,None,Move,file system
+1568279807.9,694,725,None,Move,file system
+1568279807.908,692,725,None,Move,file system
+1568279807.916,690,725,None,Move,file system
+1568279807.924,688,725,None,Move,file system
+1568279807.9320002,687,724,None,Move,file system
+1568279807.94,685,724,None,Move,file system
+1568279807.948,683,723,None,Move,file system
+1568279807.956,681,723,None,Move,file system
+1568279807.962,680,722,None,Move,file system
+1568279807.97,677,721,None,Move,file system
+1568279807.978,676,721,None,Move,file system
+1568279807.986,675,720,None,Move,file system
+1568279807.996,673,719,None,Move,file system
+1568279808.002,672,718,None,Move,file system
+1568279808.01,671,718,None,Move,file system
+1568279808.018,669,717,None,Move,file system
+1568279808.0270002,668,716,None,Move,file system
+1568279808.032,666,716,None,Move,file system
+1568279808.04,666,715,None,Move,file system
+1568279808.048,665,715,None,Move,file system
+1568279808.0570002,664,715,None,Move,file system
+1568279808.065,663,714,None,Move,file system
+1568279808.072,662,713,None,Move,file system
+1568279808.08,661,713,None,Move,file system
+1568279808.0879998,660,713,None,Move,file system
+1568279808.097,660,712,None,Move,file system
+1568279808.104,659,712,None,Move,file system
+1568279808.562,659,711,Left,Pressed,file system
+1568279808.563,659,711,None,Drag,file system
+1568279808.57,661,710,None,Drag,file system
+1568279808.5779998,665,710,None,Drag,file system
+1568279808.586,670,710,None,Drag,file system
+1568279808.595,674,710,None,Drag,file system
+1568279808.603,678,710,None,Drag,file system
+1568279808.61,682,710,None,Drag,file system
+1568279808.619,688,710,None,Drag,file system
+1568279808.6260002,693,710,None,Drag,file system
+1568279808.6320002,699,710,None,Drag,file system
+1568279808.64,703,711,None,Drag,file system
+1568279808.6479998,709,712,None,Drag,file system
+1568279808.656,714,713,None,Drag,file system
+1568279808.664,719,714,None,Drag,file system
+1568279808.6720002,723,715,None,Drag,file system
+1568279808.681,729,715,None,Drag,file system
+1568279808.688,734,716,None,Drag,file system
+1568279808.694,739,717,None,Drag,file system
+1568279808.702,743,717,None,Drag,file system
+1568279808.71,747,717,None,Drag,file system
+1568279808.718,749,717,None,Drag,file system
+1568279808.7270002,752,717,None,Drag,file system
+1568279808.734,754,717,None,Drag,file system
+1568279808.742,756,717,None,Drag,file system
+1568279808.75,758,717,None,Drag,file system
+1568279808.758,760,717,None,Drag,file system
+1568279808.766,763,717,None,Drag,file system
+1568279808.7729998,764,717,None,Drag,file system
+1568279808.78,765,717,None,Drag,file system
+1568279808.788,766,717,None,Drag,file system
+1568279808.796,768,717,None,Drag,file system
+1568279808.804,769,717,None,Drag,file system
+1568279808.813,771,717,None,Drag,file system
+1568279808.821,772,717,None,Drag,file system
+1568279808.829,774,717,None,Drag,file system
+1568279808.837,776,717,None,Drag,file system
+1568279808.842,778,717,None,Drag,file system
+1568279808.851,781,717,None,Drag,file system
+1568279808.859,784,717,None,Drag,file system
+1568279808.867,788,717,None,Drag,file system
+1568279808.8739998,791,717,None,Drag,file system
+1568279808.8820002,793,717,None,Drag,file system
+1568279808.891,796,718,None,Drag,file system
+1568279808.899,799,718,None,Drag,file system
+1568279808.906,802,719,None,Drag,file system
+1568279808.913,805,719,None,Drag,file system
+1568279808.921,808,719,None,Drag,file system
+1568279808.928,810,719,None,Drag,file system
+1568279808.936,812,719,None,Drag,file system
+1568279808.945,816,720,None,Drag,file system
+1568279808.9529998,817,720,None,Drag,file system
+1568279808.96,820,720,None,Drag,file system
+1568279808.969,822,721,None,Drag,file system
+1568279808.976,824,721,None,Drag,file system
+1568279808.9829998,826,721,None,Drag,file system
+1568279808.996,828,721,None,Drag,file system
+1568279809.0029998,830,721,None,Drag,file system
+1568279809.0089998,831,721,None,Drag,file system
+1568279809.015,832,721,None,Drag,file system
+1568279809.0229998,834,721,None,Drag,file system
+1568279809.03,835,721,None,Drag,file system
+1568279809.038,836,721,None,Drag,file system
+1568279809.046,838,722,None,Drag,file system
+1568279809.052,839,722,None,Drag,file system
+1568279809.06,840,722,None,Drag,file system
+1568279809.0679998,841,722,None,Drag,file system
+1568279809.076,843,723,None,Drag,file system
+1568279809.084,844,723,None,Drag,file system
+1568279809.092,845,723,None,Drag,file system
+1568279809.101,847,723,None,Drag,file system
+1568279809.1079998,848,723,None,Drag,file system
+1568279809.1160002,849,723,None,Drag,file system
+1568279809.1239998,852,723,None,Drag,file system
+1568279809.13,857,724,None,Drag,file system
+1568279809.13,857,724,Left,Released,file system
+1568279809.14,862,725,None,Move,file system
+1568279809.146,868,726,None,Move,file system
+1568279809.154,873,727,None,Move,file system
+1568279809.1720002,884,728,None,Move,file system
+1568279809.179,890,729,None,Move,file system
+1568279809.187,895,729,None,Move,file system
+1568279809.195,901,730,None,Move,file system
+1568279809.2,907,731,None,Move,file system
+1568279809.208,912,732,None,Move,file system
+1568279809.217,917,733,None,Move,file system
+1568279809.225,922,734,None,Move,file system
+1568279809.232,928,735,None,Move,file system
+1568279809.24,933,735,None,Move,file system
+1568279809.248,938,735,None,Move,file system
+1568279809.2570002,941,736,None,Move,file system
+1568279809.264,943,736,None,Move,file system
+1568279809.272,945,736,None,Move,file system
+1568279809.279,946,736,None,Move,file system
+1568279809.286,948,736,None,Move,file system
+1568279809.295,949,736,None,Move,file system
+1568279809.303,950,736,None,Move,file system
+1568279809.311,951,736,None,Move,file system
+1568279809.405,951,736,Left,Pressed,file system
+1568279809.5370002,951,736,Left,Released,file system
+1568279810.154,951,736,None,Move,file system
+1568279810.166,951,736,None,Move,file system
+1568279810.252,951,735,None,Move,file system
+1568279810.264,951,735,None,Move,file system
+1568279810.272,951,734,None,Move,file system
+1568279810.28,951,733,None,Move,file system
+1568279810.286,951,733,None,Move,file system
+1568279810.294,951,732,None,Move,file system
+1568279810.306,951,731,None,Move,file system
+1568279810.314,951,731,None,Move,file system
+1568279810.334,951,730,None,Move,file system
+1568279810.424,951,730,None,Move,file system
+1568279810.434,950,730,None,Move,file system
+1568279810.4429998,950,730,None,Move,file system
+1568279810.462,949,730,None,Move,file system
+1568279810.47,948,731,None,Move,file system
+1568279810.478,946,731,None,Move,file system
+1568279810.486,945,732,None,Move,file system
+1568279810.492,944,734,None,Move,file system
+1568279810.5,942,735,None,Move,file system
+1568279810.508,941,736,None,Move,file system
+1568279810.5170002,939,738,None,Move,file system
+1568279810.525,936,740,None,Move,file system
+1568279810.532,930,744,None,Move,file system
+1568279810.541,923,751,None,Move,file system
+1568279810.5470002,914,757,None,Move,file system
+1568279810.556,905,765,None,Move,file system
+1568279810.565,894,773,None,Move,file system
+1568279810.57,884,782,None,Move,file system
+1568279810.5779998,870,793,None,Move,file system
+1568279810.586,861,805,None,Move,file system
+1568279810.594,848,821,None,Move,file system
+1568279810.603,837,838,None,Move,file system
+1568279810.61,825,855,None,Move,file system
+1568279810.617,815,867,None,Move,file system
+1568279810.6260002,805,881,None,Move,file system
+1568279810.633,795,895,None,Move,file system
+1568279810.64,784,911,None,Move,file system
+1568279810.6479998,772,930,None,Move,file system
+1568279810.656,761,949,None,Move,file system
+1568279810.664,752,969,None,Move,file system
+1568279810.6720002,741,992,None,Move,file system
+1568279810.68,732,1015,None,Move,file system
+1568279810.688,723,1035,None,Move,file system
+1568279810.696,715,1053,None,Move,file system
+1568279810.7129998,701,1085,None,Move,file system
+1568279810.721,694,1092,None,Move,file system
+1568279810.729,687,1090,None,Move,file system
+1568279810.74,680,1092,None,Move,file system
+1568279810.7510002,665,1101,None,Move,file system
+1568279810.758,658,1088,None,Move,file system
+1568279810.7670002,657,1085,None,Move,file system
+1568279810.776,655,1081,None,Move,file system
+1568279810.785,654,1080,None,Move,file system
+1568279810.793,654,1079,None,Move,file system
+1568279810.8520002,654,1079,None,Move,file system
+1568279810.86,655,1078,None,Move,file system
+1568279810.8679998,657,1077,None,Move,file system
+1568279810.875,657,1076,None,Move,file system
+1568279810.918,658,1076,None,Move,file system
+1568279810.9320002,658,1075,None,Move,file system
+1568279810.941,660,1075,None,Move,file system
+1568279810.9529998,661,1073,None,Move,file system
+1568279810.962,663,1072,None,Move,file system
+1568279810.972,664,1071,None,Move,file system
+1568279810.981,667,1068,None,Move,file system
+1568279810.9910002,668,1068,None,Move,file system
+1568279811.004,669,1066,None,Move,file system
+1568279811.018,670,1066,None,Move,file system
+1568279811.038,670,1065,None,Move,file system
+1568279811.046,670,1065,None,Move,file system
+1568279811.055,670,1064,None,Move,file system
+1568279811.063,669,1064,None,Move,file system
+1568279811.071,668,1064,None,Move,file system
+1568279811.079,666,1064,None,Move,file system
+1568279811.087,666,1064,None,Move,file system
+1568279811.095,665,1063,None,Move,file system
+1568279811.1079998,665,1063,None,Move,file system
+1568279811.17,664,1063,None,Move,file system
+1568279811.1820002,663,1062,None,Move,file system
+1568279811.19,662,1062,None,Move,file system
+1568279811.198,660,1061,None,Move,file system
+1568279811.206,659,1061,None,Move,file system
+1568279811.212,658,1061,None,Move,file system
+1568279811.221,658,1061,None,Move,file system
+1568279811.232,657,1061,None,Move,file system
+1568279811.31,657,1061,Left,Pressed,file system
+1568279811.462,657,1061,Left,Released,file system
+1568279812.556,657,1060,None,Move,file system
+1568279812.5679998,657,1058,None,Move,file system
+1568279812.576,660,1051,None,Move,file system
+1568279812.582,665,1042,None,Move,file system
+1568279812.59,672,1034,None,Move,file system
+1568279812.5979998,675,1024,None,Move,file system
+1568279812.606,678,1014,None,Move,file system
+1568279812.6139998,682,1002,None,Move,file system
+1568279812.6220002,687,988,None,Move,file system
+1568279812.63,695,973,None,Move,file system
+1568279812.6379998,703,955,None,Move,file system
+1568279812.646,712,935,None,Move,file system
+1568279812.6520002,721,917,None,Move,file system
+1568279812.66,730,896,None,Move,file system
+1568279812.668,739,874,None,Move,file system
+1568279812.676,747,856,None,Move,file system
+1568279812.684,755,841,None,Move,file system
+1568279812.6920002,763,825,None,Move,file system
+1568279812.7,771,807,None,Move,file system
+1568279812.708,779,792,None,Move,file system
+1568279812.716,786,777,None,Move,file system
+1568279812.722,794,761,None,Move,file system
+1568279812.73,801,751,None,Move,file system
+1568279812.738,807,742,None,Move,file system
+1568279812.746,814,732,None,Move,file system
+1568279812.754,820,722,None,Move,file system
+1568279812.762,827,713,None,Move,file system
+1568279812.77,832,707,None,Move,file system
+1568279812.778,836,701,None,Move,file system
+1568279812.786,839,696,None,Move,file system
+1568279812.794,841,694,None,Move,file system
+1568279812.8,843,692,None,Move,file system
+1568279812.8079998,844,689,None,Move,file system
+1568279812.816,846,688,None,Move,file system
+1568279812.824,848,686,None,Move,file system
+1568279812.832,849,685,None,Move,file system
+1568279812.84,851,684,None,Move,file system
+1568279812.8479998,852,682,None,Move,file system
+1568279812.856,854,680,None,Move,file system
+1568279812.8639998,857,678,None,Move,file system
+1568279812.87,859,676,None,Move,file system
+1568279812.8779998,861,673,None,Move,file system
+1568279812.8860002,865,669,None,Move,file system
+1568279812.894,869,667,None,Move,file system
+1568279812.9020002,873,665,None,Move,file system
+1568279812.911,876,663,None,Move,file system
+1568279812.919,882,661,None,Move,file system
+1568279812.926,888,658,None,Move,file system
+1568279812.935,894,655,None,Move,file system
+1568279812.94,901,651,None,Move,file system
+1568279812.948,909,646,None,Move,file system
+1568279812.957,916,640,None,Move,file system
+1568279812.965,925,632,None,Move,file system
+1568279812.972,933,625,None,Move,file system
+1568279812.98,942,619,None,Move,file system
+1568279812.988,951,612,None,Move,file system
+1568279812.9970002,958,606,None,Move,file system
+1568279813.004,964,602,None,Move,file system
+1568279813.01,970,598,None,Move,file system
+1568279813.018,976,594,None,Move,file system
+1568279813.0270002,980,592,None,Move,file system
+1568279813.034,982,589,None,Move,file system
+1568279813.041,984,587,None,Move,file system
+1568279813.051,985,586,None,Move,file system
+1568279813.0579998,986,585,None,Move,file system
+1568279813.0670002,987,585,None,Move,file system
+1568279813.074,987,584,None,Move,file system
+1568279813.084,987,584,Left,Pressed,file system
+1568279813.2229998,987,584,Left,Released,file system
+1568279813.306,987,584,Left,Pressed,file system
+1568279813.4420002,987,584,Left,Released,file system
+1568279813.524,988,582,None,Move,file system
+1568279813.532,988,581,None,Move,file system
+1568279813.54,990,579,None,Move,file system
+1568279813.548,990,578,None,Move,file system
+1568279813.5570002,992,576,None,Move,file system
+1568279813.564,993,575,None,Move,file system
+1568279813.572,993,574,None,Move,file system
+1568279813.58,993,573,None,Move,file system
+1568279813.586,994,572,None,Move,file system
+1568279813.594,994,571,None,Move,file system
+1568279813.603,994,571,None,Move,file system
+1568279813.61,994,570,None,Move,file system
+1568279813.6179998,995,569,None,Move,file system
+1568279813.6260002,995,569,None,Move,file system
+1568279813.844,996,568,None,Move,file system
+1568279813.856,997,567,None,Move,file system
+1568279813.8639998,997,567,None,Move,file system
+1568279813.8720002,997,567,None,Move,file system
+1568279813.8860002,998,567,None,Move,file system
+1568279814.07,998,567,Left,Pressed,file system
+1568279814.07,998,567,None,Drag,file system
+1568279814.082,999,568,None,Drag,file system
+1568279814.09,1000,569,None,Drag,file system
+1568279814.099,1000,570,None,Drag,file system
+1568279814.109,1001,572,None,Drag,file system
+1568279814.117,1001,573,None,Drag,file system
+1568279814.1260002,1002,575,None,Drag,file system
+1568279814.1339998,1002,576,None,Drag,file system
+1568279814.143,1002,578,None,Drag,file system
+1568279814.153,1002,580,None,Drag,file system
+1568279814.163,1001,583,None,Drag,file system
+1568279814.173,1000,584,None,Drag,file system
+1568279814.184,997,587,None,Drag,file system
+1568279814.1920002,995,588,None,Drag,file system
+1568279814.2029998,993,590,None,Drag,file system
+1568279814.212,989,592,None,Drag,file system
+1568279814.2229998,979,596,None,Drag,file system
+1568279814.24,966,600,None,Drag,file system
+1568279814.2510002,958,602,None,Drag,file system
+1568279814.258,950,604,None,Drag,file system
+1568279814.268,932,608,None,Drag,file system
+1568279814.276,922,610,None,Drag,file system
+1568279814.286,911,613,None,Drag,file system
+1568279814.293,902,615,None,Drag,file system
+1568279814.301,891,615,None,Drag,file system
+1568279814.309,882,616,None,Drag,file system
+1568279814.316,870,617,None,Drag,file system
+1568279814.323,856,617,None,Drag,file system
+1568279814.332,843,617,None,Drag,file system
+1568279814.339,830,618,None,Drag,file system
+1568279814.347,815,619,None,Drag,file system
+1568279814.354,802,620,None,Drag,file system
+1568279814.3620002,789,622,None,Drag,file system
+1568279814.37,774,625,None,Drag,file system
+1568279814.3860002,747,629,None,Drag,file system
+1568279814.393,730,630,None,Drag,file system
+1568279814.404,717,630,None,Drag,file system
+1568279814.41,701,630,None,Drag,file system
+1568279814.426,672,630,None,Drag,file system
+1568279814.437,658,630,None,Drag,file system
+1568279814.4429998,646,629,None,Drag,file system
+1568279814.452,634,629,None,Drag,file system
+1568279814.458,626,629,None,Drag,file system
+1568279814.466,620,629,None,Drag,file system
+1568279814.472,613,629,None,Drag,file system
+1568279814.482,609,629,None,Drag,file system
+1568279814.488,608,629,None,Drag,file system
+1568279814.494,606,629,None,Drag,file system
+1568279814.502,606,629,None,Drag,file system
+1568279814.502,606,629,Left,Released,file system
+1568279815.005,606,629,None,Move,file system
+1568279815.012,607,629,None,Move,file system
+1568279815.018,608,629,None,Move,file system
+1568279815.0270002,609,629,None,Move,file system
+1568279815.035,610,629,None,Move,file system
+1568279815.042,612,629,None,Move,file system
+1568279815.05,613,629,None,Move,file system
+1568279815.0579998,615,629,None,Move,file system
+1568279815.066,619,629,None,Move,file system
+1568279815.075,626,630,None,Move,file system
+1568279815.082,633,632,None,Move,file system
+1568279815.0879998,643,633,None,Move,file system
+1568279815.096,652,635,None,Move,file system
+1568279815.104,664,636,None,Move,file system
+1568279815.113,676,638,None,Move,file system
+1568279815.12,690,640,None,Move,file system
+1568279815.129,703,641,None,Move,file system
+1568279815.137,716,641,None,Move,file system
+1568279815.144,732,641,None,Move,file system
+1568279815.1520002,752,641,None,Move,file system
+1568279815.158,773,638,None,Move,file system
+1568279815.166,796,635,None,Move,file system
+1568279815.174,818,634,None,Move,file system
+1568279815.1820002,840,634,None,Move,file system
+1568279815.191,869,636,None,Move,file system
+1568279815.198,895,642,None,Move,file system
+1568279815.207,926,652,None,Move,file system
+1568279815.214,955,659,None,Move,file system
+1568279815.2229998,981,662,None,Move,file system
+1568279815.23,1004,665,None,Move,file system
+1568279815.2370002,1027,668,None,Move,file system
+1568279815.244,1051,672,None,Move,file system
+1568279815.252,1067,676,None,Move,file system
+1568279815.2610002,1083,681,None,Move,file system
+1568279815.268,1097,684,None,Move,file system
+1568279815.2770002,1108,689,None,Move,file system
+1568279815.284,1116,691,None,Move,file system
+1568279815.292,1124,693,None,Move,file system
+1568279815.3,1133,697,None,Move,file system
+1568279815.306,1141,701,None,Move,file system
+1568279815.314,1147,705,None,Move,file system
+1568279815.322,1155,708,None,Move,file system
+1568279815.33,1160,710,None,Move,file system
+1568279815.3379998,1165,712,None,Move,file system
+1568279815.346,1169,714,None,Move,file system
+1568279815.354,1173,716,None,Move,file system
+1568279815.363,1176,716,None,Move,file system
+1568279815.371,1177,718,None,Move,file system
+1568279815.3760002,1179,719,None,Move,file system
+1568279815.385,1179,719,None,Move,file system
+1568279815.393,1180,719,None,Move,file system
+1568279815.482,1179,720,Left,Pressed,file system
+1568279815.4829998,1179,720,None,Drag,file system
+1568279815.49,1174,720,None,Drag,file system
+1568279815.498,1166,721,None,Drag,file system
+1568279815.506,1157,721,None,Drag,file system
+1568279815.514,1144,721,None,Drag,file system
+1568279815.52,1130,722,None,Drag,file system
+1568279815.529,1114,723,None,Drag,file system
+1568279815.536,1091,724,None,Drag,file system
+1568279815.545,1069,726,None,Drag,file system
+1568279815.551,1046,729,None,Drag,file system
+1568279815.56,1023,730,None,Drag,file system
+1568279815.5679998,1003,731,None,Drag,file system
+1568279815.576,983,733,None,Drag,file system
+1568279815.584,964,733,None,Drag,file system
+1568279815.593,947,733,None,Drag,file system
+1568279815.6,934,731,None,Drag,file system
+1568279815.607,920,729,None,Drag,file system
+1568279815.615,911,728,None,Drag,file system
+1568279815.6220002,903,728,None,Drag,file system
+1568279815.63,895,728,None,Drag,file system
+1568279815.6379998,888,728,None,Drag,file system
+1568279815.646,882,728,None,Drag,file system
+1568279815.655,877,728,None,Drag,file system
+1568279815.663,873,729,None,Drag,file system
+1568279815.669,871,729,None,Drag,file system
+1568279815.677,869,729,None,Drag,file system
+1568279815.684,868,729,None,Drag,file system
+1568279815.6929998,867,729,None,Drag,file system
+1568279815.7,866,729,None,Drag,file system
+1568279815.708,865,729,None,Drag,file system
+1568279815.716,864,729,None,Drag,file system
+1568279815.725,863,729,None,Drag,file system
+1568279815.732,862,729,None,Drag,file system
+1568279815.7410002,860,729,None,Drag,file system
+1568279815.7489998,858,729,None,Drag,file system
+1568279815.755,856,730,None,Drag,file system
+1568279815.7629998,853,730,None,Drag,file system
+1568279815.77,849,730,None,Drag,file system
+1568279815.778,845,730,None,Drag,file system
+1568279815.786,841,730,None,Drag,file system
+1568279815.794,839,730,None,Drag,file system
+1568279815.801,837,730,None,Drag,file system
+1568279815.8079998,835,730,None,Drag,file system
+1568279815.816,834,730,None,Drag,file system
+1568279815.824,833,730,None,Drag,file system
+1568279815.832,833,730,None,Drag,file system
+1568279816.467,833,730,None,Drag,file system
+1568279816.474,842,732,None,Drag,file system
+1568279816.482,855,734,None,Drag,file system
+1568279816.49,868,736,None,Drag,file system
+1568279816.498,882,738,None,Drag,file system
+1568279816.5070002,895,741,None,Drag,file system
+1568279816.515,910,741,None,Drag,file system
+1568279816.52,928,742,None,Drag,file system
+1568279816.529,951,745,None,Drag,file system
+1568279816.536,976,746,None,Drag,file system
+1568279816.5470002,1001,746,None,Drag,file system
+1568279816.553,1023,746,None,Drag,file system
+1568279816.561,1045,746,None,Drag,file system
+1568279816.5679998,1064,746,None,Drag,file system
+1568279816.576,1081,746,None,Drag,file system
+1568279816.585,1096,745,None,Drag,file system
+1568279816.592,1109,745,None,Drag,file system
+1568279816.6,1121,745,None,Drag,file system
+1568279816.607,1131,747,None,Drag,file system
+1568279816.6139998,1139,749,None,Drag,file system
+1568279816.623,1146,751,None,Drag,file system
+1568279816.631,1152,753,None,Drag,file system
+1568279816.6379998,1159,755,None,Drag,file system
+1568279816.646,1167,757,None,Drag,file system
+1568279816.654,1175,759,None,Drag,file system
+1568279816.663,1185,761,None,Drag,file system
+1568279816.668,1194,763,None,Drag,file system
+1568279816.676,1203,765,None,Drag,file system
+1568279816.684,1211,768,None,Drag,file system
+1568279816.6920002,1218,770,None,Drag,file system
+1568279816.7,1224,771,None,Drag,file system
+1568279816.708,1229,772,None,Drag,file system
+1568279816.717,1236,774,None,Drag,file system
+1568279816.725,1242,776,None,Drag,file system
+1568279816.732,1248,778,None,Drag,file system
+1568279816.7389998,1251,780,None,Drag,file system
+1568279816.7470002,1255,782,None,Drag,file system
+1568279816.755,1257,783,None,Drag,file system
+1568279816.7629998,1260,784,None,Drag,file system
+1568279816.771,1262,785,None,Drag,file system
+1568279816.779,1264,787,None,Drag,file system
+1568279816.7870002,1267,788,None,Drag,file system
+1568279816.795,1268,789,None,Drag,file system
+1568279816.802,1271,791,None,Drag,file system
+1568279816.81,1276,792,None,Drag,file system
+1568279816.8170002,1280,794,None,Drag,file system
+1568279816.824,1286,797,None,Drag,file system
+1568279816.832,1291,799,None,Drag,file system
+1568279816.841,1293,800,None,Drag,file system
+1568279816.849,1295,802,None,Drag,file system
+1568279816.857,1297,803,None,Drag,file system
+1568279816.8639998,1300,805,None,Drag,file system
+1568279816.875,1301,806,None,Drag,file system
+1568279816.8820002,1302,806,None,Drag,file system
+1568279816.8879998,1302,806,None,Drag,file system
+1568279816.9020002,1303,806,None,Drag,file system
+1568279816.9020002,1303,806,Left,Released,file system
+1568279816.965,1303,806,None,Move,file system
+1568279816.972,1297,803,None,Move,file system
+1568279816.98,1290,798,None,Move,file system
+1568279816.988,1282,793,None,Move,file system
+1568279816.996,1268,788,None,Move,file system
+1568279817.004,1250,780,None,Move,file system
+1568279817.012,1227,771,None,Move,file system
+1568279817.02,1202,762,None,Move,file system
+1568279817.026,1177,752,None,Move,file system
+1568279817.034,1152,745,None,Move,file system
+1568279817.042,1125,737,None,Move,file system
+1568279817.05,1098,728,None,Move,file system
+1568279817.0579998,1067,718,None,Move,file system
+1568279817.066,1038,712,None,Move,file system
+1568279817.074,1008,704,None,Move,file system
+1568279817.082,981,696,None,Move,file system
+1568279817.09,954,689,None,Move,file system
+1568279817.097,930,685,None,Move,file system
+1568279817.104,909,681,None,Move,file system
+1568279817.1120002,894,678,None,Move,file system
+1568279817.12,883,676,None,Move,file system
+1568279817.129,876,674,None,Move,file system
+1568279817.1360002,872,672,None,Move,file system
+1568279817.145,870,672,None,Move,file system
+1568279817.218,870,672,None,Move,file system
+1568279817.24,873,672,Left,Pressed,file system
+1568279817.24,873,672,None,Drag,file system
+1568279817.2489998,886,676,None,Drag,file system
+1568279817.256,895,678,None,Drag,file system
+1568279817.264,907,680,None,Drag,file system
+1568279817.272,920,682,None,Drag,file system
+1568279817.28,937,685,None,Drag,file system
+1568279817.288,955,687,None,Drag,file system
+1568279817.296,975,689,None,Drag,file system
+1568279817.304,998,692,None,Drag,file system
+1568279817.312,1021,695,None,Drag,file system
+1568279817.3179998,1044,697,None,Drag,file system
+1568279817.326,1067,700,None,Drag,file system
+1568279817.336,1093,703,None,Drag,file system
+1568279817.342,1121,707,None,Drag,file system
+1568279817.35,1151,713,None,Drag,file system
+1568279817.3579998,1178,719,None,Drag,file system
+1568279817.3660002,1203,722,None,Drag,file system
+1568279817.3739998,1226,725,None,Drag,file system
+1568279817.381,1244,728,None,Drag,file system
+1568279817.3879998,1262,730,None,Drag,file system
+1568279817.396,1274,733,None,Drag,file system
+1568279817.404,1286,734,None,Drag,file system
+1568279817.4120002,1296,735,None,Drag,file system
+1568279817.42,1304,736,None,Drag,file system
+1568279817.429,1311,737,None,Drag,file system
+1568279817.436,1315,738,None,Drag,file system
+1568279817.446,1318,738,None,Drag,file system
+1568279817.4529998,1320,738,None,Drag,file system
+1568279817.4629998,1322,738,None,Drag,file system
+1568279817.47,1323,738,None,Drag,file system
+1568279817.475,1325,737,None,Drag,file system
+1568279817.4870002,1327,736,None,Drag,file system
+1568279817.4929998,1330,735,None,Drag,file system
+1568279817.502,1331,734,None,Drag,file system
+1568279817.508,1332,734,None,Drag,file system
+1568279817.518,1334,733,None,Drag,file system
+1568279817.525,1335,733,None,Drag,file system
+1568279817.525,1335,733,Left,Released,file system
+1568279817.688,1335,732,None,Move,file system
+1568279817.696,1330,732,None,Move,file system
+1568279817.704,1322,732,None,Move,file system
+1568279817.712,1314,731,None,Move,file system
+1568279817.72,1304,728,None,Move,file system
+1568279817.731,1293,727,None,Move,file system
+1568279817.738,1281,725,None,Move,file system
+1568279817.746,1268,724,None,Move,file system
+1568279817.752,1255,722,None,Move,file system
+1568279817.758,1241,720,None,Move,file system
+1568279817.766,1228,717,None,Move,file system
+1568279817.774,1213,715,None,Move,file system
+1568279817.782,1199,713,None,Move,file system
+1568279817.79,1186,711,None,Move,file system
+1568279817.798,1173,707,None,Move,file system
+1568279817.804,1157,704,None,Move,file system
+1568279817.812,1144,700,None,Move,file system
+1568279817.82,1133,698,None,Move,file system
+1568279817.829,1123,696,None,Move,file system
+1568279817.8379998,1115,694,None,Move,file system
+1568279817.847,1107,692,None,Move,file system
+1568279817.854,1098,690,None,Move,file system
+1568279817.8620002,1091,689,None,Move,file system
+1568279817.869,1086,687,None,Move,file system
+1568279817.8760002,1080,686,None,Move,file system
+1568279817.885,1075,685,None,Move,file system
+1568279817.891,1070,684,None,Move,file system
+1568279817.903,1067,683,None,Move,file system
+1568279817.9120002,1065,683,None,Move,file system
+1568279817.919,1064,682,None,Move,file system
+1568279817.927,1063,682,None,Move,file system
+1568279818.05,1064,682,Left,Pressed,file system
+1568279818.05,1064,682,None,Drag,file system
+1568279818.0579998,1069,683,None,Drag,file system
+1568279818.066,1076,685,None,Drag,file system
+1568279818.075,1082,687,None,Drag,file system
+1568279818.082,1090,688,None,Drag,file system
+1568279818.09,1097,690,None,Drag,file system
+1568279818.097,1105,692,None,Drag,file system
+1568279818.104,1112,694,None,Drag,file system
+1568279818.1120002,1118,696,None,Drag,file system
+1568279818.12,1125,698,None,Drag,file system
+1568279818.1279998,1132,700,None,Drag,file system
+1568279818.1360002,1139,702,None,Drag,file system
+1568279818.144,1146,704,None,Drag,file system
+1568279818.1520002,1152,706,None,Drag,file system
+1568279818.16,1158,708,None,Drag,file system
+1568279818.166,1165,710,None,Drag,file system
+1568279818.175,1171,712,None,Drag,file system
+1568279818.1820002,1175,714,None,Drag,file system
+1568279818.19,1181,716,None,Drag,file system
+1568279818.197,1185,718,None,Drag,file system
+1568279818.207,1187,718,None,Drag,file system
+1568279818.215,1188,719,None,Drag,file system
+1568279818.2229998,1189,719,None,Drag,file system
+1568279818.798,1189,719,None,Drag,file system
+1568279818.816,1190,719,None,Drag,file system
+1568279818.824,1191,719,None,Drag,file system
+1568279818.832,1192,720,None,Drag,file system
+1568279818.84,1193,720,None,Drag,file system
+1568279818.8479998,1194,720,None,Drag,file system
+1568279818.856,1195,720,None,Drag,file system
+1568279818.8639998,1197,720,None,Drag,file system
+1568279818.8720002,1198,720,None,Drag,file system
+1568279818.879,1199,721,None,Drag,file system
+1568279818.8860002,1201,722,None,Drag,file system
+1568279818.8979998,1202,722,None,Drag,file system
+1568279818.904,1203,722,None,Drag,file system
+1568279818.9120002,1205,722,None,Drag,file system
+1568279818.919,1206,722,None,Drag,file system
+1568279818.927,1207,722,None,Drag,file system
+1568279818.934,1209,722,None,Drag,file system
+1568279818.9420002,1210,722,None,Drag,file system
+1568279818.949,1210,722,None,Drag,file system
+1568279818.956,1212,722,None,Drag,file system
+1568279818.965,1212,722,None,Drag,file system
+1568279818.972,1213,722,None,Drag,file system
+1568279818.98,1214,722,None,Drag,file system
+1568279818.988,1215,722,None,Drag,file system
+1568279818.996,1216,722,None,Drag,file system
+1568279819.004,1217,722,None,Drag,file system
+1568279819.0129998,1218,722,None,Drag,file system
+1568279819.021,1219,722,None,Drag,file system
+1568279819.029,1219,722,None,Drag,file system
+1568279819.035,1221,722,None,Drag,file system
+1568279819.043,1221,722,None,Drag,file system
+1568279819.05,1222,722,None,Drag,file system
+1568279819.0579998,1222,722,None,Drag,file system
+1568279819.066,1223,722,None,Drag,file system
+1568279819.075,1225,722,None,Drag,file system
+1568279819.082,1226,722,None,Drag,file system
+1568279819.09,1227,722,None,Drag,file system
+1568279819.0979998,1229,722,None,Drag,file system
+1568279819.104,1230,722,None,Drag,file system
+1568279819.1120002,1231,722,None,Drag,file system
+1568279819.12,1233,721,None,Drag,file system
+1568279819.1279998,1234,721,None,Drag,file system
+1568279819.137,1235,721,None,Drag,file system
+1568279819.145,1235,721,None,Drag,file system
+1568279819.1520002,1236,721,None,Drag,file system
+1568279819.5979998,1236,721,None,Drag,file system
+1568279819.606,1235,720,None,Drag,file system
+1568279819.6139998,1234,719,None,Drag,file system
+1568279819.6220002,1233,717,None,Drag,file system
+1568279819.63,1231,716,None,Drag,file system
+1568279819.6379998,1229,714,None,Drag,file system
+1568279819.646,1228,713,None,Drag,file system
+1568279819.654,1225,710,None,Drag,file system
+1568279819.663,1222,708,None,Drag,file system
+1568279819.669,1216,704,None,Drag,file system
+1568279819.676,1210,701,None,Drag,file system
+1568279819.684,1204,697,None,Drag,file system
+1568279819.6920002,1198,692,None,Drag,file system
+1568279819.701,1192,688,None,Drag,file system
+1568279819.708,1186,684,None,Drag,file system
+1568279819.717,1180,679,None,Drag,file system
+1568279819.725,1174,676,None,Drag,file system
+1568279819.732,1168,673,None,Drag,file system
+1568279819.7410002,1162,669,None,Drag,file system
+1568279819.7470002,1156,666,None,Drag,file system
+1568279819.755,1150,662,None,Drag,file system
+1568279819.762,1144,659,None,Drag,file system
+1568279819.77,1138,656,None,Drag,file system
+1568279819.7770002,1132,653,None,Drag,file system
+1568279819.786,1126,651,None,Drag,file system
+1568279819.794,1120,648,None,Drag,file system
+1568279819.803,1115,646,None,Drag,file system
+1568279819.81,1109,644,None,Drag,file system
+1568279819.816,1104,642,None,Drag,file system
+1568279819.825,1102,641,None,Drag,file system
+1568279819.832,1099,639,None,Drag,file system
+1568279819.841,1098,638,None,Drag,file system
+1568279819.8479998,1095,636,None,Drag,file system
+1568279819.856,1094,636,None,Drag,file system
+1568279819.8639998,1093,635,None,Drag,file system
+1568279819.873,1091,634,None,Drag,file system
+1568279819.88,1090,633,None,Drag,file system
+1568279819.8860002,1088,633,None,Drag,file system
+1568279819.9,1087,632,None,Drag,file system
+1568279819.9120002,1086,632,None,Drag,file system
+1568279819.918,1085,632,None,Drag,file system
+1568279819.918,1085,632,Left,Released,file system
+1568279820.1079998,1085,632,None,Move,file system
+1568279820.12,1086,632,None,Move,file system
+1568279820.1279998,1086,632,None,Move,file system
+1568279820.1360002,1087,632,None,Move,file system
+1568279820.144,1088,634,None,Move,file system
+1568279820.1520002,1089,635,None,Move,file system
+1568279820.16,1091,637,None,Move,file system
+1568279820.166,1092,638,None,Move,file system
+1568279820.174,1094,640,None,Move,file system
+1568279820.1820002,1095,641,None,Move,file system
+1568279820.19,1097,642,None,Move,file system
+1568279820.198,1098,644,None,Move,file system
+1568279820.206,1099,645,None,Move,file system
+1568279820.215,1101,647,None,Move,file system
+1568279820.222,1102,648,None,Move,file system
+1568279820.23,1104,649,None,Move,file system
+1568279820.236,1105,651,None,Move,file system
+1568279820.244,1105,651,None,Move,file system
+1568279820.252,1106,652,None,Move,file system
+1568279820.26,1106,653,None,Move,file system
+1568279820.276,1106,653,None,Move,file system
+1568279820.3879998,1107,654,None,Move,file system
+1568279820.396,1107,654,None,Move,file system
+1568279820.404,1107,655,None,Move,file system
+1568279820.411,1107,656,None,Move,file system
+1568279820.421,1107,657,None,Move,file system
+1568279820.429,1108,659,None,Move,file system
+1568279820.436,1108,659,None,Move,file system
+1568279820.68,1109,659,None,Move,file system
+1568279820.688,1115,658,None,Move,file system
+1568279820.696,1122,656,None,Move,file system
+1568279820.704,1129,654,None,Move,file system
+1568279820.712,1136,652,None,Move,file system
+1568279820.72,1141,651,None,Move,file system
+1568279820.728,1148,651,None,Move,file system
+1568279820.735,1154,651,None,Move,file system
+1568279820.7429998,1159,651,None,Move,file system
+1568279820.7510002,1165,652,None,Move,file system
+1568279820.7589998,1170,652,None,Move,file system
+1568279820.766,1173,652,None,Move,file system
+1568279820.774,1175,652,None,Move,file system
+1568279820.782,1177,651,None,Move,file system
+1568279820.79,1178,651,None,Move,file system
+1568279820.841,1178,651,Left,Pressed,file system
+1568279820.947,1178,651,Left,Released,file system
+1568279821.021,1178,651,Left,Pressed,file system
+1568279821.164,1178,651,Left,Released,file system
+1568279821.61,1179,650,None,Move,file system
+1568279821.617,1180,648,None,Move,file system
+1568279821.6260002,1182,645,None,Move,file system
+1568279821.633,1183,641,None,Move,file system
+1568279821.6420002,1185,637,None,Move,file system
+1568279821.65,1187,634,None,Move,file system
+1568279821.658,1189,629,None,Move,file system
+1568279821.666,1190,627,None,Move,file system
+1568279821.6720002,1192,625,None,Move,file system
+1568279821.68,1193,620,None,Move,file system
+1568279821.688,1196,617,None,Move,file system
+1568279821.696,1197,615,None,Move,file system
+1568279821.704,1200,611,None,Move,file system
+1568279821.712,1202,609,None,Move,file system
+1568279821.72,1204,607,None,Move,file system
+1568279821.728,1205,605,None,Move,file system
+1568279821.736,1207,604,None,Move,file system
+1568279821.742,1208,602,None,Move,file system
+1568279821.75,1209,601,None,Move,file system
+1568279821.758,1211,600,None,Move,file system
+1568279821.7670002,1211,598,None,Move,file system
+1568279821.774,1213,596,None,Move,file system
+1568279821.782,1214,594,None,Move,file system
+1568279821.791,1216,592,None,Move,file system
+1568279821.798,1217,591,None,Move,file system
+1568279821.806,1219,589,None,Move,file system
+1568279821.812,1220,588,None,Move,file system
+1568279821.821,1222,587,None,Move,file system
+1568279821.8279998,1223,585,None,Move,file system
+1568279821.835,1224,584,None,Move,file system
+1568279821.844,1225,582,None,Move,file system
+1568279821.8520002,1227,581,None,Move,file system
+1568279821.86,1228,580,None,Move,file system
+1568279821.8679998,1229,579,None,Move,file system
+1568279821.8760002,1231,577,None,Move,file system
+1568279821.8820002,1232,576,None,Move,file system
+1568279821.89,1234,575,None,Move,file system
+1568279821.8979998,1235,573,None,Move,file system
+1568279821.906,1236,573,None,Move,file system
+1568279821.914,1236,571,None,Move,file system
+1568279821.921,1238,571,None,Move,file system
+1568279821.93,1239,569,None,Move,file system
+1568279821.938,1240,568,None,Move,file system
+1568279821.946,1242,567,None,Move,file system
+1568279821.952,1243,566,None,Move,file system
+1568279821.96,1245,565,None,Move,file system
+1568279821.967,1246,564,None,Move,file system
+1568279821.976,1248,564,None,Move,file system
+1568279821.9829998,1250,563,None,Move,file system
+1568279821.9910002,1252,563,None,Move,file system
+1568279821.9989998,1253,562,None,Move,file system
+1568279822.008,1254,562,None,Move,file system
+1568279822.016,1256,562,None,Move,file system
+1568279822.0229998,1257,562,None,Move,file system
+1568279822.029,1258,562,None,Move,file system
+1568279822.038,1259,562,None,Move,file system
+1568279822.046,1261,562,None,Move,file system
+1568279822.053,1261,563,None,Move,file system
+1568279822.062,1262,564,None,Move,file system
+1568279822.264,1262,564,None,Move,file system
+1568279822.272,1262,564,None,Move,file system
+1568279822.279,1262,564,None,Move,file system
+1568279822.288,1262,564,None,Move,file system
+1568279822.296,1262,563,None,Move,file system
+1568279822.304,1262,562,None,Move,file system
+1568279822.312,1261,562,None,Move,file system
+1568279822.3179998,1261,562,None,Move,file system
+1568279822.327,1261,561,None,Move,file system
+1568279822.335,1260,561,None,Move,file system
+1568279822.344,1260,561,None,Move,file system
+1568279822.3739998,1260,561,None,Move,file system
+1568279822.385,1262,561,None,Move,file system
+1568279822.393,1266,561,None,Move,file system
+1568279822.401,1273,563,None,Move,file system
+1568279822.408,1282,563,None,Move,file system
+1568279822.416,1295,563,None,Move,file system
+1568279822.424,1312,563,None,Move,file system
+1568279822.4320002,1332,560,None,Move,file system
+1568279822.44,1356,557,None,Move,file system
+1568279822.45,1376,555,None,Move,file system
+1568279822.455,1400,550,None,Move,file system
+1568279822.4629998,1420,548,None,Move,file system
+1568279822.47,1444,541,None,Move,file system
+1568279822.478,1468,539,None,Move,file system
+1568279822.486,1498,537,None,Move,file system
+1568279822.494,1521,536,None,Move,file system
+1568279822.502,1546,533,None,Move,file system
+1568279822.51,1569,530,None,Move,file system
+1568279822.518,1593,527,None,Move,file system
+1568279822.524,1613,524,None,Move,file system
+1568279822.532,1630,523,None,Move,file system
+1568279822.54,1653,523,None,Move,file system
+1568279822.548,1669,523,None,Move,file system
+1568279822.556,1689,525,None,Move,file system
+1568279822.565,1712,527,None,Move,file system
+1568279822.572,1733,530,None,Move,file system
+1568279822.58,1753,533,None,Move,file system
+1568279822.5879998,1769,535,None,Move,file system
+1568279822.597,1782,538,None,Move,file system
+1568279822.6020002,1794,540,None,Move,file system
+1568279822.61,1802,542,None,Move,file system
+1568279822.619,1808,543,None,Move,file system
+1568279822.6260002,1812,544,None,Move,file system
+1568279822.633,1814,544,None,Move,file system
+1568279822.643,1815,544,None,Move,file system
+1568279822.654,1816,544,None,Move,file system
+1568279822.72,1816,544,None,Move,file system
+1568279822.729,1815,543,None,Move,file system
+1568279822.734,1813,540,None,Move,file system
+1568279822.742,1812,538,None,Move,file system
+1568279822.7510002,1810,537,None,Move,file system
+1568279822.7589998,1810,535,None,Move,file system
+1568279822.766,1810,534,None,Move,file system
+1568279822.774,1810,533,None,Move,file system
+1568279822.786,1810,532,None,Move,file system
+1568279822.837,1810,532,None,Move,file system
+1568279822.8479998,1810,532,None,Move,file system
+1568279822.857,1812,532,None,Move,file system
+1568279822.8639998,1812,532,None,Move,file system
+1568279822.8760002,1813,532,None,Move,file system
+1568279822.992,1813,532,Left,Pressed,file system
+1568279822.992,1813,532,None,Drag,file system
+1568279823.004,1813,528,None,Drag,file system
+1568279823.004,1813,528,Left,Released,file system
+1568279823.02,1812,522,None,Move,file system
+1568279823.031,1796,489,None,Move,file system
+1568279823.04,1783,463,None,Move,file system
+1568279823.05,1765,429,None,Move,file system
+1568279823.059,1748,392,None,Move,file system
+1568279823.0679998,1730,358,None,Move,file system
+1568279823.077,1714,324,None,Move,file system
+1568279823.085,1702,293,None,Move,file system
+1568279823.094,1688,257,None,Move,file system
+1568279823.104,1662,193,None,Move,file system
+1568279823.113,1648,164,None,Move,file system
+1568279823.121,1636,140,None,Move,file system
+1568279823.13,1623,114,None,Move,file system
+1568279823.139,1612,91,None,Move,file system
+1568279823.147,1601,66,None,Move,file system
+1568279823.157,1582,18,None,Move,file system
+1568279823.186,1570,-28,None,Move,file system
+1568279823.194,1565,-19,None,Move,file system
+1568279823.2029998,1565,-7,None,Move,file system
+1568279823.212,1565,-5,None,Move,file system
+1568279823.219,1565,-3,None,Move,file system
+1568279823.2270002,1566,-3,None,Move,file system
+1568279823.236,1567,-2,None,Move,file system
+1568279823.244,1567,0,None,Move,file system
+1568279823.2529998,1568,-1,None,Move,file system
+1568279823.262,1569,-1,None,Move,file system
+1568279823.27,1570,-1,None,Move,file system
+1568279823.279,1572,-1,None,Move,file system
+1568279823.289,1573,-1,None,Move,file system
+1568279823.524,1575,0,None,Move,file system
+1568279823.533,1580,0,None,Move,file system
+1568279823.542,1587,0,None,Move,file system
+1568279823.549,1595,-2,None,Move,file system
+1568279823.556,1603,-1,None,Move,file system
+1568279823.564,1613,-2,None,Move,file system
+1568279823.572,1624,-1,None,Move,file system
+1568279823.58,1634,0,None,Move,file system
+1568279823.589,1645,0,None,Move,file system
+1568279823.595,1655,2,None,Move,file system
+1568279823.6020002,1664,4,None,Move,file system
+1568279823.61,1674,6,None,Move,file system
+1568279823.6179998,1685,9,None,Move,file system
+1568279823.6260002,1695,11,None,Move,file system
+1568279823.6339998,1705,13,None,Move,file system
+1568279823.6420002,1713,15,None,Move,file system
+1568279823.65,1719,16,None,Move,file system
+1568279823.658,1723,18,None,Move,file system
+1568279823.664,1725,18,None,Move,file system
+1568279823.674,1726,19,None,Move,file system
+1568279823.6829998,1727,19,None,Move,file system
+1568279823.774,1727,19,None,Move,file system
+1568279823.782,1726,19,None,Move,file system
+1568279823.79,1724,17,None,Move,file system
+1568279823.798,1722,16,None,Move,file system
+1568279823.806,1720,15,None,Move,file system
+1568279823.814,1719,14,None,Move,file system
+1568279823.821,1717,13,None,Move,file system
+1568279823.8279998,1715,12,None,Move,file system
+1568279823.836,1713,11,None,Move,file system
+1568279823.845,1711,10,None,Move,file system
+1568279823.8520002,1708,9,None,Move,file system
+1568279823.861,1707,8,None,Move,file system
+1568279823.8679998,1706,7,None,Move,file system
+1568279823.8760002,1704,7,None,Move,file system
+1568279823.8820002,1704,7,None,Move,file system
+1568279823.89,1703,7,None,Move,file system
+1568279823.9,1703,7,None,Move,file system
+1568279823.907,1702,7,None,Move,file system
+1568279823.926,1702,7,None,Move,file system
+1568279824.034,1702,7,None,Move,file system
+1568279824.042,1703,7,None,Move,file system
+1568279824.05,1704,7,None,Move,file system
+1568279824.0579998,1706,7,None,Move,file system
+1568279824.066,1707,7,None,Move,file system
+1568279824.074,1707,7,None,Move,file system
+1568279824.082,1708,7,None,Move,file system
+1568279824.09,1709,7,None,Move,file system
+1568279824.096,1709,7,None,Move,file system
+1568279824.104,1710,7,None,Move,file system
+1568279824.1160002,1710,7,None,Move,file system
+1568279824.1239998,1711,7,None,Move,file system
+1568279824.1320002,1712,7,None,Move,file system
+1568279824.14,1713,7,None,Move,file system
+1568279824.1479998,1715,7,None,Move,file system
+1568279824.156,1715,7,None,Move,file system
+1568279824.165,1716,7,None,Move,file system
+1568279824.194,1716,7,Left,Pressed,file system
+1568279824.342,1716,7,Left,Released,file system
+1568279824.385,1716,7,None,Move,file system
+1568279824.4,1716,7,None,Move,file system
+1568279824.424,1716,7,None,Move,file system
+1568279824.452,1714,7,None,Move,file system
+1568279824.467,1713,7,None,Move,file system
+1568279824.486,1713,7,None,Move,file system
+1568279824.4989998,1712,7,None,Move,file system
+1568279824.516,1710,8,None,Move,file system
+1568279824.529,1708,9,None,Move,file system
+1568279824.542,1706,9,None,Move,file system
+1568279824.55,1704,10,None,Move,file system
+1568279824.5670002,1701,11,None,Move,file system
+1568279824.5879998,1699,12,None,Move,file system
+1568279824.918,1699,12,None,Move,file system
+1568279824.93,1700,12,None,Move,file system
+1568279824.938,1701,12,None,Move,file system
+1568279824.946,1702,12,None,Move,file system
+1568279824.952,1704,12,None,Move,file system
+1568279824.96,1705,12,None,Move,file system
+1568279824.968,1706,12,None,Move,file system
+1568279824.976,1708,12,None,Move,file system
+1568279824.984,1710,13,None,Move,file system
+1568279824.9929998,1711,14,None,Move,file system
+1568279825.004,1712,14,None,Move,file system
+1568279825.0110002,1714,14,None,Move,file system
+1568279825.016,1715,14,None,Move,file system
+1568279825.024,1716,14,None,Move,file system
+1568279825.03,1716,14,None,Move,file system
+1568279825.14,1716,14,Left,Pressed,file system
+1568279825.14,1716,14,None,Drag,file system
+1568279825.1479998,1715,14,None,Drag,file system
+1568279825.156,1714,14,None,Drag,file system
+1568279825.1620002,1713,14,None,Drag,file system
+1568279825.17,1711,14,None,Drag,file system
+1568279825.178,1709,14,None,Drag,file system
+1568279825.186,1707,12,None,Drag,file system
+1568279825.186,1707,12,Left,Released,file system
+1568279825.201,1705,11,None,Move,file system
+1568279825.207,1703,9,None,Move,file system
+1568279825.214,1702,9,None,Move,file system
+1568279825.221,1701,8,None,Move,file system
+1568279825.2270002,1699,7,None,Move,file system
+1568279825.234,1698,6,None,Move,file system
+1568279825.246,1696,5,None,Move,file system
+1568279825.262,1694,3,None,Move,file system
+1568279825.268,1693,3,None,Move,file system
+1568279825.284,1691,1,None,Move,file system
+1568279825.294,1690,1,None,Move,file system
+1568279825.309,1689,0,None,Move,file system
+1568279825.6420002,1688,0,None,Move,file system
+1568279825.665,1688,0,None,Move,file system
+1568279825.688,1687,0,None,Move,file system
+1568279825.721,1687,0,Left,Pressed,file system
+1568279825.836,1687,0,Left,Released,file system
+1568279825.918,1687,0,None,Move,file system
+1568279825.93,1687,1,None,Move,file system
+1568279825.9429998,1687,1,None,Move,file system
+1568279825.951,1687,2,None,Move,file system
+1568279825.959,1687,3,None,Move,file system
+1568279825.967,1687,4,None,Move,file system
+1568279825.974,1687,4,None,Move,file system
+1568279825.982,1687,5,None,Move,file system
+1568279825.9929998,1687,7,None,Move,file system
+1568279826.0,1687,8,None,Move,file system
+1568279826.0089998,1687,8,None,Move,file system
+1568279826.018,1687,9,None,Move,file system
+1568279826.1360002,1687,10,None,Move,file system
+1568279826.1479998,1688,10,None,Move,file system
+1568279826.157,1688,11,None,Move,file system
+1568279826.164,1688,11,None,Move,file system
+1568279826.173,1688,12,None,Move,file system
+1568279826.1820002,1688,12,None,Move,file system
+1568279826.3920002,1688,13,None,Move,file system
+1568279826.407,1686,14,None,Move,file system
+1568279826.417,1676,17,None,Move,file system
+1568279826.429,1669,19,None,Move,file system
+1568279826.439,1661,21,None,Move,file system
+1568279826.448,1636,25,None,Move,file system
+1568279826.461,1621,28,None,Move,file system
+1568279826.475,1582,33,None,Move,file system
+1568279826.485,1559,36,None,Move,file system
+1568279826.495,1515,37,None,Move,file system
+1568279826.505,1493,37,None,Move,file system
+1568279826.515,1470,37,None,Move,file system
+1568279826.525,1436,34,None,Move,file system
+1568279826.535,1422,32,None,Move,file system
+1568279826.544,1410,30,None,Move,file system
+1568279826.553,1401,28,None,Move,file system
+1568279826.563,1392,26,None,Move,file system
+1568279826.572,1381,22,None,Move,file system
+1568279826.581,1378,20,None,Move,file system
+1568279826.591,1375,20,None,Move,file system
+1568279826.601,1373,19,None,Move,file system
+1568279826.6120002,1370,17,None,Move,file system
+1568279826.6220002,1369,16,None,Move,file system
+1568279826.6320002,1366,14,None,Move,file system
+1568279826.6420002,1355,10,None,Move,file system
+1568279826.653,1348,7,None,Move,file system
+1568279826.663,1340,5,None,Move,file system
+1568279826.674,1322,0,None,Move,file system
+1568279826.685,1309,0,None,Move,file system
+1568279826.695,1296,-1,None,Move,file system
+1568279826.706,1269,-2,None,Move,file system
+1568279826.715,1256,-1,None,Move,file system
+1568279826.726,1242,0,None,Move,file system
+1568279826.736,1219,4,None,Move,file system
+1568279826.745,1211,6,None,Move,file system
+1568279826.755,1203,9,None,Move,file system
+1568279826.765,1195,10,None,Move,file system
+1568279826.775,1182,13,None,Move,file system
+1568279826.782,1176,14,None,Move,file system
+1568279826.79,1173,15,None,Move,file system
+1568279826.798,1170,15,None,Move,file system
+1568279826.805,1169,15,None,Move,file system
+1568279826.812,1167,16,None,Move,file system
+1568279826.82,1166,17,None,Move,file system
+1568279826.8279998,1166,17,None,Move,file system
+1568279826.836,1165,17,None,Move,file system
+1568279826.844,1164,17,None,Move,file system
+1568279826.8520002,1164,18,None,Move,file system
+1568279826.861,1163,18,None,Move,file system
+1568279826.8679998,1163,19,None,Move,file system
+1568279826.8760002,1161,19,None,Move,file system
+1568279826.8820002,1160,20,None,Move,file system
+1568279826.89,1159,21,None,Move,file system
+1568279826.8979998,1156,22,None,Move,file system
+1568279826.908,1152,24,None,Move,file system
+1568279826.915,1149,26,None,Move,file system
+1568279826.9220002,1143,28,None,Move,file system
+1568279826.93,1139,28,None,Move,file system
+1568279826.938,1133,30,None,Move,file system
+1568279826.946,1127,31,None,Move,file system
+1568279826.952,1122,32,None,Move,file system
+1568279826.96,1116,33,None,Move,file system
+1568279826.968,1111,34,None,Move,file system
+1568279826.976,1105,35,None,Move,file system
+1568279826.984,1100,35,None,Move,file system
+1568279826.992,1094,35,None,Move,file system
+1568279827.0,1087,35,None,Move,file system
+1568279827.008,1081,35,None,Move,file system
+1568279827.015,1074,35,None,Move,file system
+1568279827.022,1067,35,None,Move,file system
+1568279827.03,1061,35,None,Move,file system
+1568279827.039,1053,35,None,Move,file system
+1568279827.046,1045,35,None,Move,file system
+1568279827.054,1036,35,None,Move,file system
+1568279827.062,1028,35,None,Move,file system
+1568279827.07,1022,35,None,Move,file system
+1568279827.0779998,1014,35,None,Move,file system
+1568279827.086,1007,35,None,Move,file system
+1568279827.092,1001,35,None,Move,file system
+1568279827.1,996,33,None,Move,file system
+1568279827.1079998,990,32,None,Move,file system
+1568279827.117,984,30,None,Move,file system
+1568279827.1239998,977,28,None,Move,file system
+1568279827.1320002,971,26,None,Move,file system
+1568279827.141,963,25,None,Move,file system
+1568279827.1479998,958,24,None,Move,file system
+1568279827.156,951,24,None,Move,file system
+1568279827.1620002,944,24,None,Move,file system
+1568279827.17,937,24,None,Move,file system
+1568279827.178,929,27,None,Move,file system
+1568279827.186,921,29,None,Move,file system
+1568279827.194,915,31,None,Move,file system
+1568279827.202,908,32,None,Move,file system
+1568279827.21,902,33,None,Move,file system
+1568279827.218,897,34,None,Move,file system
+1568279827.226,891,35,None,Move,file system
+1568279827.232,886,35,None,Move,file system
+1568279827.242,880,36,None,Move,file system
+1568279827.252,875,37,None,Move,file system
+1568279827.2610002,870,38,None,Move,file system
+1568279827.268,866,39,None,Move,file system
+1568279827.274,863,40,None,Move,file system
+1568279827.281,860,40,None,Move,file system
+1568279827.288,858,42,None,Move,file system
+1568279827.296,856,43,None,Move,file system
+1568279827.302,855,43,None,Move,file system
+1568279827.31,853,44,None,Move,file system
+1568279827.3179998,852,45,None,Move,file system
+1568279827.326,851,45,None,Move,file system
+1568279827.334,850,47,None,Move,file system
+1568279827.344,849,47,None,Move,file system
+1568279827.35,847,48,None,Move,file system
+1568279827.3579998,846,49,None,Move,file system
+1568279827.3660002,844,51,None,Move,file system
+1568279827.3720002,842,51,None,Move,file system
+1568279827.38,840,52,None,Move,file system
+1568279827.3879998,837,53,None,Move,file system
+1568279827.397,834,54,None,Move,file system
+1568279827.404,831,55,None,Move,file system
+1568279827.4120002,828,55,None,Move,file system
+1568279827.42,824,55,None,Move,file system
+1568279827.428,820,55,None,Move,file system
+1568279827.436,814,56,None,Move,file system
+1568279827.4429998,808,57,None,Move,file system
+1568279827.45,803,58,None,Move,file system
+1568279827.458,797,60,None,Move,file system
+1568279827.466,791,61,None,Move,file system
+1568279827.474,786,62,None,Move,file system
+1568279827.482,781,63,None,Move,file system
+1568279827.49,777,63,None,Move,file system
+1568279827.498,774,64,None,Move,file system
+1568279827.5070002,770,65,None,Move,file system
+1568279827.514,764,67,None,Move,file system
+1568279827.52,759,69,None,Move,file system
+1568279827.528,755,71,None,Move,file system
+1568279827.551,750,73,None,Move,file system
+1568279827.556,743,75,None,Move,file system
+1568279827.561,740,76,None,Move,file system
+1568279827.5679998,737,77,None,Move,file system
+1568279827.576,735,77,None,Move,file system
+1568279827.585,734,78,None,Move,file system
+1568279827.592,732,79,None,Move,file system
+1568279827.599,732,79,None,Move,file system
+1568279827.606,731,80,None,Move,file system
+1568279827.615,731,80,None,Move,file system
+1568279827.6220002,730,80,None,Move,file system
+1568279827.6339998,730,81,None,Move,file system
+1568279827.656,730,81,None,Move,file system
+1568279827.664,729,82,None,Move,file system
+1568279827.6720002,728,83,None,Move,file system
+1568279827.68,726,84,None,Move,file system
+1568279827.688,725,84,None,Move,file system
+1568279827.697,724,84,None,Move,file system
+1568279827.704,722,85,None,Move,file system
+1568279827.712,719,86,None,Move,file system
+1568279827.72,715,88,None,Move,file system
+1568279827.726,709,89,None,Move,file system
+1568279827.735,703,90,None,Move,file system
+1568279827.742,698,92,None,Move,file system
+1568279827.75,692,94,None,Move,file system
+1568279827.758,686,96,None,Move,file system
+1568279827.766,681,97,None,Move,file system
+1568279827.774,676,98,None,Move,file system
+1568279827.782,673,99,None,Move,file system
+1568279827.79,670,100,None,Move,file system
+1568279827.798,667,100,None,Move,file system
+1568279827.804,664,100,None,Move,file system
+1568279827.812,659,101,None,Move,file system
+1568279827.82,654,102,None,Move,file system
+1568279827.8279998,650,103,None,Move,file system
+1568279827.837,648,103,None,Move,file system
+1568279827.845,646,103,None,Move,file system
+1568279827.8520002,645,103,None,Move,file system
+1568279827.86,643,103,None,Move,file system
+1568279827.869,642,103,None,Move,file system
+1568279827.8739998,641,103,None,Move,file system
+1568279827.8820002,640,103,None,Move,file system
+1568279827.89,640,103,None,Move,file system
+1568279827.968,638,103,None,Move,file system
+1568279827.98,638,103,None,Move,file system
+1568279827.988,636,103,None,Move,file system
+1568279827.996,636,102,None,Move,file system
+1568279828.004,635,101,None,Move,file system
+1568279828.012,634,101,None,Move,file system
+1568279828.018,634,101,None,Move,file system
+1568279828.031,633,100,None,Move,file system

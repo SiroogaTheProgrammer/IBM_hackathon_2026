@@ -1,0 +1,2456 @@
+client_timestamp,x,y,button,state,window
+1578404968.314,414,394,Left,Pressed,office
+1578404968.439,414,394,Left,Released,office
+1578404979.74,416,392,None,Move,office
+1578404979.756,420,391,None,Move,office
+1578404979.771,428,392,None,Move,office
+1578404979.7870002,434,393,None,Move,office
+1578404979.806,442,393,None,Move,office
+1578404979.814,447,393,None,Move,office
+1578404979.822,457,393,None,Move,office
+1578404979.83,470,393,None,Move,office
+1578404979.8379998,488,393,None,Move,office
+1578404979.845,514,391,None,Move,office
+1578404979.847,546,388,None,Move,office
+1578404979.8620002,579,382,None,Move,office
+1578404979.8779998,624,375,None,Move,office
+1578404979.894,644,372,None,Move,office
+1578404979.909,647,372,None,Move,office
+1578404979.925,649,372,None,Move,office
+1578404979.94,651,372,None,Move,office
+1578404980.776,653,371,None,Move,office
+1578404980.791,653,371,None,Move,office
+1578404980.8070002,661,368,None,Move,office
+1578404980.822,675,362,None,Move,office
+1578404980.8379998,686,355,None,Move,office
+1578404980.846,698,347,None,Move,office
+1578404980.8520002,715,336,None,Move,office
+1578404980.867,765,305,None,Move,office
+1578404980.883,840,252,None,Move,office
+1578404980.899,923,187,None,Move,office
+1578404980.914,968,152,None,Move,office
+1578404980.93,1096,31,None,Move,office
+1578404980.946,1173,-43,None,Move,office
+1578404980.961,1236,-44,None,Move,office
+1578404980.9770002,1288,-40,None,Move,office
+1578404980.992,1323,-30,None,Move,office
+1578404981.008,1340,-18,None,Move,office
+1578404981.024,1347,-12,None,Move,office
+1578404981.039,1348,-7,None,Move,office
+1578404981.055,1348,-5,None,Move,office
+1578404981.076,1346,-5,None,Move,office
+1578404981.092,1339,-6,None,Move,office
+1578404981.107,1330,-4,None,Move,office
+1578404981.123,1325,-4,None,Move,office
+1578404981.1379998,1318,-2,None,Move,office
+1578404981.154,1314,-1,None,Move,office
+1578404981.232,1313,-1,None,Move,office
+1578404981.248,1318,0,None,Move,office
+1578404981.2629998,1334,0,None,Move,office
+1578404981.2870002,1380,0,None,Move,office
+1578404981.302,1468,0,None,Move,office
+1578404981.3179998,1570,-6,None,Move,office
+1578404981.334,1665,-6,None,Move,office
+1578404981.349,1736,-4,None,Move,office
+1578404981.365,1791,0,None,Move,office
+1578404981.38,1826,0,None,Move,office
+1578404981.396,1851,0,None,Move,office
+1578404981.4120002,1857,0,None,Move,office
+1578404981.458,1858,1,None,Move,office
+1578404981.474,1858,2,None,Move,office
+1578404981.49,1860,4,None,Move,office
+1578404981.494,1861,5,None,Move,office
+1578404981.51,1864,9,None,Move,office
+1578404981.525,1866,11,None,Move,office
+1578404981.5570002,1866,11,None,Move,office
+1578404981.5879998,1863,11,None,Move,office
+1578404981.603,1861,9,None,Move,office
+1578404981.619,1859,6,None,Move,office
+1578404981.635,1849,1,None,Move,office
+1578404981.65,1847,1,None,Move,office
+1578404981.666,1839,1,None,Move,office
+1578404981.6820002,1833,1,None,Move,office
+1578404981.698,1829,1,None,Move,office
+1578404981.7129998,1828,1,None,Move,office
+1578404981.728,1825,1,None,Move,office
+1578404981.738,1822,1,None,Move,office
+1578404981.74,1820,1,None,Move,office
+1578404981.756,1817,1,None,Move,office
+1578404981.771,1813,1,None,Move,office
+1578404981.7870002,1810,1,None,Move,office
+1578404981.8179998,1809,1,None,Move,office
+1578404981.834,1806,1,None,Move,office
+1578404981.849,1800,0,None,Move,office
+1578404981.865,1795,0,None,Move,office
+1578404981.881,1788,0,None,Move,office
+1578404981.896,1779,0,None,Move,office
+1578404981.9120002,1771,0,None,Move,office
+1578404981.928,1769,0,None,Move,office
+1578404982.01,1769,0,Left,Pressed,office
+1578404982.06,1769,0,Left,Released,office
+1578404982.092,1768,0,None,Move,office
+1578404982.107,1768,1,None,Move,file system
+1578404982.123,1768,3,None,Move,file system
+1578404982.139,1768,9,None,Move,file system
+1578404982.154,1773,17,None,Move,file system
+1578404982.17,1773,26,None,Move,file system
+1578404982.185,1777,43,None,Move,file system
+1578404982.201,1783,71,None,Move,file system
+1578404982.217,1791,105,None,Move,file system
+1578404982.232,1804,151,None,Move,file system
+1578404982.248,1819,208,None,Move,file system
+1578404982.264,1835,282,None,Move,file system
+1578404982.279,1848,364,None,Move,file system
+1578404982.295,1859,448,None,Move,file system
+1578404982.31,1863,521,None,Move,file system
+1578404982.326,1864,570,None,Move,file system
+1578404982.342,1864,601,None,Move,file system
+1578404982.357,1864,630,None,Move,file system
+1578404982.3779998,1864,653,None,Move,file system
+1578404982.394,1863,673,None,Move,file system
+1578404982.41,1860,689,None,Move,file system
+1578404982.425,1858,701,None,Move,file system
+1578404982.441,1855,709,None,Move,file system
+1578404982.456,1852,715,None,Move,file system
+1578404982.488,1850,718,None,Move,file system
+1578404982.535,1848,719,None,Move,file system
+1578404982.55,1844,718,None,Move,file system
+1578404982.566,1842,718,None,Move,file system
+1578404982.581,1833,717,None,Move,file system
+1578404982.597,1807,716,None,Move,file system
+1578404982.613,1784,714,None,Move,file system
+1578404982.6279998,1760,708,None,Move,file system
+1578404982.65,1738,703,None,Move,file system
+1578404982.651,1730,699,None,Move,file system
+1578404982.667,1724,695,None,Move,file system
+1578404982.6829998,1721,691,None,Move,file system
+1578404982.698,1721,690,None,Move,file system
+1578404982.714,1721,685,None,Move,file system
+1578404982.73,1720,679,None,Move,file system
+1578404982.745,1720,677,None,Move,file system
+1578404982.7610002,1720,675,None,Move,file system
+1578404982.776,1720,667,None,Move,file system
+1578404982.792,1720,659,None,Move,file system
+1578404982.8070002,1720,653,None,Move,file system
+1578404982.823,1720,647,None,Move,file system
+1578404982.839,1724,644,None,Move,file system
+1578404982.8579998,1726,641,None,Move,file system
+1578404982.859,1727,638,None,Move,file system
+1578404982.875,1728,634,None,Move,file system
+1578404982.89,1729,632,None,Move,file system
+1578404982.906,1734,621,None,Move,file system
+1578404982.911,1736,617,None,Move,file system
+1578404982.927,1739,607,None,Move,file system
+1578404982.9420002,1741,601,None,Move,file system
+1578404982.958,1743,593,None,Move,file system
+1578404982.974,1746,587,None,Move,file system
+1578404982.9889998,1746,582,None,Move,file system
+1578404983.005,1748,580,None,Move,file system
+1578404983.13,1748,580,Left,Pressed,file system
+1578404983.224,1748,580,Left,Released,file system
+1578404983.286,1748,582,None,Move,office
+1578404983.302,1748,585,None,Move,office
+1578404983.333,1748,587,None,Move,office
+1578404983.458,1747,587,None,Move,office
+1578404983.474,1747,587,None,Move,office
+1578404983.49,1744,582,None,Move,office
+1578404983.505,1741,577,None,Move,office
+1578404983.52,1740,573,None,Move,office
+1578404983.536,1738,564,None,Move,office
+1578404983.552,1736,553,None,Move,office
+1578404983.5670002,1732,544,None,Move,office
+1578404983.583,1729,539,None,Move,office
+1578404983.599,1728,537,None,Move,office
+1578404983.6139998,1726,536,None,Move,office
+1578404983.63,1725,535,None,Move,office
+1578404983.645,1725,533,None,Move,office
+1578404983.661,1724,532,None,Move,office
+1578404983.677,1724,529,None,Move,office
+1578404983.6920002,1723,527,None,Move,office
+1578404983.708,1720,520,None,Move,office
+1578404983.724,1714,512,None,Move,office
+1578404983.7389998,1709,504,None,Move,office
+1578404983.755,1703,502,None,Move,office
+1578404983.77,1698,499,None,Move,office
+1578404983.786,1690,496,None,Move,office
+1578404983.802,1679,494,None,Move,office
+1578404983.8170002,1657,487,None,Move,office
+1578404983.833,1632,479,None,Move,office
+1578404983.8479998,1610,471,None,Move,office
+1578404983.8639998,1594,465,None,Move,office
+1578404983.88,1590,463,None,Move,office
+1578404983.895,1589,459,None,Move,office
+1578404983.929,1589,458,None,Move,office
+1578404984.0,1589,455,None,Move,office
+1578404984.015,1589,455,None,Move,office
+1578404984.031,1589,454,None,Move,office
+1578404984.094,1589,454,Left,Pressed,office
+1578404984.218,1589,454,Left,Released,office
+1578404984.234,1589,452,None,Move,office
+1578404984.25,1590,449,None,Move,office
+1578404984.265,1611,436,None,Move,office
+1578404984.281,1664,405,None,Move,office
+1578404984.2970002,1727,357,None,Move,office
+1578404984.312,1789,297,None,Move,office
+1578404984.3279998,1840,240,None,Move,office
+1578404984.343,1879,193,None,Move,office
+1578404984.359,1906,155,None,Move,office
+1578404984.375,1918,129,None,Move,office
+1578404984.39,1921,107,None,Move,office
+1578404984.406,1920,91,None,Move,office
+1578404984.4220002,1919,76,None,Move,office
+1578404984.437,1919,61,None,Move,office
+1578404984.4529998,1919,47,None,Move,office
+1578404984.468,1916,31,None,Move,office
+1578404984.484,1912,17,None,Move,office
+1578404984.5,1902,5,None,Move,office
+1578404984.515,1893,-2,None,Move,office
+1578404984.531,1879,-4,None,Move,office
+1578404984.546,1868,-4,None,Move,office
+1578404984.562,1846,-1,None,Move,office
+1578404984.5779998,1821,-1,None,Move,office
+1578404984.594,1804,-1,None,Move,office
+1578404984.609,1791,-1,None,Move,office
+1578404984.625,1789,0,None,Move,office
+1578404984.64,1786,0,None,Move,office
+1578404984.656,1783,0,None,Move,office
+1578404984.671,1780,0,None,Move,office
+1578404984.7529998,1778,0,None,Move,office
+1578404984.768,1777,0,None,Move,office
+1578404984.8620002,1777,0,Left,Pressed,office
+1578404984.94,1777,0,Left,Released,office
+1578404985.0,1777,0,None,Move,office
+1578404985.339,1777,2,None,Move,office
+1578404985.354,1777,2,None,Move,office
+1578404985.37,1775,10,None,Move,office
+1578404985.385,1772,25,None,Move,office
+1578404985.401,1769,43,None,Move,office
+1578404985.417,1766,58,None,Move,office
+1578404985.4320002,1764,73,None,Move,office
+1578404985.448,1763,85,None,Move,office
+1578404985.464,1761,91,None,Move,office
+1578404985.479,1761,94,None,Move,office
+1578404985.495,1761,97,None,Move,office
+1578404985.6360002,1761,97,None,Move,office
+1578404985.651,1761,95,None,Move,office
+1578404985.667,1761,90,None,Move,office
+1578404985.6820002,1763,82,None,Move,office
+1578404985.698,1769,70,None,Move,office
+1578404985.714,1780,52,None,Move,office
+1578404985.734,1785,41,None,Move,office
+1578404985.735,1788,35,None,Move,office
+1578404985.7510002,1791,29,None,Move,office
+1578404985.766,1792,27,None,Move,office
+1578404985.782,1792,24,None,Move,office
+1578404985.829,1792,22,None,Move,office
+1578404985.844,1792,19,None,Move,office
+1578404985.86,1792,16,None,Move,office
+1578404985.8760002,1789,14,None,Move,office
+1578404985.891,1788,12,None,Move,office
+1578404985.907,1787,10,None,Move,office
+1578404985.9220002,1783,7,None,Move,office
+1578404985.938,1781,5,None,Move,office
+1578404985.954,1780,4,None,Move,office
+1578404986.065,1780,4,Left,Pressed,office
+1578404986.143,1780,4,Left,Released,office
+1578404986.174,1779,5,None,Move,entertainment
+1578404986.19,1779,6,None,Move,entertainment
+1578404986.205,1779,14,None,Move,entertainment
+1578404986.221,1779,22,None,Move,entertainment
+1578404986.2370002,1779,30,None,Move,entertainment
+1578404986.252,1779,41,None,Move,entertainment
+1578404986.268,1779,56,None,Move,entertainment
+1578404986.283,1779,76,None,Move,entertainment
+1578404986.299,1779,94,None,Move,entertainment
+1578404986.315,1779,121,None,Move,entertainment
+1578404986.33,1779,162,None,Move,entertainment
+1578404986.346,1779,213,None,Move,entertainment
+1578404986.3620002,1779,271,None,Move,entertainment
+1578404986.377,1779,326,None,Move,entertainment
+1578404986.393,1779,377,None,Move,entertainment
+1578404986.408,1779,425,None,Move,entertainment
+1578404986.424,1779,476,None,Move,entertainment
+1578404986.44,1779,521,None,Move,entertainment
+1578404986.455,1779,556,None,Move,entertainment
+1578404986.471,1779,584,None,Move,entertainment
+1578404986.4870002,1779,597,None,Move,entertainment
+1578404986.502,1779,616,None,Move,entertainment
+1578404986.518,1779,628,None,Move,entertainment
+1578404986.533,1779,635,None,Move,entertainment
+1578404986.534,1779,637,None,Move,entertainment
+1578404986.55,1779,640,None,Move,entertainment
+1578404986.566,1779,648,None,Move,entertainment
+1578404986.57,1779,652,None,Move,entertainment
+1578404986.586,1779,658,None,Move,entertainment
+1578404986.601,1780,660,None,Move,entertainment
+1578404986.617,1780,662,None,Move,entertainment
+1578404986.6320002,1780,664,None,Move,entertainment
+1578404986.6479998,1780,665,None,Move,entertainment
+1578404986.664,1781,667,None,Move,entertainment
+1578404986.679,1782,668,None,Move,entertainment
+1578404986.695,1784,672,None,Move,entertainment
+1578404986.711,1785,674,None,Move,entertainment
+1578404986.726,1785,676,None,Move,entertainment
+1578404986.7729998,1785,678,None,Move,entertainment
+1578404986.789,1784,678,None,Move,entertainment
+1578404986.804,1774,678,None,Move,entertainment
+1578404986.82,1757,676,None,Move,entertainment
+1578404986.836,1715,664,None,Move,entertainment
+1578404986.851,1634,640,None,Move,entertainment
+1578404986.867,1535,613,None,Move,entertainment
+1578404986.8820002,1434,585,None,Move,entertainment
+1578404986.8979998,1359,562,None,Move,entertainment
+1578404986.914,1300,543,None,Move,entertainment
+1578404986.934,1262,531,None,Move,entertainment
+1578404986.95,1231,520,None,Move,entertainment
+1578404986.966,1206,513,None,Move,entertainment
+1578404986.982,1185,509,None,Move,entertainment
+1578404986.9970002,1175,508,None,Move,entertainment
+1578404987.012,1167,508,None,Move,entertainment
+1578404987.028,1163,507,None,Move,entertainment
+1578404987.044,1155,507,None,Move,entertainment
+1578404987.062,1148,507,None,Move,entertainment
+1578404987.0679998,1144,507,None,Move,entertainment
+1578404987.083,1129,507,None,Move,entertainment
+1578404987.099,1109,507,None,Move,entertainment
+1578404987.115,1089,507,None,Move,entertainment
+1578404987.13,1072,507,None,Move,entertainment
+1578404987.146,1052,507,None,Move,entertainment
+1578404987.161,1029,507,None,Move,entertainment
+1578404987.177,1002,507,None,Move,entertainment
+1578404987.1929998,972,507,None,Move,entertainment
+1578404987.208,941,507,None,Move,entertainment
+1578404987.224,908,506,None,Move,entertainment
+1578404987.24,876,501,None,Move,entertainment
+1578404987.255,850,495,None,Move,entertainment
+1578404987.271,833,490,None,Move,entertainment
+1578404987.286,827,486,None,Move,entertainment
+1578404987.302,822,481,None,Move,entertainment
+1578404987.3179998,817,475,None,Move,entertainment
+1578404987.333,815,472,None,Move,entertainment
+1578404987.349,815,468,None,Move,entertainment
+1578404987.365,814,464,None,Move,entertainment
+1578404987.3820002,812,458,None,Move,entertainment
+1578404987.3879998,811,457,None,Move,entertainment
+1578404987.482,809,456,None,Move,entertainment
+1578404987.544,809,456,Left,Pressed,entertainment
+1578404987.613,809,456,Left,Released,entertainment
+1578404987.65,809,456,None,Move,entertainment
+1578404987.665,812,456,None,Move,entertainment
+1578404987.681,822,456,None,Move,entertainment
+1578404987.697,829,456,None,Move,entertainment
+1578404987.712,841,456,None,Move,entertainment
+1578404987.728,850,456,None,Move,entertainment
+1578404987.7429998,858,456,None,Move,entertainment
+1578404987.7589998,869,456,None,Move,entertainment
+1578404987.775,889,456,None,Move,entertainment
+1578404987.79,916,456,None,Move,entertainment
+1578404987.806,949,456,None,Move,entertainment
+1578404987.822,990,462,None,Move,entertainment
+1578404987.837,1025,468,None,Move,entertainment
+1578404987.853,1059,474,None,Move,entertainment
+1578404987.8679998,1091,479,None,Move,entertainment
+1578404987.8839998,1125,485,None,Move,entertainment
+1578404987.9,1162,491,None,Move,entertainment
+1578404987.915,1201,497,None,Move,entertainment
+1578404987.931,1258,509,None,Move,entertainment
+1578404987.947,1323,529,None,Move,entertainment
+1578404987.962,1364,543,None,Move,entertainment
+1578404987.978,1384,550,None,Move,entertainment
+1578404987.9929998,1433,566,None,Move,entertainment
+1578404988.0089998,1488,584,None,Move,entertainment
+1578404988.025,1544,603,None,Move,entertainment
+1578404988.04,1598,619,None,Move,entertainment
+1578404988.056,1640,632,None,Move,entertainment
+1578404988.072,1666,643,None,Move,entertainment
+1578404988.087,1681,649,None,Move,entertainment
+1578404988.2129998,1685,651,None,Move,entertainment
+1578404988.228,1686,652,None,Move,entertainment
+1578404988.244,1686,656,None,Move,entertainment
+1578404988.2589998,1686,661,None,Move,entertainment
+1578404988.275,1685,669,None,Move,entertainment
+1578404988.29,1684,674,None,Move,entertainment
+1578404988.296,1684,679,None,Move,entertainment
+1578404988.311,1683,690,None,Move,entertainment
+1578404988.327,1682,700,None,Move,entertainment
+1578404988.343,1682,710,None,Move,entertainment
+1578404988.3579998,1682,717,None,Move,entertainment
+1578404988.3739998,1684,722,None,Move,entertainment
+1578404988.389,1691,725,None,Move,entertainment
+1578404988.405,1703,725,None,Move,entertainment
+1578404988.421,1726,725,None,Move,entertainment
+1578404988.436,1739,725,None,Move,entertainment
+1578404988.452,1769,725,None,Move,entertainment
+1578404988.467,1797,725,None,Move,entertainment
+1578404988.4829998,1823,723,None,Move,entertainment
+1578404988.4989998,1845,721,None,Move,entertainment
+1578404988.514,1860,718,None,Move,entertainment
+1578404988.53,1870,716,None,Move,entertainment
+1578404988.546,1873,714,None,Move,entertainment
+1578404988.561,1877,712,None,Move,entertainment
+1578404988.577,1879,710,None,Move,entertainment
+1578404988.592,1881,704,None,Move,entertainment
+1578404988.6079998,1881,698,None,Move,entertainment
+1578404988.6239998,1881,691,None,Move,entertainment
+1578404988.639,1881,687,None,Move,entertainment
+1578404988.655,1881,684,None,Move,entertainment
+1578404988.671,1881,682,None,Move,entertainment
+1578404988.827,1881,682,None,Move,entertainment
+1578404988.842,1881,688,None,Move,entertainment
+1578404988.8579998,1881,702,None,Move,entertainment
+1578404988.8739998,1880,713,None,Move,entertainment
+1578404988.889,1879,739,None,Move,entertainment
+1578404988.897,1876,752,None,Move,entertainment
+1578404988.913,1872,776,None,Move,entertainment
+1578404988.928,1868,796,None,Move,entertainment
+1578404988.946,1866,817,None,Move,entertainment
+1578404988.95,1865,825,None,Move,entertainment
+1578404988.966,1863,841,None,Move,entertainment
+1578404988.981,1863,844,None,Move,entertainment
+1578404989.165,1861,846,None,Move,entertainment
+1578404989.181,1857,841,None,Move,entertainment
+1578404989.196,1855,832,None,Move,entertainment
+1578404989.212,1852,818,None,Move,entertainment
+1578404989.228,1852,811,None,Move,entertainment
+1578404989.2429998,1852,808,None,Move,entertainment
+1578404989.447,1852,808,None,Move,entertainment
+1578404989.462,1851,805,None,Move,entertainment
+1578404989.478,1850,797,None,Move,entertainment
+1578404989.494,1849,793,None,Move,entertainment
+1578404989.5089998,1845,776,None,Move,entertainment
+1578404989.524,1840,746,None,Move,entertainment
+1578404989.54,1837,714,None,Move,entertainment
+1578404989.556,1834,684,None,Move,entertainment
+1578404989.571,1834,664,None,Move,entertainment
+1578404989.587,1834,652,None,Move,entertainment
+1578404989.603,1834,641,None,Move,entertainment
+1578404989.6179998,1834,636,None,Move,entertainment
+1578404989.6339998,1834,630,None,Move,entertainment
+1578404989.649,1834,628,None,Move,entertainment
+1578404989.732,1834,628,Left,Pressed,entertainment
+1578404989.81,1834,628,Left,Released,entertainment
+1578404989.919,1834,628,Left,Pressed,entertainment
+1578404990.0110002,1834,628,Left,Released,file system
+1578404991.566,1834,628,None,Move,file system
+1578404991.5679998,1833,628,None,Move,file system
+1578404991.584,1825,628,None,Move,file system
+1578404991.599,1819,630,None,Move,file system
+1578404991.615,1805,632,None,Move,file system
+1578404991.631,1784,634,None,Move,file system
+1578404991.646,1769,635,None,Move,file system
+1578404991.6620002,1731,638,None,Move,file system
+1578404991.677,1676,638,None,Move,file system
+1578404991.6929998,1595,638,None,Move,file system
+1578404991.709,1490,638,None,Move,file system
+1578404991.724,1361,638,None,Move,file system
+1578404991.74,1223,638,None,Move,file system
+1578404991.756,1081,638,None,Move,file system
+1578404991.7729998,954,634,None,Move,file system
+1578404991.776,895,627,None,Move,file system
+1578404991.792,781,613,None,Move,file system
+1578404991.805,731,604,None,Move,file system
+1578404991.8070002,684,595,None,Move,file system
+1578404991.823,607,574,None,Move,file system
+1578404991.8379998,539,556,None,Move,file system
+1578404991.854,511,547,None,Move,file system
+1578404991.87,458,525,None,Move,file system
+1578404991.885,417,507,None,Move,file system
+1578404991.901,388,494,None,Move,file system
+1578404991.917,365,482,None,Move,file system
+1578404991.9320002,345,467,None,Move,file system
+1578404991.948,329,455,None,Move,file system
+1578404991.9629998,320,443,None,Move,file system
+1578404991.979,316,433,None,Move,file system
+1578404991.995,312,419,None,Move,file system
+1578404992.0129998,309,400,None,Move,file system
+1578404992.015,308,388,None,Move,file system
+1578404992.03,308,376,None,Move,file system
+1578404992.046,304,353,None,Move,file system
+1578404992.061,303,336,None,Move,file system
+1578404992.077,303,324,None,Move,file system
+1578404992.093,303,312,None,Move,file system
+1578404992.1079998,303,303,None,Move,file system
+1578404992.1239998,303,293,None,Move,file system
+1578404992.133,303,289,None,Move,file system
+1578404992.135,303,285,None,Move,file system
+1578404992.151,304,276,None,Move,file system
+1578404992.167,305,269,None,Move,file system
+1578404992.1820002,307,263,None,Move,file system
+1578404992.198,308,260,None,Move,file system
+1578404992.214,310,254,None,Move,file system
+1578404992.23,311,247,None,Move,file system
+1578404992.245,311,246,None,Move,file system
+1578404992.2610002,312,241,None,Move,file system
+1578404992.276,314,235,None,Move,file system
+1578404992.292,316,227,None,Move,file system
+1578404992.3070002,317,221,None,Move,file system
+1578404992.323,319,215,None,Move,file system
+1578404992.339,319,212,None,Move,file system
+1578404992.542,320,211,None,Move,file system
+1578404992.5570002,321,214,None,Move,file system
+1578404992.574,324,223,None,Move,file system
+1578404992.576,325,228,None,Move,file system
+1578404992.592,326,232,None,Move,file system
+1578404992.607,326,238,None,Move,file system
+1578404992.623,328,242,None,Move,file system
+1578404992.639,330,247,None,Move,file system
+1578404992.654,332,250,None,Move,file system
+1578404992.67,334,257,None,Move,file system
+1578404992.686,334,263,None,Move,file system
+1578404992.795,334,265,None,Move,file system
+1578404992.811,334,268,None,Move,file system
+1578404992.826,334,270,None,Move,file system
+1578404992.842,335,274,None,Move,file system
+1578404992.857,335,278,None,Move,file system
+1578404992.873,335,281,None,Move,file system
+1578404992.889,335,283,None,Move,file system
+1578404992.904,336,287,None,Move,file system
+1578404992.92,336,287,None,Move,file system
+1578404992.935,336,290,None,Move,file system
+1578404992.951,338,294,None,Move,file system
+1578404992.967,339,301,None,Move,file system
+1578404992.982,340,304,None,Move,file system
+1578404992.998,340,306,None,Move,file system
+1578404993.083,340,306,None,Move,file system
+1578404993.099,342,304,None,Move,file system
+1578404993.1139998,345,297,None,Move,file system
+1578404993.13,347,288,None,Move,file system
+1578404993.146,351,272,None,Move,file system
+1578404993.1620002,357,255,None,Move,file system
+1578404993.178,366,233,None,Move,file system
+1578404993.184,369,226,None,Move,file system
+1578404993.2,372,210,None,Move,file system
+1578404993.215,376,199,None,Move,file system
+1578404993.231,377,194,None,Move,file system
+1578404993.2470002,381,188,None,Move,file system
+1578404993.262,381,186,None,Move,file system
+1578404993.278,381,184,None,Move,file system
+1578404993.426,381,181,None,Move,file system
+1578404993.441,381,179,None,Move,file system
+1578404993.457,381,177,None,Move,file system
+1578404993.472,384,175,None,Move,file system
+1578404993.488,384,172,None,Move,file system
+1578404993.504,384,171,None,Move,file system
+1578404993.519,384,170,None,Move,file system
+1578404993.535,384,168,None,Move,file system
+1578404994.842,385,166,None,Move,file system
+1578404994.8579998,385,169,None,Move,file system
+1578404994.873,385,173,None,Move,file system
+1578404994.92,385,174,None,Move,file system
+1578404994.936,385,175,None,Move,file system
+1578404995.1160002,385,175,Left,Pressed,file system
+1578404995.27,385,175,Left,Released,file system
+1578404996.155,385,176,None,Move,file system
+1578404996.17,385,175,None,Move,file system
+1578404996.18,385,175,None,Move,file system
+1578404996.19,385,172,None,Move,file system
+1578404996.195,385,171,None,Move,file system
+1578404996.205,385,170,None,Move,file system
+1578404996.21,385,168,None,Move,file system
+1578404996.222,385,167,None,Move,file system
+1578404996.23,385,164,None,Move,file system
+1578404996.235,385,163,None,Move,file system
+1578404996.43,385,162,Left,Pressed,file system
+1578404996.43,385,162,None,Drag,file system
+1578404996.43,385,162,Left,Released,file system
+1578404996.631,385,161,Left,Pressed,file system
+1578404996.71,385,161,Left,Released,file system
+1578404998.8760002,385,164,None,Move,office
+1578404998.891,387,168,None,Move,office
+1578404998.907,389,171,None,Move,office
+1578404998.9220002,389,175,None,Move,office
+1578404998.938,391,180,None,Move,office
+1578404998.944,392,184,None,Move,office
+1578404998.96,396,195,None,Move,office
+1578404998.976,398,205,None,Move,office
+1578404998.994,399,209,None,Move,office
+1578404998.998,399,212,None,Move,office
+1578404999.014,399,215,None,Move,office
+1578404999.03,400,217,None,Move,office
+1578404999.044,400,220,None,Move,office
+1578404999.06,400,223,None,Move,office
+1578404999.076,400,227,None,Move,office
+1578404999.091,400,232,None,Move,office
+1578404999.107,400,239,None,Move,office
+1578404999.1220002,400,245,None,Move,office
+1578404999.1379998,400,249,None,Move,office
+1578404999.145,400,254,None,Move,office
+1578404999.16,401,261,None,Move,office
+1578404999.176,403,269,None,Move,office
+1578404999.191,405,280,None,Move,office
+1578404999.207,407,289,None,Move,office
+1578404999.2229998,409,300,None,Move,office
+1578404999.245,414,311,None,Move,office
+1578404999.2610002,420,326,None,Move,office
+1578404999.276,430,348,None,Move,office
+1578404999.292,433,353,None,Move,office
+1578404999.3070002,435,354,None,Move,office
+1578404999.327,436,357,None,Move,office
+1578404999.408,437,357,None,Move,office
+1578404999.524,437,357,None,Move,office
+1578404999.546,436,354,None,Move,office
+1578404999.561,435,352,None,Move,office
+1578404999.577,432,347,None,Move,office
+1578404999.587,430,345,None,Move,office
+1578404999.5879998,430,344,None,Move,office
+1578404999.762,430,344,Left,Pressed,office
+1578404999.846,430,344,Left,Released,office
+1578405000.5110002,430,343,None,Move,office
+1578405000.58,431,344,None,Move,office
+1578405000.711,433,344,None,Move,office
+1578405000.7270002,434,344,None,Move,office
+1578405000.796,435,346,None,Move,office
+1578405000.811,436,347,None,Move,office
+1578405000.827,439,347,None,Move,office
+1578405000.854,440,347,None,Move,office
+1578405000.8620002,441,348,None,Move,office
+1578405000.877,444,349,None,Move,office
+1578405000.893,445,349,None,Move,office
+1578405000.924,449,352,None,Move,office
+1578405000.94,451,353,None,Move,office
+1578405000.949,453,354,None,Move,office
+1578405000.965,461,356,None,Move,office
+1578405000.98,471,359,None,Move,office
+1578405000.998,484,363,None,Move,office
+1578405001.0010002,494,365,None,Move,office
+1578405001.0170002,517,368,None,Move,office
+1578405001.032,541,372,None,Move,office
+1578405001.049,565,375,None,Move,office
+1578405001.065,587,375,None,Move,office
+1578405001.08,613,376,None,Move,office
+1578405001.096,641,376,None,Move,office
+1578405001.1120002,675,376,None,Move,office
+1578405001.127,708,376,None,Move,office
+1578405001.149,733,376,None,Move,office
+1578405001.165,744,376,None,Move,office
+1578405001.181,747,374,None,Move,office
+1578405001.196,747,369,None,Move,office
+1578405001.212,747,358,None,Move,office
+1578405001.2270002,747,351,None,Move,office
+1578405001.2429998,747,340,None,Move,office
+1578405001.25,744,333,None,Move,office
+1578405001.265,739,322,None,Move,office
+1578405001.281,731,314,None,Move,office
+1578405001.296,719,303,None,Move,office
+1578405001.312,707,295,None,Move,office
+1578405001.3279998,699,288,None,Move,office
+1578405001.35,694,285,None,Move,office
+1578405001.3520002,691,283,None,Move,office
+1578405001.3620002,691,283,None,Move,office
+1578405001.38,690,283,None,Move,office
+1578405001.444,687,283,None,Move,office
+1578405001.454,686,283,None,Move,office
+1578405001.462,683,283,None,Move,office
+1578405001.469,681,283,None,Move,office
+1578405001.475,677,283,None,Move,office
+1578405001.485,673,283,None,Move,office
+1578405001.495,670,283,None,Move,office
+1578405001.5029998,668,283,None,Move,office
+1578405001.505,664,283,None,Move,office
+1578405001.515,658,283,None,Move,office
+1578405001.525,651,283,None,Move,office
+1578405001.533,646,283,None,Move,office
+1578405001.535,641,283,None,Move,office
+1578405001.545,635,283,None,Move,office
+1578405001.555,635,283,None,Move,office
+1578405001.565,634,282,None,Move,office
+1578405001.573,633,281,None,Move,office
+1578405001.647,631,280,None,Move,office
+1578405001.657,630,280,None,Move,office
+1578405001.717,629,280,None,Move,office
+1578405001.725,629,279,None,Move,office
+1578405001.7270002,627,279,None,Move,office
+1578405001.7370002,624,276,None,Move,office
+1578405001.748,624,275,None,Move,office
+1578405001.758,622,275,None,Move,office
+1578405001.766,621,274,None,Move,office
+1578405001.768,617,271,None,Move,office
+1578405001.778,616,269,None,Move,office
+1578405001.788,612,267,None,Move,office
+1578405001.798,609,266,None,Move,office
+1578405001.806,607,264,None,Move,office
+1578405001.8079998,605,263,None,Move,office
+1578405001.8179998,605,261,None,Move,office
+1578405001.8279998,603,259,None,Move,office
+1578405001.837,602,259,None,Move,office
+1578405001.839,601,257,None,Move,office
+1578405001.849,601,257,None,Move,office
+1578405001.857,601,256,None,Move,office
+1578405001.877,601,255,None,Move,office
+1578405001.889,601,253,None,Move,office
+1578405001.897,601,252,None,Move,office
+1578405001.917,599,250,None,Move,office
+1578405001.929,598,250,None,Move,office
+1578405002.038,598,250,Left,Pressed,office
+1578405002.191,598,250,Left,Released,office
+1578405002.6620002,598,250,None,Move,office
+1578405004.43,597,251,None,Move,office
+1578405004.446,595,259,None,Move,office
+1578405004.462,587,283,None,Move,office
+1578405004.4770002,572,319,None,Move,office
+1578405004.484,565,340,None,Move,office
+1578405004.4989998,554,373,None,Move,office
+1578405004.515,549,386,None,Move,office
+1578405004.531,548,389,None,Move,office
+1578405004.562,548,389,None,Move,office
+1578405004.577,548,392,None,Move,office
+1578405004.584,547,394,None,Move,office
+1578405004.6,544,398,None,Move,office
+1578405004.615,542,403,None,Move,office
+1578405004.625,540,407,None,Move,office
+1578405004.6320002,539,412,None,Move,office
+1578405004.647,536,422,None,Move,office
+1578405004.663,535,427,None,Move,office
+1578405004.679,534,429,None,Move,office
+1578405004.684,534,432,None,Move,office
+1578405004.7,534,440,None,Move,office
+1578405004.715,534,446,None,Move,office
+1578405004.731,534,455,None,Move,office
+1578405004.7470002,534,460,None,Move,office
+1578405004.762,534,473,None,Move,office
+1578405004.778,536,494,None,Move,office
+1578405004.784,537,506,None,Move,office
+1578405004.8,541,534,None,Move,office
+1578405004.816,546,561,None,Move,office
+1578405004.831,553,587,None,Move,office
+1578405004.85,560,608,None,Move,office
+1578405004.851,562,617,None,Move,office
+1578405004.867,566,626,None,Move,office
+1578405004.883,566,629,None,Move,office
+1578405004.8839998,566,631,None,Move,office
+1578405004.9,567,633,None,Move,office
+1578405004.915,568,635,None,Move,office
+1578405004.962,569,636,None,Move,office
+1578405004.978,570,638,None,Move,office
+1578405004.984,570,639,None,Move,office
+1578405005.0,571,643,None,Move,office
+1578405005.015,572,646,None,Move,office
+1578405005.031,572,648,None,Move,office
+1578405005.0470002,573,650,None,Move,office
+1578405005.062,573,651,None,Move,office
+1578405005.0779998,575,655,None,Move,office
+1578405005.084,576,656,None,Move,office
+1578405005.1,577,661,None,Move,office
+1578405005.1160002,577,665,None,Move,office
+1578405005.131,578,670,None,Move,office
+1578405005.147,579,675,None,Move,office
+1578405005.1620002,580,678,None,Move,office
+1578405005.178,582,686,None,Move,office
+1578405005.184,583,692,None,Move,office
+1578405005.2,584,697,None,Move,office
+1578405005.216,586,701,None,Move,office
+1578405005.385,587,704,None,Move,office
+1578405005.4,587,704,None,Move,office
+1578405005.416,588,707,None,Move,office
+1578405005.532,589,709,None,Move,office
+1578405005.732,590,713,Left,Pressed,office
+1578405005.732,590,713,None,Drag,office
+1578405005.748,590,716,None,Drag,office
+1578405005.748,590,716,Left,Released,office
+1578405006.2329998,591,716,None,Move,office
+1578405006.2489998,592,717,None,Move,office
+1578405006.265,592,717,None,Move,office
+1578405006.28,595,717,None,Move,office
+1578405006.2870002,596,717,None,Move,office
+1578405006.302,602,718,None,Move,office
+1578405006.3179998,605,718,None,Move,office
+1578405006.334,612,721,None,Move,office
+1578405006.349,624,725,None,Move,office
+1578405006.365,636,729,None,Move,office
+1578405006.381,646,733,None,Move,office
+1578405006.387,653,736,None,Move,office
+1578405006.3979998,661,738,None,Move,office
+1578405006.399,669,742,None,Move,office
+1578405006.415,687,749,None,Move,office
+1578405006.43,710,759,None,Move,office
+1578405006.446,724,764,None,Move,office
+1578405006.462,755,778,None,Move,office
+1578405006.478,786,792,None,Move,office
+1578405006.4870002,815,806,None,Move,office
+1578405006.5029998,839,817,None,Move,office
+1578405006.518,850,822,None,Move,office
+1578405006.534,873,833,None,Move,office
+1578405006.55,897,844,None,Move,office
+1578405006.566,923,858,None,Move,office
+1578405006.581,955,875,None,Move,office
+1578405006.587,971,882,None,Move,office
+1578405006.607,1001,899,None,Move,office
+1578405006.607,1017,908,None,Move,office
+1578405006.623,1047,927,None,Move,office
+1578405006.639,1075,943,None,Move,office
+1578405006.654,1087,952,None,Move,office
+1578405006.67,1112,967,None,Move,office
+1578405006.686,1137,983,None,Move,office
+1578405006.687,1148,992,None,Move,office
+1578405006.7029998,1164,1006,None,Move,office
+1578405006.719,1177,1018,None,Move,office
+1578405006.734,1180,1021,None,Move,office
+1578405006.75,1185,1028,None,Move,office
+1578405006.766,1190,1034,None,Move,office
+1578405006.782,1194,1039,None,Move,office
+1578405006.7870002,1195,1040,None,Move,office
+1578405006.803,1196,1042,None,Move,office
+1578405006.8660002,1197,1043,None,Move,office
+1578405006.881,1199,1047,None,Move,office
+1578405006.8879998,1200,1048,None,Move,office
+1578405006.91,1202,1051,None,Move,office
+1578405006.962,1202,1050,None,Move,office
+1578405006.978,1202,1049,None,Move,office
+1578405006.988,1202,1046,None,Move,office
+1578405007.0029998,1202,1045,None,Move,office
+1578405007.019,1202,1039,None,Move,office
+1578405007.035,1203,1028,None,Move,office
+1578405007.05,1207,1014,None,Move,office
+1578405007.066,1211,1005,None,Move,office
+1578405007.081,1214,1000,None,Move,office
+1578405007.0879998,1216,996,None,Move,office
+1578405007.103,1221,990,None,Move,office
+1578405007.119,1223,987,None,Move,office
+1578405007.135,1225,985,None,Move,office
+1578405007.151,1225,985,None,Move,office
+1578405007.166,1227,985,None,Move,office
+1578405007.188,1228,985,None,Move,office
+1578405007.204,1229,985,None,Move,office
+1578405007.2670002,1231,985,None,Move,office
+1578405007.282,1232,985,None,Move,office
+1578405007.32,1234,984,Left,Pressed,office
+1578405007.32,1234,984,None,Drag,office
+1578405007.335,1235,984,None,Drag,office
+1578405007.335,1235,984,Left,Released,office
+1578405007.8679998,1235,984,None,Move,office
+1578405007.935,1234,984,None,Move,office
+1578405007.95,1233,984,None,Move,office
+1578405007.955,1233,984,None,Move,office
+1578405008.048,1229,984,None,Move,office
+1578405008.064,1228,984,None,Move,office
+1578405008.158,1227,984,None,Move,office
+1578405008.236,1227,984,None,Move,office
+1578405008.595,1227,982,None,Move,office
+1578405008.611,1227,981,None,Move,office
+1578405008.6420002,1227,980,None,Move,office
+1578405008.658,1226,980,None,Move,office
+1578405008.673,1224,980,None,Move,office
+1578405008.689,1220,980,None,Move,office
+1578405012.498,1216,980,None,Move,office
+1578405012.917,1215,980,None,Move,office
+1578405012.9329998,1214,981,None,Move,office
+1578405012.948,1214,982,None,Move,office
+1578405012.964,1212,984,None,Move,office
+1578405012.98,1211,985,None,Move,office
+1578405012.995,1208,985,None,Move,office
+1578405013.0110002,1208,985,None,Move,office
+1578405013.339,1207,986,None,Move,office
+1578405013.359,1207,987,None,Move,office
+1578405013.375,1207,988,None,Move,office
+1578405013.39,1207,993,None,Move,office
+1578405013.4020002,1207,994,None,Move,office
+1578405013.4020002,1208,998,None,Move,office
+1578405013.418,1209,1001,None,Move,office
+1578405013.434,1210,1010,None,Move,office
+1578405013.45,1210,1011,None,Move,office
+1578405013.465,1207,1015,None,Move,office
+1578405013.481,1205,1018,None,Move,office
+1578405013.496,1202,1022,None,Move,office
+1578405013.512,1201,1025,None,Move,office
+1578405013.5270002,1199,1025,None,Move,office
+1578405013.543,1198,1025,None,Move,office
+1578405013.559,1197,1026,None,Move,office
+1578405013.574,1197,1027,None,Move,office
+1578405013.59,1197,1028,None,Move,office
+1578405013.61,1197,1030,None,Move,office
+1578405013.611,1199,1030,None,Move,office
+1578405013.627,1212,1030,None,Move,office
+1578405013.643,1227,1030,None,Move,office
+1578405013.658,1293,1023,None,Move,office
+1578405013.674,1398,1009,None,Move,office
+1578405013.69,1534,984,None,Move,office
+1578405013.705,1668,960,None,Move,office
+1578405013.721,1756,947,None,Move,office
+1578405013.7370002,1791,937,None,Move,office
+1578405013.752,1807,932,None,Move,office
+1578405013.768,1812,929,None,Move,office
+1578405013.783,1812,924,None,Move,office
+1578405013.799,1812,915,None,Move,office
+1578405013.815,1812,907,None,Move,office
+1578405013.83,1809,887,None,Move,office
+1578405013.842,1808,877,None,Move,office
+1578405013.843,1805,865,None,Move,office
+1578405013.859,1801,839,None,Move,office
+1578405013.8739998,1800,826,None,Move,office
+1578405013.89,1794,788,None,Move,office
+1578405013.906,1785,729,None,Move,office
+1578405013.921,1771,663,None,Move,office
+1578405013.937,1764,602,None,Move,office
+1578405013.952,1763,562,None,Move,office
+1578405013.968,1763,531,None,Move,office
+1578405013.984,1763,501,None,Move,office
+1578405013.9989998,1763,470,None,Move,office
+1578405014.015,1763,443,None,Move,office
+1578405014.03,1763,418,None,Move,office
+1578405014.046,1760,395,None,Move,office
+1578405014.062,1752,374,None,Move,office
+1578405014.077,1740,355,None,Move,office
+1578405014.093,1734,348,None,Move,office
+1578405014.109,1726,341,None,Move,office
+1578405014.1239998,1708,330,None,Move,office
+1578405014.14,1704,326,None,Move,office
+1578405014.155,1701,324,None,Move,office
+1578405014.171,1698,322,None,Move,office
+1578405014.187,1696,322,None,Move,office
+1578405014.202,1690,319,None,Move,office
+1578405014.208,1687,318,None,Move,office
+1578405014.2229998,1679,316,None,Move,office
+1578405014.2389998,1673,313,None,Move,office
+1578405014.254,1667,309,None,Move,office
+1578405014.27,1658,303,None,Move,office
+1578405014.286,1654,294,None,Move,office
+1578405014.301,1652,292,None,Move,office
+1578405014.3170002,1645,273,None,Move,office
+1578405014.333,1640,263,None,Move,office
+1578405014.3479998,1634,249,None,Move,office
+1578405014.3639998,1629,241,None,Move,office
+1578405014.379,1628,237,None,Move,office
+1578405014.395,1626,231,None,Move,office
+1578405014.411,1619,222,None,Move,office
+1578405014.426,1616,219,None,Move,office
+1578405014.4420002,1614,216,None,Move,office
+1578405014.458,1613,213,None,Move,office
+1578405014.4729998,1611,210,None,Move,office
+1578405014.565,1611,209,None,Move,office
+1578405014.581,1611,208,None,Move,office
+1578405014.674,1611,207,None,Move,office
+1578405014.711,1611,207,Left,Pressed,office
+1578405014.82,1611,207,Left,Released,office
+1578405015.065,1610,207,None,Move,file system
+1578405015.081,1607,212,None,Move,file system
+1578405015.096,1601,216,None,Move,file system
+1578405015.1120002,1592,220,None,Move,file system
+1578405015.127,1574,229,None,Move,file system
+1578405015.143,1543,240,None,Move,file system
+1578405015.159,1496,254,None,Move,file system
+1578405015.174,1436,267,None,Move,file system
+1578405015.19,1370,278,None,Move,file system
+1578405015.205,1291,291,None,Move,file system
+1578405015.221,1203,302,None,Move,file system
+1578405015.2370002,1095,315,None,Move,file system
+1578405015.252,985,325,None,Move,file system
+1578405015.268,881,334,None,Move,file system
+1578405015.284,801,338,None,Move,file system
+1578405015.299,750,338,None,Move,file system
+1578405015.315,713,338,None,Move,file system
+1578405015.33,682,338,None,Move,file system
+1578405015.346,667,338,None,Move,file system
+1578405015.3620002,637,338,None,Move,file system
+1578405015.3779998,609,338,None,Move,file system
+1578405015.393,587,338,None,Move,file system
+1578405015.409,567,337,None,Move,file system
+1578405015.424,547,335,None,Move,file system
+1578405015.44,528,331,None,Move,file system
+1578405015.455,507,328,None,Move,file system
+1578405015.471,490,325,None,Move,file system
+1578405015.4870002,476,321,None,Move,file system
+1578405015.502,474,321,None,Move,file system
+1578405015.518,472,320,None,Move,file system
+1578405015.534,470,319,None,Move,file system
+1578405015.549,467,317,None,Move,file system
+1578405015.566,465,312,None,Move,file system
+1578405015.571,464,308,None,Move,file system
+1578405015.586,462,304,None,Move,file system
+1578405015.6020002,460,299,None,Move,file system
+1578405015.6179998,456,293,None,Move,file system
+1578405015.633,452,287,None,Move,file system
+1578405015.649,449,279,None,Move,file system
+1578405015.664,444,273,None,Move,file system
+1578405015.68,435,263,None,Move,file system
+1578405015.696,430,254,None,Move,file system
+1578405015.711,426,248,None,Move,file system
+1578405015.7270002,422,241,None,Move,file system
+1578405015.7429998,417,237,None,Move,file system
+1578405015.758,416,236,None,Move,file system
+1578405015.883,416,236,Left,Pressed,file system
+1578405015.9889998,416,236,Left,Released,file system
+1578405016.0979998,416,236,Left,Pressed,file system
+1578405016.177,416,236,Left,Released,file system
+1578405016.9929998,416,236,None,Move,office
+1578405017.0089998,417,242,None,Move,office
+1578405017.025,419,253,None,Move,office
+1578405017.04,423,272,None,Move,office
+1578405017.056,433,301,None,Move,office
+1578405017.071,449,340,None,Move,office
+1578405017.087,464,377,None,Move,office
+1578405017.103,476,410,None,Move,office
+1578405017.1179998,487,437,None,Move,office
+1578405017.1339998,492,448,None,Move,office
+1578405017.149,501,464,None,Move,office
+1578405017.151,504,472,None,Move,office
+1578405017.167,511,482,None,Move,office
+1578405017.1829998,515,486,None,Move,office
+1578405017.198,518,487,None,Move,office
+1578405017.214,519,487,None,Move,office
+1578405017.23,520,487,None,Move,office
+1578405017.292,522,487,None,Move,office
+1578405017.3079998,522,487,None,Move,office
+1578405017.323,525,487,None,Move,office
+1578405017.355,527,487,None,Move,office
+1578405017.37,528,487,None,Move,office
+1578405017.3860002,528,487,None,Move,office
+1578405017.401,528,483,None,Move,office
+1578405017.417,524,476,None,Move,office
+1578405017.4329998,519,467,None,Move,office
+1578405017.448,508,452,None,Move,office
+1578405017.464,491,432,None,Move,office
+1578405017.48,469,411,None,Move,office
+1578405017.495,450,394,None,Move,office
+1578405017.5110002,431,379,None,Move,office
+1578405017.526,415,367,None,Move,office
+1578405017.542,403,358,None,Move,office
+1578405017.5579998,397,353,None,Move,office
+1578405017.573,396,349,None,Move,office
+1578405017.589,395,347,None,Move,office
+1578405017.61,395,346,None,Move,office
+1578405017.6260002,395,345,None,Move,office
+1578405017.643,395,344,None,Move,office
+1578405017.649,395,342,None,Move,office
+1578405017.665,395,341,None,Move,office
+1578405017.681,395,340,None,Move,office
+1578405017.697,395,339,None,Move,office
+1578405017.712,399,337,None,Move,office
+1578405017.7270002,404,336,None,Move,office
+1578405017.7429998,407,335,None,Move,office
+1578405017.7589998,408,335,None,Move,office
+1578405017.806,409,334,None,Move,office
+1578405017.821,410,334,None,Move,office
+1578405017.837,412,334,None,Move,office
+1578405017.853,415,334,None,Move,office
+1578405017.8679998,418,334,None,Move,office
+1578405017.92,418,334,Left,Pressed,office
+1578405018.029,418,334,Left,Released,office
+1578405018.044,419,334,None,Move,office
+1578405018.06,419,335,None,Move,office
+1578405018.077,419,337,None,Move,office
+1578405018.083,420,339,None,Move,office
+1578405018.0979998,421,342,None,Move,office
+1578405018.1139998,421,344,None,Move,office
+1578405018.3379998,422,346,None,Move,office
+1578405018.353,423,348,None,Move,office
+1578405018.369,424,351,None,Move,office
+1578405018.385,424,352,None,Move,office
+1578405018.394,425,354,None,Move,office
+1578405018.4,428,355,None,Move,office
+1578405018.416,430,361,None,Move,office
+1578405018.431,435,368,None,Move,office
+1578405018.447,440,374,None,Move,office
+1578405018.462,444,380,None,Move,office
+1578405018.478,449,385,None,Move,office
+1578405018.494,452,390,None,Move,office
+1578405018.51,461,396,None,Move,office
+1578405018.525,467,401,None,Move,office
+1578405018.541,473,406,None,Move,office
+1578405018.556,477,407,None,Move,office
+1578405018.572,479,408,None,Move,office
+1578405018.587,481,410,None,Move,office
+1578405018.6079998,482,411,None,Move,office
+1578405018.64,484,412,None,Move,office
+1578405018.655,487,413,None,Move,office
+1578405018.671,487,413,None,Move,office
+1578405018.686,492,415,None,Move,office
+1578405018.702,495,416,None,Move,office
+1578405018.718,501,418,None,Move,office
+1578405018.7329998,509,420,None,Move,office
+1578405018.7489998,518,420,None,Move,office
+1578405018.758,521,421,None,Move,office
+1578405018.7629998,525,422,None,Move,office
+1578405018.779,533,424,None,Move,office
+1578405018.794,534,424,None,Move,office
+1578405018.81,539,426,None,Move,office
+1578405018.825,545,429,None,Move,office
+1578405018.841,556,431,None,Move,office
+1578405018.857,566,435,None,Move,office
+1578405018.8720002,580,439,None,Move,office
+1578405018.8879998,591,441,None,Move,office
+1578405018.904,595,442,None,Move,office
+1578405018.919,598,443,None,Move,office
+1578405019.033,598,444,None,Move,office
+1578405019.049,600,446,None,Move,office
+1578405019.064,602,447,None,Move,office
+1578405019.08,604,450,None,Move,office
+1578405019.1120002,608,451,None,Move,office
+1578405019.127,610,451,None,Move,office
+1578405019.1420002,616,448,None,Move,office
+1578405019.158,621,440,None,Move,office
+1578405019.174,626,433,None,Move,office
+1578405019.189,630,423,None,Move,office
+1578405019.205,634,415,None,Move,office
+1578405019.221,636,409,None,Move,office
+1578405019.236,638,406,None,Move,office
+1578405019.252,640,400,None,Move,office
+1578405019.341,640,399,None,Move,office
+1578405019.357,640,398,None,Move,office
+1578405019.373,636,397,None,Move,office
+1578405019.394,626,393,None,Move,office
+1578405019.4020002,623,393,None,Move,office
+1578405019.41,618,392,None,Move,office
+1578405019.418,614,392,None,Move,office
+1578405019.426,609,392,None,Move,office
+1578405019.441,599,392,None,Move,office
+1578405019.457,585,392,None,Move,office
+1578405019.4729998,573,389,None,Move,office
+1578405019.488,565,388,None,Move,office
+1578405019.504,562,388,None,Move,office
+1578405019.613,559,388,None,Move,office
+1578405019.629,557,388,None,Move,office
+1578405019.644,555,386,None,Move,office
+1578405019.66,552,383,None,Move,office
+1578405019.676,550,380,None,Move,office
+1578405019.691,549,378,None,Move,office
+1578405019.707,549,374,None,Move,office
+1578405019.7229998,549,365,None,Move,office
+1578405019.738,549,350,None,Move,office
+1578405019.754,549,342,None,Move,office
+1578405019.769,550,325,None,Move,office
+1578405019.785,554,314,None,Move,office
+1578405019.801,561,299,None,Move,office
+1578405019.816,569,283,None,Move,office
+1578405019.832,573,275,None,Move,office
+1578405019.847,576,269,None,Move,office
+1578405019.863,578,264,None,Move,office
+1578405019.879,578,262,None,Move,office
+1578405019.894,580,260,None,Move,office
+1578405019.91,582,258,None,Move,office
+1578405019.926,582,256,None,Move,office
+1578405019.957,583,254,None,Move,office
+1578405019.994,583,252,None,Move,office
+1578405020.01,585,250,None,Move,office
+1578405020.025,586,247,None,Move,office
+1578405020.041,587,246,None,Move,office
+1578405020.056,589,245,None,Move,office
+1578405020.072,590,245,None,Move,office
+1578405020.0879998,591,245,None,Move,office
+1578405020.522,591,245,Left,Pressed,office
+1578405020.522,591,245,None,Drag,office
+1578405020.538,589,245,None,Drag,office
+1578405020.5470002,585,245,None,Drag,office
+1578405020.554,580,245,None,Drag,office
+1578405020.562,571,246,None,Drag,office
+1578405020.57,561,247,None,Drag,office
+1578405020.5779998,549,250,None,Drag,office
+1578405020.586,536,251,None,Drag,office
+1578405020.594,522,254,None,Drag,office
+1578405020.6020002,510,257,None,Drag,office
+1578405020.61,501,258,None,Drag,office
+1578405020.6179998,494,259,None,Drag,office
+1578405020.6260002,494,259,None,Drag,office
+1578405020.762,491,261,None,Drag,office
+1578405020.77,491,262,None,Drag,office
+1578405020.77,491,262,Left,Released,office
+1578405020.7870002,490,262,None,Move,office
+1578405020.795,490,263,None,Move,office
+1578405020.802,491,263,None,Move,office
+1578405020.81,492,263,None,Move,office
+1578405021.934,494,263,None,Move,office
+1578405021.949,495,263,None,Move,office
+1578405021.965,509,255,None,Move,office
+1578405021.98,515,252,None,Move,office
+1578405021.996,518,252,None,Move,office
+1578405022.012,520,257,None,Move,office
+1578405022.022,523,265,None,Move,office
+1578405022.0270002,525,278,None,Move,office
+1578405022.043,533,314,None,Move,office
+1578405022.0579998,541,363,None,Move,office
+1578405022.074,554,420,None,Move,office
+1578405022.09,569,483,None,Move,office
+1578405022.105,579,530,None,Move,office
+1578405022.121,588,562,None,Move,office
+1578405022.137,594,589,None,Move,office
+1578405022.1520002,598,608,None,Move,office
+1578405022.168,600,620,None,Move,office
+1578405022.1829998,600,628,None,Move,office
+1578405022.199,600,635,None,Move,office
+1578405022.215,600,642,None,Move,office
+1578405022.231,599,647,None,Move,office
+1578405022.236,596,653,None,Move,office
+1578405022.252,593,669,None,Move,office
+1578405022.2670002,590,683,None,Move,office
+1578405022.283,588,695,None,Move,office
+1578405022.299,587,706,None,Move,office
+1578405022.314,585,720,None,Move,office
+1578405022.33,585,736,None,Move,office
+1578405022.345,583,747,None,Move,office
+1578405022.361,583,752,None,Move,office
+1578405022.408,583,752,None,Move,office
+1578405022.439,581,752,None,Move,office
+1578405022.455,581,752,None,Move,office
+1578405022.47,578,751,None,Move,office
+1578405022.486,575,751,None,Move,office
+1578405022.502,570,751,None,Move,office
+1578405022.518,562,751,None,Move,office
+1578405022.533,553,749,None,Move,office
+1578405022.549,542,746,None,Move,office
+1578405022.564,531,742,None,Move,office
+1578405022.58,521,738,None,Move,office
+1578405022.595,515,735,None,Move,office
+1578405022.611,512,733,None,Move,office
+1578405022.658,512,730,None,Move,office
+1578405022.744,512,728,None,Move,office
+1578405022.775,512,726,None,Move,office
+1578405022.791,512,725,None,Move,office
+1578405022.806,512,722,None,Move,office
+1578405022.822,512,719,None,Move,office
+1578405022.8379998,512,718,None,Move,office
+1578405022.854,513,717,None,Move,office
+1578405022.962,514,717,None,Move,office
+1578405023.071,514,717,Left,Pressed,office
+1578405023.1339998,514,717,Left,Released,office
+1578405023.214,516,717,None,Move,office
+1578405023.229,517,718,None,Move,office
+1578405023.245,519,722,None,Move,office
+1578405023.26,523,726,None,Move,office
+1578405023.276,528,735,None,Move,office
+1578405023.292,536,741,None,Move,office
+1578405023.3070002,542,747,None,Move,office
+1578405023.323,550,753,None,Move,office
+1578405023.3379998,561,760,None,Move,office
+1578405023.354,573,771,None,Move,office
+1578405023.37,588,784,None,Move,office
+1578405023.385,610,800,None,Move,office
+1578405023.405,640,817,None,Move,office
+1578405023.421,688,840,None,Move,office
+1578405023.437,750,872,None,Move,office
+1578405023.452,817,901,None,Move,office
+1578405023.468,881,927,None,Move,office
+1578405023.484,937,947,None,Move,office
+1578405023.4989998,985,963,None,Move,office
+1578405023.515,1022,972,None,Move,office
+1578405023.534,1051,977,None,Move,office
+1578405023.538,1061,979,None,Move,office
+1578405023.554,1077,981,None,Move,office
+1578405023.569,1083,981,None,Move,office
+1578405023.601,1085,981,None,Move,office
+1578405023.6160002,1088,980,None,Move,office
+1578405023.6320002,1090,979,None,Move,office
+1578405023.647,1093,974,None,Move,office
+1578405023.663,1096,971,None,Move,office
+1578405023.679,1098,967,None,Move,office
+1578405023.694,1099,962,None,Move,office
+1578405023.71,1101,958,None,Move,office
+1578405023.726,1103,956,None,Move,office
+1578405023.742,1105,955,None,Move,office
+1578405023.746,1106,954,None,Move,office
+1578405023.762,1113,954,None,Move,office
+1578405023.7770002,1119,954,None,Move,office
+1578405023.793,1131,954,None,Move,office
+1578405023.8079998,1148,955,None,Move,office
+1578405023.824,1167,958,None,Move,office
+1578405023.84,1189,966,None,Move,office
+1578405023.855,1205,973,None,Move,office
+1578405023.871,1214,976,None,Move,office
+1578405023.887,1215,976,None,Move,office
+1578405023.9020002,1219,978,None,Move,office
+1578405023.981,1219,979,None,Move,office
+1578405023.996,1221,980,None,Move,office
+1578405024.012,1225,981,None,Move,office
+1578405024.0270002,1230,983,None,Move,office
+1578405024.043,1237,985,None,Move,office
+1578405024.0579998,1241,985,None,Move,office
+1578405024.09,1241,985,Left,Pressed,office
+1578405024.215,1241,985,Left,Released,office
+1578405028.002,1242,985,None,Move,office
+1578405028.018,1243,985,None,Move,office
+1578405028.034,1249,985,None,Move,office
+1578405028.049,1252,985,None,Move,office
+1578405028.065,1256,973,None,Move,office
+1578405028.08,1264,949,None,Move,office
+1578405028.096,1286,913,None,Move,office
+1578405028.1120002,1328,873,None,Move,office
+1578405028.127,1381,841,None,Move,office
+1578405028.143,1432,819,None,Move,office
+1578405028.159,1470,808,None,Move,office
+1578405028.174,1485,804,None,Move,office
+1578405028.19,1513,800,None,Move,office
+1578405028.206,1540,799,None,Move,office
+1578405028.2129998,1552,799,None,Move,office
+1578405028.229,1575,799,None,Move,office
+1578405028.244,1593,799,None,Move,office
+1578405028.26,1609,796,None,Move,office
+1578405028.275,1619,790,None,Move,office
+1578405028.291,1626,776,None,Move,office
+1578405028.3070002,1634,757,None,Move,office
+1578405028.322,1645,731,None,Move,office
+1578405028.3379998,1655,699,None,Move,office
+1578405028.353,1662,660,None,Move,office
+1578405028.369,1663,614,None,Move,office
+1578405028.385,1650,557,None,Move,office
+1578405028.4,1630,483,None,Move,office
+1578405028.42,1613,425,None,Move,office
+1578405028.436,1605,385,None,Move,office
+1578405028.452,1598,361,None,Move,office
+1578405028.467,1592,341,None,Move,office
+1578405028.4829998,1586,327,None,Move,office
+1578405028.4989998,1579,314,None,Move,office
+1578405028.514,1575,308,None,Move,office
+1578405028.53,1575,300,None,Move,office
+1578405028.546,1573,296,None,Move,office
+1578405028.561,1571,290,None,Move,office
+1578405028.577,1571,289,None,Move,office
+1578405028.592,1570,284,None,Move,office
+1578405028.6139998,1570,280,None,Move,office
+1578405028.6220002,1570,273,None,Move,office
+1578405028.6260002,1570,271,None,Move,office
+1578405028.6420002,1570,264,None,Move,office
+1578405028.658,1570,258,None,Move,office
+1578405028.673,1570,252,None,Move,office
+1578405028.689,1571,248,None,Move,office
+1578405028.705,1574,241,None,Move,office
+1578405028.72,1576,235,None,Move,office
+1578405028.736,1580,231,None,Move,office
+1578405028.752,1581,227,None,Move,office
+1578405028.7670002,1583,218,None,Move,office
+1578405028.783,1586,212,None,Move,office
+1578405028.798,1587,209,None,Move,office
+1578405029.0110002,1588,208,Left,Pressed,office
+1578405029.089,1588,208,Left,Released,office
+1578405029.104,1588,209,None,Move,office
+1578405029.12,1588,211,None,Move,office
+1578405029.135,1581,219,None,Move,office
+1578405029.151,1571,229,None,Move,file system
+1578405029.167,1540,245,None,Move,file system
+1578405029.1820002,1467,272,None,Move,file system
+1578405029.198,1368,307,None,Move,file system
+1578405029.214,1317,320,None,Move,file system
+1578405029.229,1206,349,None,Move,file system
+1578405029.245,1083,370,None,Move,file system
+1578405029.26,890,390,None,Move,file system
+1578405029.276,769,404,None,Move,file system
+1578405029.292,657,418,None,Move,file system
+1578405029.3070002,605,422,None,Move,file system
+1578405029.323,508,429,None,Move,file system
+1578405029.339,423,431,None,Move,file system
+1578405029.354,321,431,None,Move,file system
+1578405029.37,300,431,None,Move,file system
+1578405029.385,274,431,None,Move,file system
+1578405029.401,264,431,None,Move,file system
+1578405029.4320002,263,429,None,Move,file system
+1578405029.464,261,428,None,Move,file system
+1578405029.479,261,425,None,Move,file system
+1578405029.495,261,420,None,Move,file system
+1578405029.51,261,415,None,Move,file system
+1578405029.526,261,408,None,Move,file system
+1578405029.542,261,401,None,Move,file system
+1578405029.5570002,265,390,None,Move,file system
+1578405029.573,268,382,None,Move,file system
+1578405029.589,272,375,None,Move,file system
+1578405029.604,279,359,None,Move,file system
+1578405029.62,293,335,None,Move,file system
+1578405029.635,297,326,None,Move,file system
+1578405029.651,310,310,None,Move,file system
+1578405029.6720002,328,295,None,Move,file system
+1578405029.688,335,288,None,Move,file system
+1578405029.7029998,341,286,None,Move,file system
+1578405029.719,342,285,None,Move,file system
+1578405029.735,343,284,None,Move,file system
+1578405029.75,346,281,None,Move,file system
+1578405029.766,346,281,None,Move,file system
+1578405029.782,347,280,None,Move,file system
+1578405029.795,348,279,None,Move,file system
+1578405029.8,350,277,None,Move,file system
+1578405029.816,351,275,None,Move,file system
+1578405029.831,351,275,None,Move,file system
+1578405029.847,353,273,None,Move,file system
+1578405029.863,354,272,None,Move,file system
+1578405029.8779998,355,271,None,Move,file system
+1578405029.91,356,269,None,Move,file system
+1578405029.925,356,269,None,Move,file system
+1578405029.957,356,268,None,Move,file system
+1578405030.212,356,268,Left,Pressed,file system
+1578405030.306,356,268,Left,Released,file system
+1578405030.3920002,356,268,Left,Pressed,file system
+1578405030.47,356,268,Left,Released,file system
+1578405031.288,356,267,None,Move,office
+1578405031.303,360,271,None,Move,office
+1578405031.319,362,272,None,Move,office
+1578405031.335,370,283,None,Move,office
+1578405031.35,376,291,None,Move,office
+1578405031.3660002,388,307,None,Move,office
+1578405031.3820002,400,320,None,Move,office
+1578405031.4020002,412,331,None,Move,office
+1578405031.405,418,338,None,Move,office
+1578405031.421,431,350,None,Move,office
+1578405031.437,443,359,None,Move,office
+1578405031.452,453,366,None,Move,office
+1578405031.468,460,371,None,Move,office
+1578405031.484,465,375,None,Move,office
+1578405031.4989998,467,376,None,Move,office
+1578405031.515,469,377,None,Move,office
+1578405031.53,471,378,None,Move,office
+1578405031.546,472,378,None,Move,office
+1578405031.562,474,379,None,Move,office
+1578405031.671,474,379,None,Move,office
+1578405031.687,472,379,None,Move,office
+1578405031.702,465,379,None,Move,office
+1578405031.718,460,379,None,Move,office
+1578405031.734,451,379,None,Move,office
+1578405031.7489998,444,379,None,Move,office
+1578405031.765,438,379,None,Move,office
+1578405031.78,433,379,None,Move,office
+1578405031.796,429,379,None,Move,office
+1578405031.812,426,377,None,Move,office
+1578405031.827,424,376,None,Move,office
+1578405031.843,421,374,None,Move,office
+1578405031.8579998,415,372,None,Move,office
+1578405031.8739998,412,369,None,Move,office
+1578405031.89,409,369,None,Move,office
+1578405031.905,406,365,None,Move,office
+1578405031.921,404,364,None,Move,office
+1578405031.937,400,360,None,Move,office
+1578405031.952,398,359,None,Move,office
+1578405031.968,397,358,None,Move,office
+1578405032.015,397,358,None,Move,office
+1578405032.03,396,354,None,Move,office
+1578405032.046,396,353,None,Move,office
+1578405032.062,396,348,None,Move,office
+1578405032.077,396,345,None,Move,office
+1578405032.093,397,342,None,Move,office
+1578405032.1079998,409,340,None,Move,office
+1578405032.1239998,420,335,None,Move,office
+1578405032.14,424,333,None,Move,office
+1578405032.334,425,333,Left,Pressed,office
+1578405032.4120002,425,333,Left,Released,office
+1578405033.089,425,333,None,Move,office
+1578405033.135,426,333,None,Move,office
+1578405033.245,428,336,None,Move,office
+1578405033.26,429,337,None,Move,office
+1578405033.276,430,338,None,Move,office
+1578405033.292,430,338,None,Move,office
+1578405033.3070002,431,340,None,Move,office
+1578405033.339,434,343,None,Move,office
+1578405033.354,434,344,None,Move,office
+1578405033.37,435,344,None,Move,office
+1578405033.385,436,346,None,Move,office
+1578405033.401,439,348,None,Move,office
+1578405033.417,444,354,None,Move,office
+1578405033.4320002,453,360,None,Move,office
+1578405033.448,461,365,None,Move,office
+1578405033.464,472,370,None,Move,office
+1578405033.479,491,378,None,Move,office
+1578405033.495,514,389,None,Move,office
+1578405033.51,538,395,None,Move,office
+1578405033.526,562,402,None,Move,office
+1578405033.542,581,408,None,Move,office
+1578405033.5570002,597,412,None,Move,office
+1578405033.573,608,415,None,Move,office
+1578405033.585,614,417,None,Move,office
+1578405033.593,618,418,None,Move,office
+1578405033.601,621,418,None,Move,office
+1578405033.609,624,419,None,Move,office
+1578405033.625,628,419,None,Move,office
+1578405033.641,631,419,None,Move,office
+1578405033.656,634,419,None,Move,office
+1578405033.6720002,635,419,None,Move,office
+1578405033.688,637,416,None,Move,office
+1578405033.705,640,407,None,Move,office
+1578405033.708,640,400,None,Move,office
+1578405033.724,640,379,None,Move,office
+1578405033.74,640,355,None,Move,office
+1578405033.755,640,339,None,Move,office
+1578405033.771,640,330,None,Move,office
+1578405033.7870002,640,324,None,Move,office
+1578405033.802,640,323,None,Move,office
+1578405033.8179998,640,319,None,Move,office
+1578405033.833,639,309,None,Move,office
+1578405033.85,638,302,None,Move,office
+1578405033.857,637,299,None,Move,office
+1578405033.873,634,291,None,Move,office
+1578405033.889,628,284,None,Move,office
+1578405033.904,626,280,None,Move,office
+1578405033.92,622,276,None,Move,office
+1578405033.936,619,271,None,Move,office
+1578405033.951,613,264,None,Move,office
+1578405033.967,610,258,None,Move,office
+1578405033.982,606,252,None,Move,office
+1578405033.998,604,248,None,Move,office
+1578405034.014,601,243,None,Move,office
+1578405034.029,598,241,None,Move,office
+1578405034.045,597,239,None,Move,office
+1578405034.065,595,236,None,Move,office
+1578405034.08,594,233,None,Move,office
+1578405034.096,593,232,None,Move,office
+1578405034.26,592,232,Left,Pressed,office
+1578405034.26,592,232,None,Drag,office
+1578405034.276,591,232,None,Drag,office
+1578405034.291,589,234,None,Drag,office
+1578405034.3070002,583,236,None,Drag,office
+1578405034.323,580,238,None,Drag,office
+1578405034.3379998,574,239,None,Drag,office
+1578405034.354,572,240,None,Drag,office
+1578405034.369,565,243,None,Drag,office
+1578405034.385,559,244,None,Drag,office
+1578405034.401,554,245,None,Drag,office
+1578405034.4220002,551,248,None,Drag,office
+1578405034.423,550,249,None,Drag,office
+1578405034.439,548,252,None,Drag,office
+1578405034.454,548,253,None,Drag,office
+1578405034.454,548,253,Left,Released,office
+1578405034.5170002,548,253,None,Move,office
+1578405034.532,548,254,None,Move,office
+1578405034.548,550,255,None,Move,office
+1578405034.564,552,255,None,Move,office
+1578405034.579,556,258,None,Move,office
+1578405034.6420002,559,258,None,Move,office
+1578405034.65,559,258,None,Move,office
+1578405034.658,560,258,None,Move,office
+1578405034.673,561,258,None,Move,office
+1578405034.705,563,258,None,Move,office
+1578405034.7129998,564,258,None,Move,office
+1578405034.721,565,258,None,Move,office
+1578405034.729,567,258,None,Move,office
+1578405034.7370002,570,258,None,Move,office
+1578405034.745,574,257,None,Move,office
+1578405034.754,575,257,None,Move,office
+1578405034.762,578,257,None,Move,office
+1578405034.77,580,257,None,Move,office
+1578405034.775,582,257,None,Move,office
+1578405034.79,585,256,None,Move,office
+1578405034.806,587,255,None,Move,office
+1578405034.822,588,254,None,Move,office
+1578405034.994,590,253,None,Move,office
+1578405035.026,589,253,Left,Pressed,office
+1578405035.026,589,253,None,Drag,office
+1578405035.042,587,253,None,Drag,office
+1578405035.05,585,251,None,Drag,office
+1578405035.0570002,584,251,None,Drag,office
+1578405035.066,582,251,None,Drag,office
+1578405035.074,581,251,None,Drag,office
+1578405035.082,578,251,None,Drag,office
+1578405035.089,575,251,None,Drag,office
+1578405035.097,571,251,None,Drag,office
+1578405035.105,567,251,None,Drag,office
+1578405035.1139998,563,251,None,Drag,office
+1578405035.125,560,251,None,Drag,office
+1578405035.133,558,251,None,Drag,office
+1578405035.141,557,251,None,Drag,office
+1578405035.149,556,251,None,Drag,office
+1578405035.149,556,251,Left,Released,office
+1578405035.409,555,251,None,Move,office
+1578405035.426,555,253,None,Move,office
+1578405035.434,555,254,None,Move,office
+1578405036.653,555,258,None,Move,office
+1578405036.669,555,259,None,Move,office
+1578405036.684,555,269,None,Move,office
+1578405036.7,555,287,None,Move,office
+1578405036.716,556,311,None,Move,office
+1578405036.731,560,331,None,Move,office
+1578405036.7470002,565,347,None,Move,office
+1578405036.762,568,356,None,Move,office
+1578405036.768,570,363,None,Move,office
+1578405036.784,573,374,None,Move,office
+1578405036.8,573,386,None,Move,office
+1578405036.815,573,398,None,Move,office
+1578405036.831,573,413,None,Move,office
+1578405036.847,572,432,None,Move,office
+1578405036.8620002,569,454,None,Move,office
+1578405036.8779998,565,480,None,Move,office
+1578405036.893,562,510,None,Move,office
+1578405036.909,560,538,None,Move,office
+1578405036.925,557,565,None,Move,office
+1578405036.94,557,590,None,Move,office
+1578405036.956,557,610,None,Move,office
+1578405036.976,557,625,None,Move,office
+1578405036.992,557,634,None,Move,office
+1578405037.0070002,557,639,None,Move,office
+1578405037.0229998,557,644,None,Move,office
+1578405037.038,557,649,None,Move,office
+1578405037.054,557,655,None,Move,office
+1578405037.07,557,666,None,Move,office
+1578405037.085,557,673,None,Move,office
+1578405037.101,557,678,None,Move,office
+1578405037.117,557,680,None,Move,office
+1578405037.1320002,557,684,None,Move,office
+1578405037.1479998,557,690,None,Move,office
+1578405037.166,557,694,None,Move,office
+1578405037.171,557,697,None,Move,office
+1578405037.186,557,699,None,Move,office
+1578405037.3579998,557,700,None,Move,office
+1578405037.375,557,703,None,Move,office
+1578405037.379,557,705,None,Move,office
+1578405037.395,557,711,None,Move,office
+1578405037.411,557,717,None,Move,office
+1578405037.426,557,722,None,Move,office
+1578405037.4420002,557,725,None,Move,office
+1578405037.504,557,725,None,Move,office
+1578405037.52,557,724,None,Move,office
+1578405037.5670002,557,723,None,Move,office
+1578405037.583,557,721,None,Move,office
+1578405037.5979998,557,715,None,Move,office
+1578405037.6139998,557,713,None,Move,office
+1578405037.629,557,705,None,Move,office
+1578405037.645,557,702,None,Move,office
+1578405037.661,557,699,None,Move,office
+1578405037.7729998,557,698,Left,Pressed,office
+1578405037.867,557,698,Left,Released,office
+1578405037.981,557,698,None,Move,office
+1578405037.9970002,558,698,None,Move,office
+1578405038.0129998,560,701,None,Move,office
+1578405038.028,565,705,None,Move,office
+1578405038.044,567,708,None,Move,office
+1578405038.059,567,710,None,Move,office
+1578405038.107,569,712,None,Move,office
+1578405038.27,570,713,Left,Pressed,office
+1578405038.3479998,570,713,Left,Released,office
+1578405038.379,570,715,None,Move,office
+1578405038.395,572,716,None,Move,office
+1578405038.426,574,716,None,Move,office
+1578405038.4420002,577,716,None,Move,office
+1578405038.457,585,716,None,Move,office
+1578405038.4729998,593,716,None,Move,office
+1578405038.488,604,716,None,Move,office
+1578405038.504,614,716,None,Move,office
+1578405038.52,644,716,None,Move,office
+1578405038.539,679,716,None,Move,office
+1578405038.543,697,716,None,Move,office
+1578405038.559,735,716,None,Move,office
+1578405038.574,764,716,None,Move,office
+1578405038.59,790,716,None,Move,office
+1578405038.605,817,716,None,Move,office
+1578405038.621,842,716,None,Move,office
+1578405038.637,865,716,None,Move,office
+1578405038.6520002,882,716,None,Move,office
+1578405038.668,889,716,None,Move,office
+1578405038.731,891,717,None,Move,office
+1578405038.75,891,718,None,Move,office
+1578405038.752,892,718,None,Move,office
+1578405038.7670002,894,718,None,Move,office
+1578405038.83,896,720,None,Move,office
+1578405038.846,897,723,None,Move,office
+1578405038.861,899,726,None,Move,office
+1578405038.877,900,729,None,Move,office
+1578405038.8920002,900,731,None,Move,office
+1578405038.908,900,732,None,Move,office
+1578405038.918,900,733,None,Move,office
+1578405038.92,901,735,None,Move,office
+1578405038.936,904,743,None,Move,office
+1578405038.951,904,743,None,Move,office
+1578405038.967,905,748,None,Move,office
+1578405039.061,907,752,None,Move,office
+1578405039.076,909,755,None,Move,office
+1578405039.092,915,757,None,Move,office
+1578405039.107,926,761,None,Move,office
+1578405039.1260002,938,766,None,Move,office
+1578405039.1279998,951,771,None,Move,office
+1578405039.15,990,787,None,Move,office
+1578405039.1520002,999,791,None,Move,office
+1578405039.168,1031,809,None,Move,office
+1578405039.1829998,1078,838,None,Move,office
+1578405039.199,1129,872,None,Move,office
+1578405039.214,1150,887,None,Move,office
+1578405039.23,1183,914,None,Move,office
+1578405039.246,1208,933,None,Move,office
+1578405039.262,1229,951,None,Move,office
+1578405039.2770002,1246,970,None,Move,office
+1578405039.293,1259,985,None,Move,office
+1578405039.3079998,1268,997,None,Move,office
+1578405039.324,1273,1004,None,Move,office
+1578405039.339,1276,1009,None,Move,office
+1578405039.359,1280,1014,None,Move,office
+1578405039.36,1282,1016,None,Move,office
+1578405039.375,1283,1020,None,Move,office
+1578405039.5470002,1283,1020,None,Move,office
+1578405039.563,1281,1019,None,Move,office
+1578405039.5779998,1277,1013,None,Move,office
+1578405039.5979998,1272,1005,None,Move,office
+1578405039.6020002,1270,1001,None,Move,office
+1578405039.617,1264,993,None,Move,office
+1578405039.633,1261,988,None,Move,office
+1578405039.649,1256,981,None,Move,office
+1578405039.664,1254,978,None,Move,office
+1578405039.758,1254,978,Left,Pressed,office
+1578405039.873,1254,978,Left,Released,office
+1578405040.177,1251,976,None,Move,office
+1578405040.1920002,1250,976,None,Move,office
+1578405040.208,1242,970,None,Move,office
+1578405040.224,1228,962,None,Move,office
+1578405040.242,1200,948,None,Move,office
+1578405040.245,1186,942,None,Move,office
+1578405040.26,1163,928,None,Move,office
+1578405040.276,1143,913,None,Move,office
+1578405040.292,1128,901,None,Move,office
+1578405040.3070002,1112,888,None,Move,office
+1578405040.325,1094,875,None,Move,office
+1578405040.34,1076,860,None,Move,office
+1578405040.356,1063,849,None,Move,office
+1578405040.3720002,1059,846,None,Move,office
+1578405040.387,1054,841,None,Move,office
+1578405040.403,1051,838,None,Move,office
+1578405040.419,1049,835,None,Move,office
+1578405040.434,1046,833,None,Move,office
+1578405040.45,1045,832,None,Move,office
+1578405040.465,1044,830,None,Move,office
+1578405040.637,1044,829,None,Move,office
+1578405040.653,1044,828,None,Move,office
+1578405040.669,1042,826,None,Move,office
+1578405040.69,1037,824,None,Move,office
+1578405040.6920002,1035,821,None,Move,office
+1578405040.707,1032,820,None,Move,office
+1578405040.7229998,1025,820,None,Move,office
+1578405040.738,1019,818,None,Move,office
+1578405045.104,1018,818,None,Move,office
+1578405045.1820002,1018,818,None,Move,office
+1578405045.198,1020,817,None,Move,office
+1578405045.2129998,1022,811,None,Move,office
+1578405045.229,1024,798,None,Move,office
+1578405045.245,1026,786,None,Move,office
+1578405045.258,1026,783,None,Move,office
+1578405045.262,1027,776,None,Move,office
+1578405045.2770002,1027,764,None,Move,office
+1578405045.293,1027,762,None,Move,office
+1578405045.465,1028,762,None,Move,office
+1578405045.48,1039,764,None,Move,office
+1578405045.543,1042,766,None,Move,office
+1578405045.559,1040,764,None,Move,office
+1578405045.577,1033,755,None,Move,office
+1578405045.58,1032,753,None,Move,office
+1578405045.595,1028,745,None,Move,office
+1578405045.611,1025,737,None,Move,office
+1578405045.627,1020,721,None,Move,office
+1578405045.6420002,1017,704,None,Move,office
+1578405045.658,1012,686,None,Move,office
+1578405045.673,1008,669,None,Move,office
+1578405045.6929998,1000,646,None,Move,office
+1578405045.699,996,634,None,Move,office
+1578405045.715,985,613,None,Move,office
+1578405045.731,978,594,None,Move,office
+1578405045.746,973,576,None,Move,office
+1578405045.762,968,562,None,Move,office
+1578405045.7770002,964,551,None,Move,office
+1578405045.793,962,543,None,Move,office
+1578405045.809,962,535,None,Move,office
+1578405045.824,962,530,None,Move,office
+1578405045.84,962,520,None,Move,office
+1578405045.856,963,503,None,Move,office
+1578405045.871,969,485,None,Move,office
+1578405045.887,975,469,None,Move,office
+1578405045.903,979,460,None,Move,office
+1578405045.907,984,453,None,Move,office
+1578405045.923,997,434,None,Move,office
+1578405045.938,1013,419,None,Move,office
+1578405045.954,1033,401,None,Move,office
+1578405045.97,1048,390,None,Move,office
+1578405045.985,1069,382,None,Move,office
+1578405046.0010002,1095,377,None,Move,office
+1578405046.016,1122,374,None,Move,office
+1578405046.032,1150,374,None,Move,office
+1578405046.048,1181,374,None,Move,office
+1578405046.063,1216,374,None,Move,office
+1578405046.079,1249,374,None,Move,office
+1578405046.094,1282,374,None,Move,office
+1578405046.11,1297,374,None,Move,office
+1578405046.1260002,1327,376,None,Move,office
+1578405046.1420002,1352,378,None,Move,office
+1578405046.157,1375,378,None,Move,office
+1578405046.173,1397,378,None,Move,office
+1578405046.188,1424,378,None,Move,office
+1578405046.204,1452,378,None,Move,office
+1578405046.219,1477,377,None,Move,office
+1578405046.235,1497,368,None,Move,office
+1578405046.2510002,1512,358,None,Move,office
+1578405046.266,1520,347,None,Move,office
+1578405046.282,1526,339,None,Move,office
+1578405046.2970002,1530,329,None,Move,office
+1578405046.313,1532,315,None,Move,office
+1578405046.329,1533,300,None,Move,office
+1578405046.344,1533,288,None,Move,office
+1578405046.36,1533,277,None,Move,office
+1578405046.3760002,1533,271,None,Move,office
+1578405046.391,1533,265,None,Move,office
+1578405046.407,1533,261,None,Move,office
+1578405046.4220002,1533,260,None,Move,office
+1578405046.438,1533,254,None,Move,office
+1578405046.454,1534,251,None,Move,office
+1578405046.47,1536,247,None,Move,office
+1578405046.485,1537,245,None,Move,office
+1578405046.5010002,1539,243,None,Move,office
+1578405046.5170002,1543,239,None,Move,office
+1578405046.532,1546,237,None,Move,office
+1578405046.5470002,1552,236,None,Move,office
+1578405046.563,1560,235,None,Move,office
+1578405046.579,1569,235,None,Move,office
+1578405046.594,1581,233,None,Move,office
+1578405046.61,1595,230,None,Move,office
+1578405046.6260002,1604,228,None,Move,office
+1578405046.641,1605,227,None,Move,office
+1578405046.657,1607,226,None,Move,office
+1578405046.774,1608,224,None,Move,office
+1578405046.79,1608,222,None,Move,office
+1578405048.1279998,1608,222,Left,Pressed,office
+1578405048.222,1608,222,Left,Released,office
+1578405048.2529998,1605,223,None,Move,office
+1578405048.269,1597,225,None,Move,office
+1578405048.284,1586,228,None,Move,office
+1578405048.3,1579,230,None,Move,file system
+1578405048.316,1536,238,None,Move,file system
+1578405048.331,1470,249,None,Move,file system
+1578405048.347,1365,263,None,Move,file system
+1578405048.3620002,1303,270,None,Move,file system
+1578405048.3779998,1096,292,None,Move,file system
+1578405048.394,962,302,None,Move,file system
+1578405048.409,848,311,None,Move,file system
+1578405048.425,746,314,None,Move,file system
+1578405048.441,668,314,None,Move,file system
+1578405048.456,623,314,None,Move,file system
+1578405048.472,599,314,None,Move,file system
+1578405048.581,589,313,None,Move,file system
+1578405048.597,588,312,None,Move,file system
+1578405048.6120002,587,310,None,Move,file system
+1578405048.6279998,586,307,None,Move,file system
+1578405048.644,585,305,None,Move,file system
+1578405048.675,585,303,None,Move,file system
+1578405048.691,585,302,None,Move,file system
+1578405048.722,584,301,None,Move,file system
+1578405048.7370002,582,300,None,Move,file system
+1578405048.7529998,575,297,None,Move,file system
+1578405048.769,571,296,None,Move,file system
+1578405048.79,567,296,None,Move,file system
+1578405048.791,566,296,None,Move,file system
+1578405048.806,561,295,None,Move,file system
+1578405048.822,558,295,None,Move,file system
+1578405048.8379998,553,295,None,Move,file system
+1578405048.853,545,295,None,Move,file system
+1578405048.869,539,295,None,Move,file system
+1578405048.885,536,295,None,Move,file system
+1578405048.9,533,295,None,Move,file system
+1578405048.9320002,531,295,None,Move,file system
+1578405048.95,530,295,None,Move,file system
+1578405048.952,529,294,None,Move,file system
+1578405048.968,526,293,None,Move,file system
+1578405048.9829998,524,292,None,Move,file system
+1578405049.002,523,291,None,Move,file system
+1578405049.018,523,290,None,Move,file system
+1578405049.034,519,286,None,Move,file system
+1578405049.049,516,278,None,Move,file system
+1578405049.065,512,269,None,Move,file system
+1578405049.08,505,257,None,Move,file system
+1578405049.096,501,250,None,Move,file system
+1578405049.1120002,495,243,None,Move,file system
+1578405049.127,494,240,None,Move,file system
+1578405049.143,492,238,None,Move,file system
+1578405049.158,492,237,None,Move,file system
+1578405049.174,491,235,None,Move,file system
+1578405049.19,491,233,None,Move,file system
+1578405049.206,488,230,None,Move,file system
+1578405049.221,488,230,None,Move,file system
+1578405049.2370002,487,226,None,Move,file system
+1578405049.69,487,226,None,Move,file system
+1578405049.721,487,226,None,Move,file system
+1578405049.736,486,228,None,Move,file system
+1578405049.752,485,235,None,Move,file system
+1578405049.768,482,243,None,Move,file system
+1578405049.783,480,254,None,Move,file system
+1578405049.799,479,262,None,Move,file system
+1578405049.815,475,271,None,Move,file system
+1578405049.83,475,277,None,Move,file system
+1578405049.846,472,280,None,Move,file system
+1578405049.861,471,286,None,Move,file system
+1578405049.877,471,288,None,Move,file system
+1578405049.889,471,291,None,Move,file system
+1578405049.89,470,296,None,Move,file system
+1578405049.906,470,298,None,Move,file system
+1578405049.9220002,470,302,None,Move,file system
+1578405049.937,469,306,None,Move,file system
+1578405049.9529998,467,309,None,Move,file system
+1578405049.969,466,310,None,Move,file system
+1578405050.637,464,309,None,Move,file system
+1578405050.6520002,463,308,None,Move,file system
+1578405050.668,459,303,None,Move,file system
+1578405050.684,456,295,None,Move,file system
+1578405050.699,451,290,None,Move,file system
+1578405050.715,451,286,None,Move,file system
+1578405050.798,450,284,None,Move,file system
+1578405050.813,449,283,None,Move,file system
+1578405050.829,447,281,None,Move,file system
+1578405050.85,446,279,None,Move,file system
+1578405050.851,445,278,None,Move,file system
+1578405050.913,444,275,None,Move,file system
+1578405050.929,444,275,None,Move,file system
+1578405050.945,443,272,None,Move,file system
+1578405050.96,443,271,None,Move,file system
+1578405050.976,442,268,None,Move,file system
+1578405051.0070002,441,266,None,Move,file system
+1578405051.038,439,264,None,Move,file system
+1578405051.0570002,438,263,None,Move,file system
+1578405051.06,438,262,None,Move,file system
+1578405051.075,438,259,None,Move,file system
+1578405051.553,438,258,None,Move,file system
+1578405051.678,438,257,None,Move,file system
+1578405051.725,438,255,None,Move,file system
+1578405051.74,438,254,None,Move,file system
+1578405051.85,439,253,None,Move,file system
+1578405051.8660002,440,250,None,Move,file system
+1578405051.881,442,249,None,Move,file system
+1578405051.928,443,247,None,Move,file system
+1578405051.978,443,246,None,Move,file system
+1578405052.369,446,245,None,Move,file system
+1578405052.385,447,245,None,Move,file system
+1578405052.4,482,234,None,Move,file system
+1578405052.416,623,204,None,Move,file system
+1578405052.431,826,169,None,Move,file system
+1578405052.447,1066,133,None,Move,file system
+1578405052.4629998,1342,101,None,Move,file system
+1578405052.478,1627,79,None,Move,file system
+1578405052.494,1906,50,None,Move,file system
+1578405052.51,2039,13,None,Move,file system
+1578405052.525,2030,-22,None,Move,file system
+1578405052.541,1997,-21,None,Move,file system
+1578405052.556,1964,-15,None,Move,file system
+1578405052.572,1931,-7,None,Move,file system
+1578405052.5879998,1925,-6,None,Move,file system
+1578405052.603,1919,-2,None,Move,file system
+1578405052.619,1919,0,None,Move,file system
+1578405052.635,1915,-1,None,Move,file system
+1578405054.335,1910,0,None,Move,file system
+1578405054.351,1903,0,None,Move,file system
+1578405054.3660002,1869,5,None,Move,file system
+1578405054.3820002,1830,11,None,Move,file system
+1578405054.3979998,1718,27,None,Move,file system
+1578405054.413,1596,47,None,Move,file system
+1578405054.429,1470,68,None,Move,file system
+1578405054.445,1337,90,None,Move,file system
+1578405054.46,1205,108,None,Move,file system
+1578405054.476,1084,119,None,Move,file system
+1578405054.4910002,977,131,None,Move,file system
+1578405054.5070002,888,144,None,Move,file system
+1578405054.5229998,823,154,None,Move,file system
+1578405054.534,801,157,None,Move,file system
+1578405054.536,784,158,None,Move,file system
+1578405054.551,759,161,None,Move,file system
+1578405054.5670002,743,163,None,Move,file system
+1578405054.583,731,165,None,Move,file system
+1578405054.5979998,725,166,None,Move,file system
+1578405054.6139998,716,169,None,Move,file system
+1578405054.63,704,171,None,Move,file system
+1578405054.645,689,174,None,Move,file system
+1578405054.661,679,177,None,Move,file system
+1578405054.676,669,181,None,Move,file system
+1578405054.6920002,658,183,None,Move,file system
+1578405054.708,647,185,None,Move,file system
+1578405054.7229998,630,188,None,Move,file system
+1578405054.742,613,190,None,Move,file system
+1578405054.744,604,191,None,Move,file system
+1578405054.7589998,589,194,None,Move,file system
+1578405054.775,587,194,None,Move,file system
+1578405054.822,585,194,None,Move,file system
+1578405054.8379998,579,195,None,Move,file system
+1578405054.853,573,195,None,Move,file system
+1578405054.869,564,195,None,Move,file system
+1578405054.8860002,555,197,None,Move,file system
+1578405054.891,552,197,None,Move,file system
+1578405054.907,547,199,None,Move,file system
+1578405054.923,545,201,None,Move,file system
+1578405054.938,543,201,None,Move,file system
+1578405055.0170002,542,202,None,Move,file system
+1578405055.032,540,202,None,Move,file system
+1578405055.048,536,203,None,Move,file system
+1578405055.063,533,206,None,Move,file system
+1578405055.079,529,210,None,Move,file system
+1578405055.0979998,527,211,None,Move,file system
+1578405055.1,525,212,None,Move,file system
+1578405055.1160002,521,215,None,Move,file system
+1578405055.1320002,518,217,None,Move,file system
+1578405055.147,513,221,None,Move,file system
+1578405055.163,506,226,None,Move,file system
+1578405055.179,503,229,None,Move,file system
+1578405055.194,496,236,None,Move,file system
+1578405055.21,491,239,None,Move,file system
+1578405055.226,486,244,None,Move,file system
+1578405055.242,485,246,None,Move,file system
+1578405055.258,482,248,None,Move,file system
+1578405055.2729998,482,249,None,Move,file system
+1578405055.289,481,250,None,Move,file system
+1578405055.304,479,253,None,Move,file system
+1578405055.32,478,254,None,Move,file system
+1578405055.335,476,256,None,Move,file system
+1578405055.351,472,263,None,Move,file system
+1578405055.367,468,269,None,Move,file system
+1578405055.3820002,465,273,None,Move,file system
+1578405055.3979998,464,276,None,Move,file system
+1578405055.414,463,276,None,Move,file system
+1578405055.429,463,277,None,Move,file system
+1578405055.445,462,278,None,Move,file system
+1578405055.461,460,280,None,Move,file system
+1578405055.476,458,284,None,Move,file system
+1578405055.492,458,285,None,Move,file system
+1578405055.5070002,457,286,None,Move,file system
+1578405055.5229998,457,287,None,Move,file system
+1578405055.538,455,288,None,Move,file system
+1578405055.6320002,453,292,None,Move,file system
+1578405055.6479998,453,293,None,Move,file system
+1578405055.663,452,294,None,Move,file system
+1578405055.679,452,295,None,Move,file system
+1578405055.781,452,295,Left,Pressed,file system
+1578405055.875,452,295,Left,Released,file system
+1578405056.035,450,295,Left,Pressed,file system
+1578405056.035,450,295,None,Drag,file system
+1578405056.051,450,295,None,Drag,file system
+1578405056.051,450,295,Left,Released,file system
+1578405056.801,449,295,None,Move,office
+1578405056.816,449,297,None,Move,office
+1578405056.832,449,300,None,Move,office
+1578405056.847,449,304,None,Move,office
+1578405056.863,451,311,None,Move,office
+1578405056.879,454,318,None,Move,office
+1578405056.894,460,323,None,Move,office
+1578405056.91,464,330,None,Move,office
+1578405056.926,469,337,None,Move,office
+1578405056.941,471,343,None,Move,office
+1578405056.957,476,350,None,Move,office
+1578405056.972,477,357,None,Move,office
+1578405056.988,481,364,None,Move,office
+1578405057.004,484,370,None,Move,office
+1578405057.019,486,371,None,Move,office
+1578405057.035,486,373,None,Move,office
+1578405057.05,486,374,None,Move,office
+1578405057.066,488,379,None,Move,office
+1578405057.082,489,380,None,Move,office
+1578405057.087,489,381,None,Move,office
+1578405057.1020002,489,386,None,Move,office
+1578405057.1179998,489,388,None,Move,office
+1578405057.133,489,390,None,Move,office
+1578405057.149,489,393,None,Move,office
+1578405057.165,485,394,None,Move,office
+1578405057.18,482,394,None,Move,office
+1578405057.196,480,394,None,Move,office
+1578405057.212,474,392,None,Move,office
+1578405057.234,464,380,None,Move,office
+1578405057.2370002,462,377,None,Move,office
+1578405057.252,455,367,None,Move,office
+1578405057.268,446,357,None,Move,office
+1578405057.284,441,348,None,Move,office
+1578405057.299,436,342,None,Move,office
+1578405057.315,434,338,None,Move,office
+1578405057.33,433,337,None,Move,office
+1578405057.346,429,331,None,Move,office
+1578405057.3620002,426,328,None,Move,office
+1578405057.539,426,328,Left,Pressed,office
+1578405057.633,426,328,Left,Released,office
+1578405057.68,426,329,None,Move,office
+1578405057.696,427,330,None,Move,office
+1578405057.8660002,428,330,None,Move,office
+1578405057.881,429,331,None,Move,office
+1578405057.9120002,429,332,None,Move,office
+1578405057.928,431,333,None,Move,office
+1578405057.944,433,339,None,Move,office
+1578405057.959,437,343,None,Move,office
+1578405057.975,444,350,None,Move,office
+1578405057.9910002,452,358,None,Move,office
+1578405058.006,461,368,None,Move,office
+1578405058.022,467,373,None,Move,office
+1578405058.0370002,484,388,None,Move,office
+1578405058.053,507,405,None,Move,office
+1578405058.069,535,425,None,Move,office
+1578405058.084,565,442,None,Move,office
+1578405058.1,597,459,None,Move,office
+1578405058.1160002,625,473,None,Move,office
+1578405058.131,644,482,None,Move,office
+1578405058.147,659,489,None,Move,office
+1578405058.1620002,670,492,None,Move,office
+1578405058.178,677,494,None,Move,office
+1578405058.194,682,496,None,Move,office
+1578405058.209,685,497,None,Move,office
+1578405058.6520002,685,497,None,Move,office
+1578405058.668,686,497,None,Move,office
+1578405058.6829998,687,495,None,Move,office
+1578405058.699,690,489,None,Move,office
+1578405058.715,692,479,None,Move,office
+1578405058.73,692,462,None,Move,office
+1578405058.746,692,434,None,Move,office
+1578405058.7610002,688,388,None,Move,office
+1578405058.7770002,679,348,None,Move,office
+1578405058.793,672,319,None,Move,office
+1578405058.8079998,665,300,None,Move,office
+1578405058.824,660,291,None,Move,office
+1578405058.84,656,286,None,Move,office
+1578405058.855,654,284,None,Move,office
+1578405058.871,651,283,None,Move,office
+1578405058.8860002,648,283,None,Move,office
+1578405058.9020002,645,281,None,Move,office
+1578405058.918,643,280,None,Move,office
+1578405058.934,639,280,None,Move,office
+1578405058.949,636,279,None,Move,office
+1578405058.958,634,278,None,Move,office
+1578405058.96,634,278,None,Move,office
+1578405058.976,630,277,None,Move,office
+1578405058.992,627,277,None,Move,office
+1578405059.0070002,627,277,None,Move,office
+1578405059.0229998,625,276,None,Move,office
+1578405059.038,624,276,None,Move,office
+1578405059.054,622,276,None,Move,office
+1578405059.07,618,275,None,Move,office
+1578405059.085,615,273,None,Move,office
+1578405059.101,611,269,None,Move,office
+1578405059.117,610,267,None,Move,office
+1578405059.1320002,609,262,None,Move,office
+1578405059.1479998,609,258,None,Move,office
+1578405059.166,609,257,None,Move,office
+1578405059.167,609,256,None,Move,office
+1578405059.1829998,609,254,None,Move,office
+1578405059.254,609,253,None,Move,office
+1578405059.269,608,253,None,Move,office
+1578405059.301,607,253,None,Move,office
+1578405059.341,604,253,Left,Pressed,office
+1578405059.342,604,253,None,Drag,office
+1578405059.357,599,253,None,Drag,office
+1578405059.373,593,253,None,Drag,office
+1578405059.3879998,589,253,None,Drag,office
+1578405059.404,583,253,None,Drag,office
+1578405059.42,577,253,None,Drag,office
+1578405059.435,571,253,None,Drag,office
+1578405059.451,566,253,None,Drag,office
+1578405059.467,558,253,None,Drag,office
+1578405059.482,554,253,None,Drag,office
+1578405059.498,550,253,None,Drag,office
+1578405059.5129998,548,253,None,Drag,office
+1578405059.659,546,253,None,Drag,office
+1578405059.659,546,253,Left,Released,office
+1578405059.691,543,253,None,Move,office
+1578405059.706,540,257,None,Move,office
+1578405060.842,540,257,None,Move,office
+1578405060.8579998,536,257,None,Move,office
+1578405060.8660002,535,257,None,Move,office
+1578405060.906,535,257,None,Move,office
+1578405060.914,535,258,None,Move,office
+1578405060.9220002,539,260,None,Move,office
+1578405060.93,540,263,None,Move,office
+1578405060.938,540,267,None,Move,office
+1578405060.946,540,274,None,Move,office
+1578405060.954,540,284,None,Move,office
+1578405060.964,540,297,None,Move,office
+1578405060.9729998,540,310,None,Move,office
+1578405060.981,539,324,None,Move,office
+1578405060.988,538,337,None,Move,office
+1578405060.995,535,347,None,Move,office
+1578405061.002,533,358,None,Move,office
+1578405061.01,532,366,None,Move,office
+1578405061.018,529,375,None,Move,office
+1578405061.026,527,382,None,Move,office
+1578405061.034,523,388,None,Move,office
+1578405061.042,521,394,None,Move,office
+1578405061.05,519,396,None,Move,office
+1578405061.0579998,517,397,None,Move,office
+1578405061.066,515,401,None,Move,office
+1578405061.077,513,407,None,Move,office
+1578405061.0879998,511,408,None,Move,office
+1578405061.094,511,411,None,Move,office
+1578405061.101,511,411,None,Move,office
+1578405061.1139998,511,413,None,Move,office
+1578405061.1220002,511,413,None,Move,office
+1578405061.13,510,414,None,Move,office
+1578405061.137,508,415,None,Move,office
+1578405061.146,508,416,None,Move,office
+1578405061.154,504,417,None,Move,office
+1578405061.161,501,420,None,Move,office
+1578405061.169,498,425,None,Move,office
+1578405061.177,492,431,None,Move,office
+1578405061.185,490,435,None,Move,office
+1578405061.196,489,440,None,Move,office
+1578405061.201,487,443,None,Move,office
+1578405061.209,486,447,None,Move,office
+1578405061.217,484,451,None,Move,office
+1578405061.225,483,454,None,Move,office
+1578405061.2329998,483,459,None,Move,office
+1578405061.2410002,483,466,None,Move,office
+1578405061.2489998,483,474,None,Move,office
+1578405061.2570002,483,484,None,Move,office
+1578405061.265,483,496,None,Move,office
+1578405061.274,483,507,None,Move,office
+1578405061.281,487,520,None,Move,office
+1578405061.29,493,532,None,Move,office
+1578405061.298,500,544,None,Move,office
+1578405061.305,505,556,None,Move,office
+1578405061.313,513,570,None,Move,office
+1578405061.322,522,584,None,Move,office
+1578405061.325,530,600,None,Move,office
+1578405061.341,544,628,None,Move,office
+1578405061.357,558,654,None,Move,office
+1578405061.3720002,566,670,None,Move,office
+1578405061.3879998,567,675,None,Move,office
+1578405061.403,567,677,None,Move,office
+1578405061.419,567,680,None,Move,office
+1578405061.561,567,683,None,Move,office
+1578405061.576,567,686,None,Move,office
+1578405061.592,568,689,None,Move,office
+1578405061.6079998,568,691,None,Move,office
+1578405061.623,568,698,None,Move,office
+1578405061.639,570,704,None,Move,office
+1578405061.658,571,709,None,Move,office
+1578405061.66,571,711,None,Move,office
+1578405061.675,571,715,None,Move,office
+1578405061.832,571,715,Left,Pressed,office
+1578405061.928,571,715,Left,Released,office
+1578405061.944,571,715,None,Move,office
+1578405061.96,572,715,None,Move,office
+1578405061.975,574,715,None,Move,office
+1578405061.9910002,579,715,None,Move,office
+1578405062.006,586,715,None,Move,office
+1578405062.022,592,715,None,Move,office
+1578405062.038,603,717,None,Move,office
+1578405062.053,614,723,None,Move,office
+1578405062.069,627,726,None,Move,office
+1578405062.084,639,730,None,Move,office
+1578405062.105,659,735,None,Move,office
+1578405062.109,669,739,None,Move,office
+1578405062.125,696,748,None,Move,office
+1578405062.141,727,758,None,Move,office
+1578405062.156,762,770,None,Move,office
+1578405062.1720002,797,781,None,Move,office
+1578405062.188,840,796,None,Move,office
+1578405062.2029998,893,816,None,Move,office
+1578405062.219,957,844,None,Move,office
+1578405062.234,1017,867,None,Move,office
+1578405062.25,1042,878,None,Move,office
+1578405062.266,1081,892,None,Move,office
+1578405062.2670002,1098,897,None,Move,office
+1578405062.282,1115,901,None,Move,office
+1578405062.298,1147,909,None,Move,office
+1578405062.314,1181,918,None,Move,office
+1578405062.3170002,1196,920,None,Move,office
+1578405062.333,1226,926,None,Move,office
+1578405062.3479998,1250,930,None,Move,office
+1578405062.3639998,1266,932,None,Move,office
+1578405062.498,1269,933,None,Move,office
+1578405062.5129998,1273,935,None,Move,office
+1578405062.529,1274,936,None,Move,office
+1578405062.545,1274,940,None,Move,office
+1578405062.56,1275,947,None,Move,office
+1578405062.576,1278,957,None,Move,office
+1578405062.591,1278,971,None,Move,office
+1578405062.607,1278,978,None,Move,office
+1578405062.623,1278,982,None,Move,office
+1578405062.855,1278,984,Left,Pressed,office
+1578405062.855,1278,984,None,Drag,office
+1578405062.855,1278,984,Left,Released,office
+1578405063.089,1278,987,None,Move,office
+1578405063.105,1278,988,None,Move,office
+1578405063.12,1278,989,None,Move,office
+1578405063.245,1276,989,None,Move,office
+1578405063.2610002,1276,989,None,Move,office
+1578405063.344,1274,989,None,Move,office
+1578405063.36,1273,989,None,Move,office
+1578405063.3760002,1272,989,None,Move,office
+1578405063.391,1269,989,None,Move,office
+1578405063.407,1269,988,None,Move,office
+1578405063.4220002,1267,986,None,Move,office
+1578405063.438,1265,983,None,Move,office
+1578405063.454,1262,975,None,Move,office
+1578405063.469,1255,965,None,Move,office
+1578405063.485,1253,959,None,Move,office
+1578405063.5,1248,946,None,Move,office
+1578405063.516,1244,925,None,Move,office
+1578405063.532,1242,907,None,Move,office
+1578405063.5470002,1241,890,None,Move,office
+1578405063.5579998,1241,881,None,Move,office
+1578405063.563,1241,871,None,Move,office
+1578405063.579,1241,850,None,Move,office
+1578405063.594,1241,825,None,Move,office
+1578405063.61,1241,798,None,Move,office
+1578405063.6260002,1244,769,None,Move,office
+1578405063.641,1246,738,None,Move,office
+1578405063.657,1252,709,None,Move,office
+1578405063.6720002,1260,683,None,Move,office
+1578405063.688,1271,660,None,Move,office
+1578405063.704,1285,633,None,Move,office
+1578405063.719,1293,617,None,Move,office
+1578405063.735,1319,576,None,Move,office
+1578405063.7510002,1372,498,None,Move,office
+1578405063.766,1391,473,None,Move,office
+1578405063.782,1436,422,None,Move,office
+1578405063.7870002,1458,402,None,Move,office
+1578405063.803,1498,371,None,Move,office
+1578405063.819,1531,345,None,Move,office
+1578405063.834,1559,326,None,Move,office
+1578405063.85,1578,316,None,Move,office
+1578405063.8660002,1593,306,None,Move,office
+1578405063.881,1598,302,None,Move,office
+1578405063.897,1601,299,None,Move,office
+1578405063.9120002,1601,297,None,Move,office
+1578405063.928,1602,297,None,Move,office
+1578405063.944,1604,295,None,Move,office
+1578405063.959,1605,295,None,Move,office
+1578405063.975,1606,292,None,Move,office
+1578405063.9910002,1609,289,None,Move,office
+1578405064.006,1610,288,None,Move,office
+1578405064.022,1611,287,None,Move,office
+1578405064.0370002,1611,284,None,Move,office
+1578405064.053,1613,283,None,Move,office
+1578405064.069,1616,282,None,Move,office
+1578405064.084,1619,278,None,Move,office
+1578405064.1,1621,274,None,Move,office
+1578405064.1160002,1621,269,None,Move,office
+1578405064.131,1621,265,None,Move,office
+1578405064.147,1621,260,None,Move,office
+1578405064.1620002,1617,252,None,Move,office
+1578405064.178,1616,248,None,Move,office
+1578405064.194,1613,242,None,Move,office
+1578405064.209,1612,240,None,Move,office
+1578405064.225,1610,236,None,Move,office
+1578405064.4120002,1610,234,None,Move,office
+1578405064.428,1610,231,None,Move,office
+1578405064.4429998,1610,228,None,Move,office
+1578405064.459,1610,224,None,Move,office
+1578405064.5370002,1610,220,None,Move,office
+1578405065.18,1610,219,Left,Pressed,office
+1578405065.312,1610,219,Left,Released,office
+1578405065.4529998,1610,218,None,Move,file system
+1578405065.469,1610,218,None,Move,file system
+1578405065.5,1608,218,None,Move,file system
+1578405065.516,1608,218,None,Move,file system
+1578405065.531,1602,218,None,Move,file system
+1578405065.5470002,1598,218,None,Move,file system
+1578405065.562,1590,218,None,Move,file system
+1578405065.5779998,1581,218,None,Move,file system
+1578405065.594,1559,218,None,Move,file system
+1578405065.609,1534,218,None,Move,file system
+1578405065.625,1508,218,None,Move,file system
+1578405065.641,1481,218,None,Move,file system
+1578405065.656,1458,218,None,Move,file system
+1578405065.6720002,1431,218,None,Move,file system
+1578405065.687,1400,218,None,Move,file system
+1578405065.7029998,1364,213,None,Move,file system
+1578405065.718,1343,212,None,Move,file system
+1578405065.734,1295,205,None,Move,file system
+1578405065.75,1260,200,None,Move,file system
+1578405065.766,1247,196,None,Move,file system
+1578405065.781,1247,187,None,Move,file system
+1578405065.7970002,1269,162,None,Move,file system
+1578405065.812,1369,103,None,Move,file system
+1578405065.8279998,1517,40,None,Move,file system
+1578405065.843,1716,-20,None,Move,file system
+1578405065.859,1934,-22,None,Move,file system
+1578405065.875,1993,-18,None,Move,file system
+1578405065.89,1960,-11,None,Move,file system
+1578405065.906,1936,-4,None,Move,file system
+1578405066.144,1919,0,Left,Pressed,file system
+1578405066.2370002,1919,0,Left,Released,file system
+1578405066.2529998,1917,0,None,Move,file system
+1578405066.268,1916,0,None,Move,file system
+1578405066.283,1909,0,None,Move,file system
+1578405066.299,1905,1,None,Move,file system
+1578405066.315,1896,8,None,Move,file system
+1578405066.33,1885,17,None,Move,file system
+1578405066.346,1863,33,None,Move,file system
+1578405066.361,1817,63,None,Move,file system
+1578405066.377,1747,106,None,Move,file system
+1578405066.393,1653,159,None,Move,file system
+1578405066.408,1527,230,None,Move,file system
+1578405066.424,1379,317,None,Move,file system
+1578405066.439,1235,409,None,Move,file system
+1578405066.455,1109,502,None,Move,file system
+1578405066.471,998,592,None,Move,file system
+1578405066.492,908,668,None,Move,file system
+1578405066.508,869,702,None,Move,file system
+1578405066.5270002,782,785,None,Move,file system
+1578405066.542,744,826,None,Move,file system
+1578405066.5579998,721,854,None,Move,file system
+1578405066.573,702,876,None,Move,file system
+1578405066.589,684,895,None,Move,file system
+1578405066.605,669,909,None,Move,file system
+1578405066.62,656,921,None,Move,file system
+1578405066.6360002,647,930,None,Move,file system
+1578405066.6520002,644,935,None,Move,file system
+1578405066.667,638,943,None,Move,file system
+1578405066.7770002,634,950,None,Move,file system
+1578405066.8079998,634,950,None,Move,file system
+1578405066.823,634,949,None,Move,file system
+1578405066.855,633,948,None,Move,file system
+1578405066.8860002,631,948,None,Move,file system
+1578405066.9020002,630,959,None,Move,file system
+1578405066.917,630,964,None,Move,file system
+1578405066.9329998,630,974,None,Move,file system
+1578405066.948,628,993,None,Move,file system
+1578405066.964,625,1015,None,Move,file system
+1578405066.98,622,1042,None,Move,file system
+1578405066.995,618,1065,None,Move,file system
+1578405067.0110002,615,1083,None,Move,file system
+1578405067.026,610,1086,None,Move,file system
+1578405067.042,608,1085,None,Move,file system
+1578405067.0579998,604,1080,None,Move,file system
+1578405067.073,596,1084,None,Move,file system
+1578405067.089,587,1082,None,Move,file system
+1578405067.105,580,1081,None,Move,file system
+1578405067.12,572,1083,None,Move,file system
+1578405067.1360002,565,1080,None,Move,file system
+1578405067.151,564,1079,None,Move,file system
+1578405067.167,557,1079,None,Move,file system
+1578405067.1829998,553,1079,None,Move,file system
+1578405067.198,550,1079,None,Move,file system
+1578405067.214,550,1079,None,Move,file system
+1578405067.23,547,1077,None,Move,file system
+1578405067.255,545,1074,None,Move,file system
+1578405067.271,538,1072,None,Move,file system
+1578405067.2870002,530,1070,None,Move,file system
+1578405067.302,520,1068,None,Move,file system
+1578405067.3179998,509,1066,None,Move,file system
+1578405067.333,502,1065,None,Move,file system
+1578405067.349,487,1061,None,Move,file system
+1578405067.365,483,1061,None,Move,file system
+1578405067.38,478,1061,None,Move,file system
+1578405067.396,477,1061,None,Move,file system
+1578405067.59,477,1061,Left,Pressed,file system
+1578405067.661,477,1061,Left,Released,file system
+1578405067.677,474,1061,None,Move,file system
+1578405067.6920002,471,1059,None,Move,office
+1578405067.708,466,1055,None,Move,office
+1578405067.7229998,466,1054,None,Move,office
+1578405067.7389998,464,1051,None,Move,office
+1578405067.755,464,1050,None,Move,office
+1578405067.77,463,1041,None,Move,office
+1578405067.786,463,1033,None,Move,office
+1578405067.802,463,1023,None,Move,office
+1578405067.8170002,463,1005,None,Move,office
+1578405067.833,463,983,None,Move,office
+1578405067.849,463,953,None,Move,office
+1578405067.8639998,463,917,None,Move,office
+1578405067.88,462,894,None,Move,office
+1578405067.895,459,844,None,Move,office
+1578405067.911,459,821,None,Move,office
+1578405067.927,459,812,None,Move,office
+1578405067.9420002,459,795,None,Move,office
+1578405067.958,459,775,None,Move,office
+1578405067.9729998,459,761,None,Move,office
+1578405067.9889998,459,745,None,Move,office
+1578405068.005,459,720,None,Move,office
+1578405068.02,459,687,None,Move,office
+1578405068.036,459,642,None,Move,office
+1578405068.052,459,588,None,Move,office
+1578405068.0670002,452,543,None,Move,office
+1578405068.083,443,500,None,Move,office
+1578405068.0979998,432,475,None,Move,office
+1578405068.1139998,422,453,None,Move,office
+1578405068.115,408,421,None,Move,office
+1578405068.131,377,350,None,Move,office
+1578405068.146,349,289,None,Move,office
+1578405068.1620002,339,263,None,Move,office
+1578405068.178,327,232,None,Move,office
+1578405068.1929998,324,218,None,Move,office
+1578405068.209,322,212,None,Move,office
+1578405068.224,322,209,None,Move,office
+1578405068.24,319,205,None,Move,office
+1578405068.256,319,203,None,Move,office
+1578405068.303,319,203,None,Move,office
+1578405068.33,319,206,None,Move,office
+1578405068.333,319,211,None,Move,office
+1578405068.349,319,220,None,Move,office
+1578405068.3639998,320,228,None,Move,office
+1578405068.38,320,240,None,Move,office
+1578405068.396,320,253,None,Move,office
+1578405068.411,322,268,None,Move,office
+1578405068.427,323,283,None,Move,office
+1578405068.4420002,324,288,None,Move,office
+1578405068.458,324,300,None,Move,office
+1578405068.474,326,311,None,Move,office
+1578405068.4889998,329,320,None,Move,office
+1578405068.505,329,327,None,Move,office
+1578405068.521,329,331,None,Move,office
+1578405068.536,329,337,None,Move,office
+1578405068.552,332,346,None,Move,office
+1578405068.5670002,335,358,None,Move,office
+1578405068.583,337,365,None,Move,office
+1578405068.678,337,366,Left,Pressed,office
+1578405068.772,337,366,Left,Released,office

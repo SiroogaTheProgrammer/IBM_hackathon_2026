@@ -22,7 +22,10 @@ import mouseBackgroundJson from "./model/mouseBackground.json";
 import { initTabNavState, updateTabNavigation, type TabNavState } from "./tabNavigation";
 import { initKeystrokeState, updateKeystroke, type KeystrokeState } from "./keystroke";
 import { updateComposite, type CompositeState } from "./composite";
-import type { ModuleResult, TickPayload, TickResponse } from "./types";
+import { DEFAULT_ENGINE, type MouseEngine, type ModuleResult, type TickPayload, type TickResponse } from "./types";
+import { autoencoderProgress, resetAutoencoder, runAutoencoderModule } from "./autoencoder/liveEngine";
+import { sapimouseProgress, resetSapimouse, runSapimouseModule, SAPIMOUSE_WARMUP_SIZE } from "./sapimouse/liveEngine";
+import { littleBoyProgress, resetLittleBoy, runLittleBoyModule, LITTLEBOY_WARMUP_SIZE } from "./littleboy/liveEngine";
 
 const SESSION_COOKIE = "bio_sid";
 const SESSION_TTL_SECONDS = 30 * 60;
@@ -84,7 +87,15 @@ async function saveSession(id: string, doc: SessionDoc): Promise<void> {
 }
 
 export async function resetSession(id: string): Promise<void> {
-  await getRedis().del(redisKey(id));
+  // Clear both engines' state - the UI's Reset/Quit buttons are not
+  // engine-specific, and leaving one engine's gallery behind would make a
+  // "reset" look like it had no effect after switching the dropdown.
+  await Promise.all([
+    getRedis().del(redisKey(id)),
+    resetAutoencoder(id),
+    resetSapimouse(id),
+    resetLittleBoy(id),
+  ]);
 }
 
 function isIdleTick(payload: TickPayload): boolean {
@@ -198,22 +209,43 @@ function runMouseModule(session: SessionDoc, events: TickPayload["events"]): Mod
   };
 }
 
-function sessionInfo(session: SessionDoc) {
+function sessionInfo(engine: MouseEngine, gallerySize: number) {
+  // Each engine fills its gallery at a different rate, so the progress bar has
+  // to know which target it is counting towards.
+  const target =
+    engine === "sapimouse_features_embed" ? SAPIMOUSE_WARMUP_SIZE
+    : engine === "little_boy" ? LITTLEBOY_WARMUP_SIZE
+    : WARMUP_SIZE;
+  const mode =
+    engine === "balabit_autoencoder" ? "autoencoder"
+    : engine === "sapimouse_features_embed" ? "sapimouse"
+    : engine === "little_boy" ? "littleboy"
+    : ADDON_CONFIG.session.gallery_mode;
   return {
-    status: session.gallery.length >= WARMUP_SIZE ? "active" : "warming",
-    gallery_size: session.gallery.length,
-    warmup_size: WARMUP_SIZE,
-    gallery_mode: ADDON_CONFIG.session.gallery_mode,
+    status: gallerySize >= target ? "active" : "warming",
+    gallery_size: gallerySize,
+    warmup_size: target,
+    gallery_mode: mode,
   };
 }
 
 export async function processTick(payload: TickPayload): Promise<TickResponse> {
   if (isIdleTick(payload)) return idleResponse();
 
+  const engine: MouseEngine = payload.engine ?? DEFAULT_ENGINE;
   const sid = await getSessionId();
   const session = await loadSession(sid);
 
-  const mouseResult = runMouseModule(session, payload.events);
+  // Each engine keeps its own warm-up state, so switching between them in the
+  // UI resumes rather than restarting the one you switch back to.
+  const mouseResult =
+    engine === "balabit_autoencoder"
+      ? await runAutoencoderModule(sid, payload.events)
+      : engine === "sapimouse_features_embed"
+        ? await runSapimouseModule(sid, payload.events)
+        : engine === "little_boy"
+          ? await runLittleBoyModule(sid, payload.events)
+          : runMouseModule(session, payload.events);
   const tabOutcome = updateTabNavigation(
     session.tabNav,
     (payload.nav ?? []).map((v) => ({ tab: String(v.tab ?? ""), dwell: Number(v.dwell ?? 0) })),
@@ -238,12 +270,29 @@ export async function processTick(payload: TickPayload): Promise<TickResponse> {
     },
   ];
 
+  // The autoencoder engine folds its own per-user calibration into the risk
+  // value itself (its mean+3sigma cutoff maps to exactly 0.8), so it uses the
+  // fixed threshold rather than the embedding engine's fitted one.
+  const effectiveThreshold =
+    engine === "balabit_autoencoder" || engine === "little_boy"
+      ? ADDON_CONFIG.session.threshold
+      : engine === "sapimouse_features_embed"
+        // fitted per-user by that engine's own fitGallery and reported in its
+        // module detail; fall back to the global default until it has one
+        ? (typeof mouseResult.detail.threshold === "number"
+            ? mouseResult.detail.threshold
+            : ADDON_CONFIG.session.threshold)
+        : session.threshold;
+
   const compositeState: CompositeState = { streak: session.streak, escalated: session.escalated };
   const outcome = updateComposite(
     compositeState,
     {
       weights: {
         mouse_base_v1: ADDON_CONFIG.modules.mouse_base_v1.weight,
+        mouse_autoencoder_v1: ADDON_CONFIG.modules.mouse_autoencoder_v1.weight,
+        mouse_sapimouse_v1: ADDON_CONFIG.modules.mouse_sapimouse_v1.weight,
+        mouse_littleboy_v1: ADDON_CONFIG.modules.mouse_littleboy_v1.weight,
         tab_navigation_v1: ADDON_CONFIG.modules.tab_navigation_v1.weight,
         keystroke_v1: ADDON_CONFIG.modules.keystroke_v1.weight,
       },
@@ -256,7 +305,7 @@ export async function processTick(payload: TickPayload): Promise<TickResponse> {
       // 0.8 fallback (see artifacts/report.txt's per-user `thresh` column,
       // e.g. ~0.37 for some users) would almost never escalate, even for a
       // blatant impostor.
-      threshold: session.threshold,
+      threshold: effectiveThreshold,
       cycles: ADDON_CONFIG.session.cycles,
     },
     results.map((r) => ({ pluginId: r.plugin_id, risk: r.risk_score, confidence: r.confidence, status: r.status })),
@@ -271,11 +320,20 @@ export async function processTick(payload: TickPayload): Promise<TickResponse> {
     verdict: outcome.verdict,
     streak: outcome.streak,
     escalated: outcome.escalated,
-    threshold: session.threshold,
+    threshold: effectiveThreshold,
     hard_triggered: outcome.hardTriggered,
     active_modules: outcome.activeModules,
     modules: results,
-    session: sessionInfo(session),
+    session: sessionInfo(
+      engine,
+      engine === "balabit_autoencoder"
+        ? (await autoencoderProgress(sid)).size
+        : engine === "sapimouse_features_embed"
+          ? (await sapimouseProgress(sid)).size
+          : engine === "little_boy"
+            ? (await littleBoyProgress(sid)).size
+            : session.gallery.length,
+    ),
   };
 }
 
@@ -288,6 +346,20 @@ export function getConfigPayload() {
         weight: ADDON_CONFIG.modules.mouse_base_v1.weight,
         is_base: true,
         hard_trigger: ADDON_CONFIG.modules.mouse_base_v1.hardTrigger,
+      },
+      {
+        plugin_id: "mouse_sapimouse_v1",
+        display_name: ADDON_CONFIG.modules.mouse_sapimouse_v1.displayName,
+        weight: ADDON_CONFIG.modules.mouse_sapimouse_v1.weight,
+        is_base: true,
+        hard_trigger: ADDON_CONFIG.modules.mouse_sapimouse_v1.hardTrigger,
+      },
+      {
+        plugin_id: "mouse_littleboy_v1",
+        display_name: ADDON_CONFIG.modules.mouse_littleboy_v1.displayName,
+        weight: ADDON_CONFIG.modules.mouse_littleboy_v1.weight,
+        is_base: true,
+        hard_trigger: ADDON_CONFIG.modules.mouse_littleboy_v1.hardTrigger,
       },
       {
         plugin_id: "tab_navigation_v1",

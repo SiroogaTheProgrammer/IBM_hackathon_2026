@@ -8,6 +8,12 @@
 export const ADDON_CONFIG = {
   modules: {
     mouse_base_v1: { weight: 1.0, hardTrigger: null as number | null, isBase: true, displayName: "Mouse / pointer dynamics (base)" },
+    // Alternative base mouse model, selected from the widget's engine
+    // dropdown. Same weight as mouse_base_v1 - exactly one of the two runs
+    // per tick, so composite risk stays on the same scale either way.
+    mouse_autoencoder_v1: { weight: 1.0, hardTrigger: null as number | null, isBase: true, displayName: "Mouse / pointer dynamics (autoencoder)" },
+    mouse_sapimouse_v1: { weight: 1.0, hardTrigger: null as number | null, isBase: true, displayName: "Mouse / pointer dynamics (SapiMouse encoder)" },
+    mouse_littleboy_v1: { weight: 1.0, hardTrigger: null as number | null, isBase: true, displayName: "Mouse / pointer dynamics (little_boy per-event autoencoder)" },
     tab_navigation_v1: { weight: 0.6, hardTrigger: 0.95 as number | null, isBase: false, displayName: "Tab navigation path" },
     keystroke_v1: { weight: 0.5, hardTrigger: null as number | null, isBase: false, displayName: "Keystroke dynamics" },
   },

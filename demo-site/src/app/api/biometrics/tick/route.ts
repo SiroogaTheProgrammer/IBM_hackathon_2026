@@ -4,6 +4,10 @@ import { processTick } from "@/lib/biometrics/session";
 import type { TickPayload } from "@/lib/biometrics/types";
 
 export const runtime = "nodejs";
+// The tick that completes an autoencoder engine's warm-up fits its model
+// inline and takes a few seconds (one tick in 60 for balabit_autoencoder, one
+// in 90 for little_boy); every other tick returns in milliseconds.
+export const maxDuration = 60;
 
 export async function POST(req: NextRequest) {
   let payload: TickPayload;

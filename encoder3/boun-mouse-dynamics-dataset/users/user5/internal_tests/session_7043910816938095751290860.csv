@@ -1,0 +1,3781 @@
+client_timestamp,x,y,button,state,window
+1573738085.161,423,941,Left,Pressed,office
+1573738085.3520002,423,941,Left,Released,office
+1573738158.196,423,941,Left,Pressed,development
+1573738158.44,423,941,Left,Released,office
+1573738160.0029998,423,941,Left,Pressed,office
+1573738160.28,423,941,Left,Released,office
+1573738160.9020002,423,941,Left,Pressed,office
+1573738161.107,423,941,Left,Released,office
+1573738177.354,427,941,None,Move,office
+1573738177.3620002,490,934,None,Move,office
+1573738177.383,567,923,None,Move,office
+1573738177.3879998,713,921,None,Move,office
+1573738177.394,775,922,None,Move,office
+1573738177.399,833,924,None,Move,office
+1573738177.407,879,928,None,Move,office
+1573738177.416,916,933,None,Move,office
+1573738177.423,939,936,None,Move,office
+1573738177.4320002,951,937,None,Move,office
+1573738177.439,957,939,None,Move,office
+1573738177.447,959,939,None,Move,office
+1573738177.456,960,939,None,Move,office
+1573738177.548,960,940,None,Move,office
+1573738177.556,960,940,None,Move,office
+1573738177.564,960,940,None,Move,office
+1573738177.572,963,939,None,Move,office
+1573738177.58,969,936,None,Move,office
+1573738177.5879998,975,932,None,Move,office
+1573738177.596,981,930,None,Move,office
+1573738177.6020002,986,928,None,Move,office
+1573738177.62,997,925,None,Move,office
+1573738177.625,1000,923,None,Move,office
+1573738177.633,1004,922,None,Move,office
+1573738177.641,1008,922,None,Move,office
+1573738177.649,1017,921,None,Move,office
+1573738177.658,1027,921,None,Move,office
+1573738177.666,1044,920,None,Move,office
+1573738177.673,1068,920,None,Move,office
+1573738177.679,1098,920,None,Move,office
+1573738177.688,1134,921,None,Move,office
+1573738177.696,1176,928,None,Move,office
+1573738177.704,1219,935,None,Move,office
+1573738177.712,1258,941,None,Move,office
+1573738177.719,1297,946,None,Move,office
+1573738177.7270002,1333,948,None,Move,office
+1573738177.7370002,1371,948,None,Move,office
+1573738177.744,1410,951,None,Move,office
+1573738177.7489998,1438,953,None,Move,office
+1573738177.758,1460,953,None,Move,office
+1573738177.765,1480,952,None,Move,office
+1573738177.774,1500,950,None,Move,office
+1573738177.782,1519,950,None,Move,office
+1573738177.79,1541,950,None,Move,office
+1573738177.798,1571,957,None,Move,office
+1573738177.805,1604,969,None,Move,office
+1573738177.812,1635,979,None,Move,office
+1573738177.833,1665,991,None,Move,office
+1573738177.8379998,1713,1010,None,Move,office
+1573738177.843,1727,1014,None,Move,office
+1573738177.8520002,1737,1021,None,Move,office
+1573738177.86,1743,1026,None,Move,office
+1573738177.867,1746,1030,None,Move,office
+1573738177.8760002,1748,1032,None,Move,office
+1573738177.881,1748,1035,None,Move,office
+1573738177.895,1748,1038,None,Move,office
+1573738177.901,1748,1042,None,Move,office
+1573738177.907,1750,1045,None,Move,office
+1573738177.913,1751,1047,None,Move,office
+1573738177.9220002,1755,1052,None,Move,office
+1573738177.93,1761,1057,None,Move,office
+1573738177.938,1767,1062,None,Move,office
+1573738177.946,1773,1064,None,Move,office
+1573738177.9529998,1776,1066,None,Move,office
+1573738177.959,1779,1067,None,Move,office
+1573738177.967,1782,1069,None,Move,office
+1573738177.975,1788,1071,None,Move,office
+1573738177.9829998,1791,1072,None,Move,office
+1573738177.992,1792,1072,None,Move,office
+1573738177.9989998,1793,1072,None,Move,office
+1573738178.042,1793,1073,None,Move,office
+1573738178.049,1799,1074,None,Move,office
+1573738178.0579998,1809,1074,None,Move,office
+1573738178.066,1826,1074,None,Move,office
+1573738178.074,1851,1071,None,Move,office
+1573738178.082,1880,1067,None,Move,office
+1573738178.09,1908,1064,None,Move,office
+1573738178.096,1936,1063,None,Move,office
+1573738178.104,1972,1059,None,Move,office
+1573738178.1120002,2008,1058,None,Move,office
+1573738178.12,2046,1058,None,Move,office
+1573738178.1279998,2081,1058,None,Move,office
+1573738178.1360002,2111,1058,None,Move,office
+1573738178.143,2137,1055,None,Move,office
+1573738178.1520002,2152,1052,None,Move,office
+1573738178.16,2159,1051,None,Move,office
+1573738178.165,2161,1050,None,Move,office
+1573738178.1820002,2160,1050,None,Move,office
+1573738178.19,2153,1053,None,Move,office
+1573738178.198,2138,1059,None,Move,office
+1573738178.206,2112,1065,None,Move,office
+1573738178.214,2083,1068,None,Move,office
+1573738178.221,2060,1073,None,Move,office
+1573738178.23,2049,1078,None,Move,office
+1573738178.235,2046,1079,None,Move,office
+1573738178.244,2047,1079,None,Move,office
+1573738178.2510002,2057,1076,None,Move,office
+1573738178.2589998,2085,1066,None,Move,office
+1573738178.2670002,2144,1050,None,Move,office
+1573738178.276,2231,1021,None,Move,office
+1573738178.283,2334,989,None,Move,office
+1573738178.291,2450,954,None,Move,office
+1573738178.299,2574,914,None,Move,office
+1573738178.305,2701,867,None,Move,office
+1573738178.314,2831,822,None,Move,office
+1573738178.322,2958,775,None,Move,office
+1573738178.33,3085,735,None,Move,office
+1573738178.3379998,3210,678,None,Move,office
+1573738178.346,3320,651,None,Move,office
+1573738178.353,3416,635,None,Move,office
+1573738178.3620002,3499,620,None,Move,office
+1573738178.37,3571,607,None,Move,office
+1573738178.375,3625,593,None,Move,office
+1573738178.3839998,3668,584,None,Move,office
+1573738178.3920002,3694,578,None,Move,office
+1573738178.399,3708,577,None,Move,office
+1573738178.408,3714,577,None,Move,office
+1573738178.415,3717,577,None,Move,office
+1573738178.462,3716,577,None,Move,office
+1573738178.47,3703,578,None,Move,office
+1573738178.478,3681,579,None,Move,office
+1573738178.486,3652,582,None,Move,office
+1573738178.494,3621,585,None,Move,office
+1573738178.502,3591,585,None,Move,office
+1573738178.51,3566,583,None,Move,office
+1573738178.515,3543,581,None,Move,office
+1573738178.524,3520,579,None,Move,office
+1573738178.532,3507,579,None,Move,office
+1573738178.54,3494,579,None,Move,office
+1573738178.548,3480,579,None,Move,office
+1573738178.556,3468,577,None,Move,office
+1573738178.564,3459,575,None,Move,office
+1573738178.572,3450,573,None,Move,office
+1573738178.58,3443,571,None,Move,office
+1573738178.586,3439,570,None,Move,office
+1573738178.594,3437,569,None,Move,office
+1573738178.6020002,3435,568,None,Move,office
+1573738178.61,3435,567,None,Move,office
+1573738180.066,3432,566,None,Move,file system
+1573738180.079,3393,560,None,Move,file system
+1573738180.087,3321,550,None,Move,file system
+1573738180.093,3223,534,None,Move,file system
+1573738180.101,3106,527,None,Move,file system
+1573738180.1079998,2963,518,None,Move,file system
+1573738180.115,2809,513,None,Move,file system
+1573738180.1239998,2636,522,None,Move,file system
+1573738180.1420002,2241,553,None,Move,development
+1573738180.156,1906,538,None,Move,development
+1573738180.163,1785,498,None,Move,development
+1573738180.18,1663,413,None,Move,development
+1573738180.191,1602,350,None,Move,development
+1573738180.2029998,1550,315,None,Move,development
+1573738180.211,1486,272,None,Move,development
+1573738180.2229998,1346,191,None,Move,development
+1573738180.23,1278,166,None,Move,development
+1573738180.2410002,1210,142,None,Move,development
+1573738180.256,1089,114,None,Move,development
+1573738180.2629998,1033,99,None,Move,development
+1573738180.272,977,89,None,Move,development
+1573738180.279,921,75,None,Move,development
+1573738180.288,869,62,None,Move,development
+1573738180.295,827,52,None,Move,development
+1573738180.305,792,44,None,Move,development
+1573738180.313,768,37,None,Move,development
+1573738180.325,750,33,None,Move,development
+1573738180.331,746,32,None,Move,development
+1573738180.3379998,745,30,None,Move,development
+1573738180.346,743,29,None,Move,development
+1573738180.354,743,27,None,Move,development
+1573738180.36,742,26,None,Move,development
+1573738180.3679998,741,25,None,Move,development
+1573738180.3760002,741,24,None,Move,development
+1573738180.425,742,24,None,Move,development
+1573738180.4329998,748,24,None,Move,development
+1573738180.4420002,756,25,None,Move,development
+1573738180.45,765,27,None,Move,development
+1573738180.458,773,28,None,Move,development
+1573738180.465,782,30,None,Move,development
+1573738180.474,791,32,None,Move,development
+1573738180.481,800,34,None,Move,development
+1573738180.49,809,37,None,Move,development
+1573738180.495,819,39,None,Move,development
+1573738180.504,827,41,None,Move,development
+1573738180.5110002,835,42,None,Move,development
+1573738180.519,842,43,None,Move,development
+1573738180.5270002,849,44,None,Move,development
+1573738180.536,855,45,None,Move,development
+1573738180.544,860,45,None,Move,development
+1573738180.552,863,45,None,Move,development
+1573738180.56,865,45,None,Move,development
+1573738180.565,869,45,None,Move,development
+1573738180.573,872,47,None,Move,file system
+1573738180.582,878,49,None,Move,file system
+1573738180.589,884,51,None,Move,file system
+1573738180.597,891,54,None,Move,file system
+1573738180.6079998,900,59,None,Move,file system
+1573738180.6139998,908,65,None,Move,file system
+1573738180.621,917,70,None,Move,file system
+1573738180.629,925,75,None,Move,file system
+1573738180.6420002,933,82,None,Move,file system
+1573738180.655,945,94,None,Move,file system
+1573738180.666,951,102,None,Move,file system
+1573738180.674,955,109,None,Move,file system
+1573738180.68,960,116,None,Move,file system
+1573738180.69,965,125,None,Move,file system
+1573738180.697,972,134,None,Move,file system
+1573738180.705,985,151,None,Move,file system
+1573738180.7129998,994,161,None,Move,file system
+1573738180.721,1004,174,None,Move,file system
+1573738180.73,1015,187,None,Move,file system
+1573738180.7370002,1022,197,None,Move,file system
+1573738180.746,1029,205,None,Move,file system
+1573738180.7529998,1034,214,None,Move,file system
+1573738180.7610002,1037,220,None,Move,file system
+1573738180.77,1039,227,None,Move,file system
+1573738180.778,1041,232,None,Move,file system
+1573738180.784,1041,238,None,Move,file system
+1573738180.792,1042,244,None,Move,file system
+1573738180.799,1042,249,None,Move,file system
+1573738180.8079998,1042,254,None,Move,file system
+1573738180.815,1042,260,None,Move,file system
+1573738180.824,1043,265,None,Move,file system
+1573738180.831,1045,271,None,Move,file system
+1573738180.84,1046,277,None,Move,file system
+1573738180.847,1047,280,None,Move,file system
+1573738180.854,1047,282,None,Move,file system
+1573738180.861,1047,284,None,Move,file system
+1573738180.869,1048,286,None,Move,file system
+1573738180.877,1048,287,None,Move,file system
+1573738180.885,1048,288,None,Move,file system
+1573738180.893,1048,291,None,Move,file system
+1573738180.901,1049,292,None,Move,file system
+1573738180.909,1049,296,None,Move,file system
+1573738180.917,1051,298,None,Move,file system
+1573738180.927,1053,302,None,Move,file system
+1573738180.9329998,1055,307,None,Move,file system
+1573738180.94,1058,313,None,Move,file system
+1573738180.947,1062,317,None,Move,file system
+1573738180.955,1066,321,None,Move,file system
+1573738180.9629998,1068,326,None,Move,file system
+1573738180.971,1071,329,None,Move,file system
+1573738180.979,1074,333,None,Move,file system
+1573738180.9870002,1078,339,None,Move,file system
+1573738180.9929998,1083,345,None,Move,file system
+1573738181.0010002,1089,351,None,Move,file system
+1573738181.0089998,1095,357,None,Move,file system
+1573738181.0170002,1102,362,None,Move,file system
+1573738181.025,1108,368,None,Move,file system
+1573738181.033,1114,373,None,Move,file system
+1573738181.041,1116,374,None,Move,file system
+1573738181.049,1118,375,None,Move,file system
+1573738181.0570002,1120,376,None,Move,file system
+1573738181.063,1120,377,None,Move,file system
+1573738181.071,1121,377,None,Move,file system
+1573738181.079,1121,378,None,Move,file system
+1573738181.087,1122,378,None,Move,file system
+1573738181.095,1123,380,None,Move,file system
+1573738181.103,1123,381,None,Move,file system
+1573738181.111,1125,382,None,Move,file system
+1573738181.119,1126,383,None,Move,file system
+1573738181.127,1126,384,None,Move,file system
+1573738181.135,1127,384,None,Move,file system
+1573738181.228,1127,385,None,Move,file system
+1573738181.2370002,1126,385,None,Move,file system
+1573738181.244,1126,385,None,Move,file system
+1573738181.314,1125,385,None,Move,file system
+1573738181.326,1124,385,None,Move,file system
+1573738181.334,1121,383,None,Move,file system
+1573738181.342,1117,380,None,Move,file system
+1573738181.347,1111,377,None,Move,file system
+1573738181.356,1107,373,None,Move,file system
+1573738181.363,1102,371,None,Move,file system
+1573738181.3720002,1100,368,None,Move,file system
+1573738181.38,1098,367,None,Move,file system
+1573738181.3879998,1097,365,None,Move,file system
+1573738181.396,1094,363,None,Move,file system
+1573738181.404,1092,362,None,Move,file system
+1573738181.4120002,1090,360,None,Move,file system
+1573738181.418,1088,359,None,Move,file system
+1573738181.426,1086,358,None,Move,file system
+1573738181.434,1085,358,None,Move,file system
+1573738181.4420002,1084,358,None,Move,file system
+1573738181.45,1083,358,None,Move,file system
+1573738181.458,1081,358,None,Move,file system
+1573738181.466,1078,360,None,Move,file system
+1573738181.474,1072,362,None,Move,file system
+1573738181.482,1066,366,None,Move,file system
+1573738181.488,1056,369,None,Move,file system
+1573738181.496,1047,371,None,Move,file system
+1573738181.504,1036,375,None,Move,file system
+1573738181.512,1022,380,None,Move,file system
+1573738181.52,1008,385,None,Move,file system
+1573738181.5270002,989,389,None,Move,file system
+1573738181.536,967,397,None,Move,file system
+1573738181.544,945,404,None,Move,file system
+1573738181.552,921,408,None,Move,file system
+1573738181.5570002,897,413,None,Move,file system
+1573738181.566,874,416,None,Move,file system
+1573738181.574,853,420,None,Move,file system
+1573738181.582,839,425,None,Move,file system
+1573738181.59,827,429,None,Move,file system
+1573738181.597,817,433,None,Move,file system
+1573738181.606,808,438,None,Move,file system
+1573738181.613,800,443,None,Move,file system
+1573738181.6220002,790,447,None,Move,file system
+1573738181.627,782,452,None,Move,file system
+1573738181.637,773,455,None,Move,file system
+1573738181.644,766,459,None,Move,file system
+1573738181.6520002,760,463,None,Move,file system
+1573738181.66,755,465,None,Move,file system
+1573738181.668,754,466,None,Move,file system
+1573738181.676,752,468,None,Move,file system
+1573738181.684,752,469,None,Move,file system
+1573738181.6920002,750,470,None,Move,file system
+1573738181.698,750,471,None,Move,file system
+1573738181.706,749,472,None,Move,file system
+1573738181.714,748,473,None,Move,file system
+1573738181.722,747,474,None,Move,file system
+1573738181.73,746,474,None,Move,file system
+1573738181.738,745,474,None,Move,file system
+1573738181.746,745,474,None,Move,file system
+1573738182.104,745,474,None,Move,file system
+1573738182.1160002,744,473,None,Move,file system
+1573738182.1220002,742,473,None,Move,file system
+1573738182.13,741,473,None,Move,file system
+1573738182.149,738,472,None,Move,file system
+1573738182.155,737,472,None,Move,file system
+1573738182.1620002,735,475,None,Move,file system
+1573738182.17,735,475,None,Move,file system
+1573738182.1920002,735,476,None,Move,file system
+1573738182.41,734,476,None,Move,file system
+1573738182.418,734,476,None,Move,file system
+1573738182.426,734,476,None,Move,file system
+1573738182.435,734,476,None,Move,file system
+1573738182.458,735,476,None,Move,file system
+1573738182.492,736,475,None,Move,file system
+1573738182.5010002,736,474,None,Move,file system
+1573738182.5070002,736,474,None,Move,file system
+1573738182.512,735,474,None,Move,file system
+1573738182.52,733,474,None,Move,file system
+1573738182.528,732,474,None,Move,file system
+1573738182.5370002,731,474,None,Move,file system
+1573738182.544,730,473,None,Move,file system
+1573738182.551,728,472,None,Move,file system
+1573738182.5579998,728,472,None,Move,file system
+1573738182.566,727,471,None,Move,file system
+1573738182.574,727,470,None,Move,file system
+1573738182.581,727,469,None,Move,file system
+1573738182.589,726,468,None,Move,file system
+1573738182.5979998,726,467,None,Move,file system
+1573738182.605,726,466,None,Move,file system
+1573738182.6139998,726,464,None,Move,file system
+1573738182.62,726,462,None,Move,file system
+1573738182.627,726,461,None,Move,file system
+1573738182.635,727,460,None,Move,file system
+1573738182.643,727,459,None,Move,file system
+1573738182.651,727,458,None,Move,file system
+1573738182.659,727,457,None,Move,file system
+1573738182.667,727,455,None,Move,file system
+1573738182.675,728,454,None,Move,file system
+1573738182.684,729,453,None,Move,file system
+1573738182.689,729,451,None,Move,file system
+1573738182.698,729,450,None,Move,file system
+1573738182.705,729,450,None,Move,file system
+1573738182.7129998,729,450,None,Move,file system
+1573738182.721,728,450,None,Move,file system
+1573738182.73,727,450,None,Move,file system
+1573738182.7370002,726,449,None,Move,file system
+1573738182.745,726,449,None,Move,file system
+1573738183.121,726,449,None,Move,file system
+1573738183.129,729,454,None,Move,file system
+1573738183.137,738,460,None,Move,file system
+1573738183.146,744,465,None,Move,file system
+1573738183.153,749,470,None,Move,file system
+1573738183.161,755,474,None,Move,file system
+1573738183.169,761,478,None,Move,file system
+1573738183.175,767,482,None,Move,file system
+1573738183.1829998,776,486,None,Move,file system
+1573738183.191,788,490,None,Move,file system
+1573738183.199,803,491,None,Move,file system
+1573738183.207,819,492,None,Move,file system
+1573738183.215,841,492,None,Move,file system
+1573738183.224,863,492,None,Move,file system
+1573738183.231,883,493,None,Move,file system
+1573738183.24,903,496,None,Move,file system
+1573738183.2470002,924,499,None,Move,file system
+1573738183.2529998,939,501,None,Move,file system
+1573738183.2610002,954,502,None,Move,file system
+1573738183.272,968,502,None,Move,file system
+1573738183.28,981,502,None,Move,file system
+1573738183.292,995,504,None,Move,file system
+1573738183.303,1022,507,None,Move,file system
+1573738183.311,1034,508,None,Move,file system
+1573738183.32,1044,509,None,Move,file system
+1573738183.329,1054,509,None,Move,file system
+1573738183.339,1060,509,None,Move,file system
+1573738183.347,1068,509,None,Move,file system
+1573738183.36,1078,508,None,Move,file system
+1573738183.371,1081,507,None,Move,file system
+1573738183.379,1083,507,None,Move,file system
+1573738183.3879998,1083,507,None,Move,file system
+1573738183.397,1083,506,None,Move,file system
+1573738183.495,1083,506,None,Move,file system
+1573738183.5070002,1083,506,None,Move,file system
+1573738183.516,1082,506,None,Move,file system
+1573738183.526,1081,506,None,Move,file system
+1573738183.5370002,1080,506,None,Move,file system
+1573738183.573,1080,506,None,Move,file system
+1573738183.582,1077,506,None,Move,file system
+1573738183.592,1075,506,None,Move,file system
+1573738183.607,1069,506,None,Move,file system
+1573738183.62,1067,507,None,Move,file system
+1573738183.64,1067,507,None,Move,file system
+1573738183.647,1067,508,None,Move,file system
+1573738183.655,1072,509,None,Move,file system
+1573738183.663,1080,509,None,Move,file system
+1573738183.675,1089,506,None,Move,file system
+1573738183.681,1099,504,None,Move,file system
+1573738183.686,1110,502,None,Move,file system
+1573738183.6929998,1121,498,None,Move,file system
+1573738183.701,1132,492,None,Move,file system
+1573738183.709,1144,488,None,Move,file system
+1573738183.717,1155,483,None,Move,file system
+1573738183.725,1169,481,None,Move,file system
+1573738183.7329998,1183,480,None,Move,file system
+1573738183.7389998,1199,480,None,Move,file system
+1573738183.7470002,1219,480,None,Move,file system
+1573738183.755,1241,480,None,Move,file system
+1573738183.7629998,1262,483,None,Move,file system
+1573738183.7729998,1280,486,None,Move,file system
+1573738183.78,1293,487,None,Move,file system
+1573738183.7870002,1308,489,None,Move,file system
+1573738183.796,1321,490,None,Move,file system
+1573738183.803,1334,490,None,Move,file system
+1573738183.809,1348,490,None,Move,file system
+1573738183.82,1360,490,None,Move,file system
+1573738183.827,1370,489,None,Move,file system
+1573738183.8379998,1377,488,None,Move,file system
+1573738183.8479998,1381,488,None,Move,file system
+1573738183.8579998,1384,488,None,Move,file system
+1573738183.948,1384,487,None,Move,file system
+1573738183.958,1382,484,None,Move,file system
+1573738183.97,1378,481,None,Move,file system
+1573738183.9770002,1375,480,None,Move,file system
+1573738183.986,1369,478,None,Move,file system
+1573738183.994,1363,476,None,Move,file system
+1573738184.0029998,1356,475,None,Move,file system
+1573738184.0110002,1348,475,None,Move,file system
+1573738184.0170002,1342,475,None,Move,file system
+1573738184.0229998,1336,475,None,Move,file system
+1573738184.031,1330,476,None,Move,file system
+1573738184.04,1325,478,None,Move,file system
+1573738184.0470002,1316,480,None,Move,file system
+1573738184.056,1307,481,None,Move,file system
+1573738184.064,1299,483,None,Move,file system
+1573738184.072,1289,485,None,Move,file system
+1573738184.08,1276,486,None,Move,file system
+1573738184.087,1262,486,None,Move,file system
+1573738184.095,1249,487,None,Move,file system
+1573738184.101,1236,488,None,Move,file system
+1573738184.11,1222,491,None,Move,file system
+1573738184.117,1209,493,None,Move,file system
+1573738184.1260002,1196,495,None,Move,file system
+1573738184.133,1182,499,None,Move,file system
+1573738184.1420002,1169,502,None,Move,file system
+1573738184.15,1155,504,None,Move,file system
+1573738184.158,1142,506,None,Move,file system
+1573738184.166,1131,507,None,Move,file system
+1573738184.171,1123,508,None,Move,file system
+1573738184.18,1115,509,None,Move,file system
+1573738184.188,1110,511,None,Move,file system
+1573738184.196,1107,513,None,Move,file system
+1573738184.204,1105,514,None,Move,file system
+1573738184.212,1101,517,None,Move,file system
+1573738184.219,1098,521,None,Move,file system
+1573738184.2270002,1094,524,None,Move,file system
+1573738184.236,1091,526,None,Move,file system
+1573738184.2410002,1089,528,None,Move,file system
+1573738184.2489998,1088,529,None,Move,file system
+1573738184.2589998,1087,531,None,Move,file system
+1573738184.27,1086,531,None,Move,file system
+1573738184.332,1085,531,None,Move,file system
+1573738184.343,1085,532,None,Move,file system
+1573738184.355,1084,533,None,Move,file system
+1573738184.3660002,1084,534,None,Move,file system
+1573738184.3779998,1084,536,None,Move,file system
+1573738184.3879998,1083,538,None,Move,file system
+1573738184.396,1082,539,None,Move,file system
+1573738184.409,1081,544,None,Move,file system
+1573738184.421,1079,545,None,Move,file system
+1573738184.428,1078,547,None,Move,file system
+1573738184.439,1076,554,None,Move,file system
+1573738184.448,1076,556,None,Move,file system
+1573738184.4529998,1074,560,None,Move,file system
+1573738184.459,1073,563,None,Move,file system
+1573738184.468,1071,566,None,Move,file system
+1573738184.475,1070,570,None,Move,file system
+1573738184.4829998,1068,572,None,Move,file system
+1573738184.492,1068,573,None,Move,file system
+1573738184.5,1066,575,None,Move,file system
+1573738184.5070002,1065,576,None,Move,file system
+1573738184.515,1065,577,None,Move,file system
+1573738184.611,1065,576,None,Move,file system
+1573738184.619,1067,569,None,Move,file system
+1573738184.627,1069,561,None,Move,file system
+1573738184.635,1072,551,None,Move,file system
+1573738184.659,1075,542,None,Move,file system
+1573738184.665,1084,519,None,Move,file system
+1573738184.67,1093,502,None,Move,file system
+1573738184.675,1102,476,None,Move,file system
+1573738184.681,1110,447,None,Move,file system
+1573738184.689,1116,422,None,Move,file system
+1573738184.697,1118,400,None,Move,file system
+1573738184.705,1118,385,None,Move,file system
+1573738184.7129998,1118,372,None,Move,file system
+1573738184.722,1115,360,None,Move,file system
+1573738184.729,1113,348,None,Move,file system
+1573738184.735,1111,336,None,Move,file system
+1573738184.7429998,1110,326,None,Move,file system
+1573738184.7510002,1110,318,None,Move,file system
+1573738184.7589998,1110,311,None,Move,file system
+1573738184.7670002,1111,304,None,Move,file system
+1573738184.775,1111,296,None,Move,file system
+1573738184.783,1111,291,None,Move,file system
+1573738184.791,1111,285,None,Move,file system
+1573738184.799,1111,280,None,Move,file system
+1573738184.805,1111,275,None,Move,file system
+1573738184.814,1111,269,None,Move,file system
+1573738184.822,1111,264,None,Move,file system
+1573738184.83,1110,258,None,Move,file system
+1573738184.8379998,1109,252,None,Move,file system
+1573738184.845,1108,247,None,Move,file system
+1573738184.853,1107,241,None,Move,file system
+1573738184.861,1106,236,None,Move,file system
+1573738184.869,1104,230,None,Move,file system
+1573738184.875,1103,224,None,Move,file system
+1573738184.883,1103,220,None,Move,file system
+1573738184.891,1103,215,None,Move,file system
+1573738184.899,1103,209,None,Move,file system
+1573738184.907,1105,203,None,Move,file system
+1573738184.915,1106,200,None,Move,file system
+1573738184.923,1108,196,None,Move,file system
+1573738184.931,1110,192,None,Move,file system
+1573738184.939,1110,188,None,Move,file system
+1573738184.945,1111,186,None,Move,file system
+1573738184.9529998,1112,182,None,Move,file system
+1573738184.962,1113,179,None,Move,file system
+1573738184.969,1114,176,None,Move,file system
+1573738184.978,1114,173,None,Move,file system
+1573738184.985,1115,171,None,Move,file system
+1573738184.9929998,1116,170,None,Move,file system
+1573738185.0070002,1117,168,None,Move,file system
+1573738185.016,1118,166,None,Move,file system
+1573738185.026,1119,164,None,Move,file system
+1573738185.039,1119,163,None,Move,file system
+1573738185.046,1120,162,None,Move,file system
+1573738185.056,1120,159,None,Move,file system
+1573738185.0670002,1120,158,None,Move,file system
+1573738185.074,1121,156,None,Move,file system
+1573738185.084,1121,155,None,Move,file system
+1573738185.093,1122,154,None,Move,file system
+1573738185.103,1124,150,None,Move,file system
+1573738185.111,1125,149,None,Move,file system
+1573738185.121,1125,147,None,Move,file system
+1573738185.1320002,1126,146,None,Move,file system
+1573738185.141,1126,143,None,Move,file system
+1573738185.1520002,1127,143,None,Move,file system
+1573738185.16,1127,142,None,Move,file system
+1573738185.2529998,1127,142,None,Move,file system
+1573738185.2610002,1130,142,None,Move,file system
+1573738185.269,1132,142,None,Move,file system
+1573738185.2770002,1134,142,None,Move,file system
+1573738185.285,1135,142,None,Move,file system
+1573738185.294,1137,142,None,Move,file system
+1573738185.301,1137,142,None,Move,file system
+1573738185.3070002,1138,142,None,Move,file system
+1573738185.315,1138,142,None,Move,file system
+1573738185.324,1139,142,None,Move,file system
+1573738185.332,1140,142,None,Move,file system
+1573738185.34,1141,142,None,Move,file system
+1573738185.347,1142,141,None,Move,file system
+1573738185.355,1146,139,None,Move,file system
+1573738185.363,1153,137,None,Move,file system
+1573738185.369,1159,135,None,Move,file system
+1573738185.377,1166,133,None,Move,file system
+1573738185.3860002,1172,131,None,Move,file system
+1573738185.393,1175,131,None,Move,file system
+1573738185.405,1178,130,None,Move,file system
+1573738185.4120002,1180,129,None,Move,file system
+1573738185.417,1181,129,None,Move,file system
+1573738185.425,1183,129,None,Move,file system
+1573738185.4329998,1184,129,None,Move,file system
+1573738185.439,1185,129,None,Move,file system
+1573738185.448,1187,129,None,Move,file system
+1573738185.456,1187,129,None,Move,file system
+1573738185.468,1188,129,None,Move,file system
+1573738185.504,1188,129,Left,Pressed,file system
+1573738185.6279998,1188,129,Left,Released,file system
+1573738186.048,1187,130,None,Move,file system
+1573738186.056,1183,137,None,Move,file system
+1573738186.064,1176,145,None,Move,file system
+1573738186.074,1168,155,None,Move,file system
+1573738186.084,1159,167,None,Move,file system
+1573738186.095,1129,206,None,Move,file system
+1573738186.123,1053,291,None,Move,file system
+1573738186.129,1040,308,None,Move,file system
+1573738186.14,1027,325,None,Move,file system
+1573738186.158,988,376,None,Move,file system
+1573738186.173,954,402,None,Move,file system
+1573738186.184,933,421,None,Move,file system
+1573738186.194,906,441,None,Move,file system
+1573738186.205,857,474,None,Move,file system
+1573738186.2129998,835,488,None,Move,file system
+1573738186.226,804,511,None,Move,file system
+1573738186.2370002,788,520,None,Move,file system
+1573738186.245,778,528,None,Move,file system
+1573738186.256,768,534,None,Move,file system
+1573738186.2670002,755,542,None,Move,file system
+1573738186.274,749,543,None,Move,file system
+1573738186.285,747,545,None,Move,file system
+1573738186.293,745,546,None,Move,file system
+1573738186.302,744,546,None,Move,file system
+1573738186.31,743,547,None,Move,file system
+1573738186.32,742,547,None,Move,file system
+1573738186.43,742,547,None,Move,file system
+1573738186.439,741,546,None,Move,file system
+1573738186.447,739,545,None,Move,file system
+1573738186.457,737,543,None,Move,file system
+1573738186.464,735,541,None,Move,file system
+1573738186.472,732,538,None,Move,file system
+1573738186.48,728,534,None,Move,file system
+1573738186.4870002,725,529,None,Move,file system
+1573738186.496,720,524,None,Move,file system
+1573738186.5010002,714,519,None,Move,file system
+1573738186.5089998,709,514,None,Move,file system
+1573738186.518,705,511,None,Move,file system
+1573738186.526,703,509,None,Move,file system
+1573738186.534,701,507,None,Move,file system
+1573738186.542,700,505,None,Move,file system
+1573738186.55,698,502,None,Move,file system
+1573738186.573,693,489,None,Move,file system
+1573738186.58,692,483,None,Move,file system
+1573738186.5879998,692,475,None,Move,file system
+1573738186.596,692,469,None,Move,file system
+1573738186.604,692,463,None,Move,file system
+1573738186.6120002,692,458,None,Move,file system
+1573738186.62,693,452,None,Move,file system
+1573738186.6279998,695,447,None,Move,file system
+1573738186.6360002,697,443,None,Move,file system
+1573738186.644,700,437,None,Move,file system
+1573738186.65,702,431,None,Move,file system
+1573738186.658,709,425,None,Move,file system
+1573738186.666,715,419,None,Move,file system
+1573738186.673,721,411,None,Move,file system
+1573738186.681,728,404,None,Move,file system
+1573738186.689,735,396,None,Move,file system
+1573738186.697,742,389,None,Move,file system
+1573738186.705,749,382,None,Move,file system
+1573738186.7129998,756,375,None,Move,file system
+1573738186.719,764,369,None,Move,file system
+1573738186.74,773,362,None,Move,file system
+1573738186.746,789,348,None,Move,file system
+1573738186.7510002,798,340,None,Move,file system
+1573738186.7589998,806,333,None,Move,file system
+1573738186.7670002,815,326,None,Move,file system
+1573738186.775,824,320,None,Move,file system
+1573738186.783,832,314,None,Move,file system
+1573738186.789,838,308,None,Move,file system
+1573738186.7970002,847,303,None,Move,file system
+1573738186.805,853,298,None,Move,file system
+1573738186.813,859,295,None,Move,file system
+1573738186.821,864,292,None,Move,file system
+1573738186.829,867,290,None,Move,file system
+1573738186.837,868,289,None,Move,file system
+1573738186.845,870,287,None,Move,file system
+1573738186.853,870,287,None,Move,file system
+1573738186.9,870,287,None,Move,file system
+1573738186.9120002,870,287,None,Move,file system
+1573738186.92,870,293,None,Move,file system
+1573738186.925,866,302,None,Move,file system
+1573738186.934,860,312,None,Move,file system
+1573738186.941,853,324,None,Move,file system
+1573738186.95,845,338,None,Move,file system
+1573738186.958,834,352,None,Move,file system
+1573738186.966,825,364,None,Move,file system
+1573738186.974,812,377,None,Move,file system
+1573738186.982,798,389,None,Move,file system
+1573738186.99,781,399,None,Move,file system
+1573738186.996,764,412,None,Move,file system
+1573738187.0229998,751,421,None,Move,file system
+1573738187.03,716,434,None,Move,file system
+1573738187.036,702,440,None,Move,file system
+1573738187.043,690,443,None,Move,file system
+1573738187.052,679,448,None,Move,file system
+1573738187.06,669,452,None,Move,file system
+1573738187.066,660,454,None,Move,file system
+1573738187.074,651,457,None,Move,file system
+1573738187.082,643,460,None,Move,file system
+1573738187.09,636,462,None,Move,file system
+1573738187.097,629,466,None,Move,file system
+1573738187.106,623,468,None,Move,file system
+1573738187.1139998,617,470,None,Move,file system
+1573738187.1220002,611,472,None,Move,file system
+1573738187.13,605,474,None,Move,file system
+1573738187.135,601,476,None,Move,file system
+1573738187.144,598,478,None,Move,file system
+1573738187.1520002,593,481,None,Move,file system
+1573738187.16,589,483,None,Move,file system
+1573738187.168,586,485,None,Move,file system
+1573738187.176,584,487,None,Move,file system
+1573738187.184,580,491,None,Move,file system
+1573738187.1920002,577,493,None,Move,file system
+1573738187.2,573,497,None,Move,file system
+1573738187.206,570,502,None,Move,file system
+1573738187.214,568,506,None,Move,file system
+1573738187.222,566,511,None,Move,file system
+1573738187.23,564,515,None,Move,file system
+1573738187.238,562,519,None,Move,file system
+1573738187.246,561,521,None,Move,file system
+1573738187.254,559,523,None,Move,file system
+1573738187.2610002,558,525,None,Move,file system
+1573738187.269,556,526,None,Move,file system
+1573738187.291,555,529,None,Move,file system
+1573738187.296,554,530,None,Move,file system
+1573738187.301,553,531,None,Move,file system
+1573738187.3070002,552,533,None,Move,file system
+1573738187.315,552,534,None,Move,file system
+1573738187.323,551,536,None,Move,file system
+1573738187.331,551,538,None,Move,file system
+1573738187.339,551,542,None,Move,file system
+1573738187.347,551,547,None,Move,file system
+1573738187.353,550,551,None,Move,file system
+1573738187.361,549,557,None,Move,file system
+1573738187.369,548,563,None,Move,file system
+1573738187.377,547,568,None,Move,file system
+1573738187.385,546,574,None,Move,file system
+1573738187.407,545,579,None,Move,file system
+1573738187.416,545,590,None,Move,file system
+1573738187.421,545,596,None,Move,file system
+1573738187.426,545,601,None,Move,file system
+1573738187.4320002,545,608,None,Move,file system
+1573738187.439,546,616,None,Move,file system
+1573738187.447,548,625,None,Move,file system
+1573738187.455,551,634,None,Move,file system
+1573738187.474,555,656,None,Move,file system
+1573738187.48,557,664,None,Move,file system
+1573738187.4870002,559,672,None,Move,file system
+1573738187.5070002,562,684,None,Move,file system
+1573738187.5129998,563,687,None,Move,file system
+1573738187.518,564,688,None,Move,file system
+1573738187.525,564,690,None,Move,file system
+1573738187.533,565,692,None,Move,file system
+1573738187.541,565,693,None,Move,file system
+1573738187.549,566,695,None,Move,file system
+1573738187.5570002,566,697,None,Move,file system
+1573738187.563,568,702,None,Move,file system
+1573738187.571,570,706,None,Move,file system
+1573738187.579,572,711,None,Move,file system
+1573738187.587,575,718,None,Move,file system
+1573738187.595,578,724,None,Move,file system
+1573738187.603,580,729,None,Move,file system
+1573738187.611,583,735,None,Move,file system
+1573738187.619,584,740,None,Move,file system
+1573738187.627,586,744,None,Move,file system
+1573738187.633,588,748,None,Move,file system
+1573738187.641,589,750,None,Move,file system
+1573738187.649,591,752,None,Move,file system
+1573738187.657,592,754,None,Move,file system
+1573738187.665,594,756,None,Move,file system
+1573738187.673,595,757,None,Move,file system
+1573738187.6829998,597,759,None,Move,file system
+1573738187.689,598,760,None,Move,file system
+1573738187.701,599,762,None,Move,file system
+1573738187.708,601,763,None,Move,file system
+1573738187.72,604,766,None,Move,file system
+1573738187.728,605,767,None,Move,file system
+1573738187.7370002,607,769,None,Move,file system
+1573738187.7429998,609,770,None,Move,file system
+1573738187.755,611,772,None,Move,file system
+1573738187.766,614,773,None,Move,file system
+1573738187.7729998,616,775,None,Move,file system
+1573738187.783,621,777,None,Move,file system
+1573738187.79,622,778,None,Move,file system
+1573738187.801,624,779,None,Move,file system
+1573738187.8079998,625,780,None,Move,file system
+1573738187.819,626,780,None,Move,file system
+1573738187.829,628,780,None,Move,file system
+1573738187.839,630,780,None,Move,file system
+1573738187.849,632,780,None,Move,file system
+1573738187.857,632,780,None,Move,file system
+1573738187.8620002,633,780,None,Move,file system
+1573738188.0470002,633,781,None,Move,file system
+1573738188.0570002,634,782,None,Move,file system
+1573738188.0670002,636,783,None,Move,file system
+1573738188.075,637,784,None,Move,file system
+1573738188.081,639,785,None,Move,file system
+1573738188.089,640,786,None,Move,file system
+1573738188.0979998,641,787,None,Move,file system
+1573738188.105,643,788,None,Move,file system
+1573738188.113,644,789,None,Move,file system
+1573738188.121,645,790,None,Move,file system
+1573738188.127,645,791,None,Move,file system
+1573738188.135,646,791,None,Move,file system
+1573738188.143,647,792,None,Move,file system
+1573738188.151,647,793,None,Move,file system
+1573738188.16,648,793,None,Move,file system
+1573738188.168,648,795,None,Move,file system
+1573738188.176,649,795,None,Move,file system
+1573738188.184,650,797,None,Move,file system
+1573738188.1920002,650,797,None,Move,file system
+1573738188.198,650,798,None,Move,file system
+1573738188.206,651,800,None,Move,file system
+1573738188.214,651,800,None,Move,file system
+1573738188.222,651,800,None,Move,file system
+1573738188.23,651,801,None,Move,file system
+1573738188.238,651,801,None,Move,file system
+1573738188.345,651,801,None,Move,file system
+1573738188.3620002,652,801,None,Move,file system
+1573738188.369,653,800,None,Move,file system
+1573738188.377,655,799,None,Move,file system
+1573738188.385,655,797,None,Move,file system
+1573738188.394,656,797,None,Move,file system
+1573738188.401,657,796,None,Move,file system
+1573738188.409,658,795,None,Move,file system
+1573738188.415,658,794,None,Move,file system
+1573738188.424,659,793,None,Move,file system
+1573738188.431,660,792,None,Move,file system
+1573738188.44,660,792,None,Move,file system
+1573738188.447,660,791,None,Move,file system
+1573738188.455,661,790,None,Move,file system
+1573738188.4629998,661,789,None,Move,file system
+1573738188.471,662,789,None,Move,file system
+1573738188.479,662,788,None,Move,file system
+1573738188.553,662,787,None,Move,file system
+1573738188.604,663,786,None,Move,file system
+1573738188.611,664,785,None,Move,file system
+1573738188.62,664,784,None,Move,file system
+1573738188.6279998,666,783,None,Move,file system
+1573738188.6339998,666,782,None,Move,file system
+1573738188.6420002,666,782,None,Move,file system
+1573738188.65,666,781,None,Move,file system
+1573738188.658,667,781,None,Move,file system
+1573738188.769,668,781,None,Move,file system
+1573738188.7770002,669,779,None,Move,file system
+1573738188.785,670,778,None,Move,file system
+1573738188.793,670,777,None,Move,file system
+1573738188.801,672,776,None,Move,file system
+1573738188.809,672,775,None,Move,file system
+1573738188.8170002,672,775,None,Move,file system
+1573738188.957,672,774,None,Move,file system
+1573738188.966,673,773,None,Move,file system
+1573738188.9729998,673,772,None,Move,file system
+1573738188.981,674,771,None,Move,file system
+1573738188.9870002,674,770,None,Move,file system
+1573738188.995,675,769,None,Move,file system
+1573738189.0029998,675,768,None,Move,file system
+1573738189.015,675,767,None,Move,file system
+1573738189.0779998,675,767,Left,Pressed,file system
+1573738189.196,675,767,Left,Released,file system
+1573738189.541,676,767,None,Move,file system
+1573738189.554,676,768,None,Move,file system
+1573738189.565,676,769,None,Move,file system
+1573738189.572,676,769,None,Move,file system
+1573738189.583,676,770,None,Move,file system
+1573738189.589,677,771,None,Move,file system
+1573738189.603,677,772,None,Move,file system
+1573738189.6160002,677,773,None,Move,file system
+1573738189.627,677,774,None,Move,file system
+1573738189.6360002,677,775,None,Move,file system
+1573738189.645,677,775,None,Move,file system
+1573738189.658,677,776,None,Move,file system
+1573738189.686,677,776,None,Move,file system
+1573738189.695,677,777,None,Move,file system
+1573738189.705,677,777,None,Move,file system
+1573738190.242,677,778,None,Move,file system
+1573738190.25,677,778,None,Move,file system
+1573738190.258,677,780,None,Move,file system
+1573738190.266,677,780,None,Move,file system
+1573738190.272,676,781,None,Move,file system
+1573738190.28,676,781,None,Move,file system
+1573738190.288,676,782,None,Move,file system
+1573738190.295,675,783,None,Move,file system
+1573738190.303,675,783,None,Move,file system
+1573738190.37,675,784,None,Move,file system
+1573738190.394,675,784,None,Move,file system
+1573738190.406,674,785,None,Move,file system
+1573738190.696,674,785,None,Move,file system
+1573738190.744,673,785,None,Move,file system
+1573738190.756,673,787,None,Move,file system
+1573738190.762,671,788,None,Move,file system
+1573738190.77,671,789,None,Move,file system
+1573738190.7770002,669,791,None,Move,file system
+1573738190.786,668,792,None,Move,file system
+1573738190.794,666,794,None,Move,file system
+1573738190.802,665,795,None,Move,file system
+1573738190.811,664,797,None,Move,file system
+1573738190.8170002,662,798,None,Move,file system
+1573738190.827,661,799,None,Move,file system
+1573738190.835,659,800,None,Move,file system
+1573738190.843,659,801,None,Move,file system
+1573738190.847,659,801,None,Move,file system
+1573738190.856,659,801,None,Move,file system
+1573738190.938,658,801,None,Move,file system
+1573738191.327,658,801,None,Move,file system
+1573738191.337,658,801,None,Move,file system
+1573738191.346,659,801,None,Move,file system
+1573738191.353,659,801,None,Move,file system
+1573738191.3660002,660,800,None,Move,file system
+1573738191.3720002,660,799,None,Move,file system
+1573738191.38,661,798,None,Move,file system
+1573738191.3860002,661,796,None,Move,file system
+1573738191.397,662,795,None,Move,file system
+1573738191.4020002,663,793,None,Move,file system
+1573738191.41,664,791,None,Move,file system
+1573738191.416,665,788,None,Move,file system
+1573738191.424,666,785,None,Move,file system
+1573738191.4320002,667,781,None,Move,file system
+1573738191.44,669,775,None,Move,file system
+1573738191.448,671,769,None,Move,file system
+1573738191.456,673,761,None,Move,file system
+1573738191.464,675,754,None,Move,file system
+1573738191.472,676,745,None,Move,file system
+1573738191.484,677,733,None,Move,file system
+1573738191.492,677,718,None,Move,file system
+1573738191.5,677,700,None,Move,file system
+1573738191.506,674,674,None,Move,file system
+1573738191.512,670,646,None,Move,file system
+1573738191.519,667,617,None,Move,file system
+1573738191.526,664,589,None,Move,file system
+1573738191.534,664,567,None,Move,file system
+1573738191.542,664,544,None,Move,file system
+1573738191.5470002,667,527,None,Move,file system
+1573738191.556,670,509,None,Move,file system
+1573738191.564,672,495,None,Move,file system
+1573738191.572,672,483,None,Move,file system
+1573738191.58,674,471,None,Move,file system
+1573738191.587,675,462,None,Move,file system
+1573738191.597,677,453,None,Move,file system
+1573738191.603,679,446,None,Move,file system
+1573738191.6120002,681,439,None,Move,file system
+1573738191.619,683,434,None,Move,file system
+1573738191.6260002,685,429,None,Move,file system
+1573738191.633,687,425,None,Move,file system
+1573738191.6420002,688,422,None,Move,file system
+1573738191.65,690,421,None,Move,file system
+1573738191.658,690,420,None,Move,file system
+1573738191.666,692,418,None,Move,file system
+1573738191.674,692,418,None,Move,file system
+1573738191.6820002,694,416,None,Move,file system
+1573738191.688,695,416,None,Move,file system
+1573738191.696,696,415,None,Move,file system
+1573738191.704,696,414,None,Move,file system
+1573738192.1360002,696,414,None,Move,file system
+1573738192.147,696,414,None,Move,file system
+1573738192.156,694,413,None,Move,file system
+1573738192.164,688,408,None,Move,file system
+1573738192.1720002,681,400,None,Move,file system
+1573738192.18,672,391,None,Move,file system
+1573738192.186,660,379,None,Move,file system
+1573738192.194,642,361,None,Move,file system
+1573738192.202,621,342,None,Move,file system
+1573738192.21,594,321,None,Move,file system
+1573738192.218,566,301,None,Move,file system
+1573738192.226,536,279,None,Move,file system
+1573738192.234,509,261,None,Move,file system
+1573738192.242,481,242,None,Move,file system
+1573738192.25,457,227,None,Move,file system
+1573738192.2570002,434,217,None,Move,file system
+1573738192.264,416,207,None,Move,file system
+1573738192.272,398,199,None,Move,file system
+1573738192.28,378,192,None,Move,file system
+1573738192.2870002,359,185,None,Move,file system
+1573738192.296,342,178,None,Move,file system
+1573738192.304,320,172,None,Move,file system
+1573738192.312,295,164,None,Move,file system
+1573738192.32,267,155,None,Move,file system
+1573738192.326,237,145,None,Move,file system
+1573738192.333,207,136,None,Move,file system
+1573738192.342,182,133,None,Move,file system
+1573738192.35,158,130,None,Move,file system
+1573738192.3579998,135,127,None,Move,file system
+1573738192.3660002,115,125,None,Move,file system
+1573738192.3739998,94,122,None,Move,file system
+1573738192.3820002,76,119,None,Move,file system
+1573738192.4020002,48,115,None,Move,file system
+1573738192.409,34,113,None,Move,file system
+1573738192.415,21,110,None,Move,file system
+1573738192.42,10,109,None,Move,file system
+1573738192.429,2,107,None,Move,file system
+1573738192.436,-6,105,None,Move,file system
+1573738192.444,-9,104,None,Move,file system
+1573738192.452,-5,103,None,Move,file system
+1573738192.46,-5,102,None,Move,file system
+1573738192.466,-3,102,None,Move,file system
+1573738192.474,-1,101,None,Move,file system
+1573738192.482,-1,101,None,Move,file system
+1573738192.49,-1,100,None,Move,file system
+1573738192.704,0,100,None,Move,file system
+1573738192.716,0,100,None,Move,file system
+1573738192.724,3,96,None,Move,file system
+1573738192.732,4,94,None,Move,file system
+1573738192.74,6,92,None,Move,file system
+1573738192.748,7,90,None,Move,file system
+1573738192.755,9,88,None,Move,file system
+1573738192.762,10,85,None,Move,file system
+1573738192.77,12,84,None,Move,file system
+1573738192.778,13,82,None,Move,file system
+1573738192.786,15,80,None,Move,file system
+1573738192.794,16,78,None,Move,file system
+1573738192.802,17,76,None,Move,file system
+1573738192.81,18,75,None,Move,file system
+1573738192.8179998,19,73,None,Move,file system
+1573738192.824,20,72,None,Move,file system
+1573738192.832,20,71,None,Move,file system
+1573738192.84,20,69,None,Move,file system
+1573738192.8479998,20,69,None,Move,file system
+1573738192.856,20,68,None,Move,file system
+1573738192.8639998,20,67,None,Move,file system
+1573738192.8720002,21,67,None,Move,file system
+1573738192.88,21,66,None,Move,file system
+1573738192.8879998,21,65,None,Move,file system
+1573738192.8979998,21,65,None,Move,file system
+1573738192.968,21,65,Left,Pressed,file system
+1573738193.07,21,65,Left,Released,file system
+1573738193.186,23,65,None,Move,file system
+1573738193.195,29,67,None,Move,file system
+1573738193.205,35,71,None,Move,file system
+1573738193.214,41,75,None,Move,file system
+1573738193.221,47,81,None,Move,file system
+1573738193.228,53,86,None,Move,file system
+1573738193.2389998,60,90,None,Move,file system
+1573738193.2589998,90,109,None,Move,file system
+1573738193.2729998,135,134,None,Move,file system
+1573738193.2870002,164,147,None,Move,file system
+1573738193.303,291,201,None,Move,file system
+1573738193.313,338,216,None,Move,file system
+1573738193.326,432,239,None,Move,file system
+1573738193.336,483,257,None,Move,file system
+1573738193.35,580,295,None,Move,file system
+1573738193.363,628,304,None,Move,file system
+1573738193.385,778,314,None,Move,file system
+1573738193.399,891,324,None,Move,file system
+1573738193.41,943,323,None,Move,file system
+1573738193.42,1022,321,None,Move,file system
+1573738193.435,1047,319,None,Move,file system
+1573738193.45,1077,318,None,Move,file system
+1573738193.464,1093,317,None,Move,file system
+1573738193.466,1098,316,None,Move,file system
+1573738193.476,1098,316,None,Move,file system
+1573738193.6179998,1098,314,None,Move,file system
+1573738193.625,1098,302,None,Move,file system
+1573738193.633,1098,289,None,Move,file system
+1573738193.641,1099,278,None,Move,file system
+1573738193.649,1101,269,None,Move,file system
+1573738193.657,1103,260,None,Move,file system
+1573738193.665,1104,252,None,Move,file system
+1573738193.671,1105,245,None,Move,file system
+1573738193.679,1105,239,None,Move,file system
+1573738193.687,1105,233,None,Move,file system
+1573738193.695,1105,228,None,Move,file system
+1573738193.7029998,1104,222,None,Move,file system
+1573738193.711,1103,216,None,Move,file system
+1573738193.719,1102,211,None,Move,file system
+1573738193.7270002,1100,206,None,Move,file system
+1573738193.736,1099,204,None,Move,file system
+1573738193.742,1098,201,None,Move,file system
+1573738193.75,1096,197,None,Move,file system
+1573738193.7570002,1094,196,None,Move,file system
+1573738193.766,1093,193,None,Move,file system
+1573738193.775,1091,191,None,Move,file system
+1573738193.783,1090,189,None,Move,file system
+1573738193.792,1089,188,None,Move,file system
+1573738193.801,1087,186,None,Move,file system
+1573738193.81,1087,184,None,Move,file system
+1573738193.8179998,1086,183,None,Move,file system
+1573738193.827,1086,180,None,Move,file system
+1573738193.844,1086,178,None,Move,file system
+1573738193.854,1086,176,None,Move,file system
+1573738193.881,1086,170,None,Move,file system
+1573738193.9120002,1086,165,None,Move,file system
+1573738193.937,1086,161,None,Move,file system
+1573738193.955,1087,159,None,Move,file system
+1573738193.964,1087,157,None,Move,file system
+1573738193.976,1088,155,None,Move,file system
+1573738194.005,1090,152,None,Move,file system
+1573738194.016,1092,150,None,Move,file system
+1573738194.034,1094,149,None,Move,file system
+1573738194.044,1094,148,None,Move,file system
+1573738194.05,1094,148,None,Move,file system
+1573738194.064,1095,147,None,Move,file system
+1573738194.074,1095,147,None,Move,file system
+1573738194.12,1095,147,Left,Pressed,file system
+1573738194.2389998,1095,147,Left,Released,file system
+1573738194.667,1095,147,None,Move,file system
+1573738194.68,1095,147,None,Move,file system
+1573738194.69,1095,149,None,Move,file system
+1573738194.7,1092,153,None,Move,file system
+1573738194.708,1091,155,None,Move,file system
+1573738194.716,1089,156,None,Move,file system
+1573738194.7270002,1088,158,None,Move,file system
+1573738194.734,1086,160,None,Move,file system
+1573738194.7389998,1085,161,None,Move,file system
+1573738194.745,1083,163,None,Move,file system
+1573738194.754,1082,164,None,Move,file system
+1573738194.7610002,1081,166,None,Move,file system
+1573738194.77,1079,168,None,Move,file system
+1573738194.778,1078,169,None,Move,file system
+1573738194.786,1076,172,None,Move,file system
+1573738194.794,1073,176,None,Move,file system
+1573738194.801,1069,182,None,Move,file system
+1573738194.8079998,1066,187,None,Move,file system
+1573738194.816,1062,193,None,Move,file system
+1573738194.824,1058,199,None,Move,file system
+1573738194.831,1052,205,None,Move,file system
+1573738194.84,1049,210,None,Move,file system
+1573738194.8479998,1044,215,None,Move,file system
+1573738194.856,1041,219,None,Move,file system
+1573738194.8639998,1037,224,None,Move,file system
+1573738194.871,1033,229,None,Move,file system
+1573738194.877,1027,234,None,Move,file system
+1573738194.8860002,1022,238,None,Move,file system
+1573738194.894,1017,242,None,Move,file system
+1573738194.901,1013,245,None,Move,file system
+1573738194.91,1010,248,None,Move,file system
+1573738194.917,1005,252,None,Move,file system
+1573738194.929,1002,254,None,Move,file system
+1573738194.939,999,257,None,Move,file system
+1573738194.951,989,263,None,Move,file system
+1573738194.9629998,978,272,None,Move,file system
+1573738194.971,972,278,None,Move,file system
+1573738194.984,966,283,None,Move,file system
+1573738194.994,959,288,None,Move,file system
+1573738195.0010002,950,293,None,Move,file system
+1573738195.012,933,304,None,Move,file system
+1573738195.021,924,307,None,Move,file system
+1573738195.031,913,313,None,Move,file system
+1573738195.041,902,317,None,Move,file system
+1573738195.05,880,326,None,Move,file system
+1573738195.06,869,330,None,Move,file system
+1573738195.066,857,336,None,Move,file system
+1573738195.077,843,341,None,Move,file system
+1573738195.086,828,347,None,Move,file system
+1573738195.092,813,353,None,Move,file system
+1573738195.097,800,355,None,Move,file system
+1573738195.106,787,357,None,Move,file system
+1573738195.1160002,773,360,None,Move,file system
+1573738195.121,757,366,None,Move,file system
+1573738195.127,732,375,None,Move,file system
+1573738195.1360002,707,383,None,Move,file system
+1573738195.144,679,393,None,Move,file system
+1573738195.1520002,650,401,None,Move,file system
+1573738195.158,620,408,None,Move,file system
+1573738195.166,590,416,None,Move,file system
+1573738195.174,559,423,None,Move,file system
+1573738195.1820002,526,431,None,Move,file system
+1573738195.19,499,437,None,Move,file system
+1573738195.198,476,442,None,Move,file system
+1573738195.206,453,451,None,Move,file system
+1573738195.214,433,460,None,Move,file system
+1573738195.222,412,470,None,Move,file system
+1573738195.228,394,478,None,Move,file system
+1573738195.25,379,486,None,Move,file system
+1573738195.255,354,499,None,Move,file system
+1573738195.26,345,503,None,Move,file system
+1573738195.268,338,506,None,Move,file system
+1573738195.276,332,508,None,Move,file system
+1573738195.284,329,510,None,Move,file system
+1573738195.292,328,511,None,Move,file system
+1573738195.304,327,511,None,Move,file system
+1573738195.31,326,511,None,Move,file system
+1573738195.3679998,326,510,None,Move,file system
+1573738195.3760002,326,504,None,Move,file system
+1573738195.383,325,496,None,Move,file system
+1573738195.3920002,325,489,None,Move,file system
+1573738195.4,325,484,None,Move,file system
+1573738195.408,325,478,None,Move,file system
+1573738195.416,325,474,None,Move,file system
+1573738195.424,325,469,None,Move,file system
+1573738195.4320002,325,466,None,Move,file system
+1573738195.437,325,461,None,Move,file system
+1573738195.446,326,455,None,Move,file system
+1573738195.454,328,449,None,Move,file system
+1573738195.462,330,444,None,Move,file system
+1573738195.47,332,438,None,Move,file system
+1573738195.478,334,432,None,Move,file system
+1573738195.486,336,426,None,Move,file system
+1573738195.494,338,421,None,Move,file system
+1573738195.5010002,340,415,None,Move,file system
+1573738195.508,341,410,None,Move,file system
+1573738195.516,344,406,None,Move,file system
+1573738195.524,346,402,None,Move,file system
+1573738195.531,349,398,None,Move,file system
+1573738195.539,352,392,None,Move,file system
+1573738195.5470002,354,387,None,Move,file system
+1573738195.555,357,382,None,Move,file system
+1573738195.563,361,378,None,Move,file system
+1573738195.571,364,374,None,Move,file system
+1573738195.577,366,372,None,Move,file system
+1573738195.585,367,370,None,Move,file system
+1573738195.593,370,368,None,Move,file system
+1573738195.601,371,367,None,Move,file system
+1573738195.61,373,365,None,Move,file system
+1573738195.617,374,364,None,Move,file system
+1573738195.625,375,363,None,Move,file system
+1573738195.633,377,362,None,Move,file system
+1573738195.645,377,362,None,Move,file system
+1573738195.7370002,378,362,None,Move,file system
+1573738195.7489998,379,362,None,Move,file system
+1573738195.7570002,380,363,None,Move,file system
+1573738195.765,381,365,None,Move,file system
+1573738195.7729998,381,365,None,Move,file system
+1573738195.781,381,366,None,Move,file system
+1573738195.877,382,366,None,Move,file system
+1573738195.925,382,366,None,Move,file system
+1573738195.935,383,366,None,Move,file system
+1573738195.9429998,383,366,None,Move,file system
+1573738195.951,385,366,None,Move,file system
+1573738195.959,385,366,None,Move,file system
+1573738195.967,386,366,None,Move,file system
+1573738195.984,386,366,None,Move,file system
+1573738196.079,388,366,Left,Pressed,file system
+1573738196.079,388,366,None,Drag,file system
+1573738196.087,389,366,None,Drag,file system
+1573738196.087,389,366,Left,Released,file system
+1573738196.097,390,365,None,Move,file system
+1573738196.103,391,365,None,Move,file system
+1573738196.111,391,365,None,Move,file system
+1573738196.12,391,365,None,Move,file system
+1573738196.127,393,366,None,Move,file system
+1573738196.1360002,394,368,None,Move,file system
+1573738196.141,396,370,None,Move,file system
+1573738196.149,397,372,None,Move,file system
+1573738196.157,400,376,None,Move,file system
+1573738196.165,405,382,None,Move,file system
+1573738196.187,420,396,None,Move,file system
+1573738196.1920002,428,403,None,Move,file system
+1573738196.197,437,411,None,Move,file system
+1573738196.206,443,417,None,Move,file system
+1573738196.211,451,425,None,Move,file system
+1573738196.22,457,432,None,Move,file system
+1573738196.228,464,441,None,Move,file system
+1573738196.235,470,448,None,Move,file system
+1573738196.2429998,474,454,None,Move,file system
+1573738196.2510002,477,459,None,Move,file system
+1573738196.2589998,478,461,None,Move,file system
+1573738196.268,480,465,None,Move,file system
+1573738196.275,482,469,None,Move,file system
+1573738196.301,483,471,None,Move,file system
+1573738196.306,485,472,None,Move,file system
+1573738196.4889998,485,472,None,Move,file system
+1573738196.4989998,486,472,None,Move,file system
+1573738196.508,486,472,None,Move,file system
+1573738196.515,489,472,None,Move,file system
+1573738196.524,492,472,None,Move,file system
+1573738196.531,498,474,None,Move,file system
+1573738196.541,504,476,None,Move,file system
+1573738196.55,511,478,None,Move,file system
+1573738196.559,519,481,None,Move,file system
+1573738196.565,528,486,None,Move,file system
+1573738196.573,535,491,None,Move,file system
+1573738196.579,542,495,None,Move,file system
+1573738196.585,549,499,None,Move,file system
+1573738196.593,556,504,None,Move,file system
+1573738196.601,562,509,None,Move,file system
+1573738196.609,569,516,None,Move,file system
+1573738196.617,577,522,None,Move,file system
+1573738196.625,583,528,None,Move,file system
+1573738196.633,589,536,None,Move,file system
+1573738196.64,596,544,None,Move,file system
+1573738196.647,602,553,None,Move,file system
+1573738196.655,607,562,None,Move,file system
+1573738196.663,613,570,None,Move,file system
+1573738196.681,618,586,None,Move,file system
+1573738196.689,620,592,None,Move,file system
+1573738196.695,621,597,None,Move,file system
+1573738196.7029998,622,603,None,Move,file system
+1573738196.709,623,608,None,Move,file system
+1573738196.717,623,612,None,Move,file system
+1573738196.725,622,616,None,Move,file system
+1573738196.7329998,620,620,None,Move,file system
+1573738196.7410002,619,624,None,Move,file system
+1573738196.7489998,617,627,None,Move,file system
+1573738196.7570002,615,630,None,Move,file system
+1573738196.765,613,635,None,Move,file system
+1573738196.7729998,610,641,None,Move,file system
+1573738196.779,606,647,None,Move,file system
+1573738196.7870002,602,653,None,Move,file system
+1573738196.795,597,658,None,Move,file system
+1573738196.803,590,663,None,Move,file system
+1573738196.811,584,667,None,Move,file system
+1573738196.819,579,673,None,Move,file system
+1573738196.827,573,679,None,Move,file system
+1573738196.835,568,684,None,Move,file system
+1573738196.841,564,689,None,Move,file system
+1573738196.849,563,693,None,Move,file system
+1573738196.857,561,698,None,Move,file system
+1573738196.865,560,701,None,Move,file system
+1573738196.873,560,704,None,Move,file system
+1573738196.881,560,706,None,Move,file system
+1573738196.89,560,708,None,Move,file system
+1573738196.897,562,709,None,Move,file system
+1573738196.906,564,710,None,Move,file system
+1573738196.914,567,712,None,Move,file system
+1573738196.919,573,714,None,Move,file system
+1573738196.928,580,716,None,Move,file system
+1573738196.936,587,718,None,Move,file system
+1573738196.944,594,720,None,Move,file system
+1573738196.964,611,725,None,Move,file system
+1573738196.97,619,730,None,Move,file system
+1573738196.975,625,732,None,Move,file system
+1573738196.984,631,734,None,Move,file system
+1573738196.9889998,634,736,None,Move,file system
+1573738196.9970002,637,738,None,Move,file system
+1573738197.005,639,739,None,Move,file system
+1573738197.0129998,641,741,None,Move,file system
+1573738197.022,642,741,None,Move,file system
+1573738197.029,644,742,None,Move,file system
+1573738197.038,644,742,None,Move,file system
+1573738197.153,644,742,None,Move,file system
+1573738197.165,644,742,None,Move,file system
+1573738197.173,644,740,None,Move,file system
+1573738197.181,644,739,None,Move,file system
+1573738197.189,644,738,None,Move,file system
+1573738197.196,644,737,None,Move,file system
+1573738197.204,644,735,None,Move,file system
+1573738197.211,644,734,None,Move,file system
+1573738197.219,644,733,None,Move,file system
+1573738197.2270002,645,732,None,Move,file system
+1573738197.235,645,731,None,Move,file system
+1573738197.2429998,645,731,None,Move,file system
+1573738197.2510002,646,731,None,Move,file system
+1573738197.2589998,646,730,None,Move,file system
+1573738197.265,646,730,None,Move,file system
+1573738197.2729998,646,729,None,Move,file system
+1573738197.281,646,729,None,Move,file system
+1573738197.291,647,727,None,Move,file system
+1573738197.2970002,647,726,None,Move,file system
+1573738197.306,648,725,None,Move,file system
+1573738197.314,649,723,None,Move,file system
+1573738197.321,650,722,None,Move,file system
+1573738197.33,652,720,None,Move,file system
+1573738197.337,653,719,None,Move,file system
+1573738197.343,654,718,None,Move,file system
+1573738197.351,656,716,None,Move,file system
+1573738197.36,657,714,None,Move,file system
+1573738197.367,659,712,None,Move,file system
+1573738197.3760002,660,709,None,Move,file system
+1573738197.383,662,707,None,Move,file system
+1573738197.391,663,704,None,Move,file system
+1573738197.399,665,699,None,Move,file system
+1573738197.407,667,695,None,Move,file system
+1573738197.413,670,690,None,Move,file system
+1573738197.421,672,686,None,Move,file system
+1573738197.43,675,680,None,Move,file system
+1573738197.438,679,674,None,Move,file system
+1573738197.445,684,667,None,Move,file system
+1573738197.465,698,648,None,Move,file system
+1573738197.474,708,635,None,Move,file system
+1573738197.479,715,622,None,Move,file system
+1573738197.486,723,606,None,Move,file system
+1573738197.4910002,730,593,None,Move,file system
+1573738197.5,735,581,None,Move,file system
+1573738197.5070002,742,568,None,Move,file system
+1573738197.515,749,555,None,Move,file system
+1573738197.524,756,545,None,Move,file system
+1573738197.531,761,535,None,Move,file system
+1573738197.549,771,518,None,Move,file system
+1573738197.554,777,511,None,Move,file system
+1573738197.561,781,505,None,Move,file system
+1573738197.569,783,500,None,Move,file system
+1573738197.577,785,497,None,Move,file system
+1573738197.586,786,495,None,Move,file system
+1573738197.593,788,493,None,Move,file system
+1573738197.601,789,490,None,Move,file system
+1573738197.609,791,489,None,Move,file system
+1573738197.617,792,488,None,Move,file system
+1573738197.623,794,486,None,Move,file system
+1573738197.631,795,485,None,Move,file system
+1573738197.639,798,481,None,Move,file system
+1573738197.6479998,801,478,None,Move,file system
+1573738197.655,805,474,None,Move,file system
+1573738197.663,811,468,None,Move,file system
+1573738197.671,817,462,None,Move,file system
+1573738197.679,825,455,None,Move,file system
+1573738197.687,831,451,None,Move,file system
+1573738197.6929998,835,449,None,Move,file system
+1573738197.701,837,449,None,Move,file system
+1573738197.709,837,449,None,Move,file system
+1573738197.7529998,838,448,None,Move,file system
+1573738197.771,838,448,None,Move,file system
+1573738198.974,838,448,None,Move,file system
+1573738198.981,838,449,None,Move,file system
+1573738198.9889998,837,450,None,Move,file system
+1573738198.9970002,837,451,None,Move,file system
+1573738199.005,837,451,None,Move,file system
+1573738199.014,836,452,None,Move,file system
+1573738199.158,836,452,None,Move,file system
+1573738199.165,836,455,None,Move,file system
+1573738199.173,836,458,None,Move,file system
+1573738199.179,836,463,None,Move,file system
+1573738199.188,837,470,None,Move,file system
+1573738199.196,837,478,None,Move,file system
+1573738199.204,838,490,None,Move,file system
+1573738199.212,838,503,None,Move,file system
+1573738199.219,832,520,None,Move,file system
+1573738199.228,823,540,None,Move,file system
+1573738199.236,815,560,None,Move,file system
+1573738199.2410002,806,583,None,Move,file system
+1573738199.2489998,800,599,None,Move,file system
+1573738199.2570002,794,614,None,Move,file system
+1573738199.266,788,625,None,Move,file system
+1573738199.274,780,635,None,Move,file system
+1573738199.281,773,645,None,Move,file system
+1573738199.289,767,654,None,Move,file system
+1573738199.298,760,661,None,Move,file system
+1573738199.306,754,667,None,Move,file system
+1573738199.311,748,674,None,Move,file system
+1573738199.32,744,680,None,Move,file system
+1573738199.3279998,740,685,None,Move,file system
+1573738199.336,736,688,None,Move,file system
+1573738199.343,734,690,None,Move,file system
+1573738199.351,733,692,None,Move,file system
+1573738199.36,730,693,None,Move,file system
+1573738199.3720002,729,694,None,Move,file system
+1573738199.38,728,695,None,Move,file system
+1573738199.39,725,696,None,Move,file system
+1573738199.401,724,697,None,Move,file system
+1573738199.411,722,697,None,Move,file system
+1573738199.417,721,698,None,Move,file system
+1573738199.43,718,699,None,Move,file system
+1573738199.439,717,700,None,Move,file system
+1573738199.446,715,701,None,Move,file system
+1573738199.454,714,702,None,Move,file system
+1573738199.459,713,704,None,Move,file system
+1573738199.467,710,705,None,Move,file system
+1573738199.478,707,709,None,Move,file system
+1573738199.49,705,711,None,Move,file system
+1573738199.4970002,702,713,None,Move,file system
+1573738199.502,700,716,None,Move,file system
+1573738199.5070002,698,719,None,Move,file system
+1573738199.516,696,722,None,Move,file system
+1573738199.526,694,726,None,Move,file system
+1573738199.533,692,728,None,Move,file system
+1573738199.539,690,730,None,Move,file system
+1573738199.545,689,732,None,Move,file system
+1573738199.556,687,733,None,Move,file system
+1573738199.562,686,735,None,Move,file system
+1573738199.57,685,737,None,Move,file system
+1573738199.5779998,683,738,None,Move,file system
+1573738199.586,682,740,None,Move,file system
+1573738199.591,681,740,None,Move,file system
+1573738200.27,681,740,Left,Pressed,file system
+1573738200.27,681,740,None,Drag,file system
+1573738200.281,681,740,None,Drag,file system
+1573738200.281,681,740,Left,Released,file system
+1573738201.2229998,682,740,None,Move,file system
+1573738201.2389998,682,740,None,Move,file system
+1573738201.2470002,683,740,None,Move,file system
+1573738201.2629998,685,740,None,Move,file system
+1573738201.2770002,687,739,None,Move,file system
+1573738201.288,687,739,None,Move,file system
+1573738201.2970002,688,738,None,Move,file system
+1573738201.31,690,736,None,Move,file system
+1573738201.321,692,734,None,Move,file system
+1573738201.3279998,693,733,None,Move,file system
+1573738201.34,694,732,None,Move,file system
+1573738201.347,695,730,None,Move,file system
+1573738201.3620002,697,729,None,Move,file system
+1573738201.3779998,698,728,None,Move,file system
+1573738201.39,699,728,None,Move,file system
+1573738201.468,699,727,None,Move,file system
+1573738201.4829998,700,727,None,Move,file system
+1573738201.4929998,700,726,None,Move,file system
+1573738201.5070002,700,726,None,Move,file system
+1573738201.515,700,725,None,Move,file system
+1573738201.5270002,701,723,None,Move,file system
+1573738201.538,701,722,None,Move,file system
+1573738201.546,702,720,None,Move,file system
+1573738201.5579998,703,718,None,Move,file system
+1573738201.571,704,716,None,Move,file system
+1573738201.579,704,715,None,Move,file system
+1573738201.6,704,715,None,Move,file system
+1573738206.311,704,715,None,Move,file system
+1573738206.323,703,715,None,Move,file system
+1573738206.331,649,702,None,Move,file system
+1573738206.339,552,675,None,Move,file system
+1573738206.347,449,645,None,Move,file system
+1573738206.355,331,610,None,Move,file system
+1573738206.361,196,575,None,Move,file system
+1573738206.37,45,522,None,Move,file system
+1573738206.379,-87,445,None,Move,file system
+1573738206.385,-113,372,None,Move,file system
+1573738206.395,-83,311,None,Move,file system
+1573738206.401,-72,244,None,Move,file system
+1573738206.4120002,-57,183,None,Move,file system
+1573738206.424,-51,123,None,Move,file system
+1573738206.438,-91,13,None,Move,file system
+1573738206.454,-107,-94,None,Move,file system
+1573738206.464,-117,-87,None,Move,file system
+1573738206.4770002,-59,-33,None,Move,file system
+1573738206.488,-108,-56,None,Move,file system
+1573738206.5010002,-49,-14,None,Move,file system
+1573738206.5089998,-49,-1,None,Move,file system
+1573738206.519,-69,12,None,Move,file system
+1573738206.53,-15,18,None,Move,file system
+1573738206.54,-9,25,None,Move,file system
+1573738206.55,-8,32,None,Move,file system
+1573738206.561,0,33,None,Move,file system
+1573738206.6239998,0,34,None,Move,file system
+1573738206.6339998,7,41,None,Move,file system
+1573738206.644,18,48,None,Move,file system
+1573738206.656,46,62,None,Move,file system
+1573738206.666,56,67,None,Move,file system
+1573738206.675,63,73,None,Move,file system
+1573738206.686,74,83,None,Move,file system
+1573738206.701,84,92,None,Move,file system
+1573738206.716,88,98,None,Move,file system
+1573738206.724,94,112,None,Move,file system
+1573738206.736,96,117,None,Move,file system
+1573738206.7429998,98,123,None,Move,file system
+1573738206.756,99,133,None,Move,file system
+1573738206.7670002,99,138,None,Move,file system
+1573738206.776,99,144,None,Move,file system
+1573738206.783,99,149,None,Move,file system
+1573738206.792,99,154,None,Move,file system
+1573738206.8,98,161,None,Move,file system
+1573738206.8079998,96,170,None,Move,file system
+1573738206.814,94,178,None,Move,file system
+1573738206.819,90,189,None,Move,file system
+1573738206.826,87,200,None,Move,file system
+1573738206.833,85,211,None,Move,file system
+1573738206.841,83,222,None,Move,file system
+1573738206.849,81,230,None,Move,file system
+1573738206.8679998,76,246,None,Move,file system
+1573738206.8760002,74,256,None,Move,file system
+1573738206.8839998,72,264,None,Move,file system
+1573738206.891,71,274,None,Move,file system
+1573738206.897,70,283,None,Move,file system
+1573738206.905,69,293,None,Move,file system
+1573738206.92,65,308,None,Move,file system
+1573738206.9329998,63,314,None,Move,file system
+1573738206.945,60,323,None,Move,file system
+1573738206.955,58,325,None,Move,file system
+1573738206.968,56,329,None,Move,file system
+1573738206.982,54,331,None,Move,file system
+1573738206.9889998,52,333,None,Move,file system
+1573738207.0010002,52,333,None,Move,file system
+1573738207.07,52,333,None,Move,file system
+1573738207.095,51,333,None,Move,file system
+1573738207.107,51,333,None,Move,file system
+1573738207.1120002,51,331,None,Move,file system
+1573738207.119,51,330,None,Move,file system
+1573738207.1260002,51,327,None,Move,file system
+1573738207.133,51,324,None,Move,file system
+1573738207.14,51,320,None,Move,file system
+1573738207.147,52,315,None,Move,file system
+1573738207.156,52,312,None,Move,file system
+1573738207.165,53,310,None,Move,file system
+1573738207.1720002,53,309,None,Move,file system
+1573738207.185,53,308,None,Move,file system
+1573738207.195,54,305,None,Move,file system
+1573738207.201,54,304,None,Move,file system
+1573738207.207,54,303,None,Move,file system
+1573738207.212,54,301,None,Move,file system
+1573738207.218,55,300,None,Move,file system
+1573738207.226,56,300,None,Move,file system
+1573738207.234,56,298,None,Move,file system
+1573738207.242,56,297,None,Move,file system
+1573738207.25,56,296,None,Move,file system
+1573738207.2589998,57,294,None,Move,file system
+1573738207.266,58,293,None,Move,file system
+1573738207.274,58,292,None,Move,file system
+1573738207.284,58,290,None,Move,file system
+1573738207.292,59,289,None,Move,file system
+1573738207.3,59,288,None,Move,file system
+1573738207.309,59,287,None,Move,file system
+1573738207.319,59,287,None,Move,file system
+1573738207.4020002,59,287,Left,Pressed,file system
+1573738207.5370002,59,287,Left,Released,file system
+1573738207.694,60,287,None,Move,file system
+1573738207.705,60,287,None,Move,file system
+1573738207.716,63,288,None,Move,file system
+1573738207.744,91,301,None,Move,file system
+1573738207.76,123,321,None,Move,file system
+1573738207.769,148,332,None,Move,file system
+1573738207.776,174,341,None,Move,file system
+1573738207.79,229,361,None,Move,file system
+1573738207.802,259,371,None,Move,file system
+1573738207.81,290,383,None,Move,file system
+1573738207.821,318,393,None,Move,file system
+1573738207.833,372,409,None,Move,file system
+1573738207.842,396,415,None,Move,file system
+1573738207.856,428,422,None,Move,file system
+1573738207.8620002,438,424,None,Move,file system
+1573738207.869,446,426,None,Move,file system
+1573738207.881,452,428,None,Move,file system
+1573738207.8920002,457,431,None,Move,file system
+1573738207.914,457,431,None,Move,file system
+1573738207.992,458,431,None,Move,file system
+1573738208.008,461,429,None,Move,file system
+1573738208.018,462,427,None,Move,file system
+1573738208.031,463,427,None,Move,file system
+1573738208.048,463,427,None,Move,file system
+1573738208.1920002,463,427,None,Move,file system
+1573738208.202,464,427,None,Move,file system
+1573738208.21,475,433,None,Move,file system
+1573738208.218,491,442,None,Move,file system
+1573738208.24,507,453,None,Move,file system
+1573738208.2470002,526,465,None,Move,file system
+1573738208.252,532,469,None,Move,file system
+1573738208.2570002,535,473,None,Move,file system
+1573738208.266,540,477,None,Move,file system
+1573738208.271,545,482,None,Move,file system
+1573738208.295,550,487,None,Move,file system
+1573738208.301,560,494,None,Move,file system
+1573738208.306,563,498,None,Move,file system
+1573738208.312,566,501,None,Move,file system
+1573738208.319,569,505,None,Move,file system
+1573738208.3279998,573,509,None,Move,file system
+1573738208.336,576,512,None,Move,file system
+1573738208.342,578,514,None,Move,file system
+1573738208.349,580,516,None,Move,file system
+1573738208.3579998,582,517,None,Move,file system
+1573738208.365,585,519,None,Move,file system
+1573738208.373,587,520,None,Move,file system
+1573738208.381,588,521,None,Move,file system
+1573738208.39,590,521,None,Move,file system
+1573738208.3979998,592,521,None,Move,file system
+1573738208.405,595,521,None,Move,file system
+1573738208.411,598,521,None,Move,file system
+1573738208.42,602,520,None,Move,file system
+1573738208.428,608,518,None,Move,file system
+1573738208.436,612,517,None,Move,file system
+1573738208.444,615,516,None,Move,file system
+1573738208.452,617,516,None,Move,file system
+1573738208.46,618,516,None,Move,file system
+1573738208.467,618,517,None,Move,file system
+1573738208.476,618,518,None,Move,file system
+1573738208.481,617,520,None,Move,file system
+1573738208.49,616,521,None,Move,file system
+1573738208.498,614,522,None,Move,file system
+1573738208.62,614,522,None,Move,file system
+1573738208.63,612,521,None,Move,file system
+1573738208.6360002,611,517,None,Move,file system
+1573738208.643,609,516,None,Move,file system
+1573738208.649,608,515,None,Move,file system
+1573738208.657,606,514,None,Move,file system
+1573738208.666,605,513,None,Move,file system
+1573738208.674,604,511,None,Move,file system
+1573738208.6820002,602,510,None,Move,file system
+1573738208.689,602,508,None,Move,file system
+1573738208.695,602,507,None,Move,file system
+1573738208.704,603,506,None,Move,file system
+1573738208.711,604,504,None,Move,file system
+1573738208.72,605,503,None,Move,file system
+1573738208.728,607,501,None,Move,file system
+1573738208.736,608,500,None,Move,file system
+1573738208.744,610,499,None,Move,file system
+1573738208.752,611,497,None,Move,file system
+1573738208.76,612,496,None,Move,file system
+1573738208.765,613,494,None,Move,file system
+1573738208.774,614,493,None,Move,file system
+1573738208.781,614,493,None,Move,file system
+1573738208.79,614,492,None,Move,file system
+1573738208.798,615,490,None,Move,file system
+1573738208.806,615,488,None,Move,file system
+1573738208.814,616,487,None,Move,file system
+1573738208.821,617,486,None,Move,file system
+1573738208.83,617,482,None,Move,file system
+1573738208.836,618,480,None,Move,file system
+1573738208.844,618,476,None,Move,file system
+1573738208.8520002,619,473,None,Move,file system
+1573738208.86,619,468,None,Move,file system
+1573738208.8679998,619,464,None,Move,file system
+1573738208.8760002,619,460,None,Move,file system
+1573738208.8839998,619,455,None,Move,file system
+1573738208.904,617,450,None,Move,file system
+1573738208.909,617,448,None,Move,file system
+1573738208.914,616,446,None,Move,file system
+1573738208.9220002,615,444,None,Move,file system
+1573738208.93,615,443,None,Move,file system
+1573738208.946,615,442,None,Move,file system
+1573738209.175,615,442,None,Move,file system
+1573738209.184,613,442,None,Move,file system
+1573738209.189,612,443,None,Move,file system
+1573738209.198,611,444,None,Move,file system
+1573738209.206,608,446,None,Move,file system
+1573738209.214,605,449,None,Move,file system
+1573738209.221,600,454,None,Move,file system
+1573738209.229,594,459,None,Move,file system
+1573738209.238,588,463,None,Move,file system
+1573738209.246,582,467,None,Move,file system
+1573738209.254,577,470,None,Move,file system
+1573738209.26,571,473,None,Move,file system
+1573738209.268,565,475,None,Move,file system
+1573738209.275,560,478,None,Move,file system
+1573738209.284,554,480,None,Move,file system
+1573738209.292,548,483,None,Move,file system
+1573738209.299,542,485,None,Move,file system
+1573738209.32,536,489,None,Move,file system
+1573738209.326,535,490,None,Move,file system
+1573738209.331,534,491,None,Move,file system
+1573738209.3379998,533,493,None,Move,file system
+1573738209.346,533,493,None,Move,file system
+1573738209.353,532,495,None,Move,file system
+1573738209.3620002,532,496,None,Move,file system
+1573738209.37,532,497,None,Move,file system
+1573738209.3779998,531,497,None,Move,file system
+1573738209.39,531,498,None,Move,file system
+1573738209.4,531,498,None,Move,file system
+1573738209.408,532,500,None,Move,file system
+1573738209.416,539,503,None,Move,file system
+1573738209.423,557,508,None,Move,file system
+1573738209.4320002,603,520,None,Move,file system
+1573738209.44,664,532,None,Move,file system
+1573738209.447,738,543,None,Move,file system
+1573738209.455,825,549,None,Move,file system
+1573738209.4629998,912,554,None,Move,file system
+1573738209.469,1005,558,None,Move,file system
+1573738209.4770002,1097,557,None,Move,file system
+1573738209.485,1202,558,None,Move,file system
+1573738209.4929998,1315,558,None,Move,file system
+1573738209.5010002,1434,554,None,Move,file system
+1573738209.51,1566,550,None,Move,file system
+1573738209.5170002,1709,547,None,Move,file system
+1573738209.525,1852,549,None,Move,file system
+1573738209.533,1993,556,None,Move,file system
+1573738209.54,2125,554,None,Move,file system
+1573738209.5470002,2256,567,None,Move,file system
+1573738209.555,2369,570,None,Move,file system
+1573738209.564,2469,564,None,Move,file system
+1573738209.571,2557,551,None,Move,file system
+1573738209.579,2634,542,None,Move,file system
+1573738209.5879998,2699,538,None,Move,file system
+1573738209.595,2757,541,None,Move,file system
+1573738209.603,2807,549,None,Move,file system
+1573738209.61,2844,556,None,Move,file system
+1573738209.617,2867,559,None,Move,file system
+1573738209.625,2879,559,None,Move,file system
+1573738209.633,2886,560,None,Move,file system
+1573738209.641,2888,560,None,Move,file system
+1573738209.649,2890,560,None,Move,file system
+1573738209.661,2890,560,None,Move,file system
+1573738209.669,2889,560,None,Move,file system
+1573738209.677,2886,559,None,Move,file system
+1573738209.6829998,2880,557,None,Move,file system
+1573738209.691,2874,555,None,Move,file system
+1573738209.699,2868,553,None,Move,file system
+1573738209.708,2863,552,None,Move,file system
+1573738209.715,2861,552,None,Move,file system
+1573738209.7229998,2860,552,None,Move,file system
+1573738209.731,2860,552,None,Move,file system
+1573738209.843,2858,551,None,Move,file system
+1573738209.855,2858,551,None,Move,file system
+1573738209.995,2858,550,Left,Pressed,development
+1573738209.995,2858,550,None,Drag,development
+1573738209.995,2858,550,Left,Released,development
+1573738210.139,2858,550,None,Move,development
+1573738219.577,2857,550,None,Move,development
+1573738219.585,2841,543,None,Move,development
+1573738219.593,2781,523,None,Move,development
+1573738219.601,2692,496,None,Move,development
+1573738219.609,2593,476,None,Move,development
+1573738219.617,2510,429,None,Move,development
+1573738219.625,2443,390,None,Move,development
+1573738219.633,2385,363,None,Move,development
+1573738219.641,2327,336,None,Move,development
+1573738219.647,2270,320,None,Move,development
+1573738219.655,2205,294,None,Move,development
+1573738219.663,2129,273,None,Move,development
+1573738219.671,2042,244,None,Move,development
+1573738219.679,1948,210,None,Move,development
+1573738219.687,1853,181,None,Move,development
+1573738219.695,1759,158,None,Move,development
+1573738219.7029998,1666,145,None,Move,development
+1573738219.711,1567,131,None,Move,development
+1573738219.717,1477,120,None,Move,development
+1573738219.725,1381,107,None,Move,development
+1573738219.7329998,1295,103,None,Move,development
+1573738219.7410002,1213,98,None,Move,development
+1573738219.7489998,1134,90,None,Move,development
+1573738219.7570002,1059,79,None,Move,development
+1573738219.765,989,80,None,Move,development
+1573738219.7729998,921,82,None,Move,development
+1573738219.781,858,84,None,Move,development
+1573738219.7870002,801,90,None,Move,development
+1573738219.795,751,94,None,Move,development
+1573738219.803,709,98,None,Move,development
+1573738219.811,677,98,None,Move,development
+1573738219.819,652,98,None,Move,development
+1573738219.827,632,97,None,Move,development
+1573738219.835,618,98,None,Move,development
+1573738219.843,607,100,None,Move,development
+1573738219.851,600,102,None,Move,development
+1573738219.859,599,103,None,Move,development
+1573738219.865,598,104,None,Move,development
+1573738219.913,597,106,None,Move,development
+1573738219.921,594,110,None,Move,development
+1573738219.929,591,116,None,Move,development
+1573738219.935,588,122,None,Move,development
+1573738219.9429998,586,128,None,Move,development
+1573738219.951,584,133,None,Move,development
+1573738219.959,582,142,None,Move,development
+1573738219.967,579,150,None,Move,development
+1573738219.975,574,161,None,Move,development
+1573738219.9829998,568,172,None,Move,development
+1573738219.9910002,561,187,None,Move,development
+1573738219.9989998,551,205,None,Move,development
+1573738220.005,540,222,None,Move,development
+1573738220.0129998,529,234,None,Move,development
+1573738220.021,520,244,None,Move,development
+1573738220.029,513,253,None,Move,development
+1573738220.0370002,507,262,None,Move,development
+1573738220.045,500,272,None,Move,development
+1573738220.053,493,285,None,Move,development
+1573738220.061,486,300,None,Move,development
+1573738220.0670002,478,316,None,Move,development
+1573738220.075,472,331,None,Move,development
+1573738220.083,468,344,None,Move,development
+1573738220.091,466,357,None,Move,development
+1573738220.099,465,369,None,Move,development
+1573738220.107,464,380,None,Move,development
+1573738220.1260002,464,395,None,Move,development
+1573738220.1320002,465,401,None,Move,development
+1573738220.137,467,405,None,Move,development
+1573738220.145,468,409,None,Move,development
+1573738220.153,471,411,None,Move,development
+1573738220.161,473,412,None,Move,development
+1573738220.169,476,414,None,Move,development
+1573738220.177,478,415,None,Move,development
+1573738220.185,482,417,None,Move,development
+1573738220.1929998,487,419,None,Move,development
+1573738220.201,493,421,None,Move,development
+1573738220.207,499,423,None,Move,development
+1573738220.215,505,425,None,Move,development
+1573738220.2229998,510,427,None,Move,development
+1573738220.231,515,428,None,Move,development
+1573738220.2389998,518,429,None,Move,development
+1573738220.2470002,520,430,None,Move,development
+1573738220.255,522,431,None,Move,development
+1573738220.2629998,525,431,None,Move,development
+1573738220.271,529,432,None,Move,development
+1573738220.2770002,534,433,None,Move,development
+1573738220.285,538,434,None,Move,development
+1573738220.293,543,436,None,Move,development
+1573738220.301,546,438,None,Move,development
+1573738220.309,552,440,None,Move,development
+1573738220.3170002,558,441,None,Move,development
+1573738220.325,565,444,None,Move,development
+1573738220.343,580,449,None,Move,development
+1573738220.3479998,588,451,None,Move,development
+1573738220.355,598,453,None,Move,development
+1573738220.363,606,455,None,Move,development
+1573738220.371,615,459,None,Move,development
+1573738220.379,622,463,None,Move,development
+1573738220.387,628,466,None,Move,development
+1573738220.395,634,468,None,Move,development
+1573738220.403,641,469,None,Move,development
+1573738220.411,646,470,None,Move,development
+1573738220.417,652,470,None,Move,development
+1573738220.425,656,470,None,Move,development
+1573738220.4329998,659,469,None,Move,development
+1573738220.441,661,468,None,Move,development
+1573738220.449,663,467,None,Move,development
+1573738220.457,664,466,None,Move,development
+1573738220.465,664,465,None,Move,development
+1573738220.771,665,465,None,Move,development
+1573738220.779,667,465,None,Move,development
+1573738220.7870002,668,465,None,Move,development
+1573738220.795,669,465,None,Move,development
+1573738220.803,673,465,None,Move,development
+1573738220.811,678,467,None,Move,development
+1573738220.819,685,469,None,Move,development
+1573738220.827,693,470,None,Move,development
+1573738220.835,704,472,None,Move,development
+1573738220.841,717,473,None,Move,development
+1573738220.849,740,476,None,Move,development
+1573738220.857,776,479,None,Move,development
+1573738220.865,822,479,None,Move,development
+1573738220.873,879,481,None,Move,development
+1573738220.881,951,494,None,Move,development
+1573738220.889,1031,507,None,Move,development
+1573738220.91,1196,509,None,Move,development
+1573738220.915,1294,514,None,Move,development
+1573738220.919,1390,527,None,Move,development
+1573738220.927,1483,543,None,Move,development
+1573738220.935,1565,556,None,Move,development
+1573738220.9429998,1651,569,None,Move,development
+1573738220.951,1731,586,None,Move,development
+1573738220.959,1803,599,None,Move,development
+1573738220.967,1869,609,None,Move,development
+1573738220.975,1921,613,None,Move,development
+1573738220.982,1972,621,None,Move,development
+1573738220.9889998,2019,626,None,Move,development
+1573738220.9970002,2053,632,None,Move,development
+1573738221.005,2080,638,None,Move,development
+1573738221.0129998,2095,640,None,Move,development
+1573738221.021,2109,642,None,Move,development
+1573738221.029,2117,646,None,Move,development
+1573738221.0370002,2125,648,None,Move,development
+1573738221.045,2132,650,None,Move,development
+1573738221.051,2138,652,None,Move,development
+1573738221.059,2144,653,None,Move,development
+1573738221.0679998,2150,655,None,Move,development
+1573738221.076,2155,657,None,Move,development
+1573738221.084,2161,659,None,Move,development
+1573738221.092,2167,661,None,Move,development
+1573738221.1,2173,663,None,Move,development
+1573738221.1079998,2178,665,None,Move,development
+1573738221.1160002,2184,667,None,Move,development
+1573738221.1220002,2190,669,None,Move,development
+1573738221.13,2197,671,None,Move,development
+1573738221.1379998,2205,674,None,Move,development
+1573738221.146,2214,677,None,Move,development
+1573738221.154,2224,681,None,Move,development
+1573738221.161,2232,684,None,Move,development
+1573738221.17,2239,686,None,Move,development
+1573738221.177,2245,687,None,Move,development
+1573738221.186,2249,689,None,Move,development
+1573738221.194,2252,691,None,Move,development
+1573738221.199,2257,692,None,Move,development
+1573738221.208,2263,694,None,Move,development
+1573738221.215,2268,696,None,Move,development
+1573738221.224,2274,698,None,Move,development
+1573738221.231,2279,699,None,Move,development
+1573738221.24,2284,701,None,Move,development
+1573738221.2470002,2290,703,None,Move,development
+1573738221.256,2296,705,None,Move,development
+1573738221.2629998,2304,708,None,Move,development
+1573738221.269,2313,710,None,Move,development
+1573738221.2770002,2322,712,None,Move,development
+1573738221.285,2333,716,None,Move,development
+1573738221.293,2345,719,None,Move,development
+1573738221.301,2359,721,None,Move,development
+1573738221.309,2371,722,None,Move,development
+1573738221.3170002,2384,724,None,Move,development
+1573738221.325,2397,724,None,Move,development
+1573738221.333,2411,725,None,Move,development
+1573738221.339,2424,725,None,Move,development
+1573738221.349,2437,727,None,Move,development
+1573738221.355,2449,729,None,Move,development
+1573738221.363,2463,731,None,Move,development
+1573738221.371,2476,734,None,Move,development
+1573738221.379,2487,736,None,Move,development
+1573738221.3879998,2497,738,None,Move,development
+1573738221.395,2505,739,None,Move,development
+1573738221.4020002,2510,741,None,Move,development
+1573738221.41,2512,741,None,Move,development
+1573738221.417,2512,741,None,Move,development
+1573738221.438,2512,741,Left,Pressed,development
+1573738221.549,2512,741,Left,Released,development
+1573738223.08,2513,741,None,Move,development
+1573738223.0879998,2514,741,None,Move,development
+1573738223.096,2515,739,None,Move,development
+1573738223.104,2516,738,None,Move,development
+1573738223.109,2516,736,None,Move,development
+1573738223.1179998,2514,733,None,Move,development
+1573738223.1260002,2510,731,None,Move,development
+1573738223.133,2504,728,None,Move,development
+1573738223.1420002,2497,727,None,Move,development
+1573738223.15,2491,727,None,Move,development
+1573738223.157,2486,727,None,Move,development
+1573738223.165,2485,727,None,Move,development
+1573738223.1829998,2485,727,None,Move,development
+1573738223.1920002,2482,727,None,Move,development
+1573738223.2,2479,727,None,Move,development
+1573738223.207,2476,727,None,Move,development
+1573738223.215,2473,724,None,Move,development
+1573738223.2229998,2468,721,None,Move,development
+1573738223.232,2467,720,None,Move,development
+1573738223.278,2467,720,None,Move,development
+1573738223.285,2465,718,None,Move,development
+1573738223.293,2463,718,None,Move,development
+1573738223.302,2460,718,None,Move,development
+1573738223.309,2457,717,None,Move,development
+1573738223.3170002,2455,715,None,Move,development
+1573738223.325,2452,714,None,Move,development
+1573738223.331,2449,714,None,Move,development
+1573738223.339,2447,712,None,Move,development
+1573738223.3479998,2443,711,None,Move,development
+1573738223.356,2439,710,None,Move,development
+1573738223.363,2432,708,None,Move,development
+1573738223.3720002,2429,706,None,Move,development
+1573738223.394,2428,706,None,Move,development
+1573738223.4020002,2426,705,None,Move,development
+1573738223.41,2423,704,None,Move,development
+1573738223.418,2422,702,None,Move,development
+1573738223.425,2421,702,None,Move,development
+1573738223.4329998,2419,700,None,Move,development
+1573738223.4420002,2419,700,None,Move,development
+1573738223.464,2418,700,None,Move,development
+1573738223.472,2417,699,None,Move,development
+1573738223.48,2416,699,None,Move,development
+1573738223.4870002,2414,698,None,Move,development
+1573738223.516,2414,698,None,Move,development
+1573738223.562,2414,697,None,Move,development
+1573738223.57,2414,697,None,Move,development
+1573738223.5779998,2415,696,None,Move,development
+1573738223.586,2416,695,None,Move,development
+1573738223.594,2417,693,None,Move,development
+1573738223.601,2418,692,None,Move,development
+1573738223.607,2418,691,None,Move,development
+1573738223.6160002,2420,689,None,Move,development
+1573738223.623,2421,688,None,Move,development
+1573738223.631,2423,686,None,Move,development
+1573738223.639,2424,685,None,Move,development
+1573738223.647,2425,684,None,Move,development
+1573738223.655,2427,681,None,Move,development
+1573738223.663,2428,680,None,Move,development
+1573738223.671,2430,678,None,Move,development
+1573738223.677,2431,677,None,Move,development
+1573738223.685,2433,676,None,Move,development
+1573738223.6929998,2434,674,None,Move,development
+1573738223.701,2436,672,None,Move,development
+1573738223.709,2437,671,None,Move,development
+1573738223.717,2439,668,None,Move,development
+1573738223.725,2440,667,None,Move,development
+1573738223.7329998,2442,665,None,Move,development
+1573738223.7410002,2445,663,None,Move,development
+1573738223.7470002,2448,661,None,Move,development
+1573738223.755,2450,660,None,Move,development
+1573738223.7629998,2453,658,None,Move,development
+1573738223.771,2458,657,None,Move,development
+1573738223.779,2462,656,None,Move,development
+1573738223.7870002,2467,654,None,Move,development
+1573738223.795,2470,652,None,Move,development
+1573738223.803,2472,651,None,Move,development
+1573738223.811,2473,651,None,Move,development
+1573738223.8170002,2475,650,None,Move,development
+1573738223.825,2476,650,None,Move,development
+1573738223.833,2477,650,None,Move,development
+1573738223.841,2478,649,None,Move,development
+1573738223.849,2479,648,None,Move,development
+1573738223.857,2481,647,None,Move,development
+1573738223.865,2482,647,None,Move,development
+1573738223.873,2483,647,None,Move,development
+1573738223.881,2484,647,None,Move,development
+1573738223.889,2484,647,None,Move,development
+1573738224.08,2484,647,None,Move,development
+1573738225.966,2474,645,None,Move,development
+1573738225.974,2397,634,None,Move,development
+1573738225.982,2313,606,None,Move,development
+1573738225.99,2227,586,None,Move,development
+1573738225.998,2152,564,None,Move,development
+1573738226.006,2082,545,None,Move,development
+1573738226.014,2019,522,None,Move,development
+1573738226.019,1959,501,None,Move,development
+1573738226.028,1902,481,None,Move,development
+1573738226.036,1847,465,None,Move,development
+1573738226.044,1793,449,None,Move,development
+1573738226.052,1737,437,None,Move,development
+1573738226.06,1688,435,None,Move,development
+1573738226.0679998,1644,431,None,Move,development
+1573738226.076,1602,428,None,Move,development
+1573738226.083,1562,420,None,Move,development
+1573738226.09,1530,420,None,Move,development
+1573738226.0979998,1494,421,None,Move,development
+1573738226.106,1455,425,None,Move,development
+1573738226.1139998,1419,428,None,Move,development
+1573738226.1220002,1383,432,None,Move,development
+1573738226.13,1352,435,None,Move,development
+1573738226.137,1322,443,None,Move,development
+1573738226.146,1292,451,None,Move,development
+1573738226.154,1270,457,None,Move,development
+1573738226.159,1253,464,None,Move,development
+1573738226.168,1242,467,None,Move,development
+1573738226.176,1238,469,None,Move,development
+1573738226.184,1236,470,None,Move,development
+1573738226.1920002,1235,472,None,Move,development
+1573738226.2,1235,472,None,Move,development
+1573738226.208,1235,472,None,Move,development
+1573738226.216,1235,473,None,Move,development
+1573738226.224,1234,473,None,Move,development
+1573738226.23,1233,474,None,Move,development
+1573738226.238,1233,475,None,Move,development
+1573738226.246,1232,475,None,Move,development
+1573738226.254,1231,476,None,Move,development
+1573738226.262,1230,478,None,Move,development
+1573738226.27,1228,479,None,Move,development
+1573738226.278,1227,481,None,Move,development
+1573738226.285,1225,484,None,Move,development
+1573738226.293,1224,489,None,Move,development
+1573738226.299,1222,496,None,Move,development
+1573738226.3070002,1220,508,None,Move,development
+1573738226.315,1217,519,None,Move,development
+1573738226.323,1213,533,None,Move,development
+1573738226.331,1203,551,None,Move,development
+1573738226.339,1194,565,None,Move,development
+1573738226.347,1185,576,None,Move,development
+1573738226.355,1171,587,None,Move,development
+1573738226.363,1155,596,None,Move,development
+1573738226.369,1131,609,None,Move,development
+1573738226.377,1111,619,None,Move,development
+1573738226.385,1085,628,None,Move,development
+1573738226.393,1055,638,None,Move,development
+1573738226.401,1026,645,None,Move,development
+1573738226.409,999,651,None,Move,development
+1573738226.417,971,654,None,Move,development
+1573738226.426,940,658,None,Move,development
+1573738226.4329998,911,661,None,Move,development
+1573738226.441,887,661,None,Move,development
+1573738226.447,864,662,None,Move,development
+1573738226.456,844,665,None,Move,development
+1573738226.4629998,828,667,None,Move,development
+1573738226.471,816,668,None,Move,development
+1573738226.479,807,668,None,Move,development
+1573738226.4870002,798,666,None,Move,development
+1573738226.4970002,794,665,None,Move,development
+1573738226.5029998,791,663,None,Move,development
+1573738226.5110002,789,663,None,Move,development
+1573738226.714,789,662,None,Move,development
+1573738226.7229998,789,661,None,Move,development
+1573738226.731,789,661,None,Move,development
+1573738226.7389998,789,659,None,Move,development
+1573738226.752,789,659,None,Move,development
+1573738226.7589998,789,658,None,Move,development
+1573738226.768,789,657,None,Move,development
+1573738226.775,789,656,None,Move,development
+1573738226.784,789,654,None,Move,development
+1573738226.791,789,653,None,Move,development
+1573738226.7970002,790,652,None,Move,development
+1573738226.806,790,651,None,Move,development
+1573738226.813,790,650,None,Move,development
+1573738226.821,790,649,None,Move,development
+1573738226.829,790,648,None,Move,development
+1573738226.837,791,647,None,Move,development
+1573738226.845,791,646,None,Move,development
+1573738226.853,792,646,None,Move,development
+1573738226.861,792,645,None,Move,development
+1573738226.867,792,645,None,Move,development
+1573738226.8760002,792,644,None,Move,development
+1573738226.8839998,792,643,None,Move,development
+1573738226.891,793,641,None,Move,development
+1573738226.9,793,640,None,Move,development
+1573738226.907,794,639,None,Move,development
+1573738226.916,795,637,None,Move,development
+1573738226.923,796,633,None,Move,development
+1573738226.931,797,630,None,Move,development
+1573738226.937,799,627,None,Move,development
+1573738226.945,800,621,None,Move,development
+1573738226.954,801,617,None,Move,development
+1573738226.962,801,613,None,Move,development
+1573738226.97,802,607,None,Move,development
+1573738226.978,802,603,None,Move,development
+1573738226.985,802,599,None,Move,development
+1573738226.9929998,802,595,None,Move,development
+1573738227.002,802,592,None,Move,development
+1573738227.0070002,802,590,None,Move,development
+1573738227.016,802,587,None,Move,development
+1573738227.024,801,583,None,Move,development
+1573738227.032,801,580,None,Move,development
+1573738227.04,801,576,None,Move,development
+1573738227.048,800,573,None,Move,development
+1573738227.056,800,568,None,Move,development
+1573738227.064,800,564,None,Move,development
+1573738227.086,800,558,None,Move,development
+1573738227.091,797,549,None,Move,development
+1573738227.097,796,547,None,Move,development
+1573738227.1020002,795,546,None,Move,development
+1573738227.11,794,545,None,Move,development
+1573738227.1179998,794,544,None,Move,development
+1573738227.1260002,794,543,None,Move,development
+1573738227.1339998,794,542,None,Move,development
+1573738227.1420002,794,542,None,Move,development
+1573738227.147,794,541,None,Move,development
+1573738227.156,793,540,None,Move,development
+1573738228.97,792,538,None,Move,development
+1573738228.978,787,533,None,Move,development
+1573738228.985,784,527,None,Move,development
+1573738228.992,782,521,None,Move,development
+1573738229.0,780,514,None,Move,development
+1573738229.0070002,778,507,None,Move,development
+1573738229.016,775,499,None,Move,development
+1573738229.024,772,493,None,Move,development
+1573738229.032,768,486,None,Move,development
+1573738229.04,764,480,None,Move,development
+1573738229.048,761,474,None,Move,development
+1573738229.056,758,468,None,Move,development
+1573738229.061,756,462,None,Move,development
+1573738229.07,754,458,None,Move,development
+1573738229.077,752,453,None,Move,development
+1573738229.085,751,450,None,Move,development
+1573738229.094,749,446,None,Move,development
+1573738229.101,748,443,None,Move,development
+1573738229.11,747,440,None,Move,development
+1573738229.131,747,438,None,Move,development
+1573738229.1360002,747,436,None,Move,development
+1573738229.587,746,436,None,Move,development
+1573738229.595,746,436,None,Move,development
+1573738229.603,746,434,None,Move,development
+1573738229.611,748,433,None,Move,development
+1573738229.619,753,431,None,Move,development
+1573738229.627,758,430,None,Move,development
+1573738229.6339998,763,430,None,Move,development
+1573738229.641,769,432,None,Move,development
+1573738229.649,771,434,None,Move,development
+1573738229.658,773,437,None,Move,development
+1573738229.665,775,441,None,Move,development
+1573738229.674,777,447,None,Move,development
+1573738229.6820002,779,452,None,Move,development
+1573738229.69,781,458,None,Move,development
+1573738229.695,783,464,None,Move,development
+1573738229.712,787,479,None,Move,development
+1573738229.72,789,486,None,Move,development
+1573738229.728,791,491,None,Move,development
+1573738229.946,792,491,None,Move,development
+1573738230.031,792,491,None,Move,development
+1573738230.105,792,491,None,Move,development
+1573738230.113,793,491,None,Move,development
+1573738230.121,792,490,None,Move,development
+1573738230.127,791,490,None,Move,development
+1573738230.135,790,490,None,Move,development
+1573738230.143,789,491,None,Move,development
+1573738230.151,788,492,None,Move,development
+1573738230.159,787,494,None,Move,development
+1573738230.167,787,495,None,Move,development
+1573738230.176,787,495,None,Move,development
+1573738230.1829998,789,495,None,Move,development
+1573738230.191,789,495,None,Move,development
+1573738230.197,789,495,None,Move,development
+1573738230.205,790,495,None,Move,development
+1573738230.214,790,495,None,Move,development
+1573738230.222,790,495,None,Move,development
+1573738230.23,791,494,None,Move,development
+1573738230.238,791,493,None,Move,development
+1573738230.246,792,492,None,Move,development
+1573738230.254,792,492,None,Move,development
+1573738230.262,792,490,None,Move,development
+1573738230.2670002,790,488,None,Move,development
+1573738230.276,785,483,None,Move,development
+1573738230.284,779,478,None,Move,development
+1573738230.292,772,472,None,Move,development
+1573738230.3,764,468,None,Move,development
+1573738230.3079998,757,464,None,Move,development
+1573738230.315,750,462,None,Move,development
+1573738230.323,742,460,None,Move,development
+1573738230.332,734,458,None,Move,development
+1573738230.337,725,456,None,Move,development
+1573738230.346,717,453,None,Move,development
+1573738230.3620002,700,446,None,Move,development
+1573738230.37,691,440,None,Move,development
+1573738230.3779998,684,436,None,Move,development
+1573738230.385,677,430,None,Move,development
+1573738230.394,668,426,None,Move,development
+1573738230.4020002,660,421,None,Move,development
+1573738230.407,651,418,None,Move,development
+1573738230.416,643,415,None,Move,development
+1573738230.434,626,411,None,Move,development
+1573738230.439,619,409,None,Move,development
+1573738230.448,614,407,None,Move,development
+1573738230.455,612,406,None,Move,development
+1573738230.464,611,404,None,Move,development
+1573738230.471,611,404,None,Move,development
+1573738231.8920002,611,403,None,Move,development
+1573738231.9020002,611,402,None,Move,development
+1573738231.91,611,402,None,Move,development
+1573738231.917,611,401,None,Move,development
+1573738231.925,611,401,None,Move,development
+1573738231.9329998,611,400,None,Move,development
+1573738235.3579998,611,400,None,Move,development
+1573738235.37,613,400,None,Move,development
+1573738235.3779998,615,402,None,Move,development
+1573738235.3860002,616,402,None,Move,development
+1573738235.3920002,618,403,None,Move,development
+1573738235.4,620,403,None,Move,development
+1573738235.408,622,404,None,Move,development
+1573738235.416,623,405,None,Move,development
+1573738235.424,626,407,None,Move,development
+1573738235.4320002,628,410,None,Move,development
+1573738235.44,629,412,None,Move,development
+1573738235.448,632,413,None,Move,development
+1573738235.456,633,415,None,Move,development
+1573738235.482,633,415,None,Move,development
+1573738235.51,634,417,None,Move,development
+1573738235.518,634,418,None,Move,development
+1573738235.564,635,418,None,Move,development
+1573738235.613,636,418,None,Move,development
+1573738235.6220002,636,418,None,Move,development
+1573738235.637,636,418,None,Move,development
+1573738235.657,636,418,None,Move,development
+1573738235.665,636,417,None,Move,development
+1573738235.673,631,418,None,Move,development
+1573738235.679,625,419,None,Move,development
+1573738235.687,619,420,None,Move,development
+1573738235.695,616,421,None,Move,development
+1573738235.704,615,422,None,Move,development
+1573738235.711,614,422,None,Move,development
+1573738235.72,613,422,None,Move,development
+1573738235.728,612,422,None,Move,development
+1573738235.736,611,420,None,Move,development
+1573738235.7410002,609,419,None,Move,development
+1573738235.75,608,417,None,Move,development
+1573738235.758,607,416,None,Move,development
+1573738235.766,605,414,None,Move,development
+1573738235.774,604,411,None,Move,development
+1573738235.782,602,408,None,Move,development
+1573738235.789,599,402,None,Move,development
+1573738235.798,595,395,None,Move,development
+1573738235.805,589,388,None,Move,development
+1573738235.812,582,379,None,Move,development
+1573738235.82,576,370,None,Move,development
+1573738235.8279998,571,361,None,Move,development
+1573738235.836,567,352,None,Move,development
+1573738235.844,563,346,None,Move,development
+1573738235.861,558,333,None,Move,development
+1573738235.867,555,327,None,Move,development
+1573738235.8760002,553,321,None,Move,development
+1573738235.881,551,316,None,Move,development
+1573738235.89,549,312,None,Move,development
+1573738235.8979998,547,308,None,Move,development
+1573738235.906,545,302,None,Move,development
+1573738235.914,543,297,None,Move,development
+1573738235.9220002,541,292,None,Move,development
+1573738235.944,539,286,None,Move,development
+1573738235.949,536,277,None,Move,development
+1573738235.954,534,274,None,Move,development
+1573738235.959,532,271,None,Move,development
+1573738235.968,532,269,None,Move,development
+1573738235.976,530,268,None,Move,development
+1573738235.984,530,266,None,Move,development
+1573738235.9910002,528,265,None,Move,development
+1573738236.0,527,264,None,Move,development
+1573738236.0070002,527,261,None,Move,development
+1573738236.016,527,259,None,Move,development
+1573738236.021,526,257,None,Move,development
+1573738236.03,525,254,None,Move,development
+1573738236.038,525,251,None,Move,development
+1573738236.045,524,247,None,Move,development
+1573738236.055,524,245,None,Move,development
+1573738236.061,524,242,None,Move,development
+1573738236.07,524,241,None,Move,development
+1573738236.0779998,523,240,None,Move,development
+1573738236.095,522,237,None,Move,development
+1573738236.101,521,236,None,Move,development
+1573738236.1079998,520,234,None,Move,development
+1573738236.1160002,519,233,None,Move,development
+1573738236.1239998,518,232,None,Move,development
+1573738236.1320002,517,230,None,Move,development
+1573738236.14,515,229,None,Move,development
+1573738236.1479998,514,227,None,Move,development
+1573738236.156,512,226,None,Move,development
+1573738236.161,510,224,None,Move,development
+1573738236.17,509,223,None,Move,development
+1573738236.178,507,222,None,Move,development
+1573738236.186,506,220,None,Move,development
+1573738236.194,505,219,None,Move,development
+1573738236.202,503,217,None,Move,development
+1573738236.21,501,216,None,Move,development
+1573738236.218,499,214,None,Move,development
+1573738236.226,498,214,None,Move,development
+1573738236.2329998,497,213,None,Move,development
+1573738236.2389998,495,212,None,Move,development
+1573738236.2470002,494,211,None,Move,development
+1573738236.256,493,210,None,Move,development
+1573738236.2629998,491,210,None,Move,development
+1573738236.271,490,209,None,Move,development
+1573738236.28,489,209,None,Move,development
+1573738236.2870002,487,208,None,Move,development
+1573738236.295,486,207,None,Move,development
+1573738236.303,484,206,None,Move,development
+1573738236.31,484,205,None,Move,development
+1573738236.3179998,483,205,None,Move,development
+1573738236.325,481,204,None,Move,development
+1573738236.333,480,203,None,Move,development
+1573738236.341,478,203,None,Move,development
+1573738236.349,478,202,None,Move,development
+1573738236.3579998,477,202,None,Move,development
+1573738236.365,477,202,None,Move,development
+1573738236.506,476,202,Left,Pressed,file system
+1573738236.506,476,202,None,Drag,file system
+1573738236.506,476,202,Left,Released,file system
+1573738236.59,476,202,Left,Pressed,file system
+1573738236.7370002,476,202,Left,Released,file system
+1573738236.803,476,202,Left,Pressed,file system
+1573738236.8779998,476,202,Left,Released,file system
+1573738236.975,475,201,None,Move,file system
+1573738236.9989998,474,201,None,Move,file system
+1573738237.004,471,199,None,Move,file system
+1573738237.0089998,470,198,None,Move,file system
+1573738237.015,467,198,None,Move,file system
+1573738237.021,464,196,None,Move,file system
+1573738237.029,460,194,None,Move,file system
+1573738237.0370002,454,192,None,Move,file system
+1573738237.045,448,191,None,Move,file system
+1573738237.053,442,189,None,Move,file system
+1573738237.061,437,188,None,Move,file system
+1573738237.069,431,186,None,Move,file system
+1573738237.077,426,186,None,Move,file system
+1573738237.085,420,186,None,Move,file system
+1573738237.091,415,186,None,Move,file system
+1573738237.099,409,186,None,Move,file system
+1573738237.1079998,405,186,None,Move,file system
+1573738237.115,402,186,None,Move,file system
+1573738237.1239998,400,186,None,Move,file system
+1573738237.1320002,399,186,None,Move,file system
+1573738237.139,397,187,None,Move,file system
+1573738237.147,397,187,None,Move,file system
+1573738237.1820002,396,187,None,Move,file system
+1573738237.232,396,187,Left,Pressed,file system
+1573738237.232,396,187,None,Drag,file system
+1573738237.232,396,187,Left,Released,file system
+1573738237.333,396,187,None,Move,file system
+1573738237.474,395,188,None,Move,file system
+1573738237.486,395,189,None,Move,file system
+1573738237.494,394,189,None,Move,file system
+1573738237.502,393,190,None,Move,file system
+1573738237.51,392,191,None,Move,file system
+1573738237.515,392,192,None,Move,file system
+1573738237.524,390,194,None,Move,file system
+1573738237.531,389,195,None,Move,file system
+1573738237.54,388,197,None,Move,file system
+1573738237.548,387,197,None,Move,file system
+1573738237.556,386,198,None,Move,file system
+1573738237.564,385,199,None,Move,file system
+1573738237.571,383,201,None,Move,file system
+1573738237.579,383,201,None,Move,file system
+1573738237.586,381,202,None,Move,file system
+1573738237.594,381,203,None,Move,file system
+1573738237.6020002,380,204,None,Move,file system
+1573738237.609,379,205,None,Move,file system
+1573738237.619,378,205,None,Move,file system
+1573738237.6260002,377,205,None,Move,file system
+1573738237.6379998,377,205,None,Move,file system
+1573738237.645,376,205,None,Move,file system
+1573738237.653,376,205,None,Move,file system
+1573738237.66,375,205,None,Move,file system
+1573738237.668,375,206,None,Move,file system
+1573738237.803,375,206,None,Move,file system
+1573738237.815,375,206,None,Move,file system
+1573738237.823,375,205,None,Move,file system
+1573738237.831,375,205,None,Move,file system
+1573738237.839,375,204,None,Move,file system
+1573738237.847,375,204,None,Move,file system
+1573738237.855,376,204,None,Move,file system
+1573738237.863,376,203,None,Move,file system
+1573738237.87,376,202,None,Move,file system
+1573738237.881,376,202,None,Move,file system
+1573738237.889,377,202,None,Move,file system
+1573738237.897,377,201,None,Move,file system
+1573738238.0129998,377,201,None,Move,file system
+1573738238.049,378,201,None,Move,file system
+1573738238.083,379,201,Left,Pressed,file system
+1573738238.083,379,201,None,Drag,file system
+1573738238.095,379,201,None,Drag,file system
+1573738238.103,380,201,None,Drag,file system
+1573738238.111,380,201,None,Drag,file system
+1573738238.119,381,201,None,Drag,file system
+1573738238.1279998,381,201,None,Drag,file system
+1573738238.135,382,201,None,Drag,file system
+1573738238.1479998,383,201,None,Drag,file system
+1573738238.177,383,201,None,Drag,file system
+1573738238.1829998,386,200,None,Drag,file system
+1573738238.187,388,199,None,Drag,file system
+1573738238.1929998,390,199,None,Drag,file system
+1573738238.201,393,199,None,Drag,file system
+1573738238.209,395,199,None,Drag,file system
+1573738238.218,399,199,None,Drag,file system
+1573738238.2229998,403,199,None,Drag,file system
+1573738238.231,409,199,None,Drag,file system
+1573738238.24,414,198,None,Drag,file system
+1573738238.248,419,197,None,Drag,file system
+1573738238.256,424,197,None,Drag,file system
+1573738238.264,430,196,None,Drag,file system
+1573738238.271,434,196,None,Drag,file system
+1573738238.28,438,196,None,Drag,file system
+1573738238.288,441,196,None,Drag,file system
+1573738238.293,445,196,None,Drag,file system
+1573738238.301,449,197,None,Drag,file system
+1573738238.309,455,198,None,Drag,file system
+1573738238.3179998,461,200,None,Drag,file system
+1573738238.326,467,201,None,Drag,file system
+1573738238.334,474,203,None,Drag,file system
+1573738238.342,481,205,None,Drag,file system
+1573738238.349,488,207,None,Drag,file system
+1573738238.3579998,495,208,None,Drag,file system
+1573738238.365,501,208,None,Drag,file system
+1573738238.3720002,508,208,None,Drag,file system
+1573738238.381,514,208,None,Drag,file system
+1573738238.387,519,208,None,Drag,file system
+1573738238.396,525,208,None,Drag,file system
+1573738238.403,529,208,None,Drag,file system
+1573738238.411,534,207,None,Drag,file system
+1573738238.419,537,206,None,Drag,file system
+1573738238.428,540,205,None,Drag,file system
+1573738238.434,542,205,None,Drag,file system
+1573738238.4420002,544,204,None,Drag,file system
+1573738238.449,545,204,None,Drag,file system
+1573738238.458,547,204,None,Drag,file system
+1573738238.465,549,204,None,Drag,file system
+1573738238.474,551,203,None,Drag,file system
+1573738238.482,553,203,None,Drag,file system
+1573738238.4889998,556,202,None,Drag,file system
+1573738238.4970002,558,201,None,Drag,file system
+1573738238.5029998,561,201,None,Drag,file system
+1573738238.512,566,200,None,Drag,file system
+1573738238.519,571,199,None,Drag,file system
+1573738238.528,575,199,None,Drag,file system
+1573738238.536,581,198,None,Drag,file system
+1573738238.543,587,197,None,Drag,file system
+1573738238.553,591,197,None,Drag,file system
+1573738238.559,595,196,None,Drag,file system
+1573738238.5679998,598,195,None,Drag,file system
+1573738238.575,601,195,None,Drag,file system
+1573738238.584,604,195,None,Drag,file system
+1573738238.589,606,195,None,Drag,file system
+1573738238.597,608,195,None,Drag,file system
+1573738238.606,612,195,None,Drag,file system
+1573738238.615,615,195,None,Drag,file system
+1573738238.6220002,618,194,None,Drag,file system
+1573738238.63,620,192,None,Drag,file system
+1573738238.637,623,192,None,Drag,file system
+1573738238.643,624,192,None,Drag,file system
+1573738238.6520002,625,192,None,Drag,file system
+1573738238.659,627,191,None,Drag,file system
+1573738238.667,627,191,None,Drag,file system
+1573738238.676,629,191,None,Drag,file system
+1573738238.6829998,629,191,None,Drag,file system
+1573738238.696,629,190,None,Drag,file system
+1573738238.729,630,190,None,Drag,file system
+1573738238.75,630,190,None,Drag,file system
+1573738238.758,632,190,None,Drag,file system
+1573738238.765,633,190,None,Drag,file system
+1573738238.774,634,190,None,Drag,file system
+1573738238.781,635,190,None,Drag,file system
+1573738238.7870002,637,190,None,Drag,file system
+1573738238.796,638,190,None,Drag,file system
+1573738238.804,639,190,None,Drag,file system
+1573738238.811,641,190,None,Drag,file system
+1573738238.82,642,190,None,Drag,file system
+1573738238.8279998,643,190,None,Drag,file system
+1573738238.835,644,190,None,Drag,file system
+1573738238.844,644,191,None,Drag,file system
+1573738238.909,645,191,None,Drag,file system
+1573738238.924,645,191,None,Drag,file system
+1573738238.9320002,646,191,None,Drag,file system
+1573738238.94,647,191,None,Drag,file system
+1573738238.948,647,191,None,Drag,file system
+1573738238.976,648,191,None,Drag,file system
+1573738238.992,648,191,None,Drag,file system
+1573738239.002,649,191,None,Drag,file system
+1573738239.018,649,191,None,Drag,file system
+1573738239.034,650,191,None,Drag,file system
+1573738239.046,651,191,None,Drag,file system
+1573738239.0570002,651,191,None,Drag,file system
+1573738239.0670002,652,191,None,Drag,file system
+1573738239.075,652,191,None,Drag,file system
+1573738239.083,653,191,None,Drag,file system
+1573738239.099,653,191,None,Drag,file system
+1573738239.107,654,191,None,Drag,file system
+1573738239.127,655,191,None,Drag,file system
+1573738239.137,655,191,None,Drag,file system
+1573738239.198,655,191,None,Drag,file system
+1573738239.232,656,191,None,Drag,file system
+1573738239.536,656,191,None,Drag,file system
+1573738239.536,656,191,Left,Released,file system
+1573738239.559,655,192,None,Move,file system
+1573738239.566,655,193,None,Move,file system
+1573738239.574,655,194,None,Move,file system
+1573738239.582,655,194,None,Move,file system
+1573738239.633,655,195,Left,Pressed,file system
+1573738239.633,655,195,None,Drag,file system
+1573738239.712,655,195,None,Drag,file system
+1573738239.721,654,195,None,Drag,file system
+1573738239.729,654,195,None,Drag,file system
+1573738239.729,654,195,Left,Released,file system
+1573738239.74,653,197,None,Move,file system
+1573738239.746,653,197,None,Move,file system
+1573738239.7529998,652,197,None,Move,file system
+1573738239.7610002,652,198,None,Move,file system
+1573738239.853,652,198,None,Move,file system
+1573738239.869,652,199,None,Move,file system
+1573738239.877,653,199,None,Move,file system
+1573738239.8860002,654,199,None,Move,file system
+1573738239.894,655,200,None,Move,file system
+1573738239.9020002,657,201,None,Move,file system
+1573738239.91,658,201,None,Move,file system
+1573738239.918,659,201,None,Move,file system
+1573738239.9220002,660,201,None,Move,file system
+1573738239.9320002,661,201,None,Move,file system
+1573738239.954,662,201,None,Move,file system
+1573738239.959,663,201,None,Move,file system
+1573738239.964,663,201,None,Move,file system
+1573738239.976,664,201,None,Move,file system
+1573738240.0679998,664,201,None,Move,file system
+1573738240.079,665,201,None,Move,file system
+1573738240.087,666,201,None,Move,file system
+1573738240.096,666,201,None,Move,file system
+1573738240.1239998,667,201,None,Move,file system
+1573738240.181,667,201,Left,Pressed,file system
+1573738240.181,667,201,None,Drag,file system
+1573738240.1929998,667,201,None,Drag,file system
+1573738240.204,666,201,None,Drag,file system
+1573738240.212,665,201,None,Drag,file system
+1573738240.22,665,201,None,Drag,file system
+1573738240.2270002,664,201,None,Drag,file system
+1573738240.236,663,201,None,Drag,file system
+1573738240.244,662,201,None,Drag,file system
+1573738240.252,660,201,None,Drag,file system
+1573738240.26,657,200,None,Drag,file system
+1573738240.268,655,200,None,Drag,file system
+1573738240.275,653,200,None,Drag,file system
+1573738240.281,649,199,None,Drag,file system
+1573738240.29,646,199,None,Drag,file system
+1573738240.2970002,642,199,None,Drag,file system
+1573738240.306,637,199,None,Drag,file system
+1573738240.313,631,199,None,Drag,file system
+1573738240.322,627,199,None,Drag,file system
+1573738240.329,622,200,None,Drag,file system
+1573738240.337,618,200,None,Drag,file system
+1573738240.345,616,200,None,Drag,file system
+1573738240.351,614,201,None,Drag,file system
+1573738240.36,612,201,None,Drag,file system
+1573738240.367,610,202,None,Drag,file system
+1573738240.375,607,202,None,Drag,file system
+1573738240.383,604,203,None,Drag,file system
+1573738240.391,602,203,None,Drag,file system
+1573738240.399,599,203,None,Drag,file system
+1573738240.408,597,203,None,Drag,file system
+1573738240.415,594,203,None,Drag,file system
+1573738240.421,591,204,None,Drag,file system
+1573738240.43,588,204,None,Drag,file system
+1573738240.438,584,205,None,Drag,file system
+1573738240.445,581,206,None,Drag,file system
+1573738240.454,579,206,None,Drag,file system
+1573738240.461,576,207,None,Drag,file system
+1573738240.469,573,208,None,Drag,file system
+1573738240.4770002,570,208,None,Drag,file system
+1573738240.486,568,209,None,Drag,file system
+1573738240.4910002,565,209,None,Drag,file system
+1573738240.4989998,561,211,None,Drag,file system
+1573738240.5070002,556,213,None,Drag,file system
+1573738240.516,552,215,None,Drag,file system
+1573738240.5229998,547,216,None,Drag,file system
+1573738240.531,541,218,None,Drag,file system
+1573738240.539,536,218,None,Drag,file system
+1573738240.548,530,219,None,Drag,file system
+1573738240.556,525,220,None,Drag,file system
+1573738240.561,519,220,None,Drag,file system
+1573738240.569,514,220,None,Drag,file system
+1573738240.5779998,508,220,None,Drag,file system
+1573738240.585,503,221,None,Drag,file system
+1573738240.593,497,221,None,Drag,file system
+1573738240.601,492,221,None,Drag,file system
+1573738240.61,486,221,None,Drag,file system
+1573738240.6179998,482,221,None,Drag,file system
+1573738240.6260002,478,221,None,Drag,file system
+1573738240.631,473,221,None,Drag,file system
+1573738240.64,469,221,None,Drag,file system
+1573738240.6479998,465,220,None,Drag,file system
+1573738240.655,461,220,None,Drag,file system
+1573738240.663,458,219,None,Drag,file system
+1573738240.6720002,456,218,None,Drag,file system
+1573738240.679,454,218,None,Drag,file system
+1573738240.688,452,218,None,Drag,file system
+1573738240.695,450,217,None,Drag,file system
+1573738240.701,449,217,None,Drag,file system
+1573738240.71,447,217,None,Drag,file system
+1573738240.718,446,216,None,Drag,file system
+1573738240.726,445,216,None,Drag,file system
+1573738240.7329998,444,216,None,Drag,file system
+1573738240.7410002,444,216,None,Drag,file system
+1573738240.75,443,216,None,Drag,file system
+1573738240.8660002,443,215,None,Drag,file system
+1573738240.8779998,442,215,None,Drag,file system
+1573738240.885,441,213,None,Drag,file system
+1573738240.894,439,213,None,Drag,file system
+1573738240.901,436,211,None,Drag,file system
+1573738240.909,433,209,None,Drag,file system
+1573738240.915,431,208,None,Drag,file system
+1573738240.924,428,207,None,Drag,file system
+1573738240.931,423,205,None,Drag,file system
+1573738240.94,420,205,None,Drag,file system
+1573738240.947,417,204,None,Drag,file system
+1573738240.956,415,202,None,Drag,file system
+1573738240.9629998,413,202,None,Drag,file system
+1573738240.971,412,201,None,Drag,file system
+1573738240.979,411,201,None,Drag,file system
+1573738240.985,410,200,None,Drag,file system
+1573738240.994,409,200,None,Drag,file system
+1573738241.052,408,200,None,Drag,file system
+1573738241.06,408,200,None,Drag,file system
+1573738241.072,407,200,None,Drag,file system
+1573738241.08,407,200,None,Drag,file system
+1573738241.096,406,200,None,Drag,file system
+1573738241.107,406,200,None,Drag,file system
+1573738241.123,405,200,None,Drag,file system
+1573738241.137,404,200,None,Drag,file system
+1573738241.145,404,200,None,Drag,file system
+1573738241.178,404,200,None,Drag,file system
+1573738241.194,403,200,None,Drag,file system
+1573738241.2,403,200,None,Drag,file system
+1573738241.208,402,200,None,Drag,file system
+1573738241.215,401,201,None,Drag,file system
+1573738241.224,400,201,None,Drag,file system
+1573738241.232,399,201,None,Drag,file system
+1573738241.24,398,201,None,Drag,file system
+1573738241.248,397,201,None,Drag,file system
+1573738241.256,396,201,None,Drag,file system
+1573738241.264,395,201,None,Drag,file system
+1573738241.27,394,201,None,Drag,file system
+1573738241.2770002,392,202,None,Drag,file system
+1573738241.286,392,202,None,Drag,file system
+1573738241.294,391,202,None,Drag,file system
+1573738241.301,391,202,None,Drag,file system
+1573738241.309,389,202,None,Drag,file system
+1573738241.3170002,389,202,None,Drag,file system
+1573738241.326,388,202,None,Drag,file system
+1573738241.333,388,202,None,Drag,file system
+1573738241.3520002,387,202,None,Drag,file system
+1573738241.3679998,386,202,None,Drag,file system
+1573738241.425,386,202,None,Drag,file system
+1573738241.437,385,203,None,Drag,file system
+1573738241.457,385,203,None,Drag,file system
+1573738241.479,384,203,None,Drag,file system
+1573738241.4989998,384,203,None,Drag,file system
+1573738241.5110002,383,203,None,Drag,file system
+1573738241.519,382,203,None,Drag,file system
+1573738241.539,382,203,None,Drag,file system
+1573738241.5470002,382,204,None,Drag,file system
+1573738241.6179998,381,204,None,Drag,file system
+1573738241.6360002,381,204,None,Drag,file system
+1573738241.66,380,204,None,Drag,file system
+1573738241.877,380,204,None,Drag,file system
+1573738241.877,380,204,Left,Released,file system
+1573738241.899,379,205,None,Move,file system
+1573738241.928,379,205,None,Move,file system
+1573738241.936,379,205,None,Move,file system
+1573738241.948,380,205,None,Move,file system
+1573738241.955,380,205,None,Move,file system
+1573738242.13,380,205,Left,Pressed,file system
+1573738242.13,380,205,None,Drag,file system
+1573738242.13,380,205,Left,Released,file system
+1573738242.177,381,205,None,Move,file system
+1573738242.191,383,205,None,Move,file system
+1573738242.199,384,205,None,Move,file system
+1573738242.222,385,205,None,Move,file system
+1573738242.232,390,205,None,Move,file system
+1573738242.2410002,392,205,None,Move,file system
+1573738242.2510002,395,206,None,Move,file system
+1573738242.262,399,207,None,Move,file system
+1573738242.272,401,208,None,Move,file system
+1573738242.284,403,209,None,Move,file system
+1573738242.293,404,209,None,Move,file system
+1573738242.305,407,211,None,Move,file system
+1573738242.314,409,211,None,Move,file system
+1573738242.323,410,211,None,Move,file system
+1573738242.333,413,213,None,Move,file system
+1573738242.341,414,213,None,Move,file system
+1573738242.3520002,416,214,None,Move,file system
+1573738242.363,417,215,None,Move,file system
+1573738242.373,419,216,None,Move,file system
+1573738242.383,420,217,None,Move,file system
+1573738242.391,421,217,None,Move,file system
+1573738242.404,423,218,None,Move,file system
+1573738242.4120002,425,219,None,Move,file system
+1573738242.4220002,425,219,None,Move,file system
+1573738242.4320002,426,220,None,Move,file system
+1573738242.44,427,221,None,Move,file system
+1573738242.45,429,222,None,Move,file system
+1573738242.458,430,223,None,Move,file system
+1573738242.47,431,223,None,Move,file system
+1573738242.478,431,224,None,Move,file system
+1573738242.492,432,224,None,Move,file system
+1573738242.582,433,224,None,Move,file system
+1573738242.665,433,224,Left,Pressed,file system
+1573738242.768,433,224,Left,Released,file system
+1573738242.799,433,224,None,Move,file system
+1573738242.831,484,234,None,Move,file system
+1573738242.839,583,240,None,Move,file system
+1573738242.847,645,242,None,Move,file system
+1573738242.86,714,250,None,Move,file system
+1573738242.8679998,796,263,None,Move,file system
+1573738242.8760002,889,274,None,Move,file system
+1573738242.883,982,281,None,Move,file system
+1573738242.891,1086,297,None,Move,file system
+1573738242.9,1288,326,None,Move,file system
+1573738242.908,1392,346,None,Move,file system
+1573738242.9220002,1497,369,None,Move,file system
+1573738242.929,1595,376,None,Move,file system
+1573738242.952,1698,387,None,Move,file system
+1573738242.961,1957,384,None,Move,file system
+1573738242.967,2033,377,None,Move,file system
+1573738242.972,2109,381,None,Move,file system
+1573738242.9770002,2183,389,None,Move,file system
+1573738242.985,2251,388,None,Move,file system
+1573738242.9929998,2322,382,None,Move,file system
+1573738243.0010002,2383,378,None,Move,file system
+1573738243.0089998,2435,374,None,Move,file system
+1573738243.0170002,2484,370,None,Move,file system
+1573738243.025,2526,367,None,Move,file system
+1573738243.033,2559,365,None,Move,file system
+1573738243.039,2585,362,None,Move,file system
+1573738243.0470002,2603,359,None,Move,file system
+1573738243.055,2613,357,None,Move,file system
+1573738243.063,2620,355,None,Move,file system
+1573738243.071,2626,353,None,Move,file system
+1573738243.079,2629,352,None,Move,file system
+1573738243.087,2631,351,None,Move,file system
+1573738243.095,2631,350,None,Move,file system
+1573738243.103,2632,350,None,Move,file system
+1573738243.2970002,2632,350,None,Move,file system
+1573738243.306,2632,351,None,Move,file system
+1573738243.313,2632,352,None,Move,file system
+1573738243.32,2632,353,None,Move,file system
+1573738243.3679998,2632,353,None,Move,file system
+1573738243.379,2631,353,None,Move,file system
+1573738243.393,2631,353,None,Move,file system
+1573738243.4,2630,353,None,Move,development
+1573738243.406,2629,353,None,Move,development
+1573738244.157,2629,353,None,Move,development
+1573738244.165,2627,354,None,Move,development
+1573738244.171,2626,355,None,Move,development
+1573738244.179,2624,357,None,Move,development
+1573738244.187,2623,358,None,Move,development
+1573738244.195,2621,360,None,Move,development
+1573738244.2029998,2619,361,None,Move,development
+1573738244.211,2618,363,None,Move,development
+1573738244.219,2615,364,None,Move,development
+1573738244.2270002,2614,366,None,Move,development
+1573738244.235,2613,367,None,Move,development
+1573738244.2410002,2612,368,None,Move,development
+1573738244.2489998,2611,368,None,Move,development
+1573738244.294,2611,368,None,Move,development
+1573738244.304,2611,369,None,Move,development
+1573738244.311,2612,371,None,Move,development
+1573738244.319,2614,374,None,Move,development
+1573738244.327,2615,376,None,Move,development
+1573738244.335,2616,377,None,Move,development
+1573738244.343,2616,379,None,Move,development
+1573738244.351,2616,380,None,Move,development
+1573738244.359,2617,381,None,Move,development
+1573738244.3679998,2617,383,None,Move,development
+1573738244.3760002,2617,384,None,Move,development
+1573738244.381,2617,386,None,Move,development
+1573738244.39,2617,389,None,Move,development
+1573738244.3979998,2617,393,None,Move,development
+1573738244.406,2617,396,None,Move,development
+1573738244.414,2617,400,None,Move,development
+1573738244.4220002,2617,406,None,Move,development
+1573738244.43,2617,411,None,Move,development
+1573738244.437,2615,417,None,Move,development
+1573738244.446,2613,423,None,Move,development
+1573738244.451,2611,430,None,Move,development
+1573738244.46,2608,436,None,Move,development
+1573738244.468,2604,442,None,Move,development
+1573738244.476,2599,448,None,Move,development
+1573738244.484,2595,454,None,Move,development
+1573738244.492,2591,459,None,Move,development
+1573738244.5,2589,462,None,Move,development
+1573738244.508,2588,463,None,Move,development
+1573738244.516,2587,464,None,Move,development
+1573738244.521,2587,464,None,Move,development
+1573738244.562,2587,464,None,Move,development
+1573738244.574,2587,464,None,Move,development
+1573738244.5879998,2587,464,None,Move,development
+1573738244.97,2587,464,None,Move,development
+1573738244.982,2588,464,None,Move,development
+1573738244.9889998,2589,464,None,Move,development
+1573738244.9970002,2590,463,None,Move,development
+1573738245.005,2590,463,None,Move,development
+1573738245.015,2591,463,None,Move,development
+1573738245.032,2591,463,None,Move,development
+1573738245.043,2592,463,None,Move,development
+1573738245.051,2593,463,None,Move,development
+1573738245.059,2594,463,None,Move,development
+1573738245.0679998,2594,463,None,Move,development
+1573738245.076,2595,463,None,Move,development
+1573738245.087,2595,463,None,Move,development
+1573738245.106,2596,463,None,Move,development
+1573738245.15,2597,463,None,Move,development
+1573738245.16,2597,463,None,Move,development
+1573738245.168,2598,463,None,Move,development
+1573738245.178,2598,463,Left,Pressed,development
+1573738245.178,2598,463,None,Drag,development
+1573738245.1829998,2599,463,None,Drag,development
+1573738245.216,2599,463,None,Drag,development
+1573738245.216,2599,463,Left,Released,development
+1573738245.698,2600,463,None,Move,development
+1573738245.706,2601,463,None,Move,development
+1573738245.714,2601,464,None,Move,development
+1573738245.721,2602,464,None,Move,development
+1573738245.728,2602,464,None,Move,development
+1573738245.7389998,2603,464,None,Move,development
+1573738245.756,2604,464,None,Move,development
+1573738245.764,2604,464,None,Move,development
+1573738245.775,2605,464,None,Move,development
+1573738245.783,2605,464,None,Move,development
+1573738245.793,2606,464,None,Move,development
+1573738245.809,2606,464,None,Move,development
+1573738245.8170002,2607,464,None,Move,development
+1573738245.825,2607,464,None,Move,development
+1573738245.834,2608,464,None,Move,development
+1573738245.841,2609,464,None,Move,development
+1573738245.85,2609,464,None,Move,development
+1573738245.8579998,2609,464,None,Move,development
+1573738245.871,2610,464,None,Move,development
+1573738245.8839998,2610,464,None,Move,development
+1573738245.916,2611,464,None,Move,development
+1573738246.0110002,2611,464,None,Move,development
+1573738246.035,2612,464,None,Move,development
+1573738246.044,2613,464,None,Move,development
+1573738246.052,2615,464,None,Move,development
+1573738246.06,2616,465,None,Move,development
+1573738246.0679998,2617,465,None,Move,development
+1573738246.075,2619,465,None,Move,development
+1573738246.081,2620,465,None,Move,development
+1573738246.089,2621,466,None,Move,development
+1573738246.0979998,2623,467,None,Move,development
+1573738246.105,2624,467,None,Move,development
+1573738246.113,2625,468,None,Move,development
+1573738246.121,2626,469,None,Move,development
+1573738246.13,2626,469,None,Move,development
+1573738246.1379998,2627,469,None,Move,development
+1573738246.18,2628,469,None,Move,development
+1573738246.196,2628,469,None,Move,development
+1573738246.204,2629,468,None,Move,development
+1573738246.212,2629,467,None,Move,development
+1573738246.219,2631,466,None,Move,development
+1573738246.225,2631,464,None,Move,development
+1573738246.2329998,2632,463,None,Move,development
+1573738246.2410002,2633,462,None,Move,development
+1573738246.25,2633,461,None,Move,development
+1573738246.258,2635,460,None,Move,development
+1573738246.265,2635,459,None,Move,development
+1573738246.274,2635,459,None,Move,development
+1573738246.282,2636,459,None,Move,development
+1573738246.29,2636,458,None,Move,development
+1573738246.295,2637,458,None,Move,development
+1573738246.55,2637,458,None,Move,development
+1573738246.5570002,2637,459,None,Move,development
+1573738246.566,2637,460,None,Move,development
+1573738246.576,2637,461,None,Move,development
+1573738246.583,2638,462,None,Move,development
+1573738246.592,2638,462,None,Move,development
+1573738246.599,2638,463,None,Move,development
+1573738246.607,2639,464,None,Move,development
+1573738246.6160002,2639,465,None,Move,development
+1573738246.623,2640,466,None,Move,development
+1573738246.631,2640,467,None,Move,development
+1573738246.639,2640,467,None,Move,development
+1573738246.646,2641,468,None,Move,development
+1573738246.653,2641,469,None,Move,development
+1573738246.661,2642,470,None,Move,development
+1573738246.67,2643,471,None,Move,development
+1573738246.677,2644,471,None,Move,development
+1573738246.685,2645,473,None,Move,development
+1573738246.6929998,2646,473,None,Move,development
+1573738246.701,2646,474,None,Move,development
+1573738246.709,2646,474,None,Move,development
+1573738246.7870002,2647,475,None,Move,development
+1573738247.044,2647,475,None,Move,development
+1573738247.055,2648,475,None,Move,development
+1573738247.064,2649,475,None,Move,development
+1573738247.069,2649,475,None,Move,development
+1573738247.077,2650,474,None,Move,development
+1573738247.09,2650,474,None,Move,development
+1573738247.1920002,2651,474,None,Move,development
+1573738247.347,2651,474,None,Move,development
+1573738247.355,2651,475,None,Move,development
+1573738247.361,2651,475,None,Move,development
+1573738247.369,2651,476,None,Move,development
+1573738247.377,2651,477,None,Move,development
+1573738247.385,2650,478,None,Move,development
+1573738247.393,2649,480,None,Move,development
+1573738247.401,2646,482,None,Move,development
+1573738247.409,2642,486,None,Move,development
+1573738247.417,2638,489,None,Move,development
+1573738247.423,2636,493,None,Move,development
+1573738247.431,2634,499,None,Move,development
+1573738247.439,2633,502,None,Move,development
+1573738247.5089998,2633,502,None,Move,development
+1573738247.5170002,2632,503,None,Move,development
+1573738247.525,2631,503,None,Move,development
+1573738247.533,2628,503,None,Move,development
+1573738247.541,2625,503,None,Move,development
+1573738247.549,2623,503,None,Move,development
+1573738247.5570002,2620,503,None,Move,development
+1573738247.563,2616,502,None,Move,development
+1573738247.571,2611,502,None,Move,development
+1573738247.58,2607,501,None,Move,development
+1573738247.678,2607,500,None,Move,development
+1573738247.686,2603,499,None,Move,development
+1573738247.694,2600,497,None,Move,development
+1573738247.701,2597,495,None,Move,development
+1573738247.707,2595,495,None,Move,development
+1573738247.716,2594,495,None,Move,development
+1573738247.728,2594,494,None,Move,development
+1573738247.736,2594,494,None,Move,development
+1573738247.744,2594,493,None,Move,development
+1573738247.7510002,2593,492,None,Move,development
+1573738247.76,2593,492,None,Move,development
+1573738247.7670002,2593,491,None,Move,development
+1573738247.7770002,2593,491,None,Move,development
+1573738247.786,2593,490,None,Move,development
+1573738247.794,2593,490,None,Move,development
+1573738247.801,2593,489,None,Move,development
+1573738247.809,2593,488,None,Move,development
+1573738247.8170002,2593,487,None,Move,development
+1573738247.826,2593,487,None,Move,development
+1573738247.833,2593,486,None,Move,development
+1573738247.841,2593,485,None,Move,development
+1573738247.85,2593,484,None,Move,development
+1573738247.855,2593,482,None,Move,development
+1573738247.863,2593,481,None,Move,development
+1573738247.8720002,2593,480,None,Move,development
+1573738247.88,2593,479,None,Move,development
+1573738247.887,2593,477,None,Move,development
+1573738247.896,2592,476,None,Move,development
+1573738247.903,2592,475,None,Move,development
+1573738247.9120002,2591,473,None,Move,development
+1573738248.105,2591,473,None,Move,development
+1573738248.117,2591,472,None,Move,development
+1573738248.131,2591,472,None,Move,development
+1573738248.965,2591,472,None,Move,development
+1573738248.9770002,2592,472,None,Move,development
+1573738248.9829998,2593,472,None,Move,development
+1573738248.9910002,2594,473,None,Move,development
+1573738248.9989998,2596,474,None,Move,development
+1573738249.0070002,2597,474,None,Move,development
+1573738249.015,2598,474,None,Move,development
+1573738249.0229998,2599,474,None,Move,development
+1573738249.031,2602,475,None,Move,development
+1573738249.039,2603,475,None,Move,development
+1573738249.0470002,2605,475,None,Move,development
+1573738249.054,2608,475,None,Move,development
+1573738249.061,2610,475,None,Move,development
+1573738249.069,2613,475,None,Move,development
+1573738249.077,2615,475,None,Move,development
+1573738249.085,2618,475,None,Move,development
+1573738249.093,2620,475,None,Move,development
+1573738249.101,2623,475,None,Move,development
+1573738249.11,2625,475,None,Move,development
+1573738249.1179998,2626,475,None,Move,development
+1573738249.123,2627,475,None,Move,development
+1573738249.131,2628,475,None,Move,development
+1573738249.591,2628,476,None,Move,development
+1573738249.604,2628,477,None,Move,development
+1573738249.611,2628,477,None,Move,development
+1573738249.619,2628,479,None,Move,development
+1573738249.625,2628,479,None,Move,development
+1573738249.637,2628,480,None,Move,development
+1573738249.654,2628,480,None,Move,development
+1573738249.67,2628,481,None,Move,development
+1573738249.782,2628,481,None,Move,development
+1573738249.7970002,2628,482,None,Move,development
+1573738249.806,2628,483,None,Move,development
+1573738249.814,2628,484,None,Move,development
+1573738249.93,2628,484,None,Move,development
+1573738249.9420002,2628,484,None,Move,development
+1573738249.954,2628,483,None,Move,development
+1573738249.961,2628,483,None,Move,development
+1573738250.5129998,2628,483,None,Move,development
+1573738250.525,2628,483,None,Move,development
+1573738250.534,2628,483,None,Move,development
+1573738250.54,2628,484,None,Move,development
+1573738250.551,2628,484,None,Move,development
+1573738250.56,2627,485,None,Move,development
+1573738250.571,2627,486,None,Move,development
+1573738250.5879998,2627,486,None,Move,development
+1573738250.897,2627,486,None,Move,development
+1573738250.905,2627,486,None,Move,development
+1573738250.913,2627,485,None,Move,development
+1573738250.921,2627,485,None,Move,development
+1573738250.929,2628,484,None,Move,development
+1573738250.937,2628,484,None,Move,development
+1573738251.0270002,2628,483,None,Move,development
+1573738251.039,2628,482,None,Move,development
+1573738251.045,2628,481,None,Move,development
+1573738251.053,2628,480,None,Move,development
+1573738251.061,2629,480,None,Move,development
+1573738251.069,2629,478,None,Move,development
+1573738251.0779998,2629,478,None,Move,development
+1573738251.086,2629,477,None,Move,development
+1573738251.094,2629,477,None,Move,development
+1573738251.1020002,2629,476,None,Move,development
+1573738251.12,2629,476,None,Move,development
+1573738251.3879998,2630,476,None,Move,development
+1573738251.399,2630,476,None,Move,development
+1573738251.4120002,2631,476,None,Move,development
+1573738263.71,2632,474,None,Move,development
+1573738263.718,2662,446,None,Move,development
+1573738263.732,2664,444,None,Move,development
+1573738263.74,2665,444,None,Move,development
+1573738263.748,2665,443,None,Move,development
+1573738263.756,2666,443,None,Move,development
+1573738263.764,2666,443,None,Move,development
+1573738263.772,2667,441,None,Move,development
+1573738263.78,2668,441,None,Move,development
+1573738263.788,2668,440,None,Move,development
+1573738266.2029998,2667,440,None,Move,development
+1573738266.211,2658,439,None,Move,development
+1573738266.219,2646,439,None,Move,development
+1573738266.225,2634,438,None,Move,development
+1573738266.2329998,2621,438,None,Move,development
+1573738266.2410002,2607,436,None,Move,development
+1573738266.2489998,2586,432,None,Move,development
+1573738266.2570002,2558,429,None,Move,development
+1573738266.265,2521,425,None,Move,development
+1573738266.2729998,2466,417,None,Move,development
+1573738266.281,2393,415,None,Move,development
+1573738266.289,2314,421,None,Move,development
+1573738266.295,2237,427,None,Move,development
+1573738266.303,2156,427,None,Move,development
+1573738266.311,2072,431,None,Move,development
+1573738266.319,1982,428,None,Move,development
+1573738266.329,1893,426,None,Move,development
+1573738266.336,1804,429,None,Move,development
+1573738266.343,1714,428,None,Move,development
+1573738266.351,1628,428,None,Move,development
+1573738266.357,1549,433,None,Move,development
+1573738266.365,1469,444,None,Move,development
+1573738266.373,1398,448,None,Move,development
+1573738266.3820002,1336,450,None,Move,development
+1573738266.389,1278,458,None,Move,development
+1573738266.397,1225,462,None,Move,development
+1573738266.405,1187,462,None,Move,development
+1573738266.413,1158,462,None,Move,development
+1573738266.421,1134,460,None,Move,development
+1573738266.429,1121,457,None,Move,development
+1573738266.437,1110,456,None,Move,development
+1573738266.445,1103,454,None,Move,development
+1573738266.451,1099,454,None,Move,development
+1573738266.459,1096,454,None,Move,development
+1573738266.467,1095,454,None,Move,development
+1573738266.475,1093,454,None,Move,development
+1573738266.573,1093,454,None,Move,development
+1573738266.813,1092,453,None,Move,development
+1573738266.821,1089,449,None,Move,development
+1573738266.829,1081,441,None,Move,development
+1573738266.839,1072,434,None,Move,development
+1573738266.845,1064,426,None,Move,development
+1573738266.853,1055,419,None,Move,development
+1573738266.861,1045,413,None,Move,development
+1573738266.869,1033,410,None,Move,development
+1573738266.875,1021,407,None,Move,development
+1573738266.883,1007,405,None,Move,development
+1573738266.891,994,404,None,Move,development
+1573738266.899,983,404,None,Move,development
+1573738266.907,971,404,None,Move,development
+1573738266.915,958,404,None,Move,development
+1573738266.923,946,404,None,Move,development
+1573738266.9320002,936,404,None,Move,development
+1573738266.939,926,404,None,Move,development
+1573738266.945,918,404,None,Move,development
+1573738266.9529998,911,404,None,Move,development
+1573738266.961,906,404,None,Move,development
+1573738266.969,900,404,None,Move,development
+1573738266.9770002,897,403,None,Move,development
+1573738266.985,894,403,None,Move,development
+1573738266.9929998,893,401,None,Move,development
+1573738267.0010002,891,400,None,Move,development
+1573738267.0089998,890,399,None,Move,development
+1573738267.016,889,398,None,Move,development
+1573738267.0229998,889,397,None,Move,development
+1573738267.031,888,397,None,Move,development
+1573738267.039,888,397,None,Move,development
+1573738267.055,888,397,None,Move,development
+1573738267.063,888,398,None,Move,development
+1573738267.071,891,400,None,Move,development
+1573738267.079,891,400,None,Move,development
+1573738267.4629998,892,400,None,Move,development
+1573738267.471,893,400,None,Move,development
+1573738267.479,894,400,None,Move,development
+1573738267.4870002,895,400,None,Move,development
+1573738267.495,896,400,None,Move,development
+1573738267.5029998,897,400,None,Move,development
+1573738267.5089998,898,400,None,Move,development
+1573738267.5170002,899,400,None,Move,development
+1573738267.665,900,400,None,Move,development
+1573738267.673,901,399,None,Move,development
+1573738267.681,903,395,None,Move,development
+1573738267.689,904,393,None,Move,development
+1573738267.697,906,390,None,Move,development
+1573738267.705,906,389,None,Move,development
+1573738267.7129998,907,387,None,Move,development
+1573738267.721,908,387,None,Move,development
+1573738267.755,908,386,None,Move,development
+1573738267.7629998,908,385,None,Move,development
+1573738267.771,908,383,None,Move,development
+1573738267.779,908,381,None,Move,development
+1573738267.7870002,908,381,None,Move,development
+1573738267.793,908,381,None,Move,development
+1573738267.801,907,380,None,Move,development
+1573738267.809,906,380,None,Move,development
+1573738267.8170002,906,380,None,Move,development
+1573738267.825,905,380,None,Move,development
+1573738267.833,905,380,None,Move,development
+1573738267.841,904,380,None,Move,development
+1573738267.849,904,380,None,Move,development
+1573738267.857,903,380,None,Move,development
+1573738267.863,902,380,None,Move,development
+1573738267.871,902,380,None,Move,development
+1573738267.879,901,380,None,Move,development
+1573738267.887,899,381,None,Move,development
+1573738267.895,899,382,None,Move,development
+1573738267.903,897,383,None,Move,development
+1573738267.911,896,383,None,Move,development
+1573738267.919,896,383,None,Move,development
+1573738267.927,895,383,None,Move,development
+1573738267.967,895,383,None,Move,development
+1573738268.175,894,383,None,Move,development
+1573738268.1829998,889,383,None,Move,development
+1573738268.191,881,382,None,Move,development
+1573738268.199,873,382,None,Move,development
+1573738268.207,867,382,None,Move,development
+1573738268.215,861,384,None,Move,development
+1573738268.221,856,385,None,Move,development
+1573738268.229,849,386,None,Move,development
+1573738268.2370002,841,386,None,Move,development
+1573738268.245,829,386,None,Move,development
+1573738268.2529998,817,386,None,Move,development
+1573738268.2610002,800,387,None,Move,development
+1573738268.269,785,390,None,Move,development
+1573738268.2770002,762,393,None,Move,development
+1573738268.285,738,397,None,Move,development
+1573738268.291,714,405,None,Move,development
+1573738268.299,690,409,None,Move,development
+1573738268.3070002,664,412,None,Move,development
+1573738268.315,641,415,None,Move,development
+1573738268.323,617,420,None,Move,development
+1573738268.331,596,425,None,Move,development
+1573738268.339,572,430,None,Move,development
+1573738268.347,557,432,None,Move,development
+1573738268.355,541,434,None,Move,development
+1573738268.361,528,437,None,Move,development
+1573738268.369,516,438,None,Move,development
+1573738268.377,505,439,None,Move,development
+1573738268.385,497,439,None,Move,development
+1573738268.393,489,440,None,Move,development
+1573738268.415,475,443,None,Move,development
+1573738268.42,469,445,None,Move,development
+1573738268.425,465,446,None,Move,development
+1573738268.4320002,463,446,None,Move,development
+1573738268.439,461,446,None,Move,development
+1573738268.447,460,447,None,Move,development
+1573738268.545,460,448,None,Move,development
+1573738268.553,460,449,None,Move,development
+1573738268.561,460,451,None,Move,development
+1573738268.5670002,460,452,None,Move,development
+1573738268.575,460,453,None,Move,development
+1573738268.735,459,453,None,Move,development
+1573738268.7429998,459,453,None,Move,development
+1573738268.7670002,458,453,None,Move,development
+1573738268.863,458,453,None,Move,development
+1573738268.871,458,454,None,Move,development
+1573738268.879,459,456,None,Move,development
+1573738268.889,459,457,None,Move,development
+1573738268.895,460,458,None,Move,development
+1573738268.914,461,462,None,Move,development
+1573738268.919,463,464,None,Move,development
+1573738268.925,464,466,None,Move,development
+1573738268.9329998,465,469,None,Move,development
+1573738268.941,466,470,None,Move,development
+1573738268.949,466,471,None,Move,development
+1573738268.957,468,474,None,Move,development
+1573738268.98,469,475,None,Move,development
+1573738268.985,470,477,None,Move,development
+1573738268.99,470,478,None,Move,development
+1573738269.0070002,470,478,None,Move,development
+1573738269.187,470,478,Left,Pressed,file system
+1573738269.187,470,478,None,Drag,file system
+1573738269.187,470,478,Left,Released,file system
+1573738269.2,470,478,None,Move,file system
+1573738269.207,470,478,None,Move,file system
+1573738269.229,469,477,None,Move,file system
+1573738269.291,469,475,None,Move,file system
+1573738269.301,467,474,None,Move,file system
+1573738269.3079998,466,473,None,Move,file system
+1573738269.33,463,470,None,Move,file system
+1573738269.336,461,468,None,Move,file system
+1573738269.341,460,467,None,Move,file system
+1573738269.347,459,466,None,Move,file system
+1573738269.353,457,464,None,Move,file system
+1573738269.361,456,463,None,Move,file system
+1573738269.369,454,461,None,Move,file system
+1573738269.377,453,460,None,Move,file system
+1573738269.385,451,458,None,Move,file system
+1573738269.393,450,457,None,Move,file system
+1573738269.401,449,456,None,Move,file system
+1573738269.409,447,455,None,Move,file system
+1573738269.431,444,453,None,Move,file system
+1573738269.436,444,453,None,Move,file system
+1573738269.441,444,453,None,Move,file system
+1573738269.447,443,453,None,Move,file system
+1573738269.455,443,453,None,Move,file system
+1573738269.4829998,442,453,None,Move,file system
+1573738269.5170002,442,453,None,Move,file system
+1573738269.615,442,453,None,Move,file system
+1573738269.623,442,454,None,Move,file system
+1573738269.631,442,456,None,Move,file system
+1573738269.637,442,457,None,Move,file system
+1573738269.645,442,458,None,Move,file system
+1573738269.663,442,461,None,Move,file system
+1573738269.669,442,462,None,Move,file system
+1573738269.677,442,463,None,Move,file system
+1573738269.686,442,465,None,Move,file system
+1573738269.694,442,466,None,Move,file system
+1573738269.702,442,467,None,Move,file system
+1573738269.71,443,469,None,Move,file system
+1573738269.715,443,470,None,Move,file system
+1573738269.7229998,443,471,None,Move,file system
+1573738269.73,444,473,None,Move,file system
+1573738269.74,445,474,None,Move,file system
+1573738269.7470002,445,475,None,Move,file system
+1573738269.764,446,478,None,Move,file system
+1573738269.772,447,480,None,Move,file system
+1573738269.7770002,447,481,None,Move,file system
+1573738269.786,447,481,None,Move,file system
+1573738269.794,447,482,None,Move,file system
+1573738269.806,447,482,None,Move,file system
+1573738269.813,447,483,None,Move,file system
+1573738269.822,448,483,None,Move,file system
+1573738269.83,448,484,None,Move,file system
+1573738269.8379998,448,484,None,Move,file system
+1573738269.8520002,448,485,None,Move,file system
+1573738269.86,448,485,None,Move,file system
+1573738271.331,449,486,None,Move,file system
+1573738271.343,449,486,None,Move,file system
+1573738271.349,450,487,None,Move,file system
+1573738271.357,450,488,None,Move,file system
+1573738271.365,451,488,None,Move,file system
+1573738271.373,453,489,None,Move,file system
+1573738271.381,454,490,None,Move,file system
+1573738271.389,456,491,None,Move,file system
+1573738271.411,457,492,None,Move,file system
+1573738271.418,460,494,None,Move,file system
+1573738271.423,461,495,None,Move,file system
+1573738271.429,463,495,None,Move,file system
+1573738271.435,464,495,None,Move,file system
+1573738271.4429998,465,496,None,Move,file system
+1573738271.451,466,496,None,Move,file system
+1573738271.459,468,497,None,Move,file system
+1573738271.467,469,497,None,Move,file system
+1573738271.475,470,497,None,Move,file system
+1573738271.481,472,497,None,Move,file system
+1573738271.4889998,473,497,None,Move,file system
+1573738271.4970002,474,497,None,Move,file system
+1573738271.689,474,497,None,Move,file system
+1573738271.696,475,496,None,Move,file system
+1573738271.7029998,477,494,None,Move,file system
+1573738271.712,478,493,None,Move,file system
+1573738271.72,480,491,None,Move,file system
+1573738271.7270002,481,490,None,Move,file system
+1573738271.735,483,488,None,Move,file system
+1573738271.744,484,487,None,Move,file system
+1573738271.7510002,485,486,None,Move,file system
+1573738271.7589998,487,484,None,Move,file system
+1573738271.7670002,487,484,None,Move,file system
+1573738271.774,489,483,None,Move,file system
+1573738271.781,489,482,None,Move,file system
+1573738271.789,489,481,None,Move,file system
+1573738271.7970002,489,481,None,Move,file system
+1573738271.805,490,481,None,Move,file system
+1573738271.821,490,480,None,Move,file system
+1573738271.847,490,480,Left,Pressed,file system
+1573738272.0070002,490,480,Left,Released,file system
+1573738272.113,490,480,None,Move,file system
+1573738272.123,490,481,None,Move,file system
+1573738272.131,491,482,None,Move,file system
+1573738272.139,491,483,None,Move,file system
+1573738272.147,491,485,None,Move,file system
+1573738272.155,492,486,None,Move,file system
+1573738272.165,492,487,None,Move,file system
+1573738272.171,492,490,None,Move,file system
+1573738272.1929998,492,491,None,Move,file system
+1573738272.199,492,493,None,Move,file system
+1573738272.204,492,494,None,Move,file system
+1573738272.209,492,495,None,Move,file system
+1573738272.218,492,496,None,Move,file system
+1573738272.226,492,498,None,Move,file system
+1573738272.234,492,498,None,Move,file system
+1573738272.242,492,499,None,Move,file system
+1573738272.2489998,492,499,None,Move,file system
+1573738272.258,492,501,None,Move,file system
+1573738272.266,492,501,None,Move,file system
+1573738272.272,492,502,None,Move,file system
+1573738272.279,492,503,None,Move,file system
+1573738272.288,492,504,None,Move,file system
+1573738272.296,491,505,None,Move,file system
+1573738272.304,491,505,None,Move,file system
+1573738272.311,491,507,None,Move,file system
+1573738272.319,490,507,None,Move,file system
+1573738272.3279998,490,508,None,Move,file system
+1573738272.336,490,509,None,Move,file system
+1573738272.341,490,510,None,Move,file system
+1573738272.349,490,511,None,Move,file system
+1573738272.357,490,511,None,Move,file system
+1573738272.365,490,512,None,Move,file system
+1573738272.373,490,512,None,Move,file system
+1573738272.381,490,514,None,Move,file system
+1573738272.389,490,514,None,Move,file system
+1573738272.397,490,515,None,Move,file system
+1573738272.405,490,516,None,Move,file system
+1573738272.419,490,517,None,Move,file system
+1573738272.427,490,517,None,Move,file system
+1573738272.69,490,518,None,Move,file system
+1573738272.695,491,518,None,Move,file system
+1573738272.7029998,492,519,None,Move,file system
+1573738272.711,493,520,None,Move,file system
+1573738272.72,495,521,None,Move,file system
+1573738272.7270002,496,522,None,Move,file system
+1573738272.735,498,522,None,Move,file system
+1573738272.744,500,523,None,Move,file system
+1573738272.752,501,524,None,Move,file system
+1573738272.76,503,525,None,Move,file system
+1573738272.765,505,525,None,Move,file system
+1573738272.774,506,526,None,Move,file system
+1573738272.782,507,526,None,Move,file system
+1573738272.79,509,526,None,Move,file system
+1573738272.798,510,526,None,Move,file system
+1573738272.806,511,526,None,Move,file system
+1573738272.814,512,526,None,Move,file system
+1573738272.822,514,526,None,Move,file system
+1573738272.83,515,526,None,Move,file system
+1573738272.835,516,526,None,Move,file system
+1573738272.844,516,526,None,Move,file system
+1573738272.8520002,517,526,None,Move,file system
+1573738272.859,518,526,None,Move,file system
+1573738272.867,519,526,None,Move,file system
+1573738272.8760002,520,526,None,Move,file system
+1573738272.883,522,526,None,Move,file system
+1573738272.891,523,526,None,Move,file system
+1573738272.899,524,526,None,Move,file system
+1573738272.905,526,526,None,Move,file system
+1573738272.913,527,526,None,Move,file system
+1573738272.921,528,526,None,Move,file system
+1573738272.929,529,526,None,Move,file system
+1573738272.937,531,526,None,Move,file system
+1573738272.945,532,526,None,Move,file system
+1573738272.954,533,526,None,Move,file system
+1573738272.961,535,526,None,Move,file system
+1573738272.97,537,526,None,Move,file system
+1573738272.975,540,526,None,Move,file system
+1573738272.984,542,526,None,Move,file system
+1573738272.9910002,545,525,None,Move,file system
+1573738273.0029998,548,524,None,Move,file system
+1573738273.008,551,523,None,Move,file system
+1573738273.015,552,523,None,Move,file system
+1573738273.0229998,557,522,None,Move,file system
+1573738273.031,558,522,None,Move,file system
+1573738273.04,561,522,None,Move,file system
+1573738273.045,562,522,None,Move,file system
+1573738273.054,563,522,None,Move,file system
+1573738273.062,565,521,None,Move,file system
+1573738273.07,567,521,None,Move,file system
+1573738273.077,569,521,None,Move,file system
+1573738273.0879998,570,521,None,Move,file system
+1573738273.093,572,520,None,Move,file system
+1573738273.101,574,519,None,Move,file system
+1573738273.109,576,518,None,Move,file system
+1573738273.115,578,517,None,Move,file system
+1573738273.1239998,580,516,None,Move,file system
+1573738273.131,581,515,None,Move,file system
+1573738273.139,583,514,None,Move,file system
+1573738273.147,584,513,None,Move,file system
+1573738273.155,585,512,None,Move,file system
+1573738273.163,587,511,None,Move,file system
+1573738273.1720002,588,509,None,Move,file system
+1573738273.179,589,509,None,Move,file system
+1573738273.189,589,507,None,Move,file system
+1573738273.195,589,507,None,Move,file system
+1573738273.201,590,507,None,Move,file system
+1573738273.288,590,506,None,Move,file system
+1573738273.303,590,505,None,Move,file system
+1573738273.312,591,503,None,Move,file system
+1573738273.319,591,501,None,Move,file system
+1573738273.325,591,500,None,Move,file system
+1573738273.334,591,500,None,Move,file system
+1573738273.342,591,498,None,Move,file system
+1573738273.35,591,497,None,Move,file system
+1573738273.357,591,496,None,Move,file system
+1573738273.365,591,495,None,Move,file system
+1573738273.3739998,591,493,None,Move,file system
+1573738273.381,591,493,None,Move,file system
+1573738273.389,591,491,None,Move,file system
+1573738273.395,591,490,None,Move,file system
+1573738273.403,590,489,None,Move,file system
+1573738273.4120002,590,488,None,Move,file system
+1573738273.419,590,487,None,Move,file system
+1573738273.428,589,486,None,Move,file system
+1573738273.435,588,485,None,Move,file system
+1573738273.4429998,588,485,None,Move,file system
+1573738273.452,587,484,None,Move,file system
+1573738273.459,586,483,None,Move,file system
+1573738273.465,585,481,None,Move,file system
+1573738273.4729998,584,480,None,Move,file system
+1573738273.482,583,478,None,Move,file system
+1573738273.4889998,581,477,None,Move,file system
+1573738273.4970002,580,476,None,Move,file system
+1573738273.505,578,475,None,Move,file system
+1573738273.5129998,577,474,None,Move,file system
+1573738273.521,576,474,None,Move,file system
+1573738273.543,573,473,None,Move,file system
+1573738273.548,569,473,None,Move,file system
+1573738273.553,567,473,None,Move,file system
+1573738273.559,566,473,None,Move,file system
+1573738273.5670002,563,473,None,Move,file system
+1573738273.576,560,473,None,Move,file system
+1573738273.584,557,474,None,Move,file system
+1573738273.591,553,475,None,Move,file system
+1573738273.599,549,476,None,Move,file system
+1573738273.605,544,477,None,Move,file system
+1573738273.6139998,541,477,None,Move,file system
+1573738273.6220002,536,478,None,Move,file system
+1573738273.629,532,478,None,Move,file system
+1573738273.6379998,526,479,None,Move,file system
+1573738273.645,522,480,None,Move,file system
+1573738273.653,516,482,None,Move,file system
+1573738273.661,510,484,None,Move,file system
+1573738273.669,503,486,None,Move,file system
+1573738273.675,498,488,None,Move,file system
+1573738273.6829998,489,490,None,Move,file system
+1573738273.691,482,492,None,Move,file system
+1573738273.709,467,496,None,Move,file system
+1573738273.715,459,497,None,Move,file system
+1573738273.7229998,453,497,None,Move,file system
+1573738273.731,448,497,None,Move,file system
+1573738273.7389998,442,497,None,Move,file system
+1573738273.745,437,497,None,Move,file system
+1573738273.754,433,497,None,Move,file system
+1573738273.7610002,430,497,None,Move,file system
+1573738273.769,427,497,None,Move,file system
+1573738273.778,425,496,None,Move,file system
+1573738273.786,423,496,None,Move,file system
+1573738273.793,422,495,None,Move,file system
+1573738273.803,421,495,None,Move,file system
+1573738273.81,419,495,None,Move,file system
+1573738273.8179998,419,494,None,Move,file system
+1573738273.823,418,494,None,Move,file system
+1573738273.831,417,493,None,Move,file system
+1573738273.839,416,493,None,Move,file system
+1573738273.847,416,493,None,Move,file system
+1573738273.856,415,493,None,Move,file system
+1573738273.863,415,492,None,Move,file system
+1573738273.8720002,414,492,None,Move,file system
+1573738273.879,413,491,None,Move,file system
+1573738273.887,412,491,None,Move,file system
+1573738273.894,411,490,None,Move,file system
+1573738273.901,410,490,None,Move,file system
+1573738273.909,410,489,None,Move,file system
+1573738273.917,409,489,None,Move,file system
+1573738273.925,409,489,None,Move,file system
+1573738273.9329998,407,488,None,Move,file system
+1573738273.941,407,488,None,Move,file system
+1573738273.949,406,488,None,Move,file system
+1573738273.958,406,487,None,Move,file system
+1573738273.9629998,406,486,None,Move,file system
+1573738273.971,405,486,None,Move,file system
+1573738273.979,405,486,None,Move,file system
+1573738273.988,404,486,None,Move,file system
+1573738273.995,404,485,None,Move,file system
+1573738274.0029998,403,485,None,Move,file system
+1573738274.0110002,402,484,None,Move,file system
+1573738274.019,402,484,None,Move,file system
+1573738274.0270002,401,483,None,Move,file system
+1573738274.034,401,482,None,Move,file system
+1573738274.042,399,481,None,Move,file system
+1573738274.049,399,480,None,Move,file system
+1573738274.0570002,398,479,None,Move,file system
+1573738274.065,398,478,None,Move,file system
+1573738274.073,397,477,None,Move,file system
+1573738274.081,396,476,None,Move,file system
+1573738274.089,396,475,None,Move,file system
+1573738274.097,395,474,None,Move,file system
+1573738274.103,394,473,None,Move,file system
+1573738274.127,394,471,None,Move,file system
+1573738274.133,393,471,None,Move,file system
+1573738274.1379998,393,469,None,Move,file system
+1573738274.143,393,468,None,Move,file system
+1573738274.151,392,467,None,Move,file system
+1573738274.159,392,466,None,Move,file system
+1573738274.167,391,466,None,Move,file system
+1573738274.173,391,465,None,Move,file system
+1573738274.181,391,464,None,Move,file system
+1573738274.189,391,463,None,Move,file system
+1573738274.197,390,463,None,Move,file system
+1573738274.205,390,463,None,Move,file system
+1573738274.435,390,462,None,Move,file system
+1573738274.447,390,462,None,Move,file system
+1573738274.4529998,391,461,None,Move,file system
+1573738274.461,392,460,None,Move,file system
+1573738274.469,394,458,None,Move,file system
+1573738274.4770002,395,457,None,Move,file system
+1573738274.485,397,456,None,Move,file system
+1573738274.508,398,455,None,Move,file system
+1573738274.515,402,453,None,Move,file system
+1573738274.52,404,452,None,Move,file system
+1573738274.525,406,450,None,Move,file system
+1573738274.531,407,450,None,Move,file system
+1573738274.539,409,449,None,Move,file system
+1573738274.5470002,410,448,None,Move,file system
+1573738274.555,411,448,None,Move,file system
+1573738274.563,413,448,None,Move,file system
+1573738274.571,414,448,None,Move,file system
+1573738274.579,415,448,None,Move,file system
+1573738274.587,417,448,None,Move,file system
+1573738274.595,420,448,None,Move,file system
+1573738274.601,421,448,None,Move,file system
+1573738274.609,422,448,None,Move,file system
+1573738274.617,424,448,None,Move,file system
+1573738274.625,426,448,None,Move,file system
+1573738274.633,428,450,None,Move,file system
+1573738274.641,432,450,None,Move,file system
+1573738274.649,435,452,None,Move,file system
+1573738274.657,441,454,None,Move,file system
+1573738274.665,447,456,None,Move,file system
+1573738274.671,453,458,None,Move,file system
+1573738274.691,464,460,None,Move,file system
+1573738274.697,469,460,None,Move,file system
+1573738274.7029998,473,460,None,Move,file system
+1573738274.711,478,460,None,Move,file system
+1573738274.719,480,460,None,Move,file system
+1573738274.7270002,482,460,None,Move,file system
+1573738274.735,483,460,None,Move,file system
+1573738274.7410002,484,460,None,Move,file system
+1573738274.7529998,485,460,None,Move,file system
+1573738274.7770002,485,460,Left,Pressed,file system
+1573738274.913,485,460,Left,Released,file system
+1573738274.947,485,460,None,Move,file system
+1573738274.955,485,461,None,Move,file system
+1573738274.967,485,461,None,Move,file system
+1573738274.9829998,485,462,None,Move,file system
+1573738274.9910002,486,463,None,Move,file system
+1573738274.9989998,486,464,None,Move,file system
+1573738275.0070002,486,464,None,Move,file system
+1573738275.015,487,465,None,Move,file system
+1573738275.021,488,466,None,Move,file system
+1573738275.031,489,468,None,Move,file system
+1573738275.0370002,489,468,None,Move,file system
+1573738275.045,491,469,None,Move,file system
+1573738275.053,491,471,None,Move,file system
+1573738275.061,493,472,None,Move,file system
+1573738275.069,493,474,None,Move,file system
+1573738275.077,494,475,None,Move,file system
+1573738275.085,495,476,None,Move,file system
+1573738275.091,495,478,None,Move,file system
+1573738275.099,497,479,None,Move,file system
+1573738275.107,497,481,None,Move,file system
+1573738275.115,498,482,None,Move,file system
+1573738275.123,499,483,None,Move,file system
+1573738275.131,500,485,None,Move,file system
+1573738275.139,501,486,None,Move,file system
+1573738275.147,502,487,None,Move,file system
+1573738275.155,504,489,None,Move,file system
+1573738275.161,505,490,None,Move,file system
+1573738275.169,507,492,None,Move,file system
+1573738275.177,508,493,None,Move,file system
+1573738275.194,514,496,None,Move,file system
+1573738275.201,518,498,None,Move,file system
+1573738275.209,524,500,None,Move,file system
+1573738275.217,531,502,None,Move,file system
+1573738275.225,539,503,None,Move,file system
+1573738275.231,548,503,None,Move,file system
+1573738275.2389998,560,504,None,Move,file system
+1573738275.2470002,574,504,None,Move,file system
+1573738275.255,590,505,None,Move,file system
+1573738275.2629998,615,505,None,Move,file system
+1573738275.271,643,503,None,Move,file system
+1573738275.279,674,500,None,Move,file system
+1573738275.2870002,710,496,None,Move,file system
+1573738275.295,749,495,None,Move,file system
+1573738275.301,787,495,None,Move,file system
+1573738275.309,826,497,None,Move,file system
+1573738275.3170002,866,497,None,Move,file system
+1573738275.325,905,496,None,Move,file system
+1573738275.333,944,493,None,Move,file system
+1573738275.341,985,489,None,Move,file system
+1573738275.349,1032,486,None,Move,file system
+1573738275.357,1073,484,None,Move,file system
+1573738275.365,1117,482,None,Move,file system
+1573738275.371,1161,480,None,Move,file system
+1573738275.379,1197,478,None,Move,file system
+1573738275.387,1230,479,None,Move,file system
+1573738275.395,1258,481,None,Move,file system
+1573738275.403,1282,481,None,Move,file system
+1573738275.411,1304,481,None,Move,file system
+1573738275.419,1319,483,None,Move,file system
+1573738275.427,1333,485,None,Move,file system
+1573738275.435,1342,486,None,Move,file system
+1573738275.441,1351,488,None,Move,file system
+1573738275.449,1357,488,None,Move,file system
+1573738275.457,1363,489,None,Move,file system
+1573738275.465,1367,490,None,Move,file system
+1573738275.476,1369,490,None,Move,file system
+1573738275.481,1371,490,None,Move,file system
+1573738275.4889998,1372,490,None,Move,file system
+1573738275.4970002,1373,490,None,Move,file system
+1573738275.505,1375,488,None,Move,file system
+1573738275.5110002,1376,487,None,Move,file system
+1573738275.519,1377,486,None,Move,file system
+1573738275.5270002,1378,486,None,Move,file system
+1573738275.535,1379,484,None,Move,file system
+1573738275.545,1380,484,None,Move,file system
+1573738275.551,1381,483,None,Move,file system
+1573738275.559,1381,483,None,Move,file system
+1573738275.5670002,1382,482,None,Move,file system
+1573738275.575,1382,481,None,Move,file system
+1573738275.583,1382,479,None,Move,file system
+1573738275.589,1383,479,None,Move,file system
+1573738275.6829998,1384,479,None,Move,file system
+1573738275.695,1385,479,None,Move,file system
+1573738275.7029998,1405,484,None,Move,file system
+1573738275.711,1431,489,None,Move,file system
+1573738275.719,1464,492,None,Move,file system
+1573738275.725,1490,495,None,Move,file system
+1573738275.7329998,1512,495,None,Move,file system
+1573738275.7410002,1529,495,None,Move,file system
+1573738275.7489998,1543,495,None,Move,file system
+1573738275.7570002,1562,497,None,Move,file system
+1573738275.765,1590,500,None,Move,file system
+1573738275.7729998,1626,503,None,Move,file system
+1573738275.781,1666,511,None,Move,file system
+1573738275.789,1708,518,None,Move,file system
+1573738275.795,1752,518,None,Move,file system
+1573738275.803,1799,515,None,Move,file system
+1573738275.811,1848,511,None,Move,file system
+1573738275.819,1903,505,None,Move,file system
+1573738275.827,1958,502,None,Move,file system
+1573738275.835,2020,502,None,Move,file system
+1573738275.843,2077,502,None,Move,file system
+1573738275.851,2134,500,None,Move,file system
+1573738275.859,2188,500,None,Move,file system
+1573738275.8660002,2238,500,None,Move,file system
+1573738275.873,2288,494,None,Move,file system
+1573738275.881,2330,488,None,Move,file system
+1573738275.889,2369,483,None,Move,file system
+1573738275.897,2407,474,None,Move,file system
+1573738275.905,2438,469,None,Move,file system
+1573738275.914,2464,466,None,Move,file system
+1573738275.921,2482,463,None,Move,file system
+1573738275.929,2495,462,None,Move,file system
+1573738275.935,2506,461,None,Move,file system
+1573738275.9429998,2513,459,None,Move,file system
+1573738275.951,2520,458,None,Move,file system
+1573738275.959,2524,457,None,Move,file system
+1573738275.967,2527,456,None,Move,file system
+1573738275.975,2529,455,None,Move,file system
+1573738275.9829998,2530,454,None,Move,file system
+1573738275.9910002,2532,453,None,Move,file system
+1573738275.9989998,2533,452,None,Move,file system
+1573738276.005,2534,451,None,Move,file system
+1573738276.0129998,2535,450,None,Move,file system
+1573738276.083,2535,450,None,Move,file system
+1573738276.095,2536,449,None,Move,file system
+1573738276.103,2537,448,None,Move,file system
+1573738276.111,2539,446,None,Move,file system
+1573738276.119,2541,446,None,Move,file system
+1573738276.127,2544,445,None,Move,file system
+1573738276.135,2550,444,None,Move,file system
+1573738276.143,2555,443,None,Move,file system
+1573738276.149,2561,442,None,Move,file system
+1573738276.157,2566,441,None,Move,file system
+1573738276.165,2571,440,None,Move,file system
+1573738276.173,2575,440,None,Move,file system
+1573738276.181,2580,440,None,Move,file system
+1573738276.189,2586,440,None,Move,file system
+1573738276.197,2592,442,None,Move,file system
+1573738276.205,2597,444,None,Move,file system
+1573738276.2129998,2603,446,None,Move,file system
+1573738276.219,2608,449,None,Move,file system
+1573738276.2270002,2612,451,None,Move,file system
+1573738276.235,2615,452,None,Move,file system
+1573738276.2429998,2616,454,None,Move,file system
+1573738276.2510002,2618,457,None,Move,file system
+1573738276.2610002,2619,458,None,Move,file system
+1573738276.2670002,2620,459,None,Move,file system
+1573738276.275,2621,460,None,Move,file system
+1573738276.285,2621,461,None,Move,file system
+1573738276.309,2622,461,None,Move,file system
+1573738276.333,2622,461,Left,Pressed,file system
+1573738276.469,2622,461,Left,Released,development
+1573738276.515,2622,461,None,Move,development

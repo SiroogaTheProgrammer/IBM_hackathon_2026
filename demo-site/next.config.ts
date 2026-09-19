@@ -11,6 +11,14 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
+
+  // @tensorflow/tfjs-node loads a native .node addon at runtime and resolves
+  // it by path, which the bundler cannot follow. Marking it external makes the
+  // route handlers `require` it from node_modules instead. Only the autoencoder
+  // (src/lib/biometrics/autoencoder/) touches it, and it degrades to the pure-JS
+  // backend where the native binary is unavailable - so a host that cannot ship
+  // native addons still works, just slower.
+  serverExternalPackages: ["@tensorflow/tfjs-node"],
 };
 
 export default nextConfig;

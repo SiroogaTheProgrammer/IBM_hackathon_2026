@@ -1,0 +1,2934 @@
+client_timestamp,x,y,button,state,window
+1572002532.153,479,443,None,Move,development
+1572002532.163,485,443,None,Move,development
+1572002532.168,492,443,None,Move,development
+1572002532.175,499,444,None,Move,development
+1572002532.184,502,444,None,Move,development
+1572002532.191,504,444,None,Move,development
+1572002532.2,506,444,None,Move,development
+1572002532.208,506,444,None,Move,development
+1572002532.214,507,444,None,Move,development
+1572002584.633,507,444,None,Move,development
+1572002584.644,503,446,None,Move,development
+1572002584.649,500,448,None,Move,development
+1572002584.655,496,451,None,Move,development
+1572002584.664,494,455,None,Move,development
+1572002584.6720002,492,458,None,Move,development
+1572002584.68,491,459,None,Move,development
+1572002584.688,491,460,None,Move,development
+1572002584.699,491,460,None,Move,development
+1572002584.708,492,462,None,Move,development
+1572002584.7129998,495,465,None,Move,development
+1572002584.721,499,467,None,Move,development
+1572002584.73,506,469,None,Move,development
+1572002584.738,512,473,None,Move,development
+1572002584.746,517,475,None,Move,development
+1572002584.754,522,478,None,Move,development
+1572002584.762,524,480,None,Move,development
+1572002584.77,525,482,None,Move,development
+1572002584.775,527,483,None,Move,development
+1572002584.784,531,483,None,Move,development
+1572002584.792,539,484,None,Move,development
+1572002584.8,550,485,None,Move,development
+1572002584.8079998,569,488,None,Move,development
+1572002584.816,605,494,None,Move,development
+1572002584.824,649,505,None,Move,development
+1572002584.832,695,511,None,Move,development
+1572002584.837,740,527,None,Move,development
+1572002584.8579998,775,544,None,Move,development
+1572002584.8620002,804,562,None,Move,development
+1572002584.869,807,564,None,Move,development
+1572002584.8779998,809,566,None,Move,development
+1572002584.8860002,810,566,None,Move,development
+1572002584.891,811,567,None,Move,development
+1572002584.9,813,568,None,Move,development
+1572002584.907,815,569,None,Move,development
+1572002584.916,815,569,None,Move,development
+1572002585.0270002,815,569,None,Move,development
+1572002585.045,815,569,None,Move,development
+1572002585.082,815,569,None,Move,development
+1572002585.0979998,815,568,None,Move,development
+1572002585.105,817,562,None,Move,development
+1572002585.1139998,819,555,None,Move,development
+1572002585.121,822,546,None,Move,development
+1572002585.127,823,538,None,Move,development
+1572002585.1360002,824,531,None,Move,development
+1572002585.144,825,529,None,Move,development
+1572002585.151,825,528,None,Move,development
+1572002585.16,825,527,None,Move,development
+1572002585.168,825,524,None,Move,development
+1572002585.1829998,825,523,None,Move,development
+1572002585.357,825,523,None,Move,development
+1572002585.437,825,524,None,Move,development
+1572002585.456,821,525,None,Move,development
+1572002585.468,820,522,None,Move,development
+1572002585.475,818,522,None,Move,development
+1572002585.481,818,523,None,Move,development
+1572002585.504,818,523,None,Move,development
+1572002585.512,819,522,None,Move,development
+1572002585.887,820,522,None,Move,development
+1572002585.895,822,522,None,Move,development
+1572002585.903,825,522,None,Move,development
+1572002585.909,825,522,None,Move,development
+1572002585.9329998,826,522,None,Move,development
+1572002585.941,826,522,None,Move,development
+1572002585.949,824,521,None,Move,development
+1572002585.957,817,519,None,Move,development
+1572002585.965,812,517,None,Move,development
+1572002585.971,807,512,None,Move,development
+1572002585.979,805,507,None,Move,development
+1572002585.9870002,804,505,None,Move,development
+1572002585.995,803,505,None,Move,development
+1572002586.0029998,801,505,None,Move,development
+1572002586.0110002,799,503,None,Move,development
+1572002586.019,797,502,None,Move,development
+1572002586.025,796,500,None,Move,development
+1572002586.033,795,498,None,Move,development
+1572002586.041,794,497,None,Move,development
+1572002586.049,793,497,None,Move,development
+1572002586.0570002,793,495,None,Move,development
+1572002586.065,792,494,None,Move,development
+1572002586.073,791,493,None,Move,development
+1572002586.081,789,491,None,Move,development
+1572002586.087,787,489,None,Move,development
+1572002586.095,785,487,None,Move,development
+1572002586.103,784,485,None,Move,development
+1572002586.111,781,481,None,Move,development
+1572002586.119,778,476,None,Move,development
+1572002586.127,776,470,None,Move,development
+1572002586.135,774,466,None,Move,development
+1572002586.1420002,772,459,None,Move,development
+1572002586.149,769,452,None,Move,development
+1572002586.157,767,446,None,Move,development
+1572002586.165,765,439,None,Move,development
+1572002586.173,763,436,None,Move,development
+1572002586.181,761,433,None,Move,development
+1572002586.189,759,429,None,Move,development
+1572002586.197,757,425,None,Move,development
+1572002586.2029998,755,421,None,Move,development
+1572002586.211,753,418,None,Move,development
+1572002586.219,751,416,None,Move,development
+1572002586.2270002,749,414,None,Move,development
+1572002586.235,747,413,None,Move,development
+1572002586.2429998,747,411,None,Move,development
+1572002586.2510002,745,409,None,Move,development
+1572002586.2570002,744,408,None,Move,development
+1572002586.265,744,408,None,Move,development
+1572002586.2770002,744,407,None,Move,development
+1572002586.2970002,744,407,None,Move,development
+1572002586.305,745,406,None,Move,development
+1572002586.313,746,406,None,Move,development
+1572002586.319,748,406,None,Move,development
+1572002586.327,748,406,None,Move,development
+1572002586.335,749,406,None,Move,development
+1572002586.343,750,406,None,Move,development
+1572002586.351,752,407,None,Move,development
+1572002586.359,753,409,None,Move,development
+1572002586.367,755,411,None,Move,development
+1572002586.375,757,412,None,Move,development
+1572002586.381,758,412,None,Move,development
+1572002586.393,758,412,None,Move,development
+1572002588.681,762,413,None,Move,development
+1572002588.6929998,782,415,None,Move,development
+1572002588.698,814,416,None,Move,development
+1572002588.705,855,416,None,Move,development
+1572002588.711,916,419,None,Move,development
+1572002588.72,984,421,None,Move,development
+1572002588.7270002,1066,426,None,Move,development
+1572002588.736,1155,432,None,Move,development
+1572002588.744,1250,430,None,Move,development
+1572002588.7510002,1342,437,None,Move,development
+1572002588.76,1428,447,None,Move,development
+1572002588.765,1496,450,None,Move,development
+1572002588.774,1540,450,None,Move,development
+1572002588.782,1575,449,None,Move,development
+1572002588.79,1613,445,None,Move,development
+1572002588.798,1652,443,None,Move,development
+1572002588.805,1686,443,None,Move,development
+1572002588.813,1714,443,None,Move,development
+1572002588.822,1739,447,None,Move,development
+1572002588.827,1759,450,None,Move,development
+1572002588.836,1772,453,None,Move,development
+1572002588.844,1782,454,None,Move,development
+1572002588.8520002,1786,455,None,Move,development
+1572002588.86,1787,455,None,Move,development
+1572002588.91,1787,455,None,Move,development
+1572002588.925,1786,454,None,Move,development
+1572002588.98,1786,454,None,Move,development
+1572002588.992,1785,453,None,Move,development
+1572002589.0010002,1785,452,None,Move,development
+1572002589.008,1785,448,None,Move,development
+1572002589.015,1785,445,None,Move,development
+1572002589.021,1786,443,None,Move,development
+1572002589.029,1788,442,None,Move,development
+1572002589.038,1788,440,None,Move,development
+1572002589.046,1790,438,None,Move,development
+1572002589.054,1793,437,None,Move,development
+1572002589.061,1796,435,None,Move,development
+1572002589.0670002,1802,434,None,Move,development
+1572002589.075,1809,433,None,Move,development
+1572002589.083,1819,432,None,Move,development
+1572002589.091,1828,432,None,Move,development
+1572002589.099,1835,431,None,Move,development
+1572002589.107,1842,431,None,Move,development
+1572002589.115,1848,431,None,Move,development
+1572002589.121,1854,431,None,Move,development
+1572002589.129,1856,431,None,Move,development
+1572002589.137,1858,431,None,Move,development
+1572002589.145,1859,431,None,Move,development
+1572002589.153,1860,431,None,Move,development
+1572002589.161,1862,431,None,Move,development
+1572002589.169,1863,431,None,Move,development
+1572002589.177,1864,431,None,Move,development
+1572002589.1829998,1865,431,None,Move,development
+1572002589.191,1868,431,None,Move,development
+1572002589.199,1869,430,None,Move,development
+1572002589.221,1870,430,None,Move,development
+1572002589.226,1870,430,None,Move,development
+1572002589.389,1870,429,None,Move,development
+1572002589.401,1869,429,None,Move,development
+1572002589.5089998,1869,429,None,Move,development
+1572002589.5170002,1870,429,None,Move,development
+1572002589.525,1872,429,None,Move,development
+1572002589.533,1873,429,None,Move,development
+1572002589.539,1874,429,None,Move,development
+1572002589.5470002,1876,430,None,Move,development
+1572002589.555,1877,430,None,Move,development
+1572002589.563,1879,430,None,Move,development
+1572002589.571,1880,430,None,Move,development
+1572002589.579,1881,430,None,Move,development
+1572002589.591,1882,430,None,Move,development
+1572002589.597,1883,430,None,Move,development
+1572002589.679,1883,430,None,Move,development
+1572002589.948,1883,430,Left,Pressed,development
+1572002589.948,1883,430,None,Drag,development
+1572002589.957,1883,430,None,Drag,development
+1572002589.966,1882,422,None,Drag,development
+1572002589.974,1878,412,None,Drag,development
+1572002589.981,1875,400,None,Drag,development
+1572002589.9889998,1872,386,None,Drag,development
+1572002589.9970002,1871,373,None,Drag,development
+1572002590.006,1868,356,None,Drag,development
+1572002590.0129998,1867,338,None,Drag,development
+1572002590.019,1865,321,None,Drag,development
+1572002590.0270002,1863,304,None,Drag,development
+1572002590.04,1860,287,None,Drag,development
+1572002590.046,1856,271,None,Drag,development
+1572002590.051,1853,254,None,Drag,development
+1572002590.059,1851,233,None,Drag,development
+1572002590.0670002,1848,211,None,Drag,development
+1572002590.075,1847,189,None,Drag,development
+1572002590.081,1845,181,None,Drag,development
+1572002590.09,1845,177,None,Drag,development
+1572002590.0979998,1845,175,None,Drag,development
+1572002590.105,1845,174,None,Drag,development
+1572002590.113,1845,172,None,Drag,development
+1572002590.121,1845,171,None,Drag,development
+1572002590.13,1845,171,None,Drag,development
+1572002590.135,1845,170,None,Drag,development
+1572002590.2329998,1845,170,None,Drag,development
+1572002590.26,1845,170,None,Drag,development
+1572002590.325,1844,168,None,Drag,development
+1572002590.34,1843,167,None,Drag,development
+1572002590.349,1841,163,None,Drag,development
+1572002590.3579998,1841,161,None,Drag,development
+1572002590.3660002,1840,160,None,Drag,development
+1572002590.3739998,1839,158,None,Drag,development
+1572002590.379,1839,156,None,Drag,development
+1572002590.3879998,1839,156,None,Drag,development
+1572002590.395,1839,155,None,Drag,development
+1572002590.404,1838,154,None,Drag,development
+1572002590.42,1838,154,None,Drag,development
+1572002590.438,1838,153,None,Drag,development
+1572002590.705,1838,153,None,Drag,development
+1572002590.7129998,1838,156,None,Drag,development
+1572002590.721,1839,161,None,Drag,development
+1572002590.729,1842,169,None,Drag,development
+1572002590.7370002,1844,176,None,Drag,development
+1572002590.7429998,1845,183,None,Drag,development
+1572002590.7510002,1846,190,None,Drag,development
+1572002590.7589998,1849,200,None,Drag,development
+1572002590.7670002,1852,212,None,Drag,development
+1572002590.775,1854,224,None,Drag,development
+1572002590.783,1856,239,None,Drag,development
+1572002590.791,1858,254,None,Drag,development
+1572002590.799,1861,271,None,Drag,development
+1572002590.805,1864,288,None,Drag,development
+1572002590.813,1867,304,None,Drag,development
+1572002590.821,1867,319,None,Drag,development
+1572002590.829,1867,334,None,Drag,development
+1572002590.837,1867,349,None,Drag,development
+1572002590.845,1867,363,None,Drag,development
+1572002590.853,1865,374,None,Drag,development
+1572002590.86,1864,385,None,Drag,development
+1572002590.867,1864,395,None,Drag,development
+1572002590.875,1864,405,None,Drag,development
+1572002590.883,1864,413,None,Drag,development
+1572002590.891,1864,420,None,Drag,development
+1572002590.899,1864,425,None,Drag,development
+1572002590.907,1864,430,None,Drag,development
+1572002590.915,1864,436,None,Drag,development
+1572002590.921,1864,443,None,Drag,development
+1572002590.929,1863,450,None,Drag,development
+1572002590.937,1862,457,None,Drag,development
+1572002590.945,1860,464,None,Drag,development
+1572002590.9529998,1859,471,None,Drag,development
+1572002590.961,1858,476,None,Drag,development
+1572002590.969,1858,483,None,Drag,development
+1572002590.975,1857,488,None,Drag,development
+1572002590.9829998,1857,492,None,Drag,development
+1572002590.9910002,1857,495,None,Drag,development
+1572002590.9989998,1857,497,None,Drag,development
+1572002591.0070002,1857,500,None,Drag,development
+1572002591.015,1857,502,None,Drag,development
+1572002591.0229998,1857,503,None,Drag,development
+1572002591.031,1857,506,None,Drag,development
+1572002591.0370002,1857,509,None,Drag,development
+1572002591.046,1857,511,None,Drag,development
+1572002591.053,1857,513,None,Drag,development
+1572002591.062,1857,514,None,Drag,development
+1572002591.07,1858,516,None,Drag,development
+1572002591.0779998,1858,518,None,Drag,development
+1572002591.086,1858,519,None,Drag,development
+1572002591.094,1858,519,None,Drag,development
+1572002591.1,1859,520,None,Drag,development
+1572002591.107,1859,521,None,Drag,development
+1572002591.12,1859,523,None,Drag,development
+1572002591.1320002,1859,527,None,Drag,development
+1572002591.139,1859,530,None,Drag,development
+1572002591.147,1860,534,None,Drag,development
+1572002591.153,1860,539,None,Drag,development
+1572002591.161,1861,543,None,Drag,development
+1572002591.169,1862,548,None,Drag,development
+1572002591.184,1862,551,None,Drag,development
+1572002591.1920002,1862,556,None,Drag,development
+1572002591.199,1864,561,None,Drag,development
+1572002591.204,1864,567,None,Drag,development
+1572002591.209,1864,572,None,Drag,development
+1572002591.228,1864,580,None,Drag,development
+1572002591.232,1864,587,None,Drag,development
+1572002591.24,1864,594,None,Drag,development
+1572002591.248,1864,601,None,Drag,development
+1572002591.255,1863,608,None,Drag,development
+1572002591.264,1863,615,None,Drag,development
+1572002591.272,1863,621,None,Drag,development
+1572002591.2770002,1863,628,None,Drag,development
+1572002591.2870002,1862,634,None,Drag,development
+1572002591.294,1861,639,None,Drag,development
+1572002591.302,1860,643,None,Drag,development
+1572002591.31,1859,647,None,Drag,development
+1572002591.3179998,1857,650,None,Drag,development
+1572002591.325,1857,651,None,Drag,development
+1572002591.332,1855,654,None,Drag,development
+1572002591.34,1855,655,None,Drag,development
+1572002591.347,1854,655,None,Drag,development
+1572002591.3479998,1854,655,Left,Released,development
+1572002591.6120002,1853,655,None,Move,development
+1572002591.62,1848,654,None,Move,development
+1572002591.6279998,1839,651,None,Move,development
+1572002591.633,1828,649,None,Move,development
+1572002591.641,1816,646,None,Move,development
+1572002591.65,1801,642,None,Move,development
+1572002591.657,1777,637,None,Move,development
+1572002591.666,1734,628,None,Move,development
+1572002591.674,1680,614,None,Move,development
+1572002591.6820002,1609,591,None,Move,development
+1572002591.69,1541,571,None,Move,development
+1572002591.695,1474,557,None,Move,development
+1572002591.704,1405,563,None,Move,development
+1572002591.712,1344,580,None,Move,development
+1572002591.719,1297,594,None,Move,development
+1572002591.728,1256,606,None,Move,development
+1572002591.735,1219,617,None,Move,development
+1572002591.7429998,1183,621,None,Move,development
+1572002591.752,1148,625,None,Move,development
+1572002591.7570002,1102,629,None,Move,development
+1572002591.765,1040,639,None,Move,development
+1572002591.7729998,982,653,None,Move,development
+1572002591.782,921,652,None,Move,development
+1572002591.789,869,630,None,Move,development
+1572002591.798,826,608,None,Move,development
+1572002591.806,800,593,None,Move,development
+1572002591.814,786,584,None,Move,development
+1572002591.819,775,578,None,Move,development
+1572002591.827,769,574,None,Move,development
+1572002591.836,767,572,None,Move,development
+1572002591.843,767,572,None,Move,development
+1572002591.972,767,571,None,Move,development
+1572002591.982,763,564,None,Move,development
+1572002591.9870002,758,556,None,Move,development
+1572002591.995,751,549,None,Move,development
+1572002592.0010002,745,541,None,Move,development
+1572002592.0089998,738,533,None,Move,development
+1572002592.018,731,526,None,Move,development
+1572002592.025,723,515,None,Move,development
+1572002592.034,714,504,None,Move,development
+1572002592.042,700,492,None,Move,development
+1572002592.05,685,481,None,Move,development
+1572002592.055,674,471,None,Move,development
+1572002592.064,667,463,None,Move,development
+1572002592.072,659,455,None,Move,development
+1572002592.08,653,449,None,Move,development
+1572002592.0879998,645,442,None,Move,development
+1572002592.096,637,435,None,Move,development
+1572002592.103,631,429,None,Move,development
+1572002592.1120002,626,423,None,Move,development
+1572002592.117,621,417,None,Move,development
+1572002592.1260002,616,413,None,Move,development
+1572002592.1339998,611,409,None,Move,development
+1572002592.1420002,604,404,None,Move,development
+1572002592.15,596,396,None,Move,development
+1572002592.158,588,390,None,Move,development
+1572002592.165,582,385,None,Move,development
+1572002592.174,576,380,None,Move,development
+1572002592.179,573,376,None,Move,development
+1572002592.188,570,374,None,Move,development
+1572002592.196,568,371,None,Move,development
+1572002592.2029998,566,369,None,Move,development
+1572002592.211,565,367,None,Move,development
+1572002592.219,561,361,None,Move,development
+1572002592.228,559,357,None,Move,development
+1572002592.235,557,353,None,Move,development
+1572002592.2410002,555,350,None,Move,development
+1572002592.2489998,554,348,None,Move,development
+1572002592.2589998,552,347,None,Move,development
+1572002592.265,551,345,None,Move,development
+1572002592.274,549,343,None,Move,development
+1572002592.282,547,342,None,Move,development
+1572002592.29,547,341,None,Move,development
+1572002592.295,546,340,None,Move,development
+1572002592.304,545,339,None,Move,development
+1572002592.312,544,338,None,Move,development
+1572002592.32,543,337,None,Move,development
+1572002592.3279998,542,336,None,Move,development
+1572002592.336,541,335,None,Move,development
+1572002592.344,541,335,None,Move,development
+1572002592.3520002,540,335,None,Move,development
+1572002592.357,539,335,None,Move,development
+1572002592.3820002,539,334,None,Move,development
+1572002592.406,539,333,None,Move,development
+1572002592.42,539,332,None,Move,development
+1572002592.435,539,332,None,Move,development
+1572002592.536,539,332,Left,Pressed,development
+1572002592.536,539,332,None,Drag,development
+1572002592.536,539,332,Left,Released,development
+1572002592.556,539,332,None,Move,development
+1572002592.6020002,539,333,None,Move,development
+1572002592.6179998,540,334,None,Move,development
+1572002592.625,540,334,None,Move,development
+1572002592.633,540,334,None,Move,development
+1572002592.6829998,540,335,None,Move,development
+1572002592.695,540,336,None,Move,development
+1572002592.7029998,540,336,None,Move,development
+1572002592.712,540,337,None,Move,development
+1572002592.717,540,339,None,Move,development
+1572002592.725,541,340,None,Move,development
+1572002592.7329998,541,342,None,Move,development
+1572002592.7410002,541,344,None,Move,development
+1572002592.75,541,345,None,Move,development
+1572002592.7570002,542,347,None,Move,development
+1572002592.765,543,349,None,Move,development
+1572002592.774,544,350,None,Move,development
+1572002592.779,545,352,None,Move,development
+1572002592.7870002,546,354,None,Move,development
+1572002592.795,547,355,None,Move,development
+1572002592.804,548,356,None,Move,development
+1572002592.812,549,357,None,Move,development
+1572002592.819,549,357,None,Move,development
+1572002592.8279998,551,357,None,Move,development
+1572002592.836,552,357,None,Move,development
+1572002592.841,553,358,None,Move,development
+1572002592.85,555,358,None,Move,development
+1572002592.857,556,358,None,Move,development
+1572002592.869,557,358,None,Move,development
+1572002592.8779998,558,358,None,Move,development
+1572002592.8860002,558,358,None,Move,development
+1572002592.893,560,360,None,Move,development
+1572002592.9,562,362,None,Move,development
+1572002592.907,563,363,None,Move,development
+1572002592.915,564,363,None,Move,development
+1572002592.923,565,363,None,Move,development
+1572002592.931,566,364,None,Move,development
+1572002592.962,566,364,None,Move,development
+1572002592.97,567,365,None,Move,development
+1572002592.9770002,568,365,None,Move,development
+1572002592.986,568,366,None,Move,development
+1572002592.994,569,366,None,Move,development
+1572002593.0010002,571,368,None,Move,development
+1572002593.01,571,368,None,Move,development
+1572002593.064,572,369,None,Move,development
+1572002593.1020002,574,370,None,Move,development
+1572002593.1179998,574,371,None,Move,development
+1572002593.57,575,371,None,Move,development
+1572002593.581,575,370,None,Move,development
+1572002593.589,575,369,None,Move,development
+1572002593.597,573,368,None,Move,development
+1572002593.605,571,366,None,Move,development
+1572002593.613,570,365,None,Move,development
+1572002593.619,569,365,None,Move,development
+1572002593.627,569,364,None,Move,development
+1572002593.635,569,363,None,Move,development
+1572002593.643,569,362,None,Move,development
+1572002593.651,568,362,None,Move,development
+1572002593.938,568,362,None,Move,development
+1572002593.957,570,362,None,Move,development
+1572002593.968,578,360,None,Move,development
+1572002593.976,587,359,None,Move,development
+1572002593.9829998,589,363,None,Move,development
+1572002593.992,589,365,None,Move,development
+1572002594.0,589,367,None,Move,development
+1572002594.008,588,370,None,Move,development
+1572002594.034,588,370,None,Move,development
+1572002594.042,588,370,None,Move,development
+1572002594.4420002,588,370,None,Move,development
+1572002594.467,588,370,None,Move,development
+1572002594.476,587,369,None,Move,development
+1572002594.484,586,367,None,Move,development
+1572002594.492,586,365,None,Move,development
+1572002594.5,586,364,None,Move,development
+1572002594.508,586,364,None,Move,development
+1572002594.5129998,586,364,None,Move,development
+1572002594.522,586,363,None,Move,development
+1572002594.5579998,586,362,None,Move,development
+1572002594.566,587,362,None,Move,development
+1572002594.571,587,361,None,Move,development
+1572002594.579,587,360,None,Move,development
+1572002594.587,587,360,None,Move,development
+1572002594.595,586,360,None,Move,development
+1572002594.603,586,359,None,Move,development
+1572002594.6160002,585,359,None,Move,development
+1572002594.623,584,359,None,Move,development
+1572002594.629,584,359,None,Move,development
+1572002594.6379998,584,357,None,Move,development
+1572002594.654,584,357,None,Move,development
+1572002594.6620002,583,357,None,Move,development
+1572002594.67,582,356,None,Move,development
+1572002594.677,581,355,None,Move,development
+1572002594.685,580,354,None,Move,development
+1572002594.691,579,354,None,Move,development
+1572002594.7029998,579,353,None,Move,development
+1572002594.712,578,352,None,Move,development
+1572002594.7229998,577,352,None,Move,development
+1572002594.74,576,352,None,Move,development
+1572002594.748,576,352,None,Move,development
+1572002594.754,575,352,None,Move,development
+1572002594.762,574,352,None,Move,development
+1572002594.774,574,352,None,Move,development
+1572002594.782,573,352,None,Move,development
+1572002594.802,572,352,None,Move,development
+1572002594.8070002,571,352,None,Move,development
+1572002594.815,571,352,None,Move,development
+1572002594.824,569,352,None,Move,development
+1572002594.831,568,352,None,Move,development
+1572002594.944,568,352,None,Move,development
+1572002594.956,567,352,None,Move,development
+1572002594.9629998,566,352,None,Move,development
+1572002595.234,566,352,None,Move,development
+1572002595.3820002,567,352,None,Move,development
+1572002595.3979998,568,352,None,Move,development
+1572002595.405,570,352,None,Move,development
+1572002595.4120002,571,352,None,Move,development
+1572002595.419,573,352,None,Move,development
+1572002595.428,575,352,None,Move,development
+1572002595.436,577,350,None,Move,development
+1572002595.444,577,349,None,Move,development
+1572002595.452,577,347,None,Move,development
+1572002595.459,577,345,None,Move,development
+1572002595.467,576,343,None,Move,development
+1572002595.474,574,342,None,Move,development
+1572002595.482,572,341,None,Move,development
+1572002595.803,572,341,None,Move,development
+1572002595.811,570,343,None,Move,development
+1572002595.819,568,345,None,Move,development
+1572002595.825,566,346,None,Move,development
+1572002595.833,565,348,None,Move,development
+1572002595.845,565,349,None,Move,development
+1572002595.853,564,350,None,Move,development
+1572002595.958,564,351,None,Move,development
+1572002596.012,564,351,None,Move,development
+1572002596.813,564,351,None,Move,development
+1572002597.534,564,351,None,Move,development
+1572002598.6920002,564,352,None,Move,development
+1572002598.707,564,352,None,Move,development
+1572002598.716,566,352,None,Move,development
+1572002598.721,571,352,None,Move,development
+1572002598.73,578,352,None,Move,development
+1572002598.738,588,352,None,Move,development
+1572002598.745,599,352,None,Move,development
+1572002598.754,616,352,None,Move,development
+1572002598.762,634,352,None,Move,development
+1572002598.77,654,352,None,Move,development
+1572002598.778,682,354,None,Move,development
+1572002598.783,717,354,None,Move,development
+1572002598.792,754,354,None,Move,development
+1572002598.8,802,356,None,Move,development
+1572002598.8070002,866,376,None,Move,development
+1572002598.815,931,396,None,Move,development
+1572002598.824,994,408,None,Move,development
+1572002598.832,1043,415,None,Move,development
+1572002598.84,1091,428,None,Move,development
+1572002598.845,1126,432,None,Move,development
+1572002598.853,1152,435,None,Move,development
+1572002598.8620002,1169,438,None,Move,development
+1572002598.869,1181,441,None,Move,development
+1572002598.877,1189,443,None,Move,development
+1572002598.885,1196,445,None,Move,development
+1572002598.894,1199,445,None,Move,development
+1572002598.899,1200,445,None,Move,development
+1572002599.064,1200,445,None,Move,development
+1572002599.081,1199,445,None,Move,development
+1572002599.089,1196,443,None,Move,development
+1572002599.097,1194,441,None,Move,development
+1572002599.105,1192,440,None,Move,development
+1572002599.113,1190,438,None,Move,development
+1572002599.121,1189,436,None,Move,development
+1572002599.129,1187,434,None,Move,development
+1572002599.137,1185,432,None,Move,development
+1572002599.143,1183,431,None,Move,development
+1572002599.1520002,1182,429,None,Move,development
+1572002599.16,1180,427,None,Move,development
+1572002599.167,1178,425,None,Move,development
+1572002599.176,1176,424,None,Move,development
+1572002599.184,1175,423,None,Move,development
+1572002599.1920002,1173,421,None,Move,development
+1572002599.199,1171,420,None,Move,development
+1572002599.205,1170,420,None,Move,development
+1572002599.5229998,1170,419,None,Move,development
+1572002599.533,1169,419,None,Move,development
+1572002599.6360002,1168,419,None,Move,development
+1572002599.654,1165,415,None,Move,development
+1572002599.671,1161,411,None,Move,development
+1572002599.681,1159,409,None,Move,development
+1572002599.688,1158,406,None,Move,development
+1572002599.694,1156,404,None,Move,development
+1572002599.7,1154,402,None,Move,development
+1572002599.705,1152,401,None,Move,development
+1572002599.714,1150,399,None,Move,development
+1572002599.722,1149,397,None,Move,development
+1572002599.73,1147,395,None,Move,development
+1572002599.738,1145,394,None,Move,development
+1572002599.7429998,1144,393,None,Move,development
+1572002599.7510002,1144,392,None,Move,development
+1572002599.764,1142,391,None,Move,development
+1572002599.771,1141,390,None,Move,development
+1572002599.7770002,1140,388,None,Move,development
+1572002599.783,1139,386,None,Move,development
+1572002599.792,1138,386,None,Move,development
+1572002599.803,1137,385,None,Move,development
+1572002599.813,1136,385,None,Move,development
+1572002599.821,1135,384,None,Move,development
+1572002599.83,1133,382,None,Move,development
+1572002599.8379998,1131,380,None,Move,development
+1572002599.845,1130,380,None,Move,development
+1572002599.853,1128,378,None,Move,development
+1572002599.86,1126,377,None,Move,development
+1572002599.867,1124,375,None,Move,development
+1572002599.8760002,1122,373,None,Move,development
+1572002599.8879998,1115,369,None,Move,development
+1572002599.899,1106,362,None,Move,development
+1572002599.907,1102,359,None,Move,development
+1572002599.915,1094,351,None,Move,development
+1572002599.921,1088,348,None,Move,development
+1572002599.929,1081,343,None,Move,development
+1572002599.938,1073,338,None,Move,development
+1572002599.946,1067,336,None,Move,development
+1572002599.958,1063,332,None,Move,development
+1572002599.966,1060,330,None,Move,development
+1572002599.972,1057,329,None,Move,development
+1572002599.978,1056,328,None,Move,development
+1572002599.9829998,1054,326,None,Move,development
+1572002599.9910002,1052,325,None,Move,development
+1572002600.004,1052,324,None,Move,development
+1572002600.0110002,1051,324,None,Move,development
+1572002600.0270002,1050,324,None,Move,development
+1572002600.039,1049,324,None,Move,development
+1572002600.0470002,1049,324,None,Move,development
+1572002600.053,1047,323,None,Move,development
+1572002600.062,1045,322,None,Move,development
+1572002600.07,1044,320,None,Move,development
+1572002600.0779998,1042,319,None,Move,development
+1572002600.085,1040,319,None,Move,development
+1572002600.094,1039,318,None,Move,development
+1572002600.099,1037,317,None,Move,development
+1572002600.107,1036,316,None,Move,development
+1572002600.115,1035,315,None,Move,development
+1572002600.123,1034,315,None,Move,development
+1572002600.131,1032,314,None,Move,development
+1572002600.139,1031,313,None,Move,development
+1572002600.147,1030,313,None,Move,development
+1572002600.156,1029,312,None,Move,development
+1572002600.168,1028,312,None,Move,development
+1572002600.2429998,1028,311,None,Move,development
+1572002600.2610002,1028,310,None,Move,development
+1572002600.271,1027,309,None,Move,development
+1572002600.278,1027,309,None,Move,development
+1572002600.313,1027,307,None,Move,development
+1572002600.329,1026,307,None,Move,development
+1572002600.397,1026,307,None,Move,development
+1572002600.413,1027,307,None,Move,development
+1572002600.425,1030,308,None,Move,development
+1572002600.4329998,1034,310,None,Move,development
+1572002600.44,1042,312,None,Move,development
+1572002600.445,1046,315,None,Move,development
+1572002600.454,1050,317,None,Move,development
+1572002600.459,1052,318,None,Move,development
+1572002600.468,1053,320,None,Move,development
+1572002600.476,1055,322,None,Move,development
+1572002600.484,1057,323,None,Move,development
+1572002600.492,1058,323,None,Move,development
+1572002600.5,1059,323,None,Move,development
+1572002600.5070002,1060,323,None,Move,development
+1572002600.526,1061,323,None,Move,development
+1572002600.67,1061,323,None,Move,development
+1572002600.689,1058,321,None,Move,development
+1572002600.701,1054,319,None,Move,development
+1572002600.709,1053,318,None,Move,development
+1572002600.715,1053,317,None,Move,development
+1572002600.728,1053,317,None,Move,development
+1572002600.823,1053,317,Left,Pressed,development
+1572002600.937,1053,317,Left,Released,development
+1572002600.967,1053,317,None,Move,development
+1572002600.976,1054,319,None,Move,development
+1572002600.9829998,1057,321,None,Move,development
+1572002600.9910002,1060,323,None,Move,development
+1572002600.9989998,1067,326,None,Move,development
+1572002601.005,1076,330,None,Move,development
+1572002601.0129998,1086,332,None,Move,development
+1572002601.021,1097,335,None,Move,development
+1572002601.029,1110,340,None,Move,development
+1572002601.0370002,1133,350,None,Move,development
+1572002601.046,1169,367,None,Move,development
+1572002601.054,1205,386,None,Move,development
+1572002601.061,1238,402,None,Move,development
+1572002601.0670002,1264,418,None,Move,development
+1572002601.076,1294,436,None,Move,development
+1572002601.084,1327,452,None,Move,development
+1572002601.092,1360,468,None,Move,development
+1572002601.1,1392,485,None,Move,development
+1572002601.1079998,1425,501,None,Move,development
+1572002601.1160002,1451,516,None,Move,development
+1572002601.1360002,1472,530,None,Move,development
+1572002601.1420002,1503,550,None,Move,development
+1572002601.147,1514,558,None,Move,development
+1572002601.153,1523,565,None,Move,development
+1572002601.1620002,1530,567,None,Move,development
+1572002601.169,1535,568,None,Move,development
+1572002601.178,1537,569,None,Move,development
+1572002601.1829998,1538,569,None,Move,development
+1572002601.204,1538,570,None,Move,development
+1572002602.435,1538,569,None,Move,development
+1572002602.445,1536,568,None,Move,development
+1572002602.456,1529,562,None,Move,development
+1572002602.4629998,1518,549,None,Move,development
+1572002602.469,1506,531,None,Move,development
+1572002602.475,1481,502,None,Move,development
+1572002602.481,1446,474,None,Move,development
+1572002602.4889998,1415,448,None,Move,development
+1572002602.4970002,1382,430,None,Move,development
+1572002602.505,1353,418,None,Move,development
+1572002602.5110002,1335,412,None,Move,development
+1572002602.519,1322,408,None,Move,development
+1572002602.5270002,1307,406,None,Move,development
+1572002602.535,1300,406,None,Move,development
+1572002602.551,1300,406,None,Move,development
+1572002602.559,1300,406,None,Move,development
+1572002602.569,1299,406,None,Move,development
+1572002602.577,1298,405,None,Move,development
+1572002602.585,1295,403,None,Move,development
+1572002602.593,1288,401,None,Move,development
+1572002602.6020002,1284,399,None,Move,development
+1572002602.61,1278,396,None,Move,development
+1572002602.6179998,1274,394,None,Move,development
+1572002602.623,1270,392,None,Move,development
+1572002602.6320002,1268,390,None,Move,development
+1572002602.64,1267,390,None,Move,development
+1572002602.668,1267,389,None,Move,development
+1572002602.679,1267,388,None,Move,development
+1572002602.687,1266,387,None,Move,development
+1572002602.6929998,1266,387,None,Move,development
+1572002602.734,1266,387,Left,Pressed,development
+1572002602.829,1266,387,Left,Released,development
+1572002602.871,1266,387,None,Move,development
+1572002602.992,1266,387,None,Move,development
+1572002603.155,1265,386,None,Move,development
+1572002603.167,1265,385,None,Move,development
+1572002603.173,1254,378,None,Move,development
+1572002603.181,1235,363,None,Move,development
+1572002603.189,1210,345,None,Move,development
+1572002603.197,1180,324,None,Move,development
+1572002603.205,1137,304,None,Move,development
+1572002603.2129998,1088,283,None,Move,development
+1572002603.221,1038,269,None,Move,development
+1572002603.2270002,988,260,None,Move,development
+1572002603.235,940,260,None,Move,development
+1572002603.2429998,892,258,None,Move,development
+1572002603.252,838,256,None,Move,development
+1572002603.2589998,776,253,None,Move,development
+1572002603.2670002,701,246,None,Move,development
+1572002603.275,622,241,None,Move,development
+1572002603.283,538,223,None,Move,development
+1572002603.289,456,215,None,Move,development
+1572002603.2970002,388,215,None,Move,development
+1572002603.3179998,317,212,None,Move,development
+1572002603.324,190,205,None,Move,development
+1572002603.329,146,203,None,Move,development
+1572002603.337,110,199,None,Move,development
+1572002603.345,86,199,None,Move,development
+1572002603.351,68,199,None,Move,development
+1572002603.359,56,199,None,Move,development
+1572002603.367,50,199,None,Move,development
+1572002603.375,47,199,None,Move,development
+1572002603.383,45,199,None,Move,development
+1572002603.488,45,199,None,Move,development
+1572002603.5,44,198,None,Move,development
+1572002603.5070002,43,197,None,Move,development
+1572002603.516,41,195,None,Move,development
+1572002603.524,39,194,None,Move,development
+1572002603.531,38,192,None,Move,development
+1572002603.5370002,36,190,None,Move,development
+1572002603.546,34,187,None,Move,development
+1572002603.554,32,185,None,Move,development
+1572002603.562,31,184,None,Move,development
+1572002603.57,30,183,None,Move,development
+1572002603.577,30,182,None,Move,development
+1572002603.59,30,181,None,Move,development
+1572002603.6,30,181,None,Move,development
+1572002603.607,30,179,None,Move,development
+1572002603.6160002,32,177,None,Move,development
+1572002603.6239998,34,176,None,Move,development
+1572002603.631,38,174,None,Move,development
+1572002603.64,45,171,None,Move,development
+1572002603.6479998,52,169,None,Move,development
+1572002603.653,60,166,None,Move,development
+1572002603.661,68,165,None,Move,development
+1572002603.67,75,164,None,Move,development
+1572002603.678,82,163,None,Move,development
+1572002603.685,89,162,None,Move,development
+1572002603.694,95,161,None,Move,development
+1572002603.701,102,159,None,Move,development
+1572002603.709,108,159,None,Move,development
+1572002603.715,115,158,None,Move,development
+1572002603.7229998,124,158,None,Move,development
+1572002603.731,131,158,None,Move,development
+1572002603.7389998,139,160,None,Move,development
+1572002603.7470002,146,161,None,Move,development
+1572002603.755,153,161,None,Move,development
+1572002603.7629998,155,161,None,Move,development
+1572002603.769,156,161,None,Move,development
+1572002603.778,157,161,None,Move,development
+1572002603.786,158,161,None,Move,development
+1572002603.793,159,161,None,Move,development
+1572002603.949,159,161,None,Move,development
+1572002604.0129998,159,161,None,Move,development
+1572002604.025,159,162,None,Move,development
+1572002604.079,159,161,None,Move,development
+1572002604.087,159,157,None,Move,development
+1572002604.095,159,156,None,Move,development
+1572002604.103,159,154,None,Move,development
+1572002604.111,159,153,None,Move,development
+1572002604.119,159,151,None,Move,development
+1572002604.127,159,149,None,Move,development
+1572002604.133,159,149,None,Move,development
+1572002604.141,159,148,None,Move,development
+1572002604.1920002,159,147,None,Move,development
+1572002604.2570002,160,147,None,Move,development
+1572002604.2729998,161,147,None,Move,development
+1572002604.281,161,148,None,Move,development
+1572002604.29,163,149,None,Move,development
+1572002604.2970002,165,151,None,Move,development
+1572002604.306,168,153,None,Move,development
+1572002604.311,170,155,None,Move,development
+1572002604.32,172,157,None,Move,development
+1572002604.3279998,174,158,None,Move,development
+1572002604.336,176,160,None,Move,development
+1572002604.344,177,161,None,Move,development
+1572002604.3520002,179,163,None,Move,development
+1572002604.36,180,163,None,Move,development
+1572002604.367,180,163,None,Move,development
+1572002604.3739998,181,164,None,Move,development
+1572002604.3820002,181,166,None,Move,development
+1572002604.39,181,168,None,Move,development
+1572002604.3979998,181,170,None,Move,development
+1572002604.406,181,174,None,Move,development
+1572002604.413,181,177,None,Move,development
+1572002604.421,181,183,None,Move,development
+1572002604.429,179,185,None,Move,development
+1572002604.435,177,189,None,Move,development
+1572002604.4429998,176,192,None,Move,development
+1572002604.451,174,194,None,Move,development
+1572002604.459,174,196,None,Move,development
+1572002604.467,174,197,None,Move,development
+1572002604.475,174,199,None,Move,development
+1572002604.4829998,173,201,None,Move,development
+1572002604.492,173,203,None,Move,development
+1572002604.4970002,173,208,None,Move,development
+1572002604.506,172,212,None,Move,development
+1572002604.514,172,217,None,Move,development
+1572002604.522,172,222,None,Move,development
+1572002604.53,172,226,None,Move,development
+1572002604.5370002,172,231,None,Move,development
+1572002604.546,176,239,None,Move,development
+1572002604.554,184,246,None,Move,development
+1572002604.56,191,254,None,Move,development
+1572002604.5670002,197,258,None,Move,development
+1572002604.575,200,261,None,Move,development
+1572002604.583,204,263,None,Move,development
+1572002604.592,207,264,None,Move,development
+1572002604.6,211,264,None,Move,development
+1572002604.6079998,214,264,None,Move,development
+1572002604.613,218,264,None,Move,development
+1572002604.6220002,221,262,None,Move,development
+1572002604.63,224,260,None,Move,development
+1572002604.637,228,256,None,Move,development
+1572002604.645,233,250,None,Move,development
+1572002604.654,241,242,None,Move,development
+1572002604.6620002,249,231,None,Move,development
+1572002604.67,258,220,None,Move,development
+1572002604.675,266,209,None,Move,development
+1572002604.684,274,200,None,Move,development
+1572002604.6920002,279,192,None,Move,development
+1572002604.7,285,183,None,Move,development
+1572002604.708,287,175,None,Move,development
+1572002604.719,289,167,None,Move,development
+1572002604.7370002,294,159,None,Move,development
+1572002604.742,296,155,None,Move,development
+1572002604.748,297,152,None,Move,development
+1572002604.7529998,300,150,None,Move,development
+1572002604.762,302,148,None,Move,development
+1572002604.774,304,147,None,Move,development
+1572002604.781,306,145,None,Move,development
+1572002604.786,306,144,None,Move,development
+1572002604.791,307,143,None,Move,development
+1572002604.8,308,143,None,Move,development
+1572002604.811,308,142,None,Move,development
+1572002604.851,308,141,None,Move,development
+1572002604.865,309,141,None,Move,development
+1572002604.875,310,140,None,Move,development
+1572002604.881,311,139,None,Move,development
+1572002604.889,311,139,None,Move,development
+1572002604.951,313,138,None,Move,development
+1572002604.968,316,134,None,Move,development
+1572002604.978,317,133,None,Move,development
+1572002604.986,318,132,None,Move,development
+1572002604.992,319,130,None,Move,development
+1572002604.998,320,129,None,Move,development
+1572002605.005,320,128,None,Move,development
+1572002605.018,320,128,None,Move,development
+1572002605.035,320,127,None,Move,development
+1572002605.043,319,126,None,Move,development
+1572002605.056,318,125,None,Move,development
+1572002605.064,315,125,None,Move,development
+1572002605.071,312,125,None,Move,development
+1572002605.076,310,125,None,Move,development
+1572002605.083,303,125,None,Move,development
+1572002605.091,295,122,None,Move,development
+1572002605.0979998,287,121,None,Move,development
+1572002605.105,277,120,None,Move,development
+1572002605.113,269,120,None,Move,development
+1572002605.121,260,120,None,Move,development
+1572002605.129,254,120,None,Move,development
+1572002605.1379998,247,118,None,Move,development
+1572002605.151,241,117,None,Move,development
+1572002605.159,239,116,None,Move,development
+1572002605.167,239,115,None,Move,development
+1572002605.2489998,238,114,None,Move,development
+1572002605.303,237,114,None,Move,development
+1572002605.311,236,113,None,Move,development
+1572002605.319,234,112,None,Move,development
+1572002605.325,232,112,None,Move,development
+1572002605.333,231,111,None,Move,development
+1572002605.444,230,111,None,Move,development
+1572002605.451,229,111,None,Move,development
+1572002605.457,229,111,None,Move,development
+1572002605.469,228,111,None,Move,development
+1572002605.5110002,227,111,None,Move,development
+1572002605.524,226,111,None,Move,development
+1572002605.532,225,111,None,Move,development
+1572002605.539,224,111,None,Move,development
+1572002605.5470002,224,111,None,Move,development
+1572002605.556,223,111,None,Move,development
+1572002605.6279998,223,111,None,Move,development
+1572002605.6479998,223,110,None,Move,development
+1572002605.6720002,223,110,None,Move,development
+1572002605.681,222,109,None,Move,development
+1572002605.695,222,108,Left,Pressed,development
+1572002605.696,222,108,None,Drag,development
+1572002605.706,222,108,None,Drag,development
+1572002605.771,222,108,None,Drag,development
+1572002605.779,221,108,None,Drag,development
+1572002605.7870002,220,108,None,Drag,development
+1572002605.7870002,220,108,Left,Released,development
+1572002605.796,219,108,None,Move,development
+1572002605.927,219,108,None,Move,development
+1572002605.937,220,108,None,Move,development
+1572002605.945,220,108,None,Move,development
+1572002605.9529998,221,110,None,Move,development
+1572002605.961,223,111,None,Move,development
+1572002605.969,225,113,None,Move,development
+1572002605.9770002,226,115,None,Move,development
+1572002605.985,227,117,None,Move,development
+1572002605.9910002,228,119,None,Move,development
+1572002605.9989998,230,121,None,Move,development
+1572002606.0070002,232,124,None,Move,development
+1572002606.015,234,128,None,Move,development
+1572002606.0229998,236,135,None,Move,development
+1572002606.031,236,144,None,Move,development
+1572002606.039,236,152,None,Move,development
+1572002606.0470002,236,162,None,Move,development
+1572002606.053,236,171,None,Move,development
+1572002606.062,236,181,None,Move,development
+1572002606.07,236,189,None,Move,development
+1572002606.077,236,196,None,Move,development
+1572002606.085,236,203,None,Move,development
+1572002606.094,236,210,None,Move,development
+1572002606.1020002,235,217,None,Move,development
+1572002606.11,234,224,None,Move,development
+1572002606.115,234,229,None,Move,development
+1572002606.1239998,231,235,None,Move,development
+1572002606.1320002,231,237,None,Move,development
+1572002606.14,230,240,None,Move,development
+1572002606.1479998,229,242,None,Move,development
+1572002606.156,227,243,None,Move,development
+1572002606.163,226,244,None,Move,development
+1572002606.169,225,245,None,Move,development
+1572002606.178,225,247,None,Move,development
+1572002606.185,223,248,None,Move,development
+1572002606.194,222,248,None,Move,development
+1572002606.202,222,249,None,Move,development
+1572002606.209,222,252,None,Move,development
+1572002606.218,223,255,None,Move,development
+1572002606.226,224,258,None,Move,development
+1572002606.231,225,261,None,Move,development
+1572002606.24,226,265,None,Move,development
+1572002606.248,226,269,None,Move,development
+1572002606.256,226,271,None,Move,development
+1572002606.266,225,274,None,Move,development
+1572002606.272,225,277,None,Move,development
+1572002606.28,223,281,None,Move,development
+1572002606.285,223,284,None,Move,development
+1572002606.294,221,287,None,Move,development
+1572002606.302,219,293,None,Move,development
+1572002606.309,218,297,None,Move,development
+1572002606.3179998,216,301,None,Move,development
+1572002606.326,214,304,None,Move,development
+1572002606.334,212,306,None,Move,development
+1572002606.342,210,307,None,Move,development
+1572002606.347,209,309,None,Move,development
+1572002606.356,207,311,None,Move,development
+1572002606.3639998,205,313,None,Move,development
+1572002606.3720002,204,316,None,Move,development
+1572002606.38,203,319,None,Move,development
+1572002606.3879998,203,323,None,Move,development
+1572002606.395,203,326,None,Move,development
+1572002606.404,203,329,None,Move,development
+1572002606.409,204,330,None,Move,development
+1572002606.418,205,332,None,Move,development
+1572002606.426,205,334,None,Move,development
+1572002606.434,206,335,None,Move,development
+1572002606.545,206,336,None,Move,development
+1572002606.5579998,207,337,None,Move,development
+1572002606.569,208,337,None,Move,development
+1572002606.575,208,337,None,Move,development
+1572002606.9329998,208,337,None,Move,development
+1572002606.9429998,207,336,None,Move,development
+1572002606.952,205,331,None,Move,development
+1572002606.959,203,324,None,Move,development
+1572002606.967,200,316,None,Move,development
+1572002606.975,199,314,None,Move,development
+1572002606.9829998,197,311,None,Move,development
+1572002606.9910002,196,308,None,Move,development
+1572002606.9989998,194,306,None,Move,development
+1572002607.005,193,305,None,Move,development
+1572002607.014,193,304,None,Move,development
+1572002607.021,192,303,None,Move,development
+1572002607.235,192,303,None,Move,development
+1572002607.2429998,191,303,None,Move,development
+1572002607.285,190,302,None,Move,development
+1572002607.293,189,301,None,Move,development
+1572002607.299,187,299,None,Move,development
+1572002607.3070002,184,296,None,Move,development
+1572002607.315,181,294,None,Move,development
+1572002607.323,179,293,None,Move,development
+1572002607.331,177,291,None,Move,development
+1572002607.339,174,289,None,Move,development
+1572002607.347,171,287,None,Move,development
+1572002607.355,169,285,None,Move,development
+1572002607.361,167,283,None,Move,development
+1572002607.369,167,283,None,Move,development
+1572002607.377,166,282,None,Move,development
+1572002607.385,164,281,None,Move,development
+1572002607.393,163,280,None,Move,development
+1572002607.401,161,280,None,Move,development
+1572002607.409,159,279,None,Move,development
+1572002607.417,157,279,None,Move,development
+1572002607.423,154,279,None,Move,development
+1572002607.431,151,279,None,Move,development
+1572002607.439,149,280,None,Move,development
+1572002607.447,146,281,None,Move,development
+1572002607.455,144,281,None,Move,development
+1572002607.4629998,144,282,None,Move,development
+1572002607.471,143,282,None,Move,development
+1572002607.479,142,283,None,Move,development
+1572002607.492,141,283,None,Move,development
+1572002607.5679998,140,283,None,Move,development
+1572002607.579,139,284,None,Move,development
+1572002607.587,138,284,None,Move,development
+1572002607.5979998,138,284,None,Move,development
+1572002607.606,138,285,None,Move,development
+1572002607.6139998,137,285,None,Move,development
+1572002607.725,137,285,Left,Pressed,development
+1572002607.8379998,137,285,Left,Released,development
+1572002607.962,137,285,Right,Pressed,development
+1572002608.09,137,285,Right,Released,development
+1572002608.271,137,285,None,Move,development
+1572002608.2870002,138,286,None,Move,development
+1572002608.295,139,286,None,Move,development
+1572002608.303,141,287,None,Move,development
+1572002608.311,142,287,None,Move,development
+1572002608.319,144,288,None,Move,development
+1572002608.325,148,290,None,Move,development
+1572002608.333,154,292,None,Move,development
+1572002608.341,161,295,None,Move,development
+1572002608.349,171,299,None,Move,development
+1572002608.357,182,304,None,Move,development
+1572002608.365,194,312,None,Move,development
+1572002608.373,211,322,None,Move,development
+1572002608.379,235,339,None,Move,development
+1572002608.387,268,358,None,Move,development
+1572002608.395,302,381,None,Move,development
+1572002608.403,335,400,None,Move,development
+1572002608.411,360,421,None,Move,development
+1572002608.419,383,444,None,Move,development
+1572002608.428,408,475,None,Move,development
+1572002608.435,431,506,None,Move,development
+1572002608.441,457,541,None,Move,development
+1572002608.45,494,580,None,Move,development
+1572002608.457,526,625,None,Move,development
+1572002608.465,548,661,None,Move,development
+1572002608.474,561,690,None,Move,development
+1572002608.482,571,709,None,Move,development
+1572002608.4889998,574,723,None,Move,development
+1572002608.4970002,575,733,None,Move,development
+1572002608.5029998,576,743,None,Move,development
+1572002608.512,576,753,None,Move,development
+1572002608.519,576,764,None,Move,development
+1572002608.528,574,772,None,Move,development
+1572002608.536,571,781,None,Move,development
+1572002608.544,568,792,None,Move,development
+1572002608.552,567,802,None,Move,development
+1572002608.5570002,566,812,None,Move,development
+1572002608.566,566,820,None,Move,development
+1572002608.574,566,829,None,Move,development
+1572002608.582,566,839,None,Move,development
+1572002608.589,566,849,None,Move,development
+1572002608.597,568,861,None,Move,development
+1572002608.605,570,871,None,Move,development
+1572002608.6139998,573,882,None,Move,development
+1572002608.619,575,892,None,Move,development
+1572002608.6279998,578,902,None,Move,development
+1572002608.6360002,582,913,None,Move,development
+1572002608.644,584,923,None,Move,development
+1572002608.6520002,590,934,None,Move,development
+1572002608.66,594,944,None,Move,development
+1572002608.668,596,953,None,Move,development
+1572002608.676,600,962,None,Move,development
+1572002608.681,602,969,None,Move,development
+1572002608.69,605,976,None,Move,development
+1572002608.698,607,978,None,Move,development
+1572002608.706,607,979,None,Move,development
+1572002608.76,605,977,None,Move,development
+1572002608.779,583,960,None,Move,development
+1572002608.79,572,950,None,Move,development
+1572002608.7970002,560,942,None,Move,development
+1572002608.803,549,932,None,Move,development
+1572002608.8079998,537,923,None,Move,development
+1572002608.813,523,914,None,Move,development
+1572002608.821,506,904,None,Move,development
+1572002608.829,494,896,None,Move,development
+1572002608.837,483,886,None,Move,development
+1572002608.845,471,876,None,Move,development
+1572002608.853,461,868,None,Move,development
+1572002608.859,452,860,None,Move,development
+1572002608.867,444,853,None,Move,development
+1572002608.8760002,441,848,None,Move,development
+1572002608.8839998,439,843,None,Move,development
+1572002608.8920002,437,838,None,Move,development
+1572002608.9,436,837,None,Move,development
+1572002609.0370002,436,837,None,Move,development
+1572002609.049,436,836,None,Move,development
+1572002609.061,437,834,None,Move,development
+1572002609.07,438,833,None,Move,development
+1572002609.077,440,831,None,Move,development
+1572002609.083,441,829,None,Move,development
+1572002609.089,442,828,None,Move,development
+1572002609.095,443,827,None,Move,development
+1572002609.103,444,825,None,Move,development
+1572002609.111,445,823,None,Move,development
+1572002609.121,447,822,None,Move,development
+1572002609.127,449,820,None,Move,development
+1572002609.135,451,818,None,Move,development
+1572002609.143,452,817,None,Move,development
+1572002609.1520002,453,816,None,Move,development
+1572002609.158,455,814,None,Move,development
+1572002609.166,457,812,None,Move,development
+1572002609.174,458,810,None,Move,development
+1572002609.1820002,460,809,None,Move,development
+1572002609.19,462,808,None,Move,development
+1572002609.197,464,806,None,Move,development
+1572002609.206,465,805,None,Move,development
+1572002609.22,468,805,None,Move,development
+1572002609.232,468,805,None,Move,development
+1572002609.2389998,469,805,None,Move,development
+1572002609.3579998,470,805,None,Move,development
+1572002609.3760002,470,805,None,Move,development
+1572002609.495,471,805,None,Move,development
+1572002609.553,472,805,None,Move,development
+1572002609.561,475,805,None,Move,development
+1572002609.569,476,808,None,Move,development
+1572002609.575,476,810,None,Move,development
+1572002609.583,477,812,None,Move,development
+1572002609.591,479,814,None,Move,development
+1572002609.599,481,816,None,Move,development
+1572002609.607,482,818,None,Move,development
+1572002609.615,484,820,None,Move,development
+1572002609.623,485,822,None,Move,development
+1572002609.631,486,823,None,Move,development
+1572002610.025,486,823,None,Move,development
+1572002610.041,489,823,None,Move,development
+1572002610.049,498,820,None,Move,development
+1572002610.0570002,508,820,None,Move,development
+1572002610.063,517,820,None,Move,development
+1572002610.071,519,820,None,Move,development
+1572002610.149,520,821,None,Move,development
+1572002610.161,521,822,None,Move,development
+1572002610.169,522,823,None,Move,development
+1572002610.177,524,823,None,Move,development
+1572002610.1829998,526,825,None,Move,development
+1572002610.191,528,827,None,Move,development
+1572002610.199,529,829,None,Move,development
+1572002610.207,531,831,None,Move,development
+1572002610.215,533,832,None,Move,development
+1572002610.2229998,537,834,None,Move,development
+1572002610.231,540,837,None,Move,development
+1572002610.2370002,543,839,None,Move,development
+1572002610.246,548,841,None,Move,development
+1572002610.2529998,555,845,None,Move,development
+1572002610.2610002,563,849,None,Move,development
+1572002610.269,570,851,None,Move,development
+1572002610.2770002,577,855,None,Move,development
+1572002610.285,584,857,None,Move,development
+1572002610.293,592,859,None,Move,development
+1572002610.299,597,862,None,Move,development
+1572002610.3079998,600,864,None,Move,development
+1572002610.315,602,865,None,Move,development
+1572002610.324,604,866,None,Move,development
+1572002610.336,604,867,None,Move,development
+1572002610.3479998,605,867,None,Move,development
+1572002610.356,606,868,None,Move,development
+1572002610.3739998,606,868,None,Move,development
+1572002612.101,607,869,None,Move,development
+1572002612.1079998,607,871,None,Move,development
+1572002612.115,605,875,None,Move,development
+1572002612.123,598,883,None,Move,development
+1572002612.131,587,893,None,Move,development
+1572002612.14,572,906,None,Move,development
+1572002612.147,548,923,None,Move,development
+1572002612.155,533,935,None,Move,development
+1572002612.161,520,947,None,Move,development
+1572002612.169,509,958,None,Move,development
+1572002612.178,499,965,None,Move,development
+1572002612.188,492,966,None,Move,development
+1572002612.1929998,486,966,None,Move,development
+1572002612.202,485,966,None,Move,development
+1572002612.21,484,966,None,Move,development
+1572002612.472,485,966,None,Move,development
+1572002612.482,491,964,None,Move,development
+1572002612.4870002,502,960,None,Move,development
+1572002612.496,513,953,None,Move,development
+1572002612.5029998,520,947,None,Move,development
+1572002612.512,522,945,None,Move,development
+1572002612.52,524,943,None,Move,development
+1572002612.525,528,939,None,Move,development
+1572002612.534,530,935,None,Move,development
+1572002612.542,532,928,None,Move,development
+1572002612.549,535,922,None,Move,development
+1572002612.5579998,537,918,None,Move,development
+1572002612.565,539,916,None,Move,development
+1572002612.574,539,912,None,Move,development
+1572002612.581,539,908,None,Move,development
+1572002612.587,539,902,None,Move,development
+1572002612.596,537,895,None,Move,development
+1572002612.604,535,887,None,Move,development
+1572002612.611,532,880,None,Move,development
+1572002612.62,530,876,None,Move,development
+1572002612.627,528,870,None,Move,development
+1572002612.6360002,526,866,None,Move,development
+1572002612.641,524,864,None,Move,development
+1572002612.65,522,863,None,Move,development
+1572002612.658,521,861,None,Move,development
+1572002612.665,519,857,None,Move,development
+1572002612.673,517,854,None,Move,development
+1572002612.681,515,851,None,Move,development
+1572002612.689,513,848,None,Move,development
+1572002612.697,512,846,None,Move,development
+1572002612.7029998,511,843,None,Move,development
+1572002612.711,509,840,None,Move,development
+1572002612.719,508,837,None,Move,development
+1572002612.7270002,507,835,None,Move,development
+1572002612.736,506,833,None,Move,development
+1572002612.744,505,831,None,Move,development
+1572002612.752,504,829,None,Move,development
+1572002612.76,503,829,None,Move,development
+1572002612.766,503,827,None,Move,development
+1572002612.774,503,827,None,Move,development
+1572002612.782,502,826,None,Move,development
+1572002612.789,502,825,None,Move,development
+1572002612.801,502,824,None,Move,development
+1572002612.809,501,824,None,Move,development
+1572002612.8170002,501,823,None,Move,development
+1572002612.823,500,823,None,Move,development
+1572002612.831,500,822,None,Move,development
+1572002613.311,501,822,None,Move,development
+1572002613.319,508,824,None,Move,development
+1572002613.327,515,827,None,Move,development
+1572002613.335,521,830,None,Move,development
+1572002613.343,525,832,None,Move,development
+1572002613.351,527,834,None,Move,development
+1572002613.359,529,835,None,Move,development
+1572002613.365,531,836,None,Move,development
+1572002613.373,533,837,None,Move,development
+1572002613.381,534,837,None,Move,development
+1572002613.4,536,837,None,Move,development
+1572002613.522,536,838,None,Move,development
+1572002613.529,537,839,None,Move,development
+1572002613.5370002,541,841,None,Move,development
+1572002613.543,544,842,None,Move,development
+1572002613.551,548,844,None,Move,development
+1572002613.559,552,846,None,Move,development
+1572002613.5670002,556,848,None,Move,development
+1572002613.575,559,850,None,Move,development
+1572002613.583,561,851,None,Move,development
+1572002613.591,563,852,None,Move,development
+1572002613.599,564,852,None,Move,development
+1572002613.605,564,853,None,Move,development
+1572002613.9970002,564,853,None,Move,development
+1572002614.0129998,564,853,None,Move,development
+1572002614.245,565,852,None,Move,development
+1572002614.262,565,851,None,Move,development
+1572002614.2670002,566,851,None,Move,development
+1572002614.288,566,850,None,Move,development
+1572002614.3,566,850,None,Move,development
+1572002614.3379998,567,849,None,Move,development
+1572002614.3620002,567,848,None,Move,development
+1572002614.3779998,567,848,None,Move,development
+1572002614.383,567,847,None,Move,development
+1572002614.395,567,846,None,Move,development
+1572002614.403,568,846,None,Move,development
+1572002614.424,568,846,None,Move,development
+1572002614.435,568,845,None,Move,development
+1572002614.5979998,568,845,Left,Pressed,development
+1572002614.73,568,845,Left,Released,development
+1572002615.0029998,568,844,None,Move,development
+1572002615.0110002,569,840,None,Move,development
+1572002615.019,571,836,None,Move,development
+1572002615.0270002,573,834,None,Move,development
+1572002615.035,573,835,None,Move,development
+1572002615.043,571,845,None,Move,development
+1572002615.049,565,854,None,Move,development
+1572002615.0570002,556,870,None,Move,development
+1572002615.065,553,874,None,Move,development
+1572002615.421,553,874,None,Move,development
+1572002615.429,556,867,None,Move,development
+1572002615.437,563,857,None,Move,development
+1572002615.445,566,848,None,Move,development
+1572002615.4529998,569,840,None,Move,development
+1572002615.461,571,833,None,Move,development
+1572002615.467,573,830,None,Move,development
+1572002615.475,575,829,None,Move,development
+1572002615.4829998,575,828,None,Move,development
+1572002615.495,575,828,None,Move,development
+1572002615.5029998,574,828,None,Move,development
+1572002615.5110002,572,828,None,Move,development
+1572002615.519,570,828,None,Move,development
+1572002615.5270002,565,828,None,Move,development
+1572002615.533,562,826,None,Move,development
+1572002615.541,561,824,None,Move,development
+1572002615.549,559,822,None,Move,development
+1572002615.5570002,557,821,None,Move,development
+1572002615.565,556,821,None,Move,development
+1572002615.587,556,820,None,Move,development
+1572002615.619,556,819,None,Move,development
+1572002615.627,556,819,None,Move,development
+1572002615.635,558,818,None,Move,development
+1572002615.643,559,818,None,Move,development
+1572002615.649,561,818,None,Move,development
+1572002615.657,562,818,None,Move,development
+1572002615.665,564,818,None,Move,development
+1572002615.673,565,818,None,Move,development
+1572002615.685,565,818,None,Move,development
+1572002615.6929998,564,818,None,Move,development
+1572002615.702,564,817,None,Move,development
+1572002615.707,563,816,None,Move,development
+1572002615.715,562,815,None,Move,development
+1572002615.7229998,562,815,None,Move,development
+1572002615.731,561,813,None,Move,development
+1572002615.7389998,560,811,None,Move,development
+1572002615.7470002,559,810,None,Move,development
+1572002615.755,558,808,None,Move,development
+1572002615.7629998,558,806,None,Move,development
+1572002615.769,558,805,None,Move,development
+1572002615.7770002,558,802,None,Move,development
+1572002615.785,559,800,None,Move,development
+1572002615.793,561,799,None,Move,development
+1572002615.801,562,797,None,Move,development
+1572002615.809,563,795,None,Move,development
+1572002615.8170002,565,793,None,Move,development
+1572002615.823,567,791,None,Move,development
+1572002615.831,569,790,None,Move,development
+1572002615.839,571,788,None,Move,development
+1572002615.847,572,786,None,Move,development
+1572002615.855,574,784,None,Move,development
+1572002615.863,576,784,None,Move,development
+1572002615.871,578,782,None,Move,development
+1572002615.879,579,781,None,Move,development
+1572002615.885,580,780,None,Move,development
+1572002615.893,581,779,None,Move,development
+1572002615.901,582,779,None,Move,development
+1572002615.909,584,777,None,Move,development
+1572002615.917,585,776,None,Move,development
+1572002615.925,586,775,None,Move,development
+1572002615.9329998,588,775,None,Move,development
+1572002615.941,590,773,None,Move,development
+1572002615.947,592,772,None,Move,development
+1572002615.955,593,771,None,Move,development
+1572002615.9629998,596,769,None,Move,development
+1572002615.971,598,767,None,Move,development
+1572002615.979,600,766,None,Move,development
+1572002615.9870002,601,764,None,Move,development
+1572002615.995,603,762,None,Move,development
+1572002616.0029998,605,760,None,Move,development
+1572002616.0089998,607,759,None,Move,development
+1572002616.0170002,608,759,None,Move,development
+1572002616.025,609,759,None,Move,development
+1572002616.033,611,758,None,Move,development
+1572002616.041,611,758,None,Move,development
+1572002616.083,612,758,None,Move,development
+1572002616.091,612,758,None,Move,development
+1572002616.099,612,759,None,Move,development
+1572002616.115,613,759,None,Move,development
+1572002616.123,614,759,None,Move,development
+1572002616.129,617,759,None,Move,development
+1572002616.1379998,619,758,None,Move,development
+1572002616.145,619,758,None,Move,development
+1572002616.161,619,758,None,Move,development
+1572002616.179,620,759,None,Move,development
+1572002616.187,621,759,None,Move,development
+1572002616.195,622,761,None,Move,development
+1572002616.2029998,624,763,None,Move,development
+1572002616.211,626,764,None,Move,development
+1572002616.219,627,765,None,Move,development
+1572002616.2270002,628,766,None,Move,development
+1572002616.235,628,767,None,Move,development
+1572002616.2429998,628,767,None,Move,development
+1572002616.2489998,628,768,None,Move,development
+1572002616.2570002,626,771,None,Move,development
+1572002616.266,623,773,None,Move,development
+1572002616.2729998,621,775,None,Move,development
+1572002616.281,620,776,None,Move,development
+1572002616.289,618,777,None,Move,development
+1572002616.301,617,777,None,Move,development
+1572002616.3070002,616,776,None,Move,development
+1572002616.315,613,773,None,Move,development
+1572002616.323,611,771,None,Move,development
+1572002616.331,608,768,None,Move,development
+1572002616.339,608,765,None,Move,development
+1572002616.347,608,763,None,Move,development
+1572002616.355,610,761,None,Move,development
+1572002616.363,611,759,None,Move,development
+1572002616.369,612,756,None,Move,development
+1572002616.377,613,755,None,Move,development
+1572002616.385,613,753,None,Move,development
+1572002616.393,614,751,None,Move,development
+1572002616.401,614,750,None,Move,development
+1572002616.409,614,748,None,Move,development
+1572002616.417,615,746,None,Move,development
+1572002616.423,615,745,None,Move,development
+1572002616.431,615,743,None,Move,development
+1572002616.439,614,741,None,Move,development
+1572002616.447,613,740,None,Move,development
+1572002616.455,611,738,None,Move,development
+1572002616.4629998,609,736,None,Move,development
+1572002616.471,607,734,None,Move,development
+1572002616.479,607,734,None,Move,development
+1572002616.485,606,734,None,Move,development
+1572002616.4929998,606,734,None,Move,development
+1572002616.5010002,606,735,None,Move,development
+1572002616.5129998,606,735,None,Move,development
+1572002616.521,606,736,None,Move,development
+1572002616.529,606,737,None,Move,development
+1572002616.637,608,737,None,Move,development
+1572002616.645,614,737,None,Move,development
+1572002616.653,621,737,None,Move,development
+1572002616.661,623,737,None,Move,development
+1572002616.667,623,737,None,Move,development
+1572002616.849,626,736,None,Move,development
+1572002616.857,634,736,None,Move,development
+1572002616.865,645,736,None,Move,development
+1572002616.873,663,736,None,Move,development
+1572002616.881,680,735,None,Move,development
+1572002616.889,694,732,None,Move,development
+1572002616.897,704,727,None,Move,development
+1572002616.904,713,721,None,Move,development
+1572002616.911,722,715,None,Move,development
+1572002616.919,733,707,None,Move,development
+1572002616.927,746,697,None,Move,development
+1572002616.935,762,688,None,Move,development
+1572002616.9429998,778,679,None,Move,development
+1572002616.951,792,671,None,Move,development
+1572002616.959,802,666,None,Move,development
+1572002616.965,810,663,None,Move,development
+1572002616.9729998,814,660,None,Move,development
+1572002616.981,816,657,None,Move,development
+1572002616.9889998,817,653,None,Move,development
+1572002616.9970002,817,651,None,Move,development
+1572002617.005,817,649,None,Move,development
+1572002617.0129998,817,649,None,Move,development
+1572002617.039,816,649,None,Move,development
+1572002617.0470002,809,646,None,Move,development
+1572002617.055,802,644,None,Move,development
+1572002617.245,802,644,None,Move,development
+1572002617.2529998,805,645,None,Move,development
+1572002617.2610002,806,645,None,Move,development
+1572002617.2670002,808,645,None,Move,development
+1572002617.275,810,645,None,Move,development
+1572002617.283,810,644,None,Move,development
+1572002617.291,810,644,None,Move,development
+1572002617.299,811,644,None,Move,development
+1572002617.3070002,812,644,None,Move,development
+1572002617.315,812,644,None,Move,development
+1572002617.321,814,644,None,Move,development
+1572002617.329,815,643,None,Move,development
+1572002617.337,815,643,None,Move,development
+1572002617.353,816,643,None,Move,development
+1572002617.375,818,643,None,Move,development
+1572002617.38,819,643,None,Move,development
+1572002617.4770002,820,643,None,Move,development
+1572002617.4929998,820,643,None,Move,development
+1572002617.5229998,820,642,None,Move,development
+1572002617.531,819,642,None,Move,development
+1572002617.539,818,642,None,Move,development
+1572002617.5470002,818,640,None,Move,development
+1572002617.555,817,639,None,Move,development
+1572002617.561,816,639,None,Move,development
+1572002617.569,816,638,None,Move,development
+1572002617.577,815,637,None,Move,development
+1572002617.585,815,636,None,Move,development
+1572002617.593,815,635,None,Move,development
+1572002617.601,815,634,None,Move,development
+1572002617.609,815,633,None,Move,development
+1572002617.617,815,631,None,Move,development
+1572002617.6239998,815,629,None,Move,development
+1572002617.631,815,628,None,Move,development
+1572002617.639,815,626,None,Move,development
+1572002617.647,815,626,None,Move,development
+1572002617.655,815,625,None,Move,development
+1572002617.663,815,624,None,Move,development
+1572002617.671,815,623,None,Move,development
+1572002617.679,815,621,None,Move,development
+1572002617.685,815,620,None,Move,development
+1572002617.6929998,815,619,None,Move,development
+1572002617.701,815,617,None,Move,development
+1572002617.709,815,616,None,Move,development
+1572002617.717,816,615,None,Move,development
+1572002617.725,816,614,None,Move,development
+1572002617.7329998,817,613,None,Move,development
+1572002617.7389998,817,611,None,Move,development
+1572002617.7470002,818,609,None,Move,development
+1572002617.755,818,608,None,Move,development
+1572002617.7629998,818,607,None,Move,development
+1572002617.771,818,605,None,Move,development
+1572002617.779,818,604,None,Move,development
+1572002617.7870002,819,602,None,Move,development
+1572002617.795,819,601,None,Move,development
+1572002617.801,820,600,None,Move,development
+1572002617.809,821,598,None,Move,development
+1572002617.8170002,822,597,None,Move,development
+1572002617.825,822,596,None,Move,development
+1572002617.833,823,594,None,Move,development
+1572002617.841,825,592,None,Move,development
+1572002617.849,826,592,None,Move,development
+1572002617.855,827,590,None,Move,development
+1572002617.863,829,588,None,Move,development
+1572002617.871,831,586,None,Move,development
+1572002617.879,833,585,None,Move,development
+1572002617.887,835,583,None,Move,development
+1572002617.895,836,581,None,Move,development
+1572002617.903,838,579,None,Move,development
+1572002617.911,840,578,None,Move,development
+1572002617.917,842,576,None,Move,development
+1572002617.925,843,574,None,Move,development
+1572002617.9329998,844,572,None,Move,development
+1572002617.941,846,571,None,Move,development
+1572002617.949,847,569,None,Move,development
+1572002617.957,847,568,None,Move,development
+1572002617.965,848,567,None,Move,development
+1572002617.9729998,848,566,None,Move,development
+1572002617.979,848,565,None,Move,development
+1572002617.9870002,849,564,None,Move,development
+1572002617.995,849,564,None,Move,development
+1572002618.0110002,849,563,None,Move,development
+1572002618.019,850,563,None,Move,development
+1572002618.0270002,850,562,None,Move,development
+1572002618.041,850,562,None,Move,development
+1572002618.115,850,561,None,Move,development
+1572002618.127,851,560,None,Move,development
+1572002618.135,851,559,None,Move,development
+1572002618.143,851,559,None,Move,development
+1572002618.151,851,558,None,Move,development
+1572002618.177,851,557,None,Move,development
+1572002618.185,851,557,None,Move,development
+1572002618.1929998,851,557,None,Move,development
+1572002618.205,851,556,None,Move,development
+1572002618.5370002,851,556,None,Move,development
+1572002618.549,851,556,None,Move,development
+1572002618.5570002,851,557,None,Move,development
+1572002618.565,851,559,None,Move,development
+1572002618.573,851,560,None,Move,development
+1572002618.583,851,561,None,Move,development
+1572002618.591,851,562,None,Move,development
+1572002618.641,851,562,None,Move,development
+1572002618.657,851,564,None,Move,development
+1572002618.665,851,567,None,Move,development
+1572002618.673,851,568,None,Move,development
+1572002618.681,851,569,None,Move,development
+1572002618.735,851,569,None,Move,development
+1572002618.7570002,850,569,None,Move,development
+1572002618.7729998,849,569,None,Move,development
+1572002618.781,848,569,None,Move,development
+1572002619.393,848,569,None,Move,development
+1572002619.409,849,569,None,Move,development
+1572002619.417,851,568,None,Move,development
+1572002619.423,851,566,None,Move,development
+1572002619.431,852,564,None,Move,development
+1572002619.439,853,563,None,Move,development
+1572002619.447,854,562,None,Move,development
+1572002619.4629998,854,561,None,Move,development
+1572002619.4729998,854,561,None,Move,development
+1572002619.481,854,560,None,Move,development
+1572002619.4929998,855,560,None,Move,development
+1572002619.5010002,855,559,None,Move,development
+1572002619.5170002,856,558,None,Move,development
+1572002633.185,856,558,None,Move,development
+1572002633.191,856,556,None,Move,development
+1572002633.199,855,554,None,Move,development
+1572002633.207,855,554,None,Move,development
+1572002633.215,855,553,None,Move,development
+1572002633.2270002,855,553,None,Move,development
+1572002633.265,855,552,None,Move,development
+1572002633.281,855,551,None,Move,development
+1572002633.289,855,551,None,Move,development
+1572002633.335,855,550,None,Move,development
+1572002633.7610002,855,550,None,Move,development
+1572002633.7770002,855,551,None,Move,development
+1572002633.783,854,552,None,Move,development
+1572002633.791,854,553,None,Move,development
+1572002633.799,854,554,None,Move,development
+1572002633.8070002,853,555,None,Move,development
+1572002633.815,853,556,None,Move,development
+1572002633.823,852,557,None,Move,development
+1572002633.831,852,558,None,Move,development
+1572002633.839,852,559,None,Move,development
+1572002633.847,852,560,None,Move,development
+1572002633.854,852,561,None,Move,development
+1572002633.861,852,561,None,Move,development
+1572002633.869,852,562,None,Move,development
+1572002633.877,851,563,None,Move,development
+1572002633.885,851,564,None,Move,development
+1572002633.893,851,564,None,Move,development
+1572002633.901,851,566,None,Move,development
+1572002633.907,850,567,None,Move,development
+1572002633.915,850,567,None,Move,development
+1572002633.923,850,569,None,Move,development
+1572002633.931,850,569,None,Move,development
+1572002633.939,850,570,None,Move,development
+1572002633.951,850,571,None,Move,development
+1572002633.959,850,572,None,Move,development
+1572002633.965,849,572,None,Move,development
+1572002633.9770002,849,572,None,Move,development
+1572002634.891,849,573,None,Move,development
+1572002634.903,848,574,None,Move,development
+1572002634.911,847,575,None,Move,development
+1572002634.919,847,576,None,Move,development
+1572002634.9329998,847,577,None,Move,development
+1572002634.941,846,577,None,Move,development
+1572002634.949,846,578,None,Move,development
+1572002634.957,845,579,None,Move,development
+1572002634.965,845,580,None,Move,development
+1572002634.985,845,580,None,Move,development
+1572002635.0029998,844,581,None,Move,development
+1572002635.015,844,582,None,Move,development
+1572002635.0229998,844,583,None,Move,development
+1572002635.031,844,583,None,Move,development
+1572002635.039,844,583,None,Move,development
+1572002635.0470002,843,584,None,Move,development
+1572002635.065,843,585,None,Move,development
+1572002635.073,843,585,None,Move,development
+1572002635.085,842,586,None,Move,development
+1572002640.157,842,586,None,Move,development
+1572002640.171,843,586,None,Move,development
+1572002641.125,843,586,None,Move,development
+1572002641.131,845,582,None,Move,development
+1572002641.139,847,579,None,Move,development
+1572002641.147,849,577,None,Move,development
+1572002641.155,851,575,None,Move,development
+1572002641.163,851,574,None,Move,development
+1572002641.171,853,572,None,Move,development
+1572002641.179,854,571,None,Move,development
+1572002641.429,854,571,None,Move,development
+1572002641.437,853,573,None,Move,development
+1572002641.445,852,573,None,Move,development
+1572002641.601,852,574,None,Move,development
+1572002641.611,852,575,None,Move,development
+1572002641.619,854,576,None,Move,development
+1572002641.627,856,578,None,Move,development
+1572002641.6360002,857,580,None,Move,development
+1572002641.643,857,580,None,Move,development
+1572002642.145,859,579,None,Move,development
+1572002642.153,861,572,None,Move,development
+1572002642.161,864,564,None,Move,development
+1572002642.169,866,556,None,Move,development
+1572002642.177,868,552,None,Move,development
+1572002642.185,870,551,None,Move,development
+1572002642.1929998,871,549,None,Move,development
+1572002642.201,871,548,None,Move,development
+1572002642.207,871,547,None,Move,development
+1572002642.281,871,547,None,Move,development
+1572002642.289,871,549,None,Move,development
+1572002642.2970002,871,551,None,Move,development
+1572002642.305,871,555,None,Move,development
+1572002642.313,871,562,None,Move,development
+1572002642.321,873,569,None,Move,development
+1572002642.327,875,576,None,Move,development
+1572002642.335,875,576,None,Move,development
+1572002643.029,875,576,None,Move,development
+1572002643.039,875,576,None,Move,development
+1572002643.056,874,570,None,Move,development
+1572002643.063,874,568,None,Move,development
+1572002643.071,874,567,None,Move,development
+1572002643.08,873,565,None,Move,development
+1572002643.089,873,564,None,Move,development
+1572002643.221,872,564,None,Move,development
+1572002643.2329998,872,565,None,Move,development
+1572002643.2410002,872,568,None,Move,development
+1572002643.829,872,568,None,Move,development
+1572002643.837,872,563,None,Move,development
+1572002643.845,874,559,None,Move,development
+1572002643.853,874,557,None,Move,development
+1572002643.861,874,555,None,Move,development
+1572002643.869,875,553,None,Move,development
+1572002643.877,875,551,None,Move,development
+1572002643.885,876,549,None,Move,development
+1572002643.891,876,548,None,Move,development
+1572002643.899,876,547,None,Move,development
+1572002643.907,876,545,None,Move,development
+1572002643.915,876,544,None,Move,development
+1572002643.924,876,542,None,Move,development
+1572002643.9320002,876,541,None,Move,development
+1572002644.019,876,541,None,Move,development
+1572002644.0270002,876,540,None,Move,development
+1572002644.035,875,539,None,Move,development
+1572002644.043,875,539,None,Move,development
+1572002644.051,874,537,None,Move,development
+1572002644.059,874,535,None,Move,development
+1572002644.065,874,535,None,Move,development
+1572002644.073,873,533,None,Move,development
+1572002644.081,873,532,None,Move,development
+1572002644.089,873,532,None,Move,development
+1572002644.097,873,530,None,Move,development
+1572002644.105,873,529,None,Move,development
+1572002644.113,873,528,None,Move,development
+1572002644.121,872,526,None,Move,development
+1572002644.129,872,526,None,Move,development
+1572002644.137,872,524,None,Move,development
+1572002644.143,872,522,None,Move,development
+1572002644.151,872,522,None,Move,development
+1572002644.159,872,520,None,Move,development
+1572002644.167,871,520,None,Move,development
+1572002644.175,871,518,None,Move,development
+1572002644.1820002,871,516,None,Move,development
+1572002644.189,871,515,None,Move,development
+1572002644.197,871,513,None,Move,development
+1572002644.205,872,511,None,Move,development
+1572002644.2129998,872,510,None,Move,development
+1572002644.221,873,508,None,Move,development
+1572002644.229,873,507,None,Move,development
+1572002644.2370002,874,505,None,Move,development
+1572002644.244,874,503,None,Move,development
+1572002644.2510002,874,502,None,Move,development
+1572002644.2589998,874,502,None,Move,development
+1572002644.2670002,874,501,None,Move,development
+1572002644.275,874,500,None,Move,development
+1572002644.291,874,499,None,Move,development
+1572002644.299,874,498,None,Move,development
+1572002644.309,874,497,None,Move,development
+1572002644.441,874,496,None,Move,development
+1572002644.775,874,496,None,Move,development
+1572002644.782,875,496,None,Move,development
+1572002644.833,876,496,None,Move,development
+1572002644.875,876,496,None,Move,development
+1572002644.887,876,496,None,Move,development
+1572002644.895,876,497,None,Move,development
+1572002644.901,876,498,None,Move,development
+1572002644.909,875,499,None,Move,development
+1572002644.917,874,499,None,Move,development
+1572002644.925,873,500,None,Move,development
+1572002644.9329998,872,501,None,Move,development
+1572002644.941,871,501,None,Move,development
+1572002644.95,870,503,None,Move,development
+1572002644.957,868,505,None,Move,development
+1572002644.9629998,863,516,None,Move,development
+1572002644.971,858,529,None,Move,development
+1572002644.979,855,538,None,Move,development
+1572002644.988,853,547,None,Move,development
+1572002644.998,850,559,None,Move,development
+1572002645.005,848,568,None,Move,development
+1572002645.0110002,846,570,None,Move,development
+1572002645.018,846,571,None,Move,development
+1572002645.025,845,571,None,Move,development
+1572002645.069,845,572,None,Move,development
+1572002645.095,845,573,None,Move,development
+1572002645.111,845,573,None,Move,development
+1572002645.4829998,846,574,None,Move,development
+1572002645.4910002,848,582,None,Move,development
+1572002645.4970002,852,596,None,Move,development
+1572002645.505,855,609,None,Move,development
+1572002645.5129998,857,613,None,Move,development
+1572002645.835,857,613,None,Move,development
+1572002646.0089998,857,613,None,Move,development
+1572002646.0170002,856,612,None,Move,development
+1572002646.025,856,611,None,Move,development
+1572002646.034,856,611,None,Move,development
+1572002646.042,855,609,None,Move,development
+1572002646.052,854,607,None,Move,development
+1572002646.059,854,607,None,Move,development
+1572002646.065,853,606,None,Move,development
+1572002646.072,853,605,None,Move,development
+1572002646.087,853,604,None,Move,development
+1572002646.095,853,603,None,Move,development
+1572002646.103,853,601,None,Move,development
+1572002646.1120002,853,601,None,Move,development
+1572002646.119,853,599,None,Move,development
+1572002646.1260002,853,598,None,Move,development
+1572002646.1339998,853,597,None,Move,development
+1572002646.144,853,595,None,Move,development
+1572002646.1520002,853,595,None,Move,development
+1572002646.161,853,594,None,Move,development
+1572002646.17,853,594,None,Move,development
+1572002646.225,853,594,None,Move,development
+1572002646.234,853,601,None,Move,development
+1572002646.244,854,610,None,Move,development
+1572002646.254,857,618,None,Move,development
+1572002646.265,859,626,None,Move,development
+1572002646.274,859,626,None,Move,development
+1572002646.337,859,626,None,Move,development
+1572002646.353,859,626,None,Move,development
+1572002646.363,857,626,None,Move,development
+1572002646.3720002,856,626,None,Move,development
+1572002646.383,856,626,None,Move,development
+1572002646.393,855,625,None,Move,development
+1572002646.461,854,623,None,Move,development
+1572002646.47,853,616,None,Move,development
+1572002646.48,853,611,None,Move,development
+1572002646.4889998,853,608,None,Move,development
+1572002646.4989998,853,607,None,Move,development
+1572002646.5089998,853,605,None,Move,development
+1572002646.5170002,853,602,None,Move,development
+1572002646.526,853,600,None,Move,development
+1572002646.536,853,600,None,Move,development
+1572002646.617,853,601,None,Move,development
+1572002646.627,853,603,None,Move,development
+1572002646.637,853,605,None,Move,development
+1572002646.646,853,606,None,Move,development
+1572002646.825,854,606,None,Move,development
+1572002646.837,855,606,None,Move,development
+1572002646.845,856,606,None,Move,development
+1572002646.923,857,606,None,Move,development
+1572002647.135,857,607,None,Move,development
+1572002647.147,858,607,None,Move,development
+1572002647.159,860,611,None,Move,development
+1572002647.168,860,612,None,Move,development
+1572002647.178,863,613,None,Move,development
+1572002647.186,863,614,None,Move,development
+1572002647.195,865,616,None,Move,development
+1572002647.202,867,618,None,Move,development
+1572002647.211,869,620,None,Move,development
+1572002647.219,870,622,None,Move,development
+1572002647.229,872,624,None,Move,development
+1572002647.2389998,872,626,None,Move,development
+1572002647.2489998,872,626,None,Move,development
+1572002647.929,872,626,None,Move,development
+1572002647.938,871,625,None,Move,development
+1572002647.947,869,622,None,Move,development
+1572002647.954,867,621,None,Move,development
+1572002647.96,866,619,None,Move,development
+1572002647.967,865,617,None,Move,development
+1572002647.975,864,615,None,Move,development
+1572002647.9829998,862,614,None,Move,development
+1572002647.9910002,861,612,None,Move,development
+1572002647.9989998,860,610,None,Move,development
+1572002648.0070002,860,609,None,Move,development
+1572002648.014,858,607,None,Move,development
+1572002648.021,857,606,None,Move,development
+1572002648.033,856,606,None,Move,development
+1572002648.041,855,607,None,Move,development
+1572002648.049,854,607,None,Move,development
+1572002648.421,853,607,None,Move,development
+1572002648.429,853,607,None,Move,development
+1572002648.959,853,607,None,Move,development
+1572002648.968,853,608,None,Move,development
+1572002648.976,853,609,None,Move,development
+1572002648.985,853,610,None,Move,development
+1572002648.9910002,853,612,None,Move,development
+1572002648.998,853,613,None,Move,development
+1572002649.005,853,613,None,Move,development
+1572002649.0129998,853,614,None,Move,development
+1572002649.021,852,616,None,Move,development
+1572002649.029,852,616,None,Move,development
+1572002649.0370002,852,617,None,Move,development
+1572002649.043,852,618,None,Move,development
+1572002649.052,852,619,None,Move,development
+1572002649.5170002,852,618,None,Move,development
+1572002649.526,850,615,None,Move,development
+1572002649.532,849,614,None,Move,development
+1572002649.539,848,612,None,Move,development
+1572002649.5470002,848,611,None,Move,development
+1572002649.555,848,610,None,Move,development
+1572002649.563,847,609,None,Move,development
+1572002649.571,847,607,None,Move,development
+1572002649.579,847,606,None,Move,development
+1572002649.586,847,604,None,Move,development
+1572002649.593,846,602,None,Move,development
+1572002649.601,846,601,None,Move,development
+1572002649.609,846,601,None,Move,development
+1572002649.617,846,600,None,Move,development
+1572002650.093,845,600,None,Move,development
+1572002650.109,845,601,None,Move,development
+1572002650.117,844,602,None,Move,development
+1572002650.125,844,603,None,Move,development
+1572002650.131,844,603,None,Move,development
+1572002650.139,844,604,None,Move,development
+1572002650.147,844,605,None,Move,development
+1572002650.163,843,606,None,Move,development
+1572002650.1720002,843,606,None,Move,development
+1572002650.179,843,607,None,Move,development
+1572002650.189,843,608,None,Move,development
+1572002650.197,843,608,None,Move,development
+1572002650.205,842,609,None,Move,development
+1572002650.221,842,610,None,Move,development
+1572002650.229,842,611,None,Move,development
+1572002650.2370002,842,611,None,Move,development
+1572002650.244,841,612,None,Move,development
+1572002650.255,841,613,None,Move,development
+1572002650.2629998,841,613,None,Move,development
+1572002650.271,841,614,None,Move,development
+1572002650.279,841,615,None,Move,development
+1572002650.2870002,841,616,None,Move,development
+1572002650.295,840,616,None,Move,development
+1572002650.305,840,616,None,Move,development
+1572002650.3170002,840,617,None,Move,development
+1572002650.324,840,618,None,Move,development
+1572002654.561,841,618,None,Move,development
+1572002654.569,843,616,None,Move,development
+1572002654.577,845,615,None,Move,development
+1572002654.583,847,613,None,Move,development
+1572002654.591,849,612,None,Move,development
+1572002654.599,850,610,None,Move,development
+1572002654.607,852,608,None,Move,development
+1572002654.615,854,607,None,Move,development
+1572002654.623,855,606,None,Move,development
+1572002656.379,855,606,None,Move,development
+1572002656.387,855,605,None,Move,development
+1572002656.399,855,604,None,Move,development
+1572002656.407,855,603,None,Move,development
+1572002656.415,855,602,None,Move,development
+1572002656.427,855,601,None,Move,development
+1572002656.435,855,600,None,Move,development
+1572002656.449,855,599,None,Move,development
+1572002656.875,855,599,None,Move,development
+1572002656.887,855,600,None,Move,development
+1572002656.895,856,600,None,Move,development
+1572002656.903,856,602,None,Move,development
+1572002656.911,857,603,None,Move,development
+1572002656.919,857,604,None,Move,development
+1572002656.928,858,606,None,Move,development
+1572002656.935,858,606,None,Move,development
+1572002656.944,858,607,None,Move,development
+1572002656.951,858,608,None,Move,development
+1572002656.96,858,609,None,Move,development
+1572002656.968,858,610,None,Move,development
+1572002656.9770002,858,612,None,Move,development
+1572002656.986,858,612,None,Move,development
+1572002656.995,859,613,None,Move,development
+1572002657.0029998,859,614,None,Move,development
+1572002657.0129998,859,615,None,Move,development
+1572002657.022,859,617,None,Move,development
+1572002657.031,859,617,None,Move,development
+1572002657.041,860,618,None,Move,development
+1572002657.0470002,860,619,None,Move,development
+1572002657.056,860,620,None,Move,development
+1572002657.064,860,620,None,Move,development
+1572002657.072,860,621,None,Move,development
+1572002657.079,860,622,None,Move,development
+1572002657.086,860,622,None,Move,development
+1572002657.111,860,623,None,Move,development
+1572002659.005,860,624,None,Move,development
+1572002659.021,860,625,None,Move,development
+1572002659.0270002,860,625,None,Move,development
+1572002663.186,861,625,None,Move,development
+1572002663.196,866,627,None,Move,development
+1572002663.201,871,629,None,Move,development
+1572002663.209,876,631,None,Move,development
+1572002663.218,877,631,None,Move,development
+1572002663.644,877,631,None,Move,development
+1572002663.66,876,634,None,Move,development
+1572002663.665,870,641,None,Move,development
+1572002663.673,864,648,None,Move,development
+1572002663.681,859,656,None,Move,development
+1572002663.69,855,663,None,Move,development
+1572002663.697,853,669,None,Move,development
+1572002663.706,850,676,None,Move,development
+1572002663.714,848,683,None,Move,development
+1572002663.722,846,691,None,Move,development
+1572002663.728,844,699,None,Move,development
+1572002663.735,842,708,None,Move,development
+1572002663.744,839,717,None,Move,development
+1572002663.752,838,727,None,Move,development
+1572002663.76,837,737,None,Move,development
+1572002663.768,836,747,None,Move,development
+1572002663.776,834,757,None,Move,development
+1572002663.781,833,768,None,Move,development
+1572002663.789,833,778,None,Move,development
+1572002663.7970002,833,789,None,Move,development
+1572002663.805,832,800,None,Move,development
+1572002663.813,832,810,None,Move,development
+1572002663.821,830,820,None,Move,development
+1572002663.829,830,830,None,Move,development
+1572002663.837,830,840,None,Move,development
+1572002663.843,830,850,None,Move,development
+1572002663.851,830,860,None,Move,development
+1572002663.859,832,869,None,Move,development
+1572002663.867,833,877,None,Move,development
+1572002663.875,836,885,None,Move,development
+1572002663.883,838,892,None,Move,development
+1572002663.891,840,897,None,Move,development
+1572002663.899,843,905,None,Move,development
+1572002663.905,845,910,None,Move,development
+1572002663.913,846,914,None,Move,development
+1572002663.921,848,920,None,Move,development
+1572002663.929,849,924,None,Move,development
+1572002663.937,850,926,None,Move,development
+1572002663.945,852,932,None,Move,development
+1572002663.9529998,853,937,None,Move,development
+1572002663.959,854,943,None,Move,development
+1572002663.967,854,946,None,Move,development
+1572002663.975,854,950,None,Move,development
+1572002663.9829998,854,954,None,Move,development
+1572002663.992,854,958,None,Move,development
+1572002664.004,854,960,None,Move,development
+1572002664.021,853,966,None,Move,development
+1572002664.026,853,968,None,Move,development
+1572002664.031,853,972,None,Move,development
+1572002664.0370002,853,977,None,Move,development
+1572002664.046,853,981,None,Move,development
+1572002664.053,853,986,None,Move,development
+1572002664.061,853,990,None,Move,development
+1572002664.07,853,992,None,Move,development
+1572002664.077,854,996,None,Move,development
+1572002664.084,854,999,None,Move,development
+1572002664.092,855,1003,None,Move,development
+1572002664.104,856,1008,None,Move,development
+1572002664.1120002,858,1012,None,Move,development
+1572002664.1179998,859,1016,None,Move,development
+1572002664.1239998,860,1021,None,Move,development
+1572002664.131,861,1025,None,Move,development
+1572002664.144,862,1029,None,Move,development
+1572002664.1520002,863,1033,None,Move,development
+1572002664.159,864,1037,None,Move,development
+1572002664.164,864,1042,None,Move,development
+1572002664.169,864,1045,None,Move,development
+1572002664.177,864,1048,None,Move,development
+1572002664.1920002,864,1050,None,Move,development
+1572002664.201,864,1054,None,Move,development
+1572002664.208,864,1056,None,Move,development
+1572002664.215,864,1058,None,Move,development
+1572002664.2229998,864,1059,None,Move,development
+1572002664.232,862,1061,None,Move,development
+1572002664.244,860,1062,None,Move,development
+1572002664.2529998,858,1064,None,Move,development
+1572002664.2589998,857,1066,None,Move,development
+1572002664.264,855,1066,None,Move,development
+1572002664.269,853,1067,None,Move,development
+1572002664.2770002,851,1068,None,Move,development
+1572002664.286,850,1069,None,Move,development
+1572002664.294,848,1070,None,Move,development
+1572002664.302,846,1070,None,Move,development
+1572002664.315,846,1070,None,Move,development
+1572002664.323,845,1070,None,Move,development
+1572002664.332,844,1070,None,Move,development
+1572002664.43,844,1070,Left,Pressed,development
+1572002664.549,844,1070,Left,Released,development
+1572002664.851,844,1070,None,Move,file system
+1572002664.859,845,1070,None,Move,file system
+1572002664.8660002,845,1070,None,Move,file system
+1572002664.947,846,1070,None,Move,file system
+1572002664.959,847,1069,None,Move,file system
+1572002664.967,847,1068,None,Move,file system
+1572002664.975,847,1064,None,Move,file system
+1572002664.981,847,1060,None,Move,file system
+1572002664.9889998,848,1055,None,Move,file system
+1572002664.9970002,848,1048,None,Move,file system
+1572002665.005,850,1040,None,Move,file system
+1572002665.0129998,853,1031,None,Move,file system
+1572002665.021,855,1024,None,Move,file system
+1572002665.029,858,1015,None,Move,file system
+1572002665.0370002,860,1008,None,Move,file system
+1572002665.043,863,1001,None,Move,file system
+1572002665.051,865,993,None,Move,file system
+1572002665.059,867,986,None,Move,file system
+1572002665.0670002,870,979,None,Move,file system
+1572002665.075,872,972,None,Move,file system
+1572002665.083,875,964,None,Move,file system
+1572002665.091,877,959,None,Move,file system
+1572002665.099,879,955,None,Move,file system
+1572002665.105,881,953,None,Move,file system
+1572002665.113,882,951,None,Move,file system
+1572002665.121,883,949,None,Move,file system
+1572002665.129,885,948,None,Move,file system
+1572002665.137,886,946,None,Move,file system
+1572002665.145,888,944,None,Move,file system
+1572002665.153,889,942,None,Move,file system
+1572002665.159,889,942,None,Move,file system
+1572002665.167,890,941,None,Move,file system
+1572002665.175,890,940,None,Move,file system
+1572002665.1829998,890,940,None,Move,file system
+1572002665.2029998,891,940,None,Move,file system
+1572002665.393,891,940,None,Move,file system
+1572002665.399,886,941,None,Move,file system
+1572002665.407,885,943,None,Move,file system
+1572002665.415,883,945,None,Move,file system
+1572002665.423,881,947,None,Move,file system
+1572002665.431,879,948,None,Move,file system
+1572002665.439,878,949,None,Move,file system
+1572002665.447,876,950,None,Move,file system
+1572002665.455,874,951,None,Move,file system
+1572002665.461,873,952,None,Move,file system
+1572002665.47,873,952,None,Move,file system
+1572002665.478,871,952,None,Move,file system
+1572002665.485,870,953,None,Move,file system
+1572002665.4929998,868,955,None,Move,file system
+1572002665.502,866,956,None,Move,file system
+1572002665.5089998,862,958,None,Move,file system
+1572002665.524,850,959,None,Move,file system
+1572002665.531,843,959,None,Move,file system
+1572002665.541,836,960,None,Move,file system
+1572002665.5470002,829,961,None,Move,file system
+1572002665.555,822,961,None,Move,file system
+1572002665.563,815,962,None,Move,file system
+1572002665.572,809,962,None,Move,file system
+1572002665.579,802,962,None,Move,file system
+1572002665.587,795,962,None,Move,file system
+1572002665.593,791,962,None,Move,file system
+1572002665.601,787,962,None,Move,file system
+1572002665.6120002,785,962,None,Move,file system
+1572002665.6220002,783,962,None,Move,file system
+1572002665.63,782,962,None,Move,file system
+1572002665.6379998,780,962,None,Move,file system
+1572002665.645,778,962,None,Move,file system
+1572002665.653,777,962,None,Move,file system
+1572002665.6620002,775,962,None,Move,file system
+1572002665.671,772,962,None,Move,file system
+1572002665.678,771,962,None,Move,file system
+1572002665.685,769,962,None,Move,file system
+1572002665.6920002,767,961,None,Move,file system
+1572002665.7,766,960,None,Move,file system
+1572002665.708,764,960,None,Move,file system
+1572002665.716,762,959,None,Move,file system
+1572002665.725,761,958,None,Move,file system
+1572002665.7329998,758,957,None,Move,file system
+1572002665.74,756,956,None,Move,file system
+1572002665.745,756,956,None,Move,file system
+1572002665.7510002,754,955,None,Move,file system
+1572002665.756,753,955,None,Move,file system
+1572002665.7629998,752,954,None,Move,file system
+1572002665.771,750,953,None,Move,file system
+1572002665.779,748,952,None,Move,file system
+1572002665.7870002,747,951,None,Move,file system
+1572002665.795,745,950,None,Move,file system
+1572002665.803,744,950,None,Move,file system
+1572002665.811,743,949,None,Move,file system
+1572002665.8170002,743,948,None,Move,file system
+1572002665.825,742,948,None,Move,file system
+1572002666.0470002,742,948,Left,Pressed,file system
+1572002666.167,742,948,Left,Released,file system
+1572002666.355,742,948,None,Move,file system
+1572002666.371,742,947,None,Move,file system
+1572002666.379,743,943,None,Move,file system
+1572002666.387,744,941,None,Move,file system
+1572002666.395,745,941,None,Move,file system
+1572002666.403,746,940,None,Move,file system
+1572002666.411,748,940,None,Move,file system
+1572002666.417,750,939,None,Move,file system
+1572002666.425,751,938,None,Move,file system
+1572002666.5070002,751,935,None,Move,file system
+1572002666.515,742,929,None,Move,file system
+1572002666.5229998,732,924,None,Move,file system
+1572002666.531,723,918,None,Move,file system
+1572002666.5370002,710,908,None,Move,file system
+1572002666.545,693,896,None,Move,file system
+1572002666.553,668,875,None,Move,file system
+1572002666.561,639,845,None,Move,file system
+1572002666.569,603,812,None,Move,file system
+1572002666.577,564,777,None,Move,file system
+1572002666.585,522,740,None,Move,file system
+1572002666.593,480,705,None,Move,file system
+1572002666.599,439,670,None,Move,file system
+1572002666.607,399,633,None,Move,file system
+1572002666.615,368,598,None,Move,file system
+1572002666.623,344,569,None,Move,file system
+1572002666.631,330,549,None,Move,file system
+1572002666.639,317,528,None,Move,file system
+1572002666.647,307,514,None,Move,file system
+1572002666.653,296,498,None,Move,file system
+1572002666.661,288,484,None,Move,file system
+1572002666.669,280,472,None,Move,file system
+1572002666.677,272,459,None,Move,file system
+1572002666.685,263,448,None,Move,file system
+1572002666.6929998,257,439,None,Move,file system
+1572002666.701,253,432,None,Move,file system
+1572002666.709,251,425,None,Move,file system
+1572002666.716,250,422,None,Move,file system
+1572002666.7229998,249,420,None,Move,file system
+1572002666.731,249,419,None,Move,file system
+1572002666.7389998,249,417,None,Move,file system
+1572002666.7470002,249,415,None,Move,file system
+1572002666.7589998,249,415,None,Move,file system
+1572002666.7729998,249,414,None,Move,file system
+1572002666.829,250,413,None,Move,file system
+1572002666.839,251,413,None,Move,file system
+1572002666.847,252,411,None,Move,file system
+1572002666.855,254,410,None,Move,file system
+1572002666.863,255,410,None,Move,file system
+1572002666.871,256,410,None,Move,file system
+1572002666.879,258,410,None,Move,file system
+1572002666.887,261,411,None,Move,file system
+1572002666.893,266,413,None,Move,file system
+1572002666.9020002,275,416,None,Move,file system
+1572002666.909,284,419,None,Move,file system
+1572002666.917,294,423,None,Move,file system
+1572002666.925,306,429,None,Move,file system
+1572002666.9329998,317,434,None,Move,file system
+1572002666.941,327,437,None,Move,file system
+1572002666.949,335,439,None,Move,file system
+1572002666.955,343,442,None,Move,file system
+1572002666.964,350,443,None,Move,file system
+1572002666.971,359,445,None,Move,file system
+1572002666.979,368,446,None,Move,file system
+1572002666.9870002,375,448,None,Move,file system
+1572002666.995,385,448,None,Move,file system
+1572002667.0029998,397,446,None,Move,file system
+1572002667.0089998,410,443,None,Move,file system
+1572002667.0170002,422,441,None,Move,file system
+1572002667.025,433,438,None,Move,file system
+1572002667.033,445,434,None,Move,file system
+1572002667.041,455,431,None,Move,file system
+1572002667.049,469,429,None,Move,file system
+1572002667.0570002,480,427,None,Move,file system
+1572002667.065,494,426,None,Move,file system
+1572002667.071,506,425,None,Move,file system
+1572002667.079,518,423,None,Move,file system
+1572002667.087,528,421,None,Move,file system
+1572002667.095,538,420,None,Move,file system
+1572002667.103,545,417,None,Move,file system
+1572002667.111,553,415,None,Move,file system
+1572002667.119,560,410,None,Move,file system
+1572002667.127,569,405,None,Move,file system
+1572002667.133,580,396,None,Move,file system
+1572002667.141,598,386,None,Move,file system
+1572002667.149,626,368,None,Move,file system
+1572002667.157,647,352,None,Move,file system
+1572002667.165,659,344,None,Move,file system
+1572002667.173,670,337,None,Move,file system
+1572002667.181,677,334,None,Move,file system
+1572002667.187,686,327,None,Move,file system
+1572002667.195,696,321,None,Move,file system
+1572002667.2029998,703,313,None,Move,file system
+1572002667.211,713,305,None,Move,file system
+1572002667.219,725,297,None,Move,file system
+1572002667.2270002,741,286,None,Move,file system
+1572002667.235,760,277,None,Move,file system
+1572002667.2429998,778,271,None,Move,file system
+1572002667.265,799,264,None,Move,file system
+1572002667.27,848,256,None,Move,file system
+1572002667.276,875,247,None,Move,file system
+1572002667.283,904,235,None,Move,file system
+1572002667.29,929,225,None,Move,file system
+1572002667.2970002,942,216,None,Move,file system
+1572002667.304,951,211,None,Move,file system
+1572002667.311,958,206,None,Move,file system
+1572002667.319,966,201,None,Move,file system
+1572002667.327,972,196,None,Move,file system
+1572002667.335,979,191,None,Move,file system
+1572002667.343,987,186,None,Move,file system
+1572002667.351,997,180,None,Move,file system
+1572002667.359,1010,173,None,Move,file system
+1572002667.367,1023,170,None,Move,file system
+1572002667.3739998,1040,166,None,Move,file system
+1572002667.381,1059,161,None,Move,file system
+1572002667.389,1082,158,None,Move,file system
+1572002667.397,1110,156,None,Move,file system
+1572002667.405,1138,157,None,Move,file system
+1572002667.413,1160,159,None,Move,file system
+1572002667.421,1178,159,None,Move,file system
+1572002667.427,1196,158,None,Move,file system
+1572002667.435,1213,157,None,Move,file system
+1572002667.4429998,1225,154,None,Move,file system
+1572002667.451,1233,152,None,Move,file system
+1572002667.459,1241,149,None,Move,file system
+1572002667.467,1243,147,None,Move,file system
+1572002667.475,1245,146,None,Move,file system
+1572002667.4829998,1247,144,None,Move,file system
+1572002667.4889998,1248,142,None,Move,file system
+1572002667.4970002,1248,141,None,Move,file system
+1572002667.505,1248,139,None,Move,file system
+1572002667.5129998,1248,137,None,Move,file system
+1572002667.521,1248,136,None,Move,file system
+1572002667.529,1249,132,None,Move,file system
+1572002667.5370002,1251,128,None,Move,file system
+1572002667.543,1253,122,None,Move,file system
+1572002667.551,1255,118,None,Move,file system
+1572002667.559,1257,114,None,Move,file system
+1572002667.5670002,1260,108,None,Move,file system
+1572002667.575,1262,104,None,Move,file system
+1572002667.583,1264,100,None,Move,file system
+1572002667.591,1266,96,None,Move,file system
+1572002667.599,1268,92,None,Move,file system
+1572002667.605,1270,88,None,Move,file system
+1572002667.613,1273,86,None,Move,file system
+1572002667.621,1277,84,None,Move,file system
+1572002667.629,1282,82,None,Move,file system
+1572002667.637,1286,79,None,Move,file system
+1572002667.645,1292,77,None,Move,file system
+1572002667.653,1294,76,None,Move,file system
+1572002667.661,1297,75,None,Move,file system
+1572002667.667,1298,74,None,Move,file system
+1572002667.675,1300,73,None,Move,file system
+1572002667.6829998,1302,72,None,Move,file system
+1572002667.691,1302,71,None,Move,file system
+1572002667.699,1304,70,None,Move,file system
+1572002667.712,1306,70,None,Move,file system
+1572002667.72,1307,69,None,Move,file system
+1572002667.725,1309,68,None,Move,file system
+1572002667.731,1311,67,None,Move,file system
+1572002667.7370002,1313,66,None,Move,file system
+1572002667.745,1314,65,None,Move,file system
+1572002667.7529998,1316,64,None,Move,file system
+1572002667.7610002,1318,64,None,Move,file system
+1572002667.769,1319,64,None,Move,file system
+1572002667.7770002,1321,63,None,Move,file system
+1572002667.783,1323,63,None,Move,file system
+1572002667.791,1324,62,None,Move,file system
+1572002667.799,1326,61,None,Move,file system
+1572002667.8070002,1327,60,None,Move,file system
+1572002667.815,1328,60,None,Move,file system
+1572002667.823,1330,59,None,Move,file system
+1572002667.831,1331,59,None,Move,file system
+1572002667.839,1332,59,None,Move,file system
+1572002667.845,1334,59,None,Move,file system
+1572002667.853,1335,59,None,Move,file system
+1572002667.861,1337,59,None,Move,file system
+1572002667.869,1339,59,None,Move,file system
+1572002667.877,1339,59,None,Move,file system
+1572002667.8860002,1341,59,None,Move,file system
+1572002667.893,1341,59,None,Move,file system
+1572002667.899,1342,59,None,Move,file system
+1572002667.907,1343,59,None,Move,file system
+1572002667.915,1344,59,None,Move,file system
+1572002667.927,1344,59,None,Move,file system
+1572002667.951,1345,59,None,Move,file system
+1572002667.959,1346,59,None,Move,file system
+1572002667.965,1346,59,None,Move,file system
+1572002667.9770002,1347,59,None,Move,file system
+1572002667.9889998,1348,59,None,Move,file system
+1572002668.0010002,1349,59,None,Move,file system
+1572002668.0089998,1350,59,None,Move,file system
+1572002668.0170002,1351,59,None,Move,file system
+1572002668.0229998,1352,59,None,Move,file system
+1572002668.031,1353,59,None,Move,file system
+1572002668.039,1354,59,None,Move,file system
+1572002668.055,1354,59,None,Move,file system
+1572002668.071,1355,59,None,Move,file system
+1572002668.083,1356,59,None,Move,file system
+1572002668.113,1357,59,None,Move,file system
+1572002668.121,1357,59,None,Move,file system
+1572002668.129,1358,59,None,Move,file system
+1572002668.139,1359,59,None,Move,file system
+1572002668.151,1359,59,None,Move,file system
+1572002668.159,1360,59,None,Move,file system
+1572002668.167,1361,59,None,Move,file system
+1572002668.175,1362,59,None,Move,file system
+1572002668.1829998,1363,59,None,Move,file system
+1572002668.191,1364,59,None,Move,file system
+1572002668.197,1365,59,None,Move,file system
+1572002668.205,1365,59,None,Move,file system
+1572002668.217,1366,59,None,Move,file system
+1572002668.2410002,1367,59,None,Move,file system
+1572002668.387,1367,60,None,Move,file system
+1572002668.396,1361,65,None,Move,file system
+1572002668.403,1350,72,None,Move,file system
+1572002668.411,1336,79,None,Move,file system
+1572002668.419,1318,88,None,Move,file system
+1572002668.427,1299,97,None,Move,file system
+1572002668.435,1271,109,None,Move,file system
+1572002668.441,1238,127,None,Move,file system
+1572002668.449,1204,146,None,Move,file system
+1572002668.457,1171,165,None,Move,file system
+1572002668.465,1136,179,None,Move,file system
+1572002668.4729998,1097,199,None,Move,file system
+1572002668.481,1057,218,None,Move,file system
+1572002668.4889998,1023,231,None,Move,file system
+1572002668.4970002,991,242,None,Move,file system
+1572002668.5029998,964,262,None,Move,file system
+1572002668.5110002,940,288,None,Move,file system
+1572002668.519,926,308,None,Move,file system
+1572002668.544,911,326,None,Move,file system
+1572002668.55,889,357,None,Move,file system
+1572002668.555,881,366,None,Move,file system
+1572002668.561,874,375,None,Move,file system
+1572002668.566,868,383,None,Move,file system
+1572002668.573,862,390,None,Move,file system
+1572002668.581,857,395,None,Move,file system
+1572002668.589,850,400,None,Move,file system
+1572002668.597,840,405,None,Move,file system
+1572002668.605,830,410,None,Move,file system
+1572002668.613,812,418,None,Move,file system
+1572002668.619,793,427,None,Move,file system
+1572002668.627,774,437,None,Move,file system
+1572002668.635,749,446,None,Move,file system
+1572002668.643,720,449,None,Move,file system
+1572002668.651,691,453,None,Move,file system
+1572002668.659,666,456,None,Move,file system
+1572002668.667,641,458,None,Move,file system
+1572002668.675,622,461,None,Move,file system
+1572002668.681,605,464,None,Move,file system
+1572002668.689,590,467,None,Move,file system
+1572002668.697,578,469,None,Move,file system
+1572002668.705,564,472,None,Move,file system
+1572002668.7129998,552,476,None,Move,file system
+1572002668.721,541,484,None,Move,file system
+1572002668.729,530,492,None,Move,file system
+1572002668.735,523,500,None,Move,file system
+1572002668.7429998,515,509,None,Move,file system
+1572002668.7510002,507,519,None,Move,file system
+1572002668.7589998,503,526,None,Move,file system
+1572002668.7670002,503,528,None,Move,file system
+1572002668.775,502,529,None,Move,file system
+1572002668.783,502,531,None,Move,file system
+1572002668.791,503,533,None,Move,file system
+1572002668.7970002,504,534,None,Move,file system
+1572002668.805,506,536,None,Move,file system
+1572002668.813,506,537,None,Move,file system
+1572002668.821,508,538,None,Move,file system
+1572002668.829,509,538,None,Move,file system
+1572002668.853,509,538,None,Move,file system
+1572002668.879,509,538,None,Move,file system
+1572002668.9829998,509,538,None,Move,file system
+1572002668.9910002,509,538,None,Move,file system
+1572002668.9989998,508,536,None,Move,file system
+1572002669.0070002,506,535,None,Move,file system
+1572002669.015,504,533,None,Move,file system
+1572002669.0229998,503,532,None,Move,file system
+1572002669.031,501,531,None,Move,file system
+1572002669.0370002,498,530,None,Move,file system
+1572002669.045,497,529,None,Move,file system
+1572002669.053,496,529,None,Move,file system
+1572002669.061,494,529,None,Move,file system
+1572002669.069,494,529,None,Move,file system
+1572002669.177,493,529,None,Move,file system
+1572002669.1929998,492,528,None,Move,file system
+1572002669.201,492,527,None,Move,file system
+1572002669.209,491,527,None,Move,file system
+1572002669.2670002,491,526,None,Move,file system
+1572002669.293,490,526,None,Move,file system
+1572002669.301,488,525,None,Move,file system
+1572002669.309,487,523,None,Move,file system
+1572002669.321,486,523,None,Move,file system
+1572002669.5029998,486,522,None,Move,file system
+1572002669.5110002,486,522,Left,Pressed,file system
+1572002669.603,486,522,Left,Released,file system
+1572002669.665,486,522,Left,Pressed,file system
+1572002669.785,486,522,Left,Released,file system
+1572002669.826,486,522,None,Move,file system
+1572002669.836,486,522,None,Move,file system
+1572002669.844,487,522,None,Move,file system
+1572002669.8520002,488,522,None,Move,file system
+1572002669.86,489,522,None,Move,file system
+1572002669.867,489,522,None,Move,file system
+1572002669.941,490,522,None,Move,file system
+1572002669.956,491,521,None,Move,file system
+1572002669.964,492,519,None,Move,file system
+1572002669.971,494,518,None,Move,file system
+1572002669.979,496,516,None,Move,file system
+1572002669.9870002,498,514,None,Move,file system
+1572002669.995,499,511,None,Move,file system
+1572002670.0029998,501,510,None,Move,file system
+1572002670.0089998,503,508,None,Move,file system
+1572002670.018,505,506,None,Move,file system
+1572002670.025,507,504,None,Move,file system
+1572002670.034,507,502,None,Move,file system
+1572002670.042,508,502,None,Move,file system
+1572002670.05,509,501,None,Move,file system
+1572002670.154,510,499,None,Move,file system
+1572002670.173,511,496,None,Move,file system
+1572002670.184,513,494,None,Move,file system
+1572002670.1920002,517,491,None,Move,file system
+1572002670.199,518,489,None,Move,file system
+1572002670.208,519,487,None,Move,file system
+1572002670.216,519,487,None,Move,file system
+1572002670.224,520,486,None,Move,file system
+1572002670.232,520,485,None,Move,file system
+1572002670.369,520,485,Left,Pressed,file system
+1572002670.471,520,485,Left,Released,file system
+1572002671.575,522,485,None,Move,file system
+1572002671.581,522,483,None,Move,file system
+1572002671.589,523,483,None,Move,file system
+1572002671.597,524,482,None,Move,file system
+1572002671.605,525,480,None,Move,file system
+1572002671.613,525,479,None,Move,file system
+1572002671.621,526,477,None,Move,file system
+1572002671.629,527,476,None,Move,file system
+1572002671.637,527,475,None,Move,file system
+1572002671.643,528,474,None,Move,file system
+1572002671.651,529,472,None,Move,file system
+1572002671.659,529,472,None,Move,file system
+1572002671.667,530,470,None,Move,file system
+1572002671.675,530,470,None,Move,file system
+1572002671.6829998,531,468,None,Move,file system
+1572002671.691,531,467,None,Move,file system
+1572002671.7,532,466,None,Move,file system
+1572002671.706,532,465,None,Move,file system
+1572002671.7129998,532,463,None,Move,file system
+1572002671.721,532,463,None,Move,file system
+1572002671.729,533,461,None,Move,file system
+1572002671.7370002,533,460,None,Move,file system
+1572002671.745,534,460,None,Move,file system
+1572002671.7529998,535,459,None,Move,file system
+1572002671.7589998,535,458,None,Move,file system
+1572002671.768,535,457,None,Move,file system
+1572002671.779,535,456,None,Move,file system
+1572002671.7870002,536,455,None,Move,file system
+1572002671.794,536,454,None,Move,file system
+1572002671.799,537,452,None,Move,file system
+1572002671.8070002,538,451,None,Move,file system
+1572002671.82,538,451,None,Move,file system
+1572002671.827,538,449,None,Move,file system
+1572002671.833,538,448,None,Move,file system
+1572002671.839,539,447,None,Move,file system
+1572002671.846,539,446,None,Move,file system
+1572002671.8579998,540,445,None,Move,file system
+1572002671.867,540,444,None,Move,file system
+1572002671.873,541,443,None,Move,file system
+1572002671.879,541,442,None,Move,file system
+1572002671.895,541,442,None,Move,file system
+1572002671.906,541,441,None,Move,file system
+1572002671.913,542,441,None,Move,file system
+1572002671.9320002,542,440,None,Move,file system
+1572002671.946,543,440,None,Move,file system
+1572002671.955,543,439,None,Move,file system
+1572002671.961,543,439,None,Move,file system
+1572002672.035,543,438,None,Move,file system
+1572002672.073,545,437,None,Move,file system
+1572002672.081,546,436,None,Move,file system
+1572002672.089,547,434,None,Move,file system
+1572002672.097,548,433,None,Move,file system
+1572002672.105,549,432,None,Move,file system
+1572002672.113,550,430,None,Move,file system
+1572002672.12,551,429,None,Move,file system
+1572002672.127,553,428,None,Move,file system
+1572002672.1360002,555,426,None,Move,file system
+1572002672.144,560,424,None,Move,file system
+1572002672.1520002,566,422,None,Move,file system
+1572002672.16,573,419,None,Move,file system
+1572002672.168,580,417,None,Move,file system
+1572002672.173,589,414,None,Move,file system
+1572002672.1820002,596,412,None,Move,file system
+1572002672.19,603,411,None,Move,file system
+1572002672.198,612,409,None,Move,file system
+1572002672.206,620,409,None,Move,file system
+1572002672.214,630,409,None,Move,file system
+1572002672.222,640,409,None,Move,file system
+1572002672.23,650,409,None,Move,file system
+1572002672.236,662,409,None,Move,file system
+1572002672.244,674,410,None,Move,file system
+1572002672.252,686,410,None,Move,file system
+1572002672.26,699,409,None,Move,file system
+1572002672.268,711,407,None,Move,file system
+1572002672.276,723,404,None,Move,file system
+1572002672.283,736,401,None,Move,file system
+1572002672.292,750,397,None,Move,file system
+1572002672.2970002,762,395,None,Move,file system
+1572002672.306,774,391,None,Move,file system
+1572002672.313,788,388,None,Move,file system
+1572002672.321,801,385,None,Move,file system
+1572002672.329,819,385,None,Move,file system
+1572002672.337,851,389,None,Move,file system
+1572002672.345,901,403,None,Move,file system
+1572002672.3520002,964,413,None,Move,file system
+1572002672.359,1030,420,None,Move,file system
+1572002672.367,1117,444,None,Move,file system
+1572002672.375,1208,465,None,Move,file system
+1572002672.383,1301,481,None,Move,file system
+1572002672.391,1390,489,None,Move,file system
+1572002672.399,1487,508,None,Move,file system
+1572002672.407,1578,529,None,Move,file system
+1572002672.413,1657,542,None,Move,file system
+1572002672.4220002,1724,554,None,Move,file system
+1572002672.43,1778,571,None,Move,file system
+1572002672.438,1826,587,None,Move,file system
+1572002672.446,1861,599,None,Move,file system
+1572002672.454,1880,609,None,Move,file system
+1572002672.475,1889,617,None,Move,file system
+1572002672.481,1893,619,None,Move,file system
+1572002672.486,1893,620,None,Move,file system
+1572002672.492,1892,622,None,Move,file system
+1572002672.4989998,1890,623,None,Move,file system
+1572002672.5070002,1888,625,None,Move,file system
+1572002672.515,1882,627,None,Move,file system
+1572002672.5229998,1875,630,None,Move,file system
+1572002672.529,1866,632,None,Move,file system
+1572002672.5370002,1858,634,None,Move,file system
+1572002672.545,1848,634,None,Move,file system
+1572002672.553,1837,636,None,Move,file system
+1572002672.561,1825,637,None,Move,file system
+1572002672.569,1812,637,None,Move,file system
+1572002672.577,1795,634,None,Move,file system
+1572002672.585,1779,633,None,Move,file system
+1572002672.592,1764,633,None,Move,file system
+1572002672.599,1747,636,None,Move,file system
+1572002672.607,1728,639,None,Move,file system
+1572002672.615,1711,640,None,Move,file system
+1572002672.623,1691,642,None,Move,file system
+1572002672.631,1670,642,None,Move,file system
+1572002672.639,1649,641,None,Move,file system
+1572002672.647,1632,639,None,Move,file system
+1572002672.653,1615,636,None,Move,file system
+1572002672.661,1599,636,None,Move,file system
+1572002672.669,1582,636,None,Move,file system
+1572002672.677,1565,636,None,Move,file system
+1572002672.685,1549,634,None,Move,file system
+1572002672.6929998,1530,631,None,Move,file system
+1572002672.714,1504,628,None,Move,file system
+1572002672.72,1450,621,None,Move,file system
+1572002672.724,1421,617,None,Move,file system
+1572002672.732,1393,616,None,Move,file system
+1572002672.74,1364,612,None,Move,file system
+1572002672.748,1336,610,None,Move,file system
+1572002672.756,1307,613,None,Move,file system
+1572002672.764,1272,615,None,Move,file system
+1572002672.769,1251,615,None,Move,file system
+1572002672.7770002,1239,613,None,Move,file system
+1572002672.785,1231,611,None,Move,file system
+1572002672.793,1226,609,None,Move,file system
+1572002672.802,1225,609,None,Move,file system
+1572002672.81,1225,608,None,Move,file system
+1572002672.8179998,1224,608,None,Move,file system
+1572002672.885,1221,608,None,Move,file system
+1572002672.896,1212,609,None,Move,file system
+1572002672.905,1200,612,None,Move,file system
+1572002672.913,1190,612,None,Move,file system
+1572002672.919,1178,612,None,Move,file system
+1572002672.926,1168,612,None,Move,file system
+1572002672.934,1158,610,None,Move,file system
+1572002672.9420002,1149,609,None,Move,file system
+1572002672.947,1142,608,None,Move,file system
+1572002672.956,1135,607,None,Move,file system
+1572002672.964,1129,606,None,Move,file system
+1572002672.972,1122,603,None,Move,file system
+1572002672.979,1115,602,None,Move,file system
+1572002672.9870002,1112,601,None,Move,file system
+1572002672.996,1111,600,None,Move,file system
+1572002673.004,1110,600,None,Move,file system
+1572002674.28,1109,600,None,Move,file system
+1572002674.2870002,1106,593,None,Move,file system
+1572002674.295,1104,585,None,Move,file system
+1572002674.303,1100,578,None,Move,file system
+1572002674.311,1095,571,None,Move,file system
+1572002674.319,1087,560,None,Move,file system
+1572002674.327,1079,547,None,Move,file system
+1572002674.333,1070,531,None,Move,file system
+1572002674.341,1059,514,None,Move,file system
+1572002674.349,1047,497,None,Move,file system
+1572002674.357,1036,480,None,Move,file system
+1572002674.365,1025,469,None,Move,file system
+1572002674.373,1017,460,None,Move,file system
+1572002674.381,1009,452,None,Move,file system
+1572002674.387,1001,445,None,Move,file system
+1572002674.395,995,441,None,Move,file system
+1572002674.403,991,436,None,Move,file system
+1572002674.411,988,434,None,Move,file system
+1572002674.419,986,433,None,Move,file system
+1572002674.427,984,431,None,Move,file system
+1572002674.435,981,429,None,Move,file system
+1572002674.4429998,978,427,None,Move,file system
+1572002674.449,976,425,None,Move,file system
+1572002674.457,974,423,None,Move,file system
+1572002674.465,973,422,None,Move,file system
+1572002674.4729998,973,418,None,Move,file system
+1572002674.481,973,413,None,Move,file system
+1572002674.4889998,974,406,None,Move,file system
+1572002674.4970002,980,398,None,Move,file system
+1572002674.505,990,390,None,Move,file system
+1572002674.5110002,1001,380,None,Move,file system
+1572002674.52,1019,371,None,Move,file system
+1572002674.5270002,1051,368,None,Move,file system
+1572002674.535,1096,363,None,Move,file system
+1572002674.543,1161,361,None,Move,file system
+1572002674.552,1233,356,None,Move,file system
+1572002674.56,1315,360,None,Move,file system
+1572002674.5670002,1400,363,None,Move,file system
+1572002674.574,1491,361,None,Move,file system
+1572002674.582,1582,361,None,Move,file system
+1572002674.61,1673,361,None,Move,file system
+1572002674.6160002,1902,393,None,Move,file system
+1572002674.6220002,1949,406,None,Move,file system
+1572002674.629,1972,408,None,Move,file system
+1572002674.635,1984,409,None,Move,file system
+1572002674.643,1992,409,None,Move,file system
+1572002674.6520002,1997,409,None,Move,file system
+1572002674.66,1999,409,None,Move,file system
+1572002674.667,2000,409,None,Move,file system
+1572002674.69,2000,409,None,Move,file system
+1572002674.701,2000,409,None,Move,file system
+1572002674.829,2000,409,None,Move,file system
+1572002674.85,1979,408,None,Move,file system
+1572002674.861,1958,406,None,Move,file system
+1572002674.8679998,1919,405,None,Move,file system
+1572002674.8760002,1887,417,None,Move,file system
+1572002674.883,1866,423,None,Move,file system
+1572002674.891,1853,426,None,Move,file system
+1572002674.9,1841,427,None,Move,file system
+1572002674.908,1829,427,None,Move,file system
+1572002674.915,1817,427,None,Move,file system
+1572002674.924,1804,425,None,Move,file system
+1572002674.929,1789,425,None,Move,file system
+1572002674.938,1777,424,None,Move,file system
+1572002674.946,1768,418,None,Move,file system
+1572002674.954,1762,411,None,Move,file system
+1572002674.962,1759,410,None,Move,file system
+1572002674.969,1757,408,None,Move,file system
+1572002674.9770002,1757,407,None,Move,file system
+1572002674.986,1757,406,None,Move,file system
+1572002674.9910002,1757,405,None,Move,file system
+1572002674.9989998,1756,403,None,Move,file system
+1572002675.008,1754,401,None,Move,file system
+1572002675.016,1752,400,None,Move,file system
+1572002675.024,1751,400,None,Move,file system
+1572002676.066,1749,399,None,Move,file system
+1572002676.071,1696,379,None,Move,file system
+1572002676.08,1590,331,None,Move,file system
+1572002676.101,1491,287,None,Move,file system
+1572002676.107,1318,204,None,Move,file system
+1572002676.1120002,1246,170,None,Move,file system
+1572002676.12,1191,153,None,Move,file system
+1572002676.127,1169,150,None,Move,file system
+1572002676.1339998,1156,150,None,Move,file system
+1572002676.1420002,1149,150,None,Move,file system
+1572002676.149,1148,150,None,Move,file system
+1572002676.1820002,1148,149,None,Move,file system
+1572002676.188,1154,149,None,Move,file system
+1572002676.196,1162,153,None,Move,file system
+1572002676.204,1173,161,None,Move,file system
+1572002676.212,1183,168,None,Move,file system
+1572002676.219,1190,172,None,Move,file system
+1572002676.228,1194,172,None,Move,file system
+1572002676.236,1193,172,None,Move,file system
+1572002676.244,1189,172,None,Move,file system
+1572002676.25,1180,170,None,Move,file system
+1572002676.258,1161,167,None,Move,file system
+1572002676.266,1141,167,None,Move,file system
+1572002676.274,1114,172,None,Move,file system
+1572002676.282,1093,180,None,Move,file system
+1572002676.289,1074,189,None,Move,file system
+1572002676.2970002,1053,203,None,Move,file system
+1572002676.305,1034,213,None,Move,file system
+1572002676.312,1009,222,None,Move,file system
+1572002676.319,979,229,None,Move,file system
+1572002676.327,953,233,None,Move,file system
+1572002676.336,933,237,None,Move,file system
+1572002676.343,909,244,None,Move,file system
+1572002676.351,878,254,None,Move,file system
+1572002676.359,853,267,None,Move,file system
+1572002676.365,826,282,None,Move,file system
+1572002676.373,812,292,None,Move,file system
+1572002676.381,803,300,None,Move,file system
+1572002676.389,796,309,None,Move,file system
+1572002676.397,794,318,None,Move,file system
+1572002676.405,794,325,None,Move,file system
+1572002676.413,796,332,None,Move,file system
+1572002676.421,801,339,None,Move,file system
+1572002676.428,807,345,None,Move,file system
+1572002676.435,814,352,None,Move,file system
+1572002676.4429998,821,357,None,Move,file system
+1572002676.451,829,362,None,Move,file system
+1572002676.459,839,366,None,Move,file system
+1572002676.468,853,368,None,Move,file system
+1572002676.475,868,371,None,Move,file system
+1572002676.4870002,885,374,None,Move,file system
+1572002676.4970002,901,377,None,Move,file system
+1572002676.5029998,915,379,None,Move,file system
+1572002676.508,930,381,None,Move,file system
+1572002676.5129998,943,381,None,Move,file system
+1572002676.521,957,379,None,Move,file system
+1572002676.534,969,376,None,Move,file system
+1572002676.541,985,373,None,Move,file system
+1572002676.5470002,1000,372,None,Move,file system
+1572002676.553,1017,373,None,Move,file system
+1572002676.559,1034,375,None,Move,file system
+1572002676.5670002,1053,378,None,Move,file system
+1572002676.575,1075,381,None,Move,file system
+1572002676.584,1097,385,None,Move,file system
+1572002676.591,1117,389,None,Move,file system
+1572002676.6,1134,393,None,Move,file system
+1572002676.606,1150,398,None,Move,file system
+1572002676.6139998,1160,402,None,Move,file system
+1572002676.6220002,1170,404,None,Move,file system
+1572002676.63,1178,407,None,Move,file system
+1572002676.637,1182,409,None,Move,file system
+1572002676.645,1183,409,None,Move,file system
+1572002676.7,1183,410,None,Move,file system
+1572002676.708,1181,413,None,Move,file system
+1572002676.716,1178,416,None,Move,file system
+1572002676.7229998,1175,420,None,Move,file system
+1572002676.73,1173,423,None,Move,file system
+1572002676.738,1171,425,None,Move,file system
+1572002676.746,1168,428,None,Move,file system
+1572002676.754,1167,431,None,Move,file system
+1572002676.762,1164,433,None,Move,file system
+1572002676.769,1162,435,None,Move,file system
+1572002676.7770002,1160,437,None,Move,file system
+1572002676.786,1159,437,None,Move,file system
+1572002676.791,1157,439,None,Move,file system
+1572002676.799,1155,440,None,Move,file system
+1572002676.8079998,1153,441,None,Move,file system
+1572002676.816,1152,441,None,Move,file system
+1572002676.824,1151,442,None,Move,file system
+1572002676.831,1150,442,None,Move,file system
+1572002676.84,1150,443,None,Move,file system
+1572002676.845,1149,445,None,Move,file system
+1572002676.854,1148,446,None,Move,file system
+1572002676.8620002,1147,448,None,Move,file system
+1572002676.87,1146,450,None,Move,file system
+1572002676.877,1145,451,None,Move,file system
+1572002676.8860002,1145,452,None,Move,file system
+1572002676.894,1145,453,None,Move,file system
+1572002676.9020002,1145,454,None,Move,file system
+1572002676.907,1145,454,None,Move,file system
+1572002676.916,1145,455,None,Move,file system
+1572002676.923,1145,456,None,Move,file system
+1572002676.9320002,1145,456,None,Move,file system
+1572002676.94,1145,457,None,Move,file system
+1572002676.952,1145,458,None,Move,file system
+1572002677.143,1145,460,None,Move,file system
+1572002677.2529998,1144,460,Left,Pressed,file system
+1572002677.2529998,1144,460,None,Drag,file system
+1572002677.2529998,1144,460,Left,Released,file system
+1572002677.281,1143,460,None,Move,file system
+1572002677.295,1143,460,None,Move,file system
+1572002677.333,1143,461,None,Move,file system
+1572002677.345,1143,461,None,Move,file system
+1572002677.353,1145,464,None,Move,file system
+1572002677.361,1147,467,None,Move,file system
+1572002677.369,1147,469,None,Move,file system
+1572002677.377,1148,473,None,Move,file system
+1572002677.383,1150,480,None,Move,file system
+1572002677.391,1152,489,None,Move,file system
+1572002677.4,1155,497,None,Move,file system
+1572002677.407,1156,508,None,Move,file system
+1572002677.416,1157,518,None,Move,file system
+1572002677.423,1157,529,None,Move,file system
+1572002677.4320002,1157,544,None,Move,file system
+1572002677.44,1156,555,None,Move,file system
+1572002677.446,1156,565,None,Move,file system
+1572002677.4529998,1154,573,None,Move,file system
+1572002677.461,1153,585,None,Move,file system
+1572002677.469,1150,600,None,Move,file system
+1572002677.4770002,1147,615,None,Move,file system
+1572002677.486,1145,632,None,Move,file system
+1572002677.494,1140,651,None,Move,file system
+1572002677.5,1135,675,None,Move,file system
+1572002677.5070002,1131,695,None,Move,file system
+1572002677.515,1128,714,None,Move,file system
+1572002677.524,1124,731,None,Move,file system
+1572002677.531,1118,746,None,Move,file system
+1572002677.54,1114,760,None,Move,file system
+1572002677.5470002,1108,773,None,Move,file system
+1572002677.556,1104,786,None,Move,file system
+1572002677.562,1098,796,None,Move,file system
+1572002677.57,1091,804,None,Move,file system
+1572002677.5779998,1085,812,None,Move,file system
+1572002677.585,1080,818,None,Move,file system
+1572002677.593,1078,820,None,Move,file system
+1572002677.6020002,1077,821,None,Move,file system
+1572002677.609,1077,821,None,Move,file system
+1572002677.635,1077,819,None,Move,file system
+1572002677.643,1083,805,None,Move,file system
+1572002677.651,1087,788,None,Move,file system
+1572002677.66,1091,771,None,Move,file system
+1572002677.668,1094,759,None,Move,file system
+1572002677.675,1099,749,None,Move,file system
+1572002677.681,1106,739,None,Move,file system
+1572002677.689,1111,732,None,Move,file system
+1572002677.697,1117,726,None,Move,file system
+1572002677.706,1120,721,None,Move,file system
+1572002677.7129998,1122,720,None,Move,file system
+1572002677.721,1123,718,None,Move,file system
+1572002677.73,1122,717,None,Move,file system
+1572002677.7370002,1118,717,None,Move,file system
+1572002677.744,1111,721,None,Move,file system
+1572002677.7510002,1100,727,None,Move,file system
+1572002677.7589998,1089,735,None,Move,file system
+1572002677.7670002,1078,747,None,Move,file system
+1572002677.775,1063,762,None,Move,file system
+1572002677.784,1043,784,None,Move,file system
+1572002677.792,1019,812,None,Move,file system
+1572002677.7970002,995,846,None,Move,file system
+1572002677.806,972,881,None,Move,file system
+1572002677.814,950,909,None,Move,file system
+1572002677.822,934,938,None,Move,file system
+1572002677.829,920,959,None,Move,file system
+1572002677.837,906,982,None,Move,file system
+1572002677.845,897,996,None,Move,file system
+1572002677.854,889,1007,None,Move,file system
+1572002677.859,884,1016,None,Move,file system
+1572002677.867,882,1022,None,Move,file system
+1572002677.875,879,1027,None,Move,file system
+1572002677.8839998,879,1029,None,Move,file system
+1572002677.896,879,1030,None,Move,file system
+1572002677.908,879,1030,None,Move,file system
+1572002677.916,880,1032,None,Move,file system
+1572002677.921,885,1035,None,Move,file system
+1572002677.93,892,1041,None,Move,file system
+1572002677.938,897,1044,None,Move,file system
+1572002677.946,901,1046,None,Move,file system
+1572002677.954,903,1047,None,Move,file system
+1572002677.962,904,1048,None,Move,file system
+1572002677.97,905,1048,None,Move,file system
+1572002678.016,905,1049,None,Move,file system
+1572002678.024,905,1050,None,Move,file system
+1572002678.032,905,1051,None,Move,file system
+1572002678.197,905,1051,None,Move,file system
+1572002678.218,903,1051,None,Move,file system
+1572002678.229,900,1051,None,Move,file system
+1572002678.2370002,899,1052,None,Move,file system
+1572002678.244,898,1052,None,Move,file system
+1572002678.276,898,1052,Left,Pressed,file system
+1572002678.3679998,898,1052,Left,Released,file system

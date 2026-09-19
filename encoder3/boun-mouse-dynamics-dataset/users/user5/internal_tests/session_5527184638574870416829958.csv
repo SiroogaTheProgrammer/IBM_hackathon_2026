@@ -1,0 +1,2337 @@
+client_timestamp,x,y,button,state,window
+1570797012.6079998,62,581,Left,Pressed,file system
+1570797012.677,62,581,Left,Released,file system
+1570798371.606,76,578,None,Move,file system
+1570798371.621,79,578,None,Move,file system
+1570798371.637,80,578,None,Move,file system
+1570798371.643,82,580,None,Move,file system
+1570798371.659,93,599,None,Move,file system
+1570798371.675,131,640,None,Move,file system
+1570798371.69,204,705,None,Move,file system
+1570798371.706,301,790,None,Move,file system
+1570798371.721,425,821,None,Move,file system
+1570798371.7370002,553,816,None,Move,file system
+1570798371.744,634,824,None,Move,file system
+1570798371.7589998,759,807,None,Move,file system
+1570798371.775,873,811,None,Move,file system
+1570798371.79,949,794,None,Move,file system
+1570798371.806,1010,785,None,Move,file system
+1570798371.822,1050,776,None,Move,file system
+1570798371.837,1077,784,None,Move,file system
+1570798371.844,1085,772,None,Move,file system
+1570798371.859,1139,805,None,Move,file system
+1570798371.875,1165,786,None,Move,file system
+1570798371.891,1182,786,None,Move,file system
+1570798371.906,1185,784,None,Move,file system
+1570798372.1220002,1185,769,None,Move,file system
+1570798372.145,1183,768,None,Move,file system
+1570798372.16,1179,767,None,Move,file system
+1570798372.176,1170,760,None,Move,file system
+1570798372.191,1167,756,None,Move,file system
+1570798372.207,1166,750,None,Move,file system
+1570798372.2229998,1166,739,None,Move,file system
+1570798372.245,1166,726,None,Move,file system
+1570798372.26,1172,695,None,Move,file system
+1570798372.276,1182,653,None,Move,file system
+1570798372.292,1205,582,None,Move,file system
+1570798372.3070002,1238,494,None,Move,file system
+1570798372.323,1267,435,None,Move,file system
+1570798372.339,1343,319,None,Move,file system
+1570798372.345,1370,288,None,Move,file system
+1570798372.361,1400,254,None,Move,file system
+1570798372.3760002,1389,209,None,Move,file system
+1570798372.3920002,1381,189,None,Move,file system
+1570798372.408,1369,184,None,Move,file system
+1570798372.423,1368,184,None,Move,file system
+1570798372.439,1367,183,None,Move,file system
+1570798372.445,1369,183,None,Move,file system
+1570798372.461,1367,182,None,Move,file system
+1570798372.4770002,1367,181,None,Move,file system
+1570798372.492,1366,178,None,Move,file system
+1570798372.508,1366,176,None,Move,file system
+1570798372.5229998,1365,171,None,Move,file system
+1570798372.546,1364,162,None,Move,file system
+1570798372.561,1360,152,None,Move,file system
+1570798372.577,1355,145,None,Move,file system
+1570798372.592,1345,138,None,Move,file system
+1570798372.6079998,1335,131,None,Move,file system
+1570798372.6239998,1321,119,None,Move,file system
+1570798372.646,1309,112,None,Move,file system
+1570798372.661,1305,111,None,Move,file system
+1570798372.677,1301,111,None,Move,file system
+1570798372.6929998,1297,111,None,Move,file system
+1570798372.708,1290,111,None,Move,file system
+1570798372.724,1286,111,None,Move,file system
+1570798372.74,1283,110,None,Move,file system
+1570798372.746,1282,110,None,Move,file system
+1570798372.762,1278,102,None,Move,file system
+1570798372.7770002,1275,87,None,Move,file system
+1570798372.793,1272,62,None,Move,file system
+1570798372.809,1266,9,None,Move,file system
+1570798372.824,1263,-36,None,Move,file system
+1570798372.846,1259,-89,None,Move,file system
+1570798372.8620002,1252,-149,None,Move,file system
+1570798372.871,1250,-169,None,Move,file system
+1570798372.875,1244,-211,None,Move,file system
+1570798372.891,1238,-260,None,Move,file system
+1570798372.906,1234,-280,None,Move,file system
+1570798372.9220002,1231,-299,None,Move,file system
+1570798372.938,1228,-312,None,Move,file system
+1570798372.947,1226,-317,None,Move,file system
+1570798372.962,1224,-321,None,Move,file system
+1570798372.978,1221,-330,None,Move,file system
+1570798372.9929998,1221,-333,None,Move,file system
+1570798373.0089998,1220,-339,None,Move,file system
+1570798373.025,1219,-344,None,Move,file system
+1570798373.04,1218,-345,None,Move,file system
+1570798373.0470002,1217,-346,None,Move,file system
+1570798373.062,1213,-351,None,Move,file system
+1570798373.0779998,1210,-353,None,Move,file system
+1570798373.094,1206,-356,None,Move,file system
+1570798373.109,1187,-361,None,Move,file system
+1570798373.125,1161,-362,None,Move,file system
+1570798373.147,1127,-362,None,Move,file system
+1570798373.163,1055,-362,None,Move,file system
+1570798373.178,998,-362,None,Move,file system
+1570798373.194,941,-362,None,Move,file system
+1570798373.21,921,-360,None,Move,file system
+1570798373.225,871,-354,None,Move,file system
+1570798373.2470002,850,-351,None,Move,file system
+1570798373.2629998,840,-348,None,Move,file system
+1570798373.279,832,-346,None,Move,file system
+1570798373.294,830,-346,None,Move,file system
+1570798373.41,830,-346,None,Move,file system
+1570798373.426,830,-346,None,Move,file system
+1570798373.441,829,-350,None,Move,file system
+1570798373.448,829,-352,None,Move,file system
+1570798373.4629998,829,-358,None,Move,file system
+1570798373.479,828,-365,None,Move,file system
+1570798373.495,827,-371,None,Move,file system
+1570798373.51,826,-374,None,Move,file system
+1570798373.548,826,-376,None,Move,file system
+1570798373.564,826,-376,Left,Pressed,file system
+1570798373.6479998,826,-376,Left,Released,file system
+1570798374.065,826,-376,None,Move,file system
+1570798374.096,826,-376,None,Move,file system
+1570798374.1120002,825,-374,None,Move,file system
+1570798374.127,825,-369,None,Move,file system
+1570798374.149,822,-361,None,Move,file system
+1570798374.165,818,-350,None,Move,file system
+1570798374.181,811,-334,None,Move,file system
+1570798374.196,799,-311,None,Move,file system
+1570798374.212,791,-300,None,Move,file system
+1570798374.228,779,-286,None,Move,file system
+1570798374.25,753,-249,None,Move,file system
+1570798374.265,729,-219,None,Move,file system
+1570798374.281,687,-171,None,Move,file system
+1570798374.2970002,655,-131,None,Move,file system
+1570798374.312,603,-72,None,Move,file system
+1570798374.3279998,559,-23,None,Move,file system
+1570798374.343,496,41,None,Move,file system
+1570798374.35,465,68,None,Move,file system
+1570798374.3660002,385,143,None,Move,file system
+1570798374.3860002,324,188,None,Move,file system
+1570798374.401,284,215,None,Move,file system
+1570798374.4020002,256,234,None,Move,file system
+1570798374.417,219,256,None,Move,file system
+1570798374.4329998,143,295,None,Move,file system
+1570798374.449,132,298,None,Move,file system
+1570798374.452,106,307,None,Move,file system
+1570798374.48,67,313,None,Move,file system
+1570798374.492,51,312,None,Move,file system
+1570798374.5,42,307,None,Move,file system
+1570798374.51,39,306,None,Move,file system
+1570798374.52,33,302,None,Move,file system
+1570798374.522,20,290,None,Move,file system
+1570798374.533,15,285,None,Move,file system
+1570798374.543,12,282,None,Move,file system
+1570798374.553,12,281,None,Move,file system
+1570798374.563,12,280,None,Move,file system
+1570798374.583,12,279,None,Move,file system
+1570798374.631,12,280,None,Move,file system
+1570798374.633,11,287,None,Move,file system
+1570798374.643,11,299,None,Move,file system
+1570798374.653,11,307,None,Move,file system
+1570798374.663,11,321,None,Move,file system
+1570798374.6720002,11,335,None,Move,file system
+1570798374.684,14,354,None,Move,file system
+1570798374.6920002,18,370,None,Move,file system
+1570798374.702,27,394,None,Move,file system
+1570798374.712,30,400,None,Move,file system
+1570798374.714,41,413,None,Move,file system
+1570798374.724,49,421,None,Move,file system
+1570798374.732,57,426,None,Move,file system
+1570798374.742,73,432,None,Move,file system
+1570798374.744,84,435,None,Move,file system
+1570798374.752,92,436,None,Move,file system
+1570798374.764,105,436,None,Move,file system
+1570798374.774,117,435,None,Move,file system
+1570798374.785,130,432,None,Move,file system
+1570798374.793,136,431,None,Move,file system
+1570798374.805,141,428,None,Move,file system
+1570798374.813,151,422,None,Move,file system
+1570798374.823,156,418,None,Move,file system
+1570798374.8379998,161,412,None,Move,file system
+1570798374.854,163,411,None,Move,file system
+1570798374.87,166,408,None,Move,file system
+1570798374.939,166,407,None,Move,file system
+1570798374.954,166,406,None,Move,file system
+1570798374.97,166,405,None,Move,file system
+1570798374.985,166,403,None,Move,file system
+1570798375.0010002,166,401,None,Move,file system
+1570798375.0229998,166,398,None,Move,file system
+1570798375.039,166,395,None,Move,file system
+1570798375.054,166,394,None,Move,file system
+1570798375.07,166,393,None,Move,file system
+1570798375.371,166,392,None,Move,file system
+1570798375.471,166,391,None,Move,file system
+1570798375.4870002,166,390,None,Move,file system
+1570798375.502,166,389,None,Move,file system
+1570798375.518,166,387,None,Move,file system
+1570798375.524,166,387,None,Move,file system
+1570798375.54,167,386,None,Move,file system
+1570798375.571,167,386,None,Move,file system
+1570798375.625,167,385,None,Move,file system
+1570798375.64,167,385,None,Move,file system
+1570798375.656,167,383,None,Move,file system
+1570798375.671,168,383,None,Move,file system
+1570798375.687,168,382,None,Move,file system
+1570798375.7029998,168,381,None,Move,file system
+1570798375.725,168,379,None,Move,file system
+1570798375.74,169,378,None,Move,file system
+1570798375.756,169,377,None,Move,file system
+1570798375.772,170,375,None,Move,file system
+1570798375.7870002,170,375,None,Move,file system
+1570798375.803,170,374,None,Move,file system
+1570798375.825,170,374,None,Move,file system
+1570798375.957,170,374,None,Move,file system
+1570798375.972,170,372,None,Move,file system
+1570798375.988,171,372,None,Move,file system
+1570798376.004,171,371,None,Move,file system
+1570798376.019,171,370,None,Move,file system
+1570798376.026,172,369,None,Move,file system
+1570798376.042,172,368,None,Move,file system
+1570798376.0570002,172,367,None,Move,file system
+1570798376.073,173,366,None,Move,file system
+1570798376.0879998,174,366,None,Move,file system
+1570798376.104,174,365,None,Move,file system
+1570798376.12,174,364,None,Move,file system
+1570798376.1420002,174,364,None,Move,file system
+1570798376.157,174,364,None,Move,file system
+1570798376.173,174,363,None,Move,file system
+1570798376.189,174,363,None,Move,file system
+1570798376.226,175,362,None,Move,file system
+1570798376.258,175,362,None,Move,file system
+1570798376.289,175,361,None,Move,file system
+1570798376.304,175,360,None,Move,file system
+1570798376.327,175,360,None,Move,file system
+1570798376.342,175,359,None,Move,file system
+1570798376.3579998,176,358,None,Move,file system
+1570798376.373,176,357,None,Move,file system
+1570798376.389,177,356,None,Move,file system
+1570798376.405,177,355,None,Move,file system
+1570798376.427,178,355,None,Move,file system
+1570798380.769,178,355,None,Move,file system
+1570798390.214,178,355,None,Move,file system
+1570798390.23,179,353,None,Move,file system
+1570798390.245,185,350,None,Move,file system
+1570798390.2670002,195,344,None,Move,file system
+1570798390.283,210,338,None,Move,file system
+1570798390.299,237,331,None,Move,file system
+1570798390.314,272,323,None,Move,file system
+1570798390.33,320,311,None,Move,file system
+1570798390.345,332,309,None,Move,file system
+1570798390.361,361,302,None,Move,file system
+1570798390.3679998,383,296,None,Move,file system
+1570798390.383,413,285,None,Move,file system
+1570798390.399,438,271,None,Move,file system
+1570798390.415,462,251,None,Move,file system
+1570798390.43,483,232,None,Move,file system
+1570798390.446,501,213,None,Move,file system
+1570798390.461,511,200,None,Move,file system
+1570798390.468,515,192,None,Move,file system
+1570798390.484,519,180,None,Move,file system
+1570798390.4989998,524,164,None,Move,file system
+1570798390.515,526,154,None,Move,file system
+1570798390.53,526,149,None,Move,file system
+1570798390.546,526,146,None,Move,file system
+1570798390.562,526,142,None,Move,file system
+1570798390.5679998,525,141,None,Move,file system
+1570798390.584,524,139,None,Move,file system
+1570798390.599,523,137,None,Move,file system
+1570798390.615,522,136,None,Move,file system
+1570798390.631,522,136,None,Move,file system
+1570798390.668,521,136,None,Move,file system
+1570798390.699,520,136,None,Move,file system
+1570798390.715,517,136,None,Move,file system
+1570798390.731,513,136,None,Move,file system
+1570798390.746,509,137,None,Move,file system
+1570798390.762,504,139,None,Move,file system
+1570798390.768,502,140,None,Move,file system
+1570798390.784,496,142,None,Move,file system
+1570798390.8,492,143,None,Move,file system
+1570798390.815,489,145,None,Move,file system
+1570798390.831,483,147,None,Move,file system
+1570798390.847,477,150,None,Move,file system
+1570798390.869,472,152,None,Move,file system
+1570798390.8839998,469,155,None,Move,file system
+1570798390.9,465,156,None,Move,file system
+1570798390.916,464,157,None,Move,file system
+1570798390.931,460,159,None,Move,file system
+1570798390.947,457,161,None,Move,file system
+1570798390.962,454,163,None,Move,file system
+1570798390.969,452,164,None,Move,file system
+1570798390.985,448,167,None,Move,file system
+1570798391.0,444,172,None,Move,file system
+1570798391.016,441,174,None,Move,file system
+1570798391.031,434,182,None,Move,file system
+1570798391.0470002,429,187,None,Move,file system
+1570798391.063,423,194,None,Move,file system
+1570798391.069,419,199,None,Move,file system
+1570798391.085,415,207,None,Move,file system
+1570798391.1,408,225,None,Move,file system
+1570798391.1160002,405,236,None,Move,file system
+1570798391.1320002,399,271,None,Move,file system
+1570798391.147,394,332,None,Move,file system
+1570798391.169,394,375,None,Move,file system
+1570798391.18,394,402,None,Move,file system
+1570798391.19,394,436,None,Move,file system
+1570798391.21,395,458,None,Move,file system
+1570798391.222,395,483,None,Move,file system
+1570798391.232,395,492,None,Move,file system
+1570798391.242,395,509,None,Move,file system
+1570798391.27,395,530,None,Move,file system
+1570798391.282,395,541,None,Move,file system
+1570798391.292,395,545,None,Move,file system
+1570798391.302,395,550,None,Move,file system
+1570798391.32,395,553,None,Move,file system
+1570798391.322,395,557,None,Move,file system
+1570798391.34,395,565,None,Move,file system
+1570798391.353,395,572,None,Move,file system
+1570798391.371,395,577,None,Move,file system
+1570798391.383,395,584,None,Move,file system
+1570798391.393,395,586,None,Move,file system
+1570798391.403,395,588,None,Move,file system
+1570798391.413,395,594,None,Move,file system
+1570798391.4329998,395,600,None,Move,file system
+1570798391.4429998,395,603,None,Move,file system
+1570798391.4629998,403,621,None,Move,file system
+1570798391.4829998,410,630,None,Move,file system
+1570798391.4929998,421,645,None,Move,file system
+1570798391.514,434,658,None,Move,file system
+1570798391.524,447,667,None,Move,file system
+1570798391.534,463,678,None,Move,file system
+1570798391.552,487,692,None,Move,file system
+1570798391.574,540,719,None,Move,file system
+1570798391.604,609,748,None,Move,file system
+1570798391.6139998,642,759,None,Move,file system
+1570798391.6339998,650,761,None,Move,file system
+1570798391.645,673,767,None,Move,file system
+1570798391.655,691,771,None,Move,file system
+1570798391.673,702,769,None,Move,file system
+1570798391.685,716,769,None,Move,file system
+1570798391.7029998,722,767,None,Move,file system
+1570798391.715,731,767,None,Move,file system
+1570798391.7329998,738,767,None,Move,file system
+1570798391.745,745,767,None,Move,file system
+1570798391.766,753,767,None,Move,file system
+1570798391.786,758,767,None,Move,file system
+1570798391.796,758,767,None,Move,file system
+1570798391.806,760,767,None,Move,file system
+1570798391.834,760,767,None,Move,file system
+1570798391.9770002,760,767,None,Move,file system
+1570798391.995,761,767,None,Move,file system
+1570798391.9970002,761,766,None,Move,file system
+1570798392.0070002,762,766,None,Move,file system
+1570798392.0170002,763,765,None,Move,file system
+1570798392.0270002,763,765,None,Move,file system
+1570798392.0370002,764,764,None,Move,file system
+1570798392.0470002,764,764,None,Move,file system
+1570798392.0570002,765,763,None,Move,file system
+1570798392.0670002,765,763,None,Move,file system
+1570798392.077,766,762,None,Move,file system
+1570798392.0879998,767,762,None,Move,file system
+1570798392.0979998,768,762,None,Move,file system
+1570798392.1079998,768,761,None,Move,file system
+1570798392.1160002,770,761,None,Move,file system
+1570798392.1260002,773,759,None,Move,file system
+1570798392.1420002,777,758,None,Move,file system
+1570798392.157,780,757,None,Move,file system
+1570798392.173,784,756,None,Move,file system
+1570798392.188,789,755,None,Move,file system
+1570798392.204,793,754,None,Move,file system
+1570798392.22,796,753,None,Move,file system
+1570798392.226,799,752,None,Move,file system
+1570798392.242,805,751,None,Move,file system
+1570798392.2570002,811,748,None,Move,file system
+1570798392.2729998,817,747,None,Move,file system
+1570798392.289,822,745,None,Move,file system
+1570798392.304,824,745,None,Move,file system
+1570798392.32,825,744,None,Move,file system
+1570798392.3579998,825,743,None,Move,file system
+1570798392.5270002,825,743,None,Move,file system
+1570798392.542,821,744,None,Move,file system
+1570798392.5579998,818,745,None,Move,file system
+1570798392.574,810,748,None,Move,file system
+1570798392.589,807,749,None,Move,file system
+1570798392.605,806,749,None,Move,file system
+1570798392.69,806,749,Left,Pressed,file system
+1570798392.921,806,749,Left,Released,file system
+1570798393.216,806,749,None,Move,development
+1570798393.229,806,749,None,Move,development
+1570798393.24,805,748,None,Move,development
+1570798393.248,804,748,None,Move,development
+1570798393.2570002,803,747,None,Move,development
+1570798393.2670002,802,747,None,Move,development
+1570798393.276,800,744,None,Move,development
+1570798393.286,791,735,None,Move,development
+1570798393.294,784,725,None,Move,development
+1570798393.301,780,717,None,Move,development
+1570798393.311,764,694,None,Move,development
+1570798393.322,752,680,None,Move,development
+1570798393.332,697,606,None,Move,development
+1570798393.341,671,570,None,Move,development
+1570798393.35,635,526,None,Move,development
+1570798393.359,614,498,None,Move,development
+1570798393.369,576,454,None,Move,development
+1570798393.3779998,547,423,None,Move,development
+1570798393.3879998,499,373,None,Move,development
+1570798393.397,476,352,None,Move,development
+1570798393.405,452,328,None,Move,development
+1570798393.413,428,305,None,Move,development
+1570798393.4220002,421,296,None,Move,development
+1570798393.437,402,273,None,Move,development
+1570798393.446,398,267,None,Move,development
+1570798393.456,396,262,None,Move,development
+1570798393.465,394,254,None,Move,development
+1570798393.4729998,394,252,None,Move,development
+1570798393.48,393,246,None,Move,development
+1570798393.488,393,243,None,Move,development
+1570798393.4970002,393,240,None,Move,development
+1570798393.504,393,237,None,Move,development
+1570798393.512,393,235,None,Move,development
+1570798393.524,393,234,None,Move,development
+1570798393.534,393,232,None,Move,development
+1570798393.542,393,229,None,Move,development
+1570798393.554,393,226,None,Move,development
+1570798393.563,393,223,None,Move,development
+1570798393.572,393,219,None,Move,development
+1570798393.584,393,215,None,Move,development
+1570798393.593,395,210,None,Move,development
+1570798393.6020002,396,206,None,Move,development
+1570798393.61,398,201,None,Move,development
+1570798393.6179998,399,197,None,Move,development
+1570798393.625,401,193,None,Move,development
+1570798393.633,403,189,None,Move,development
+1570798393.639,405,186,None,Move,development
+1570798393.647,406,182,None,Move,development
+1570798393.654,408,179,None,Move,development
+1570798393.661,409,177,None,Move,development
+1570798393.669,411,174,None,Move,development
+1570798393.675,412,173,None,Move,development
+1570798393.6829998,413,172,None,Move,development
+1570798393.691,414,171,None,Move,development
+1570798393.7,414,171,None,Move,development
+1570798393.709,414,171,None,Move,development
+1570798393.72,414,170,None,Move,development
+1570798393.7529998,414,169,None,Move,development
+1570798393.8720002,414,169,Left,Pressed,development
+1570798394.089,414,169,Left,Released,development
+1570798394.755,414,169,None,Move,development
+1570798395.0670002,414,170,None,Move,development
+1570798395.075,414,170,None,Move,development
+1570798395.083,414,171,None,Move,development
+1570798395.091,414,171,None,Move,development
+1570798395.099,414,172,None,Move,development
+1570798395.107,414,173,None,Move,development
+1570798395.115,414,174,None,Move,development
+1570798395.1239998,414,174,None,Move,development
+1570798395.137,414,175,None,Move,development
+1570798395.145,414,175,None,Move,development
+1570798395.161,414,176,None,Move,development
+1570798395.177,414,176,None,Move,development
+1570798395.191,414,177,None,Move,development
+1570798395.207,414,178,None,Move,development
+1570798395.2229998,414,178,None,Move,development
+1570798395.232,414,178,None,Move,development
+1570798395.2470002,414,179,None,Move,development
+1570798395.2770002,414,179,None,Move,development
+1570798395.3179998,414,180,None,Move,development
+1570798396.357,414,180,None,Move,development
+1570798407.4220002,419,178,None,Move,development
+1570798407.429,432,174,None,Move,development
+1570798407.438,446,168,None,Move,development
+1570798407.446,462,164,None,Move,development
+1570798407.4529998,479,159,None,Move,development
+1570798407.462,520,146,None,Move,development
+1570798407.469,539,139,None,Move,development
+1570798407.478,570,127,None,Move,development
+1570798407.486,601,115,None,Move,development
+1570798407.492,632,101,None,Move,development
+1570798407.5010002,661,86,None,Move,development
+1570798407.508,692,68,None,Move,development
+1570798407.516,716,56,None,Move,development
+1570798407.5229998,742,43,None,Move,development
+1570798407.531,755,35,None,Move,development
+1570798407.539,760,33,None,Move,development
+1570798407.5470002,773,23,None,Move,development
+1570798407.555,777,20,None,Move,development
+1570798407.565,783,15,None,Move,development
+1570798407.575,785,13,None,Move,development
+1570798407.583,789,9,None,Move,development
+1570798407.589,790,7,None,Move,development
+1570798407.596,793,5,None,Move,development
+1570798407.604,795,2,None,Move,development
+1570798407.61,796,1,None,Move,development
+1570798407.6179998,799,-1,None,Move,development
+1570798407.625,800,-3,None,Move,development
+1570798407.633,802,-4,None,Move,development
+1570798407.641,803,-5,None,Move,development
+1570798407.649,805,-6,None,Move,development
+1570798407.657,807,-8,None,Move,development
+1570798407.663,809,-9,None,Move,development
+1570798407.671,811,-11,None,Move,development
+1570798407.679,815,-12,None,Move,development
+1570798407.687,820,-15,None,Move,development
+1570798407.695,824,-17,None,Move,development
+1570798407.7029998,830,-20,None,Move,development
+1570798407.711,833,-21,None,Move,development
+1570798407.719,841,-23,None,Move,development
+1570798407.7270002,846,-24,None,Move,development
+1570798407.735,857,-25,None,Move,development
+1570798407.7429998,864,-26,None,Move,development
+1570798407.7510002,869,-27,None,Move,development
+1570798407.758,875,-28,None,Move,development
+1570798407.765,882,-29,None,Move,development
+1570798407.7729998,887,-29,None,Move,development
+1570798407.783,894,-30,None,Move,development
+1570798407.792,904,-32,None,Move,development
+1570798407.801,913,-32,None,Move,development
+1570798407.8079998,920,-33,None,Move,development
+1570798407.815,933,-34,None,Move,development
+1570798407.823,944,-35,None,Move,development
+1570798407.829,952,-36,None,Move,development
+1570798407.8379998,967,-37,None,Move,development
+1570798407.846,980,-38,None,Move,development
+1570798407.854,993,-40,None,Move,development
+1570798407.861,1003,-41,None,Move,development
+1570798407.869,1010,-42,None,Move,development
+1570798407.8760002,1023,-42,None,Move,development
+1570798407.883,1031,-42,None,Move,development
+1570798407.8920002,1040,-42,None,Move,development
+1570798407.9,1054,-42,None,Move,development
+1570798407.907,1058,-42,None,Move,development
+1570798407.915,1064,-42,None,Move,development
+1570798407.923,1069,-40,None,Move,development
+1570798407.929,1072,-38,None,Move,development
+1570798407.938,1073,-36,None,Move,development
+1570798407.945,1073,-35,None,Move,development
+1570798407.9529998,1073,-33,None,Move,development
+1570798407.961,1073,-30,None,Move,development
+1570798407.97,1073,-28,None,Move,development
+1570798407.9770002,1071,-22,None,Move,development
+1570798407.985,1067,-16,None,Move,development
+1570798407.9929998,1064,-14,None,Move,development
+1570798408.0010002,1059,-7,None,Move,development
+1570798408.008,1052,-1,None,Move,development
+1570798408.016,1046,4,None,Move,development
+1570798408.0229998,1036,10,None,Move,development
+1570798408.031,1025,15,None,Move,development
+1570798408.039,1014,21,None,Move,development
+1570798408.0470002,1004,24,None,Move,development
+1570798408.055,988,27,None,Move,development
+1570798408.063,980,29,None,Move,development
+1570798408.071,969,32,None,Move,development
+1570798408.079,956,34,None,Move,development
+1570798408.0879998,951,34,None,Move,development
+1570798408.096,945,35,None,Move,development
+1570798408.105,943,35,None,Move,development
+1570798408.113,940,35,None,Move,development
+1570798408.121,936,35,None,Move,development
+1570798408.1360002,931,35,None,Move,development
+1570798408.145,927,35,None,Move,development
+1570798408.154,925,36,None,Move,development
+1570798408.16,921,36,None,Move,development
+1570798408.168,917,36,None,Move,development
+1570798408.175,913,36,None,Move,development
+1570798408.1829998,909,36,None,Move,development
+1570798408.19,905,36,None,Move,development
+1570798408.196,902,37,None,Move,development
+1570798408.204,897,38,None,Move,development
+1570798408.211,893,40,None,Move,development
+1570798408.22,888,42,None,Move,development
+1570798408.236,879,46,None,Move,development
+1570798408.242,877,48,None,Move,development
+1570798408.252,874,49,None,Move,development
+1570798408.258,874,51,None,Move,development
+1570798408.281,873,52,None,Move,development
+1570798408.289,873,52,None,Move,development
+1570798408.2970002,873,54,None,Move,development
+1570798408.305,874,54,None,Move,development
+1570798408.313,876,56,None,Move,development
+1570798408.321,879,57,None,Move,development
+1570798408.329,882,59,None,Move,development
+1570798408.337,888,61,None,Move,development
+1570798408.345,894,63,None,Move,development
+1570798408.354,906,67,None,Move,development
+1570798408.361,910,68,None,Move,development
+1570798408.3679998,926,72,None,Move,development
+1570798408.375,941,74,None,Move,development
+1570798408.383,952,76,None,Move,development
+1570798408.391,968,77,None,Move,development
+1570798408.399,982,78,None,Move,development
+1570798408.407,994,80,None,Move,development
+1570798408.415,1010,80,None,Move,development
+1570798408.423,1021,80,None,Move,development
+1570798408.429,1034,80,None,Move,development
+1570798408.437,1046,79,None,Move,development
+1570798408.445,1053,78,None,Move,development
+1570798408.4529998,1061,76,None,Move,development
+1570798408.461,1067,75,None,Move,development
+1570798408.469,1072,74,None,Move,development
+1570798408.4770002,1076,72,None,Move,development
+1570798408.485,1078,70,None,Move,development
+1570798408.4929998,1079,70,None,Move,development
+1570798408.5010002,1081,68,None,Move,development
+1570798408.5089998,1081,68,None,Move,development
+1570798408.5170002,1081,66,None,Move,development
+1570798408.525,1082,64,None,Move,development
+1570798408.532,1083,61,None,Move,development
+1570798408.539,1086,57,None,Move,development
+1570798408.5470002,1089,52,None,Move,development
+1570798408.555,1092,49,None,Move,development
+1570798408.564,1094,46,None,Move,development
+1570798408.571,1099,43,None,Move,development
+1570798408.58,1101,41,None,Move,development
+1570798408.587,1105,38,None,Move,development
+1570798408.595,1108,35,None,Move,development
+1570798408.603,1111,32,None,Move,development
+1570798408.611,1113,31,None,Move,development
+1570798408.617,1114,29,None,Move,development
+1570798408.6260002,1114,29,None,Move,development
+1570798408.633,1114,28,None,Move,development
+1570798408.6420002,1115,28,None,Move,development
+1570798408.649,1115,27,None,Move,development
+1570798408.657,1115,27,None,Move,development
+1570798408.673,1115,26,None,Move,development
+1570798408.681,1115,25,None,Move,development
+1570798408.687,1115,25,None,Move,development
+1570798408.695,1115,24,None,Move,development
+1570798408.711,1115,24,None,Move,development
+1570798408.719,1115,23,None,Move,development
+1570798408.7270002,1115,23,None,Move,development
+1570798408.735,1114,23,None,Move,development
+1570798408.7429998,1114,22,None,Move,development
+1570798408.7510002,1112,21,None,Move,development
+1570798408.7589998,1112,21,None,Move,development
+1570798408.7670002,1111,21,None,Move,development
+1570798408.775,1111,20,None,Move,development
+1570798409.002,1111,20,None,Move,development
+1570798409.04,1111,20,Left,Pressed,development
+1570798409.165,1111,20,Left,Released,development
+1570798409.436,1111,20,None,Move,file system
+1570798409.452,1111,23,None,Move,file system
+1570798409.467,1109,31,None,Move,file system
+1570798409.4829998,1105,40,None,Move,file system
+1570798409.498,1102,45,None,Move,file system
+1570798409.514,1095,56,None,Move,file system
+1570798409.521,1093,61,None,Move,file system
+1570798409.536,1086,69,None,Move,file system
+1570798409.552,1081,75,None,Move,file system
+1570798409.5670002,1062,100,None,Move,file system
+1570798409.583,1042,122,None,Move,file system
+1570798409.599,1027,137,None,Move,file system
+1570798409.6139998,1015,150,None,Move,file system
+1570798409.621,1008,155,None,Move,file system
+1570798409.637,1001,164,None,Move,file system
+1570798409.6520002,991,177,None,Move,file system
+1570798409.668,970,192,None,Move,file system
+1570798409.6829998,949,201,None,Move,file system
+1570798409.699,922,207,None,Move,file system
+1570798409.721,904,208,None,Move,file system
+1570798409.7370002,873,206,None,Move,file system
+1570798409.752,855,201,None,Move,file system
+1570798409.768,832,193,None,Move,file system
+1570798409.784,817,188,None,Move,file system
+1570798409.799,810,186,None,Move,file system
+1570798409.815,797,181,None,Move,file system
+1570798409.821,785,176,None,Move,file system
+1570798409.837,768,170,None,Move,file system
+1570798409.853,743,158,None,Move,file system
+1570798409.8679998,724,147,None,Move,file system
+1570798409.8839998,703,133,None,Move,file system
+1570798409.9,681,117,None,Move,file system
+1570798409.915,666,104,None,Move,file system
+1570798409.9220002,656,96,None,Move,file system
+1570798409.937,640,82,None,Move,file system
+1570798409.9529998,629,70,None,Move,file system
+1570798409.969,625,64,None,Move,file system
+1570798409.984,625,62,None,Move,file system
+1570798410.0,625,60,None,Move,file system
+1570798410.015,625,57,None,Move,file system
+1570798410.022,625,56,None,Move,file system
+1570798410.0370002,625,53,None,Move,file system
+1570798410.053,625,51,None,Move,file system
+1570798410.069,625,49,None,Move,file system
+1570798410.084,625,48,None,Move,file system
+1570798410.1,625,46,None,Move,file system
+1570798410.1160002,625,43,None,Move,file system
+1570798410.1220002,625,40,None,Move,file system
+1570798410.1379998,625,38,None,Move,file system
+1570798410.153,625,35,None,Move,file system
+1570798410.169,625,34,None,Move,file system
+1570798410.1820002,625,33,None,Move,file system
+1570798410.189,625,32,None,Move,file system
+1570798410.197,625,31,None,Move,file system
+1570798410.199,625,31,None,Move,file system
+1570798410.215,625,30,None,Move,file system
+1570798410.222,625,28,None,Move,file system
+1570798410.238,625,27,None,Move,file system
+1570798410.254,625,25,None,Move,file system
+1570798410.269,625,24,None,Move,file system
+1570798410.285,625,23,None,Move,file system
+1570798410.301,625,22,None,Move,file system
+1570798410.323,624,20,None,Move,file system
+1570798410.3379998,624,19,None,Move,file system
+1570798410.354,624,18,None,Move,file system
+1570798410.439,624,18,None,Move,file system
+1570798410.724,624,18,None,Move,browsing
+1570798410.871,622,18,None,Move,browsing
+1570798410.8860002,620,20,None,Move,browsing
+1570798410.9020002,614,26,None,Move,browsing
+1570798410.918,612,30,None,Move,browsing
+1570798410.924,606,37,None,Move,browsing
+1570798410.94,597,49,None,Move,browsing
+1570798410.955,591,60,None,Move,browsing
+1570798410.971,584,71,None,Move,browsing
+1570798410.9870002,581,78,None,Move,browsing
+1570798411.002,569,118,None,Move,browsing
+1570798411.015,558,169,None,Move,browsing
+1570798411.024,554,187,None,Move,browsing
+1570798411.031,549,222,None,Move,browsing
+1570798411.046,544,256,None,Move,browsing
+1570798411.062,536,348,None,Move,browsing
+1570798411.093,536,460,None,Move,browsing
+1570798411.1139998,541,594,None,Move,browsing
+1570798411.115,542,627,None,Move,browsing
+1570798411.1239998,544,647,None,Move,browsing
+1570798411.139,545,701,None,Move,browsing
+1570798411.155,547,729,None,Move,browsing
+1570798411.171,547,748,None,Move,browsing
+1570798411.186,547,757,None,Move,browsing
+1570798411.202,547,761,None,Move,browsing
+1570798411.218,547,767,None,Move,browsing
+1570798411.224,545,769,None,Move,browsing
+1570798411.24,544,767,None,Move,browsing
+1570798411.255,543,767,None,Move,browsing
+1570798411.271,542,765,None,Move,browsing
+1570798411.347,542,764,None,Move,browsing
+1570798411.363,542,761,None,Move,browsing
+1570798411.3779998,541,757,None,Move,browsing
+1570798411.399,541,756,None,Move,browsing
+1570798411.414,541,752,None,Move,browsing
+1570798411.424,541,751,None,Move,browsing
+1570798411.447,539,746,None,Move,browsing
+1570798411.464,536,742,None,Move,browsing
+1570798411.48,534,739,None,Move,browsing
+1570798411.495,531,737,None,Move,browsing
+1570798411.5110002,528,734,None,Move,browsing
+1570798411.524,524,732,None,Move,browsing
+1570798411.54,519,730,None,Move,browsing
+1570798411.556,515,729,None,Move,browsing
+1570798411.571,510,729,None,Move,browsing
+1570798411.587,502,728,None,Move,browsing
+1570798411.603,491,727,None,Move,browsing
+1570798411.6179998,474,726,None,Move,browsing
+1570798411.625,468,726,None,Move,browsing
+1570798411.64,455,726,None,Move,browsing
+1570798411.656,444,729,None,Move,browsing
+1570798411.6720002,428,737,None,Move,browsing
+1570798411.687,418,741,None,Move,browsing
+1570798411.7029998,404,746,None,Move,browsing
+1570798411.718,397,746,None,Move,browsing
+1570798411.725,396,746,None,Move,browsing
+1570798411.772,395,747,None,Move,browsing
+1570798411.7870002,396,747,None,Move,browsing
+1570798411.803,397,747,None,Move,browsing
+1570798411.819,401,747,None,Move,browsing
+1570798411.825,404,747,None,Move,browsing
+1570798411.841,410,748,None,Move,browsing
+1570798411.857,416,748,None,Move,browsing
+1570798411.8720002,429,748,None,Move,browsing
+1570798411.8879998,438,750,None,Move,browsing
+1570798411.903,447,752,None,Move,browsing
+1570798411.926,451,753,None,Move,browsing
+1570798411.941,455,753,None,Move,browsing
+1570798411.957,460,756,None,Move,browsing
+1570798411.972,461,756,None,Move,browsing
+1570798411.988,463,756,None,Move,browsing
+1570798412.004,464,756,None,Move,browsing
+1570798412.019,465,757,None,Move,browsing
+1570798412.026,467,757,None,Move,browsing
+1570798412.042,470,757,None,Move,browsing
+1570798412.0570002,476,758,None,Move,browsing
+1570798412.073,483,758,None,Move,browsing
+1570798412.0879998,489,760,None,Move,browsing
+1570798412.104,490,761,None,Move,browsing
+1570798412.1260002,490,761,None,Move,browsing
+1570798412.1420002,490,762,None,Move,browsing
+1570798412.157,488,762,None,Move,browsing
+1570798412.189,488,762,None,Move,browsing
+1570798412.204,487,762,None,Move,browsing
+1570798412.22,485,762,None,Move,browsing
+1570798412.226,484,762,None,Move,browsing
+1570798412.242,480,762,None,Move,browsing
+1570798412.258,476,762,None,Move,browsing
+1570798412.2729998,471,761,None,Move,browsing
+1570798412.289,469,761,None,Move,browsing
+1570798412.32,469,759,None,Move,browsing
+1570798412.405,469,759,None,Move,browsing
+1570798412.426,468,759,None,Move,browsing
+1570798412.4629998,468,758,None,Move,browsing
+1570798412.619,468,758,None,Move,office
+1570798412.6339998,467,758,None,Move,office
+1570798412.666,464,758,None,Move,office
+1570798412.68,462,758,None,Move,office
+1570798412.696,460,757,None,Move,office
+1570798412.7129998,459,754,None,Move,office
+1570798412.7270002,458,748,None,Move,office
+1570798412.7429998,458,737,None,Move,office
+1570798412.7589998,458,719,None,Move,office
+1570798412.774,450,680,None,Move,office
+1570798412.79,430,604,None,Move,office
+1570798412.806,415,555,None,Move,office
+1570798412.821,389,481,None,Move,office
+1570798412.8279998,380,453,None,Move,office
+1570798412.843,349,383,None,Move,office
+1570798412.859,317,315,None,Move,office
+1570798412.875,275,236,None,Move,office
+1570798412.89,248,188,None,Move,office
+1570798412.906,228,153,None,Move,office
+1570798412.921,218,135,None,Move,office
+1570798412.928,215,129,None,Move,office
+1570798412.944,208,116,None,Move,office
+1570798412.959,205,111,None,Move,office
+1570798412.975,201,108,None,Move,office
+1570798412.99,199,106,None,Move,office
+1570798413.006,196,106,None,Move,office
+1570798413.022,193,106,None,Move,office
+1570798413.028,191,106,None,Move,office
+1570798413.044,189,106,None,Move,office
+1570798413.059,188,106,None,Move,office
+1570798413.075,186,106,None,Move,office
+1570798413.091,185,106,None,Move,office
+1570798413.106,185,106,None,Move,office
+1570798413.175,185,107,None,Move,office
+1570798413.191,187,109,None,Move,office
+1570798413.207,197,115,None,Move,office
+1570798413.222,209,120,None,Move,office
+1570798413.229,214,122,None,Move,office
+1570798413.244,231,126,None,Move,office
+1570798413.276,245,127,None,Move,office
+1570798413.291,266,128,None,Move,office
+1570798413.3070002,274,128,None,Move,office
+1570798413.322,277,128,None,Move,office
+1570798413.329,278,128,None,Move,office
+1570798413.345,279,128,None,Move,office
+1570798413.36,279,128,None,Move,office
+1570798413.3760002,281,128,None,Move,office
+1570798413.391,282,128,None,Move,office
+1570798413.407,284,128,None,Move,office
+1570798413.423,285,128,None,Move,office
+1570798413.429,286,128,None,Move,office
+1570798413.445,288,128,None,Move,office
+1570798413.46,289,128,None,Move,office
+1570798413.476,289,129,None,Move,office
+1570798413.492,289,129,None,Move,office
+1570798413.5070002,290,130,None,Move,office
+1570798413.529,290,130,Left,Pressed,office
+1570798413.677,290,130,Left,Released,office
+1570798413.7229998,290,131,None,Move,office
+1570798413.73,290,132,None,Move,office
+1570798413.746,289,133,None,Move,office
+1570798413.7610002,289,133,None,Move,office
+1570798419.721,290,134,None,Move,office
+1570798419.7429998,298,143,None,Move,office
+1570798419.7589998,326,162,None,Move,office
+1570798419.774,338,171,None,Move,office
+1570798419.79,349,180,None,Move,office
+1570798419.806,355,182,None,Move,office
+1570798419.821,357,182,None,Move,office
+1570798419.837,361,182,None,Move,office
+1570798419.843,362,181,None,Move,office
+1570798419.859,364,181,None,Move,office
+1570798419.875,364,180,None,Move,office
+1570798419.89,365,180,None,Move,office
+1570798419.906,365,180,None,Move,office
+1570798419.9220002,366,179,None,Move,office
+1570798419.937,366,178,None,Move,office
+1570798419.944,366,178,None,Move,office
+1570798419.96,366,177,None,Move,office
+1570798419.975,367,177,None,Move,office
+1570798419.9910002,368,173,None,Move,office
+1570798420.006,368,167,None,Move,office
+1570798420.022,368,163,None,Move,office
+1570798420.0370002,368,160,None,Move,office
+1570798420.044,368,158,None,Move,office
+1570798420.06,368,156,None,Move,office
+1570798420.075,368,153,None,Move,office
+1570798420.091,368,151,None,Move,office
+1570798420.107,368,150,None,Move,office
+1570798420.1220002,368,148,None,Move,office
+1570798420.1379998,368,147,None,Move,office
+1570798420.144,368,146,None,Move,office
+1570798420.176,368,145,None,Move,office
+1570798420.207,368,144,None,Move,office
+1570798420.238,368,144,None,Move,office
+1570798420.276,367,144,None,Move,office
+1570798420.291,366,144,None,Move,office
+1570798420.3070002,365,144,None,Move,office
+1570798420.538,365,143,None,Move,office
+1570798420.544,365,143,None,Move,office
+1570798420.56,369,141,None,Move,office
+1570798420.576,373,139,None,Move,office
+1570798420.591,378,136,None,Move,office
+1570798420.607,381,134,None,Move,office
+1570798420.623,384,133,None,Move,office
+1570798420.6379998,386,131,None,Move,office
+1570798420.645,387,131,None,Move,office
+1570798420.66,388,131,None,Move,office
+1570798420.676,390,129,None,Move,office
+1570798420.6920002,392,128,None,Move,office
+1570798420.707,394,128,None,Move,office
+1570798420.7229998,395,127,None,Move,office
+1570798420.745,396,127,None,Move,office
+1570798420.823,396,127,None,Move,office
+1570798420.845,386,131,None,Move,office
+1570798420.861,376,135,None,Move,office
+1570798420.8760002,365,138,None,Move,office
+1570798420.8920002,348,143,None,Move,office
+1570798420.908,330,148,None,Move,office
+1570798420.923,307,151,None,Move,office
+1570798420.939,277,154,None,Move,office
+1570798420.946,269,155,None,Move,office
+1570798420.961,246,157,None,Move,office
+1570798420.9770002,236,158,None,Move,office
+1570798420.992,227,159,None,Move,office
+1570798421.008,221,161,None,Move,office
+1570798421.024,213,163,None,Move,office
+1570798421.039,201,166,None,Move,office
+1570798421.046,199,167,None,Move,office
+1570798421.061,191,167,None,Move,office
+1570798421.077,185,167,None,Move,office
+1570798421.093,179,167,None,Move,office
+1570798421.1079998,174,166,None,Move,office
+1570798421.1239998,166,165,None,Move,office
+1570798421.14,158,165,None,Move,office
+1570798421.146,156,165,None,Move,office
+1570798421.1620002,152,165,None,Move,office
+1570798421.177,150,165,None,Move,office
+1570798421.1929998,149,165,None,Move,office
+1570798421.262,149,164,None,Move,office
+1570798421.309,149,164,Left,Pressed,office
+1570798421.425,149,164,Left,Released,office
+1570798421.5470002,149,164,None,Move,office
+1570798421.895,149,164,None,Move,office
+1570798421.91,149,164,None,Move,office
+1570798421.926,151,164,None,Move,office
+1570798421.9420002,152,164,None,Move,office
+1570798421.948,155,164,None,Move,office
+1570798421.964,159,163,None,Move,office
+1570798421.979,161,163,None,Move,office
+1570798421.995,166,163,None,Move,office
+1570798422.0110002,172,162,None,Move,office
+1570798422.026,183,160,None,Move,office
+1570798422.042,192,157,None,Move,office
+1570798422.048,198,155,None,Move,office
+1570798422.064,212,150,None,Move,office
+1570798422.08,223,146,None,Move,office
+1570798422.095,239,141,None,Move,office
+1570798422.111,250,137,None,Move,office
+1570798422.1260002,262,135,None,Move,office
+1570798422.1420002,270,133,None,Move,office
+1570798422.149,276,131,None,Move,office
+1570798422.164,282,129,None,Move,office
+1570798422.18,287,129,None,Move,office
+1570798422.195,289,127,None,Move,office
+1570798422.211,291,127,None,Move,office
+1570798422.2270002,292,126,None,Move,office
+1570798422.242,293,126,None,Move,office
+1570798422.2489998,294,126,None,Move,office
+1570798422.264,295,125,None,Move,office
+1570798422.28,296,125,None,Move,office
+1570798422.311,296,124,None,Move,office
+1570798422.365,296,124,None,Move,office
+1570798422.396,297,124,Left,Pressed,office
+1570798422.396,297,124,None,Drag,office
+1570798422.4120002,297,124,None,Drag,office
+1570798422.465,297,125,None,Drag,office
+1570798422.465,297,125,Left,Released,office
+1570798422.596,297,125,None,Move,office
+1570798422.744,297,126,None,Move,office
+1570798422.813,297,126,None,Move,office
+1570798425.8720002,297,126,None,Move,office
+1570798425.972,297,126,None,Move,office
+1570798426.0879998,297,126,None,Move,office
+1570798426.104,301,130,None,Move,office
+1570798426.119,305,134,None,Move,office
+1570798426.151,308,137,None,Move,office
+1570798426.157,309,138,None,Move,office
+1570798426.173,309,138,None,Move,office
+1570798426.22,310,139,None,Move,office
+1570798426.235,310,140,None,Move,office
+1570798426.2570002,312,142,None,Move,office
+1570798426.2729998,314,143,None,Move,office
+1570798426.289,315,143,None,Move,office
+1570798426.304,317,144,None,Move,office
+1570798426.32,317,144,None,Move,office
+1570798426.336,318,145,None,Move,office
+1570798426.357,319,146,None,Move,office
+1570798426.373,321,150,None,Move,office
+1570798426.389,324,156,None,Move,office
+1570798426.404,328,164,None,Move,office
+1570798426.42,332,173,None,Move,office
+1570798426.436,336,181,None,Move,office
+1570798426.451,339,190,None,Move,office
+1570798426.458,343,197,None,Move,office
+1570798426.474,346,210,None,Move,office
+1570798426.4889998,351,222,None,Move,office
+1570798426.505,355,231,None,Move,office
+1570798426.52,358,236,None,Move,office
+1570798426.536,360,241,None,Move,office
+1570798426.552,363,243,None,Move,office
+1570798426.5579998,363,245,None,Move,office
+1570798426.574,364,246,None,Move,office
+1570798426.605,365,246,None,Move,office
+1570798426.6360002,365,246,None,Move,office
+1570798426.658,366,246,None,Move,office
+1570798426.674,367,246,None,Move,office
+1570798426.705,367,246,None,Move,office
+1570798426.7370002,368,246,None,Move,office
+1570798426.752,369,246,None,Move,office
+1570798426.7589998,369,246,None,Move,office
+1570798426.774,371,245,None,Move,office
+1570798426.79,372,245,None,Move,office
+1570798426.806,374,244,None,Move,office
+1570798426.821,375,243,None,Move,office
+1570798426.837,375,242,None,Move,office
+1570798426.8520002,376,242,None,Move,office
+1570798426.859,377,241,None,Move,office
+1570798426.8739998,378,241,None,Move,office
+1570798426.89,379,241,None,Move,office
+1570798426.906,379,240,None,Move,office
+1570798426.921,380,240,None,Move,office
+1570798426.937,381,240,None,Move,office
+1570798426.952,381,239,None,Move,office
+1570798426.959,382,239,None,Move,office
+1570798426.975,383,239,None,Move,office
+1570798426.99,383,238,None,Move,office
+1570798427.006,384,238,None,Move,office
+1570798427.0370002,384,238,None,Move,office
+1570798427.137,385,238,None,Move,office
+1570798427.16,385,238,None,Move,office
+1570798427.191,386,238,None,Move,office
+1570798427.275,386,238,None,Move,office
+1570798427.46,386,238,None,Move,office
+1570798427.476,386,238,None,Move,office
+1570798427.4910002,385,238,None,Move,office
+1570798427.5070002,384,239,None,Move,office
+1570798427.522,384,240,None,Move,office
+1570798427.538,382,242,None,Move,office
+1570798427.56,381,243,None,Move,office
+1570798427.576,381,244,None,Move,office
+1570798427.591,380,245,None,Move,office
+1570798427.607,378,247,None,Move,office
+1570798427.623,377,249,None,Move,office
+1570798427.6379998,375,252,None,Move,office
+1570798427.654,374,254,None,Move,office
+1570798427.66,374,255,None,Move,office
+1570798427.676,371,258,None,Move,office
+1570798427.6920002,369,262,None,Move,office
+1570798427.707,366,266,None,Move,office
+1570798427.7229998,363,270,None,Move,office
+1570798427.738,360,274,None,Move,office
+1570798427.754,357,278,None,Move,office
+1570798427.7610002,356,279,None,Move,office
+1570798427.776,353,282,None,Move,office
+1570798427.792,351,284,None,Move,office
+1570798427.8070002,348,288,None,Move,office
+1570798427.823,345,291,None,Move,office
+1570798427.839,341,296,None,Move,office
+1570798427.854,337,300,None,Move,office
+1570798427.861,335,301,None,Move,office
+1570798427.877,333,303,None,Move,office
+1570798427.8920002,331,304,None,Move,office
+1570798427.908,329,306,None,Move,office
+1570798427.924,328,308,None,Move,office
+1570798427.939,327,309,None,Move,office
+1570798428.093,326,309,None,Move,office
+1570798428.309,326,309,Left,Pressed,office
+1570798428.44,326,309,Left,Released,office
+1570798429.179,326,309,None,Move,office
+1570798429.21,326,309,None,Move,office
+1570798429.2629998,326,309,None,Move,office
+1570798429.411,327,309,None,Move,office
+1570798429.426,327,309,None,Move,office
+1570798429.464,327,310,None,Move,office
+1570798429.48,328,311,None,Move,office
+1570798429.495,329,313,None,Move,office
+1570798429.5110002,329,313,None,Move,office
+1570798429.526,330,313,None,Move,office
+1570798429.542,330,314,None,Move,office
+1570798429.564,330,314,None,Move,office
+1570798429.68,331,314,None,Move,office
+1570798429.896,331,315,None,Move,office
+1570798429.911,331,315,None,Move,office
+1570798429.927,332,316,None,Move,office
+1570798429.98,332,317,None,Move,office
+1570798429.996,332,317,None,Move,office
+1570798430.3279998,332,317,None,Move,office
+1570798430.343,332,318,None,Move,office
+1570798430.365,333,319,None,Move,office
+1570798430.397,333,320,None,Move,office
+1570798430.444,333,320,None,Move,office
+1570798430.998,333,321,None,Move,office
+1570798431.014,334,322,None,Move,office
+1570798431.029,336,326,None,Move,office
+1570798431.045,338,330,None,Move,office
+1570798431.061,339,335,None,Move,office
+1570798431.0670002,340,336,None,Move,office
+1570798431.083,341,341,None,Move,office
+1570798431.0979998,342,346,None,Move,office
+1570798431.1139998,343,352,None,Move,office
+1570798431.13,345,360,None,Move,office
+1570798431.145,346,364,None,Move,office
+1570798431.161,347,367,None,Move,office
+1570798431.167,347,369,None,Move,office
+1570798431.1829998,347,371,None,Move,office
+1570798431.199,348,374,None,Move,office
+1570798431.214,348,375,None,Move,office
+1570798431.23,348,378,None,Move,office
+1570798431.246,349,379,None,Move,office
+1570798431.2610002,349,381,None,Move,office
+1570798431.268,349,381,None,Move,office
+1570798431.299,350,381,None,Move,office
+1570798431.3679998,350,381,None,Move,office
+1570798431.383,350,376,None,Move,office
+1570798431.399,350,369,None,Move,office
+1570798431.415,350,362,None,Move,office
+1570798431.43,350,355,None,Move,office
+1570798431.446,350,349,None,Move,office
+1570798431.461,351,344,None,Move,office
+1570798431.468,352,341,None,Move,office
+1570798431.484,353,336,None,Move,office
+1570798431.4989998,353,330,None,Move,office
+1570798431.515,354,324,None,Move,office
+1570798431.53,355,319,None,Move,office
+1570798431.546,356,314,None,Move,office
+1570798431.562,357,310,None,Move,office
+1570798431.5679998,357,309,None,Move,office
+1570798431.584,357,305,None,Move,office
+1570798431.599,357,302,None,Move,office
+1570798431.615,358,298,None,Move,office
+1570798431.631,359,295,None,Move,office
+1570798431.646,359,293,None,Move,office
+1570798431.6620002,359,292,None,Move,office
+1570798431.668,359,291,None,Move,office
+1570798431.684,360,288,None,Move,office
+1570798431.7,361,285,None,Move,office
+1570798431.715,363,279,None,Move,office
+1570798431.731,364,275,None,Move,office
+1570798431.7470002,366,271,None,Move,office
+1570798431.762,366,270,None,Move,office
+1570798431.769,366,270,None,Move,office
+1570798431.784,366,269,None,Move,office
+1570798431.8,367,267,None,Move,office
+1570798431.816,367,267,None,Move,office
+1570798431.831,368,266,None,Move,office
+1570798431.916,368,265,None,Move,office
+1570798432.0,368,265,None,Move,office
+1570798432.0470002,369,265,Left,Pressed,office
+1570798432.0470002,369,265,None,Drag,office
+1570798432.0470002,369,265,Left,Released,office
+1570798432.163,369,266,None,Move,office
+1570798432.385,369,266,None,Move,office
+1570798432.401,370,267,None,Move,office
+1570798432.417,374,268,None,Move,office
+1570798432.4320002,379,269,None,Move,office
+1570798432.448,386,271,None,Move,office
+1570798432.464,396,273,None,Move,office
+1570798432.47,407,275,None,Move,office
+1570798432.486,425,278,None,Move,office
+1570798432.5010002,444,281,None,Move,office
+1570798432.5170002,478,287,None,Move,office
+1570798432.533,512,290,None,Move,office
+1570798432.548,520,290,None,Move,office
+1570798432.564,558,290,None,Move,office
+1570798432.572,575,290,None,Move,office
+1570798432.583,588,290,None,Move,office
+1570798432.593,614,290,None,Move,office
+1570798432.603,635,290,None,Move,office
+1570798432.611,654,290,None,Move,office
+1570798432.623,668,290,None,Move,office
+1570798432.631,686,290,None,Move,office
+1570798432.643,713,294,None,Move,office
+1570798432.651,727,295,None,Move,office
+1570798432.661,739,296,None,Move,office
+1570798432.663,743,296,None,Move,office
+1570798432.673,757,297,None,Move,office
+1570798432.6829998,767,298,None,Move,office
+1570798432.691,775,298,None,Move,office
+1570798432.6929998,781,298,None,Move,office
+1570798432.7029998,791,298,None,Move,office
+1570798432.7129998,797,298,None,Move,office
+1570798432.721,805,298,None,Move,office
+1570798432.731,817,298,None,Move,office
+1570798432.7470002,830,298,None,Move,office
+1570798432.7629998,841,298,None,Move,office
+1570798432.778,851,298,None,Move,office
+1570798432.794,859,298,None,Move,office
+1570798432.809,866,298,None,Move,office
+1570798432.832,871,298,None,Move,office
+1570798432.847,875,298,None,Move,office
+1570798432.863,877,298,None,Move,office
+1570798432.879,878,298,None,Move,office
+1570798441.3079998,879,299,None,Move,office
+1570798441.324,879,303,None,Move,office
+1570798441.34,879,303,None,Move,office
+1570798441.377,879,304,None,Move,office
+1570798442.495,879,305,None,Move,office
+1570798442.51,879,310,None,Move,office
+1570798442.526,879,313,None,Move,office
+1570798442.542,879,316,None,Move,office
+1570798442.548,879,317,None,Move,office
+1570798442.564,878,319,None,Move,office
+1570798442.579,878,320,None,Move,office
+1570798442.595,878,322,None,Move,office
+1570798442.611,878,324,None,Move,office
+1570798442.6260002,878,328,None,Move,office
+1570798442.6420002,878,331,None,Move,office
+1570798442.6479998,878,333,None,Move,office
+1570798442.664,878,338,None,Move,office
+1570798442.68,878,343,None,Move,office
+1570798442.695,878,349,None,Move,office
+1570798442.715,878,353,None,Move,office
+1570798442.7229998,880,358,None,Move,office
+1570798442.7270002,880,362,None,Move,office
+1570798442.7429998,881,371,None,Move,office
+1570798442.748,883,376,None,Move,office
+1570798442.764,886,386,None,Move,office
+1570798442.78,888,393,None,Move,office
+1570798442.795,892,402,None,Move,office
+1570798442.811,895,409,None,Move,office
+1570798442.827,899,417,None,Move,office
+1570798442.842,902,423,None,Move,office
+1570798442.849,903,426,None,Move,office
+1570798442.865,906,431,None,Move,office
+1570798442.88,907,433,None,Move,office
+1570798442.896,908,434,None,Move,office
+1570798442.911,909,436,None,Move,office
+1570798442.927,909,436,None,Move,office
+1570798442.949,910,437,None,Move,office
+1570798442.965,910,438,None,Move,office
+1570798442.98,911,440,None,Move,office
+1570798443.012,913,442,None,Move,office
+1570798443.0270002,914,443,None,Move,office
+1570798443.043,916,443,None,Move,office
+1570798443.049,917,443,None,Move,office
+1570798443.065,919,443,None,Move,office
+1570798443.081,922,443,None,Move,office
+1570798443.096,925,443,None,Move,office
+1570798443.1120002,926,442,None,Move,office
+1570798443.1279998,928,442,None,Move,office
+1570798443.143,930,440,None,Move,office
+1570798443.15,930,439,None,Move,office
+1570798443.165,931,438,None,Move,office
+1570798443.197,933,436,None,Move,office
+1570798443.212,935,435,None,Move,office
+1570798443.228,937,433,None,Move,office
+1570798443.244,938,433,None,Move,office
+1570798443.25,938,432,None,Move,office
+1570798443.281,939,432,None,Move,office
+1570798443.35,939,431,None,Move,office
+1570798443.3660002,940,431,None,Move,office
+1570798443.481,940,430,None,Move,office
+1570798443.4970002,940,430,None,Move,office
+1570798443.512,941,429,None,Move,office
+1570798443.528,941,429,None,Move,office
+1570798443.55,941,429,None,Move,office
+1570798443.597,941,428,None,Move,office
+1570798443.7129998,941,428,Left,Pressed,office
+1570798443.7129998,941,428,None,Drag,office
+1570798443.728,941,428,None,Drag,office
+1570798443.7510002,940,428,None,Drag,office
+1570798443.766,938,427,None,Drag,office
+1570798443.782,936,427,None,Drag,office
+1570798443.798,934,426,None,Drag,office
+1570798443.813,929,426,None,Drag,office
+1570798443.829,922,426,None,Drag,office
+1570798443.845,914,426,None,Drag,office
+1570798443.851,907,425,None,Drag,office
+1570798443.867,897,424,None,Drag,office
+1570798443.8820002,890,423,None,Drag,office
+1570798443.8979998,885,422,None,Drag,office
+1570798443.914,877,421,None,Drag,office
+1570798443.929,872,421,None,Drag,office
+1570798443.945,865,421,None,Drag,office
+1570798443.951,860,421,None,Drag,office
+1570798443.967,853,420,None,Drag,office
+1570798443.982,843,419,None,Drag,office
+1570798443.998,830,417,None,Drag,office
+1570798444.014,821,416,None,Drag,office
+1570798444.029,815,415,None,Drag,office
+1570798444.052,809,414,None,Drag,office
+1570798444.0670002,802,414,None,Drag,office
+1570798444.083,796,414,None,Drag,office
+1570798444.0979998,790,414,None,Drag,office
+1570798444.1139998,782,414,None,Drag,office
+1570798444.13,781,414,None,Drag,office
+1570798444.145,777,414,None,Drag,office
+1570798444.151,775,414,None,Drag,office
+1570798444.167,771,414,None,Drag,office
+1570798444.1829998,768,414,None,Drag,office
+1570798444.198,765,414,None,Drag,office
+1570798444.214,760,414,None,Drag,office
+1570798444.23,759,414,None,Drag,office
+1570798444.245,755,414,None,Drag,office
+1570798444.252,755,413,None,Drag,office
+1570798444.2670002,752,413,None,Drag,office
+1570798444.283,750,413,None,Drag,office
+1570798444.299,748,413,None,Drag,office
+1570798444.314,744,413,None,Drag,office
+1570798444.33,739,413,None,Drag,office
+1570798444.345,735,413,None,Drag,office
+1570798444.3520002,733,413,None,Drag,office
+1570798444.3679998,728,413,None,Drag,office
+1570798444.383,723,413,None,Drag,office
+1570798444.399,720,413,None,Drag,office
+1570798444.415,716,412,None,Drag,office
+1570798444.43,711,412,None,Drag,office
+1570798444.446,707,412,None,Drag,office
+1570798444.452,705,412,None,Drag,office
+1570798444.468,701,412,None,Drag,office
+1570798444.484,696,412,None,Drag,office
+1570798444.4989998,691,412,None,Drag,office
+1570798444.515,685,412,None,Drag,office
+1570798444.53,680,412,None,Drag,office
+1570798444.546,675,412,None,Drag,office
+1570798444.553,672,412,None,Drag,office
+1570798444.5679998,667,411,None,Drag,office
+1570798444.584,664,411,None,Drag,office
+1570798444.599,662,411,None,Drag,office
+1570798444.615,656,411,None,Drag,office
+1570798444.631,650,411,None,Drag,office
+1570798444.653,645,411,None,Drag,office
+1570798444.668,641,411,None,Drag,office
+1570798444.684,635,411,None,Drag,office
+1570798444.7,630,411,None,Drag,office
+1570798444.715,627,411,None,Drag,office
+1570798444.731,622,411,None,Drag,office
+1570798444.7470002,616,411,None,Drag,office
+1570798444.7529998,614,411,None,Drag,office
+1570798444.769,611,411,None,Drag,office
+1570798444.784,609,411,None,Drag,office
+1570798444.8,607,411,None,Drag,office
+1570798444.816,605,411,None,Drag,office
+1570798444.831,604,411,None,Drag,office
+1570798444.847,603,411,None,Drag,office
+1570798444.853,601,411,None,Drag,office
+1570798444.869,600,411,None,Drag,office
+1570798444.885,598,411,None,Drag,office
+1570798444.9,594,411,None,Drag,office
+1570798444.916,591,411,None,Drag,office
+1570798444.9320002,587,411,None,Drag,office
+1570798444.947,584,411,None,Drag,office
+1570798444.954,583,411,None,Drag,office
+1570798444.969,582,411,None,Drag,office
+1570798444.985,580,411,None,Drag,office
+1570798445.0010002,579,411,None,Drag,office
+1570798445.016,579,411,None,Drag,office
+1570798445.032,578,411,None,Drag,office
+1570798445.0470002,578,411,None,Drag,office
+1570798445.054,578,411,None,Drag,office
+1570798445.07,576,411,None,Drag,office
+1570798445.085,573,412,None,Drag,office
+1570798445.101,570,412,None,Drag,office
+1570798445.1160002,566,412,None,Drag,office
+1570798445.1320002,565,412,None,Drag,office
+1570798445.1479998,563,412,None,Drag,office
+1570798445.154,563,412,None,Drag,office
+1570798445.17,562,413,None,Drag,office
+1570798445.186,561,413,None,Drag,office
+1570798445.201,559,414,None,Drag,office
+1570798445.217,557,414,None,Drag,office
+1570798445.232,556,414,None,Drag,office
+1570798445.27,556,414,None,Drag,office
+1570798445.286,555,414,None,Drag,office
+1570798445.3170002,555,414,None,Drag,office
+1570798445.355,554,414,None,Drag,office
+1570798445.355,554,414,Left,Released,office
+1570798445.956,554,414,None,Move,office
+1570798445.971,553,414,None,Move,office
+1570798445.9870002,553,413,None,Move,office
+1570798446.0029998,553,412,None,Move,office
+1570798446.034,552,411,None,Move,office
+1570798446.049,551,411,None,Move,office
+1570798446.056,551,411,None,Move,office
+1570798446.1179998,550,411,None,Move,office
+1570798446.156,549,411,None,Move,office
+1570798446.2029998,549,411,None,Move,office
+1570798448.677,549,411,None,Move,office
+1570798451.413,549,411,None,Move,office
+1570798451.428,549,411,None,Move,office
+1570798451.444,550,413,None,Move,office
+1570798451.459,553,416,None,Move,office
+1570798451.466,554,417,None,Move,office
+1570798451.482,555,417,None,Move,office
+1570798451.4970002,556,417,None,Move,office
+1570798451.5129998,558,417,None,Move,office
+1570798451.529,562,416,None,Move,office
+1570798451.544,564,414,None,Move,office
+1570798451.798,568,410,None,Move,office
+1570798451.883,569,410,None,Move,office
+1570798451.8979998,571,410,None,Move,office
+1570798451.914,577,408,None,Move,office
+1570798451.929,580,407,None,Move,office
+1570798451.945,585,403,None,Move,office
+1570798451.961,590,401,None,Move,office
+1570798451.967,593,400,None,Move,office
+1570798451.9829998,597,398,None,Move,office
+1570798451.998,603,396,None,Move,office
+1570798452.014,606,395,None,Move,office
+1570798452.03,611,393,None,Move,office
+1570798452.045,613,392,None,Move,office
+1570798452.061,617,392,None,Move,office
+1570798452.0670002,619,392,None,Move,office
+1570798452.083,622,391,None,Move,office
+1570798452.099,625,391,None,Move,office
+1570798452.1139998,628,390,None,Move,office
+1570798452.13,628,390,None,Move,office
+1570798452.146,633,390,None,Move,office
+1570798452.161,637,390,None,Move,office
+1570798452.168,640,390,None,Move,office
+1570798452.184,641,390,None,Move,office
+1570798452.199,645,390,None,Move,office
+1570798452.215,651,390,None,Move,office
+1570798452.23,656,390,None,Move,office
+1570798452.246,657,390,None,Move,office
+1570798452.262,660,391,None,Move,office
+1570798452.268,661,391,None,Move,office
+1570798452.283,664,392,None,Move,office
+1570798452.299,668,392,None,Move,office
+1570798452.314,671,394,None,Move,office
+1570798452.33,674,395,None,Move,office
+1570798452.346,678,397,None,Move,office
+1570798452.361,683,397,None,Move,office
+1570798452.3679998,688,398,None,Move,office
+1570798452.383,702,402,None,Move,office
+1570798452.399,715,407,None,Move,office
+1570798452.415,733,413,None,Move,office
+1570798452.43,742,416,None,Move,office
+1570798452.446,754,419,None,Move,office
+1570798452.462,775,423,None,Move,office
+1570798452.468,784,426,None,Move,office
+1570798452.484,801,430,None,Move,office
+1570798452.4989998,816,434,None,Move,office
+1570798452.515,829,436,None,Move,office
+1570798452.531,840,440,None,Move,office
+1570798452.546,846,442,None,Move,office
+1570798452.562,851,443,None,Move,office
+1570798452.5679998,853,444,None,Move,office
+1570798452.584,857,445,None,Move,office
+1570798452.6,858,445,None,Move,office
+1570798452.615,860,445,None,Move,office
+1570798452.631,861,445,None,Move,office
+1570798452.647,862,445,None,Move,office
+1570798454.349,861,449,None,Move,office
+1570798454.365,844,476,None,Move,office
+1570798454.371,838,485,None,Move,office
+1570798454.387,823,508,None,Move,office
+1570798454.403,802,537,None,Move,office
+1570798454.418,777,575,None,Move,office
+1570798454.434,753,605,None,Move,office
+1570798454.45,732,629,None,Move,office
+1570798454.465,718,647,None,Move,office
+1570798454.472,713,652,None,Move,office
+1570798454.4870002,702,665,None,Move,office
+1570798454.5029998,689,680,None,Move,office
+1570798454.519,681,691,None,Move,office
+1570798454.534,674,699,None,Move,office
+1570798454.55,664,709,None,Move,office
+1570798454.572,651,720,None,Move,office
+1570798454.5879998,640,726,None,Move,office
+1570798454.603,637,728,None,Move,office
+1570798454.619,631,729,None,Move,office
+1570798454.6339998,626,730,None,Move,office
+1570798454.65,621,731,None,Move,office
+1570798454.666,616,731,None,Move,office
+1570798454.6720002,612,731,None,Move,office
+1570798454.688,606,731,None,Move,office
+1570798454.704,600,730,None,Move,office
+1570798454.719,595,730,None,Move,office
+1570798454.735,594,730,None,Move,office
+1570798454.75,593,730,None,Move,office
+1570798454.766,591,730,None,Move,office
+1570798454.772,590,730,None,Move,office
+1570798454.788,586,731,None,Move,office
+1570798454.804,580,732,None,Move,office
+1570798454.819,573,734,None,Move,office
+1570798454.835,567,735,None,Move,office
+1570798454.851,563,736,None,Move,office
+1570798454.873,562,736,None,Move,office
+1570798454.889,561,736,None,Move,office
+1570798454.904,558,736,None,Move,office
+1570798454.92,554,737,None,Move,office
+1570798454.935,551,737,None,Move,office
+1570798454.951,544,737,None,Move,office
+1570798454.967,539,737,None,Move,office
+1570798454.9729998,538,737,None,Move,office
+1570798454.9889998,536,737,None,Move,office
+1570798455.004,534,738,None,Move,office
+1570798455.02,530,738,None,Move,office
+1570798455.036,526,740,None,Move,office
+1570798455.051,522,741,None,Move,office
+1570798455.0670002,519,742,None,Move,office
+1570798455.073,518,742,None,Move,office
+1570798455.089,514,743,None,Move,office
+1570798455.105,511,743,None,Move,office
+1570798455.12,506,744,None,Move,office
+1570798455.1360002,504,744,None,Move,office
+1570798455.1520002,502,745,None,Move,office
+1570798455.167,502,745,None,Move,office
+1570798455.321,502,745,Left,Pressed,office
+1570798455.421,502,745,Left,Released,office
+1570798455.575,502,745,None,Move,development
+1570798455.59,503,744,None,Move,development
+1570798455.606,509,741,None,Move,development
+1570798455.6220002,516,739,None,Move,development
+1570798455.637,534,736,None,Move,development
+1570798455.653,552,733,None,Move,development
+1570798455.668,569,732,None,Move,development
+1570798455.675,584,730,None,Move,development
+1570798455.691,604,729,None,Move,development
+1570798455.706,624,729,None,Move,development
+1570798455.722,643,728,None,Move,development
+1570798455.7370002,660,728,None,Move,development
+1570798455.7529998,680,727,None,Move,development
+1570798455.769,692,727,None,Move,development
+1570798455.775,698,727,None,Move,development
+1570798455.791,707,727,None,Move,development
+1570798455.806,712,727,None,Move,development
+1570798455.822,716,727,None,Move,development
+1570798455.8379998,719,727,None,Move,development
+1570798455.853,721,727,None,Move,development
+1570798455.869,725,727,None,Move,development
+1570798455.875,728,727,None,Move,development
+1570798455.891,733,727,None,Move,development
+1570798455.907,737,727,None,Move,development
+1570798455.9220002,741,728,None,Move,development
+1570798455.938,743,729,None,Move,development
+1570798455.954,747,730,None,Move,development
+1570798455.976,750,731,None,Move,development
+1570798455.9910002,754,732,None,Move,development
+1570798456.0070002,758,733,None,Move,development
+1570798456.022,766,735,None,Move,development
+1570798456.038,771,737,None,Move,development
+1570798456.054,776,738,None,Move,development
+1570798456.07,778,739,None,Move,development
+1570798456.076,780,739,None,Move,development
+1570798456.091,783,740,None,Move,development
+1570798456.107,786,741,None,Move,development
+1570798456.1220002,788,743,None,Move,development
+1570798456.1379998,790,744,None,Move,development
+1570798456.154,792,745,None,Move,development
+1570798456.169,794,746,None,Move,development
+1570798456.176,796,747,None,Move,development
+1570798456.191,798,748,None,Move,development
+1570798456.207,799,749,None,Move,development
+1570798456.2229998,800,749,None,Move,development
+1570798456.254,801,749,None,Move,development
+1570798456.3070002,801,750,None,Move,development
+1570798456.323,801,750,None,Move,development
+1570798456.3760002,801,750,Left,Pressed,development
+1570798456.508,801,750,Left,Released,development
+1570798456.647,801,750,None,Move,development
+1570798456.663,801,750,None,Move,development
+1570798456.695,801,750,None,Move,development
+1570798456.7410002,801,749,None,Move,development
+1570798456.7570002,801,749,None,Move,development
+1570798456.765,801,749,None,Move,development
+1570798456.7729998,801,748,None,Move,development
+1570798456.781,800,748,None,Move,development
+1570798456.788,800,747,None,Move,development
+1570798456.796,799,747,None,Move,development
+1570798456.803,799,747,None,Move,development
+1570798456.811,799,746,None,Move,development
+1570798456.819,798,746,None,Move,development
+1570798456.827,798,745,None,Move,development
+1570798456.835,797,744,None,Move,development
+1570798456.844,797,743,None,Move,development
+1570798456.853,796,742,None,Move,development
+1570798456.86,795,742,None,Move,development
+1570798456.867,795,740,None,Move,development
+1570798456.8760002,794,738,None,Move,development
+1570798456.883,793,737,None,Move,development
+1570798456.889,792,735,None,Move,development
+1570798456.897,791,732,None,Move,development
+1570798456.905,790,731,None,Move,development
+1570798456.913,790,729,None,Move,development
+1570798456.921,789,727,None,Move,development
+1570798456.929,788,724,None,Move,development
+1570798456.937,788,721,None,Move,development
+1570798456.945,787,718,None,Move,development
+1570798456.9529998,787,715,None,Move,development
+1570798456.96,787,711,None,Move,development
+1570798456.967,787,706,None,Move,development
+1570798456.975,787,703,None,Move,development
+1570798456.9829998,787,698,None,Move,development
+1570798456.9910002,787,695,None,Move,development
+1570798456.9989998,787,690,None,Move,development
+1570798457.0070002,787,684,None,Move,development
+1570798457.015,787,676,None,Move,development
+1570798457.0229998,787,667,None,Move,development
+1570798457.031,787,662,None,Move,development
+1570798457.039,789,646,None,Move,development
+1570798457.046,789,634,None,Move,development
+1570798457.055,790,619,None,Move,development
+1570798457.064,791,610,None,Move,development
+1570798457.072,792,598,None,Move,development
+1570798457.08,793,585,None,Move,development
+1570798457.089,793,568,None,Move,development
+1570798457.0979998,794,554,None,Move,development
+1570798457.106,795,542,None,Move,development
+1570798457.113,795,529,None,Move,development
+1570798457.12,795,522,None,Move,development
+1570798457.127,795,509,None,Move,development
+1570798457.135,794,494,None,Move,development
+1570798457.1420002,793,488,None,Move,development
+1570798457.1479998,788,472,None,Move,development
+1570798457.168,782,455,None,Move,development
+1570798457.175,780,448,None,Move,development
+1570798457.181,774,440,None,Move,development
+1570798457.189,771,433,None,Move,development
+1570798457.195,769,428,None,Move,development
+1570798457.2029998,765,423,None,Move,development
+1570798457.212,761,420,None,Move,development
+1570798457.219,755,416,None,Move,development
+1570798457.226,748,411,None,Move,development
+1570798457.232,741,408,None,Move,development
+1570798457.242,731,405,None,Move,development
+1570798457.25,723,403,None,Move,development
+1570798457.258,701,398,None,Move,development
+1570798457.265,682,392,None,Move,development
+1570798457.2729998,669,390,None,Move,development
+1570798457.281,643,383,None,Move,development
+1570798457.289,624,377,None,Move,development
+1570798457.2970002,611,374,None,Move,development
+1570798457.304,585,365,None,Move,development
+1570798457.311,568,360,None,Move,development
+1570798457.319,556,357,None,Move,development
+1570798457.3279998,540,349,None,Move,development
+1570798457.336,525,343,None,Move,development
+1570798457.343,512,336,None,Move,development
+1570798457.351,502,330,None,Move,development
+1570798457.359,493,324,None,Move,development
+1570798457.367,490,322,None,Move,development
+1570798457.375,488,319,None,Move,development
+1570798457.3839998,485,316,None,Move,development
+1570798457.391,484,314,None,Move,development
+1570798457.3979998,484,313,None,Move,development
+1570798457.407,483,312,None,Move,development
+1570798457.414,482,311,None,Move,development
+1570798457.4220002,482,310,None,Move,development
+1570798457.437,482,310,None,Move,development
+1570798457.445,482,309,None,Move,development
+1570798457.4529998,482,308,None,Move,development
+1570798457.461,482,308,None,Move,development
+1570798457.469,481,307,None,Move,development
+1570798457.476,481,306,None,Move,development
+1570798457.484,481,305,None,Move,development
+1570798457.4910002,480,304,None,Move,development
+1570798457.4989998,479,303,None,Move,development
+1570798457.5070002,479,301,None,Move,development
+1570798457.515,479,299,None,Move,development
+1570798457.524,478,297,None,Move,development
+1570798457.531,477,292,None,Move,development
+1570798457.542,476,289,None,Move,development
+1570798457.55,476,286,None,Move,development
+1570798457.5579998,475,281,None,Move,development
+1570798457.565,475,279,None,Move,development
+1570798457.576,474,276,None,Move,development
+1570798457.585,473,273,None,Move,development
+1570798457.592,473,270,None,Move,development
+1570798457.5979998,472,268,None,Move,development
+1570798457.607,472,265,None,Move,development
+1570798457.613,471,262,None,Move,development
+1570798457.623,470,259,None,Move,development
+1570798457.629,469,254,None,Move,development
+1570798457.6360002,468,251,None,Move,development
+1570798457.6420002,468,248,None,Move,development
+1570798457.6479998,468,246,None,Move,development
+1570798457.657,467,245,None,Move,development
+1570798457.663,467,243,None,Move,development
+1570798457.671,466,243,None,Move,development
+1570798457.679,466,242,None,Move,development
+1570798457.687,466,241,None,Move,development
+1570798457.695,466,241,None,Move,development
+1570798457.7029998,465,239,None,Move,development
+1570798457.711,465,238,None,Move,development
+1570798457.719,465,237,None,Move,development
+1570798457.726,465,234,None,Move,development
+1570798457.7329998,464,232,None,Move,development
+1570798457.7410002,463,229,None,Move,development
+1570798457.7489998,463,227,None,Move,development
+1570798457.7570002,462,224,None,Move,development
+1570798457.765,462,222,None,Move,development
+1570798457.7729998,462,220,None,Move,development
+1570798457.781,461,217,None,Move,development
+1570798457.789,461,217,None,Move,development
+1570798457.7970002,460,216,None,Move,development
+1570798457.805,460,215,None,Move,development
+1570798457.813,460,214,None,Move,development
+1570798457.823,460,213,None,Move,development
+1570798457.831,460,213,None,Move,development
+1570798457.843,460,212,None,Move,development
+1570798457.883,460,212,None,Move,development
+1570798457.891,459,212,None,Move,development
+1570798457.938,459,212,Left,Pressed,development
+1570798458.072,459,212,Left,Released,development
+1570798458.916,459,212,None,Move,development
+1570798458.924,460,212,None,Move,development
+1570798458.9320002,463,212,None,Move,development
+1570798458.94,472,212,None,Move,development
+1570798458.946,480,214,None,Move,development
+1570798458.9529998,489,216,None,Move,development
+1570798458.961,517,224,None,Move,development
+1570798458.969,529,226,None,Move,development
+1570798458.978,555,233,None,Move,development
+1570798458.985,586,240,None,Move,development
+1570798458.9929998,603,245,None,Move,development
+1570798459.0010002,634,259,None,Move,development
+1570798459.0089998,645,265,None,Move,development
+1570798459.0170002,660,274,None,Move,development
+1570798459.025,670,281,None,Move,development
+1570798459.034,677,285,None,Move,development
+1570798459.04,689,291,None,Move,development
+1570798459.048,702,300,None,Move,development
+1570798459.055,705,302,None,Move,development
+1570798459.063,716,308,None,Move,development
+1570798459.072,721,311,None,Move,development
+1570798459.079,723,312,None,Move,development
+1570798459.087,725,314,None,Move,development
+1570798459.095,727,316,None,Move,development
+1570798459.103,727,316,None,Move,development
+1570798459.111,727,316,None,Move,development
+1570798459.119,728,317,None,Move,development
+1570798459.133,728,318,None,Move,development
+1570798459.141,728,318,None,Move,development
+1570798459.15,728,318,None,Move,development
+1570798459.157,729,318,None,Move,development
+1570798459.165,730,319,None,Move,development
+1570798459.173,730,320,None,Move,development
+1570798459.181,731,320,None,Move,development
+1570798459.195,731,321,None,Move,development
+1570798459.2029998,731,322,None,Move,development
+1570798459.211,733,324,None,Move,development
+1570798459.2270002,733,325,None,Move,development
+1570798459.2670002,733,325,None,Move,development
+1570798460.603,733,326,None,Move,development
+1570798460.627,733,326,None,Move,development
+1570798460.651,733,327,None,Move,development
+1570798464.867,736,327,None,Move,development
+1570798464.889,739,326,None,Move,development
+1570798464.9020002,742,324,None,Move,development
+1570798464.909,746,322,None,Move,development
+1570798464.916,752,321,None,Move,development
+1570798464.9220002,755,321,None,Move,development
+1570798464.929,764,320,None,Move,development
+1570798464.936,769,319,None,Move,development
+1570798464.9429998,775,318,None,Move,development
+1570798464.951,782,317,None,Move,development
+1570798464.959,789,316,None,Move,development
+1570798464.968,795,316,None,Move,development
+1570798464.975,799,316,None,Move,development
+1570798464.9829998,806,316,None,Move,development
+1570798464.992,817,316,None,Move,development
+1570798465.0,824,316,None,Move,development
+1570798465.0070002,831,317,None,Move,development
+1570798465.0270002,842,318,None,Move,development
+1570798465.033,847,319,None,Move,development
+1570798465.04,853,319,None,Move,development
+1570798465.0470002,860,321,None,Move,development
+1570798465.055,865,322,None,Move,development
+1570798465.063,871,323,None,Move,development
+1570798465.07,876,323,None,Move,development
+1570798465.077,882,324,None,Move,development
+1570798465.083,888,325,None,Move,development
+1570798465.092,893,325,None,Move,development
+1570798465.1,900,327,None,Move,development
+1570798465.107,906,328,None,Move,development
+1570798465.115,911,329,None,Move,development
+1570798465.123,918,331,None,Move,development
+1570798465.131,924,332,None,Move,development
+1570798465.139,930,333,None,Move,development
+1570798465.147,935,334,None,Move,development
+1570798465.155,941,335,None,Move,development
+1570798465.163,946,336,None,Move,development
+1570798465.171,949,336,None,Move,development
+1570798465.179,954,337,None,Move,development
+1570798465.186,959,337,None,Move,development
+1570798465.1929998,965,338,None,Move,development
+1570798465.201,969,338,None,Move,development
+1570798465.209,972,338,None,Move,development
+1570798465.217,974,338,None,Move,development
+1570798465.225,975,338,None,Move,development
+1570798465.2329998,976,338,None,Move,development
+1570798468.3579998,976,338,None,Move,development
+1570798468.389,976,338,None,Move,development
+1570798468.405,975,338,None,Move,development
+1570798468.439,974,338,None,Move,development
+1570798468.447,974,339,None,Move,development
+1570798468.455,973,339,None,Move,development
+1570798468.464,972,339,None,Move,development
+1570798468.47,970,339,None,Move,development
+1570798468.4770002,970,339,None,Move,development
+1570798468.485,968,339,None,Move,development
+1570798468.4929998,966,340,None,Move,development
+1570798468.5010002,964,340,None,Move,development
+1570798468.51,962,341,None,Move,development
+1570798468.5170002,960,342,None,Move,development
+1570798468.525,956,342,None,Move,development
+1570798468.534,950,343,None,Move,development
+1570798468.542,944,345,None,Move,development
+1570798468.55,937,346,None,Move,development
+1570798468.556,933,347,None,Move,development
+1570798468.563,921,349,None,Move,development
+1570798468.572,910,352,None,Move,development
+1570798468.58,902,353,None,Move,development
+1570798468.5879998,892,354,None,Move,development
+1570798468.596,887,355,None,Move,development
+1570798468.603,880,356,None,Move,development
+1570798468.6120002,876,356,None,Move,development
+1570798468.62,869,357,None,Move,development
+1570798468.6279998,867,357,None,Move,development
+1570798468.6360002,863,357,None,Move,development
+1570798468.6420002,858,359,None,Move,development
+1570798468.649,851,359,None,Move,development
+1570798468.658,847,360,None,Move,development
+1570798468.666,844,360,None,Move,development
+1570798468.673,842,360,None,Move,development
+1570798468.6820002,838,360,None,Move,development
+1570798468.689,832,361,None,Move,development
+1570798468.697,828,362,None,Move,development
+1570798468.705,821,363,None,Move,development
+1570798468.7129998,813,364,None,Move,development
+1570798468.721,809,365,None,Move,development
+1570798468.728,796,369,None,Move,development
+1570798468.735,787,372,None,Move,development
+1570798468.7429998,778,377,None,Move,development
+1570798468.7510002,771,380,None,Move,development
+1570798468.7589998,762,385,None,Move,development
+1570798468.7670002,751,394,None,Move,development
+1570798468.775,742,401,None,Move,development
+1570798468.783,734,408,None,Move,development
+1570798468.806,704,442,None,Move,development
+1570798468.813,701,447,None,Move,development
+1570798468.821,695,458,None,Move,development
+1570798468.829,693,464,None,Move,development
+1570798468.837,688,475,None,Move,development
+1570798468.845,685,487,None,Move,development
+1570798468.853,685,491,None,Move,development
+1570798468.871,682,518,None,Move,development
+1570798468.879,682,527,None,Move,development
+1570798468.885,682,534,None,Move,development
+1570798468.8920002,682,539,None,Move,development
+1570798468.899,681,546,None,Move,development
+1570798468.908,681,551,None,Move,development
+1570798468.916,681,558,None,Move,development
+1570798468.924,680,565,None,Move,development
+1570798468.9320002,679,572,None,Move,development
+1570798468.939,678,579,None,Move,development
+1570798468.961,674,592,None,Move,development
+1570798468.968,669,603,None,Move,development
+1570798468.976,665,610,None,Move,development
+1570798468.982,662,615,None,Move,development
+1570798468.9910002,657,622,None,Move,development
+1570798468.998,653,628,None,Move,development
+1570798469.004,649,633,None,Move,development
+1570798469.012,646,637,None,Move,development
+1570798469.019,643,640,None,Move,development
+1570798469.0270002,639,644,None,Move,development
+1570798469.033,636,647,None,Move,development
+1570798469.041,632,650,None,Move,development
+1570798469.05,629,652,None,Move,development
+1570798469.0570002,625,656,None,Move,development
+1570798469.064,622,659,None,Move,development
+1570798469.071,618,662,None,Move,development
+1570798469.079,611,668,None,Move,development
+1570798469.087,605,672,None,Move,development
+1570798469.095,601,674,None,Move,development
+1570798469.103,594,678,None,Move,development
+1570798469.1120002,590,680,None,Move,development
+1570798469.121,586,682,None,Move,development
+1570798469.1279998,583,682,None,Move,development
+1570798469.135,582,683,None,Move,development
+1570798469.143,580,684,None,Move,development
+1570798469.149,579,684,None,Move,development
+1570798469.157,579,684,None,Move,development
+1570798469.165,578,684,None,Move,development
+1570798469.174,577,684,None,Move,development
+1570798469.205,577,684,None,Move,development
+1570798469.221,576,684,None,Move,development
+1570798469.229,576,685,None,Move,development
+1570798469.236,576,685,None,Move,development
+1570798469.238,574,686,None,Move,development
+1570798469.254,569,688,None,Move,development
+1570798469.269,562,691,None,Move,development
+1570798469.285,557,694,None,Move,development
+1570798469.301,553,697,None,Move,development
+1570798469.316,550,698,None,Move,development
+1570798469.332,549,699,None,Move,development
+1570798469.4320002,548,699,Left,Pressed,development
+1570798469.595,548,699,Left,Released,development
+1570798469.643,548,699,None,Move,development
+1570798469.651,548,699,None,Move,development
+1570798469.659,549,698,None,Move,development
+1570798469.666,550,697,None,Move,development
+1570798469.673,550,696,None,Move,development
+1570798469.681,551,695,None,Move,development
+1570798469.689,551,695,None,Move,development
+1570798469.697,552,694,None,Move,development
+1570798469.705,553,693,None,Move,development
+1570798469.7129998,553,693,None,Move,development
+1570798469.721,553,692,None,Move,development
+1570798469.729,554,692,None,Move,development
+1570798469.7370002,554,691,None,Move,development
+1570798469.745,555,691,None,Move,development
+1570798469.752,555,690,None,Move,development
+1570798469.76,555,689,None,Move,development
+1570798469.7670002,556,689,None,Move,development
+1570798469.775,557,688,None,Move,development
+1570798469.783,558,687,None,Move,development
+1570798469.795,558,687,None,Move,development
+1570798469.806,558,685,None,Move,development
+1570798469.8179998,561,683,None,Move,development
+1570798469.821,562,681,None,Move,development
+1570798469.834,563,680,None,Move,development
+1570798469.842,564,676,None,Move,development
+1570798469.85,566,672,None,Move,development
+1570798469.857,568,668,None,Move,development
+1570798469.865,568,666,None,Move,development
+1570798469.873,568,662,None,Move,development
+1570798469.88,568,656,None,Move,development
+1570798469.89,568,645,None,Move,development
+1570798469.8979998,569,637,None,Move,development
+1570798469.906,571,616,None,Move,development
+1570798469.913,573,609,None,Move,development
+1570798469.92,576,596,None,Move,development
+1570798469.9220002,578,567,None,Move,development
+1570798469.949,581,484,None,Move,development
+1570798469.964,581,468,None,Move,development
+1570798469.972,577,437,None,Move,development
+1570798469.98,575,416,None,Move,development
+1570798469.988,570,385,None,Move,development
+1570798469.995,567,367,None,Move,development
+1570798470.0029998,565,351,None,Move,development
+1570798470.0089998,563,338,None,Move,development
+1570798470.014,560,323,None,Move,development
+1570798470.029,557,307,None,Move,development
+1570798470.034,556,298,None,Move,development
+1570798470.049,556,294,None,Move,development
+1570798470.065,555,288,None,Move,development
+1570798470.081,555,283,None,Move,development
+1570798470.181,555,283,None,Move,development
+1570798470.196,555,283,None,Move,development
+1570798470.212,558,287,None,Move,development
+1570798470.2270002,560,289,None,Move,development
+1570798470.234,560,289,None,Move,development
+1570798470.2489998,561,290,None,Move,development
+1570798470.268,562,293,None,Move,development
+1570798470.276,562,296,None,Move,development
+1570798470.284,562,301,None,Move,development
+1570798470.292,562,308,None,Move,development
+1570798470.298,562,316,None,Move,development
+1570798470.313,563,324,None,Move,development
+1570798470.334,564,326,None,Move,development
+1570798470.35,564,326,None,Move,development
+1570798470.5029998,564,326,None,Move,development
+1570798470.5110002,564,328,None,Move,development
+1570798470.5270002,564,330,None,Move,development
+1570798470.534,564,332,None,Move,development
+1570798470.55,563,335,None,Move,development
+1570798470.566,563,336,None,Move,development
+1570798470.581,562,337,None,Move,development
+1570798470.597,562,337,None,Move,development
+1570798470.6120002,562,337,None,Move,development
+1570798470.6339998,561,339,None,Move,development
+1570798470.65,560,341,None,Move,development
+1570798470.665,554,352,None,Move,development
+1570798470.681,549,361,None,Move,development
+1570798470.697,547,366,None,Move,development
+1570798470.712,547,367,None,Move,development
+1570798470.734,546,369,None,Move,development
+1570798470.754,545,371,None,Move,development
+1570798470.762,544,371,None,Move,development
+1570798470.776,543,371,None,Move,development
+1570798470.784,543,372,None,Move,development
+1570798470.786,542,372,None,Move,development
+1570798470.8679998,542,373,None,Move,development
+1570798471.012,542,373,None,Move,development
+1570798471.014,540,377,None,Move,development
+1570798471.029,533,407,None,Move,development
+1570798471.036,526,428,None,Move,development
+1570798471.051,516,459,None,Move,development
+1570798471.074,512,473,None,Move,development
+1570798471.082,512,476,None,Move,development
+1570798471.09,511,477,None,Move,development
+1570798472.184,511,477,None,Move,development
+1570798472.2,515,473,None,Move,development
+1570798472.215,519,468,None,Move,development
+1570798472.231,532,457,None,Move,development
+1570798472.238,543,447,None,Move,development
+1570798472.2529998,548,443,None,Move,development
+1570798472.269,556,438,None,Move,development
+1570798472.284,561,434,None,Move,development
+1570798472.3,566,430,None,Move,development
+1570798472.316,571,427,None,Move,development
+1570798472.331,576,424,None,Move,development
+1570798472.3379998,579,424,None,Move,development
+1570798472.353,585,420,None,Move,development
+1570798472.369,589,419,None,Move,development
+1570798472.385,593,416,None,Move,development
+1570798472.4,597,414,None,Move,development
+1570798472.416,599,412,None,Move,development
+1570798472.4320002,604,409,None,Move,development
+1570798472.438,606,406,None,Move,development
+1570798472.454,609,404,None,Move,development
+1570798472.469,619,391,None,Move,development
+1570798472.485,633,370,None,Move,development
+1570798472.5010002,640,354,None,Move,development
+1570798472.516,652,328,None,Move,development
+1570798472.532,659,301,None,Move,development
+1570798472.538,660,292,None,Move,development
+1570798472.554,662,262,None,Move,development
+1570798472.57,662,233,None,Move,development
+1570798472.585,660,214,None,Move,development
+1570798472.601,658,203,None,Move,development
+1570798472.6160002,655,194,None,Move,development
+1570798472.6320002,653,189,None,Move,development
+1570798472.6379998,652,187,None,Move,development
+1570798472.654,651,184,None,Move,development
+1570798472.67,650,183,None,Move,development
+1570798472.685,649,182,None,Move,development
+1570798472.701,649,182,None,Move,development
+1570798472.7389998,648,182,None,Move,development
+1570798472.7610002,645,182,None,Move,development
+1570798472.769,644,182,None,Move,development
+1570798472.7770002,642,182,None,Move,development
+1570798472.779,639,182,None,Move,development
+1570798472.795,637,181,None,Move,development
+1570798472.81,634,181,None,Move,development
+1570798472.833,631,181,None,Move,development
+1570798472.839,630,181,None,Move,development
+1570798472.847,629,181,None,Move,development
+1570798472.856,628,180,None,Move,development
+1570798472.871,626,178,None,Move,development
+1570798472.887,623,171,None,Move,development
+1570798472.9020002,620,165,None,Move,development
+1570798472.918,618,158,None,Move,development
+1570798472.941,615,148,None,Move,development
+1570798472.949,615,146,None,Move,development
+1570798472.957,615,143,None,Move,development
+1570798472.965,615,140,None,Move,development
+1570798472.9729998,615,137,None,Move,development
+1570798472.981,616,135,None,Move,development
+1570798472.9889998,617,133,None,Move,development
+1570798472.9970002,620,131,None,Move,development
+1570798473.005,620,129,None,Move,development
+1570798473.012,621,129,None,Move,development
+1570798473.02,622,128,None,Move,development
+1570798473.0270002,623,127,None,Move,development
+1570798473.035,624,126,None,Move,development
+1570798473.039,625,125,None,Move,development
+1570798473.055,627,124,None,Move,development
+1570798473.075,628,122,None,Move,development
+1570798473.083,628,122,None,Move,development
+1570798473.084,629,121,None,Move,development
+1570798473.099,629,121,None,Move,development
+1570798473.115,630,120,None,Move,development
+1570798473.139,631,120,None,Move,development
+1570798473.155,631,119,None,Move,development
+1570798473.171,632,118,None,Move,development
+1570798473.186,633,117,None,Move,development
+1570798473.202,633,115,None,Move,development
+1570798473.217,634,115,None,Move,development
+1570798473.24,634,114,None,Move,development
+1570798473.271,635,114,None,Move,development
+1570798474.69,635,115,None,Move,development
+1570798474.706,634,120,None,Move,development
+1570798474.721,633,133,None,Move,development
+1570798474.7370002,633,158,None,Move,development
+1570798474.7429998,633,182,None,Move,development
+1570798474.7589998,633,214,None,Move,development
+1570798474.775,633,251,None,Move,development
+1570798474.79,633,276,None,Move,development
+1570798474.806,633,306,None,Move,development
+1570798474.821,633,325,None,Move,development
+1570798474.842,634,345,None,Move,development
+1570798474.85,635,352,None,Move,development
+1570798474.857,635,358,None,Move,development
+1570798474.8639998,636,361,None,Move,development
+1570798474.879,637,366,None,Move,development
+1570798474.911,637,367,None,Move,development
+1570798474.926,638,367,None,Move,development
+1570798540.186,640,365,None,Move,development
+1570798540.201,649,352,None,Move,development
+1570798540.217,665,329,None,Move,development
+1570798540.2329998,676,313,None,Move,development
+1570798540.248,687,293,None,Move,development
+1570798540.264,693,280,None,Move,development
+1570798540.27,695,274,None,Move,development
+1570798540.286,697,261,None,Move,development
+1570798540.302,697,250,None,Move,development
+1570798540.3170002,696,241,None,Move,development
+1570798540.333,691,233,None,Move,development
+1570798540.3479998,682,223,None,Move,development
+1570798540.3639998,669,207,None,Move,development
+1570798540.371,664,201,None,Move,development
+1570798540.3860002,659,194,None,Move,development
+1570798540.4020002,656,189,None,Move,development
+1570798540.417,652,183,None,Move,development
+1570798540.4329998,645,176,None,Move,development
+1570798540.449,639,170,None,Move,development
+1570798540.464,630,165,None,Move,development
+1570798540.471,627,163,None,Move,development
+1570798540.4870002,618,160,None,Move,development
+1570798540.502,606,157,None,Move,development
+1570798540.518,602,156,None,Move,development
+1570798540.534,597,155,None,Move,development
+1570798540.549,588,155,None,Move,development
+1570798540.571,582,155,None,Move,development
+1570798540.587,577,155,None,Move,development
+1570798540.6020002,573,155,None,Move,development
+1570798540.6179998,572,155,None,Move,development
+1570798540.6339998,572,155,None,Move,development
+1570798540.649,570,155,None,Move,development
+1570798540.665,568,155,None,Move,development
+1570798540.671,567,155,None,Move,development
+1570798540.687,566,155,None,Move,development
+1570798540.7029998,565,155,None,Move,development
+1570798540.718,563,154,None,Move,development
+1570798540.734,560,152,None,Move,development
+1570798540.75,554,150,None,Move,development
+1570798540.765,547,150,None,Move,development
+1570798540.772,544,150,None,Move,development
+1570798540.792,540,149,None,Move,development
+1570798540.8,539,149,None,Move,development
+1570798540.822,539,149,None,Move,development
+1570798540.839,539,149,None,Move,development
+1570798540.855,539,147,None,Move,development
+1570798540.8720002,541,146,None,Move,development
+1570798540.8879998,547,142,None,Move,development
+1570798540.903,558,134,None,Move,development
+1570798540.923,575,124,None,Move,development
+1570798540.9320002,581,121,None,Move,development
+1570798540.934,589,117,None,Move,development
+1570798540.949,598,113,None,Move,development
+1570798540.965,606,111,None,Move,development
+1570798540.972,609,109,None,Move,development
+1570798540.9929998,617,107,None,Move,development
+1570798541.0010002,621,106,None,Move,development
+1570798541.0089998,626,105,None,Move,development
+1570798541.0170002,629,104,None,Move,development
+1570798541.021,631,103,None,Move,development
+1570798541.036,633,102,None,Move,development
+1570798541.12,633,102,None,Move,development
+1570798541.135,628,105,None,Move,development
+1570798541.151,608,115,None,Move,development
+1570798541.173,578,126,None,Move,development
+1570798541.189,520,144,None,Move,development
+1570798541.204,451,159,None,Move,development
+1570798541.22,373,177,None,Move,development
+1570798541.236,304,189,None,Move,development
+1570798541.252,228,202,None,Move,development
+1570798541.2670002,165,212,None,Move,development
+1570798541.2729998,152,214,None,Move,development
+1570798541.289,116,220,None,Move,development
+1570798541.305,95,225,None,Move,development
+1570798541.32,86,227,None,Move,development
+1570798541.336,83,228,None,Move,development
+1570798541.3520002,82,229,None,Move,development
+1570798541.367,81,229,None,Move,development
+1570798541.3739998,80,230,None,Move,development
+1570798541.389,78,230,None,Move,development
+1570798541.405,75,231,None,Move,development
+1570798541.421,70,232,None,Move,development
+1570798541.436,61,233,None,Move,development
+1570798541.452,49,235,None,Move,development
+1570798541.467,32,236,None,Move,development
+1570798541.474,18,237,None,Move,development
+1570798541.49,7,238,None,Move,development
+1570798541.505,2,239,None,Move,development
+1570798541.552,2,239,None,Move,development
+1570798541.5679998,2,239,None,Move,development
+1570798541.574,3,239,None,Move,development
+1570798541.59,3,239,None,Move,development
+1570798541.605,4,238,None,Move,development
+1570798541.621,6,236,None,Move,development
+1570798541.637,7,234,None,Move,development
+1570798541.6520002,8,232,None,Move,development
+1570798541.668,9,230,None,Move,development
+1570798541.674,9,230,None,Move,development
+1570798541.729,9,229,None,Move,development
+1570798541.7329998,10,229,None,Move,development
+1570798541.765,10,228,None,Move,development
+1570798541.775,10,228,None,Move,development
+1570798541.8070002,11,226,None,Move,development
+1570798541.824,11,226,None,Move,development
+1570798541.84,11,226,Left,Pressed,development
+1570798541.9529998,11,226,Left,Released,development
+1570798542.1220002,11,226,None,Move,development
+1570798542.1379998,12,226,None,Move,development
+1570798542.159,14,226,None,Move,development
+1570798542.167,17,227,None,Move,development
+1570798542.175,19,228,None,Move,development
+1570798542.184,22,230,None,Move,development
+1570798542.188,24,231,None,Move,development
+1570798542.2029998,31,236,None,Move,development
+1570798542.219,40,241,None,Move,development
+1570798542.235,52,248,None,Move,development
+1570798542.2529998,59,253,None,Move,development
+1570798542.256,65,256,None,Move,development
+1570798542.276,75,264,None,Move,development
+1570798542.292,84,273,None,Move,development
+1570798542.3070002,93,281,None,Move,development
+1570798542.323,101,291,None,Move,development
+1570798542.339,111,306,None,Move,development
+1570798542.354,118,316,None,Move,development
+1570798542.37,125,330,None,Move,development
+1570798542.3760002,129,334,None,Move,development
+1570798542.3920002,138,348,None,Move,development
+1570798542.407,148,364,None,Move,development
+1570798542.423,158,378,None,Move,development
+1570798542.439,166,389,None,Move,development
+1570798542.454,174,399,None,Move,development
+1570798542.47,178,404,None,Move,development
+1570798542.476,180,407,None,Move,development
+1570798542.492,183,412,None,Move,development
+1570798542.508,185,415,None,Move,development
+1570798542.5229998,185,417,None,Move,development
+1570798542.539,188,420,None,Move,development
+1570798542.555,190,423,None,Move,development
+1570798542.57,192,427,None,Move,development
+1570798542.577,193,430,None,Move,development
+1570798542.592,196,434,None,Move,development
+1570798542.6079998,198,437,None,Move,development
+1570798542.6239998,200,440,None,Move,development
+1570798542.639,202,446,None,Move,development
+1570798542.655,203,450,None,Move,development
+1570798542.671,205,456,None,Move,development
+1570798542.677,207,459,None,Move,development
+1570798542.6929998,208,463,None,Move,development
+1570798542.708,209,466,None,Move,development
+1570798542.724,210,470,None,Move,development
+1570798542.74,211,473,None,Move,development
+1570798542.755,211,476,None,Move,development
+1570798542.7770002,211,480,None,Move,development
+1570798542.799,212,484,None,Move,development
+1570798542.8070002,212,486,None,Move,development
+1570798542.815,212,487,None,Move,development
+1570798542.824,213,487,None,Move,development
+1570798542.839,213,490,None,Move,development
+1570798542.855,213,492,None,Move,development
+1570798542.871,213,493,None,Move,development
+1570798542.877,213,493,None,Move,development
+1570798542.893,213,495,None,Move,development
+1570798542.91,214,496,None,Move,development
+1570798542.918,214,497,None,Move,development
+1570798542.926,214,497,None,Move,development
+1570798542.949,214,499,None,Move,development
+1570798542.978,214,504,None,Move,development
+1570798543.004,214,505,None,Move,development
+1570798543.14,214,505,None,Move,development
+1570798543.156,214,505,None,Move,development
+1570798543.178,214,504,None,Move,development
+1570798543.1929998,214,503,None,Move,development
+1570798543.209,213,503,None,Move,development
+1570798543.225,213,503,None,Move,development
+1570798543.256,212,503,None,Move,development
+1570798543.278,212,502,None,Move,development
+1570798543.309,212,502,None,Move,development
+1570798543.34,212,501,None,Move,development
+1570798543.425,212,501,None,Move,development
+1570798543.441,212,500,None,Move,development
+1570798543.456,211,500,None,Move,development
+1570798543.657,211,499,None,Move,development
+1570798543.6720002,211,498,None,Move,development
+1570798543.679,211,497,None,Move,development
+1570798543.694,211,496,None,Move,development
+1570798543.715,211,495,None,Move,development
+1570798543.7229998,211,494,None,Move,development
+1570798543.731,210,494,None,Move,development
+1570798543.7329998,210,493,None,Move,development
+1570798543.7489998,210,490,None,Move,development
+1570798543.764,210,486,None,Move,development
+1570798543.779,210,483,None,Move,development
+1570798543.802,210,479,None,Move,development
+1570798543.81,210,478,None,Move,development
+1570798543.8179998,210,476,None,Move,development
+1570798543.823,210,475,None,Move,development
+1570798543.839,210,473,None,Move,development
+1570798543.854,210,472,None,Move,development
+1570798543.87,210,471,None,Move,development
+1570798544.0029998,210,471,None,Move,development
+1570798544.0110002,209,471,None,Move,development
+1570798544.019,208,471,None,Move,development
+1570798544.0270002,208,471,None,Move,development
+1570798544.028,207,471,None,Move,development
+1570798544.043,206,471,None,Move,development
+1570798544.059,204,471,None,Move,development
+1570798544.074,200,471,None,Move,development
+1570798544.08,200,471,None,Move,development
+1570798544.095,198,469,None,Move,development
+1570798544.111,196,468,None,Move,development
+1570798544.1260002,195,464,None,Move,development
+1570798544.1420002,193,461,None,Move,development
+1570798544.158,192,459,None,Move,development
+1570798544.173,191,457,None,Move,development
+1570798544.18,190,456,None,Move,development
+1570798544.195,188,454,None,Move,development
+1570798544.211,186,453,None,Move,development
+1570798544.2270002,185,452,None,Move,development
+1570798544.311,185,452,None,Move,development
+1570798544.342,185,451,None,Move,development
+1570798544.3579998,185,451,Left,Pressed,development
+1570798544.4429998,185,451,Left,Released,development
+1570798544.543,185,451,Left,Pressed,development
+1570798544.596,185,451,Left,Released,development
+1570798545.021,186,451,None,Move,development
+1570798545.029,190,449,None,Move,development
+1570798545.03,196,448,None,Move,development
+1570798545.045,204,445,None,Move,development
+1570798545.061,231,439,None,Move,development
+1570798545.081,260,433,None,Move,development
+1570798545.097,288,428,None,Move,development
+1570798545.1120002,314,422,None,Move,development
+1570798545.1279998,342,415,None,Move,development
+1570798545.144,364,410,None,Move,development
+1570798545.159,383,403,None,Move,development
+1570798545.175,397,398,None,Move,development
+1570798545.181,403,395,None,Move,development
+1570798545.197,410,391,None,Move,development
+1570798545.2129998,414,387,None,Move,development
+1570798545.228,417,384,None,Move,development
+1570798545.244,421,381,None,Move,development
+1570798545.26,425,378,None,Move,development
+1570798545.275,429,374,None,Move,development
+1570798545.282,432,371,None,Move,development
+1570798545.2970002,436,368,None,Move,development
+1570798545.313,440,365,None,Move,development
+1570798545.329,442,362,None,Move,development
+1570798545.344,444,361,None,Move,development
+1570798545.36,445,359,None,Move,development
+1570798545.3820002,446,357,None,Move,development
+1570798545.397,447,355,None,Move,development
+1570798545.413,447,354,None,Move,development
+1570798545.429,448,353,None,Move,development
+1570798545.5129998,448,352,None,Move,development

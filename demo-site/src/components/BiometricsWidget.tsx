@@ -14,6 +14,46 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
  * component depends on.
  */
 
+/** Keep in sync with `MouseEngine` in src/lib/biometrics/types.ts. */
+type MouseEngine =
+  | "balabit_features_embed"
+  | "balabit_autoencoder"
+  | "sapimouse_features_embed"
+  | "little_boy";
+
+/** `pluginId` is the `plugin_id` that engine's module reports in `modules[]`,
+ * so the panel can show that model's own estimate alongside composite risk. */
+const ENGINES: { id: MouseEngine; label: string; blurb: string; pluginId: string }[] = [
+  {
+    id: "balabit_features_embed",
+    label: "balabit_features_embed",
+    pluginId: "mouse_base_v1",
+    blurb: "32 window features → trained siamese encoder, scored against your own embedding gallery",
+  },
+  {
+    id: "balabit_autoencoder",
+    label: "balabit_autoencoder",
+    pluginId: "mouse_autoencoder_v1",
+    blurb: "26 window features → autoencoder trained on your warm-up only, scored by reconstruction error",
+  },
+  {
+    id: "sapimouse_features_embed",
+    label: "sapimouse_features_embed",
+    pluginId: "mouse_sapimouse_v1",
+    blurb: "60 stroke features → SapiMouse encoder on TensorFlow.js, scored against your own embedding gallery (needs ~15s of movement per window)",
+  },
+  {
+    id: "little_boy",
+    label: "little_boy",
+    pluginId: "mouse_littleboy_v1",
+    blurb: "ML_Models/train_pipeline_1.py ported to TensorFlow.js: one row per raw event (x, y, time_delta, button/state one-hots) → 32-16-8 autoencoder trained on ~90s of your own clicking and moving, scored by reconstruction error",
+  },
+];
+
+/** Engines whose warm-up is a training capture rather than a gallery of
+ * embeddings, so the panel labels the counter accordingly. */
+const TRAINING_ENGINES: MouseEngine[] = ["balabit_autoencoder", "little_boy"];
+
 type MouseSample = { t: number; x: number; y: number; button: string; state: string };
 type KeySample = { key: string; dwell: number; flight: number };
 type NavSample = { tab: string; dwell: number };
@@ -45,6 +85,18 @@ type TickResponse = {
 };
 
 const TICK_MS = 1000;
+const ENGINE_STORAGE_KEY = "bio_engine";
+
+/**
+ * Last-used engine, so a client-side navigation does not silently flip back to
+ * the default mid-session. Returns the default during SSR, where there is no
+ * localStorage; the widget only renders its panel on the client anyway.
+ */
+function readStoredEngine(): MouseEngine {
+  if (typeof window === "undefined") return "balabit_features_embed";
+  const saved = window.localStorage.getItem(ENGINE_STORAGE_KEY) as MouseEngine | null;
+  return saved && ENGINES.some((e) => e.id === saved) ? saved : "balabit_features_embed";
+}
 const API_BASE = "/api/biometrics";
 const DIM = "#8b949e";
 const OK = "#3fb950";
@@ -113,7 +165,18 @@ export default function BiometricsWidget() {
   const [expanded, setExpanded] = useState(false);
   const [stopped, setStopped] = useState(false);
   const [riskHistory, setRiskHistory] = useState<number[]>([]);
+  // Lazy initialiser rather than an effect: restoring the persisted choice
+  // after mount would render one frame with the wrong engine selected, and
+  // the tick loop could fire against it in between.
+  const [engine, setEngine] = useState<MouseEngine>(readStoredEngine);
   const stoppedRef = useRef(false);
+  // The tick loop is mounted once and never re-created, so it reads the
+  // current engine through a ref rather than closing over stale state.
+  const engineRef = useRef<MouseEngine>(engine);
+  // Fitting the autoencoder happens inside a tick request and can outlast the
+  // 1 s interval. Without this guard two ticks would race to train, and the
+  // loser's work would be thrown away.
+  const inFlight = useRef(false);
 
   const mouseBuf = useRef<MouseSample[]>([]);
   const keyBuf = useRef<KeySample[]>([]);
@@ -204,6 +267,7 @@ export default function BiometricsWidget() {
 
   useEffect(() => {
     const tick = async () => {
+      if (inFlight.current) return;
       if (stoppedRef.current) {
         mouseBuf.current = [];
         navBuf.current = [];
@@ -212,6 +276,7 @@ export default function BiometricsWidget() {
       }
 
       const payload = {
+        engine: engineRef.current,
         events: mouseBuf.current,
         nav: navBuf.current,
         keys: keyBuf.current,
@@ -221,6 +286,7 @@ export default function BiometricsWidget() {
       navBuf.current = [];
       keyBuf.current = [];
 
+      inFlight.current = true;
       try {
         const res = await fetch(`${API_BASE}/tick`, {
           method: "POST",
@@ -234,6 +300,8 @@ export default function BiometricsWidget() {
         setRiskHistory((prev) => [...prev, json.composite_risk ?? 0].slice(-RISK_HISTORY_LEN));
       } catch {
         setUnreachable(true);
+      } finally {
+        inFlight.current = false;
       }
     };
     const id = setInterval(tick, TICK_MS);
@@ -269,10 +337,32 @@ export default function BiometricsWidget() {
     }
   };
 
+  /**
+   * Switch which mouse model scores this session. Each engine keeps its own
+   * warm-up and trained model server-side, so switching back resumes rather
+   * than restarting - but the risk sparkline is cleared, since the two
+   * engines' scores are not the same series.
+   */
+  const handleEngineChange = (next: MouseEngine) => {
+    setEngine(next);
+    engineRef.current = next;
+    window.localStorage.setItem(ENGINE_STORAGE_KEY, next);
+    setRiskHistory([]);
+    setData(null);
+  };
+
   const handleResume = () => {
     stoppedRef.current = false;
     setStopped(false);
   };
+
+  // The selected mouse model's own estimate, separate from composite risk
+  // (which folds in tab-navigation and keystroke). This is the number the
+  // autoencoder engines are actually being asked for: how unlike the enrolled
+  // user this second of activity looks.
+  const selectedEngine = ENGINES.find((e) => e.id === engine);
+  const mouseModule = data?.modules?.find((m) => m.plugin_id === selectedEngine?.pluginId);
+  const modelRisk = mouseModule?.status === "active" ? mouseModule.risk_score : null;
 
   const session = data?.session;
   const warmupSize = session?.warmup_size ?? 0;
@@ -343,10 +433,46 @@ export default function BiometricsWidget() {
               </div>
             )}
           </div>
+          <div className="mb-2">
+            <label
+              htmlFor="bio-engine"
+              className="mb-1 block text-[10px] uppercase tracking-wide text-white/40"
+            >
+              Detection model
+            </label>
+            <select
+              id="bio-engine"
+              value={engine}
+              onChange={(e) => handleEngineChange(e.target.value as MouseEngine)}
+              className="w-full rounded border border-white/15 bg-[#0d1117] px-2 py-1 text-[11px] text-white/90 outline-none hover:border-white/40 focus:border-white/60"
+            >
+              {ENGINES.map((e) => (
+                <option key={e.id} value={e.id}>
+                  {e.label}
+                </option>
+              ))}
+            </select>
+            <p className="mt-1 text-[10px] leading-snug text-white/40">
+              {ENGINES.find((e) => e.id === engine)?.blurb}
+            </p>
+          </div>
           <dl className="grid grid-cols-2 gap-x-2 gap-y-1">
             <dt className="text-white/50">Status</dt><dd>{phaseLabel}</dd>
             <dt className="text-white/50">Verdict</dt><dd>{data?.verdict ?? "—"}</dd>
-            <dt className="text-white/50">Gallery</dt><dd>{gallerySize} / {warmupSize}</dd>
+            <dt className="text-white/50">Different user?</dt>
+            <dd style={modelRisk === null ? undefined : { color: severityColor(modelRisk, threshold) }}>
+              {modelRisk !== null
+                ? `${Math.round(modelRisk * 100)}%`
+                : mouseModule?.status === "warming"
+                  ? "training…"
+                  : mouseModule?.status === "error"
+                    ? "failed"
+                    : "—"}
+            </dd>
+            <dt className="text-white/50">
+              {TRAINING_ENGINES.includes(engine) ? "Training data" : "Gallery"}
+            </dt>
+            <dd>{gallerySize} / {warmupSize}</dd>
             <dt className="text-white/50">Active modules</dt><dd>{data?.active_modules ?? 0}</dd>
             <dt className="text-white/50">Streak</dt><dd>{data?.streak ?? 0}</dd>
           </dl>

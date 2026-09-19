@@ -1,0 +1,3327 @@
+client_timestamp,x,y,button,state,window
+1571836757.6179998,58,574,None,Move,development
+1571836757.6379998,64,578,None,Move,development
+1571836757.659,76,585,None,Move,development
+1571836757.6820002,90,594,None,Move,development
+1571836757.7029998,109,605,None,Move,development
+1571836757.724,128,614,None,Move,development
+1571836757.742,152,626,None,Move,development
+1571836757.7629998,174,634,None,Move,development
+1571836757.785,194,640,None,Move,development
+1571836757.806,216,644,None,Move,development
+1571836757.825,238,646,None,Move,development
+1571836757.845,260,648,None,Move,development
+1571836757.865,276,650,None,Move,development
+1571836757.883,294,654,None,Move,development
+1571836757.903,310,658,None,Move,development
+1571836757.923,325,662,None,Move,development
+1571836757.9420002,337,666,None,Move,development
+1571836757.9629998,349,670,None,Move,development
+1571836757.982,360,674,None,Move,development
+1571836758.0029998,370,677,None,Move,development
+1571836758.022,375,679,None,Move,development
+1571836758.043,378,681,None,Move,development
+1571836758.064,382,683,None,Move,development
+1571836758.086,383,684,None,Move,development
+1571836758.107,385,684,None,Move,development
+1571836758.13,387,685,None,Move,development
+1571836758.15,390,688,None,Move,development
+1571836758.17,392,689,None,Move,development
+1571836758.1920002,396,692,None,Move,development
+1571836758.2129998,400,694,None,Move,development
+1571836758.235,405,696,None,Move,development
+1571836758.258,411,698,None,Move,development
+1571836758.279,417,700,None,Move,development
+1571836758.298,424,701,None,Move,development
+1571836758.319,430,703,None,Move,development
+1571836758.34,437,706,None,Move,development
+1571836758.3620002,444,708,None,Move,development
+1571836758.383,453,710,None,Move,development
+1571836758.405,460,713,None,Move,development
+1571836758.426,469,715,None,Move,development
+1571836758.446,480,718,None,Move,development
+1571836758.468,492,722,None,Move,development
+1571836758.488,505,725,None,Move,development
+1571836758.5070002,520,726,None,Move,development
+1571836758.5270002,537,726,None,Move,development
+1571836758.545,555,725,None,Move,development
+1571836758.566,574,721,None,Move,development
+1571836758.585,593,716,None,Move,development
+1571836758.6079998,614,707,None,Move,development
+1571836758.625,636,702,None,Move,development
+1571836758.6339998,659,698,None,Move,development
+1571836758.641,686,694,None,Move,development
+1571836758.646,714,688,None,Move,development
+1571836758.653,742,680,None,Move,development
+1571836758.658,768,670,None,Move,development
+1571836758.663,796,658,None,Move,development
+1571836758.669,822,650,None,Move,development
+1571836758.674,846,646,None,Move,development
+1571836758.679,870,640,None,Move,development
+1571836758.685,892,632,None,Move,development
+1571836758.69,910,624,None,Move,development
+1571836758.695,926,616,None,Move,development
+1571836758.701,940,606,None,Move,development
+1571836758.706,950,598,None,Move,development
+1571836758.711,960,588,None,Move,development
+1571836758.717,966,578,None,Move,development
+1571836758.722,972,568,None,Move,development
+1571836758.7270002,978,556,None,Move,development
+1571836758.7329998,982,543,None,Move,development
+1571836758.738,985,530,None,Move,development
+1571836758.7429998,990,516,None,Move,development
+1571836758.748,994,503,None,Move,development
+1571836758.754,997,483,None,Move,development
+1571836758.7589998,1000,460,None,Move,development
+1571836758.764,1002,433,None,Move,development
+1571836758.769,1000,408,None,Move,development
+1571836758.774,996,385,None,Move,development
+1571836758.78,991,361,None,Move,development
+1571836758.785,987,340,None,Move,development
+1571836758.79,983,324,None,Move,development
+1571836758.795,979,311,None,Move,development
+1571836758.801,977,299,None,Move,development
+1571836758.8070002,975,287,None,Move,development
+1571836758.812,975,276,None,Move,development
+1571836758.8179998,975,264,None,Move,development
+1571836758.823,975,253,None,Move,development
+1571836758.8279998,977,240,None,Move,development
+1571836758.835,979,228,None,Move,development
+1571836758.84,981,216,None,Move,development
+1571836758.845,981,206,None,Move,development
+1571836758.851,982,196,None,Move,development
+1571836758.856,984,186,None,Move,development
+1571836758.8620002,985,177,None,Move,development
+1571836758.869,987,168,None,Move,development
+1571836758.8739998,988,158,None,Move,development
+1571836758.88,991,150,None,Move,development
+1571836758.8860002,994,141,None,Move,development
+1571836758.891,997,132,None,Move,development
+1571836758.896,1000,122,None,Move,development
+1571836758.9020002,1004,112,None,Move,development
+1571836758.907,1009,103,None,Move,development
+1571836758.9120002,1014,91,None,Move,development
+1571836758.918,1023,79,None,Move,development
+1571836758.923,1030,67,None,Move,development
+1571836758.929,1034,58,None,Move,development
+1571836758.934,1039,48,None,Move,development
+1571836758.939,1042,39,None,Move,development
+1571836758.944,1045,30,None,Move,development
+1571836758.949,1048,20,None,Move,development
+1571836758.955,1051,11,None,Move,development
+1571836758.96,1055,1,None,Move,development
+1571836758.965,1056,0,None,Move,development
+1571836758.97,1056,0,None,Move,development
+1571836758.975,1056,0,None,Move,development
+1571836758.98,1055,0,None,Move,development
+1571836758.985,1052,0,None,Move,development
+1571836758.99,1049,0,None,Move,development
+1571836758.995,1046,0,None,Move,development
+1571836759.0,1040,2,None,Move,development
+1571836759.004,1034,3,None,Move,development
+1571836759.0089998,1024,5,None,Move,development
+1571836759.014,1012,8,None,Move,development
+1571836759.019,1000,12,None,Move,development
+1571836759.024,984,15,None,Move,development
+1571836759.029,966,21,None,Move,development
+1571836759.034,947,27,None,Move,development
+1571836759.039,925,37,None,Move,development
+1571836759.044,903,46,None,Move,development
+1571836759.049,881,53,None,Move,development
+1571836759.054,861,58,None,Move,development
+1571836759.059,844,62,None,Move,development
+1571836759.064,825,64,None,Move,development
+1571836759.069,813,66,None,Move,development
+1571836759.074,803,68,None,Move,development
+1571836759.079,801,68,None,Move,development
+1571836759.084,803,69,None,Move,development
+1571836759.089,803,70,None,Move,development
+1571836759.093,808,74,None,Move,development
+1571836759.0979998,814,81,None,Move,development
+1571836759.103,822,88,None,Move,development
+1571836759.1079998,833,97,None,Move,development
+1571836759.113,845,109,None,Move,development
+1571836759.119,858,121,None,Move,development
+1571836759.1239998,874,135,None,Move,development
+1571836759.129,890,149,None,Move,development
+1571836759.1339998,906,163,None,Move,development
+1571836759.139,925,178,None,Move,development
+1571836759.144,941,193,None,Move,development
+1571836759.1479998,958,204,None,Move,development
+1571836759.153,972,214,None,Move,development
+1571836759.159,979,219,None,Move,development
+1571836759.163,981,221,None,Move,development
+1571836800.327,982,218,None,Move,development
+1571836800.344,996,149,None,Move,development
+1571836800.3639998,1020,67,None,Move,development
+1571836800.39,1046,0,None,Move,development
+1571836800.404,1080,0,None,Move,development
+1571836800.411,1108,0,None,Move,development
+1571836800.416,1134,0,None,Move,development
+1571836800.4220002,1136,0,None,Move,development
+1571836800.428,1146,0,None,Move,development
+1571836800.434,1164,0,None,Move,development
+1571836800.441,1176,0,None,Move,development
+1571836800.446,1200,0,None,Move,development
+1571836800.451,1224,0,None,Move,development
+1571836800.457,1252,0,None,Move,development
+1571836800.462,1278,0,None,Move,development
+1571836800.468,1312,0,None,Move,development
+1571836800.474,1348,0,None,Move,development
+1571836800.479,1382,0,None,Move,development
+1571836800.485,1414,0,None,Move,development
+1571836800.49,1442,0,None,Move,development
+1571836800.496,1462,0,None,Move,development
+1571836800.5010002,1476,0,None,Move,development
+1571836800.5070002,1480,0,None,Move,development
+1571836800.512,1484,0,None,Move,development
+1571836800.5170002,1484,0,None,Move,development
+1571836800.5229998,1486,0,None,Move,development
+1571836800.53,1488,0,None,Move,development
+1571836800.538,1488,0,None,Move,development
+1571836800.556,1488,0,None,Move,development
+1571836800.573,1488,0,None,Move,development
+1571836800.601,1487,6,None,Move,development
+1571836800.621,1483,18,None,Move,development
+1571836800.64,1477,37,None,Move,development
+1571836800.66,1473,54,None,Move,development
+1571836800.679,1468,71,None,Move,development
+1571836800.695,1460,86,None,Move,development
+1571836800.706,1451,101,None,Move,development
+1571836800.712,1441,114,None,Move,development
+1571836800.718,1430,127,None,Move,development
+1571836800.728,1420,138,None,Move,development
+1571836800.734,1411,148,None,Move,development
+1571836800.7410002,1400,157,None,Move,development
+1571836800.7470002,1391,163,None,Move,development
+1571836800.7529998,1382,166,None,Move,development
+1571836800.7589998,1374,168,None,Move,development
+1571836800.765,1367,169,None,Move,development
+1571836800.772,1360,169,None,Move,development
+1571836800.778,1354,169,None,Move,development
+1571836800.785,1346,169,None,Move,development
+1571836800.792,1340,169,None,Move,development
+1571836800.799,1335,168,None,Move,development
+1571836800.805,1333,168,None,Move,development
+1571836800.812,1330,168,None,Move,development
+1571836800.8179998,1330,167,None,Move,development
+1571836800.859,1330,167,Left,Pressed,development
+1571836801.01,1330,167,Left,Released,development
+1571836801.074,1330,169,None,Move,development
+1571836801.084,1328,181,None,Move,development
+1571836801.091,1324,201,None,Move,development
+1571836801.0979998,1320,220,None,Move,development
+1571836801.106,1316,240,None,Move,development
+1571836801.1139998,1312,255,None,Move,development
+1571836801.1220002,1308,271,None,Move,browsing
+1571836801.1279998,1305,286,None,Move,browsing
+1571836801.1360002,1301,301,None,Move,browsing
+1571836801.144,1297,312,None,Move,browsing
+1571836801.1520002,1294,326,None,Move,browsing
+1571836801.165,1288,341,None,Move,browsing
+1571836801.173,1279,355,None,Move,browsing
+1571836801.178,1268,371,None,Move,browsing
+1571836801.188,1259,389,None,Move,browsing
+1571836801.1929998,1252,406,None,Move,browsing
+1571836801.2,1247,421,None,Move,browsing
+1571836801.208,1241,433,None,Move,browsing
+1571836801.214,1237,444,None,Move,browsing
+1571836801.2270002,1230,455,None,Move,browsing
+1571836801.2329998,1223,463,None,Move,browsing
+1571836801.2410002,1213,472,None,Move,browsing
+1571836801.2470002,1203,480,None,Move,browsing
+1571836801.26,1193,489,None,Move,browsing
+1571836801.266,1182,497,None,Move,browsing
+1571836801.276,1172,508,None,Move,browsing
+1571836801.283,1162,518,None,Move,browsing
+1571836801.296,1152,528,None,Move,browsing
+1571836801.302,1142,537,None,Move,browsing
+1571836801.3079998,1132,546,None,Move,browsing
+1571836801.3170002,1122,553,None,Move,browsing
+1571836801.329,1112,560,None,Move,browsing
+1571836801.336,1102,563,None,Move,browsing
+1571836801.3520002,1093,566,None,Move,browsing
+1571836801.359,1083,569,None,Move,browsing
+1571836801.365,1073,572,None,Move,browsing
+1571836801.381,1061,576,None,Move,browsing
+1571836801.387,1050,579,None,Move,browsing
+1571836801.394,1040,587,None,Move,browsing
+1571836801.401,1029,595,None,Move,browsing
+1571836801.409,1019,603,None,Move,browsing
+1571836801.416,1008,611,None,Move,browsing
+1571836801.4220002,999,617,None,Move,browsing
+1571836801.427,989,622,None,Move,browsing
+1571836801.4320002,979,625,None,Move,browsing
+1571836801.439,970,628,None,Move,browsing
+1571836801.4429998,961,631,None,Move,browsing
+1571836801.448,955,634,None,Move,browsing
+1571836801.4529998,949,636,None,Move,browsing
+1571836801.458,946,639,None,Move,browsing
+1571836801.467,944,639,None,Move,browsing
+1571836801.79,944,638,None,Move,browsing
+1571836801.814,945,637,None,Move,browsing
+1571836801.833,945,635,None,Move,browsing
+1571836801.853,946,635,None,Move,browsing
+1571836801.8720002,946,634,None,Move,browsing
+1571836801.911,946,634,Left,Pressed,browsing
+1571836802.0470002,946,634,Left,Released,browsing
+1571836802.4889998,947,634,None,Move,browsing
+1571836802.514,948,634,None,Move,browsing
+1571836802.5370002,948,633,None,Move,browsing
+1571836802.561,950,633,None,Move,browsing
+1571836802.579,952,632,None,Move,browsing
+1571836802.593,955,631,None,Move,browsing
+1571836802.601,958,631,None,Move,browsing
+1571836802.6079998,962,630,None,Move,browsing
+1571836802.6160002,967,629,None,Move,browsing
+1571836802.625,973,627,None,Move,browsing
+1571836802.6360002,979,625,None,Move,browsing
+1571836802.644,985,623,None,Move,browsing
+1571836802.6520002,991,621,None,Move,browsing
+1571836802.659,996,619,None,Move,browsing
+1571836802.667,1001,616,None,Move,browsing
+1571836802.675,1007,613,None,Move,browsing
+1571836802.6820002,1012,611,None,Move,browsing
+1571836802.691,1018,605,None,Move,browsing
+1571836802.699,1023,600,None,Move,browsing
+1571836802.706,1027,596,None,Move,browsing
+1571836802.716,1031,592,None,Move,browsing
+1571836802.725,1035,588,None,Move,browsing
+1571836802.7329998,1039,584,None,Move,browsing
+1571836802.742,1043,580,None,Move,browsing
+1571836802.75,1051,573,None,Move,browsing
+1571836802.758,1060,567,None,Move,browsing
+1571836802.766,1068,561,None,Move,browsing
+1571836802.775,1079,554,None,Move,browsing
+1571836802.783,1089,549,None,Move,browsing
+1571836802.792,1100,543,None,Move,browsing
+1571836802.801,1112,539,None,Move,browsing
+1571836802.809,1123,536,None,Move,browsing
+1571836802.816,1134,532,None,Move,browsing
+1571836802.825,1143,527,None,Move,browsing
+1571836802.833,1152,524,None,Move,browsing
+1571836802.841,1161,521,None,Move,browsing
+1571836802.8479998,1171,518,None,Move,browsing
+1571836802.856,1178,515,None,Move,browsing
+1571836802.863,1188,512,None,Move,browsing
+1571836802.871,1196,508,None,Move,browsing
+1571836802.879,1204,505,None,Move,browsing
+1571836802.8860002,1210,502,None,Move,browsing
+1571836802.894,1217,499,None,Move,browsing
+1571836802.901,1223,496,None,Move,browsing
+1571836802.909,1228,493,None,Move,browsing
+1571836802.917,1232,491,None,Move,browsing
+1571836802.924,1236,488,None,Move,browsing
+1571836802.9320002,1241,485,None,Move,browsing
+1571836802.939,1245,483,None,Move,browsing
+1571836802.947,1248,480,None,Move,browsing
+1571836802.955,1253,478,None,Move,browsing
+1571836802.962,1259,475,None,Move,browsing
+1571836802.971,1265,473,None,Move,browsing
+1571836802.978,1271,471,None,Move,browsing
+1571836802.9870002,1277,468,None,Move,browsing
+1571836802.994,1283,466,None,Move,browsing
+1571836803.002,1289,462,None,Move,browsing
+1571836803.0110002,1295,460,None,Move,browsing
+1571836803.019,1300,457,None,Move,browsing
+1571836803.026,1304,455,None,Move,browsing
+1571836803.034,1306,452,None,Move,browsing
+1571836803.042,1309,450,None,Move,browsing
+1571836803.05,1311,448,None,Move,browsing
+1571836803.0570002,1313,447,None,Move,browsing
+1571836803.065,1315,444,None,Move,browsing
+1571836803.073,1315,443,None,Move,browsing
+1571836803.081,1316,442,None,Move,browsing
+1571836803.0879998,1317,441,None,Move,browsing
+1571836803.095,1318,440,None,Move,browsing
+1571836803.103,1319,439,None,Move,browsing
+1571836803.111,1319,438,None,Move,browsing
+1571836803.1179998,1321,436,None,Move,browsing
+1571836803.1260002,1322,434,None,Move,browsing
+1571836803.133,1324,433,None,Move,browsing
+1571836803.141,1325,432,None,Move,browsing
+1571836803.1479998,1327,431,None,Move,browsing
+1571836803.155,1328,430,None,Move,browsing
+1571836803.163,1329,429,None,Move,browsing
+1571836803.171,1330,428,None,Move,browsing
+1571836803.179,1331,427,None,Move,browsing
+1571836803.187,1332,426,None,Move,browsing
+1571836803.196,1334,425,None,Move,browsing
+1571836803.2029998,1337,423,None,Move,browsing
+1571836803.211,1339,422,None,Move,browsing
+1571836803.219,1342,420,None,Move,browsing
+1571836803.226,1346,419,None,Move,browsing
+1571836803.235,1350,418,None,Move,browsing
+1571836803.2429998,1353,417,None,Move,browsing
+1571836803.2510002,1356,416,None,Move,browsing
+1571836803.26,1359,415,None,Move,browsing
+1571836803.2670002,1361,414,None,Move,browsing
+1571836803.275,1363,413,None,Move,browsing
+1571836803.283,1365,412,None,Move,browsing
+1571836803.291,1367,411,None,Move,browsing
+1571836803.298,1369,410,None,Move,browsing
+1571836803.306,1371,410,None,Move,browsing
+1571836803.313,1372,410,None,Move,browsing
+1571836803.32,1373,410,None,Move,browsing
+1571836803.327,1374,409,None,Move,browsing
+1571836803.335,1375,409,None,Move,browsing
+1571836803.342,1376,409,None,Move,browsing
+1571836803.35,1377,409,None,Move,browsing
+1571836803.357,1378,409,None,Move,browsing
+1571836803.365,1378,408,None,Move,browsing
+1571836803.385,1378,408,Left,Pressed,browsing
+1571836803.554,1378,408,Left,Released,browsing
+1571836804.447,1377,409,None,Move,browsing
+1571836804.456,1375,411,None,Move,browsing
+1571836804.462,1373,413,None,Move,browsing
+1571836804.47,1371,415,None,Move,browsing
+1571836804.478,1369,416,None,Move,browsing
+1571836804.4870002,1368,417,None,Move,browsing
+1571836804.495,1366,418,None,Move,browsing
+1571836804.5029998,1365,419,None,Move,browsing
+1571836804.515,1364,419,None,Move,browsing
+1571836804.56,1363,420,None,Move,browsing
+1571836804.572,1360,421,None,Move,browsing
+1571836804.581,1357,422,None,Move,browsing
+1571836804.59,1354,423,None,Move,browsing
+1571836804.597,1350,424,None,Move,browsing
+1571836804.604,1345,424,None,Move,browsing
+1571836804.61,1340,425,None,Move,browsing
+1571836804.6220002,1336,425,None,Move,browsing
+1571836804.635,1331,425,None,Move,browsing
+1571836804.643,1328,426,None,Move,browsing
+1571836804.655,1324,426,None,Move,browsing
+1571836804.668,1322,427,None,Move,browsing
+1571836804.675,1318,427,None,Move,browsing
+1571836804.6829998,1316,427,None,Move,browsing
+1571836804.688,1312,428,None,Move,browsing
+1571836804.694,1307,428,None,Move,browsing
+1571836804.702,1301,429,None,Move,browsing
+1571836804.707,1294,430,None,Move,browsing
+1571836804.712,1287,430,None,Move,browsing
+1571836804.718,1278,430,None,Move,browsing
+1571836804.722,1269,431,None,Move,browsing
+1571836804.728,1259,432,None,Move,browsing
+1571836804.736,1248,432,None,Move,browsing
+1571836804.744,1234,432,None,Move,browsing
+1571836804.752,1219,432,None,Move,browsing
+1571836804.76,1203,432,None,Move,browsing
+1571836804.768,1186,432,None,Move,browsing
+1571836804.776,1167,432,None,Move,browsing
+1571836804.784,1148,431,None,Move,browsing
+1571836804.79,1127,429,None,Move,browsing
+1571836804.798,1104,429,None,Move,browsing
+1571836804.806,1077,429,None,Move,browsing
+1571836804.814,1045,429,None,Move,browsing
+1571836804.822,1011,429,None,Move,browsing
+1571836804.83,975,427,None,Move,browsing
+1571836804.8379998,937,423,None,Move,browsing
+1571836804.846,893,415,None,Move,browsing
+1571836804.856,847,411,None,Move,browsing
+1571836804.8639998,801,409,None,Move,browsing
+1571836804.871,757,409,None,Move,browsing
+1571836804.8760002,713,407,None,Move,browsing
+1571836804.883,669,407,None,Move,browsing
+1571836804.891,625,411,None,Move,browsing
+1571836804.899,585,411,None,Move,browsing
+1571836804.907,551,411,None,Move,browsing
+1571836804.915,515,409,None,Move,browsing
+1571836804.923,479,409,None,Move,browsing
+1571836804.931,445,409,None,Move,browsing
+1571836804.939,413,405,None,Move,browsing
+1571836804.948,379,401,None,Move,browsing
+1571836804.955,349,397,None,Move,browsing
+1571836804.9629998,319,393,None,Move,browsing
+1571836804.969,295,393,None,Move,browsing
+1571836804.9770002,271,393,None,Move,browsing
+1571836804.985,255,395,None,Move,browsing
+1571836804.9929998,239,395,None,Move,browsing
+1571836805.0010002,229,395,None,Move,browsing
+1571836805.0089998,223,395,None,Move,browsing
+1571836805.0170002,217,393,None,Move,browsing
+1571836805.025,213,393,None,Move,browsing
+1571836805.035,208,389,None,Move,browsing
+1571836805.041,204,387,None,Move,browsing
+1571836805.052,201,384,None,Move,browsing
+1571836805.061,199,383,None,Move,browsing
+1571836805.07,196,382,None,Move,browsing
+1571836805.077,194,380,None,Move,browsing
+1571836805.083,192,378,None,Move,browsing
+1571836805.089,189,375,None,Move,browsing
+1571836805.096,187,373,None,Move,browsing
+1571836805.103,185,369,None,Move,browsing
+1571836805.111,184,364,None,Move,browsing
+1571836805.119,183,360,None,Move,browsing
+1571836805.127,182,355,None,Move,browsing
+1571836805.135,181,351,None,Move,browsing
+1571836805.1420002,181,346,None,Move,browsing
+1571836805.151,180,343,None,Move,browsing
+1571836805.159,179,338,None,Move,browsing
+1571836805.167,176,333,None,Move,browsing
+1571836805.175,175,327,None,Move,browsing
+1571836805.1820002,173,322,None,Move,browsing
+1571836805.189,172,316,None,Move,browsing
+1571836805.197,170,313,None,Move,browsing
+1571836805.205,169,310,None,Move,browsing
+1571836805.214,169,308,None,Move,browsing
+1571836805.2229998,168,305,None,Move,browsing
+1571836805.2389998,168,301,None,Move,browsing
+1571836805.248,167,299,None,Move,browsing
+1571836805.254,167,297,None,Move,browsing
+1571836805.2610002,167,295,None,Move,browsing
+1571836805.2670002,167,293,None,Move,browsing
+1571836805.2729998,166,291,None,Move,browsing
+1571836805.279,166,289,None,Move,browsing
+1571836805.285,165,287,None,Move,browsing
+1571836805.29,164,285,None,Move,browsing
+1571836805.298,163,284,None,Move,browsing
+1571836805.306,161,282,None,Move,browsing
+1571836805.314,159,280,None,Move,browsing
+1571836805.322,157,278,None,Move,browsing
+1571836805.33,156,277,None,Move,browsing
+1571836805.3379998,154,275,None,Move,browsing
+1571836805.346,153,274,None,Move,browsing
+1571836805.354,151,273,None,Move,browsing
+1571836805.3620002,149,272,None,Move,browsing
+1571836805.3679998,147,271,None,Move,browsing
+1571836805.377,145,270,None,Move,browsing
+1571836805.396,143,269,None,Move,browsing
+1571836805.423,142,269,None,Move,browsing
+1571836805.4420002,141,269,None,Move,browsing
+1571836805.458,140,269,None,Move,browsing
+1571836805.4829998,139,269,None,Move,browsing
+1571836805.5010002,136,270,None,Move,browsing
+1571836805.521,132,271,None,Move,browsing
+1571836805.5370002,127,273,None,Move,browsing
+1571836805.551,121,275,None,Move,browsing
+1571836805.565,115,277,None,Move,browsing
+1571836805.5779998,109,279,None,Move,browsing
+1571836805.59,104,278,None,Move,browsing
+1571836805.6020002,100,276,None,Move,browsing
+1571836805.6160002,97,274,None,Move,browsing
+1571836805.629,94,272,None,Move,browsing
+1571836805.643,92,271,None,Move,browsing
+1571836805.657,91,270,None,Move,browsing
+1571836805.67,90,270,None,Move,browsing
+1571836805.6820002,89,270,None,Move,browsing
+1571836805.695,88,269,None,Move,browsing
+1571836805.707,87,267,None,Move,browsing
+1571836805.716,86,264,None,Move,browsing
+1571836805.722,84,261,None,Move,browsing
+1571836805.728,82,257,None,Move,browsing
+1571836805.736,80,252,None,Move,browsing
+1571836805.742,78,248,None,Move,browsing
+1571836805.756,76,244,None,Move,browsing
+1571836805.77,74,241,None,Move,browsing
+1571836805.781,72,239,None,Move,browsing
+1571836805.788,70,237,None,Move,browsing
+1571836805.8,69,236,None,Move,browsing
+1571836805.806,69,234,None,Move,browsing
+1571836805.8170002,68,233,None,Move,browsing
+1571836805.824,68,232,None,Move,browsing
+1571836805.831,68,230,None,Move,browsing
+1571836805.836,68,229,None,Move,browsing
+1571836805.841,68,228,None,Move,browsing
+1571836805.924,68,228,Left,Pressed,browsing
+1571836806.096,68,228,Left,Released,browsing
+1571836808.492,69,222,None,Move,browsing
+1571836808.506,74,210,None,Move,browsing
+1571836808.5170002,84,196,None,Move,browsing
+1571836808.533,91,187,None,Move,browsing
+1571836808.549,94,184,None,Move,browsing
+1571836808.564,97,181,None,Move,browsing
+1571836808.605,98,183,None,Move,browsing
+1571836808.627,102,192,None,Move,browsing
+1571836808.647,109,206,None,Move,browsing
+1571836808.671,114,222,None,Move,browsing
+1571836808.6929998,120,237,None,Move,browsing
+1571836808.709,125,253,None,Move,browsing
+1571836808.718,129,267,None,Move,browsing
+1571836808.726,132,282,None,Move,browsing
+1571836808.734,134,294,None,Move,browsing
+1571836808.7410002,134,304,None,Move,browsing
+1571836808.7489998,131,315,None,Move,browsing
+1571836808.758,127,325,None,Move,browsing
+1571836808.7670002,124,333,None,Move,browsing
+1571836808.776,121,338,None,Move,browsing
+1571836808.783,118,340,None,Move,browsing
+1571836808.791,115,343,None,Move,browsing
+1571836808.798,112,345,None,Move,browsing
+1571836808.806,110,347,None,Move,browsing
+1571836808.813,108,349,None,Move,browsing
+1571836808.821,106,351,None,Move,browsing
+1571836808.829,104,352,None,Move,browsing
+1571836808.836,102,353,None,Move,browsing
+1571836808.843,101,353,None,Move,browsing
+1571836808.85,100,353,None,Move,browsing
+1571836808.8579998,99,352,None,Move,browsing
+1571836808.8660002,98,352,None,Move,browsing
+1571836808.8739998,97,349,None,Move,browsing
+1571836808.8820002,95,347,None,Move,browsing
+1571836808.89,94,345,None,Move,browsing
+1571836808.8979998,93,343,None,Move,browsing
+1571836808.908,92,340,None,Move,browsing
+1571836808.916,91,337,None,Move,browsing
+1571836808.923,90,335,None,Move,browsing
+1571836808.931,90,333,None,Move,browsing
+1571836808.939,89,331,None,Move,browsing
+1571836808.946,89,329,None,Move,browsing
+1571836808.954,89,327,None,Move,browsing
+1571836808.962,89,325,None,Move,browsing
+1571836808.971,89,323,None,Move,browsing
+1571836808.978,89,321,None,Move,browsing
+1571836808.986,89,319,None,Move,browsing
+1571836808.9929998,89,317,None,Move,browsing
+1571836809.0010002,89,315,None,Move,browsing
+1571836809.0089998,89,314,None,Move,browsing
+1571836809.0170002,89,313,None,Move,browsing
+1571836809.0270002,89,312,None,Move,browsing
+1571836809.044,89,311,None,Move,browsing
+1571836809.0670002,89,310,None,Move,browsing
+1571836809.091,89,309,None,Move,browsing
+1571836809.113,89,308,None,Move,browsing
+1571836809.2129998,89,308,Left,Pressed,browsing
+1571836809.3379998,89,308,Left,Released,browsing
+1571836809.417,89,308,Left,Pressed,browsing
+1571836809.546,89,308,Left,Released,browsing
+1571836809.736,92,311,None,Move,browsing
+1571836809.75,99,314,None,Move,browsing
+1571836809.758,109,321,None,Move,browsing
+1571836809.7670002,123,329,None,Move,browsing
+1571836809.7729998,135,336,None,Move,browsing
+1571836809.78,150,343,None,Move,browsing
+1571836809.786,172,350,None,Move,browsing
+1571836809.791,196,358,None,Move,browsing
+1571836809.7970002,222,368,None,Move,browsing
+1571836809.806,248,378,None,Move,browsing
+1571836809.814,274,388,None,Move,browsing
+1571836809.821,300,396,None,Move,browsing
+1571836809.827,324,400,None,Move,browsing
+1571836809.835,348,404,None,Move,browsing
+1571836809.844,372,408,None,Move,browsing
+1571836809.851,396,412,None,Move,browsing
+1571836809.86,420,414,None,Move,browsing
+1571836809.867,440,418,None,Move,browsing
+1571836809.875,454,422,None,Move,browsing
+1571836809.883,468,424,None,Move,browsing
+1571836809.891,478,428,None,Move,browsing
+1571836809.899,488,430,None,Move,browsing
+1571836809.907,492,430,None,Move,browsing
+1571836809.913,496,430,None,Move,browsing
+1571836810.101,495,431,None,Move,browsing
+1571836810.109,494,431,None,Move,browsing
+1571836810.117,492,431,None,Move,browsing
+1571836810.125,490,431,None,Move,browsing
+1571836810.133,488,430,None,Move,browsing
+1571836810.141,486,428,None,Move,browsing
+1571836810.149,484,426,None,Move,browsing
+1571836810.157,482,424,None,Move,browsing
+1571836810.165,480,422,None,Move,browsing
+1571836810.173,478,420,None,Move,browsing
+1571836810.18,476,418,None,Move,browsing
+1571836810.187,473,416,None,Move,browsing
+1571836810.195,470,414,None,Move,browsing
+1571836810.2029998,467,412,None,Move,browsing
+1571836810.211,465,410,None,Move,browsing
+1571836810.219,463,408,None,Move,browsing
+1571836810.2270002,461,406,None,Move,browsing
+1571836810.235,459,404,None,Move,browsing
+1571836810.2429998,457,402,None,Move,browsing
+1571836810.2510002,455,400,None,Move,browsing
+1571836810.2589998,453,398,None,Move,browsing
+1571836810.2670002,451,396,None,Move,browsing
+1571836810.2729998,449,394,None,Move,browsing
+1571836810.281,447,392,None,Move,browsing
+1571836810.289,445,390,None,Move,browsing
+1571836810.2970002,443,388,None,Move,browsing
+1571836810.305,441,386,None,Move,browsing
+1571836810.313,439,384,None,Move,browsing
+1571836810.321,437,382,None,Move,browsing
+1571836810.329,435,380,None,Move,browsing
+1571836810.337,433,378,None,Move,browsing
+1571836810.345,431,376,None,Move,browsing
+1571836810.353,429,374,None,Move,browsing
+1571836810.3579998,427,372,None,Move,browsing
+1571836810.367,425,370,None,Move,browsing
+1571836810.3739998,424,368,None,Move,browsing
+1571836810.3820002,422,366,None,Move,browsing
+1571836810.39,420,365,None,Move,browsing
+1571836810.3979998,418,363,None,Move,browsing
+1571836810.406,416,361,None,Move,browsing
+1571836810.414,414,359,None,Move,browsing
+1571836810.423,412,357,None,Move,browsing
+1571836810.43,410,355,None,Move,browsing
+1571836810.438,408,353,None,Move,browsing
+1571836810.444,406,351,None,Move,browsing
+1571836810.452,404,349,None,Move,browsing
+1571836810.46,402,347,None,Move,browsing
+1571836810.468,400,345,None,Move,browsing
+1571836810.476,398,343,None,Move,browsing
+1571836810.484,395,341,None,Move,browsing
+1571836810.492,392,339,None,Move,browsing
+1571836810.5010002,389,337,None,Move,browsing
+1571836810.508,386,335,None,Move,browsing
+1571836810.516,384,333,None,Move,browsing
+1571836810.524,382,331,None,Move,browsing
+1571836810.53,380,329,None,Move,browsing
+1571836810.538,378,327,None,Move,browsing
+1571836810.546,376,325,None,Move,browsing
+1571836810.554,374,324,None,Move,browsing
+1571836810.562,372,322,None,Move,browsing
+1571836810.57,370,321,None,Move,browsing
+1571836810.5779998,369,320,None,Move,browsing
+1571836810.586,368,319,None,Move,browsing
+1571836810.594,367,318,None,Move,browsing
+1571836810.6020002,365,317,None,Move,browsing
+1571836810.6139998,364,316,None,Move,browsing
+1571836810.6260002,363,315,None,Move,browsing
+1571836810.6339998,361,314,None,Move,browsing
+1571836810.6420002,360,313,None,Move,browsing
+1571836810.65,359,312,None,Move,browsing
+1571836810.656,358,312,None,Move,browsing
+1571836810.664,357,312,None,Move,browsing
+1571836810.6720002,356,311,None,Move,browsing
+1571836810.9220002,357,312,None,Move,browsing
+1571836810.93,357,314,None,Move,browsing
+1571836810.938,359,316,None,Move,browsing
+1571836810.947,361,318,None,Move,browsing
+1571836810.961,363,320,None,Move,browsing
+1571836810.979,365,322,None,Move,browsing
+1571836811.0,367,323,None,Move,browsing
+1571836811.02,368,325,None,Move,browsing
+1571836811.04,369,326,None,Move,browsing
+1571836811.06,369,327,None,Move,browsing
+1571836811.085,369,328,None,Move,browsing
+1571836811.106,370,329,None,Move,browsing
+1571836811.129,370,330,None,Move,browsing
+1571836811.1520002,370,331,None,Move,browsing
+1571836811.174,369,332,None,Move,browsing
+1571836811.194,366,332,None,Move,browsing
+1571836811.22,364,330,None,Move,browsing
+1571836811.24,359,327,None,Move,browsing
+1571836811.262,356,325,None,Move,browsing
+1571836811.283,352,323,None,Move,browsing
+1571836811.303,348,319,None,Move,browsing
+1571836811.324,345,317,None,Move,browsing
+1571836811.347,340,314,None,Move,browsing
+1571836811.367,336,312,None,Move,browsing
+1571836811.387,329,309,None,Move,browsing
+1571836811.409,323,307,None,Move,browsing
+1571836811.419,317,304,None,Move,browsing
+1571836811.43,312,302,None,Move,browsing
+1571836811.439,307,300,None,Move,browsing
+1571836811.448,303,297,None,Move,browsing
+1571836811.459,300,295,None,Move,browsing
+1571836811.47,297,292,None,Move,browsing
+1571836811.48,295,290,None,Move,browsing
+1571836811.49,293,288,None,Move,browsing
+1571836811.4989998,292,286,None,Move,browsing
+1571836811.5089998,291,283,None,Move,browsing
+1571836811.518,289,281,None,Move,browsing
+1571836811.528,288,280,None,Move,browsing
+1571836811.5370002,288,278,None,Move,browsing
+1571836811.548,287,277,None,Move,browsing
+1571836811.5579998,285,275,None,Move,browsing
+1571836811.5670002,284,273,None,Move,browsing
+1571836811.577,282,272,None,Move,browsing
+1571836811.586,281,270,None,Move,browsing
+1571836811.596,280,269,None,Move,browsing
+1571836811.605,279,267,None,Move,browsing
+1571836811.6139998,278,267,None,Move,browsing
+1571836811.623,278,266,None,Move,browsing
+1571836811.6320002,277,265,None,Move,browsing
+1571836811.641,277,264,None,Move,browsing
+1571836811.65,277,263,None,Move,browsing
+1571836811.659,277,261,None,Move,browsing
+1571836811.668,277,260,None,Move,browsing
+1571836811.677,277,259,None,Move,browsing
+1571836811.686,277,258,None,Move,browsing
+1571836811.695,277,256,None,Move,browsing
+1571836811.706,276,254,None,Move,browsing
+1571836811.716,276,253,None,Move,browsing
+1571836811.725,276,251,None,Move,browsing
+1571836811.735,276,250,None,Move,browsing
+1571836811.744,276,249,None,Move,browsing
+1571836811.7529998,276,248,None,Move,browsing
+1571836811.861,275,247,None,Move,browsing
+1571836811.885,274,245,None,Move,browsing
+1571836811.906,273,244,None,Move,browsing
+1571836811.927,272,242,None,Move,browsing
+1571836811.948,271,240,None,Move,browsing
+1571836811.967,271,239,None,Move,browsing
+1571836811.9829998,270,238,None,Move,browsing
+1571836812.002,270,238,Left,Pressed,browsing
+1571836812.151,270,238,Left,Released,browsing
+1571836813.772,272,235,None,Move,browsing
+1571836813.796,275,208,None,Move,browsing
+1571836813.814,273,172,None,Move,browsing
+1571836813.835,269,138,None,Move,browsing
+1571836813.854,261,114,None,Move,browsing
+1571836813.865,257,98,None,Move,browsing
+1571836813.873,253,88,None,Move,browsing
+1571836813.885,253,84,None,Move,browsing
+1571836813.8920002,255,82,None,Move,browsing
+1571836813.9,257,81,None,Move,browsing
+1571836813.907,258,83,None,Move,browsing
+1571836813.915,260,85,None,Move,browsing
+1571836813.9220002,263,90,None,Move,browsing
+1571836813.93,268,99,None,Move,browsing
+1571836813.937,274,113,None,Move,browsing
+1571836813.945,277,133,None,Move,browsing
+1571836813.9529998,287,158,None,Move,browsing
+1571836813.96,292,182,None,Move,browsing
+1571836813.968,296,205,None,Move,browsing
+1571836813.976,298,222,None,Move,browsing
+1571836813.9870002,298,238,None,Move,browsing
+1571836813.995,302,254,None,Move,browsing
+1571836814.002,304,270,None,Move,browsing
+1571836814.012,308,284,None,Move,browsing
+1571836814.019,310,296,None,Move,browsing
+1571836814.026,314,309,None,Move,browsing
+1571836814.033,318,321,None,Move,browsing
+1571836814.041,323,336,None,Move,browsing
+1571836814.05,327,351,None,Move,browsing
+1571836814.061,336,366,None,Move,browsing
+1571836814.069,347,382,None,Move,browsing
+1571836814.076,358,400,None,Move,browsing
+1571836814.084,373,418,None,Move,browsing
+1571836814.092,387,433,None,Move,browsing
+1571836814.1020002,401,447,None,Move,browsing
+1571836814.109,418,458,None,Move,browsing
+1571836814.1160002,432,469,None,Move,browsing
+1571836814.129,449,480,None,Move,browsing
+1571836814.139,464,487,None,Move,browsing
+1571836814.1479998,487,493,None,Move,browsing
+1571836814.159,508,501,None,Move,browsing
+1571836814.166,532,505,None,Move,browsing
+1571836814.174,556,509,None,Move,browsing
+1571836814.181,580,513,None,Move,browsing
+1571836814.19,598,517,None,Move,browsing
+1571836814.197,616,521,None,Move,browsing
+1571836814.205,632,523,None,Move,browsing
+1571836814.2129998,644,525,None,Move,browsing
+1571836814.22,654,525,None,Move,browsing
+1571836814.228,659,523,None,Move,browsing
+1571836814.235,662,520,None,Move,browsing
+1571836814.2429998,664,519,None,Move,browsing
+1571836814.25,665,518,None,Move,browsing
+1571836814.258,665,518,Left,Pressed,browsing
+1571836814.381,665,518,Left,Released,browsing
+1571836814.54,665,519,None,Move,development
+1571836814.552,666,520,None,Move,development
+1571836814.5679998,670,519,None,Move,development
+1571836814.582,679,515,None,Move,development
+1571836814.594,692,506,None,Move,development
+1571836814.6,709,493,None,Move,development
+1571836814.61,735,472,None,Move,development
+1571836814.6220002,769,446,None,Move,development
+1571836814.6279998,799,422,None,Move,development
+1571836814.6339998,827,408,None,Move,development
+1571836814.64,855,396,None,Move,development
+1571836814.646,887,388,None,Move,development
+1571836814.6520002,921,378,None,Move,development
+1571836814.657,957,372,None,Move,development
+1571836814.664,993,360,None,Move,development
+1571836814.67,1035,348,None,Move,development
+1571836814.675,1079,340,None,Move,development
+1571836814.68,1123,330,None,Move,development
+1571836814.7,1167,320,None,Move,development
+1571836814.704,1211,306,None,Move,development
+1571836814.709,1249,292,None,Move,development
+1571836814.714,1285,278,None,Move,development
+1571836814.721,1319,262,None,Move,development
+1571836814.725,1347,248,None,Move,development
+1571836814.731,1367,236,None,Move,development
+1571836814.7389998,1385,224,None,Move,development
+1571836814.748,1401,212,None,Move,development
+1571836814.769,1415,202,None,Move,development
+1571836814.794,1427,192,None,Move,development
+1571836814.809,1439,184,None,Move,development
+1571836814.82,1451,176,None,Move,development
+1571836814.83,1463,168,None,Move,development
+1571836814.8379998,1475,158,None,Move,development
+1571836814.844,1485,152,None,Move,development
+1571836814.8479998,1495,148,None,Move,development
+1571836814.855,1501,146,None,Move,development
+1571836814.86,1507,144,None,Move,development
+1571836814.8639998,1510,144,None,Move,development
+1571836814.869,1513,144,None,Move,development
+1571836814.8739998,1517,147,None,Move,development
+1571836814.879,1523,153,None,Move,development
+1571836814.8839998,1531,160,None,Move,development
+1571836814.889,1539,167,None,Move,development
+1571836814.894,1548,173,None,Move,development
+1571836814.899,1557,178,None,Move,development
+1571836814.903,1567,181,None,Move,development
+1571836814.908,1577,183,None,Move,development
+1571836814.9120002,1586,183,None,Move,development
+1571836814.919,1598,181,None,Move,development
+1571836814.927,1608,178,None,Move,development
+1571836814.935,1619,175,None,Move,development
+1571836814.9429998,1626,172,None,Move,development
+1571836814.952,1632,169,None,Move,development
+1571836814.972,1636,167,None,Move,development
+1571836814.994,1638,164,None,Move,development
+1571836815.014,1642,161,None,Move,development
+1571836815.033,1646,159,None,Move,development
+1571836815.053,1648,156,None,Move,development
+1571836815.069,1652,154,None,Move,development
+1571836815.081,1657,151,None,Move,development
+1571836815.0979998,1660,147,None,Move,development
+1571836815.1160002,1664,143,None,Move,development
+1571836815.159,1667,140,None,Move,development
+1571836815.197,1670,136,None,Move,development
+1571836815.254,1672,132,None,Move,development
+1571836815.2770002,1674,127,None,Move,development
+1571836815.285,1676,125,None,Move,development
+1571836815.29,1678,123,None,Move,development
+1571836815.296,1678,122,None,Move,development
+1571836815.302,1679,120,None,Move,development
+1571836815.31,1679,118,None,Move,development
+1571836815.316,1677,116,None,Move,development
+1571836815.322,1675,114,None,Move,development
+1571836815.3279998,1672,112,None,Move,development
+1571836815.335,1670,110,None,Move,development
+1571836815.341,1667,108,None,Move,development
+1571836815.346,1665,107,None,Move,development
+1571836815.353,1663,107,None,Move,development
+1571836815.359,1661,106,None,Move,development
+1571836815.3639998,1659,106,None,Move,development
+1571836815.3720002,1657,106,None,Move,development
+1571836815.3779998,1655,106,None,Move,development
+1571836815.385,1654,106,None,Move,development
+1571836815.391,1654,105,None,Move,development
+1571836815.3979998,1654,104,None,Move,development
+1571836815.408,1654,104,None,Move,development
+1571836815.414,1654,103,None,Move,development
+1571836815.4220002,1653,103,None,Move,development
+1571836815.428,1652,103,None,Move,development
+1571836815.4320002,1652,103,None,Move,development
+1571836815.437,1650,103,None,Move,development
+1571836815.4420002,1648,103,None,Move,development
+1571836815.447,1646,103,None,Move,development
+1571836815.452,1643,104,None,Move,development
+1571836815.457,1638,105,None,Move,development
+1571836815.461,1634,105,None,Move,development
+1571836815.466,1628,106,None,Move,development
+1571836815.472,1623,106,None,Move,development
+1571836815.478,1619,106,None,Move,development
+1571836815.484,1615,106,None,Move,development
+1571836815.4889998,1612,105,None,Move,development
+1571836815.494,1610,105,None,Move,development
+1571836815.5,1608,105,None,Move,development
+1571836815.504,1607,104,None,Move,development
+1571836815.5089998,1605,104,None,Move,development
+1571836815.676,1604,102,None,Move,development
+1571836815.684,1602,100,None,Move,development
+1571836815.6920002,1602,99,None,Move,development
+1571836815.86,1600,99,None,Move,development
+1571836815.986,1600,99,None,Move,development
+1571836816.0010002,1599,99,None,Move,development
+1571836816.0229998,1599,99,None,Move,development
+1571836816.044,1598,99,None,Move,development
+1571836816.066,1597,99,None,Move,development
+1571836816.086,1596,99,None,Move,development
+1571836816.105,1595,98,None,Move,development
+1571836816.125,1594,98,None,Move,development
+1571836816.144,1594,98,Left,Pressed,development
+1571836816.221,1594,98,Left,Released,development
+1571836819.121,1593,98,None,Move,development
+1571836819.144,1571,101,None,Move,development
+1571836819.164,1543,105,None,Move,development
+1571836819.1829998,1517,109,None,Move,development
+1571836819.205,1493,117,None,Move,development
+1571836819.219,1471,121,None,Move,development
+1571836819.225,1453,125,None,Move,development
+1571836819.234,1433,129,None,Move,development
+1571836819.24,1417,131,None,Move,development
+1571836819.248,1399,133,None,Move,development
+1571836819.254,1377,131,None,Move,development
+1571836819.2629998,1353,127,None,Move,development
+1571836819.269,1331,123,None,Move,development
+1571836819.2770002,1311,117,None,Move,development
+1571836819.283,1291,111,None,Move,development
+1571836819.29,1275,103,None,Move,development
+1571836819.2970002,1259,93,None,Move,development
+1571836819.303,1243,83,None,Move,development
+1571836819.31,1227,72,None,Move,development
+1571836819.3170002,1213,60,None,Move,development
+1571836819.324,1200,48,None,Move,development
+1571836819.33,1188,38,None,Move,development
+1571836819.336,1179,33,None,Move,development
+1571836819.343,1168,27,None,Move,development
+1571836819.349,1157,23,None,Move,development
+1571836819.356,1146,20,None,Move,development
+1571836819.363,1135,20,None,Move,development
+1571836819.369,1123,20,None,Move,development
+1571836819.3760002,1111,23,None,Move,development
+1571836819.3820002,1099,26,None,Move,development
+1571836819.3879998,1087,30,None,Move,development
+1571836819.396,1073,40,None,Move,development
+1571836819.4020002,1059,49,None,Move,development
+1571836819.41,1039,59,None,Move,development
+1571836819.416,1017,69,None,Move,development
+1571836819.4220002,993,80,None,Move,development
+1571836819.429,966,90,None,Move,development
+1571836819.435,937,104,None,Move,development
+1571836819.4420002,905,118,None,Move,development
+1571836819.45,877,136,None,Move,development
+1571836819.457,853,156,None,Move,development
+1571836819.465,833,174,None,Move,development
+1571836819.471,817,186,None,Move,development
+1571836819.479,805,196,None,Move,development
+1571836819.485,795,200,None,Move,development
+1571836819.492,791,204,None,Move,development
+1571836819.4989998,787,206,None,Move,development
+1571836819.504,783,208,None,Move,development
+1571836819.5110002,782,209,None,Move,development
+1571836819.516,780,209,None,Move,development
+1571836819.587,780,209,Left,Pressed,development
+1571836819.7129998,780,209,Left,Released,development
+1571836822.956,781,206,None,Move,development
+1571836822.969,793,151,None,Move,development
+1571836822.98,805,79,None,Move,development
+1571836822.9970002,823,11,None,Move,development
+1571836823.0110002,845,0,None,Move,development
+1571836823.02,861,0,None,Move,development
+1571836823.028,867,0,None,Move,development
+1571836823.035,869,0,None,Move,development
+1571836823.043,873,0,None,Move,development
+1571836823.052,875,0,None,Move,development
+1571836823.06,877,0,None,Move,development
+1571836823.0679998,883,0,None,Move,development
+1571836823.077,885,0,None,Move,development
+1571836823.087,887,0,None,Move,development
+1571836823.095,895,0,None,Move,development
+1571836823.104,907,0,None,Move,development
+1571836823.1120002,913,0,None,Move,development
+1571836823.12,917,0,None,Move,development
+1571836823.127,919,0,None,Move,development
+1571836823.135,921,0,None,Move,development
+1571836823.143,925,0,None,Move,development
+1571836823.151,929,0,None,Move,development
+1571836823.159,933,0,None,Move,development
+1571836823.166,937,0,None,Move,development
+1571836823.174,941,0,None,Move,development
+1571836823.181,941,0,None,Move,development
+1571836823.189,943,0,None,Move,development
+1571836823.205,944,2,None,Move,development
+1571836823.224,946,10,None,Move,development
+1571836823.244,951,27,None,Move,development
+1571836823.2629998,955,47,None,Move,development
+1571836823.284,967,74,None,Move,development
+1571836823.3,979,106,None,Move,development
+1571836823.311,991,138,None,Move,development
+1571836823.32,1007,170,None,Move,development
+1571836823.329,1023,202,None,Move,development
+1571836823.3379998,1041,226,None,Move,development
+1571836823.345,1059,248,None,Move,development
+1571836823.354,1073,264,None,Move,development
+1571836823.3620002,1089,280,None,Move,development
+1571836823.37,1103,294,None,Move,development
+1571836823.377,1115,306,None,Move,development
+1571836823.3860002,1129,318,None,Move,development
+1571836823.393,1141,328,None,Move,development
+1571836823.401,1153,336,None,Move,development
+1571836823.409,1159,340,None,Move,development
+1571836823.416,1165,344,None,Move,development
+1571836823.424,1168,344,None,Move,development
+1571836823.431,1169,344,None,Move,development
+1571836823.438,1169,343,None,Move,development
+1571836823.446,1170,340,None,Move,development
+1571836823.454,1170,337,None,Move,development
+1571836823.462,1170,333,None,Move,development
+1571836823.469,1171,329,None,Move,development
+1571836823.476,1171,326,None,Move,development
+1571836823.484,1171,323,None,Move,development
+1571836823.492,1171,320,None,Move,development
+1571836823.5,1172,317,None,Move,development
+1571836823.5070002,1172,314,None,Move,development
+1571836823.515,1172,311,None,Move,development
+1571836823.522,1173,308,None,Move,development
+1571836823.53,1173,304,None,Move,development
+1571836823.5370002,1173,300,None,Move,development
+1571836823.544,1173,297,None,Move,development
+1571836823.552,1173,294,None,Move,development
+1571836823.56,1173,292,None,Move,development
+1571836823.5670002,1173,289,None,Move,development
+1571836823.574,1173,287,None,Move,development
+1571836823.582,1173,285,None,Move,development
+1571836823.589,1173,283,None,Move,development
+1571836823.597,1173,282,None,Move,development
+1571836823.605,1173,281,None,Move,development
+1571836823.6160002,1173,281,Left,Pressed,development
+1571836823.7729998,1173,281,Left,Released,development
+1571836823.938,1175,282,None,Move,browsing
+1571836823.958,1182,286,None,Move,browsing
+1571836823.968,1192,291,None,Move,browsing
+1571836823.98,1202,296,None,Move,browsing
+1571836823.9910002,1214,299,None,Move,browsing
+1571836823.996,1227,304,None,Move,browsing
+1571836824.01,1242,310,None,Move,browsing
+1571836824.0170002,1256,317,None,Move,browsing
+1571836824.025,1273,327,None,Move,browsing
+1571836824.031,1287,336,None,Move,browsing
+1571836824.046,1301,342,None,Move,browsing
+1571836824.055,1315,347,None,Move,browsing
+1571836824.064,1326,350,None,Move,browsing
+1571836824.08,1336,354,None,Move,browsing
+1571836824.087,1346,357,None,Move,browsing
+1571836824.103,1356,361,None,Move,browsing
+1571836824.11,1363,364,None,Move,browsing
+1571836824.12,1370,367,None,Move,browsing
+1571836824.133,1375,370,None,Move,browsing
+1571836824.14,1379,374,None,Move,browsing
+1571836824.147,1382,377,None,Move,browsing
+1571836824.156,1385,380,None,Move,browsing
+1571836824.163,1388,381,None,Move,browsing
+1571836824.169,1389,384,None,Move,browsing
+1571836824.174,1391,386,None,Move,browsing
+1571836824.181,1392,387,None,Move,browsing
+1571836824.186,1394,388,None,Move,browsing
+1571836824.19,1395,391,None,Move,browsing
+1571836824.195,1396,393,None,Move,browsing
+1571836824.2,1397,395,None,Move,browsing
+1571836824.205,1399,397,None,Move,browsing
+1571836824.21,1400,399,None,Move,browsing
+1571836824.215,1401,401,None,Move,browsing
+1571836824.22,1403,403,None,Move,browsing
+1571836824.224,1405,405,None,Move,browsing
+1571836824.229,1407,407,None,Move,browsing
+1571836824.2329998,1409,409,None,Move,browsing
+1571836824.238,1411,411,None,Move,browsing
+1571836824.242,1413,413,None,Move,browsing
+1571836824.2470002,1417,417,None,Move,browsing
+1571836824.2510002,1421,422,None,Move,browsing
+1571836824.2570002,1426,427,None,Move,browsing
+1571836824.265,1432,432,None,Move,browsing
+1571836824.274,1439,436,None,Move,browsing
+1571836824.293,1446,439,None,Move,browsing
+1571836824.314,1453,441,None,Move,browsing
+1571836824.333,1460,442,None,Move,browsing
+1571836824.353,1467,443,None,Move,browsing
+1571836824.3720002,1474,443,None,Move,browsing
+1571836824.3920002,1481,445,None,Move,browsing
+1571836824.413,1485,445,None,Move,browsing
+1571836824.4329998,1488,445,None,Move,browsing
+1571836824.4529998,1491,445,None,Move,browsing
+1571836824.4729998,1492,443,None,Move,browsing
+1571836824.4889998,1494,442,None,Move,browsing
+1571836824.506,1496,440,None,Move,browsing
+1571836824.524,1498,438,None,Move,browsing
+1571836824.541,1500,436,None,Move,browsing
+1571836824.5570002,1501,434,None,Move,browsing
+1571836824.573,1503,432,None,Move,browsing
+1571836824.589,1505,429,None,Move,browsing
+1571836824.605,1507,427,None,Move,browsing
+1571836824.62,1508,424,None,Move,browsing
+1571836824.637,1509,421,None,Move,browsing
+1571836824.657,1510,419,None,Move,browsing
+1571836824.673,1510,417,None,Move,browsing
+1571836824.689,1511,415,None,Move,browsing
+1571836824.705,1511,413,None,Move,browsing
+1571836824.721,1512,412,None,Move,browsing
+1571836824.7370002,1512,410,None,Move,browsing
+1571836824.7529998,1512,409,None,Move,browsing
+1571836824.769,1513,407,None,Move,browsing
+1571836824.785,1513,406,None,Move,browsing
+1571836824.801,1513,404,None,Move,browsing
+1571836824.8170002,1514,403,None,Move,browsing
+1571836824.833,1514,401,None,Move,browsing
+1571836824.849,1514,400,None,Move,browsing
+1571836825.1320002,1514,399,None,Move,browsing
+1571836825.156,1514,396,None,Move,browsing
+1571836825.177,1514,395,None,Move,browsing
+1571836825.198,1514,393,None,Move,browsing
+1571836825.218,1514,393,None,Move,browsing
+1571836825.2370002,1514,391,None,Move,browsing
+1571836825.2529998,1514,390,None,Move,browsing
+1571836825.269,1514,389,None,Move,browsing
+1571836825.285,1514,388,None,Move,browsing
+1571836825.301,1514,387,None,Move,browsing
+1571836825.3170002,1514,387,None,Move,browsing
+1571836825.41,1514,386,None,Move,browsing
+1571836825.43,1514,386,None,Move,browsing
+1571836825.449,1515,384,None,Move,browsing
+1571836825.469,1516,383,None,Move,browsing
+1571836825.4889998,1517,382,None,Move,browsing
+1571836825.5089998,1518,381,None,Move,browsing
+1571836825.528,1518,379,None,Move,browsing
+1571836825.544,1519,379,None,Move,browsing
+1571836825.561,1519,378,None,Move,browsing
+1571836825.663,1520,378,None,Move,browsing
+1571836825.684,1521,376,None,Move,browsing
+1571836825.704,1522,375,None,Move,browsing
+1571836825.725,1524,373,None,Move,browsing
+1571836825.745,1524,372,None,Move,browsing
+1571836825.764,1524,372,None,Move,browsing
+1571836825.781,1524,371,None,Move,browsing
+1571836825.798,1524,371,Left,Pressed,browsing
+1571836825.946,1524,371,Left,Released,browsing
+1571836826.101,1524,370,None,Move,browsing
+1571836826.125,1525,369,None,Move,browsing
+1571836826.147,1526,368,None,Move,browsing
+1571836826.168,1526,366,None,Move,browsing
+1571836826.188,1527,365,None,Move,browsing
+1571836826.207,1528,364,None,Move,browsing
+1571836826.225,1528,363,None,Move,browsing
+1571836826.2410002,1529,363,None,Move,browsing
+1571836826.2629998,1529,363,Left,Pressed,browsing
+1571836826.383,1529,363,Left,Released,browsing
+1571836828.8479998,1524,363,None,Move,development
+1571836828.8720002,1491,370,None,Move,development
+1571836828.8920002,1447,374,None,Move,development
+1571836828.9020002,1399,378,None,Move,development
+1571836828.915,1347,388,None,Move,development
+1571836828.924,1297,398,None,Move,development
+1571836828.931,1249,408,None,Move,development
+1571836828.938,1203,420,None,Move,development
+1571836828.947,1159,434,None,Move,development
+1571836828.955,1121,448,None,Move,development
+1571836828.967,1087,460,None,Move,development
+1571836828.974,1063,470,None,Move,development
+1571836828.985,1049,480,None,Move,development
+1571836828.994,1041,486,None,Move,development
+1571836829.002,1037,490,None,Move,development
+1571836829.008,1033,494,None,Move,development
+1571836829.0229998,1029,498,None,Move,development
+1571836829.031,1025,502,None,Move,development
+1571836829.0370002,1021,506,None,Move,development
+1571836829.043,1019,508,None,Move,development
+1571836829.05,1018,508,None,Move,development
+1571836829.159,1016,509,None,Move,development
+1571836829.179,1010,509,None,Move,development
+1571836829.2,1000,507,None,Move,development
+1571836829.219,980,507,None,Move,development
+1571836829.2370002,953,507,None,Move,development
+1571836829.2510002,922,509,None,Move,development
+1571836829.265,890,513,None,Move,development
+1571836829.28,856,511,None,Move,development
+1571836829.294,824,507,None,Move,development
+1571836829.3079998,792,501,None,Move,development
+1571836829.32,766,495,None,Move,development
+1571836829.334,746,491,None,Move,development
+1571836829.347,737,489,None,Move,development
+1571836829.367,729,486,None,Move,development
+1571836829.381,724,483,None,Move,development
+1571836829.394,723,483,None,Move,development
+1571836829.413,723,483,Left,Pressed,development
+1571836829.564,723,483,Left,Released,development
+1571836835.2770002,721,474,None,Move,development
+1571836835.305,711,444,None,Move,development
+1571836835.33,695,408,None,Move,development
+1571836835.346,683,380,None,Move,development
+1571836835.356,675,358,None,Move,development
+1571836835.3639998,663,342,None,Move,development
+1571836835.3739998,653,328,None,Move,development
+1571836835.3820002,645,318,None,Move,development
+1571836835.3920002,641,314,None,Move,development
+1571836835.4,639,314,None,Move,development
+1571836835.408,638,314,None,Move,development
+1571836835.415,635,314,None,Move,development
+1571836835.424,633,315,None,Move,development
+1571836835.431,628,319,None,Move,development
+1571836835.44,621,324,None,Move,development
+1571836835.449,613,336,None,Move,development
+1571836835.459,598,354,None,Move,development
+1571836835.467,582,380,None,Move,development
+1571836835.4770002,566,406,None,Move,development
+1571836835.485,550,436,None,Move,development
+1571836835.494,534,470,None,Move,development
+1571836835.502,512,504,None,Move,development
+1571836835.5110002,484,540,None,Move,development
+1571836835.52,454,578,None,Move,development
+1571836835.528,432,614,None,Move,development
+1571836835.538,420,646,None,Move,development
+1571836835.546,410,678,None,Move,development
+1571836835.555,398,714,None,Move,development
+1571836835.563,390,746,None,Move,development
+1571836835.571,384,776,None,Move,development
+1571836835.579,380,804,None,Move,development
+1571836835.589,376,828,None,Move,development
+1571836835.597,372,850,None,Move,development
+1571836835.605,368,868,None,Move,development
+1571836835.6139998,364,886,None,Move,development
+1571836835.621,360,900,None,Move,development
+1571836835.629,356,912,None,Move,development
+1571836835.637,352,922,None,Move,development
+1571836835.644,348,928,None,Move,development
+1571836835.6520002,348,932,None,Move,development
+1571836835.66,347,934,None,Move,development
+1571836835.668,347,935,None,Move,development
+1571836835.676,345,937,None,Move,development
+1571836835.6829998,345,938,None,Move,development
+1571836835.724,345,938,Left,Pressed,development
+1571836835.8720002,345,938,Left,Released,development
+1571836836.0779998,345,937,None,Move,file system
+1571836836.092,347,936,None,Move,file system
+1571836836.0979998,350,934,None,Move,file system
+1571836836.106,352,932,None,Move,file system
+1571836836.1160002,354,930,None,Move,file system
+1571836836.1279998,356,928,None,Move,file system
+1571836836.1360002,358,926,None,Move,file system
+1571836836.1420002,360,924,None,Move,file system
+1571836836.157,362,921,None,Move,file system
+1571836836.163,365,919,None,Move,file system
+1571836836.171,367,917,None,Move,file system
+1571836836.177,369,915,None,Move,file system
+1571836836.194,372,913,None,Move,file system
+1571836836.201,374,911,None,Move,file system
+1571836836.214,377,909,None,Move,file system
+1571836836.2229998,379,907,None,Move,file system
+1571836836.231,381,905,None,Move,file system
+1571836836.238,383,903,None,Move,file system
+1571836836.245,385,900,None,Move,file system
+1571836836.252,387,897,None,Move,file system
+1571836836.258,389,893,None,Move,file system
+1571836836.265,391,888,None,Move,file system
+1571836836.272,394,882,None,Move,file system
+1571836836.276,396,875,None,Move,file system
+1571836836.283,399,869,None,Move,file system
+1571836836.293,401,862,None,Move,file system
+1571836836.298,403,854,None,Move,file system
+1571836836.305,404,847,None,Move,file system
+1571836836.309,404,839,None,Move,file system
+1571836836.315,404,831,None,Move,file system
+1571836836.319,404,822,None,Move,file system
+1571836836.324,403,814,None,Move,file system
+1571836836.332,403,806,None,Move,file system
+1571836836.34,402,798,None,Move,file system
+1571836836.3579998,399,789,None,Move,file system
+1571836836.3760002,397,781,None,Move,file system
+1571836836.3920002,395,773,None,Move,file system
+1571836836.399,393,766,None,Move,file system
+1571836836.406,390,758,None,Move,file system
+1571836836.411,388,751,None,Move,file system
+1571836836.415,386,743,None,Move,file system
+1571836836.419,383,735,None,Move,file system
+1571836836.424,381,726,None,Move,file system
+1571836836.428,378,718,None,Move,file system
+1571836836.4329998,375,710,None,Move,file system
+1571836836.437,372,701,None,Move,file system
+1571836836.4429998,369,693,None,Move,file system
+1571836836.45,367,684,None,Move,file system
+1571836836.458,361,676,None,Move,file system
+1571836836.465,355,669,None,Move,file system
+1571836836.4729998,350,660,None,Move,file system
+1571836836.4870002,344,653,None,Move,file system
+1571836836.496,340,647,None,Move,file system
+1571836836.508,337,643,None,Move,file system
+1571836836.515,334,639,None,Move,file system
+1571836836.52,331,636,None,Move,file system
+1571836836.524,330,634,None,Move,file system
+1571836836.529,329,630,None,Move,file system
+1571836836.536,327,626,None,Move,file system
+1571836836.544,327,621,None,Move,file system
+1571836836.564,327,618,None,Move,file system
+1571836836.584,328,615,None,Move,file system
+1571836836.607,328,612,None,Move,file system
+1571836836.629,329,610,None,Move,file system
+1571836836.6479998,329,608,None,Move,file system
+1571836836.666,329,606,None,Move,file system
+1571836836.685,330,604,None,Move,file system
+1571836836.704,331,602,None,Move,file system
+1571836836.722,331,601,None,Move,file system
+1571836836.7410002,332,599,None,Move,file system
+1571836836.76,333,598,None,Move,file system
+1571836836.845,333,598,Left,Pressed,file system
+1571836837.171,333,598,Left,Released,file system
+1571836837.2329998,333,598,Left,Pressed,file system
+1571836837.379,333,598,Left,Released,file system
+1571836838.641,334,598,None,Move,office
+1571836838.655,339,598,None,Move,office
+1571836838.674,355,600,None,Move,office
+1571836838.697,376,602,None,Move,office
+1571836838.718,400,604,None,Move,office
+1571836838.7389998,427,608,None,Move,office
+1571836838.764,454,608,None,Move,office
+1571836838.785,486,604,None,Move,office
+1571836838.806,518,598,None,Move,office
+1571836838.825,552,594,None,Move,office
+1571836838.846,586,590,None,Move,office
+1571836838.869,618,588,None,Move,office
+1571836838.89,644,584,None,Move,office
+1571836838.911,668,580,None,Move,office
+1571836838.9329998,686,572,None,Move,office
+1571836838.954,698,566,None,Move,office
+1571836838.9729998,704,562,None,Move,office
+1571836838.996,706,558,None,Move,office
+1571836839.0170002,706,556,None,Move,office
+1571836839.0370002,705,554,None,Move,office
+1571836839.059,703,552,None,Move,office
+1571836839.084,697,548,None,Move,office
+1571836839.1120002,688,542,None,Move,office
+1571836839.1260002,674,532,None,Move,office
+1571836839.1379998,656,521,None,Move,office
+1571836839.149,632,508,None,Move,office
+1571836839.158,601,492,None,Move,office
+1571836839.17,569,480,None,Move,office
+1571836839.179,539,470,None,Move,office
+1571836839.189,507,458,None,Move,office
+1571836839.2,477,450,None,Move,office
+1571836839.209,445,438,None,Move,office
+1571836839.22,413,426,None,Move,office
+1571836839.231,379,414,None,Move,office
+1571836839.24,349,402,None,Move,office
+1571836839.2510002,321,390,None,Move,office
+1571836839.26,295,380,None,Move,office
+1571836839.271,271,370,None,Move,office
+1571836839.282,253,360,None,Move,office
+1571836839.292,237,348,None,Move,office
+1571836839.306,223,340,None,Move,office
+1571836839.3170002,213,330,None,Move,office
+1571836839.326,205,320,None,Move,office
+1571836839.337,199,314,None,Move,office
+1571836839.347,195,308,None,Move,office
+1571836839.356,191,304,None,Move,office
+1571836839.371,189,300,None,Move,office
+1571836839.383,185,295,None,Move,office
+1571836839.393,182,288,None,Move,office
+1571836839.405,175,282,None,Move,office
+1571836839.416,166,272,None,Move,office
+1571836839.426,157,266,None,Move,office
+1571836839.436,152,261,None,Move,office
+1571836839.447,148,255,None,Move,office
+1571836839.457,142,253,None,Move,office
+1571836839.469,139,250,None,Move,office
+1571836839.479,134,248,None,Move,office
+1571836839.4910002,130,245,None,Move,office
+1571836839.5010002,126,243,None,Move,office
+1571836839.5110002,123,242,None,Move,office
+1571836839.522,120,240,None,Move,office
+1571836839.533,118,239,None,Move,office
+1571836839.543,116,237,None,Move,office
+1571836839.554,114,237,None,Move,office
+1571836839.566,112,237,None,Move,office
+1571836839.575,110,236,None,Move,office
+1571836839.587,108,236,None,Move,office
+1571836839.599,106,236,None,Move,office
+1571836839.61,104,236,None,Move,office
+1571836839.621,102,236,None,Move,office
+1571836839.6320002,100,236,None,Move,office
+1571836839.6420002,98,236,None,Move,office
+1571836839.653,96,236,None,Move,office
+1571836839.664,94,235,None,Move,office
+1571836839.674,92,235,None,Move,office
+1571836839.686,90,234,None,Move,office
+1571836839.698,89,234,None,Move,office
+1571836839.708,87,234,None,Move,office
+1571836839.718,86,233,None,Move,office
+1571836839.728,84,233,None,Move,office
+1571836839.738,82,233,None,Move,office
+1571836839.748,80,233,None,Move,office
+1571836839.758,79,233,None,Move,office
+1571836839.768,78,233,None,Move,office
+1571836839.778,79,233,None,Move,office
+1571836839.788,88,235,None,Move,office
+1571836839.798,110,237,None,Move,office
+1571836839.8070002,138,241,None,Move,office
+1571836839.82,170,249,None,Move,office
+1571836839.83,206,261,None,Move,office
+1571836839.841,242,273,None,Move,office
+1571836839.8520002,278,285,None,Move,office
+1571836839.8620002,316,293,None,Move,office
+1571836839.8720002,348,299,None,Move,office
+1571836839.8820002,382,305,None,Move,office
+1571836839.8920002,414,309,None,Move,office
+1571836839.901,444,315,None,Move,office
+1571836839.91,470,319,None,Move,office
+1571836839.92,492,325,None,Move,office
+1571836839.93,512,329,None,Move,office
+1571836839.94,528,337,None,Move,office
+1571836839.95,542,343,None,Move,office
+1571836839.96,554,351,None,Move,office
+1571836839.97,564,357,None,Move,office
+1571836839.98,570,365,None,Move,office
+1571836839.99,574,369,None,Move,office
+1571836840.0010002,578,373,None,Move,office
+1571836840.0110002,582,379,None,Move,office
+1571836840.021,585,382,None,Move,office
+1571836840.031,589,386,None,Move,office
+1571836840.041,592,389,None,Move,office
+1571836840.05,595,392,None,Move,office
+1571836840.063,596,394,None,Move,office
+1571836840.072,597,397,None,Move,office
+1571836840.082,600,398,None,Move,office
+1571836840.092,600,399,None,Move,office
+1571836840.103,601,401,None,Move,office
+1571836840.113,601,402,None,Move,office
+1571836840.123,603,402,None,Move,office
+1571836840.133,611,400,None,Move,office
+1571836840.1420002,624,397,None,Move,office
+1571836840.1520002,642,393,None,Move,office
+1571836840.161,664,392,None,Move,office
+1571836840.17,689,390,None,Move,office
+1571836840.179,719,386,None,Move,office
+1571836840.189,751,376,None,Move,office
+1571836840.198,783,364,None,Move,office
+1571836840.206,815,352,None,Move,office
+1571836840.216,847,340,None,Move,office
+1571836840.226,879,330,None,Move,office
+1571836840.236,909,320,None,Move,office
+1571836840.246,939,312,None,Move,office
+1571836840.255,971,304,None,Move,office
+1571836840.265,997,296,None,Move,office
+1571836840.274,1025,288,None,Move,office
+1571836840.283,1049,280,None,Move,office
+1571836840.292,1073,272,None,Move,office
+1571836840.3,1093,266,None,Move,office
+1571836840.309,1111,260,None,Move,office
+1571836840.3179998,1127,256,None,Move,office
+1571836840.327,1139,252,None,Move,office
+1571836840.336,1151,248,None,Move,office
+1571836840.345,1157,244,None,Move,office
+1571836840.354,1163,244,None,Move,office
+1571836840.3639998,1165,244,None,Move,office
+1571836840.373,1164,245,None,Move,office
+1571836840.3820002,1158,253,None,Move,office
+1571836840.394,1148,267,None,Move,office
+1571836840.4020002,1136,282,None,Move,office
+1571836840.4120002,1125,297,None,Move,office
+1571836840.421,1112,314,None,Move,office
+1571836840.43,1098,332,None,Move,office
+1571836840.44,1084,354,None,Move,office
+1571836840.45,1072,372,None,Move,office
+1571836840.459,1064,390,None,Move,office
+1571836840.469,1058,406,None,Move,office
+1571836840.48,1052,422,None,Move,office
+1571836840.4889998,1046,437,None,Move,office
+1571836840.4989998,1042,451,None,Move,office
+1571836840.508,1037,460,None,Move,office
+1571836840.518,1031,466,None,Move,office
+1571836840.5270002,1026,470,None,Move,office
+1571836840.536,1022,473,None,Move,office
+1571836840.545,1019,475,None,Move,office
+1571836840.554,1016,475,None,Move,office
+1571836840.564,1015,475,None,Move,office
+1571836840.573,1014,475,None,Move,office
+1571836840.583,1012,475,None,Move,office
+1571836840.593,1011,475,None,Move,office
+1571836840.601,1009,475,None,Move,office
+1571836840.61,1007,474,None,Move,office
+1571836840.62,1005,473,None,Move,office
+1571836840.646,1003,472,None,Move,office
+1571836840.654,1001,471,None,Move,office
+1571836840.6620002,998,469,None,Move,office
+1571836840.67,996,467,None,Move,office
+1571836840.678,994,466,None,Move,office
+1571836840.685,992,464,None,Move,office
+1571836840.6920002,990,463,None,Move,office
+1571836841.969,990,462,None,Move,office
+1571836841.992,993,455,None,Move,office
+1571836842.0129998,997,445,None,Move,office
+1571836842.034,1000,436,None,Move,office
+1571836842.0579998,1003,429,None,Move,office
+1571836842.081,1005,422,None,Move,office
+1571836842.104,1008,415,None,Move,office
+1571836842.125,1011,407,None,Move,office
+1571836842.146,1014,402,None,Move,office
+1571836842.167,1017,398,None,Move,office
+1571836842.187,1019,392,None,Move,office
+1571836842.207,1022,389,None,Move,office
+1571836842.2270002,1024,385,None,Move,office
+1571836842.246,1026,380,None,Move,office
+1571836842.265,1028,376,None,Move,office
+1571836842.285,1031,372,None,Move,office
+1571836842.304,1033,367,None,Move,office
+1571836842.322,1036,364,None,Move,office
+1571836842.341,1038,360,None,Move,office
+1571836842.361,1040,358,None,Move,office
+1571836842.38,1041,356,None,Move,office
+1571836842.399,1044,353,None,Move,office
+1571836842.419,1045,351,None,Move,office
+1571836842.438,1046,349,None,Move,office
+1571836842.46,1046,348,None,Move,office
+1571836842.479,1047,347,None,Move,office
+1571836842.498,1047,346,None,Move,office
+1571836842.5170002,1048,346,None,Move,office
+1571836842.5370002,1048,350,None,Move,office
+1571836842.5570002,1049,356,None,Move,office
+1571836842.577,1050,366,None,Move,office
+1571836842.597,1052,375,None,Move,office
+1571836842.617,1053,386,None,Move,office
+1571836842.637,1056,398,None,Move,office
+1571836842.655,1061,411,None,Move,office
+1571836842.674,1067,422,None,Move,office
+1571836842.6929998,1075,435,None,Move,office
+1571836842.71,1084,446,None,Move,office
+1571836842.729,1090,458,None,Move,office
+1571836842.7489998,1098,469,None,Move,office
+1571836842.7670002,1103,481,None,Move,office
+1571836842.788,1110,491,None,Move,office
+1571836842.8079998,1116,504,None,Move,office
+1571836842.826,1123,515,None,Move,office
+1571836842.845,1128,525,None,Move,office
+1571836842.8639998,1133,535,None,Move,office
+1571836842.8820002,1141,545,None,Move,office
+1571836842.901,1148,555,None,Move,office
+1571836842.92,1155,565,None,Move,office
+1571836842.939,1161,574,None,Move,office
+1571836842.956,1164,577,None,Move,office
+1571836842.9729998,1168,580,None,Move,office
+1571836842.988,1169,581,None,Move,office
+1571836843.0089998,1169,580,None,Move,office
+1571836843.025,1170,580,None,Move,office
+1571836843.041,1172,577,None,Move,office
+1571836843.06,1174,572,None,Move,office
+1571836843.077,1176,566,None,Move,office
+1571836843.093,1178,559,None,Move,office
+1571836843.109,1180,551,None,Move,office
+1571836843.125,1183,542,None,Move,office
+1571836843.141,1185,535,None,Move,office
+1571836843.157,1187,527,None,Move,office
+1571836843.176,1188,518,None,Move,office
+1571836843.1929998,1191,510,None,Move,office
+1571836843.211,1191,501,None,Move,office
+1571836843.229,1191,490,None,Move,office
+1571836843.245,1191,482,None,Move,office
+1571836843.2629998,1188,473,None,Move,office
+1571836843.28,1185,465,None,Move,office
+1571836843.298,1182,456,None,Move,office
+1571836843.316,1179,448,None,Move,office
+1571836843.333,1175,439,None,Move,office
+1571836843.35,1172,429,None,Move,office
+1571836843.3620002,1169,420,None,Move,office
+1571836843.375,1168,411,None,Move,office
+1571836843.3860002,1165,407,None,Move,office
+1571836843.399,1163,404,None,Move,office
+1571836843.411,1162,401,None,Move,office
+1571836843.423,1162,400,None,Move,office
+1571836843.434,1161,400,None,Move,office
+1571836843.4529998,1162,401,Left,Pressed,office
+1571836843.4529998,1162,401,None,Drag,office
+1571836843.462,1163,402,None,Drag,office
+1571836843.471,1165,403,None,Drag,office
+1571836843.48,1167,405,None,Drag,office
+1571836843.49,1168,408,None,Drag,office
+1571836843.498,1170,411,None,Drag,office
+1571836843.5070002,1173,417,None,Drag,office
+1571836843.516,1175,423,None,Drag,office
+1571836843.525,1179,432,None,Drag,office
+1571836843.534,1184,442,None,Drag,office
+1571836843.542,1187,452,None,Drag,office
+1571836843.55,1189,461,None,Drag,office
+1571836843.559,1192,470,None,Drag,office
+1571836843.5679998,1194,478,None,Drag,office
+1571836843.577,1197,486,None,Drag,office
+1571836843.586,1200,494,None,Drag,office
+1571836843.596,1201,502,None,Drag,office
+1571836843.605,1204,514,None,Drag,office
+1571836843.6139998,1207,524,None,Drag,office
+1571836843.623,1210,535,None,Drag,office
+1571836843.6320002,1213,544,None,Drag,office
+1571836843.64,1216,552,None,Drag,office
+1571836843.65,1219,561,None,Drag,office
+1571836843.658,1223,569,None,Drag,office
+1571836843.666,1224,575,None,Drag,office
+1571836843.675,1227,582,None,Drag,office
+1571836843.684,1228,590,None,Drag,office
+1571836843.6929998,1228,594,None,Drag,office
+1571836843.702,1230,597,None,Drag,office
+1571836843.71,1230,599,None,Drag,office
+1571836843.72,1230,602,None,Drag,office
+1571836843.728,1231,604,None,Drag,office
+1571836843.738,1231,607,None,Drag,office
+1571836843.7470002,1231,609,None,Drag,office
+1571836843.756,1231,611,None,Drag,office
+1571836843.765,1232,613,None,Drag,office
+1571836843.774,1232,615,None,Drag,office
+1571836843.782,1232,617,None,Drag,office
+1571836843.792,1233,619,None,Drag,office
+1571836843.8,1233,621,None,Drag,office
+1571836843.81,1234,622,None,Drag,office
+1571836843.8179998,1234,623,None,Drag,office
+1571836843.827,1234,624,None,Drag,office
+1571836843.836,1235,625,None,Drag,office
+1571836843.845,1235,626,None,Drag,office
+1571836843.845,1235,626,Left,Released,office
+1571836843.863,1234,626,None,Move,office
+1571836843.873,1233,625,None,Move,office
+1571836843.881,1231,621,None,Move,office
+1571836843.89,1229,618,None,Move,office
+1571836843.8979998,1227,614,None,Move,office
+1571836843.906,1225,608,None,Move,office
+1571836843.915,1222,603,None,Move,office
+1571836843.924,1220,599,None,Move,office
+1571836843.9320002,1217,596,None,Move,office
+1571836843.94,1216,594,None,Move,office
+1571836865.033,1215,595,None,Move,office
+1571836865.0470002,1201,611,None,Move,office
+1571836865.0579998,1181,631,None,Move,office
+1571836865.0670002,1157,647,None,Move,office
+1571836865.076,1133,667,None,Move,office
+1571836865.084,1103,683,None,Move,office
+1571836865.094,1073,697,None,Move,office
+1571836865.1020002,1045,709,None,Move,office
+1571836865.111,1023,715,None,Move,office
+1571836865.12,1009,715,None,Move,office
+1571836865.129,1001,715,None,Move,office
+1571836865.1379998,998,712,None,Move,office
+1571836865.147,998,710,None,Move,office
+1571836865.156,999,704,None,Move,office
+1571836865.166,1003,697,None,Move,office
+1571836865.174,1012,688,None,Move,office
+1571836865.184,1022,675,None,Move,office
+1571836865.1929998,1034,659,None,Move,office
+1571836865.201,1047,644,None,Move,office
+1571836865.21,1060,631,None,Move,office
+1571836865.219,1075,618,None,Move,office
+1571836865.228,1091,604,None,Move,office
+1571836865.2370002,1106,591,None,Move,office
+1571836865.246,1122,581,None,Move,office
+1571836865.256,1137,571,None,Move,office
+1571836865.265,1153,563,None,Move,office
+1571836865.274,1168,560,None,Move,office
+1571836865.282,1183,556,None,Move,office
+1571836865.291,1198,552,None,Move,office
+1571836865.3,1210,549,None,Move,office
+1571836865.3079998,1222,547,None,Move,office
+1571836865.3170002,1227,547,None,Move,office
+1571836865.326,1231,545,None,Move,office
+1571836865.335,1234,545,None,Move,office
+1571836865.344,1236,547,None,Move,office
+1571836865.3520002,1238,549,None,Move,office
+1571836865.3679998,1240,551,None,Move,office
+1571836865.3820002,1242,555,None,Move,office
+1571836865.3979998,1244,561,None,Move,office
+1571836865.408,1244,569,None,Move,office
+1571836865.416,1244,577,None,Move,office
+1571836865.426,1244,586,None,Move,office
+1571836865.436,1243,594,None,Move,office
+1571836865.452,1243,606,None,Move,office
+1571836865.462,1243,618,None,Move,office
+1571836865.472,1240,628,None,Move,office
+1571836865.482,1237,637,None,Move,office
+1571836865.498,1235,645,None,Move,office
+1571836865.5089998,1235,653,None,Move,office
+1571836865.5170002,1235,662,None,Move,office
+1571836865.535,1235,666,None,Move,office
+1571836865.546,1234,669,None,Move,office
+1571836865.5570002,1234,675,None,Move,office
+1571836865.566,1233,681,None,Move,office
+1571836865.577,1231,685,None,Move,office
+1571836865.586,1231,687,None,Move,office
+1571836865.5979998,1230,689,None,Move,office
+1571836865.6079998,1230,692,None,Move,office
+1571836865.617,1229,694,None,Move,office
+1571836865.6279998,1229,695,None,Move,office
+1571836865.6379998,1229,697,None,Move,office
+1571836865.646,1228,699,None,Move,office
+1571836865.656,1228,700,None,Move,office
+1571836865.664,1228,701,None,Move,office
+1571836865.674,1228,703,None,Move,office
+1571836865.6829998,1228,704,None,Move,office
+1571836865.879,1228,705,None,Move,office
+1571836865.897,1226,707,None,Move,office
+1571836865.916,1226,708,None,Move,office
+1571836865.935,1224,709,None,Move,office
+1571836865.9529998,1223,709,None,Move,office
+1571836865.971,1222,711,None,Move,office
+1571836865.9889998,1221,711,None,Move,office
+1571836866.006,1221,711,None,Move,office
+1571836866.207,1220,712,None,Move,office
+1571836866.229,1219,713,None,Move,office
+1571836866.26,1218,714,None,Move,office
+1571836866.278,1217,715,None,Move,office
+1571836866.2970002,1216,715,None,Move,office
+1571836866.5010002,1216,716,None,Move,office
+1571836866.522,1216,716,None,Move,office
+1571836866.545,1214,722,None,Move,office
+1571836866.562,1212,727,None,Move,office
+1571836866.58,1210,730,None,Move,office
+1571836866.6,1208,735,None,Move,office
+1571836866.62,1205,741,None,Move,office
+1571836866.643,1203,745,None,Move,office
+1571836866.661,1202,747,None,Move,office
+1571836869.957,1207,745,None,Move,office
+1571836869.97,1235,730,None,Move,office
+1571836869.978,1271,712,None,Move,office
+1571836869.99,1311,692,None,Move,office
+1571836870.002,1367,666,None,Move,office
+1571836870.015,1423,638,None,Move,office
+1571836870.0270002,1485,606,None,Move,office
+1571836870.038,1555,572,None,Move,office
+1571836870.053,1625,540,None,Move,office
+1571836870.0670002,1695,504,None,Move,office
+1571836870.081,1757,468,None,Move,office
+1571836870.094,1809,422,None,Move,office
+1571836870.109,1857,382,None,Move,office
+1571836870.121,1895,346,None,Move,office
+1571836870.133,1919,314,None,Move,office
+1571836870.146,1919,286,None,Move,office
+1571836870.159,1919,256,None,Move,office
+1571836870.174,1919,230,None,Move,office
+1571836870.188,1919,204,None,Move,office
+1571836870.201,1919,180,None,Move,office
+1571836870.2129998,1919,162,None,Move,office
+1571836870.228,1919,144,None,Move,office
+1571836870.2410002,1919,128,None,Move,office
+1571836870.254,1919,112,None,Move,office
+1571836870.266,1919,98,None,Move,office
+1571836870.28,1919,86,None,Move,office
+1571836870.293,1919,74,None,Move,office
+1571836870.302,1919,64,None,Move,office
+1571836870.309,1917,54,None,Move,office
+1571836870.3170002,1917,49,None,Move,office
+1571836870.325,1915,45,None,Move,office
+1571836870.332,1915,42,None,Move,office
+1571836870.339,1915,39,None,Move,office
+1571836870.347,1915,36,None,Move,office
+1571836870.355,1915,33,None,Move,office
+1571836870.3620002,1915,31,None,Move,office
+1571836870.37,1915,28,None,Move,office
+1571836870.377,1915,27,None,Move,office
+1571836870.3839998,1915,25,None,Move,office
+1571836870.391,1915,23,None,Move,office
+1571836870.399,1915,21,None,Move,office
+1571836870.406,1915,19,None,Move,office
+1571836870.413,1915,18,None,Move,office
+1571836870.421,1915,17,None,Move,office
+1571836870.429,1914,15,None,Move,office
+1571836870.437,1914,14,None,Move,office
+1571836870.445,1913,14,None,Move,office
+1571836870.4529998,1912,14,None,Move,office
+1571836870.461,1911,14,None,Move,office
+1571836870.469,1910,14,None,Move,office
+1571836870.4770002,1908,15,None,Move,office
+1571836870.485,1906,16,None,Move,office
+1571836870.492,1904,18,None,Move,office
+1571836870.5,1902,20,None,Move,office
+1571836870.508,1901,22,None,Move,office
+1571836870.515,1899,24,None,Move,office
+1571836870.5229998,1897,26,None,Move,office
+1571836870.531,1895,28,None,Move,office
+1571836870.538,1894,30,None,Move,office
+1571836870.546,1892,32,None,Move,office
+1571836870.553,1890,34,None,Move,office
+1571836870.56,1888,36,None,Move,office
+1571836870.5679998,1886,38,None,Move,office
+1571836870.575,1884,40,None,Move,office
+1571836870.582,1881,42,None,Move,office
+1571836870.589,1879,44,None,Move,office
+1571836870.596,1877,46,None,Move,office
+1571836870.603,1875,48,None,Move,office
+1571836870.61,1873,50,None,Move,office
+1571836870.617,1871,51,None,Move,office
+1571836870.625,1870,51,None,Move,office
+1571836870.6320002,1870,52,None,Move,office
+1571836870.658,1869,52,None,Move,office
+1571836870.677,1867,52,None,Move,office
+1571836870.694,1866,53,None,Move,office
+1571836870.71,1865,53,None,Move,office
+1571836870.729,1864,53,None,Move,office
+1571836870.805,1864,53,Left,Pressed,office
+1571836870.961,1864,53,Left,Released,office
+1571836871.065,1865,56,None,Move,file system
+1571836871.075,1867,62,None,Move,file system
+1571836871.086,1870,72,None,Move,file system
+1571836871.105,1873,83,None,Move,file system
+1571836871.1220002,1876,96,None,Move,file system
+1571836871.13,1879,109,None,Move,file system
+1571836871.1360002,1882,122,None,Move,file system
+1571836871.15,1886,139,None,Move,file system
+1571836871.161,1889,152,None,Move,file system
+1571836871.171,1894,168,None,Move,file system
+1571836871.179,1898,181,None,Move,file system
+1571836871.185,1905,199,None,Move,file system
+1571836871.1929998,1915,220,None,Move,file system
+1571836871.199,1919,247,None,Move,file system
+1571836871.207,1919,270,None,Move,file system
+1571836871.2129998,1919,293,None,Move,file system
+1571836871.219,1919,317,None,Move,file system
+1571836871.2270002,1919,341,None,Move,file system
+1571836871.2329998,1919,363,None,Move,file system
+1571836871.2410002,1919,387,None,Move,file system
+1571836871.2470002,1919,407,None,Move,file system
+1571836871.2529998,1919,425,None,Move,file system
+1571836871.26,1919,441,None,Move,file system
+1571836871.266,1919,453,None,Move,file system
+1571836871.2770002,1919,465,None,Move,file system
+1571836871.283,1919,477,None,Move,file system
+1571836871.291,1919,489,None,Move,file system
+1571836871.2970002,1919,499,None,Move,file system
+1571836871.303,1917,509,None,Move,file system
+1571836871.3079998,1915,516,None,Move,file system
+1571836871.313,1913,521,None,Move,file system
+1571836871.3179998,1911,525,None,Move,file system
+1571836871.323,1910,528,None,Move,file system
+1571836871.3279998,1908,531,None,Move,file system
+1571836871.333,1908,533,None,Move,file system
+1571836871.34,1907,536,None,Move,file system
+1571836871.349,1905,537,None,Move,file system
+1571836871.37,1904,539,None,Move,file system
+1571836871.389,1902,541,None,Move,file system
+1571836871.409,1900,543,None,Move,file system
+1571836871.429,1898,545,None,Move,file system
+1571836871.451,1896,547,None,Move,file system
+1571836871.471,1894,549,None,Move,file system
+1571836871.4910002,1892,551,None,Move,file system
+1571836871.51,1890,553,None,Move,file system
+1571836871.53,1887,555,None,Move,file system
+1571836871.55,1884,557,None,Move,file system
+1571836871.57,1882,559,None,Move,file system
+1571836871.589,1880,561,None,Move,file system
+1571836871.605,1878,563,None,Move,file system
+1571836871.623,1876,565,None,Move,file system
+1571836871.639,1873,567,None,Move,file system
+1571836871.656,1869,569,None,Move,file system
+1571836871.6720002,1864,571,None,Move,file system
+1571836871.689,1859,573,None,Move,file system
+1571836871.705,1853,574,None,Move,file system
+1571836871.721,1846,576,None,Move,file system
+1571836871.736,1838,577,None,Move,file system
+1571836871.752,1829,578,None,Move,file system
+1571836871.769,1820,579,None,Move,file system
+1571836871.785,1808,582,None,Move,file system
+1571836871.804,1793,582,None,Move,file system
+1571836871.823,1775,582,None,Move,file system
+1571836871.839,1756,584,None,Move,file system
+1571836871.85,1736,584,None,Move,file system
+1571836871.857,1714,587,None,Move,file system
+1571836871.8639998,1691,589,None,Move,file system
+1571836871.869,1667,589,None,Move,file system
+1571836871.8739998,1644,587,None,Move,file system
+1571836871.88,1621,587,None,Move,file system
+1571836871.8839998,1599,587,None,Move,file system
+1571836871.889,1579,587,None,Move,file system
+1571836871.894,1559,591,None,Move,file system
+1571836871.899,1545,593,None,Move,file system
+1571836871.903,1533,593,None,Move,file system
+1571836871.907,1521,593,None,Move,file system
+1571836871.9120002,1513,591,None,Move,file system
+1571836871.916,1507,591,None,Move,file system
+1571836871.92,1503,589,None,Move,file system
+1571836871.926,1500,589,None,Move,file system
+1571836871.931,1498,587,None,Move,file system
+1571836871.935,1497,587,None,Move,file system
+1571836871.939,1496,585,None,Move,file system
+1571836871.945,1495,580,None,Move,file system
+1571836871.949,1495,573,None,Move,file system
+1571836871.9529998,1495,565,None,Move,file system
+1571836871.957,1497,553,None,Move,file system
+1571836871.962,1500,540,None,Move,file system
+1571836871.966,1507,524,None,Move,file system
+1571836871.97,1514,510,None,Move,file system
+1571836871.975,1522,495,None,Move,file system
+1571836871.979,1532,478,None,Move,file system
+1571836871.9829998,1543,461,None,Move,file system
+1571836871.9870002,1554,441,None,Move,file system
+1571836871.992,1563,419,None,Move,file system
+1571836871.996,1570,396,None,Move,file system
+1571836872.0010002,1574,373,None,Move,file system
+1571836872.005,1576,350,None,Move,file system
+1571836872.0110002,1580,326,None,Move,file system
+1571836872.015,1584,300,None,Move,file system
+1571836872.019,1592,274,None,Move,file system
+1571836872.0229998,1602,248,None,Move,file system
+1571836872.028,1614,222,None,Move,file system
+1571836872.032,1626,196,None,Move,file system
+1571836872.035,1638,174,None,Move,file system
+1571836872.039,1648,154,None,Move,file system
+1571836872.043,1660,136,None,Move,file system
+1571836872.048,1668,118,None,Move,file system
+1571836872.052,1676,102,None,Move,file system
+1571836872.056,1680,88,None,Move,file system
+1571836872.06,1684,76,None,Move,file system
+1571836872.065,1688,64,None,Move,file system
+1571836872.07,1690,56,None,Move,file system
+1571836872.074,1692,50,None,Move,file system
+1571836872.0779998,1692,46,None,Move,file system
+1571836872.082,1692,44,None,Move,file system
+1571836872.12,1693,48,None,Move,file system
+1571836872.141,1705,77,None,Move,file system
+1571836872.161,1729,129,None,Move,file system
+1571836872.176,1755,185,None,Move,file system
+1571836872.186,1781,241,None,Move,file system
+1571836872.1920002,1801,295,None,Move,file system
+1571836872.197,1817,349,None,Move,file system
+1571836872.2029998,1829,403,None,Move,file system
+1571836872.208,1843,449,None,Move,file system
+1571836872.214,1857,493,None,Move,file system
+1571836872.219,1869,535,None,Move,file system
+1571836872.224,1883,577,None,Move,file system
+1571836872.228,1895,619,None,Move,file system
+1571836872.234,1907,659,None,Move,file system
+1571836872.2389998,1919,697,None,Move,file system
+1571836872.2429998,1919,733,None,Move,file system
+1571836872.248,1919,769,None,Move,file system
+1571836872.252,1919,789,None,Move,file system
+1571836872.276,1919,791,None,Move,file system
+1571836872.293,1919,802,None,Move,file system
+1571836872.332,1919,804,None,Move,file system
+1571836872.406,1919,804,None,Move,file system
+1571836872.425,1917,806,None,Move,file system
+1571836872.441,1915,808,None,Move,file system
+1571836872.457,1913,810,None,Move,file system
+1571836872.508,1913,808,None,Move,file system
+1571836872.525,1912,793,None,Move,file system
+1571836872.541,1912,771,None,Move,file system
+1571836872.5570002,1912,747,None,Move,file system
+1571836872.573,1912,719,None,Move,file system
+1571836872.591,1914,693,None,Move,file system
+1571836872.61,1914,665,None,Move,file system
+1571836872.6239998,1912,639,None,Move,file system
+1571836872.633,1904,613,None,Move,file system
+1571836872.645,1894,587,None,Move,file system
+1571836872.655,1882,563,None,Move,file system
+1571836872.664,1870,541,None,Move,file system
+1571836872.673,1856,521,None,Move,file system
+1571836872.6829998,1842,505,None,Move,file system
+1571836872.6929998,1826,493,None,Move,file system
+1571836872.702,1810,479,None,Move,file system
+1571836872.712,1794,467,None,Move,file system
+1571836872.722,1778,455,None,Move,file system
+1571836872.731,1762,443,None,Move,file system
+1571836872.74,1744,433,None,Move,file system
+1571836872.7489998,1722,423,None,Move,file system
+1571836872.7589998,1698,415,None,Move,file system
+1571836872.768,1674,411,None,Move,file system
+1571836872.778,1652,405,None,Move,file system
+1571836872.786,1628,401,None,Move,file system
+1571836872.796,1604,395,None,Move,file system
+1571836872.805,1580,391,None,Move,file system
+1571836872.813,1556,385,None,Move,file system
+1571836872.823,1530,381,None,Move,file system
+1571836872.831,1504,377,None,Move,file system
+1571836872.841,1476,373,None,Move,file system
+1571836872.85,1444,371,None,Move,file system
+1571836872.86,1412,371,None,Move,file system
+1571836872.869,1380,367,None,Move,file system
+1571836872.8779998,1348,367,None,Move,file system
+1571836872.8879998,1312,369,None,Move,file system
+1571836872.8979998,1286,369,None,Move,file system
+1571836872.907,1256,371,None,Move,file system
+1571836872.917,1222,375,None,Move,file system
+1571836872.926,1186,383,None,Move,file system
+1571836872.935,1150,395,None,Move,file system
+1571836872.944,1114,405,None,Move,file system
+1571836872.954,1078,417,None,Move,file system
+1571836872.9629998,1042,425,None,Move,file system
+1571836872.972,1006,433,None,Move,file system
+1571836872.98,972,437,None,Move,file system
+1571836872.9889998,942,439,None,Move,file system
+1571836872.998,918,453,None,Move,file system
+1571836873.008,900,469,None,Move,file system
+1571836873.0170002,876,483,None,Move,file system
+1571836873.026,852,493,None,Move,file system
+1571836873.035,828,497,None,Move,file system
+1571836873.044,800,501,None,Move,file system
+1571836873.054,776,503,None,Move,file system
+1571836873.062,754,505,None,Move,file system
+1571836873.073,736,509,None,Move,file system
+1571836873.082,720,513,None,Move,file system
+1571836873.091,708,517,None,Move,file system
+1571836873.1,694,519,None,Move,file system
+1571836873.11,684,523,None,Move,file system
+1571836873.1179998,678,527,None,Move,file system
+1571836873.127,674,531,None,Move,file system
+1571836873.1379998,672,532,None,Move,file system
+1571836873.147,669,534,None,Move,file system
+1571836873.156,666,537,None,Move,file system
+1571836873.166,664,539,None,Move,file system
+1571836873.175,664,541,None,Move,file system
+1571836873.1829998,664,543,None,Move,file system
+1571836873.1920002,664,544,None,Move,file system
+1571836873.2,662,546,None,Move,file system
+1571836873.209,660,547,None,Move,file system
+1571836873.218,658,549,None,Move,file system
+1571836873.228,655,551,None,Move,file system
+1571836873.236,653,552,None,Move,file system
+1571836873.246,651,553,None,Move,file system
+1571836873.255,649,554,None,Move,file system
+1571836873.264,647,554,None,Move,file system
+1571836873.274,645,555,None,Move,file system
+1571836873.284,643,556,None,Move,file system
+1571836873.294,640,557,None,Move,file system
+1571836873.303,636,559,None,Move,file system
+1571836873.313,631,560,None,Move,file system
+1571836873.322,625,562,None,Move,file system
+1571836873.33,620,564,None,Move,file system
+1571836873.34,615,566,None,Move,file system
+1571836873.3479998,610,569,None,Move,file system
+1571836873.3579998,607,571,None,Move,file system
+1571836873.3660002,603,573,None,Move,file system
+1571836873.375,600,576,None,Move,file system
+1571836873.3839998,597,579,None,Move,file system
+1571836873.394,595,581,None,Move,file system
+1571836873.4020002,593,584,None,Move,file system
+1571836873.41,590,588,None,Move,file system
+1571836873.418,587,591,None,Move,file system
+1571836873.428,583,596,None,Move,file system
+1571836873.437,579,600,None,Move,file system
+1571836873.446,574,605,None,Move,file system
+1571836873.4529998,569,610,None,Move,file system
+1571836873.459,565,614,None,Move,file system
+1571836873.464,559,618,None,Move,file system
+1571836873.47,553,620,None,Move,file system
+1571836873.476,546,623,None,Move,file system
+1571836873.482,539,624,None,Move,file system
+1571836873.488,531,624,None,Move,file system
+1571836873.495,522,623,None,Move,file system
+1571836873.5010002,514,621,None,Move,file system
+1571836873.5070002,505,620,None,Move,file system
+1571836873.5129998,497,620,None,Move,file system
+1571836873.519,490,618,None,Move,file system
+1571836873.525,487,618,None,Move,file system
+1571836873.531,485,618,None,Move,file system
+1571836873.5370002,482,618,None,Move,file system
+1571836873.543,480,618,None,Move,file system
+1571836873.55,480,618,Left,Pressed,file system
+1571836873.631,480,618,Left,Released,file system
+1571836874.106,481,618,None,Move,file system
+1571836874.125,482,619,None,Move,file system
+1571836874.141,488,620,None,Move,file system
+1571836874.157,494,620,None,Move,file system
+1571836874.174,501,622,None,Move,file system
+1571836874.1929998,508,624,None,Move,file system
+1571836874.211,514,626,None,Move,file system
+1571836874.23,522,629,None,Move,file system
+1571836874.248,529,631,None,Move,file system
+1571836874.265,539,634,None,Move,file system
+1571836874.281,548,636,None,Move,file system
+1571836874.295,559,641,None,Move,file system
+1571836874.31,570,647,None,Move,file system
+1571836874.324,587,657,None,Move,file system
+1571836874.34,607,672,None,Move,file system
+1571836874.357,637,692,None,Move,file system
+1571836874.373,671,706,None,Move,file system
+1571836874.389,703,718,None,Move,file system
+1571836874.404,735,726,None,Move,file system
+1571836874.42,765,730,None,Move,file system
+1571836874.436,789,734,None,Move,file system
+1571836874.454,815,738,None,Move,file system
+1571836874.47,837,742,None,Move,file system
+1571836874.4870002,857,746,None,Move,file system
+1571836874.5010002,877,750,None,Move,file system
+1571836874.5089998,901,754,None,Move,file system
+1571836874.515,929,758,None,Move,file system
+1571836874.522,955,762,None,Move,file system
+1571836874.529,983,762,None,Move,file system
+1571836874.535,1009,760,None,Move,file system
+1571836874.541,1039,758,None,Move,file system
+1571836874.5470002,1069,754,None,Move,file system
+1571836874.553,1097,750,None,Move,file system
+1571836874.561,1129,742,None,Move,file system
+1571836874.5670002,1163,734,None,Move,file system
+1571836874.575,1197,722,None,Move,file system
+1571836874.581,1229,710,None,Move,file system
+1571836874.587,1263,698,None,Move,file system
+1571836874.593,1295,686,None,Move,file system
+1571836874.599,1325,672,None,Move,file system
+1571836874.607,1353,660,None,Move,file system
+1571836874.613,1377,646,None,Move,file system
+1571836874.619,1399,630,None,Move,file system
+1571836874.625,1423,614,None,Move,file system
+1571836874.631,1447,596,None,Move,file system
+1571836874.6379998,1473,580,None,Move,file system
+1571836874.645,1499,562,None,Move,file system
+1571836874.651,1525,544,None,Move,file system
+1571836874.658,1549,526,None,Move,file system
+1571836874.663,1573,502,None,Move,file system
+1571836874.669,1597,478,None,Move,file system
+1571836874.676,1617,444,None,Move,file system
+1571836874.681,1635,408,None,Move,file system
+1571836874.688,1649,368,None,Move,file system
+1571836874.694,1657,332,None,Move,file system
+1571836874.7,1661,294,None,Move,file system
+1571836874.707,1669,258,None,Move,file system
+1571836874.712,1681,228,None,Move,file system
+1571836874.719,1693,204,None,Move,file system
+1571836874.725,1705,188,None,Move,file system
+1571836874.732,1717,176,None,Move,file system
+1571836874.738,1727,164,None,Move,file system
+1571836874.7429998,1735,154,None,Move,file system
+1571836874.75,1743,144,None,Move,file system
+1571836874.756,1747,134,None,Move,file system
+1571836874.762,1753,122,None,Move,file system
+1571836874.769,1757,110,None,Move,file system
+1571836874.775,1763,98,None,Move,file system
+1571836874.78,1769,88,None,Move,file system
+1571836874.786,1774,79,None,Move,file system
+1571836874.793,1780,71,None,Move,file system
+1571836874.799,1785,65,None,Move,file system
+1571836874.805,1790,60,None,Move,file system
+1571836874.811,1796,54,None,Move,file system
+1571836874.816,1803,47,None,Move,file system
+1571836874.822,1811,40,None,Move,file system
+1571836874.8279998,1820,31,None,Move,file system
+1571836874.833,1828,24,None,Move,file system
+1571836874.839,1837,15,None,Move,file system
+1571836874.844,1846,8,None,Move,file system
+1571836874.85,1853,5,None,Move,file system
+1571836874.856,1859,1,None,Move,file system
+1571836874.861,1864,0,None,Move,file system
+1571836874.867,1870,0,None,Move,file system
+1571836874.8720002,1874,0,None,Move,file system
+1571836874.8779998,1877,0,None,Move,file system
+1571836874.8839998,1880,0,None,Move,file system
+1571836874.89,1882,0,None,Move,file system
+1571836874.896,1885,0,None,Move,file system
+1571836874.9020002,1886,1,None,Move,file system
+1571836874.908,1887,3,None,Move,file system
+1571836874.914,1887,5,None,Move,file system
+1571836874.919,1887,7,None,Move,file system
+1571836874.925,1888,9,None,Move,file system
+1571836874.931,1888,11,None,Move,file system
+1571836874.937,1888,13,None,Move,file system
+1571836874.9429998,1888,15,None,Move,file system
+1571836874.949,1887,17,None,Move,file system
+1571836874.955,1886,19,None,Move,file system
+1571836874.961,1886,20,None,Move,file system
+1571836874.967,1885,21,None,Move,file system
+1571836874.9729998,1885,22,None,Move,file system
+1571836874.979,1885,23,None,Move,file system
+1571836874.985,1884,25,None,Move,file system
+1571836874.994,1884,27,None,Move,file system
+1571836875.0010002,1883,28,None,Move,file system
+1571836875.0089998,1883,30,None,Move,file system
+1571836875.016,1882,32,None,Move,file system
+1571836875.0229998,1881,34,None,Move,file system
+1571836875.032,1879,36,None,Move,file system
+1571836875.05,1878,38,None,Move,file system
+1571836875.069,1878,39,None,Move,file system
+1571836875.086,1877,40,None,Move,file system
+1571836875.104,1876,41,None,Move,file system
+1571836875.12,1876,42,None,Move,file system
+1571836875.327,1875,42,None,Move,file system
+1571836875.354,1874,42,None,Move,file system
+1571836875.377,1872,42,None,Move,file system
+1571836875.397,1871,42,None,Move,file system
+1571836875.413,1870,42,None,Move,file system
+1571836875.429,1869,42,None,Move,file system
+1571836875.459,1869,42,Left,Pressed,file system
+1571836875.613,1869,42,Left,Released,file system
+1571836875.78,1869,44,None,Move,development
+1571836875.788,1868,50,None,Move,development
+1571836875.798,1867,57,None,Move,development
+1571836875.805,1866,63,None,Move,development
+1571836875.812,1864,71,None,Move,development
+1571836875.8179998,1862,76,None,Move,development
+1571836875.826,1860,84,None,Move,development
+1571836875.834,1858,92,None,Move,development
+1571836875.843,1855,101,None,Move,development
+1571836875.85,1852,109,None,Move,development
+1571836875.8579998,1849,118,None,Move,development
+1571836875.8660002,1846,130,None,Move,development
+1571836875.8739998,1844,140,None,Move,development
+1571836875.8820002,1841,151,None,Move,development
+1571836875.89,1836,161,None,Move,development
+1571836875.8979998,1833,172,None,Move,development
+1571836875.919,1830,182,None,Move,development
+1571836875.939,1827,193,None,Move,development
+1571836875.958,1824,202,None,Move,development
+1571836875.972,1821,211,None,Move,development
+1571836875.985,1818,220,None,Move,development
+1571836875.998,1815,228,None,Move,development
+1571836876.0110002,1811,237,None,Move,development
+1571836876.024,1806,246,None,Move,development
+1571836876.036,1800,255,None,Move,development
+1571836876.05,1792,265,None,Move,development
+1571836876.0670002,1783,274,None,Move,development
+1571836876.08,1774,283,None,Move,development
+1571836876.093,1763,292,None,Move,development
+1571836876.106,1750,302,None,Move,development
+1571836876.119,1738,311,None,Move,development
+1571836876.131,1723,319,None,Move,development
+1571836876.145,1709,327,None,Move,development
+1571836876.16,1690,334,None,Move,development
+1571836876.175,1673,341,None,Move,development
+1571836876.187,1654,344,None,Move,development
+1571836876.201,1634,348,None,Move,development
+1571836876.215,1614,352,None,Move,development
+1571836876.228,1592,354,None,Move,development
+1571836876.242,1568,355,None,Move,development
+1571836876.256,1542,359,None,Move,development
+1571836876.268,1514,361,None,Move,development
+1571836876.281,1490,365,None,Move,development
+1571836876.294,1464,369,None,Move,development
+1571836876.3070002,1436,373,None,Move,development
+1571836876.319,1406,377,None,Move,development
+1571836876.332,1380,379,None,Move,development
+1571836876.345,1356,383,None,Move,development
+1571836876.357,1334,387,None,Move,development
+1571836876.369,1320,391,None,Move,development
+1571836876.381,1308,395,None,Move,development
+1571836876.394,1300,399,None,Move,development
+1571836876.406,1294,401,None,Move,development
+1571836876.419,1288,403,None,Move,development
+1571836876.431,1285,405,None,Move,development
+1571836876.444,1281,407,None,Move,development
+1571836876.457,1277,409,None,Move,development
+1571836876.47,1274,411,None,Move,development
+1571836876.4829998,1271,412,None,Move,development
+1571836876.4970002,1268,414,None,Move,development
+1571836876.51,1267,416,None,Move,development
+1571836876.522,1265,418,None,Move,development
+1571836876.534,1263,419,None,Move,development
+1571836876.548,1260,421,None,Move,development
+1571836876.56,1258,423,None,Move,development
+1571836876.572,1255,425,None,Move,development
+1571836876.584,1253,427,None,Move,development
+1571836876.596,1251,429,None,Move,development
+1571836876.6079998,1249,431,None,Move,development
+1571836876.62,1247,432,None,Move,development
+1571836876.6339998,1245,433,None,Move,development
+1571836876.65,1244,434,None,Move,development
+1571836876.664,1242,435,None,Move,development
+1571836876.678,1240,437,None,Move,development
+1571836876.6920002,1239,437,None,Move,development
+1571836876.704,1237,438,None,Move,development
+1571836876.717,1235,440,None,Move,development
+1571836876.728,1232,441,None,Move,development
+1571836876.74,1230,442,None,Move,development
+1571836876.7529998,1227,443,None,Move,development
+1571836876.764,1223,444,None,Move,development
+1571836876.775,1218,444,None,Move,development
+1571836876.7870002,1214,446,None,Move,development
+1571836876.799,1210,446,None,Move,development
+1571836876.811,1206,446,None,Move,development
+1571836876.823,1202,446,None,Move,development
+1571836876.836,1200,444,None,Move,development
+1571836876.8479998,1198,442,None,Move,development
+1571836876.863,1197,441,None,Move,development
+1571836876.875,1195,438,None,Move,development
+1571836876.8879998,1193,436,None,Move,development
+1571836876.9,1192,433,None,Move,development
+1571836876.913,1192,431,None,Move,development
+1571836876.925,1192,427,None,Move,development
+1571836876.938,1194,423,None,Move,development
+1571836876.952,1199,417,None,Move,development
+1571836876.965,1210,404,None,Move,development
+1571836876.979,1228,386,None,Move,development
+1571836876.9910002,1252,362,None,Move,development
+1571836877.0029998,1278,340,None,Move,development
+1571836877.015,1310,316,None,Move,development
+1571836877.028,1342,290,None,Move,development
+1571836877.04,1376,264,None,Move,development
+1571836877.052,1412,238,None,Move,development
+1571836877.066,1448,214,None,Move,development
+1571836877.079,1480,196,None,Move,development
+1571836877.091,1508,180,None,Move,development
+1571836877.103,1534,164,None,Move,development
+1571836877.115,1554,148,None,Move,development
+1571836877.1279998,1570,136,None,Move,development
+1571836877.145,1582,124,None,Move,development
+1571836877.159,1590,114,None,Move,development
+1571836877.1720002,1594,108,None,Move,development
+1571836877.184,1598,104,None,Move,development
+1571836877.195,1599,100,None,Move,development
+1571836877.208,1599,98,None,Move,development
+1571836877.219,1599,96,None,Move,development
+1571836877.231,1599,94,None,Move,development
+1571836877.244,1599,92,None,Move,development
+1571836877.256,1599,90,None,Move,development
+1571836877.269,1599,89,None,Move,development
+1571836877.281,1601,88,None,Move,development
+1571836877.293,1603,88,None,Move,development
+1571836877.305,1605,87,None,Move,development
+1571836877.316,1607,87,None,Move,development
+1571836877.3279998,1609,87,None,Move,development
+1571836877.34,1611,87,None,Move,development
+1571836877.3520002,1613,87,None,Move,development
+1571836877.3639998,1615,88,None,Move,development
+1571836877.375,1616,89,None,Move,development
+1571836877.387,1618,90,None,Move,development
+1571836877.399,1620,92,None,Move,development
+1571836877.411,1622,93,None,Move,development
+1571836877.423,1624,94,None,Move,development
+1571836877.436,1625,95,None,Move,development
+1571836877.447,1627,96,None,Move,development
+1571836877.46,1629,97,None,Move,development
+1571836877.472,1630,97,None,Move,development
+1571836877.484,1631,98,None,Move,development
+1571836877.496,1632,98,None,Move,development
+1571836877.5089998,1633,98,None,Move,development
+1571836877.522,1635,97,None,Move,development
+1571836877.534,1637,96,None,Move,development
+1571836877.55,1639,95,None,Move,development
+1571836877.564,1641,95,None,Move,development
+1571836877.576,1642,94,None,Move,development
+1571836877.5879998,1643,94,None,Move,development
+1571836877.6,1644,94,None,Move,development
+1571836877.6239998,1644,93,Left,Pressed,development
+1571836877.6239998,1644,93,None,Drag,development
+1571836877.6360002,1645,92,None,Drag,development
+1571836877.647,1646,92,None,Drag,development
+1571836877.6620002,1646,92,None,Drag,development
+1571836877.676,1647,92,None,Drag,development
+1571836877.689,1649,92,None,Drag,development
+1571836877.701,1650,91,None,Drag,development
+1571836877.7129998,1651,91,None,Drag,development
+1571836877.7129998,1651,91,Left,Released,development
+1571836877.7370002,1652,91,None,Move,development
+1571836877.748,1653,91,None,Move,development
+1571836877.76,1653,90,None,Move,development
+1571836877.772,1654,90,None,Move,development
+1571836877.783,1655,90,None,Move,development
+1571836877.857,1655,90,Left,Pressed,development
+1571836877.994,1655,90,Left,Released,development
+1571836878.106,1655,90,None,Move,development
+1571836878.1220002,1655,93,None,Move,development
+1571836878.143,1657,100,None,Move,development
+1571836878.165,1660,109,None,Move,development
+1571836878.186,1662,119,None,Move,development
+1571836878.204,1666,130,None,Move,development
+1571836878.222,1670,141,None,Move,development
+1571836878.2489998,1676,153,None,Move,development
+1571836878.269,1681,165,None,Move,development
+1571836878.288,1687,177,None,Move,development
+1571836878.305,1690,186,None,Move,development
+1571836878.3379998,1693,196,None,Move,development
+1571836878.347,1696,205,None,Move,development
+1571836878.357,1699,214,None,Move,development
+1571836878.3639998,1702,218,None,Move,development
+1571836878.3720002,1704,223,None,Move,development
+1571836878.379,1707,227,None,Move,development
+1571836878.387,1708,230,None,Move,development
+1571836878.394,1708,232,None,Move,development
+1571836878.401,1710,233,None,Move,development
+1571836878.909,1709,233,None,Move,development
+1571836878.916,1706,233,None,Move,development
+1571836878.924,1702,234,None,Move,development
+1571836878.9320002,1696,236,None,Move,development
+1571836878.941,1689,239,None,Move,development
+1571836878.948,1682,241,None,Move,development
+1571836878.954,1673,244,None,Move,development
+1571836878.9629998,1662,246,None,Move,development
+1571836878.97,1651,249,None,Move,development
+1571836878.978,1639,252,None,Move,development
+1571836878.986,1626,255,None,Move,development
+1571836878.994,1614,258,None,Move,development
+1571836879.002,1602,261,None,Move,development
+1571836879.012,1587,264,None,Move,development
+1571836879.019,1563,267,None,Move,development
+1571836879.0270002,1536,269,None,Move,development
+1571836879.036,1506,269,None,Move,development
+1571836879.043,1472,269,None,Move,development
+1571836879.049,1438,271,None,Move,development
+1571836879.0579998,1406,279,None,Move,development
+1571836879.065,1380,285,None,Move,development
+1571836879.075,1356,291,None,Move,development
+1571836879.081,1340,297,None,Move,development
+1571836879.09,1326,301,None,Move,development
+1571836879.097,1312,305,None,Move,development
+1571836879.105,1298,309,None,Move,development
+1571836879.113,1286,311,None,Move,development
+1571836879.121,1274,315,None,Move,development
+1571836879.129,1262,319,None,Move,development
+1571836879.135,1252,330,None,Move,development
+1571836879.144,1247,342,None,Move,development
+1571836879.151,1242,352,None,Move,development
+1571836879.159,1239,360,None,Move,development
+1571836879.167,1231,366,None,Move,development
+1571836879.175,1225,371,None,Move,development
+1571836879.1829998,1219,374,None,Move,development
+1571836879.191,1213,377,None,Move,development
+1571836879.199,1208,380,None,Move,development
+1571836879.207,1202,383,None,Move,development
+1571836879.216,1197,385,None,Move,development
+1571836879.238,1194,388,None,Move,development
+1571836879.258,1192,389,None,Move,development
+1571836879.278,1189,390,None,Move,development
+1571836879.298,1188,390,None,Move,development
+1571836879.3170002,1187,392,None,Move,development
+1571836879.335,1186,392,None,Move,development
+1571836879.354,1185,393,None,Move,development
+1571836879.3739998,1183,395,None,Move,development
+1571836879.3879998,1180,397,None,Move,development
+1571836879.397,1175,399,None,Move,development
+1571836879.406,1170,401,None,Move,development
+1571836879.416,1164,402,None,Move,development
+1571836879.426,1156,404,None,Move,development
+1571836879.436,1149,405,None,Move,development
+1571836879.446,1140,405,None,Move,development
+1571836879.456,1130,405,None,Move,development
+1571836879.466,1120,406,None,Move,development
+1571836879.476,1111,408,None,Move,development
+1571836879.486,1102,408,None,Move,development
+1571836879.496,1093,408,None,Move,development
+1571836879.506,1085,408,None,Move,development
+1571836879.516,1080,408,None,Move,development
+1571836879.525,1077,409,None,Move,development
+1571836879.534,1073,409,None,Move,development
+1571836879.544,1069,409,None,Move,development
+1571836879.553,1065,409,None,Move,development
+1571836879.562,1061,409,None,Move,development
+1571836879.572,1056,409,None,Move,development
+1571836879.582,1052,409,None,Move,development
+1571836879.593,1048,409,None,Move,development
+1571836879.604,1046,408,None,Move,development
+1571836879.6139998,1042,406,None,Move,development
+1571836879.6260002,1040,406,None,Move,development
+1571836879.635,1038,405,None,Move,development
+1571836879.6479998,1035,404,None,Move,development
+1571836879.658,1033,404,None,Move,development
+1571836879.668,1031,404,None,Move,development
+1571836879.678,1029,405,None,Move,development
+1571836879.688,1027,407,None,Move,development
+1571836879.699,1025,408,None,Move,development
+1571836879.71,1023,410,None,Move,development
+1571836879.719,1022,412,None,Move,development
+1571836879.728,1021,415,None,Move,development
+1571836879.738,1020,419,None,Move,development
+1571836879.748,1020,424,None,Move,development
+1571836879.7570002,1019,431,None,Move,development
+1571836879.7670002,1019,438,None,Move,development
+1571836879.776,1019,446,None,Move,development
+1571836879.785,1019,454,None,Move,development
+1571836879.794,1020,463,None,Move,development
+1571836879.806,1023,471,None,Move,development
+1571836879.816,1026,482,None,Move,development
+1571836879.824,1030,493,None,Move,development
+1571836879.834,1034,504,None,Move,development
+1571836879.844,1041,515,None,Move,development
+1571836879.853,1047,527,None,Move,development
+1571836879.8620002,1054,539,None,Move,development
+1571836879.871,1064,550,None,Move,development
+1571836879.879,1075,561,None,Move,development
+1571836879.889,1083,571,None,Move,development
+1571836879.8979998,1087,578,None,Move,development
+1571836879.908,1090,581,None,Move,development
+1571836879.918,1092,585,None,Move,development
+1571836879.927,1093,586,None,Move,development
+1571836880.002,1094,584,None,Move,development
+1571836880.025,1097,582,None,Move,development
+1571836880.045,1100,580,None,Move,development
+1571836880.069,1106,578,None,Move,development
+1571836880.091,1113,576,None,Move,development
+1571836880.11,1121,573,None,Move,development
+1571836880.13,1130,570,None,Move,development
+1571836880.143,1141,568,None,Move,development
+1571836880.15,1153,565,None,Move,development
+1571836880.159,1168,563,None,Move,development
+1571836880.167,1180,562,None,Move,development
+1571836880.179,1194,562,None,Move,development
+1571836880.187,1210,562,None,Move,development
+1571836880.195,1226,562,None,Move,development
+1571836880.204,1245,563,None,Move,development
+1571836880.211,1263,565,None,Move,development
+1571836880.219,1282,565,None,Move,development
+1571836880.2270002,1300,565,None,Move,development
+1571836880.235,1318,565,None,Move,development
+1571836880.242,1337,565,None,Move,development
+1571836880.2489998,1357,565,None,Move,development
+1571836880.2570002,1373,567,None,Move,development
+1571836880.265,1386,569,None,Move,development
+1571836880.272,1399,569,None,Move,development
+1571836880.279,1409,571,None,Move,development
+1571836880.286,1416,573,None,Move,development
+1571836880.293,1420,573,None,Move,development
+1571836880.3520002,1420,573,Left,Pressed,development
+1571836880.532,1420,573,Left,Released,development
+1571836880.968,1416,574,None,Move,development
+1571836880.976,1414,574,None,Move,development
+1571836880.985,1411,574,None,Move,development
+1571836881.005,1406,574,None,Move,development
+1571836881.025,1399,573,None,Move,development
+1571836881.042,1392,572,None,Move,development
+1571836881.062,1384,570,None,Move,development
+1571836881.083,1375,569,None,Move,development
+1571836881.105,1368,568,None,Move,development
+1571836881.1260002,1360,565,None,Move,development
+1571836881.146,1352,564,None,Move,development
+1571836881.166,1344,562,None,Move,development
+1571836881.178,1337,562,None,Move,development
+1571836881.186,1330,561,None,Move,development
+1571836881.1920002,1324,561,None,Move,development
+1571836881.197,1317,560,None,Move,development
+1571836881.202,1309,560,None,Move,development
+1571836881.207,1301,560,None,Move,development
+1571836881.211,1293,560,None,Move,development
+1571836881.215,1286,558,None,Move,development
+1571836881.22,1279,558,None,Move,development
+1571836881.224,1271,557,None,Move,development
+1571836881.229,1263,556,None,Move,development
+1571836881.235,1255,554,None,Move,development
+1571836881.2410002,1247,554,None,Move,development
+1571836881.248,1239,553,None,Move,development
+1571836881.2589998,1231,553,None,Move,development
+1571836881.265,1221,552,None,Move,development
+1571836881.274,1211,552,None,Move,development
+1571836881.284,1200,550,None,Move,development
+1571836881.294,1189,549,None,Move,development
+1571836881.304,1175,546,None,Move,development
+1571836881.31,1162,546,None,Move,development
+1571836881.315,1147,544,None,Move,development
+1571836881.32,1130,543,None,Move,development
+1571836881.325,1115,541,None,Move,development
+1571836881.33,1100,540,None,Move,development
+1571836881.335,1085,538,None,Move,development
+1571836881.34,1070,538,None,Move,development
+1571836881.344,1051,538,None,Move,development
+1571836881.35,1035,538,None,Move,development
+1571836881.355,1020,540,None,Move,development
+1571836881.36,1002,542,None,Move,development
+1571836881.365,983,545,None,Move,development
+1571836881.37,965,547,None,Move,development
+1571836881.375,942,551,None,Move,development
+1571836881.38,919,551,None,Move,development
+1571836881.3839998,896,551,None,Move,development
+1571836881.39,874,549,None,Move,development
+1571836881.395,850,543,None,Move,development
+1571836881.401,828,533,None,Move,development
+1571836881.405,804,529,None,Move,development
+1571836881.411,780,523,None,Move,development
+1571836881.416,758,519,None,Move,development
+1571836881.421,734,513,None,Move,development
+1571836881.426,714,509,None,Move,development
+1571836881.431,696,505,None,Move,development
+1571836881.437,678,501,None,Move,development
+1571836881.4420002,662,497,None,Move,development
+1571836881.447,646,493,None,Move,development
+1571836881.452,630,489,None,Move,development
+1571836881.458,616,485,None,Move,development
+1571836881.462,604,481,None,Move,development
+1571836881.467,593,479,None,Move,development
+1571836881.472,581,475,None,Move,development
+1571836881.478,570,473,None,Move,development
+1571836881.485,559,470,None,Move,development
+1571836881.492,549,466,None,Move,development
+1571836881.5010002,539,463,None,Move,development
+1571836881.522,529,461,None,Move,development
+1571836881.542,520,460,None,Move,development
+1571836881.561,511,458,None,Move,development
+1571836881.582,502,458,None,Move,development
+1571836881.6020002,494,458,None,Move,development
+1571836881.621,487,458,None,Move,development
+1571836881.641,480,457,None,Move,development
+1571836881.66,477,457,None,Move,development
+1571836881.678,473,457,None,Move,development
+1571836881.696,471,457,None,Move,development
+1571836881.715,468,457,None,Move,development
+1571836881.7329998,466,457,None,Move,development
+1571836881.7510002,464,457,None,Move,development
+1571836881.771,463,457,None,Move,development
+1571836881.791,459,454,None,Move,development
+1571836881.813,453,450,None,Move,development
+1571836881.834,447,446,None,Move,development
+1571836881.853,441,442,None,Move,development
+1571836881.8720002,435,438,None,Move,development
+1571836881.891,429,435,None,Move,development
+1571836881.911,423,432,None,Move,development
+1571836881.931,417,430,None,Move,development
+1571836881.95,411,428,None,Move,development
+1571836881.969,408,426,None,Move,development
+1571836881.9889998,405,425,None,Move,development
+1571836882.008,403,423,None,Move,development
+1571836882.03,403,424,None,Move,development
+1571836882.051,405,426,None,Move,development
+1571836882.062,407,429,None,Move,development
+1571836882.071,410,432,None,Move,development
+1571836882.0779998,414,437,None,Move,development
+1571836882.085,420,444,None,Move,development
+1571836882.092,427,452,None,Move,development
+1571836882.099,436,460,None,Move,development
+1571836882.105,444,469,None,Move,development
+1571836882.111,453,478,None,Move,development
+1571836882.1160002,462,487,None,Move,development
+1571836882.12,471,496,None,Move,development
+1571836882.125,480,505,None,Move,development
+1571836882.13,489,514,None,Move,development
+1571836882.1339998,499,522,None,Move,development
+1571836882.1379998,506,530,None,Move,development
+1571836882.143,514,536,None,Move,development
+1571836882.147,521,544,None,Move,development
+1571836882.151,524,549,None,Move,development
+1571836882.155,529,555,None,Move,development
+1571836882.16,532,562,None,Move,development
+1571836882.164,537,566,None,Move,development
+1571836882.168,541,571,None,Move,development
+1571836882.1720002,544,575,None,Move,development
+1571836882.176,547,580,None,Move,development
+1571836882.18,550,582,None,Move,development
+1571836882.184,554,585,None,Move,development
+1571836882.188,556,588,None,Move,development
+1571836882.1920002,559,589,None,Move,development
+1571836882.196,561,590,None,Move,development
+1571836882.201,563,590,None,Move,development
+1571836882.209,564,590,None,Move,development
+1571836882.217,565,590,None,Move,development
+1571836882.2870002,566,590,None,Move,development
+1571836882.299,567,590,None,Move,development
+1571836882.3070002,568,590,None,Move,development
+1571836882.315,570,590,None,Move,development
+1571836882.323,572,590,None,Move,development
+1571836882.332,574,590,None,Move,development
+1571836882.34,576,590,None,Move,development
+1571836882.351,578,589,None,Move,development
+1571836882.36,580,589,None,Move,development
+1571836882.37,582,588,None,Move,development
+1571836882.379,584,587,None,Move,development
+1571836882.3879998,586,586,None,Move,development
+1571836882.397,587,585,None,Move,development
+1571836882.406,589,584,None,Move,development
+1571836882.415,591,582,None,Move,development
+1571836882.425,593,581,None,Move,development
+1571836882.434,595,579,None,Move,development
+1571836882.444,597,577,None,Move,development
+1571836882.454,599,575,None,Move,development
+1571836882.464,602,574,None,Move,development
+1571836882.474,604,572,None,Move,development
+1571836882.484,606,570,None,Move,development
+1571836882.494,609,568,None,Move,development
+1571836882.504,612,566,None,Move,development
+1571836882.5129998,616,565,None,Move,development
+1571836882.522,619,563,None,Move,development
+1571836882.532,623,561,None,Move,development
+1571836882.542,627,560,None,Move,development
+1571836882.552,630,560,None,Move,development
+1571836882.562,637,559,None,Move,development
+1571836882.571,644,559,None,Move,development
+1571836882.58,651,559,None,Move,development
+1571836882.59,658,559,None,Move,development
+1571836882.6,665,560,None,Move,development
+1571836882.609,672,561,None,Move,development
+1571836882.619,680,563,None,Move,development
+1571836882.629,687,565,None,Move,development
+1571836882.6379998,695,566,None,Move,development
+1571836882.6479998,703,569,None,Move,development
+1571836882.658,709,570,None,Move,development
+1571836882.668,716,571,None,Move,development
+1571836882.678,721,574,None,Move,development
+1571836882.688,725,574,None,Move,development
+1571836882.697,727,575,None,Move,development
+1571836882.707,730,577,None,Move,development
+1571836882.719,734,577,None,Move,development
+1571836882.728,739,578,None,Move,development
+1571836882.738,744,578,None,Move,development
+1571836882.7470002,750,578,None,Move,development
+1571836882.7570002,753,578,None,Move,development
+1571836882.766,758,578,None,Move,development
+1571836882.776,765,578,None,Move,development
+1571836882.785,772,578,None,Move,development
+1571836882.794,778,577,None,Move,development
+1571836882.804,785,577,None,Move,development
+1571836882.813,794,576,None,Move,development
+1571836882.822,802,574,None,Move,development
+1571836882.832,810,573,None,Move,development
+1571836882.841,821,571,None,Move,development
+1571836882.85,831,568,None,Move,development
+1571836882.86,842,565,None,Move,development
+1571836882.87,853,561,None,Move,development
+1571836882.8779998,866,557,None,Move,development
+1571836882.887,882,552,None,Move,development
+1571836882.8979998,894,548,None,Move,development
+1571836882.908,907,543,None,Move,development
+1571836882.917,920,539,None,Move,development
+1571836882.926,934,536,None,Move,development
+1571836882.934,951,533,None,Move,development
+1571836882.945,966,527,None,Move,development
+1571836882.955,984,524,None,Move,development
+1571836882.965,1004,520,None,Move,development
+1571836882.975,1020,517,None,Move,development
+1571836882.984,1037,513,None,Move,development
+1571836882.9929998,1051,507,None,Move,development
+1571836883.0029998,1066,504,None,Move,development
+1571836883.012,1081,498,None,Move,development
+1571836883.022,1094,494,None,Move,development
+1571836883.032,1105,489,None,Move,development
+1571836883.041,1116,485,None,Move,development
+1571836883.051,1125,480,None,Move,development
+1571836883.061,1131,477,None,Move,development
+1571836883.071,1140,473,None,Move,development
+1571836883.08,1147,468,None,Move,development
+1571836883.09,1151,465,None,Move,development
+1571836883.099,1156,460,None,Move,development
+1571836883.1079998,1160,456,None,Move,development
+1571836883.1179998,1166,450,None,Move,development
+1571836883.1279998,1170,445,None,Move,development
+1571836883.1379998,1177,439,None,Move,development
+1571836883.1479998,1184,434,None,Move,development
+1571836883.158,1192,428,None,Move,development
+1571836883.167,1199,423,None,Move,development
+1571836883.176,1204,416,None,Move,development
+1571836883.186,1209,412,None,Move,development
+1571836883.196,1215,409,None,Move,development
+1571836883.206,1218,405,None,Move,development
+1571836883.215,1222,401,None,Move,development
+1571836883.224,1226,398,None,Move,development
+1571836883.2329998,1229,396,None,Move,development
+1571836883.242,1231,393,None,Move,development
+1571836883.252,1234,391,None,Move,development
+1571836883.2610002,1236,388,None,Move,development
+1571836883.271,1239,386,None,Move,development
+1571836883.281,1241,384,None,Move,development
+1571836883.29,1243,383,None,Move,development
+1571836883.3,1246,382,None,Move,development
+1571836883.309,1248,381,None,Move,development
+1571836883.319,1250,380,None,Move,development
+1571836883.3279998,1252,379,None,Move,development
+1571836883.3379998,1255,378,None,Move,development
+1571836883.3479998,1258,376,None,Move,development
+1571836883.357,1263,374,None,Move,development
+1571836883.367,1268,372,None,Move,development
+1571836883.3760002,1273,370,None,Move,development
+1571836883.3860002,1279,368,None,Move,development
+1571836883.396,1285,365,None,Move,development
+1571836883.406,1294,362,None,Move,development
+1571836883.414,1303,359,None,Move,development
+1571836883.424,1313,356,None,Move,development
+1571836883.4329998,1323,352,None,Move,development
+1571836883.4420002,1332,347,None,Move,development
+1571836883.449,1342,341,None,Move,development
+1571836883.454,1352,332,None,Move,development
+1571836883.459,1362,325,None,Move,development
+1571836883.465,1373,320,None,Move,development
+1571836883.47,1383,314,None,Move,development
+1571836883.475,1394,309,None,Move,development
+1571836883.481,1404,304,None,Move,development
+1571836883.486,1413,298,None,Move,development
+1571836883.4910002,1423,295,None,Move,development
+1571836883.4970002,1431,290,None,Move,development
+1571836883.502,1436,286,None,Move,development
+1571836883.508,1441,283,None,Move,development
+1571836883.5129998,1446,279,None,Move,development
+1571836883.518,1450,276,None,Move,development
+1571836883.5229998,1454,271,None,Move,development
+1571836883.53,1459,267,None,Move,development
+1571836883.534,1464,261,None,Move,development
+1571836883.54,1472,256,None,Move,development
+1571836883.545,1479,253,None,Move,development
+1571836883.55,1487,251,None,Move,development
+1571836883.555,1493,248,None,Move,development
+1571836883.562,1501,246,None,Move,development
+1571836883.5670002,1509,243,None,Move,development
+1571836883.572,1517,240,None,Move,development
+1571836883.577,1523,238,None,Move,development
+1571836883.582,1531,235,None,Move,development
+1571836883.587,1537,233,None,Move,development
+1571836883.593,1543,231,None,Move,development
+1571836883.5979998,1548,230,None,Move,development
+1571836883.603,1554,227,None,Move,development
+1571836883.609,1561,226,None,Move,development
+1571836883.6139998,1568,225,None,Move,development
+1571836883.619,1573,223,None,Move,development
+1571836883.625,1577,222,None,Move,development
+1571836883.629,1581,221,None,Move,development
+1571836883.635,1580,222,None,Move,development
+1571836883.64,1576,225,None,Move,development
+1571836883.646,1572,228,None,Move,development
+1571836883.651,1566,231,None,Move,development
+1571836883.657,1560,234,None,Move,development
+1571836883.6620002,1554,236,None,Move,development
+1571836883.667,1547,239,None,Move,development
+1571836883.673,1539,241,None,Move,development
+1571836883.678,1529,245,None,Move,development
+1571836883.6829998,1519,251,None,Move,development
+1571836883.689,1507,254,None,Move,development
+1571836883.694,1494,257,None,Move,development
+1571836883.7,1482,263,None,Move,development
+1571836883.706,1470,267,None,Move,development
+1571836883.711,1458,272,None,Move,development
+1571836883.717,1446,276,None,Move,development
+1571836883.7229998,1433,281,None,Move,development
+1571836883.729,1421,286,None,Move,development
+1571836883.735,1407,291,None,Move,development
+1571836883.74,1396,294,None,Move,development
+1571836883.748,1386,297,None,Move,development
+1571836883.756,1374,301,None,Move,development
+1571836883.764,1364,302,None,Move,development
+1571836883.7729998,1354,302,None,Move,development
+1571836883.794,1342,304,None,Move,development
+1571836883.815,1331,304,None,Move,development
+1571836883.837,1319,304,None,Move,development
+1571836883.8579998,1304,304,None,Move,development
+1571836883.8779998,1291,306,None,Move,development
+1571836883.8979998,1277,309,None,Move,development
+1571836883.92,1261,311,None,Move,development
+1571836883.941,1244,314,None,Move,development
+1571836883.964,1229,317,None,Move,development
+1571836883.9870002,1214,320,None,Move,development
+1571836884.006,1194,324,None,Move,development
+1571836884.026,1175,327,None,Move,development
+1571836884.046,1154,331,None,Move,development
+1571836884.069,1130,333,None,Move,development
+1571836884.089,1101,335,None,Move,development
+1571836884.105,1069,335,None,Move,development
+1571836884.121,1035,335,None,Move,development
+1571836884.137,1001,333,None,Move,development
+1571836884.153,965,329,None,Move,development
+1571836884.169,931,323,None,Move,development
+1571836884.185,895,321,None,Move,development
+1571836884.205,857,321,None,Move,development
+1571836884.2229998,821,321,None,Move,development
+1571836884.2410002,785,321,None,Move,development
+1571836884.26,753,319,None,Move,development
+1571836884.2770002,721,317,None,Move,development
+1571836884.296,693,313,None,Move,development
+1571836884.314,669,309,None,Move,development
+1571836884.332,651,305,None,Move,development
+1571836884.349,635,303,None,Move,development
+1571836884.3679998,623,303,None,Move,development
+1571836884.3860002,613,301,None,Move,development
+1571836884.405,605,299,None,Move,development
+1571836884.423,599,299,None,Move,development
+1571836884.441,595,297,None,Move,development
+1571836884.459,595,295,None,Move,development
+1571836884.476,594,295,None,Move,development
+1571836884.4929998,591,294,None,Move,development
+1571836884.5089998,586,292,None,Move,development
+1571836884.526,580,290,None,Move,development
+1571836884.544,574,288,None,Move,development
+1571836884.561,567,286,None,Move,development
+1571836884.577,559,284,None,Move,development
+1571836884.593,551,282,None,Move,development
+1571836884.609,543,280,None,Move,development
+1571836884.625,535,278,None,Move,development
+1571836884.645,528,276,None,Move,development
+1571836884.661,522,274,None,Move,development
+1571836884.677,516,272,None,Move,development
+1571836884.6929998,510,270,None,Move,development
+1571836884.709,503,268,None,Move,development
+1571836884.725,496,265,None,Move,development
+1571836884.7410002,488,262,None,Move,development
+1571836884.7570002,480,259,None,Move,development
+1571836884.7729998,476,256,None,Move,development
+1571836884.789,470,253,None,Move,development
+1571836884.806,464,250,None,Move,development
+1571836884.824,460,247,None,Move,development
+1571836884.841,456,246,None,Move,development
+1571836884.857,452,243,None,Move,development
+1571836884.873,445,240,None,Move,development
+1571836884.889,438,238,None,Move,development
+1571836884.904,430,235,None,Move,development
+1571836884.92,422,233,None,Move,development
+1571836884.935,413,230,None,Move,development
+1571836884.951,404,228,None,Move,development
+1571836884.967,394,225,None,Move,development
+1571836884.9829998,383,222,None,Move,development
+1571836884.9989998,373,221,None,Move,development
+1571836885.018,362,220,None,Move,development
+1571836885.033,350,220,None,Move,development
+1571836885.049,340,222,None,Move,development
+1571836885.0670002,328,225,None,Move,development
+1571836885.082,316,227,None,Move,development
+1571836885.097,304,228,None,Move,development
+1571836885.1120002,291,230,None,Move,development
+1571836885.1279998,281,232,None,Move,development
+1571836885.1420002,272,233,None,Move,development
+1571836885.156,262,233,None,Move,development
+1571836885.1720002,257,235,None,Move,development
+1571836885.185,253,235,None,Move,development
+1571836885.1929998,250,235,None,Move,development
+1571836885.2,247,235,None,Move,development
+1571836885.205,244,235,None,Move,development
+1571836885.214,243,235,None,Move,development
+1571836885.221,240,235,None,Move,development
+1571836885.228,239,234,None,Move,development
+1571836885.235,238,234,None,Move,development
+1571836885.242,237,234,None,Move,development
+1571836885.246,236,234,None,Move,development
+1571836885.2510002,235,234,None,Move,development
+1571836885.256,234,234,None,Move,development
+1571836885.2610002,233,234,None,Move,development
+1571836885.2670002,232,234,None,Move,development
+1571836885.272,232,233,None,Move,development
+1571836885.278,231,232,None,Move,development
+1571836885.29,230,231,None,Move,development
+1571836885.2970002,229,230,None,Move,development
+1571836885.302,227,228,None,Move,development
+1571836885.306,225,227,None,Move,development
+1571836885.311,223,226,None,Move,development
+1571836885.315,221,224,None,Move,development
+1571836885.319,219,224,None,Move,development
+1571836885.323,217,223,None,Move,development
+1571836885.327,216,222,None,Move,development
+1571836885.331,215,222,None,Move,development
+1571836885.335,214,220,None,Move,development
+1571836885.339,213,220,None,Move,development
+1571836885.343,213,219,None,Move,development
+1571836885.347,212,219,None,Move,development
+1571836885.351,212,219,None,Move,development
+1571836885.355,212,218,None,Move,development
+1571836885.359,211,217,None,Move,development
+1571836885.3639998,210,216,None,Move,development
+1571836885.3679998,209,214,None,Move,development
+1571836885.3720002,209,212,None,Move,development
+1571836885.3779998,208,210,None,Move,development
+1571836885.383,207,208,None,Move,development
+1571836885.387,206,206,None,Move,development
+1571836885.391,205,204,None,Move,development
+1571836885.395,204,203,None,Move,development
+1571836885.4,204,202,None,Move,development
+1571836885.405,204,202,Left,Pressed,development
+1571836885.41,204,202,Left,Released,development
+1571836885.426,203,202,None,Move,development
+1571836890.986,204,206,None,Move,development
+1571836891.006,208,237,None,Move,development
+1571836891.025,212,267,None,Move,development
+1571836891.042,210,291,None,Move,development
+1571836891.061,206,305,None,Move,development
+1571836891.08,204,319,None,Move,development
+1571836891.095,204,331,None,Move,development
+1571836891.105,204,347,None,Move,development
+1571836891.1120002,208,361,None,Move,development
+1571836891.12,208,383,None,Move,development
+1571836891.129,208,411,None,Move,development
+1571836891.137,212,445,None,Move,development
+1571836891.146,212,487,None,Move,development
+1571836891.153,208,531,None,Move,file system
+1571836891.16,204,575,None,Move,file system
+1571836891.167,200,617,None,Move,file system
+1571836891.173,198,661,None,Move,file system
+1571836891.178,192,709,None,Move,file system
+1571836891.1829998,184,761,None,Move,file system
+1571836891.189,180,813,None,Move,file system
+1571836891.194,174,871,None,Move,file system
+1571836891.199,168,927,None,Move,file system
+1571836891.204,164,991,None,Move,file system
+1571836891.209,156,1061,None,Move,file system
+1571836891.215,144,1079,None,Move,file system
+1571836891.219,130,1079,None,Move,file system
+1571836891.224,118,1079,None,Move,file system
+1571836891.229,100,1079,None,Move,file system
+1571836891.234,72,1079,None,Move,file system
+1571836891.2410002,38,1079,None,Move,file system
+1571836891.245,6,1079,None,Move,file system
+1571836891.25,0,1079,None,Move,file system
+1571836891.2570002,0,1079,None,Move,file system
+1571836891.262,0,1079,None,Move,file system
+1571836891.266,0,1079,None,Move,file system
+1571836891.2729998,0,1079,None,Move,file system
+1571836891.278,0,1079,None,Move,file system
+1571836891.282,0,1079,None,Move,file system
+1571836891.29,0,1079,None,Move,file system
+1571836891.294,0,1079,None,Move,file system
+1571836891.299,0,1079,None,Move,file system
+1571836891.3079998,0,1079,None,Move,file system
+1571836891.313,0,1079,None,Move,file system
+1571836891.321,0,1079,None,Move,file system
+1571836891.329,0,1079,None,Move,file system
+1571836891.3379998,0,1079,None,Move,file system
+1571836891.345,0,1079,None,Move,file system
+1571836891.354,0,1079,None,Move,file system
+1571836891.3620002,0,1079,None,Move,file system
+1571836891.3820002,0,1079,None,Move,file system
+1571836891.3979998,0,1079,None,Move,file system
+1571836891.408,0,1079,None,Move,file system
+1571836891.418,0,1079,None,Move,file system
+1571836891.427,0,1079,None,Move,file system
+1571836891.437,0,1079,None,Move,file system
+1571836891.446,0,1079,None,Move,file system
+1571836891.456,0,1079,None,Move,file system
+1571836891.466,0,1079,None,Move,file system
+1571836891.476,0,1079,None,Move,file system
+1571836891.486,0,1079,None,Move,file system
+1571836891.496,0,1077,None,Move,file system
+1571836891.506,0,1074,None,Move,file system
+1571836891.516,0,1066,None,Move,file system
+1571836891.526,0,1050,None,Move,file system
+1571836891.536,1,1029,None,Move,file system
+1571836891.543,5,1006,None,Move,file system
+1571836891.549,11,978,None,Move,file system
+1571836891.554,17,950,None,Move,file system
+1571836891.559,21,924,None,Move,file system
+1571836891.566,25,894,None,Move,file system
+1571836891.57,31,862,None,Move,file system
+1571836891.575,35,830,None,Move,file system
+1571836891.579,39,798,None,Move,file system
+1571836891.583,43,766,None,Move,file system
+1571836891.5879998,47,734,None,Move,file system
+1571836891.592,51,702,None,Move,file system
+1571836891.596,51,670,None,Move,file system
+1571836891.603,51,640,None,Move,file system
+1571836891.6120002,49,612,None,Move,file system
+1571836891.631,49,580,None,Move,file system
+1571836891.65,53,552,None,Move,file system
+1571836891.67,53,528,None,Move,file system
+1571836891.689,53,504,None,Move,file system
+1571836891.708,53,480,None,Move,file system
+1571836891.728,53,462,None,Move,file system
+1571836891.7489998,51,446,None,Move,file system
+1571836891.77,51,430,None,Move,file system
+1571836891.789,51,416,None,Move,file system
+1571836891.81,51,404,None,Move,file system
+1571836891.83,51,394,None,Move,file system
+1571836891.849,53,388,None,Move,file system
+1571836891.869,55,384,None,Move,file system
+1571836891.889,57,382,None,Move,file system
+1571836891.909,58,382,None,Move,file system
+1571836891.928,60,382,None,Move,file system
+1571836891.947,61,382,None,Move,file system
+1571836891.966,62,382,None,Move,file system
+1571836891.986,63,382,None,Move,file system
+1571836892.005,64,382,None,Move,file system
+1571836892.025,65,383,None,Move,file system
+1571836892.044,67,384,None,Move,file system
+1571836892.066,69,386,None,Move,file system
+1571836892.089,71,388,None,Move,file system
+1571836892.111,73,390,None,Move,file system
+1571836892.129,75,392,None,Move,file system
+1571836892.146,78,396,None,Move,file system
+1571836892.1620002,82,400,None,Move,file system
+1571836892.18,85,403,None,Move,file system
+1571836892.197,87,405,None,Move,file system
+1571836892.2129998,89,408,None,Move,file system
+1571836892.229,91,410,None,Move,file system
+1571836892.236,93,414,None,Move,file system
+1571836892.244,95,418,None,Move,file system
+1571836892.25,98,422,None,Move,development
+1571836892.256,100,426,None,Move,development
+1571836892.2629998,102,431,None,Move,development
+1571836892.269,104,437,None,Move,development
+1571836892.275,106,440,None,Move,development
+1571836892.28,109,444,None,Move,development
+1571836892.286,112,447,None,Move,development
+1571836892.294,117,452,None,Move,development
+1571836892.299,122,454,None,Move,development
+1571836892.306,128,456,None,Move,development
+1571836892.313,134,459,None,Move,development
+1571836892.319,142,459,None,Move,development
+1571836892.326,149,459,None,Move,development
+1571836892.331,157,459,None,Move,development
+1571836892.3379998,166,457,None,Move,development
+1571836892.345,175,456,None,Move,development
+1571836892.35,185,456,None,Move,development
+1571836892.357,194,456,None,Move,development
+1571836892.3639998,203,457,None,Move,development
+1571836892.369,214,462,None,Move,development
+1571836892.3779998,229,466,None,Move,development
+1571836892.383,247,469,None,Move,development
+1571836892.39,266,471,None,Move,development
+1571836892.394,285,472,None,Move,development
+1571836892.399,304,476,None,Move,development
+1571836892.406,321,479,None,Move,development
+1571836892.411,338,483,None,Move,development
+1571836892.416,353,484,None,Move,development
+1571836892.4220002,365,486,None,Move,development
+1571836892.428,378,486,None,Move,development
+1571836892.4329998,389,488,None,Move,development
+1571836892.44,398,490,None,Move,development
+1571836892.445,402,490,None,Move,development
+1571836892.45,404,490,None,Move,development
+1571836892.717,406,488,None,Move,development
+1571836892.738,413,478,None,Move,development
+1571836892.758,429,462,None,Move,development
+1571836892.7770002,445,446,None,Move,development
+1571836892.798,461,432,None,Move,development
+1571836892.812,479,416,None,Move,development
+1571836892.827,499,400,None,Move,development
+1571836892.842,519,386,None,Move,development
+1571836892.857,541,368,None,Move,development
+1571836892.87,563,352,None,Move,development
+1571836892.8839998,587,336,None,Move,development
+1571836892.894,607,320,None,Move,development
+1571836892.906,623,308,None,Move,development
+1571836892.915,639,292,None,Move,development
+1571836892.927,655,274,None,Move,development
+1571836892.939,671,254,None,Move,development
+1571836892.95,683,234,None,Move,development
+1571836892.958,695,212,None,Move,development
+1571836892.969,703,196,None,Move,development
+1571836892.978,707,182,None,Move,development
+1571836892.988,711,170,None,Move,development
+1571836892.9970002,715,158,None,Move,development
+1571836893.006,719,150,None,Move,development
+1571836893.016,723,142,None,Move,development
+1571836893.025,725,139,None,Move,development
+1571836893.035,726,137,None,Move,development
+1571836893.045,728,135,None,Move,development
+1571836893.056,729,134,None,Move,development
+1571836893.0670002,733,132,None,Move,development
+1571836893.077,740,131,None,Move,development
+1571836893.087,749,130,None,Move,development
+1571836893.097,758,129,None,Move,development
+1571836893.107,768,127,None,Move,development
+1571836893.1160002,779,127,None,Move,development
+1571836893.1260002,792,128,None,Move,development
+1571836893.1360002,807,131,None,Move,development
+1571836893.146,823,134,None,Move,development
+1571836893.155,837,136,None,Move,development
+1571836893.164,850,139,None,Move,development
+1571836893.174,864,142,None,Move,development
+1571836893.1829998,875,144,None,Move,development
+1571836893.1920002,886,147,None,Move,development
+1571836893.202,899,150,None,Move,development
+1571836893.211,913,154,None,Move,development
+1571836893.221,928,160,None,Move,development
+1571836893.232,945,163,None,Move,development
+1571836893.242,963,169,None,Move,development
+1571836893.252,982,173,None,Move,development
+1571836893.262,1000,177,None,Move,development
+1571836893.271,1019,183,None,Move,development
+1571836893.28,1034,186,None,Move,development
+1571836893.29,1051,192,None,Move,development
+1571836893.299,1066,196,None,Move,development
+1571836893.3079998,1078,199,None,Move,development
+1571836893.3170002,1089,203,None,Move,development
+1571836893.326,1100,206,None,Move,development
+1571836893.336,1108,212,None,Move,development
+1571836893.346,1115,217,None,Move,development
+1571836893.356,1118,222,None,Move,development
+1571836893.3660002,1125,227,None,Move,development
+1571836893.3760002,1130,232,None,Move,development
+1571836893.3879998,1134,236,None,Move,development
+1571836893.399,1139,241,None,Move,development
+1571836893.408,1143,243,None,Move,development
+1571836893.419,1146,246,None,Move,development
+1571836893.429,1148,249,None,Move,development
+1571836893.44,1151,251,None,Move,development
+1571836893.451,1154,254,None,Move,development
+1571836893.461,1158,256,None,Move,development
+1571836893.471,1161,257,None,Move,development
+1571836893.485,1166,258,None,Move,development
+1571836893.496,1169,260,None,Move,development
+1571836893.5070002,1173,261,None,Move,development
+1571836893.52,1179,261,None,Move,development
+1571836893.53,1186,261,None,Move,development
+1571836893.542,1194,261,None,Move,development
+1571836893.554,1201,261,None,Move,development
+1571836893.563,1210,259,None,Move,development
+1571836893.574,1220,257,None,Move,development
+1571836893.584,1230,254,None,Move,development
+1571836893.593,1241,253,None,Move,development
+1571836893.6020002,1253,250,None,Move,development
+1571836893.6120002,1267,248,None,Move,development
+1571836893.6220002,1280,247,None,Move,development
+1571836893.6320002,1292,247,None,Move,development
+1571836893.64,1304,247,None,Move,development
+1571836893.647,1314,249,None,Move,development
+1571836893.653,1319,250,None,Move,development
+1571836893.658,1319,250,Left,Pressed,development
+1571836893.663,1319,250,Left,Released,development
+1571836893.7429998,1319,251,None,Move,development
+1571836893.748,1324,266,None,Move,development
+1571836893.758,1332,286,None,Move,development
+1571836893.766,1344,310,None,Move,development
+1571836893.7729998,1360,342,None,Move,development
+1571836893.781,1378,374,None,Move,development
+1571836893.789,1398,406,None,Move,development
+1571836893.802,1420,436,None,Move,development
+1571836893.8079998,1438,462,None,Move,development
+1571836893.814,1456,488,None,Move,development
+1571836893.821,1472,508,None,Move,development
+1571836893.833,1488,526,None,Move,development
+1571836893.841,1502,540,None,Move,development
+1571836893.8479998,1520,552,None,Move,development
+1571836893.853,1533,562,None,Move,development
+1571836893.8679998,1547,569,None,Move,development
+1571836893.8739998,1565,575,None,Move,development
+1571836893.879,1581,579,None,Move,development
+1571836893.893,1595,583,None,Move,development
+1571836893.899,1611,583,None,Move,development
+1571836893.905,1625,585,None,Move,development
+1571836893.911,1638,586,None,Move,development
+1571836893.92,1650,588,None,Move,development
+1571836893.934,1660,588,None,Move,development
+1571836893.941,1670,590,None,Move,development
+1571836893.948,1680,591,None,Move,development
+1571836893.956,1688,593,None,Move,development
+1571836893.9629998,1693,595,None,Move,development
+1571836893.969,1699,598,None,Move,development
+1571836893.974,1705,601,None,Move,development
+1571836893.981,1710,604,None,Move,development
+1571836893.9870002,1714,606,None,Move,development
+1571836893.9929998,1720,613,None,Move,development
+1571836894.0010002,1726,619,None,Move,development
+1571836894.01,1731,625,None,Move,development
+1571836894.032,1739,633,None,Move,development
+1571836894.052,1747,640,None,Move,development
+1571836894.074,1755,649,None,Move,development
+1571836894.095,1763,657,None,Move,development
+1571836894.1139998,1773,667,None,Move,development
+1571836894.133,1783,670,None,Move,development
+1571836894.149,1791,672,None,Move,development
+1571836894.169,1800,675,None,Move,development
+1571836894.185,1809,677,None,Move,development
+1571836894.202,1818,678,None,Move,development
+1571836894.22,1824,678,None,Move,development
+1571836894.238,1828,678,None,Move,development
+1571836894.2570002,1831,678,None,Move,development
+1571836894.274,1834,677,None,Move,development
+1571836894.292,1836,677,None,Move,development
+1571836894.309,1839,676,None,Move,development
+1571836894.326,1841,674,None,Move,development
+1571836894.343,1843,672,None,Move,development
+1571836894.361,1845,669,None,Move,development
+1571836894.379,1847,666,None,Move,development
+1571836894.397,1849,663,None,Move,development
+1571836894.416,1851,660,None,Move,development
+1571836894.426,1853,656,None,Move,development
+1571836894.435,1854,653,None,Move,development
+1571836894.4420002,1855,649,None,Move,development
+1571836894.449,1856,645,None,Move,development
+1571836894.454,1857,640,None,Move,development
+1571836894.459,1858,636,None,Move,development
+1571836894.464,1858,629,None,Move,development
+1571836894.468,1859,622,None,Move,development
+1571836894.4729998,1859,617,None,Move,development
+1571836894.479,1860,612,None,Move,development
+1571836894.484,1861,608,None,Move,development
+1571836894.488,1861,606,None,Move,development
+1571836894.4929998,1863,604,None,Move,development
+1571836894.498,1863,602,None,Move,development
+1571836894.5029998,1864,600,None,Move,development
+1571836894.508,1864,597,None,Move,development
+1571836894.512,1865,595,None,Move,development
+1571836894.5170002,1866,593,None,Move,development
+1571836894.522,1867,592,None,Move,development
+1571836894.526,1867,590,None,Move,development
+1571836894.531,1868,588,None,Move,development
+1571836894.5370002,1869,586,None,Move,development
+1571836894.542,1871,584,None,Move,development
+1571836894.5470002,1873,582,None,Move,development
+1571836894.552,1875,580,None,Move,development
+1571836894.5570002,1877,578,None,Move,development
+1571836894.561,1879,576,None,Move,development
+1571836894.566,1881,574,None,Move,development
+1571836894.57,1883,573,None,Move,development
+1571836894.575,1883,572,None,Move,development
+1571836894.58,1884,572,None,Move,development
+1571836894.7410002,1884,572,Left,Pressed,development
+1571836894.879,1884,572,Left,Released,development
+1571836898.681,1884,569,None,Move,development
+1571836898.694,1887,536,None,Move,development
+1571836898.708,1885,496,None,Move,development
+1571836898.7270002,1879,462,None,Move,development
+1571836898.746,1869,438,None,Move,development
+1571836898.766,1857,420,None,Move,development
+1571836898.785,1843,404,None,Move,development
+1571836898.804,1827,386,None,Move,development
+1571836898.821,1809,366,None,Move,development
+1571836898.837,1793,350,None,Move,development
+1571836898.854,1777,336,None,Move,development
+1571836898.8679998,1763,324,None,Move,development
+1571836898.88,1749,316,None,Move,development
+1571836898.895,1737,310,None,Move,development
+1571836898.907,1725,306,None,Move,development
+1571836898.92,1716,302,None,Move,development
+1571836898.9320002,1706,298,None,Move,development
+1571836898.944,1695,296,None,Move,development
+1571836898.957,1685,295,None,Move,development
+1571836898.97,1675,295,None,Move,development
+1571836898.982,1668,295,None,Move,development
+1571836898.995,1660,295,None,Move,development
+1571836899.0070002,1652,295,None,Move,development
+1571836899.02,1643,296,None,Move,development
+1571836899.031,1635,297,None,Move,development
+1571836899.043,1624,299,None,Move,development
+1571836899.056,1611,302,None,Move,development
+1571836899.07,1600,303,None,Move,development
+1571836899.082,1586,304,None,Move,development
+1571836899.095,1573,304,None,Move,development
+1571836899.107,1558,304,None,Move,development
+1571836899.119,1541,304,None,Move,development
+1571836899.131,1523,304,None,Move,development
+1571836899.143,1503,304,None,Move,development
+1571836899.155,1486,304,None,Move,development
+1571836899.167,1470,301,None,Move,development
+1571836899.179,1454,297,None,Move,development
+1571836899.1920002,1441,296,None,Move,development
+1571836899.204,1428,292,None,Move,development
+1571836899.215,1415,288,None,Move,development
+1571836899.2270002,1404,285,None,Move,development
+1571836899.24,1393,281,None,Move,development
+1571836899.2510002,1383,277,None,Move,development
+1571836899.2629998,1372,274,None,Move,development
+1571836899.275,1362,270,None,Move,development
+1571836899.2870002,1352,267,None,Move,development
+1571836899.299,1342,264,None,Move,development
+1571836899.314,1334,259,None,Move,development
+1571836899.326,1326,254,None,Move,development
+1571836899.342,1321,248,None,Move,development
+1571836899.355,1317,244,None,Move,development
+1571836899.3679998,1312,239,None,Move,development
+1571836899.38,1310,237,None,Move,development
+1571836899.393,1310,237,Left,Pressed,development
+1571836899.416,1310,237,Left,Released,development

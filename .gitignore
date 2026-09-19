@@ -1,2 +1,5 @@
 Bogazici_cleaned
 main_trainset
+
+# Parquet datasets - processed corpora, regenerated from the raw data
+*.parquet
