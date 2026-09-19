@@ -1,0 +1,21 @@
+{
+  "input_dim": 32,
+  "embedding_dim": 128,
+  "n_background": 4000,
+  "train_root": "C:\\Users\\stsyg\\Documents\\GitHub\\IBM_hackathon_2026\\training_files",
+  "n_train_windows": 85018,
+  "train_users": [
+    "user12",
+    "user15",
+    "user16",
+    "user20",
+    "user21",
+    "user23",
+    "user29",
+    "user35",
+    "user7",
+    "user9"
+  ],
+  "epochs": 40,
+  "embedding_spread": 0.5382739901542664
+}

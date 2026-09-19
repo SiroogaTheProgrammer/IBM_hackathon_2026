@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Continuous Behavioral Biometrics - Demo</title>
+<style>
+  :root{
+    --bg:#0e1117; --panel:#161b22; --line:#30363d; --txt:#e6edf3;
+    --dim:#8b949e; --ok:#3fb950; --warn:#d29922; --bad:#f85149; --accent:#58a6ff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:14px/1.5 "Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--txt)}
+  header{padding:14px 20px;border-bottom:1px solid var(--line);display:flex;
+         align-items:center;gap:16px;flex-wrap:wrap}
+  h1{font-size:16px;margin:0;font-weight:600}
+  .grow{flex:1}
+  button{background:var(--panel);color:var(--txt);border:1px solid var(--line);
+         border-radius:6px;padding:6px 12px;cursor:pointer;font-size:13px}
+  button:hover{border-color:var(--accent)}
+  button.active{background:var(--accent);color:#04121f;border-color:var(--accent);font-weight:600}
+  .wrap{display:grid;grid-template-columns:1fr 380px;gap:16px;padding:16px}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px}
+  .panel h2{font-size:12px;text-transform:uppercase;letter-spacing:.08em;
+            color:var(--dim);margin:0 0 12px}
+  .tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+  .stat{display:flex;justify-content:space-between;padding:5px 0;
+        border-bottom:1px solid #21262d}
+  .stat:last-child{border-bottom:none}
+  .stat span:first-child{color:var(--dim)}
+  .stat span:last-child{font-variant-numeric:tabular-nums;font-weight:600}
+  .big{font-size:40px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+  .bar{height:8px;background:#21262d;border-radius:4px;overflow:hidden;margin:8px 0}
+  .bar>div{height:100%;width:0;background:var(--accent);transition:width .3s}
+  table{width:100%;border-collapse:collapse;font-size:12.5px}
+  th{text-align:left;color:var(--dim);font-weight:500;padding:6px 4px;
+     border-bottom:1px solid var(--line)}
+  td{padding:6px 4px;border-bottom:1px solid #21262d;font-variant-numeric:tabular-nums}
+  .pill{font-size:11px;padding:2px 7px;border-radius:10px;border:1px solid var(--line)}
+  .s-active{color:var(--ok);border-color:var(--ok)}
+  .s-warming{color:var(--warn);border-color:var(--warn)}
+  .s-inactive{color:var(--dim)}
+  .s-error{color:var(--bad);border-color:var(--bad)}
+  #playground{height:260px;border:1px dashed var(--line);border-radius:8px;
+              display:flex;align-items:center;justify-content:center;color:var(--dim);
+              text-align:center;padding:20px;user-select:none}
+  canvas{width:100%;height:170px;display:block}
+  .note{font-size:12px;color:var(--dim);margin-top:10px}
+  #banner{display:none;padding:12px 16px;border-radius:8px;margin:0 16px;
+          background:#3d1518;border:1px solid var(--bad);color:#ffb4ad;font-weight:600}
+  input[type=text]{background:#0d1117;border:1px solid var(--line);color:var(--txt);
+                   border-radius:6px;padding:8px;width:100%;margin-top:8px}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Continuous Behavioral Biometrics</h1>
+  <span class="pill" id="phase">connecting…</span>
+  <span class="grow"></span>
+  <span class="pill" id="tickLabel">tick 0</span>
+  <button id="resetBtn">Reset session</button>
+</header>
+
+<div id="banner">Step-up authentication required — behaviour deviated from the baseline gallery.</div>
+
+<div class="wrap">
+  <div>
+    <div class="panel">
+      <h2>Mock enterprise dashboard</h2>
+      <div class="tabs" id="tabs"></div>
+      <div id="playground">
+        Move the mouse in here, click, scroll and switch tabs.<br>
+        The first 30 windows (~60&nbsp;s) build your baseline gallery.<br>
+        Then try moving in a deliberately different style to watch the risk climb.
+      </div>
+      <input type="text" id="typing" placeholder="Type here to feed the keystroke addon (if enabled)…">
+      <div class="note" id="eventNote">0 events buffered</div>
+    </div>
+
+    <div class="panel" style="margin-top:16px">
+      <h2>Risk over time</h2>
+      <canvas id="chart"></canvas>
+      <div class="note">
+        Blue = composite risk per 2&nbsp;s window. Red dashed = escalation threshold.
+        Grey band = warm-up (no score produced yet).
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="panel">
+      <h2>Composite risk</h2>
+      <div class="big" id="riskBig">—</div>
+      <div class="bar"><div id="riskBar"></div></div>
+      <div class="stat"><span>Verdict</span><span id="verdict">—</span></div>
+      <div class="stat"><span>Threshold</span><span id="threshold">—</span></div>
+      <div class="stat"><span>Consecutive spikes</span><span id="streak">0</span></div>
+      <div class="stat"><span>Active modules</span><span id="activeMods">0</span></div>
+    </div>
+
+    <div class="panel" style="margin-top:16px">
+      <h2>Baseline gallery</h2>
+      <div class="stat"><span>Vectors stored</span><span id="gallerySize">0 / 30</span></div>
+      <div class="bar"><div id="warmBar"></div></div>
+      <div class="stat"><span>Mode</span><span id="galleryMode">—</span></div>
+      <div class="stat"><span>Embedding</span><span>128-D (L2-normalised)</span></div>
+    </div>
+
+    <div class="panel" style="margin-top:16px">
+      <h2>Deviation from gallery</h2>
+      <div class="stat"><span>Nearest vector (cos)</span><span id="cosMin">—</span></div>
+      <div class="stat"><span>Mean over gallery</span><span id="cosMean">—</span></div>
+      <div class="stat"><span>To centroid</span><span id="cosCentroid">—</span></div>
+      <div class="note">0.0 = identical to the baseline, 1.0 = orthogonal to it.</div>
+    </div>
+
+    <div class="panel" style="margin-top:16px">
+      <h2>Modules (late fusion)</h2>
+      <table>
+        <thead><tr><th>Module</th><th>Risk</th><th>Conf</th><th>Weight</th><th>Status</th></tr></thead>
+        <tbody id="moduleRows"><tr><td colspan="5">loading…</td></tr></tbody>
+      </table>
+      <div class="note">Enable or disable modules in <code>addons.json</code>, then restart.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const TICK_MS = 2000;
+let buffer = [], navVisits = [], keyBuffer = [], keyDown = {}, lastKeyUp = null;
+let device = {blur_count:0, resize_count:0, screen:`${screen.width}x${screen.height}`};
+let currentTab = "Home", tabEnteredAt = performance.now();
+let history = [], warmTicks = 0, config = null;
+
+const TABS = ["Home", "Analytics", "Settings", "Billing", "Admin"];
+const $ = id => document.getElementById(id);
+
+// ---------- mock dashboard tabs ----------
+TABS.forEach((name, i) => {
+  const b = document.createElement("button");
+  b.textContent = name;
+  if (i === 0) b.classList.add("active");
+  b.onclick = () => {
+    document.querySelectorAll("#tabs button").forEach(x => x.classList.remove("active"));
+    b.classList.add("active");
+    const now = performance.now();
+    navVisits.push({tab: name, dwell: (now - tabEnteredAt) / 1000});
+    tabEnteredAt = now; currentTab = name;
+  };
+  $("tabs").appendChild(b);
+});
+
+// ---------- telemetry capture ----------
+let buttonDown = false;
+const stamp = () => performance.now() / 1000;
+
+addEventListener("mousemove", e => {
+  buffer.push({t: stamp(), x: e.clientX, y: e.clientY,
+               button: "NoButton", state: buttonDown ? "Drag" : "Move"});
+});
+addEventListener("mousedown", e => {
+  buttonDown = true;
+  buffer.push({t: stamp(), x: e.clientX, y: e.clientY,
+               button: e.button === 2 ? "Right" : "Left", state: "Pressed"});
+});
+addEventListener("mouseup", e => {
+  buttonDown = false;
+  buffer.push({t: stamp(), x: e.clientX, y: e.clientY,
+               button: e.button === 2 ? "Right" : "Left", state: "Released"});
+});
+addEventListener("wheel", e => {
+  buffer.push({t: stamp(), x: e.clientX, y: e.clientY,
+               button: "Scroll", state: e.deltaY < 0 ? "Up" : "Down"});
+}, {passive: true});
+addEventListener("keydown", e => { if (!keyDown[e.key]) keyDown[e.key] = stamp(); });
+addEventListener("keyup", e => {
+  const down = keyDown[e.key];
+  if (down === undefined) return;
+  delete keyDown[e.key];
+  const up = stamp();
+  keyBuffer.push({key: e.key, dwell: (up - down) * 1000,
+                  flight: lastKeyUp === null ? 0 : (down - lastKeyUp) * 1000});
+  lastKeyUp = up;
+});
+addEventListener("blur", () => device.blur_count++);
+addEventListener("resize", () => device.resize_count++);
+
+setInterval(() => { $("eventNote").textContent = `${buffer.length} events buffered`; }, 400);
+
+// ---------- 2 s tick ----------
+async function tick() {
+  const payload = {events: buffer, nav: navVisits, keys: keyBuffer, device: device};
+  buffer = []; navVisits = []; keyBuffer = [];
+  device = {blur_count: 0, resize_count: 0, screen: `${screen.width}x${screen.height}`};
+
+  try {
+    const res = await fetch("/api/tick", {
+      method: "POST", headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(payload)
+    });
+    render(await res.json());
+  } catch (err) {
+    $("phase").textContent = "server unreachable";
+  }
+}
+
+// ---------- rendering (textContent only - never innerHTML with server data) ----------
+function render(d) {
+  $("tickLabel").textContent = `tick ${history.length + warmTicks}`;
+  const sess = d.session || {};
+  const warm = sess.warmup_size || 30;
+
+  $("gallerySize").textContent = `${sess.gallery_size || 0} / ${warm}`;
+  $("warmBar").style.width = (100 * (sess.gallery_size || 0) / warm) + "%";
+  $("galleryMode").textContent = sess.gallery_mode || "—";
+  $("threshold").textContent = (d.threshold ?? 0).toFixed(3);
+  $("streak").textContent = d.streak ?? 0;
+  $("activeMods").textContent = d.active_modules ?? 0;
+
+  if (sess.status === "warming") {
+    warmTicks++;
+    $("phase").textContent = `warming up — ${warm - (sess.gallery_size || 0)} windows left`;
+    $("phase").className = "pill s-warming";
+  } else {
+    $("phase").textContent = "continuous scoring";
+    $("phase").className = "pill s-active";
+  }
+
+  if (d.composite_risk === null || d.composite_risk === undefined) {
+    $("riskBig").textContent = sess.status === "warming" ? "warm-up" : "idle";
+    $("riskBar").style.width = "0%";
+  } else {
+    const r = d.composite_risk;
+    history.push(r);
+    $("riskBig").textContent = r.toFixed(3);
+    $("riskBig").style.color = r >= d.threshold ? "var(--bad)"
+                             : r >= d.threshold * 0.7 ? "var(--warn)" : "var(--ok)";
+    $("riskBar").style.width = (r * 100) + "%";
+    $("riskBar").style.background = r >= d.threshold ? "var(--bad)" : "var(--accent)";
+  }
+
+  $("verdict").textContent = d.verdict || "—";
+  $("verdict").style.color = d.verdict === "ESCALATE" ? "var(--bad)" : "var(--ok)";
+  $("banner").style.display = d.escalated ? "block" : "none";
+
+  const base = (d.modules || []).find(m => m.plugin_id === "mouse_base_v1");
+  const det = (base && base.detail) || {};
+  const fmt = v => (typeof v === "number" ? v.toFixed(4) : "—");
+  $("cosMin").textContent = fmt(det.cos_min);
+  $("cosMean").textContent = fmt(det.cos_mean);
+  $("cosCentroid").textContent = fmt(det.cos_centroid);
+
+  const tbody = $("moduleRows");
+  tbody.textContent = "";
+  (d.modules || []).forEach(m => {
+    const weight = (config?.modules || []).find(c => c.plugin_id === m.plugin_id)?.weight;
+    const row = tbody.insertRow();
+    const cells = [
+      m.plugin_id,
+      m.status === "active" ? m.risk_score.toFixed(3) : "—",
+      m.confidence.toFixed(2),
+      weight === undefined ? "—" : weight.toFixed(2),
+      m.status
+    ];
+    cells.forEach((text, i) => {
+      const cell = row.insertCell();
+      cell.textContent = text;
+      if (i === 4) cell.className = "pill s-" + m.status;
+    });
+  });
+
+  drawChart(d.threshold ?? 0.8);
+}
+
+function drawChart(threshold) {
+  const cv = $("chart"), ctx = cv.getContext("2d");
+  const w = cv.width = cv.clientWidth * devicePixelRatio;
+  const h = cv.height = cv.clientHeight * devicePixelRatio;
+  ctx.clearRect(0, 0, w, h);
+
+  const total = warmTicks + history.length;
+  if (total === 0) return;
+  const step = w / Math.max(total, 40);
+
+  ctx.fillStyle = "rgba(139,148,158,.14)";
+  ctx.fillRect(0, 0, warmTicks * step, h);
+
+  ctx.strokeStyle = "#f85149"; ctx.setLineDash([5, 4]); ctx.lineWidth = devicePixelRatio;
+  ctx.beginPath(); ctx.moveTo(0, h - threshold * h); ctx.lineTo(w, h - threshold * h);
+  ctx.stroke(); ctx.setLineDash([]);
+
+  ctx.strokeStyle = "#58a6ff"; ctx.lineWidth = 2 * devicePixelRatio;
+  ctx.beginPath();
+  history.forEach((r, i) => {
+    const x = (warmTicks + i) * step, y = h - r * h;
+    i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+  });
+  ctx.stroke();
+}
+
+// ---------- boot ----------
+fetch("/api/config").then(r => r.json()).then(c => {
+  config = c;
+  $("threshold").textContent = c.threshold.toFixed(3);
+  $("gallerySize").textContent = `0 / ${c.warmup_size}`;
+  $("galleryMode").textContent = c.gallery_mode;
+});
+
+$("resetBtn").onclick = async () => {
+  await fetch("/api/reset", {method: "POST"});
+  history = []; warmTicks = 0; $("banner").style.display = "none";
+  $("riskBig").textContent = "—"; drawChart(0.8);
+};
+
+setInterval(tick, TICK_MS);
+</script>
+</body>
+</html>

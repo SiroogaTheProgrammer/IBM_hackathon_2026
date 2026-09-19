@@ -1,0 +1,295 @@
+FILE 1
+
+**Project Title:** AI-Powered Continuous Behavioral Biometrics
+
+---
+
+**1. System Architecture & Data Flow**
+
+```
+[User Interaction] 
+       │ (MouseMove, Click, KeyPress)
+       ▼
+[JS Telemetry Scraper] ──> Extracts 32 statistical features every 2–3s
+       │
+       ▼
+[Siamese Network (128D Encoder)] ──> Converts features into 128D Behavioral Vector
+       │
+       ▼
+[LightGBM Anomaly Scorer] ──> Compares live vector against stored User Gallery
+       │
+       ▼
+[Security Action Engine] ──> Anomaly Score < 0.8: Allow
+                             Anomaly Score ≥ 0.8 (for 3 cycles): Trigger 2FA / Lockout
+
+```
+
+---
+
+**2. Frontend Telemetry & Feature Engineering (JS Lead)**
+
+* **Raw Event Capture:** Listen to `mousemove`, `mousedown`, `mouseup`, `keydown`, `keyup`, and `wheel`.
+* **Sampling Window:** Batch and process events every **$2\text{--}3\text{ seconds}$**.
+* **32 Extracted Features:**
+* *Kinematics:* Mean/Max Velocity, Acceleration, Jerk (3rd derivative of position).
+* *Geometry:* Path curvature, straight-line efficiency ratio ($d_{\text{direct}} / d_{\text{actual}}$), angular direction changes.
+* *Rhythm:* Click dwell time (`mouseup` - `mousedown`), keypress flight time, idle-to-movement ratio.
+* *Tremor (Spectral):* Fast Fourier Transform (FFT) frequency distribution of micro-movements.
+
+
+
+---
+
+**3. AI/ML Engine (ML Lead)**
+
+* **Stage 1: Siamese Neural Network (Feature Encoder)**
+* **Input Size:** 32 engineered features.
+* **Architecture:** `Input(32) -> Dense(64, ReLU) -> Dense(128, ReLU) -> Dense(128, Linear) -> L2 Norm`.
+* **Output:** $128\text{D}$ normalized embedding vector.
+* **Pre-Training:** Train once using **Triplet Loss** on public benchmark data (*Balabit Mouse Dynamics Dataset*) to learn human movement distances.
+
+
+* **Stage 2: LightGBM Anomaly Classifier**
+* **Inputs:** Live $128\text{D}$ vector + calculated Cosine/Euclidean distances relative to the user's gallery.
+* **Training:** Fits in $<50\text{ms}$ upon user login using 30 user gallery vectors (Class 0) vs. 150 background dataset samples (Class 1).
+
+
+
+---
+
+**4. User Lifecycle & Application Logic**
+
+| Phase | Duration | Action |
+| --- | --- | --- |
+| **1. Cold Start (Enrollment)** | First $30\text{--}60\text{s}$ | Collect $15\text{--}30$ valid $128\text{D}$ vectors. Store them in memory as the user's **Baseline Gallery**. |
+| **2. Continuous Scoring** | Ongoing ($2\text{s}$ intervals) | Generate live $128\text{D}$ vector $\rightarrow$ Query LightGBM $\rightarrow$ Produce Risk Score ($0.0\text{--}1.0$). |
+| **3. Threat Escalation** | $3\times$ consecutive spikes | If Risk Score $> 0.80$ three times in a row, trigger step-up authentication (2FA modal) or terminate session. |
+
+---
+
+**5. Hackathon Task Allocation**
+
+* **Developer 1 (Frontend / Telemetry):** Write the JS listener to capture mouse/keyboard events, implement feature math (velocity, jerk, dwell times), and output JSON batches every $2\text{s}$.
+* **Developer 2 (ML Engineer):** Pre-train the $128\text{D}$ PyTorch Siamese Network on the Balabit dataset, export to ONNX/TensorFlow.js, and build the LightGBM evaluation script.
+* **Developer 3 (Backend / UI Integration):** Build a mock enterprise dashboard (e.g., financial/admin portal), integrate the WebSocket/API communication, and design the live "Security Trust Score" UI widget + 2FA lockout modal.
+
+FILE 2
+
+Integrate navigation metrics directly into the main feature vector using **Stateful Concatenation**.
+
+Building a separate sub-model creates unnecessary system complexity and network overhead. Because physical telemetry fires continuously (every 2–3 seconds) while navigation events fire asynchronously (only on tab clicks), maintain a stateful **"Navigation Snapshot"** in memory. Every time the 2-second telemetry window closes, append the latest navigation values to the vector before passing it to the model.
+
+---
+
+### Integration Architecture: Stateful Concatenation
+
+```
+[Mouse/Keyboard Events] ──> Computed every 2s ──> [32 Physical Features]  ──┐
+                                                                           ├──> [38 Combined Features] ──> LightGBM
+[Tab Navigation Events] ──> State updated live ──> [ 6 Nav Features ]     ──┘
+
+```
+
+By passing all 38 features into a single LightGBM model, the decision trees can learn cross-domain rules—such as detecting when a user navigates to an unexpected tab (*high navigation surprise*) while simultaneously moving the mouse with unusual speed (*high kinematic deviation*).
+
+---
+
+### The 32 Core Physical Input Parameters
+
+All parameters are normalized per 2–3 second sampling window ($W$) containing $N$ raw sampled events $(x_i, y_i, t_i)$.
+
+#### 1. Mouse Kinematics (8 Features)
+
+*Source events: `mousemove*`
+
+| # | Feature Name | Math / Calculation |
+| --- | --- | --- |
+| **1** | `v_mean` | Mean velocity: $\frac{1}{N-1} \sum \frac{\Delta d_i}{\Delta t_i}$ where $\Delta d_i = \sqrt{(x_i - x_{i-1})^2 + (y_i - y_{i-1})^2}$ |
+| **2** | `v_max` | Maximum instantaneous velocity $\max\left(\frac{\Delta d_i}{\Delta t_i}\right)$ in window $W$ |
+| **3** | `v_std` | Standard deviation of velocity values across $W$ |
+| **4** | `a_mean` | Mean acceleration: $\frac{1}{N-2} \sum \frac{\Delta v_i}{\Delta t_i}$ where $\Delta v_i = v_i - v_{i-1}$ |
+| **5** | `a_max` | Maximum instantaneous acceleration $\max\left(\frac{\Delta v_i}{\Delta t_i}\right)$ |
+| **6** | `a_std` | Standard deviation of acceleration values across $W$ |
+| **7** | `j_mean` | Mean jerk (rate of acceleration change): $\frac{1}{N-3} \sum \frac{\Delta a_i}{\Delta t_i}$ |
+| **8** | `j_max` | Maximum instantaneous jerk $\max\left(\frac{\Delta a_i}{\Delta t_i}\right)$ |
+
+#### 2. Geometry & Trajectory (6 Features)
+
+*Source events: `mousemove*`
+
+| # | Feature Name | Math / Calculation |
+| --- | --- | --- |
+| **9** | `path_efficiency` | Ratio of straight-line distance to actual distance: $\frac{\sqrt{(x_N - x_1)^2 + (y_N - y_1)^2}}{\sum \Delta d_i}$ |
+| **10** | `total_curvature` | Sum of direction angle changes: $\sum \vert{}\theta_i - \theta_{i-1}\vert{}$ where $\theta_i = \arctan2(\Delta y_i, \Delta x_i)$ |
+| **11** | `mean_angular_velocity` | Average rate of direction change: $\frac{1}{N-1}\sum \frac{\vert{}\Delta \theta_i\vert{}}{\Delta t_i}$ |
+| **12** | `dir_changes_x` | Count of times $\text{sign}(\Delta x_i) \neq \text{sign}(\Delta x_{i-1})$ |
+| **13** | `dir_changes_y` | Count of times $\text{sign}(\Delta y_i) \neq \text{sign}(\Delta y_{i-1})$ |
+| **14** | `inflection_points` | Count of points where path curvature changes sign (concave to convex) |
+
+#### 3. Mouse Rhythm & Timing (6 Features)
+
+*Source events: `mousedown`, `mouseup`, `mousemove*`
+
+| # | Feature Name | Math / Calculation |
+| --- | --- | --- |
+| **15** | `click_dwell_mean` | Average time duration a click is held down: $\text{mean}(t_{\text{mouseup}} - t_{\text{mousedown}})$ |
+| **16** | `click_dwell_std` | Standard deviation of click duration across $W$ |
+| **17** | `pause_count` | Count of idle periods where $v_i = 0$ for duration $> 200\text{ms}$ |
+| **18** | `pause_ratio` | Total idle time divided by total window duration: $\frac{\sum t_{\text{idle}}}{T_{\text{window}}}$ |
+| **19** | `double_click_latency` | Time delta between two consecutive clicks on the same element |
+| **20** | `hover_duration_mean` | Mean dwell time cursor remains stationary ($v < \epsilon$) over clickable elements before clicking |
+
+#### 4. Keyboard Dynamics (6 Features)
+
+*Source events: `keydown`, `keyup*`
+
+| # | Feature Name | Math / Calculation |
+| --- | --- | --- |
+| **21** | `key_dwell_mean` | Average duration a key is pressed: $\text{mean}(t_{\text{keyup}} - t_{\text{keydown}})$ |
+| **22** | `key_dwell_std` | Standard deviation of key press durations |
+| **23** | `flight_time_mean` | Average latency between releasing Key A and pressing Key B: $\text{mean}(t_{\text{keydown}, B} - t_{\text{keyup}, A})$ |
+| **24** | `flight_time_std` | Standard deviation of flight times |
+| **25** | `typing_speed` | Keypress frequency in keys per second: $\frac{\text{Count}(\text{keydown})}{T_{\text{window}}}$ |
+| **26** | `error_rate_ratio` | Proportion of correction keys pressed: $\frac{\text{Count}(\text{Backspace} + \text{Delete})}{\text{Total Keypresses}}$ |
+
+#### 5. Spectral & Tremor Dynamics (4 Features)
+
+*Source events: Fast Fourier Transform (FFT) on $x(t)$ and $y(t)$ movement series*
+
+| # | Feature Name | Math / Calculation |
+| --- | --- | --- |
+| **27** | `fft_peak_freq_x` | Dominant frequency spike on X-axis trajectory via $\text{FFT}(x(t))$ |
+| **28** | `fft_peak_freq_y` | Dominant frequency spike on Y-axis trajectory via $\text{FFT}(y(t))$ |
+| **29** | `tremor_band_energy` | Spectral power in the $8\text{--}12\text{ Hz}$ frequency band (captures physiological hand tremors) |
+| **30** | `spectral_entropy` | Measure of frequency randomness: $H_s = -\sum P(f) \log_2 P(f)$ on the FFT magnitude spectrum |
+
+#### 6. Context & Interaction (2 Features)
+
+*Source events: `wheel`, `scroll*`
+
+| # | Feature Name | Math / Calculation |
+| --- | --- | --- |
+| **31** | `scroll_speed_mean` | Mean pixels scrolled per millisecond on wheel events: $\text{mean}\left(\frac{\Delta \text{pixels}}{\Delta t}\right)$ |
+| **32** | `scroll_direction_changes` | Count of reversals between scrolling up ($\Delta y_{\text{scroll}} > 0$) and down ($\Delta y_{\text{scroll}} < 0$) |
+
+FILE 3
+
+To analyze dashboard navigation, you are dealing with **Time-Aware Discrete Sequences** (discrete tab choices paired with continuous time durations).
+
+Rather than building a complex standalone neural network that slows down your dashboard, the cleanest hackathon solution is to convert navigation workflows into a small vector of statistical features and feed them directly into your existing **LightGBM / GBDT Risk Engine**.
+
+---
+
+### 1. How to Turn Navigation into Valuable Numbers
+
+A raw navigation log looks like this:
+`[Tab: Home (12s)] -> [Tab: Analytics (3s)] -> [Tab: User Settings (45s)]`
+
+You convert this sequence into numerical features using three mathematical techniques:
+
+#### A. Transition Probability (Markov N-Gram Matrix)
+
+Assign every tab an ID (`Home=0`, `Analytics=1`, `Settings=2`, `Billing=3`). Track how often the legitimate user transitions from Tab $A$ to Tab $B$.
+
+* **Transition Matrix $P(i \to j)$:** If the real user goes `Home -> Analytics` $80\%$ of the time, $P(0 \to 1) = 0.8$.
+* **Transition Surprise Score:** When a user navigates from Tab $i$ to Tab $j$, calculate the "Surprise":
+
+$$\text{Surprise} = -\log_2(P(i \to j))$$
+
+*(If an attacker jumps straight from `Home -> Billing`—a path the real user never takes—$P(0 \to 3) \approx 0.01$, causing the Surprise Score to spike).*
+
+#### B. Dwell Time Z-Score (Timing Anomalies)
+
+People navigate dashboards with specific goals. An employee who knows the system spends **$2\text{ seconds}$** finding a setting; an attacker searching for sensitive data spends **$30\text{ seconds}$** reading the tab.
+
+* Calculate the historical mean ($\mu$) and standard deviation ($\sigma$) of the user's dwell time on each specific tab.
+* For every tab visit, compute the Z-score:
+
+$$Z = \frac{\text{DwellTime} - \mu_{\text{tab}}}{\sigma_{\text{tab}}}$$
+
+#### C. Sequence Entropy (Navigational Chaos)
+
+Calculate the Shannon Entropy of tab visits over a rolling 5-step window to measure how "random" or erratic their navigation path is:
+
+$$H(X) = -\sum_{i=1}^{N} P(x_i) \log_2 P(x_i)$$
+
+* **Legitimate User:** Low entropy (follows repetitive, structured workflows).
+* **Attacker/Scraper:** High entropy (clicks tabs erratically looking for vulnerabilities).
+
+---
+
+### 2. The Complete Navigation Feature Vector
+
+For every tab click, your JS telemetry script generates a **6-feature numeric vector**:
+
+| Feature Name | Description | Example Value |
+| --- | --- | --- |
+| `current_tab_id` | Integer ID of current view | `2` (`Settings`) |
+| `prev_tab_id` | Integer ID of previous view | `1` (`Analytics`) |
+| `transition_prob` | Historical probability of moving `prev_tab` $\to$ `current_tab` | `0.85` |
+| `dwell_time_zscore` | Z-score of time spent on the *previous* tab | `+0.4` (Normal) |
+| `sequence_entropy` | Entropy of the last 5 tab visits | `1.2` |
+| `out_of_order_flag` | Binary indicator ($1$ if transition probability $< 0.05$, else $0$) | `0` |
+
+---
+
+### 3. What Model Should You Design?
+
+#### Option A: Feed Into Existing LightGBM (Recommended for Hackathon)
+
+Append these 6 navigation features directly to your 32-feature mouse/keyboard telemetry vector. Your LightGBM model now evaluates physical habits **and** workflow logic simultaneously in a single, fast sub-millisecond pass.
+
+#### Option B: Dedicated Sequence NN (Embedding + GRU)
+
+If your team wants a dedicated neural network specifically for navigation sequence modeling:
+
+```
+[Tab ID Sequence] ──> Embedding Layer (8D) ──┐
+                                             ├──> Concatenate ──> GRU Layer (32 units) ──> Dense (1) ──> Anomaly Score
+[Dwell Times & Zs] ──────────────────────────┘
+
+```
+
+1. **Embedding Layer:** Maps discrete Tab IDs (e.g., Tab 0 to 20) into an 8-dimensional dense vector space.
+2. **Concatenation:** Combines the Tab Embedding vector with continuous features (`dwell_time`, `z_score`).
+3. **Gated Recurrent Unit (GRU):** A lightweight recurrent layer (faster than LSTM) that processes the last 5 to 10 tab steps to detect sequential order anomalies.
+
+---
+
+### Summary Recommendation
+
+Start by computing **Transition Probabilities + Dwell Time Z-scores** in JavaScript. Append them directly to your existing LightGBM vector. This gives you high-accuracy workflow detection without adding the engineering complexity of a second recurrent neural network.
+
+FILE 4
+
+The Modular "Base + Extension" ArchitectureIf you want a base model (32 physical inputs) that can accept optional extensions (Tab Navigation, Keystroke Dynamics, API Usage) as plugins, do not combine all features into a single large input vector.If you use Early Fusion (combining all features into one vector), adding or removing an extension changes the input shape, breaking the base neural network and forcing you to retrain it.Instead, use Late Fusion (Composite Risk Engine).                  ┌─────────────────────────────────────────┐
+                  │          USER INTERACTION STREAM        │
+                  └────────────────────┬────────────────────┘
+                                       │
+        ┌──────────────────────────────┼──────────────────────────────┐
+        ▼                              ▼                              ▼
+┌───────────────┐              ┌───────────────┐              ┌───────────────┐
+│ BASE MODULE   │              │ EXTENSION 1   │              │ EXTENSION 2   │
+│ Mouse/Pointer │              │ Tab Nav Path  │              │ Keystroke     │
+│ (32 Features) │              │ (Markov/Z-Scr)│              │ (Flight/Dwell)│
+└───────┬───────┘              └───────┬───────┘              └───────┬───────┘
+        │                              │                              │
+        │ [Score: 0.12]                │ [Score: 0.85]                │ [Inactive]
+        │ [Weight: 1.0]                │ [Weight: 0.6]                │ [Weight: 0.0]
+        │                              │                              │
+        └──────────────────────────────┼──────────────────────────────┘
+                                       ▼
+                       ┌───────────────────────────────┐
+                       │    COMPOSITE RISK ENGINE      │
+                       │     (Weighted Evaluator)      │
+                       └───────────────┬───────────────┘
+                                       │
+                                       ▼
+                         Final Risk Score: 0.39 (ALLOW)
+How the Modular System Works1. The Core Base Model (Always Active)Inputs: The original 32 mouse/pointer physical features.Model: Siamese Network (128D Embedding) + LightGBM Anomaly Scorer.Output: Base_Risk_Score (float from $0.0$ to $1.0$) and a Confidence_Weight (e.g., $1.0$ if active, $0.0$ if the mouse is idle).2. The Extension Plugin InterfaceEvery extension is an independent module that conforms to a standardized interface. They process their own raw telemetry, run their own specialized logic, and return a standardized JSON payload:JSON{
+  "plugin_id": "tab_navigation_v1",
+  "risk_score": 0.85,
+  "confidence": 0.60,
+  "status": "active"
+}
+Extension A (Tab Navigation): Calculates Markov transition probabilities and dwell-time Z-scores. High score if navigation paths are erratic.Extension B (Keystroke Specialist): Evaluates flight times and dwell times during form fills. High score if typing rhythm changes.Extension C (Device / Environment): Evaluates window resizing, tab switching focus loss (blur/focus events), and screen resolution changes.3. The Dynamic Composite Risk Engine (Late Fusion)The Risk Engine gathers scores from all active modules every 2 seconds and calculates a dynamic weighted average:$$\text{Composite Risk} = \frac{\sum_{i} \left( \text{Risk}_i \times \text{Confidence}_i \times \text{Weight}_i \right)}{\sum_{i} \left( \text{Confidence}_i \times \text{Weight}_i \right)}$$Key Advantages of This DesignZero Downtime Additions: You can build, test, and ship the 32-input Base Model during hour 10 of the hackathon. If a teammate finishes the Tab Navigation module at hour 20, you plug it into the Composite Engine as a new class without retraining or modifying the Base Model.Handles Missing Data Gracefully: If a user is only reading a page (no typing, no tab clicking), those extensions output confidence = 0.0. The system automatically scales up the authority of the active Base Mouse Model.Instant Hard-Triggers (Short-Circuit Logic): The Composite Engine can implement override rules:$$\text{IF } \text{Risk}_{\text{TabNav}} > 0.95 \text{ THEN Trigger Step-Up Auth Immediately}$$If an extension detects a critical anomaly (e.g., jumping directly to a secret /admin/billing tab without prior navigation history), it can trigger an alert immediately, even if the mouse movement looks normal.
