@@ -54,6 +54,18 @@ class CompositeRiskEngine:
         self.history: list[float] = []
 
     def update(self, telemetry: dict) -> CompositeResult:
+        # Adopt the base mouse module's own calibrated per-user threshold
+        # (set by `LiveSession._build_model` from this user's warm-up
+        # distribution) once it exists, instead of escalating against the
+        # fixed global default forever. Without this, users whose natural
+        # score distribution sits well below the 0.8 fallback (see
+        # artifacts/report.txt's per-user `thresh` column, e.g. ~0.37 for
+        # some users) would almost never escalate, even for a blatant
+        # impostor. `registry.build_engine` attaches `self.session`.
+        session = getattr(self, "session", None)
+        if session is not None and getattr(session, "model", None) is not None:
+            self.threshold = session.threshold
+
         results: list[ModuleResult] = []
         for module in self.modules:
             try:

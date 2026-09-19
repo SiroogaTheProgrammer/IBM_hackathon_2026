@@ -250,7 +250,13 @@ export async function processTick(payload: TickPayload): Promise<TickResponse> {
       hardTriggers: {
         tab_navigation_v1: ADDON_CONFIG.modules.tab_navigation_v1.hardTrigger ?? Infinity,
       },
-      threshold: ADDON_CONFIG.session.threshold,
+      // Use this session's own calibrated threshold (set by `fitGallery` from
+      // this user's warm-up distribution), not the fixed global default -
+      // otherwise users whose natural score distribution sits well below the
+      // 0.8 fallback (see artifacts/report.txt's per-user `thresh` column,
+      // e.g. ~0.37 for some users) would almost never escalate, even for a
+      // blatant impostor.
+      threshold: session.threshold,
       cycles: ADDON_CONFIG.session.cycles,
     },
     results.map((r) => ({ pluginId: r.plugin_id, risk: r.risk_score, confidence: r.confidence, status: r.status })),
@@ -265,7 +271,7 @@ export async function processTick(payload: TickPayload): Promise<TickResponse> {
     verdict: outcome.verdict,
     streak: outcome.streak,
     escalated: outcome.escalated,
-    threshold: ADDON_CONFIG.session.threshold,
+    threshold: session.threshold,
     hard_triggered: outcome.hardTriggered,
     active_modules: outcome.activeModules,
     modules: results,
