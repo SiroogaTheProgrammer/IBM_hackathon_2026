@@ -1,0 +1,1291 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   Aalto MyCourses (Moodle Boost / theme_aalto_mycourses) design tokens.
+   Values measured from the live site — do not "improve" them.
+   Light theme only: the moon button in the navbar is decorative.
+   ========================================================================== */
+
+:root {
+  --mc-font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --mc-font-size: 15px;
+  --mc-line-height: 1.5;
+
+  --mc-text: #212529;
+  --mc-bg: #ffffff;
+  --mc-muted: rgba(33, 37, 41, 0.75);
+  --mc-link: #005eb8;
+  --mc-orange: #ff671f;
+  --mc-dark: #212529;
+
+  --mc-yellow: #ffcf3f;
+  --mc-tile-yellow: #fdd835;
+  --mc-danger: #b02a37;
+
+  /* Avatar plates, one muted colour per fictional user (src/data/users.ts). */
+  --mc-avatar-grey: #ced4da;
+  --mc-avatar-sand: #e0cfa9;
+
+  --mc-border: #dee2e6;
+  --mc-border-strong: #adb5bd;
+  --mc-radius: 4px;
+  --mc-band-bg: #f8f9fa;
+  --mc-hover-bg: #e9ecef;
+
+  --mc-navbar-height: 51px;
+  --mc-drawer-left: 285px;
+  --mc-drawer-right: 315px;
+
+  --mc-banner-home: 350px;
+  --mc-banner-user: 200px;
+  --mc-banner-course: 200px;
+
+  /* Remote theme assets (plain CSS background-image — never next/image). */
+  --mc-img-frontpage: url("https://mycourses.aalto.fi/theme/image.php/aalto_mycourses/theme_aalto_mycourses/1789725245/frontpagebackgroundimage");
+  --mc-img-userpage: url("https://mycourses.aalto.fi/theme/image.php/aalto_mycourses/theme_aalto_mycourses/1789725245/userpagebackgroundimage");
+  --mc-img-incourse: url("https://mycourses.aalto.fi/theme/image.php/aalto_mycourses/theme_aalto_mycourses/1789725245/incoursebackgroundimage");
+  --mc-img-tile: url("https://mycourses.aalto.fi/theme/image.php/aalto_mycourses/theme/1789725245/mc_noimg");
+  --mc-img-marker: url("https://mycourses.aalto.fi/theme/image.php/aalto_mycourses/theme_aalto_mycourses/1789725245/mc_section_marker_mikko_raskinen");
+}
+
+@theme inline {
+  --color-mc-text: var(--mc-text);
+  --color-mc-muted: var(--mc-muted);
+  --color-mc-link: var(--mc-link);
+  --color-mc-orange: var(--mc-orange);
+  --color-mc-border: var(--mc-border);
+  --color-mc-band: var(--mc-band-bg);
+  --font-sans: var(--mc-font);
+}
+
+/* ---------------------------------------------------------------- base --- */
+
+body {
+  font-family: var(--mc-font);
+  font-size: var(--mc-font-size);
+  line-height: var(--mc-line-height);
+  color: var(--mc-text);
+  background-color: var(--mc-bg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--mc-link);
+  outline-offset: 1px;
+}
+
+.mc-content {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+/* --------------------------------------------------------- containers --- */
+
+.mc-container {
+  width: 100%;
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+.mc-container-wide {
+  width: 100%;
+  max-width: 994px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+.mc-container-courses {
+  width: 100%;
+  max-width: 994px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+.mc-container-course {
+  width: 100%;
+  max-width: 830px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+/* Front page news columns: two ~442px blocks, measured 391..1291 at vw 1710. */
+.mc-container-home {
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+/* Profile / other full-bleed pages: #region-main measured 30..1665 at vw 1710. */
+.mc-container-fluid {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 45px;
+}
+
+/*
+ * Page headings sit at the far left of the viewport on the real site (h1 x=23
+ * on /, /my, /my/courses), not inside the centred content column.
+ */
+.mc-page-title {
+  padding-inline: 23px;
+}
+
+/* ------------------------------------------------------------ typography */
+
+.mc-h1 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--mc-text);
+  margin-bottom: 8px;
+}
+
+.mc-h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--mc-text);
+  margin-bottom: 8px;
+}
+
+.mc-h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--mc-text);
+  margin-bottom: 8px;
+}
+
+.mc-muted {
+  color: var(--mc-muted);
+}
+
+.mc-small {
+  font-size: 13px;
+}
+
+.mc-link {
+  color: var(--mc-link);
+  text-decoration: none;
+}
+
+.mc-link:hover {
+  text-decoration: underline;
+}
+
+.mc-rule {
+  border: 0;
+  border-top: 1px solid var(--mc-border);
+  margin: 0;
+}
+
+.mc-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------------------------------------------------------------- navbar */
+
+.mc-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  height: var(--mc-navbar-height);
+  background-color: var(--mc-bg);
+  border-bottom: 1px solid var(--mc-orange);
+}
+
+.mc-navbar-inner {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 50px;
+  padding-inline: 12px;
+}
+
+.mc-navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+}
+
+.mc-navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: auto;
+  padding-left: 8px;
+}
+
+.mc-brand {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px 0 4px;
+}
+
+.mc-brand img {
+  width: 42px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.mc-nav {
+  display: flex;
+  align-items: stretch;
+  height: 50px;
+  min-width: 0;
+}
+
+.mc-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 50px;
+  padding: 0 8px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--mc-text);
+  text-decoration: none;
+  white-space: nowrap;
+  background: none;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+
+.mc-nav-link:hover {
+  text-decoration: underline;
+}
+
+.mc-nav-link.is-active {
+  border-bottom-color: var(--mc-orange);
+}
+
+.mc-icon-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--mc-text);
+  background: none;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mc-icon-btn:hover {
+  background-color: var(--mc-hover-bg);
+}
+
+.mc-count-badge {
+  position: absolute;
+  top: 2px;
+  right: 1px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #fff;
+  text-align: center;
+  background-color: #d32f2f;
+  border-radius: 999px;
+}
+
+.mc-navbar-search {
+  display: flex;
+  align-items: center;
+}
+
+.mc-navbar-search .mc-input {
+  width: 220px;
+  padding: 3px 12px;
+  font-size: 14px;
+  border-radius: 999px;
+}
+
+.mc-editmode {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 8px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.mc-switch {
+  position: relative;
+  width: 38px;
+  height: 20px;
+  padding: 0;
+  background-color: #ced4da;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 120ms linear;
+}
+
+.mc-switch.is-on {
+  background-color: var(--mc-link);
+}
+
+.mc-switch-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 120ms linear;
+}
+
+.mc-switch.is-on .mc-switch-knob {
+  transform: translateX(18px);
+}
+
+/* -------------------------------------------------------------- dropdown */
+
+.mc-dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+/*
+ * Trigger is a short icon button, so the wrapper has to stretch to the navbar's
+ * full height for the menu's top:100% to land flush under the orange rule.
+ */
+.mc-dropdown--stretch {
+  align-self: stretch;
+}
+
+.mc-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1040;
+  min-width: 240px;
+  max-width: 420px;
+  max-height: 70vh;
+  padding: 8px 0;
+  overflow-y: auto;
+  background-color: var(--mc-bg);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: var(--mc-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.mc-menu.is-right {
+  left: auto;
+  right: 0;
+}
+
+/* the Service Links menu is long and its labels are wide */
+.mc-menu-service {
+  min-width: 330px;
+  max-width: 460px;
+}
+
+.mc-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 5px 16px;
+  font-size: 14px;
+  color: var(--mc-text);
+  text-align: left;
+  text-decoration: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.mc-menu-item:hover {
+  background-color: var(--mc-hover-bg);
+  color: var(--mc-text);
+  text-decoration: none;
+}
+
+.mc-menu-divider {
+  height: 0;
+  margin: 8px 0;
+  border-top: 1px solid var(--mc-border);
+}
+
+.mc-submenu {
+  padding-left: 16px;
+  border-left: 3px solid var(--mc-border);
+  margin-left: 13px;
+}
+
+/* --------------------------------------------------------- notifications */
+
+/*
+ * The bell popover. It hangs off `.mc-menu` for the white plate, the hairline
+ * border and the shadow, then overrides the menu's fluid box: the live panel
+ * is a fixed 380x500 with its own scroll area. Its rules are #ddd, a shade
+ * lighter than `--mc-border`, and its unread wash is rgb(244, 244, 244).
+ */
+.mc-notif-panel {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 500px;
+  max-width: none;
+  max-height: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+.mc-notif-head {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 4px 4px 4px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.mc-notif-head-title {
+  font-weight: 700;
+}
+
+.mc-notif-head-actions {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* The three header glyphs sit tighter than the navbar's own icon buttons. */
+.mc-notif-head .mc-icon-btn {
+  width: 30px;
+  height: 30px;
+}
+
+.mc-notif-list {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.mc-notif-item {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.mc-notif-item.is-unread {
+  background-color: rgb(244, 244, 244);
+}
+
+.mc-notif-item-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.mc-notif-item-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.mc-notif-foot {
+  flex: 0 0 auto;
+  padding: 8px 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+/* --------------------------------------------------------------- buttons */
+
+.mc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 16px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--mc-text);
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.mc-btn:hover {
+  text-decoration: none;
+}
+
+.mc-btn-dark {
+  color: #fff;
+  background-color: var(--mc-dark);
+  border-color: var(--mc-dark);
+}
+
+.mc-btn-dark:hover {
+  background-color: #000;
+}
+
+.mc-btn-outline {
+  color: var(--mc-text);
+  background-color: var(--mc-bg);
+  border-color: var(--mc-dark);
+}
+
+.mc-btn-outline:hover {
+  background-color: var(--mc-hover-bg);
+}
+
+.mc-btn-sm {
+  padding: 3px 12px;
+  font-size: 13px;
+}
+
+/* pill dropdown toggle, e.g. "Next 7 days ⌄" / "Sort by dates ⌄" */
+.mc-pill-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--mc-text);
+  white-space: nowrap;
+  background-color: var(--mc-bg);
+  border: 1px solid var(--mc-border-strong);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.mc-pill-toggle:hover {
+  background-color: var(--mc-hover-bg);
+}
+
+.mc-kebab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: var(--mc-text);
+  background: none;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mc-kebab:hover {
+  background-color: var(--mc-hover-bg);
+}
+
+/* ---------------------------------------------------------------- inputs */
+
+.mc-input {
+  width: 100%;
+  padding: 6px 12px;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--mc-text);
+  background-color: var(--mc-bg);
+  border: 1px solid var(--mc-border-strong);
+  border-radius: var(--mc-radius);
+}
+
+.mc-input::placeholder {
+  color: var(--mc-muted);
+}
+
+.mc-input-pill {
+  border-radius: 999px;
+}
+
+/* --------------------------------------------------------- page banners --- */
+
+.mc-banner {
+  position: relative;
+  width: 100%;
+  background-color: #4a5a63;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: cover;
+}
+
+.mc-banner--home {
+  height: var(--mc-banner-home);
+  background-color: #4a5a63;
+  background-image: var(--mc-img-frontpage);
+}
+
+.mc-banner--user {
+  height: var(--mc-banner-user);
+  background-color: #5a6672;
+  background-image: var(--mc-img-userpage);
+}
+
+.mc-banner--course {
+  height: var(--mc-banner-course);
+  background-color: #6b6257;
+  background-image: var(--mc-img-incourse);
+}
+
+.mc-banner-plate {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: min(100%, 780px);
+  padding: 12px 20px;
+  background-color: rgba(255, 255, 255, 0.86);
+}
+
+.mc-banner-title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--mc-text);
+  margin: 0;
+}
+
+/* ----------------------------------------------------------------- tabs --- */
+
+.mc-tabs {
+  display: flex;
+  align-items: stretch;
+  gap: 4px;
+  border-bottom: 1px solid var(--mc-border);
+}
+
+/* Front page: the strip runs the full viewport width (measured 15..1680). */
+.mc-tabs-full {
+  margin-inline: 15px;
+}
+
+.mc-tab {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 15px;
+  color: var(--mc-text);
+  text-decoration: none;
+  background: none;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+  cursor: pointer;
+}
+
+.mc-tab:hover {
+  text-decoration: underline;
+}
+
+.mc-tab.is-active {
+  font-weight: 500;
+  border-bottom-color: var(--mc-orange);
+}
+
+/* ---------------------------------------------------------------- cards --- */
+
+.mc-card {
+  background-color: var(--mc-bg);
+  border: 1px solid rgba(0, 0, 0, 0.176);
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+/*
+ * Front page news items: measured rgb(33,37,41), 15px, no underline — the
+ * blue link colour is used elsewhere but not in these blocks.
+ */
+.mc-link-plain {
+  color: var(--mc-text);
+  text-decoration: none;
+}
+
+.mc-link-plain:hover {
+  text-decoration: underline;
+}
+
+.mc-card--plain {
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.mc-card--plain > .mc-card-header,
+.mc-card--plain > .mc-card-body {
+  padding-inline: 0;
+}
+
+.mc-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 16px 0 16px;
+}
+
+.mc-card-title {
+  margin: 0;
+  font-size: 18.75px;
+  font-weight: 500;
+  color: var(--mc-text);
+}
+
+.mc-card-body {
+  padding: 12px 16px 16px 16px;
+}
+
+/* --------------------------------------------------------------- drawers --- */
+
+.mc-drawer {
+  flex: 0 0 auto;
+  min-width: 0;
+}
+
+.mc-drawer--right {
+  width: var(--mc-drawer-right);
+  flex-basis: var(--mc-drawer-right);
+  padding: 8px 12px 24px 12px;
+}
+
+.mc-drawer--left {
+  width: var(--mc-drawer-left);
+  flex-basis: var(--mc-drawer-left);
+  padding: 8px 12px 24px 12px;
+  border-right: 1px solid var(--mc-border);
+}
+
+.mc-drawer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  min-height: 32px;
+  margin-bottom: 8px;
+}
+
+.mc-drawer-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: var(--mc-text);
+  background: none;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mc-drawer-close:hover {
+  background-color: var(--mc-hover-bg);
+}
+
+.mc-drawer-rail {
+  flex: 0 0 44px;
+  width: 44px;
+  padding-top: 8px;
+}
+
+.mc-drawer-rail-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: var(--mc-text);
+  background-color: var(--mc-bg);
+  border: 1px solid var(--mc-border);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mc-drawer-rail-btn:hover {
+  background-color: var(--mc-hover-bg);
+}
+
+/* left course-index list */
+.mc-index-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 14px;
+  color: var(--mc-text);
+  text-align: left;
+  text-decoration: none;
+  background: none;
+  border: 0;
+  border-radius: var(--mc-radius);
+  cursor: pointer;
+}
+
+.mc-index-link:hover {
+  background-color: var(--mc-hover-bg);
+}
+
+.mc-index-link.is-current {
+  color: #fff;
+  background-color: var(--mc-dark);
+}
+
+.mc-index-link.is-current:hover {
+  background-color: #000;
+}
+
+.mc-index-child {
+  padding-left: 30px;
+  font-size: 13px;
+  color: var(--mc-muted);
+}
+
+/* ------------------------------------------------- activity icon circles --- */
+
+.mc-activity-icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--mc-dark);
+  background-color: var(--mc-yellow);
+  border-radius: 50%;
+}
+
+.mc-activity-icon--sm {
+  width: 28px;
+  height: 28px;
+}
+
+.mc-activity-icon--lg {
+  width: 48px;
+  height: 48px;
+}
+
+/* ------------------------------------------------- upcoming-event rows --- */
+
+.mc-event {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--mc-border);
+}
+
+.mc-event:last-child {
+  border-bottom: 0;
+}
+
+.mc-event-body {
+  min-width: 0;
+}
+
+.mc-event-link {
+  display: block;
+  font-size: 14px;
+  color: var(--mc-link);
+  text-decoration: none;
+}
+
+.mc-event-link:hover {
+  text-decoration: underline;
+}
+
+.mc-event-date {
+  font-size: 13px;
+  color: var(--mc-muted);
+}
+
+/* ------------------------------------------------- section band cards --- */
+
+.mc-section-band {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  background-color: var(--mc-band-bg);
+  border: 1px solid var(--mc-border);
+  border-radius: var(--mc-radius);
+  margin-bottom: 16px;
+}
+
+.mc-section-marker {
+  flex: 0 0 100px;
+  width: 100px;
+  height: 100px;
+  background-color: var(--mc-tile-yellow);
+  background-image: var(--mc-img-marker);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.mc-section-band-main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.mc-section-band-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--mc-text);
+  margin: 0;
+}
+
+.mc-section-band-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--mc-muted);
+}
+
+.mc-section-band-arrow {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--mc-text);
+  background: none;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mc-section-band-arrow:hover {
+  background-color: var(--mc-hover-bg);
+}
+
+/* ------------------------------------------------- course list rows --- */
+
+.mc-course-tile {
+  flex: 0 0 143px;
+  width: 143px;
+  height: 80px;
+  background-color: var(--mc-tile-yellow);
+  background-image: var(--mc-img-tile);
+  background-position: center;
+  background-size: cover;
+  border-radius: 3px;
+}
+
+.mc-course-thumb {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  background-color: var(--mc-tile-yellow);
+  background-image: var(--mc-img-tile);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.mc-list-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--mc-border);
+}
+
+/* ------------------------------------------------------------- badges --- */
+
+.mc-badge-danger {
+  display: inline-block;
+  padding: 1px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--mc-danger);
+  border-radius: 999px;
+}
+
+.mc-badge-muted {
+  display: inline-block;
+  padding: 1px 8px;
+  font-size: 12px;
+  color: var(--mc-text);
+  background-color: var(--mc-hover-bg);
+  border-radius: 999px;
+}
+
+/* -------------------------------------------------------------- tables --- */
+
+.mc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+.mc-table th,
+.mc-table td {
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid var(--mc-border);
+}
+
+.mc-table th {
+  font-weight: 600;
+  background-color: var(--mc-band-bg);
+}
+
+/* --------------------------------------------- long-form course content --- */
+
+.mc-prose > * + * {
+  margin-top: 12px;
+}
+
+.mc-prose h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-top: 24px;
+}
+
+.mc-prose h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-top: 20px;
+}
+
+.mc-prose h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.mc-prose a {
+  color: var(--mc-link);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.mc-prose a:hover {
+  text-decoration: underline;
+}
+
+.mc-prose ul,
+.mc-prose ol {
+  padding-left: 24px;
+  list-style: revert;
+}
+
+.mc-prose li + li {
+  margin-top: 4px;
+}
+
+.mc-prose strong {
+  font-weight: 600;
+}
+
+/* -------------------------------------------------------------- footer --- */
+
+.mc-footer {
+  margin-top: 40px;
+  padding: 16px 0 48px 0;
+  font-size: 14px;
+  background-color: transparent;
+  border-top: 1px solid var(--mc-orange);
+}
+
+.mc-footer-top {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+.mc-footer-cols {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.mc-footer-heading {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.mc-footer-group + .mc-footer-group {
+  margin-top: 16px;
+}
+
+.mc-footer-link {
+  display: block;
+  padding: 2px 0;
+  color: var(--mc-link);
+  text-decoration: none;
+}
+
+.mc-footer-link:hover {
+  text-decoration: underline;
+}
+
+.mc-footer-logo {
+  color: var(--mc-text);
+}
+
+.mc-footer-meta {
+  margin-top: 24px;
+  font-size: 13px;
+  color: var(--mc-muted);
+}
+
+@media (max-width: 780px) {
+  .mc-footer-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ------------------------------------------------------- activity pages --- */
+
+/*
+ * `/mod/<type>/<id>` content column. The course page centres its body in
+ * `.mc-container-course` (830px), but the live activity pages let the body
+ * run from the course-index drawer to the right edge of the viewport.
+ */
+.mc-container-activity {
+  width: 100%;
+  padding-inline: 28px;
+}
+
+/* Breadcrumb line under the course title on the banner plate. */
+.mc-crumbs {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--mc-text);
+}
+
+.mc-crumb-sep {
+  color: var(--mc-muted);
+}
+
+/*
+ * The light gray plate an activity page puts its dates in, and the forum's
+ * "General news and announcements" intro.
+ */
+.mc-activity-box {
+  padding: 16px;
+  margin: 8px 0 16px 0;
+  background-color: var(--mc-band-bg);
+  border-radius: var(--mc-radius);
+}
+
+/* Moodle's blue alert-info box, e.g. "(No announcements have been posted yet.)" */
+.mc-activity-notice {
+  padding: 16px;
+  margin: 16px 0 0 0;
+  color: var(--mc-text);
+  background-color: #cfe7ed;
+  border: 1px solid #b7d9e1;
+  border-radius: var(--mc-radius);
+}
+
+/* Moodle's circled "?" help toggle. */
+.mc-help-circle {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--mc-link);
+  background: none;
+  border: 1px solid var(--mc-link);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mc-help-circle:hover {
+  color: #fff;
+  background-color: var(--mc-link);
+}
+
+/* The assignment "Submission status" table: 12px cells, zebra-striped rows. */
+.mc-status-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  margin: 12px 0 0 0;
+}
+
+.mc-status-table th,
+.mc-status-table td {
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid var(--mc-border);
+}
+
+.mc-status-table th {
+  width: 34%;
+  font-weight: 600;
+}
+
+.mc-status-table tbody tr:nth-child(odd) {
+  background-color: var(--mc-band-bg);
+}
+
+/* "Assignment is overdue by: …" */
+.mc-text-danger {
+  color: var(--mc-danger);
+}
+
+/* Calendar event details: "Event type / Course / Description" pairs. */
+.mc-deflist {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 6px 16px;
+  margin: 0;
+}
+
+.mc-deflist dt {
+  font-weight: 600;
+}
+
+.mc-deflist dd {
+  margin: 0;
+}
+
+@media (max-width: 560px) {
+  .mc-deflist {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
