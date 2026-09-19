@@ -17,8 +17,11 @@ class InteractionAutoencoder(nn.Module):
             nn.ReLU(),
             nn.Linear(32, 16),
             nn.ReLU(),
+            nn.Linear(16, 8),
         )
         self.decoder = nn.Sequential(
+            nn.Linear(8, 16),
+            nn.ReLU(),
             nn.Linear(16, 32),
             nn.ReLU(),
             nn.Linear(32, input_dim)
@@ -36,18 +39,58 @@ def preprocess_user_data(df: pd.DataFrame):
         if col not in df.columns:
             raise ValueError(f"Missing expected column: {col}")
 
+    # Convert timestamps
     df['record timestamp'] = pd.to_numeric(df['record timestamp'])
+
+    # Basic time delta
     df['time_delta'] = df['record timestamp'].diff().fillna(0)
 
+    # Movement deltas
+    df['dx'] = df['x'].diff().fillna(0)
+    df['dy'] = df['y'].diff().fillna(0)
+
+    # Distance
+    df['distance'] = np.sqrt(df['dx']**2 + df['dy']**2)
+
+    # Velocity
+    df['velocity'] = df['distance'] / df['time_delta'].replace(0, np.nan)
+    df['velocity'] = df['velocity'].fillna(0)
+
+    # Acceleration
+    df['acceleration'] = df['velocity'].diff().fillna(0)
+
+    # Jerk (derivative of acceleration)
+    df['jerk'] = df['acceleration'].diff().fillna(0)
+
+    # Angle of movement
+    df['angle'] = np.arctan2(df['dy'], df['dx']).fillna(0)
+
+    # Angular velocity
+    df['angular_velocity'] = df['angle'].diff().fillna(0)
+
+    # Encode button + state
     df_encoded = pd.get_dummies(df, columns=['button', 'state'])
-    feature_cols = [c for c in df_encoded.columns if c not in ['record timestamp', 'client timestamp']]
+
+    # Select features
+    feature_cols = [
+        'time_delta',
+        'dx', 'dy',
+        'distance',
+        'velocity',
+        'acceleration',
+        'jerk',
+        'angle',
+        'angular_velocity'
+    ] + [c for c in df_encoded.columns if c.startswith('button_') or c.startswith('state_')]
 
     data = df_encoded[feature_cols].values.astype(np.float32)
 
+    # Scale
     scaler = StandardScaler()
     scaled_data = scaler.fit_transform(data)
 
     return scaled_data, feature_cols, scaler
+
 
 
 def train_autoencoder(user_id, data_matrix, feature_cols, scaler, epochs=50, batch_size=32):
@@ -79,12 +122,12 @@ def train_autoencoder(user_id, data_matrix, feature_cols, scaler, epochs=50, bat
 
     os.makedirs("./ML_Models", exist_ok=True)
 
-    torch.save(model.state_dict(), f"./ML_Models/autoencoder_user_{user_id}_test.pth")
+    torch.save(model.state_dict(), f"./ML_Models/autoencoder_user_{user_id}_test_curser.pth")
 
-    with open(f"./ML_Models/feature_cols_{user_id}.json", "w") as f:
+    with open(f"./ML_Models/feature_cols_{user_id}_curser.json", "w") as f:
         json.dump(feature_cols, f)
 
-    joblib.dump(scaler, f"./ML_Models/scaler_{user_id}.pkl")
+    joblib.dump(scaler, f"./ML_Models/scaler_{user_id}_curser.pkl")
 
     print(f"Saved model, feature columns, and scaler for user {user_id}\n")
 
