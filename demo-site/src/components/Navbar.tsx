@@ -62,6 +62,15 @@ function writeUserCookie(id: SiteUserId): void {
 }
 
 /**
+ * Sign out: drop the identity cookie so the server has no one to render as,
+ * the way a real MyCourses log-out ends the session. The caller then sends
+ * the user to `/login`.
+ */
+function clearUserCookie(): void {
+  document.cookie = `${USER_COOKIE}=; path=/; max-age=0; samesite=lax`;
+}
+
+/**
  * The avatar menu: the transcribed MyCourses entries, in their original
  * order, with the study-only "Switch user" submenu slipped in above
  * "Log out" — where Moodle itself keeps "Switch role to…".
@@ -69,6 +78,7 @@ function writeUserCookie(id: SiteUserId): void {
 function buildUserMenu(
   activeId: SiteUserId,
   onSwitch: (id: SiteUserId) => void,
+  onLogOut: () => void,
 ): DropdownItem[] {
   const switcher: DropdownItem = {
     label: "Switch user",
@@ -79,7 +89,12 @@ function buildUserMenu(
     })),
   };
 
-  const items: DropdownItem[] = [...userMenu];
+  // Moodle's "Log out" is a plain "#" placeholder in the transcription; here it
+  // is the one live entry — dropping its href makes the Dropdown render it as a
+  // button that runs the sign-out handler.
+  const items: DropdownItem[] = userMenu.map((item) =>
+    item.label === "Log out" ? { label: "Log out", onSelect: onLogOut } : item,
+  );
   const logOut = items.findIndex((item) => item.label === "Log out");
   items.splice(logOut < 0 ? items.length : logOut, 0, switcher);
   return items;
@@ -101,10 +116,17 @@ export default function Navbar({ user }: NavbarProps) {
   const showDrawerToggle = hasCourseIndex(pathname);
   const showEditMode = EDIT_MODE_ROUTES.includes(pathname);
 
-  const userMenuItems = buildUserMenu(user.id, (id) => {
-    writeUserCookie(id);
-    router.refresh();
-  });
+  const userMenuItems = buildUserMenu(
+    user.id,
+    (id) => {
+      writeUserCookie(id);
+      router.refresh();
+    },
+    () => {
+      clearUserCookie();
+      router.push("/login");
+    },
+  );
 
   useEffect(() => {
     if (!searchOpen) return;
