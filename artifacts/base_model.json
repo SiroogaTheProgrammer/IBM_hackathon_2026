@@ -8,9 +8,33 @@
     "C:\\Users\\stsyg\\Documents\\GitHub\\IBM_hackathon_2026\\training_files",
     "C:\\Users\\stsyg\\Documents\\GitHub\\IBM_hackathon_2026\\test_files"
   ],
-  "n_train_windows": 356841,
-  "n_train_sessions": 1676,
+  "bogazici_root": "Bogazici_cleaned",
+  "bogazici_exclude_categories": [
+    "entertainment",
+    "gaming"
+  ],
+  "n_train_windows": 619744,
+  "n_train_sessions": 4322,
   "train_users": [
+    "bogazici_user1",
+    "bogazici_user10",
+    "bogazici_user11",
+    "bogazici_user12",
+    "bogazici_user13",
+    "bogazici_user14",
+    "bogazici_user15",
+    "bogazici_user16",
+    "bogazici_user17",
+    "bogazici_user18",
+    "bogazici_user19",
+    "bogazici_user2",
+    "bogazici_user3",
+    "bogazici_user4",
+    "bogazici_user5",
+    "bogazici_user6",
+    "bogazici_user7",
+    "bogazici_user8",
+    "bogazici_user9",
     "user12",
     "user15",
     "user16",
@@ -22,6 +46,6 @@
     "user7",
     "user9"
   ],
-  "epochs": 60,
-  "embedding_spread": 0.26703324913978577
+  "epochs": 30,
+  "embedding_spread": 0.4643198847770691
 }
