@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import BiometricsWidget from "@/components/BiometricsWidget";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { getCurrentUser } from "@/data/currentUser";
@@ -31,6 +32,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
         <Navbar user={user} />
         <div className="mc-content">{children}</div>
         <Footer user={user} />
+        <BiometricsWidget />
       </body>
     </html>
   );
