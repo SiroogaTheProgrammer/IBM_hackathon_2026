@@ -32,8 +32,6 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
-# ...but the template carries no secrets and is how you set up local Redis.
-!.env.local.example
 
 # vercel
 .vercel
@@ -41,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Recorded data-collection runs (localhost only, see src/lib/trace/collect.ts)
+/data/collected/

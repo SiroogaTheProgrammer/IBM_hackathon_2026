@@ -16,6 +16,8 @@ export type DropdownItem = {
   active?: boolean;
   /** Nested items render as an inline, expandable submenu. */
   items?: DropdownItem[];
+  /** `data-trace` anchor for the study flow (`@/data/taskFlow`). */
+  traceId?: string;
 };
 
 export type DropdownProps = {
@@ -32,6 +34,8 @@ export type DropdownProps = {
   ariaLabel?: string;
   /** Hide the trailing chevron (used by the avatar toggle, which draws its own). */
   hideChevron?: boolean;
+  /** `data-trace` anchor on the toggle, for the study flow. */
+  traceId?: string;
 };
 
 /**
@@ -47,6 +51,7 @@ export default function Dropdown({
   menuClassName,
   ariaLabel,
   hideChevron = false,
+  traceId,
 }: DropdownProps) {
   const [open, setOpen] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -94,6 +99,7 @@ export default function Dropdown({
         aria-expanded={open}
         aria-controls={open ? menuId : undefined}
         aria-label={ariaLabel}
+        data-trace={traceId}
         onClick={() => (open ? close() : setOpen(true))}
       >
         {label}
@@ -199,6 +205,7 @@ function DropdownLeaf({
         role="menuitem"
         className="mc-menu-item"
         aria-current={current}
+        data-trace={item.traceId}
         onClick={handleClick}
       >
         {content}
@@ -215,6 +222,7 @@ function DropdownLeaf({
         target="_blank"
         rel="noopener noreferrer"
         aria-current={current}
+        data-trace={item.traceId}
         onClick={handleClick}
       >
         {content}
@@ -229,6 +237,7 @@ function DropdownLeaf({
         className="mc-menu-item"
         href="#"
         aria-current={current}
+        data-trace={item.traceId}
         onClick={(event) => {
           event.preventDefault();
           handleClick();
@@ -245,6 +254,7 @@ function DropdownLeaf({
       className="mc-menu-item"
       href={item.href}
       aria-current={current}
+      data-trace={item.traceId}
       onClick={handleClick}
     >
       {content}

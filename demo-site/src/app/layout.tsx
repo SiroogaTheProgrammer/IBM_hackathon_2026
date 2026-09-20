@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 /**
  * Root layout: only the document shell and the design system.
  *
- * The signed-in chrome (navbar, footer, biometrics widget) lives in the
- * `(site)` group layout, so the `(auth)` login page can render on the same
- * gradient background the real MyCourses login uses — with none of that
- * chrome, exactly as the live site presents it.
+ * The signed-in chrome (navbar, footer, Trace panel) lives in the `(site)`
+ * group layout, so the `(auth)` login page can render on the same gradient
+ * background the real MyCourses login uses — with none of that chrome, exactly
+ * as the live site presents it.
  */
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import type { Activity } from "@/data/activities";
 import { getQuizQuestions, type QuizQuestion } from "@/data/quizzes";
-import { emitTaskSignal } from "@/lib/tasks/signals";
 
 /**
  * `/mod/quiz/<id>` — the quiz view page and its whole attempt flow.
@@ -77,7 +76,12 @@ export default function QuizBody({ activity }: QuizBodyProps) {
   if (phase === "intro") {
     return (
       <>
-        <button type="button" className="mc-btn mc-btn-dark" onClick={startAttempt}>
+        <button
+          type="button"
+          className="mc-btn mc-btn-dark"
+          data-trace="quiz.attempt"
+          onClick={startAttempt}
+        >
           Attempt quiz
         </button>
 
@@ -119,6 +123,7 @@ export default function QuizBody({ activity }: QuizBodyProps) {
           <button
             type="button"
             className="mc-btn mc-btn-outline"
+            data-trace="quiz.return"
             onClick={() => setPhase("attempt")}
           >
             Return to attempt
@@ -126,6 +131,7 @@ export default function QuizBody({ activity }: QuizBodyProps) {
           <button
             type="button"
             className="mc-btn mc-btn-dark"
+            data-trace="quiz.submit"
             onClick={() => setConfirmOpen(true)}
           >
             Submit all and finish
@@ -138,9 +144,6 @@ export default function QuizBody({ activity }: QuizBodyProps) {
             onConfirm={() => {
               setConfirmOpen(false);
               setPhase("review");
-              // The scripted run in `TaskPanel` counts a quiz task done here
-              // and nowhere else: reaching the page is not attempting it.
-              emitTaskSignal({ kind: "quiz-submitted", activityId: activity.id });
             }}
           />
         ) : null}
@@ -184,6 +187,7 @@ export default function QuizBody({ activity }: QuizBodyProps) {
           <button
             type="button"
             className="mc-btn mc-btn-dark"
+            data-trace="quiz.finish-review"
             onClick={() => setPhase("intro")}
           >
             Finish review
@@ -191,6 +195,7 @@ export default function QuizBody({ activity }: QuizBodyProps) {
           <button
             type="button"
             className="mc-btn mc-btn-outline"
+            data-trace="quiz.reattempt"
             onClick={startAttempt}
           >
             Re-attempt quiz
@@ -220,6 +225,7 @@ export default function QuizBody({ activity }: QuizBodyProps) {
         <button
           type="button"
           className="mc-btn mc-btn-dark"
+          data-trace="quiz.finish"
           onClick={() => setPhase("summary")}
         >
           Finish attempt ...
@@ -244,6 +250,7 @@ export default function QuizBody({ activity }: QuizBodyProps) {
                 aria-label={`Question ${index + 1}${
                   answered ? ", answer saved" : ", not yet answered"
                 }`}
+                data-trace={`quiz.nav.${question.id}`}
                 onClick={() => jumpTo(question.id)}
               >
                 {index + 1}
@@ -254,6 +261,7 @@ export default function QuizBody({ activity }: QuizBodyProps) {
         <button
           type="button"
           className="mc-link mc-quiz-nav-finish"
+          data-trace="quiz.finish-aside"
           onClick={() => setPhase("summary")}
         >
           Finish attempt ...
@@ -308,6 +316,7 @@ function QuestionBox({
               type="button"
               className={"mc-que-flag" + (flagged ? " is-flagged" : "")}
               aria-pressed={flagged}
+              data-trace={`quiz.flag.${question.id}`}
               onClick={() => onToggleFlag(question.id)}
             >
               <FlagGlyph />
@@ -368,6 +377,7 @@ function AnswerArea({ question, review, answer, onAnswer }: AnswerAreaProps) {
           value={answer ?? ""}
           disabled={review}
           autoComplete="off"
+          data-trace={`quiz.answer.${question.id}`}
           onChange={(event) => onAnswer(question.id, event.target.value)}
         />
       </label>
@@ -399,6 +409,12 @@ function AnswerArea({ question, review, answer, onAnswer }: AnswerAreaProps) {
           <label
             key={option.id}
             className={"mc-answer-option" + markClass}
+            /*
+             * The anchor sits on the label, not the radio: the whole row is
+             * what a participant aims at, and a click on the text never
+             * reaches the input in the DOM tree.
+             */
+            data-trace={`quiz.answer.${question.id}.${option.id}`}
           >
             <input
               type="radio"
@@ -476,10 +492,20 @@ function ConfirmSubmit({
           this attempt.
         </p>
         <div className="mc-modal-actions">
-          <button type="button" className="mc-btn mc-btn-outline" onClick={onCancel}>
+          <button
+            type="button"
+            className="mc-btn mc-btn-outline"
+            data-trace="quiz.confirm.cancel"
+            onClick={onCancel}
+          >
             Return to attempt
           </button>
-          <button type="button" className="mc-btn mc-btn-dark" onClick={onConfirm}>
+          <button
+            type="button"
+            className="mc-btn mc-btn-dark"
+            data-trace="quiz.confirm.submit"
+            onClick={onConfirm}
+          >
             Submit all and finish
           </button>
         </div>

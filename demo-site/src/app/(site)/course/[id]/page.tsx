@@ -49,10 +49,18 @@ export default async function CoursePage({ params }: CoursePageProps) {
 
         <div className="mc-container-course pt-4 pb-10">
           <div className="mb-5 flex flex-wrap justify-end gap-2">
-            <button type="button" className="mc-btn mc-btn-dark">
+            <button
+              type="button"
+              className="mc-btn mc-btn-dark"
+              data-trace="course.feedback"
+            >
               Course feedback
             </button>
-            <button type="button" className="mc-btn mc-btn-dark">
+            <button
+              type="button"
+              className="mc-btn mc-btn-dark"
+              data-trace="course.syllabus"
+            >
               Syllabus
             </button>
           </div>

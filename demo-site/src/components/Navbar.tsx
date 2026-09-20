@@ -93,7 +93,9 @@ function buildUserMenu(
   // is the one live entry — dropping its href makes the Dropdown render it as a
   // button that runs the sign-out handler.
   const items: DropdownItem[] = userMenu.map((item) =>
-    item.label === "Log out" ? { label: "Log out", onSelect: onLogOut } : item,
+    item.label === "Log out"
+      ? { label: "Log out", traceId: "nav.logout", onSelect: onLogOut }
+      : item,
   );
   const logOut = items.findIndex((item) => item.label === "Log out");
   items.splice(logOut < 0 ? items.length : logOut, 0, switcher);
@@ -125,6 +127,7 @@ export default function Navbar({ user }: NavbarProps) {
     () => {
       clearUserCookie();
       router.push("/login");
+      router.refresh();
     },
   );
 
@@ -189,6 +192,7 @@ export default function Navbar({ user }: NavbarProps) {
                 aria-current={
                   isActive(pathname, item.href, item.exact) ? "page" : undefined
                 }
+                data-trace={item.traceId}
               >
                 {item.label}
               </Link>
@@ -247,6 +251,7 @@ export default function Navbar({ user }: NavbarProps) {
             align="right"
             hideChevron
             ariaLabel="User menu"
+            traceId="nav.user-menu"
             items={userMenuItems}
             label={
               <>

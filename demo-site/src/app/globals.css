@@ -1290,6 +1290,7 @@ body {
   }
 }
 
+
 /* ---------------------------------------------------------------- login --- */
 /*
  * The sign-in page (src/components/LoginView.tsx, served by the (auth) group).
@@ -1832,5 +1833,618 @@ body {
   .mc-quiz-nav {
     flex-basis: auto;
     width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Trace study panel — the fixed bottom-right overlay.
+
+   The only part of this site that is NOT the MyCourses clone, so it is
+   deliberately unlike everything above it: dark plate, white text and an 8px
+   radius throughout, none of which the Moodle theme uses.
+   ========================================================================== */
+
+.trace-card {
+  --trace-bg: #0f1114;
+  --trace-line: rgba(255, 255, 255, 0.13);
+  --trace-muted: rgba(255, 255, 255, 0.62);
+  --trace-radius: 8px;
+
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2000;
+  width: 328px;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 32px);
+  overflow-y: auto;
+  color: #fff;
+  background-color: var(--trace-bg);
+  border: 1px solid var(--trace-line);
+  border-radius: var(--trace-radius);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.38);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.trace-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 12px 10px 14px;
+  border-bottom: 1px solid var(--trace-line);
+}
+
+.trace-phase {
+  margin-left: auto;
+  padding: 2px 8px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--trace-muted);
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: var(--trace-radius);
+}
+
+.trace-collapse {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  font-size: 15px;
+  line-height: 1;
+  color: var(--trace-muted);
+  background: none;
+  border: 1px solid var(--trace-line);
+  border-radius: var(--trace-radius);
+  cursor: pointer;
+}
+
+.trace-collapse:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.trace-body {
+  padding: 12px 14px 14px 14px;
+}
+
+.trace-body > * + * {
+  margin-top: 10px;
+}
+
+.trace-lede {
+  margin: 0;
+  font-size: 13px;
+}
+
+.trace-note {
+  margin: 0;
+  font-size: 12px;
+  color: var(--trace-muted);
+}
+
+.trace-steps {
+  margin: 0;
+  padding-left: 18px;
+  list-style: decimal;
+  font-size: 12px;
+  color: var(--trace-muted);
+}
+
+.trace-steps li + li {
+  margin-top: 8px;
+}
+
+.trace-steps strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ------------------------------------------------------------- run view --- */
+
+.trace-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--trace-muted);
+}
+
+.trace-progress {
+  display: flex;
+  gap: 4px;
+}
+
+/* One segment per task, sized by how many sub-tasks that task holds. */
+.trace-progress-seg {
+  flex: 1 1 0;
+  height: 4px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.14);
+  border-radius: var(--trace-radius);
+}
+
+.trace-progress-seg > span {
+  display: block;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: var(--trace-radius);
+}
+
+.trace-progress-seg.is-active > span {
+  background-color: #fff;
+}
+
+.trace-task-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.trace-instruction {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 0;
+  padding: 10px;
+  font-size: 13px;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: var(--trace-radius);
+}
+
+.trace-step-badge {
+  flex: 0 0 auto;
+  padding: 1px 6px;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: var(--trace-bg);
+  background-color: #fff;
+  border-radius: var(--trace-radius);
+}
+
+.trace-indicator {
+  margin: 0;
+  padding: 8px 10px;
+  font-size: 12px;
+  border: 1px solid var(--trace-line);
+  border-radius: var(--trace-radius);
+}
+
+.trace-indicator.is-waiting {
+  color: var(--trace-muted);
+}
+
+.trace-indicator.is-ok {
+  color: #4ade80;
+  border-color: rgba(74, 222, 128, 0.35);
+}
+
+.trace-indicator.is-watch {
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.35);
+}
+
+/* -------------------------------------------------------------- result --- */
+
+.trace-verdict {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--trace-line);
+  border-radius: var(--trace-radius);
+}
+
+.trace-verdict-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.trace-verdict-score {
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  color: var(--trace-muted);
+}
+
+.trace-verdict.is-verified {
+  color: #4ade80;
+  border-color: rgba(74, 222, 128, 0.4);
+  background-color: rgba(74, 222, 128, 0.08);
+}
+
+.trace-verdict.is-inconclusive {
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.4);
+  background-color: rgba(251, 191, 36, 0.08);
+}
+
+.trace-verdict.is-locked {
+  color: #f87171;
+  border-color: rgba(248, 113, 113, 0.45);
+  background-color: rgba(248, 113, 113, 0.1);
+}
+
+.trace-readout {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 10px;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: var(--trace-radius);
+}
+
+.trace-readout > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.trace-readout dt {
+  color: var(--trace-muted);
+}
+
+.trace-readout dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ------------------------------------------------------------- actions --- */
+
+.trace-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.trace-btn {
+  flex: 1 1 auto;
+  padding: 8px 12px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid var(--trace-line);
+  border-radius: var(--trace-radius);
+  cursor: pointer;
+}
+
+.trace-btn:hover {
+  background-color: rgba(255, 255, 255, 0.09);
+}
+
+.trace-btn--primary {
+  color: var(--trace-bg);
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.trace-btn--primary:hover {
+  background-color: rgba(255, 255, 255, 0.86);
+}
+
+.trace-foot {
+  margin: 0;
+  padding-top: 2px;
+  font-size: 11px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.trace-mini {
+  margin: 0;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: var(--trace-muted);
+}
+
+/* Collection-mode switch (localhost only) and its "Saved" plate. */
+
+.trace-switch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  color: var(--trace-muted);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: var(--trace-radius);
+}
+
+.trace-switch {
+  position: relative;
+  flex: 0 0 auto;
+  width: 34px;
+  height: 18px;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.22);
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 120ms linear;
+}
+
+.trace-switch.is-on {
+  background-color: #4ade80;
+}
+
+.trace-switch:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.trace-switch-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 120ms linear;
+}
+
+.trace-switch.is-on .trace-switch-knob {
+  transform: translateX(16px);
+}
+
+.trace-verdict.is-saved {
+  color: #4ade80;
+  border-color: rgba(74, 222, 128, 0.4);
+  background-color: rgba(74, 222, 128, 0.08);
+}
+
+.trace-card code {
+  padding: 0 3px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+/* ---------------------------------------- live evidence chart + lockout --- */
+
+.trace-chart {
+  padding: 8px 10px 6px 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: var(--trace-radius);
+}
+
+.trace-chart-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--trace-muted);
+}
+
+.trace-chart-value {
+  font-size: 15px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.trace-chart-value.is-ok {
+  color: #4ade80;
+}
+.trace-chart-value.is-watch {
+  color: #fbbf24;
+}
+.trace-chart-value.is-alarm {
+  color: #f87171;
+}
+
+.trace-chart-svg {
+  display: block;
+  width: 100%;
+  height: 72px;
+  margin-top: 4px;
+  overflow: visible;
+  border-radius: 3px;
+}
+
+/* The SPRT bands. Faint — they are a scale, not the data. */
+.trace-band.is-ok {
+  fill: rgba(74, 222, 128, 0.1);
+}
+.trace-band.is-watch {
+  fill: rgba(251, 191, 36, 0.08);
+}
+.trace-band.is-alarm {
+  fill: rgba(248, 113, 113, 0.12);
+}
+
+.trace-chart-line {
+  fill: none;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.trace-chart-line.is-ok {
+  stroke: #4ade80;
+}
+.trace-chart-line.is-watch {
+  stroke: #fbbf24;
+}
+.trace-chart-line.is-alarm {
+  stroke: #f87171;
+}
+
+.trace-chart-area {
+  stroke: none;
+}
+
+.trace-chart-area.is-ok {
+  fill: rgba(74, 222, 128, 0.18);
+}
+.trace-chart-area.is-watch {
+  fill: rgba(251, 191, 36, 0.16);
+}
+.trace-chart-area.is-alarm {
+  fill: rgba(248, 113, 113, 0.2);
+}
+
+.trace-chart-dot.is-ok {
+  fill: #4ade80;
+}
+.trace-chart-dot.is-watch {
+  fill: #fbbf24;
+}
+.trace-chart-dot.is-alarm {
+  fill: #f87171;
+}
+
+.trace-chart-foot {
+  margin: 4px 0 0 0;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: var(--trace-muted);
+}
+
+/* ------------------------------------------------------------- lockout --- */
+
+/*
+ * Sits above the Trace card in the same corner, in the card's own colours: it
+ * is the same system speaking, not a page-level error.
+ */
+.trace-lockout {
+  --trace-bg: #0f1114;
+  --trace-line: rgba(255, 255, 255, 0.13);
+  --trace-muted: rgba(255, 255, 255, 0.62);
+  --trace-radius: 8px;
+
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2100;
+  width: 340px;
+  max-width: calc(100vw - 32px);
+  padding: 14px;
+  color: #fff;
+  background-color: var(--trace-bg);
+  border: 1px solid rgba(248, 113, 113, 0.5);
+  border-radius: var(--trace-radius);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  line-height: 1.45;
+  animation: trace-lockout-in 180ms ease-out;
+}
+
+@keyframes trace-lockout-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trace-lockout {
+    animation: none;
+  }
+}
+
+.trace-lockout-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.trace-lockout-icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background-color: #e5484d;
+  border-radius: var(--trace-radius);
+}
+
+.trace-lockout-title {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.trace-lockout-title strong {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f87171;
+}
+
+.trace-lockout-title span {
+  font-size: 12px;
+  color: var(--trace-muted);
+}
+
+.trace-lockout-close {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--trace-muted);
+  background: none;
+  border: 1px solid var(--trace-line);
+  border-radius: var(--trace-radius);
+  cursor: pointer;
+}
+
+.trace-lockout-close:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.trace-lockout-body {
+  margin: 10px 0 0 0;
+  font-size: 12px;
+  color: var(--trace-muted);
+}
+
+.trace-lockout-action {
+  display: block;
+  margin-top: 12px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #e5484d;
+  border-radius: var(--trace-radius);
+}
+
+.trace-lockout-action:hover {
+  background-color: #cf3a3f;
+}
+
+/* The card steps aside so both are readable at once. */
+.trace-lockout ~ .trace-card,
+.trace-card:has(~ .trace-lockout) {
+  bottom: 16px;
+  right: 372px;
+}
+
+@media (max-width: 760px) {
+  .trace-card:has(~ .trace-lockout) {
+    display: none;
   }
 }

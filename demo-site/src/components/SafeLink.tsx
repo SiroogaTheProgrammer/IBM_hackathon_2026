@@ -7,6 +7,8 @@ export type SafeLinkProps = {
   href: string;
   className?: string;
   children: ReactNode;
+  /** `data-trace` anchor for the study flow (`@/data/taskFlow`). */
+  traceId?: string;
 };
 
 /**
@@ -22,10 +24,15 @@ export type SafeLinkProps = {
  *   "#"         → placeholder, clickable but inert
  *   "#section"  → in-page anchor, left to the browser
  */
-export default function SafeLink({ href, className, children }: SafeLinkProps) {
+export default function SafeLink({
+  href,
+  className,
+  children,
+  traceId,
+}: SafeLinkProps) {
   if (href.startsWith("/")) {
     return (
-      <Link href={href} className={className}>
+      <Link href={href} className={className} data-trace={traceId}>
         {children}
       </Link>
     );
@@ -38,6 +45,7 @@ export default function SafeLink({ href, className, children }: SafeLinkProps) {
         className={className}
         target="_blank"
         rel="noopener noreferrer"
+        data-trace={traceId}
       >
         {children}
       </a>
@@ -49,6 +57,7 @@ export default function SafeLink({ href, className, children }: SafeLinkProps) {
       <a
         href="#"
         className={className}
+        data-trace={traceId}
         onClick={(event) => event.preventDefault()}
       >
         {children}
@@ -57,7 +66,7 @@ export default function SafeLink({ href, className, children }: SafeLinkProps) {
   }
 
   return (
-    <a href={href} className={className}>
+    <a href={href} className={className} data-trace={traceId}>
       {children}
     </a>
   );

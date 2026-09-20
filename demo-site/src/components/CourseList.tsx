@@ -82,8 +82,10 @@ export default function CourseList({ courses }: CourseListProps) {
         <Dropdown
           variant="pill"
           label={filterLabel}
+          traceId="courses.filter"
           items={courseFilters.map<DropdownItem>((option) => ({
             label: option.label,
+            traceId: `courses.filter.${option.value}`,
             onSelect: () => setFilter(option.value),
           }))}
         />
@@ -95,6 +97,7 @@ export default function CourseList({ courses }: CourseListProps) {
             style={{ paddingLeft: "16px", paddingRight: "34px" }}
             placeholder="Search"
             aria-label="Search courses"
+            data-trace="courses.search"
             value={search}
             onChange={(event) => setSearch(event.target.value)}
           />
@@ -129,8 +132,10 @@ export default function CourseList({ courses }: CourseListProps) {
           variant="pill"
           align="right"
           label={sortLabel}
+          traceId="courses.sort"
           items={courseSorts.map<DropdownItem>((option) => ({
             label: option.label,
+            traceId: `courses.sort.${option.value}`,
             onSelect: () => setSort(option.value),
           }))}
         />
@@ -156,7 +161,11 @@ export default function CourseList({ courses }: CourseListProps) {
                 />
 
                 <div className="min-w-0 flex-1">
-                  <Link href={routes.course(course.id)} className="mc-link">
+                  <Link
+                    href={routes.course(course.id)}
+                    className="mc-link"
+                    data-trace={`courses.row.${course.id}`}
+                  >
                     {course.name}
                   </Link>
                   {isStarred ? (
@@ -181,17 +190,20 @@ export default function CourseList({ courses }: CourseListProps) {
                   hideChevron
                   ariaLabel={`Actions for ${course.name}`}
                   label={<Kebab size={18} className="shrink-0" />}
+                  traceId={`courses.kebab.${course.id}`}
                   items={[
                     {
                       label: isStarred
                         ? "Unstar this course"
                         : "Star this course",
+                      traceId: `courses.star.${course.id}`,
                       onSelect: () => toggleId(setStarred, course.id),
                     },
                     {
                       label: isRemoved
                         ? "Restore to view"
                         : "Remove from view",
+                      traceId: `courses.remove.${course.id}`,
                       onSelect: () => toggleId(setRemoved, course.id),
                     },
                   ]}
