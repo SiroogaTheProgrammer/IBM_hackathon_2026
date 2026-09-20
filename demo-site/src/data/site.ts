@@ -19,6 +19,8 @@ export type NavLink = {
   href: string;
   /** Match the pathname exactly rather than by prefix. */
   exact?: boolean;
+  /** `data-trace` anchor for the study flow (`@/data/taskFlow`). */
+  traceId?: string;
 };
 
 /** Routes that actually exist in this clone. */
@@ -32,9 +34,9 @@ export const routes = {
 
 /** Primary nav items that carry the 3px orange active underline. */
 export const primaryNav: NavLink[] = [
-  { label: "Home", href: "/", exact: true },
-  { label: "Dashboard", href: "/my", exact: true },
-  { label: "My own courses", href: "/my/courses" },
+  { label: "Home", href: "/", exact: true, traceId: "nav.home" },
+  { label: "Dashboard", href: "/my", exact: true, traceId: "nav.dashboard" },
+  { label: "My own courses", href: "/my/courses", traceId: "nav.my-courses" },
 ];
 
 export const schools: MenuItem[] = [

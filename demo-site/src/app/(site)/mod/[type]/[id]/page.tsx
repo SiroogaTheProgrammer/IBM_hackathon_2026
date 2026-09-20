@@ -50,7 +50,7 @@ function ActivityBody({ activity }: { activity: Activity }) {
     case "assign":
       return <AssignBody activity={activity} />;
     case "quiz":
-      return <QuizBody />;
+      return <QuizBody activity={activity} />;
     case "feedback":
       return <FeedbackBody />;
     case "forum":

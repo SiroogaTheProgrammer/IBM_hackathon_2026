@@ -38,11 +38,13 @@ export default function TimelineBlock() {
 
   const rangeItems: DropdownItem[] = timelineRanges.map((option) => ({
     label: option.label,
+    traceId: `timeline.range.${option.days}`,
     onSelect: () => setRange(option),
   }));
 
   const sortItems: DropdownItem[] = timelineSorts.map((option) => ({
     label: option,
+    traceId: `timeline.sort.${option === "Sort by dates" ? "dates" : "courses"}`,
     onSelect: () => setSort(option),
   }));
 
@@ -90,12 +92,14 @@ export default function TimelineBlock() {
           label={range.label}
           items={rangeItems}
           ariaLabel="Filter timeline by date range"
+          traceId="timeline.range"
         />
         <Dropdown
           variant="pill"
           label={sort}
           items={sortItems}
           ariaLabel="Sort timeline"
+          traceId="timeline.sort"
         />
         <div className="min-w-[220px] flex-1">
           <label className="mc-sr-only" htmlFor="timeline-search">
@@ -106,6 +110,7 @@ export default function TimelineBlock() {
             type="text"
             className="mc-input mc-input-pill"
             placeholder="Search by activity type or name"
+            data-trace="timeline.search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
           />
@@ -148,7 +153,11 @@ function TimelineRow({ item }: { item: TimelineItem }) {
 
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-2">
-          <SafeLink className="mc-link font-medium" href={activityHref}>
+          <SafeLink
+            className="mc-link font-medium"
+            href={activityHref}
+            traceId={`timeline.item.${item.activityId}`}
+          >
             {item.title}
           </SafeLink>
           {item.overdue ? <span className="mc-badge-danger">Overdue</span> : null}

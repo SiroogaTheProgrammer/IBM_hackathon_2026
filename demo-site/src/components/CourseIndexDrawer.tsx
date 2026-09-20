@@ -205,6 +205,7 @@ export default function CourseIndexDrawer({
                   <SafeLink
                     href={`/course/${courseId}#${section.id}`}
                     className="min-w-0 flex-1 font-medium text-inherit no-underline"
+                    traceId={`index.section.${section.id}`}
                   >
                     {section.name}
                   </SafeLink>
@@ -212,6 +213,7 @@ export default function CourseIndexDrawer({
                   <a
                     href={`#${section.id}`}
                     className="min-w-0 flex-1 font-medium text-inherit no-underline"
+                    data-trace={`index.section.${section.id}`}
                     onClick={() => selectSection(section.id)}
                   >
                     {section.name}
@@ -225,6 +227,7 @@ export default function CourseIndexDrawer({
                     <li key={child.activityId}>
                       <SafeLink
                         href={child.href}
+                        traceId={`index.child.${child.activityId}`}
                         className={`mc-index-link mc-index-child${
                           child.activityId === activeActivityId
                             ? " is-current"

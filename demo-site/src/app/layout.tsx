@@ -1,7 +1,4 @@
 import type { Metadata } from "next";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-import { getCurrentUser } from "@/data/currentUser";
 import "./globals.css";
 
 const FAVICON =
@@ -18,20 +15,17 @@ export const metadata: Metadata = {
 };
 
 /**
- * Reading the user cookie here is what keeps the navbar avatar and the footer
- * sign-off in step on the server's first render; it also makes every route
- * dynamic, which this site can afford.
+ * Root layout: only the document shell and the design system.
+ *
+ * The signed-in chrome (navbar, footer, Trace panel) lives in the `(site)`
+ * group layout, so the `(auth)` login page can render on the same gradient
+ * background the real MyCourses login uses — with none of that chrome, exactly
+ * as the live site presents it.
  */
-export default async function RootLayout({ children }: LayoutProps<"/">) {
-  const user = await getCurrentUser();
-
+export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="min-h-full flex flex-col">
-        <Navbar user={user} />
-        <div className="mc-content">{children}</div>
-        <Footer user={user} />
-      </body>
+      <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }

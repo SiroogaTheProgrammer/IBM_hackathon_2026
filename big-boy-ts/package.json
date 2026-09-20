@@ -1,0 +1,28 @@
+{
+  "name": "big-boy-ts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Stroke encoder for continuous impostor detection \u2014 TS feature extraction + TensorFlow.js training on SapiMouse.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test 'src/**/*.test.ts'",
+    "extract": "node src/cli.ts extract",
+    "train": "node src/cli.ts train",
+    "eval": "node src/cli.ts eval",
+    "export": "node src/cli.ts export",
+    "all": "npm run extract && npm run train && npm run eval && npm run export"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
+    "@tensorflow/tfjs-node": "^4.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}

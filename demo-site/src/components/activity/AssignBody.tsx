@@ -31,7 +31,11 @@ export default function AssignBody({ activity }: AssignBodyProps) {
 
   return (
     <>
-      <button type="button" className="mc-btn mc-btn-dark">
+      <button
+        type="button"
+        className="mc-btn mc-btn-dark"
+        data-trace="assign.submit"
+      >
         Add submission
       </button>
 

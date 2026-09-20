@@ -212,7 +212,11 @@ export default function SectionBand({ section }: SectionBandProps) {
 
       <div className="mc-section-band-main flex flex-col justify-between self-stretch">
         <h2 className="mc-section-band-title">
-          <a href={anchor} className="text-inherit no-underline hover:underline">
+          <a
+            href={anchor}
+            className="text-inherit no-underline hover:underline"
+            data-trace={`course.band.${section.id}`}
+          >
             {section.name}
           </a>
         </h2>

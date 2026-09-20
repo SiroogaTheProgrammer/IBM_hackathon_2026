@@ -1289,3 +1289,923 @@ body {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+
+/* ---------------------------------------------------------------- login --- */
+/*
+ * The sign-in page (src/components/LoginView.tsx, served by the (auth) group).
+ * A white masthead with the Aalto logo and a language switch, a left-to-right
+ * grey gradient band carrying the login options + Finnish/English info, and a
+ * thin orange rule closing the page — all measured from the live login screen.
+ */
+.mc-login {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.mc-login-top {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 24px 24px 20px;
+  background-color: var(--mc-bg);
+}
+
+.mc-login-logo {
+  width: 100px;
+  height: 92px;
+  object-fit: contain;
+}
+
+.mc-login-lang {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+}
+
+.mc-login-lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;
+  font-size: 15px;
+  color: var(--mc-link);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.mc-login-lang-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 160px;
+  margin: 4px 0 0;
+  padding: 6px 0;
+  list-style: none;
+  background-color: var(--mc-bg);
+  border: 1px solid var(--mc-border);
+  border-radius: var(--mc-radius);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  z-index: 10;
+}
+
+.mc-login-lang-item {
+  display: block;
+  padding: 6px 16px;
+  color: var(--mc-text);
+  text-decoration: none;
+}
+
+.mc-login-lang-item:hover {
+  background-color: var(--mc-hover-bg);
+}
+
+.mc-login-band {
+  flex: 1 1 auto;
+  background-image: linear-gradient(to right, #f8f9fa 0%, #dee2e6 100%);
+}
+
+.mc-login-inner {
+  width: 100%;
+  max-width: 1290px;
+  margin-inline: auto;
+  padding: 40px 24px 56px;
+}
+
+/* Present in the DOM of the real page but not shown; kept for parity + a11y. */
+.mc-login-srtitle,
+.mc-login-srlabel {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.mc-login-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 458px) 1fr;
+  gap: 24px 80px;
+  align-items: start;
+}
+
+.mc-login-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mc-login-aalto {
+  width: 100%;
+  padding: 8px 12px;
+  font-family: inherit;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  background-color: var(--mc-dark);
+  border: 1px solid var(--mc-dark);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.mc-login-aalto:hover {
+  background-color: #000;
+  border-color: #000;
+}
+
+.mc-login-info-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--mc-link);
+  text-decoration: underline;
+}
+
+.mc-login-openuni,
+.mc-login-haka-note {
+  margin: 0;
+}
+
+.mc-login-haka {
+  align-self: flex-start;
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.mc-login-haka img {
+  display: block;
+  width: 225px;
+  height: 67px;
+  border: 1px solid var(--mc-border);
+}
+
+.mc-login-about > p {
+  margin: 0 0 16px;
+}
+
+.mc-login-about .mc-h2 {
+  margin-top: 8px;
+}
+
+.mc-login-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+/* The Aalto theme's login buttons are full pills, wider than the base .mc-btn. */
+.mc-login-pill {
+  padding: 8px 20px;
+  font-size: 15px;
+  border-radius: 32px;
+}
+
+.mc-login-local {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.mc-login-toggle {
+  padding: 6px 20px;
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--mc-text);
+  background-color: var(--mc-border);
+  border: 1px solid #28a745;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.mc-login-form {
+  width: 100%;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mc-login-submit {
+  align-self: flex-start;
+  padding: 8px 20px;
+  font-family: inherit;
+  font-size: 15px;
+  color: #fff;
+  background-color: var(--mc-dark);
+  border: 1px solid var(--mc-dark);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.mc-login-submit:hover {
+  background-color: #000;
+  border-color: #000;
+}
+
+.mc-login-lost {
+  align-self: flex-start;
+  text-decoration: underline;
+}
+
+.mc-login-shib-title {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.mc-login-shib {
+  margin-top: 8px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.mc-login-footer {
+  height: 96px;
+  background-color: var(--mc-bg);
+  border-top: 1px solid var(--mc-orange);
+}
+
+@media (max-width: 780px) {
+  .mc-login-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+}
+
+/* ------------------------------------------------------------ quiz --- */
+/*
+ * The `/mod/quiz/<id>` attempt flow (src/components/activity/QuizBody.tsx).
+ * Measured from a live Moodle attempt page: a grey bordered info band per
+ * question, a white formulation body, a bordered "Quiz navigation" card of
+ * square state buttons, and the submit-confirmation modal.
+ */
+.mc-quiz-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.mc-quiz-main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.mc-que {
+  margin-bottom: 27px;
+}
+
+.mc-que-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  padding: 8px 12px;
+  background-color: var(--mc-band-bg);
+  border: 1px solid var(--mc-border-strong);
+  border-radius: 2px 2px 0 0;
+  font-size: 15px;
+}
+
+.mc-que-num {
+  font-size: 15px;
+}
+
+.mc-que-num strong {
+  margin-left: 4px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.mc-que-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+}
+
+.mc-que-flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
+  font-size: 12px;
+  color: var(--mc-link);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.mc-que-flag:hover {
+  text-decoration: underline;
+}
+
+.mc-que-flag.is-flagged {
+  color: var(--mc-danger);
+}
+
+.mc-que-flag.is-flagged .mc-que-flag-banner {
+  fill: currentColor;
+}
+
+.mc-que-mark {
+  font-size: 13px;
+  color: var(--mc-muted);
+}
+
+.mc-que-status {
+  font-size: 13px;
+  color: var(--mc-text);
+}
+
+.mc-que-status.is-correct {
+  color: #1a7f37;
+  font-weight: 500;
+}
+
+.mc-que-status.is-incorrect {
+  color: var(--mc-danger);
+  font-weight: 500;
+}
+
+.mc-que-content {
+  padding: 16px;
+  background-color: var(--mc-bg);
+  border: 1px solid var(--mc-border-strong);
+  border-top: 0;
+  border-radius: 0 0 3px 3px;
+}
+
+.mc-qtext {
+  margin: 0 0 20px 0;
+}
+
+/* -------- answers -------- */
+.mc-answer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mc-answer-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 3px 0;
+  cursor: pointer;
+}
+
+.mc-answer-option input {
+  margin-top: 3px;
+}
+
+.mc-answer-option.is-correct {
+  color: #1a7f37;
+  font-weight: 500;
+}
+
+.mc-answer-option.is-correct::after {
+  content: "✓";
+  margin-left: 6px;
+  color: #1a7f37;
+}
+
+.mc-answer-option.is-incorrect {
+  color: var(--mc-danger);
+}
+
+.mc-answer-option.is-incorrect::after {
+  content: "✗";
+  margin-left: 6px;
+  color: var(--mc-danger);
+}
+
+.mc-answer-short {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mc-answer-input {
+  width: 200px;
+}
+
+.mc-answer-input:disabled {
+  background-color: var(--mc-band-bg);
+  color: var(--mc-text);
+}
+
+.mc-que-feedback {
+  margin: 14px 0 0 0;
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #eef4ff;
+  border-radius: 4px;
+}
+
+/* -------- quiz navigation card -------- */
+.mc-quiz-nav {
+  flex: 0 0 250px;
+  width: 250px;
+  padding: 16px;
+  background-color: var(--mc-bg);
+  border: 1px solid var(--mc-border);
+  border-radius: 8px;
+}
+
+.mc-quiz-nav-title {
+  margin: 0 0 12px 0;
+  font-size: 18.75px;
+  font-weight: 500;
+  color: var(--mc-text);
+}
+
+.mc-quiz-nav-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.mc-quiz-nav-btn {
+  position: relative;
+  min-width: 30px;
+  height: 34px;
+  padding: 0 6px;
+  font-size: 14px;
+  color: var(--mc-text);
+  background-color: var(--mc-bg);
+  border: 1px solid var(--mc-border-strong);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.mc-quiz-nav-btn:hover {
+  background-color: var(--mc-hover-bg);
+}
+
+.mc-quiz-nav-btn.is-answered {
+  background-color: var(--mc-border);
+  border-color: var(--mc-border-strong);
+}
+
+.mc-quiz-nav-btn.is-flagged::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 7px 7px 0;
+  border-style: solid;
+  border-color: transparent var(--mc-danger) transparent transparent;
+}
+
+.mc-quiz-nav-finish {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.mc-quiz-summary {
+  max-width: 640px;
+}
+
+.mc-quiz-result {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* -------- confirmation modal -------- */
+.mc-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mc-modal {
+  width: 100%;
+  max-width: 480px;
+  padding: 24px;
+  background-color: var(--mc-bg);
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+.mc-modal-title {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.mc-modal-body {
+  margin: 0 0 20px 0;
+}
+
+.mc-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 900px) {
+  .mc-quiz-layout {
+    flex-direction: column;
+  }
+
+  .mc-quiz-nav {
+    flex-basis: auto;
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Trace study panel — the fixed bottom-right overlay.
+
+   The only part of this site that is NOT the MyCourses clone, so it is
+   deliberately unlike everything above it: dark plate, white text and an 8px
+   radius throughout, none of which the Moodle theme uses.
+   ========================================================================== */
+
+.trace-card {
+  --trace-bg: #0f1114;
+  --trace-line: rgba(255, 255, 255, 0.13);
+  --trace-muted: rgba(255, 255, 255, 0.62);
+  --trace-radius: 8px;
+
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2000;
+  width: 328px;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 32px);
+  overflow-y: auto;
+  color: #fff;
+  background-color: var(--trace-bg);
+  border: 1px solid var(--trace-line);
+  border-radius: var(--trace-radius);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.38);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.trace-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 12px 10px 14px;
+  border-bottom: 1px solid var(--trace-line);
+}
+
+.trace-phase {
+  margin-left: auto;
+  padding: 2px 8px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--trace-muted);
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: var(--trace-radius);
+}
+
+.trace-collapse {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  font-size: 15px;
+  line-height: 1;
+  color: var(--trace-muted);
+  background: none;
+  border: 1px solid var(--trace-line);
+  border-radius: var(--trace-radius);
+  cursor: pointer;
+}
+
+.trace-collapse:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.trace-body {
+  padding: 12px 14px 14px 14px;
+}
+
+.trace-body > * + * {
+  margin-top: 10px;
+}
+
+.trace-lede {
+  margin: 0;
+  font-size: 13px;
+}
+
+.trace-note {
+  margin: 0;
+  font-size: 12px;
+  color: var(--trace-muted);
+}
+
+.trace-steps {
+  margin: 0;
+  padding-left: 18px;
+  list-style: decimal;
+  font-size: 12px;
+  color: var(--trace-muted);
+}
+
+.trace-steps li + li {
+  margin-top: 8px;
+}
+
+.trace-steps strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ------------------------------------------------------------- run view --- */
+
+.trace-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--trace-muted);
+}
+
+.trace-progress {
+  display: flex;
+  gap: 4px;
+}
+
+/* One segment per task, sized by how many sub-tasks that task holds. */
+.trace-progress-seg {
+  flex: 1 1 0;
+  height: 4px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.14);
+  border-radius: var(--trace-radius);
+}
+
+.trace-progress-seg > span {
+  display: block;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: var(--trace-radius);
+}
+
+.trace-progress-seg.is-active > span {
+  background-color: #fff;
+}
+
+.trace-task-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.trace-instruction {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 0;
+  padding: 10px;
+  font-size: 13px;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: var(--trace-radius);
+}
+
+.trace-step-badge {
+  flex: 0 0 auto;
+  padding: 1px 6px;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: var(--trace-bg);
+  background-color: #fff;
+  border-radius: var(--trace-radius);
+}
+
+.trace-indicator {
+  margin: 0;
+  padding: 8px 10px;
+  font-size: 12px;
+  border: 1px solid var(--trace-line);
+  border-radius: var(--trace-radius);
+}
+
+.trace-indicator.is-waiting {
+  color: var(--trace-muted);
+}
+
+.trace-indicator.is-ok {
+  color: #4ade80;
+  border-color: rgba(74, 222, 128, 0.35);
+}
+
+.trace-indicator.is-watch {
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.35);
+}
+
+/* -------------------------------------------------------------- result --- */
+
+.trace-verdict {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--trace-line);
+  border-radius: var(--trace-radius);
+}
+
+.trace-verdict-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.trace-verdict-score {
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  color: var(--trace-muted);
+}
+
+.trace-verdict.is-verified {
+  color: #4ade80;
+  border-color: rgba(74, 222, 128, 0.4);
+  background-color: rgba(74, 222, 128, 0.08);
+}
+
+.trace-verdict.is-inconclusive {
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.4);
+  background-color: rgba(251, 191, 36, 0.08);
+}
+
+.trace-verdict.is-locked {
+  color: #f87171;
+  border-color: rgba(248, 113, 113, 0.45);
+  background-color: rgba(248, 113, 113, 0.1);
+}
+
+.trace-readout {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 10px;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: var(--trace-radius);
+}
+
+.trace-readout > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.trace-readout dt {
+  color: var(--trace-muted);
+}
+
+.trace-readout dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ------------------------------------------------------------- actions --- */
+
+.trace-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.trace-btn {
+  flex: 1 1 auto;
+  padding: 8px 12px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid var(--trace-line);
+  border-radius: var(--trace-radius);
+  cursor: pointer;
+}
+
+.trace-btn:hover {
+  background-color: rgba(255, 255, 255, 0.09);
+}
+
+.trace-btn--primary {
+  color: var(--trace-bg);
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.trace-btn--primary:hover {
+  background-color: rgba(255, 255, 255, 0.86);
+}
+
+.trace-foot {
+  margin: 0;
+  padding-top: 2px;
+  font-size: 11px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.trace-mini {
+  margin: 0;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: var(--trace-muted);
+}
+
+/* Collection-mode switch (localhost only) and its "Saved" plate. */
+
+.trace-switch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  color: var(--trace-muted);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: var(--trace-radius);
+}
+
+.trace-switch {
+  position: relative;
+  flex: 0 0 auto;
+  width: 34px;
+  height: 18px;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.22);
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 120ms linear;
+}
+
+.trace-switch.is-on {
+  background-color: #4ade80;
+}
+
+.trace-switch:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.trace-switch-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 120ms linear;
+}
+
+.trace-switch.is-on .trace-switch-knob {
+  transform: translateX(16px);
+}
+
+.trace-verdict.is-saved {
+  color: #4ade80;
+  border-color: rgba(74, 222, 128, 0.4);
+  background-color: rgba(74, 222, 128, 0.08);
+}
+
+.trace-card code {
+  padding: 0 3px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}

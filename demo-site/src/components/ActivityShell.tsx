@@ -9,6 +9,8 @@ import { buildCourseIndex, getCourse } from "@/data/courses";
 type Crumb = {
   label: string;
   href?: string;
+  /** `data-trace` anchor for the study flow (`@/data/taskFlow`). */
+  traceId?: string;
 };
 
 export type ActivityShellProps = {
@@ -41,6 +43,7 @@ export default function ActivityShell({
     {
       label: "Main course page",
       href: course ? `/course/${course.id}` : undefined,
+      traceId: "crumb.course",
     },
     {
       label: activity.sectionName,
@@ -48,6 +51,7 @@ export default function ActivityShell({
         course && activity.sectionId
           ? `/course/${course.id}#${activity.sectionId}`
           : undefined,
+      traceId: "crumb.section",
     },
     { label: activity.name },
   ];
@@ -73,7 +77,11 @@ export default function ActivityShell({
                     <span className="mc-crumb-sep"> / </span>
                   ) : null}
                   {crumb.href ? (
-                    <SafeLink className="mc-link" href={crumb.href}>
+                    <SafeLink
+                      className="mc-link"
+                      href={crumb.href}
+                      traceId={crumb.traceId}
+                    >
                       {crumb.label}
                     </SafeLink>
                   ) : (
@@ -87,10 +95,18 @@ export default function ActivityShell({
 
         <div className="mc-container-activity pt-4 pb-10">
           <div className="mb-5 flex flex-wrap justify-end gap-2">
-            <button type="button" className="mc-btn mc-btn-dark">
+            <button
+              type="button"
+              className="mc-btn mc-btn-dark"
+              data-trace="activity.feedback"
+            >
               Course feedback
             </button>
-            <button type="button" className="mc-btn mc-btn-dark">
+            <button
+              type="button"
+              className="mc-btn mc-btn-dark"
+              data-trace="activity.syllabus"
+            >
               Syllabus
             </button>
           </div>

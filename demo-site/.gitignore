@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Recorded data-collection runs (localhost only, see src/lib/trace/collect.ts)
+/data/collected/

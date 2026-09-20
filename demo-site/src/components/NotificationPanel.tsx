@@ -73,6 +73,7 @@ export default function NotificationPanel() {
             ? `Show notifications (${unreadCount} unread)`
             : "Show notifications"
         }
+        data-trace="nav.notifications"
         onClick={() => setOpen((value) => !value)}
       >
         <Bell />
@@ -97,6 +98,7 @@ export default function NotificationPanel() {
                 className="mc-icon-btn"
                 aria-label="Mark all as read"
                 title="Mark all as read"
+                data-trace="notifications.mark-all-read"
                 onClick={() =>
                   setReadIds(notifications.map((item) => item.id))
                 }

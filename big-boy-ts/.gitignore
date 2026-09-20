@@ -1,0 +1,12 @@
+# Raw datasets — large, redistribution-restricted, fetched separately.
+# See README.md for the expected layout under data/.
+data/
+
+# Build + training outputs
+node_modules/
+dist/
+artifacts/
+cache/
+
+# OS
+.DS_Store
