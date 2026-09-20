@@ -1,325 +1,152 @@
 /**
- * Client-side capture and feature extraction for one sub-task.
+ * Client capture for one sub-task (description.md §3.1).
  *
- * Follows `description.md` §3–§4: `pointermove` with `getCoalescedEvents()` so
- * the browser's own coalescing does not silently downsample the trajectory,
- * a uniform 60 Hz resample before any kinematics are computed, and a
- * viewport-invariant feature vector (everything spatial is divided by the
- * viewport diagonal, everything about the landing is expressed relative to the
- * target element's bounding box).
+ * This file used to own a second, hand-written feature extractor. It does not
+ * any more, and that is the point: the features are computed by
+ * `big-boy-ts/src/shared`, the *same compiled code* that produced the training
+ * features. §3.2 exists because a kinematic feature computed on raw samples is
+ * a different signal at 17 ms (SapiMouse) than at 4 ms (coalesced
+ * `pointermove`); a second implementation in another language — or in another
+ * directory — is that same failure one level up.
  *
- * Nothing here leaves the browser: the provider keeps the vectors in memory for
- * the length of a session and throws them away on reload.
+ * So all this module does is turn browser pointer events into the encoder's
+ * `InputEvent` shape, exactly as the SapiMouse CSV loader does on the offline
+ * side, and hand them to `extractFromEvents`.
  */
 
-/** One captured pointer position. `t` is `performance.now()` milliseconds. */
-export type PointerSample = { t: number; x: number; y: number };
+import { DEFAULT_SEGMENT_CONFIG, extractFromEvents } from "@encoder/index";
+import type { Button, ExtractedStroke, InputEvent } from "@encoder/index";
+
+/** Browser button index → the encoder's button name. */
+const BUTTONS: Button[] = ["left", "middle", "right"];
+
+function heldButton(buttons: number): Button {
+  if (buttons & 1) return "left";
+  if (buttons & 2) return "right";
+  if (buttons & 4) return "middle";
+  return "none";
+}
 
 /**
- * Feature order is part of the on-the-wire contract between a captured run and
- * an enrollment template — append, never reorder.
+ * The geometry a run was captured under (§3.3).
+ *
+ * §3.3 asks for a locked logical canvas so enrollment and test are exactly
+ * comparable. This demo renders at whatever size the window happens to be, so
+ * instead the viewport is *recorded*: distances are normalised by the diagonal,
+ * and a mismatch between enrollment and test widens the decision thresholds
+ * rather than counting as evidence of an impostor.
  */
-export const FEATURE_NAMES = [
-  "duration",
-  "path_length",
-  "straightness",
-  "speed_mean",
-  "speed_max",
-  "speed_std",
-  "accel_abs_mean",
-  "jerk_abs_mean",
-  "pause_count",
-  "time_to_peak_frac",
-  "reversals",
-  "endpoint_dx",
-  "endpoint_dy",
-  "approach_cos",
-  "approach_sin",
-  "idle_before_move",
-  "dwell_before_click",
-] as const;
+export type Viewport = {
+  width: number;
+  height: number;
+  /** Viewport diagonal — the length every distance feature is divided by. */
+  diagonal: number;
+  devicePixelRatio: number;
+  /** "mouse" | "pen" | "touch", from the pointer events themselves. */
+  pointerType: string;
+};
 
-export const FEATURE_COUNT = FEATURE_NAMES.length;
+export function readViewport(pointerType = "unknown"): Viewport {
+  return {
+    width: window.innerWidth,
+    height: window.innerHeight,
+    diagonal: Math.hypot(window.innerWidth, window.innerHeight),
+    devicePixelRatio: window.devicePixelRatio,
+    pointerType,
+  };
+}
 
-/**
- * Per-feature scale, used to turn a raw difference between two runs into a
- * comparable z-distance. These are rough within-user spreads eyeballed from the
- * feature definitions rather than fitted numbers; §6.4 replaces them with
- * scales measured on the calibration set.
- */
-export const FEATURE_SCALE: number[] = [
-  0.35, // duration           (log1p seconds)
-  0.30, // path_length        (viewport diagonals)
-  0.12, // straightness       (0..1)
-  0.35, // speed_mean         (diagonals / s)
-  0.80, // speed_max
-  0.35, // speed_std
-  4.00, // accel_abs_mean     (diagonals / s²)
-  120.0, // jerk_abs_mean     (diagonals / s³)
-  0.45, // pause_count        (log1p)
-  0.22, // time_to_peak_frac  (0..1)
-  0.45, // reversals          (log1p)
-  0.22, // endpoint_dx        (fraction of target width, -0.5..0.5)
-  0.22, // endpoint_dy
-  0.45, // approach_cos
-  0.45, // approach_sin
-  0.45, // idle_before_move   (log1p seconds)
-  0.40, // dwell_before_click (log1p seconds)
-];
-
-/** Movement slower than this (viewport diagonals per second) counts as a pause. */
-const PAUSE_SPEED = 0.05;
-
-/** The 60 Hz grid every trajectory is resampled onto before kinematics. */
-const FRAME_MS = 1000 / 60;
-
-/** A trajectory shorter than this carries no usable kinematics. */
-const MIN_SAMPLES = 4;
+/** Two runs are geometrically comparable when the viewport has not moved. */
+export function viewportsMatch(a: Viewport, b: Viewport): boolean {
+  return a.width === b.width && a.height === b.height;
+}
 
 /* ------------------------------------------------------------ recording --- */
 
 /**
- * Accumulates the raw trajectory of the sub-task currently in progress. One
- * instance per sub-task; the provider swaps it out on every advance.
+ * Accumulates the raw event stream of the sub-task currently in progress. One
+ * instance per sub-task; the run engine swaps it out on every advance.
  */
 export class SubtaskRecorder {
   readonly subtaskId: string;
   readonly startedAt: number;
 
-  private samples: PointerSample[] = [];
+  private events: InputEvent[] = [];
+  private held = false;
+  /** Whichever pointer hardware the participant actually used (§6.4). */
+  private pointerType = "unknown";
 
   constructor(subtaskId: string, startedAt: number = performance.now()) {
     this.subtaskId = subtaskId;
     this.startedAt = startedAt;
   }
 
-  /** Feed one `pointermove`, expanding it into its coalesced positions. */
-  add(event: PointerEvent): void {
-    const events =
+  get eventCount(): number {
+    return this.events.length;
+  }
+
+  get observedPointerType(): string {
+    return this.pointerType;
+  }
+
+  /**
+   * Feed one `pointermove`, expanded through `getCoalescedEvents()` so the
+   * browser's own coalescing does not silently downsample the trajectory
+   * (§3.1). The encoder resamples to a uniform 60 Hz grid afterwards, but it
+   * can only resample detail that was captured in the first place.
+   */
+  addMove(event: PointerEvent): void {
+    if (event.pointerType) this.pointerType = event.pointerType;
+
+    const held = heldButton(event.buttons);
+    const coalesced =
       typeof event.getCoalescedEvents === "function"
         ? event.getCoalescedEvents()
         : [];
-    const points = events.length > 0 ? events : [event];
+    const samples = coalesced.length > 0 ? coalesced : [event];
 
-    for (const point of points) {
-      this.samples.push({
-        t: point.timeStamp || performance.now(),
-        x: point.clientX,
-        y: point.clientY,
+    for (const sample of samples) {
+      this.events.push({
+        t: sample.timeStamp || performance.now(),
+        x: sample.clientX,
+        y: sample.clientY,
+        kind: "move",
+        button: held,
+        dragging: held !== "none" || this.held,
       });
     }
   }
 
-  get sampleCount(): number {
-    return this.samples.length;
+  addDown(event: PointerEvent): void {
+    this.held = true;
+    this.push(event, "down");
   }
 
-  /** The recorded trajectory, in capture order. */
-  trajectory(): PointerSample[] {
-    return this.samples;
+  addUp(event: PointerEvent): void {
+    this.push(event, "up");
+    this.held = false;
   }
-}
 
-/* ---------------------------------------------------------- resampling --- */
-
-/**
- * Linear resample onto a uniform 60 Hz grid. Applied identically to live
- * capture and to any replayed dataset, so speed and acceleration mean the same
- * thing at enrollment and at test time (§3.2).
- */
-export function resample60Hz(samples: PointerSample[]): PointerSample[] {
-  if (samples.length < 2) return samples;
-
-  const first = samples[0];
-  const last = samples[samples.length - 1];
-  if (!first || !last) return samples;
-
-  const span = last.t - first.t;
-  if (span <= 0) return samples;
-
-  const frames = Math.max(2, Math.floor(span / FRAME_MS) + 1);
-  const out: PointerSample[] = [];
-  let cursor = 0;
-
-  for (let frame = 0; frame < frames; frame += 1) {
-    const t = first.t + frame * FRAME_MS;
-
-    while (
-      cursor < samples.length - 2 &&
-      (samples[cursor + 1]?.t ?? Infinity) < t
-    ) {
-      cursor += 1;
-    }
-
-    const a = samples[cursor];
-    const b = samples[cursor + 1] ?? last;
-    if (!a) break;
-
-    const gap = b.t - a.t;
-    const ratio = gap > 0 ? Math.min(1, Math.max(0, (t - a.t) / gap)) : 0;
-
-    out.push({
-      t,
-      x: a.x + (b.x - a.x) * ratio,
-      y: a.y + (b.y - a.y) * ratio,
+  private push(event: PointerEvent, kind: "down" | "up"): void {
+    if (event.pointerType) this.pointerType = event.pointerType;
+    this.events.push({
+      t: event.timeStamp || performance.now(),
+      x: event.clientX,
+      y: event.clientY,
+      kind,
+      button: BUTTONS[event.button] ?? "left",
+      dragging: this.held,
     });
   }
 
-  return out;
-}
-
-/* ------------------------------------------------------------ features --- */
-
-export type ExtractInput = {
-  samples: PointerSample[];
-  /** When the sub-task became current. */
-  startedAt: number;
-  /** When its terminating interaction fired. */
-  endedAt: number;
-  /** Where the terminating click landed, in client coordinates. */
-  endPoint: { x: number; y: number } | null;
-  /** Bounding box of the `data-trace` element that was hit. */
-  targetRect: { x: number; y: number; width: number; height: number } | null;
-  viewport: { width: number; height: number };
-};
-
-function clamp(value: number, low: number, high: number): number {
-  return Math.min(high, Math.max(low, value));
-}
-
-function mean(values: number[]): number {
-  if (values.length === 0) return 0;
-  return values.reduce((sum, value) => sum + value, 0) / values.length;
-}
-
-function std(values: number[], average = mean(values)): number {
-  if (values.length < 2) return 0;
-  const variance =
-    values.reduce((sum, value) => sum + (value - average) ** 2, 0) /
-    (values.length - 1);
-  return Math.sqrt(variance);
-}
-
-/** First differences of `values` with respect to a fixed `dt` in seconds. */
-function derivative(values: number[], dt: number): number[] {
-  const out: number[] = [];
-  for (let i = 1; i < values.length; i += 1) {
-    out.push(((values[i] ?? 0) - (values[i - 1] ?? 0)) / dt);
-  }
-  return out;
-}
-
-/**
- * The ~17-d vector one sub-task contributes. Returns `null` when the sub-task
- * produced too little free cursor movement to describe — §6.1 skips those
- * rather than scoring them noisily.
- */
-export function extractFeatures(input: ExtractInput): number[] | null {
-  const { startedAt, endedAt, endPoint, targetRect, viewport } = input;
-
-  const raw = input.samples;
-  if (raw.length < MIN_SAMPLES) return null;
-
-  const samples = resample60Hz(raw);
-  if (samples.length < MIN_SAMPLES) return null;
-
-  const diagonal =
-    Math.hypot(viewport.width, viewport.height) || 1; /* never divide by 0 */
-  const dt = FRAME_MS / 1000;
-
-  /* --- geometry ---------------------------------------------------------- */
-
-  const stepLengths: number[] = [];
-  const headings: number[] = [];
-
-  for (let i = 1; i < samples.length; i += 1) {
-    const a = samples[i - 1];
-    const b = samples[i];
-    if (!a || !b) continue;
-    const dx = b.x - a.x;
-    const dy = b.y - a.y;
-    stepLengths.push(Math.hypot(dx, dy) / diagonal);
-    if (dx !== 0 || dy !== 0) headings.push(Math.atan2(dy, dx));
-  }
-
-  const pathLength = stepLengths.reduce((sum, step) => sum + step, 0);
-  const first = samples[0];
-  const last = samples[samples.length - 1];
-  if (!first || !last) return null;
-
-  const netDistance = Math.hypot(last.x - first.x, last.y - first.y) / diagonal;
-  const straightness = pathLength > 0 ? netDistance / pathLength : 0;
-
-  /* --- kinematics -------------------------------------------------------- */
-
-  const speeds = stepLengths.map((step) => step / dt);
-  const accelerations = derivative(speeds, dt);
-  const jerks = derivative(accelerations, dt);
-
-  const speedMean = mean(speeds);
-  const speedMax = speeds.reduce((max, value) => Math.max(max, value), 0);
-  const speedStd = std(speeds, speedMean);
-
-  const pauses = speeds.filter((speed) => speed < PAUSE_SPEED).length;
-
-  const peakIndex = speeds.indexOf(speedMax);
-  const timeToPeak =
-    speeds.length > 1 ? Math.max(0, peakIndex) / (speeds.length - 1) : 0;
-
-  let reversals = 0;
-  for (let i = 1; i < headings.length; i += 1) {
-    const previous = headings[i - 1] ?? 0;
-    const current = headings[i] ?? 0;
-    let delta = Math.abs(current - previous);
-    if (delta > Math.PI) delta = 2 * Math.PI - delta;
-    if (delta > Math.PI / 2) reversals += 1;
-  }
-
-  /* --- landing ----------------------------------------------------------- */
-
-  let endpointDx = 0;
-  let endpointDy = 0;
-
-  if (endPoint && targetRect && targetRect.width > 0 && targetRect.height > 0) {
-    endpointDx =
-      (endPoint.x - (targetRect.x + targetRect.width / 2)) / targetRect.width;
-    endpointDy =
-      (endPoint.y - (targetRect.y + targetRect.height / 2)) / targetRect.height;
-  }
-
   /**
-   * Approach angle over the last ~100 ms, as (cos, sin) so the wrap-around at
-   * ±π does not turn two near-identical approaches into opposite numbers.
+   * Segment and extract, through the encoder's own pipeline. Returns the
+   * strokes that survived §3.4's minimum length, duration and distance — a
+   * short hop to a menu item directly below its trigger routinely yields none,
+   * and §6.1 would rather skip that sub-task than score it noisily.
    */
-  const approachFrom = samples[Math.max(0, samples.length - 7)] ?? first;
-  const approachAngle = Math.atan2(
-    last.y - approachFrom.y,
-    last.x - approachFrom.x,
-  );
-
-  /* --- timing ------------------------------------------------------------ */
-
-  const idleBeforeMove = Math.max(0, (first.t - startedAt) / 1000);
-  const dwellBeforeClick = Math.max(0, (endedAt - last.t) / 1000);
-  const duration = Math.max(0, (endedAt - startedAt) / 1000);
-
-  return [
-    Math.log1p(duration),
-    pathLength,
-    straightness,
-    speedMean,
-    speedMax,
-    speedStd,
-    mean(accelerations.map(Math.abs)),
-    mean(jerks.map(Math.abs)),
-    Math.log1p(pauses),
-    timeToPeak,
-    Math.log1p(reversals),
-    clamp(endpointDx, -1.5, 1.5),
-    clamp(endpointDy, -1.5, 1.5),
-    Math.cos(approachAngle),
-    Math.sin(approachAngle),
-    Math.log1p(idleBeforeMove),
-    Math.log1p(dwellBeforeClick),
-  ];
+  strokes(viewport: Viewport): ExtractedStroke[] {
+    if (this.events.length < DEFAULT_SEGMENT_CONFIG.minSamples) return [];
+    return extractFromEvents(this.events, { diagonal: viewport.diagonal });
+  }
 }

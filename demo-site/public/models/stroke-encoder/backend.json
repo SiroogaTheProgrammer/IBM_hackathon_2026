@@ -1,0 +1,487 @@
+{
+  "featureVersion": "stroke-core-v1",
+  "dim": 128,
+  "cohort": {
+    "file": "cohort.bin",
+    "count": 197,
+    "index": {
+      "1.1": {
+        "start": 0,
+        "count": 10
+      },
+      "1.2": {
+        "start": 10,
+        "count": 9
+      },
+      "1.3": {
+        "start": 19,
+        "count": 1
+      },
+      "1.4": {
+        "start": 20,
+        "count": 6
+      },
+      "1.5": {
+        "start": 26,
+        "count": 4
+      },
+      "2.1": {
+        "start": 30,
+        "count": 3
+      },
+      "2.2": {
+        "start": 33,
+        "count": 12
+      },
+      "2.3": {
+        "start": 45,
+        "count": 9
+      },
+      "2.4": {
+        "start": 54,
+        "count": 6
+      },
+      "2.5": {
+        "start": 60,
+        "count": 3
+      },
+      "2.6": {
+        "start": 63,
+        "count": 9
+      },
+      "2.7": {
+        "start": 72,
+        "count": 3
+      },
+      "3.1": {
+        "start": 75,
+        "count": 10
+      },
+      "3.2": {
+        "start": 85,
+        "count": 7
+      },
+      "3.3": {
+        "start": 92,
+        "count": 2
+      },
+      "3.4": {
+        "start": 94,
+        "count": 7
+      },
+      "3.5": {
+        "start": 101,
+        "count": 9
+      },
+      "3.6": {
+        "start": 110,
+        "count": 4
+      },
+      "4.1": {
+        "start": 114,
+        "count": 10
+      },
+      "4.2": {
+        "start": 124,
+        "count": 11
+      },
+      "4.4": {
+        "start": 135,
+        "count": 7
+      },
+      "4.5": {
+        "start": 142,
+        "count": 5
+      },
+      "5.1": {
+        "start": 147,
+        "count": 9
+      },
+      "5.2": {
+        "start": 156,
+        "count": 11
+      },
+      "5.3": {
+        "start": 167,
+        "count": 5
+      },
+      "5.4": {
+        "start": 172,
+        "count": 7
+      },
+      "5.5": {
+        "start": 179,
+        "count": 8
+      },
+      "5.6": {
+        "start": 187,
+        "count": 10
+      },
+      "*": {
+        "start": 0,
+        "count": 197
+      }
+    },
+    "subtaskIds": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "4.1",
+      "4.2",
+      "4.4",
+      "4.5",
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4",
+      "5.5",
+      "5.6"
+    ],
+    "topN": 30
+  },
+  "llr": {
+    "genuine": {
+      "mean": 1.8897037295334946,
+      "std": 1.3318462831959117
+    },
+    "impostor": {
+      "mean": -0.028154918268618108,
+      "std": 1.3318462831959117
+    },
+    "weight": 0.92
+  },
+  "assumedGenuine": true,
+  "thresholds": {
+    "upper": 3.8607297110405954,
+    "lower": -2.9755295662364714
+  },
+  "simulated": {
+    "falseLockoutRate": 0.02,
+    "impostorDetectionRate": 0.99075,
+    "medianSubtasksToDetection": 4,
+    "verifiedRate": 0.97175
+  },
+  "accumulator": {
+    "leak": 0.97
+  },
+  "sprt": {
+    "alpha": 0.02,
+    "beta": 0.05
+  },
+  "provenance": {
+    "source": "demo-site-calibration",
+    "runs": 12,
+    "subjects": 12,
+    "embeddedSubtasks": 197,
+    "droppedLost": 12,
+    "droppedShort": 139,
+    "qc": {
+      "durationMultiple": 4,
+      "minDurationSeconds": 12
+    },
+    "limitations": [
+      "The genuine score distribution is ASSUMED, not measured: no participant recorded the flow twice, so no same-person pair exists (§6.4 item 1).",
+      "Exactly one number is borrowed — d' = 1.44 from the offline SapiMouse harness. It was measured without sub-task alignment, which §2 calls the largest accuracy lever, so it should understate the real separation and the system errs toward missing impostors rather than locking out genuine users.",
+      "w and the error rates are solved by simulation against that assumption (§6.3), not measured on real runs.",
+      "No per-sub-task d' weights (§6.4 item 5). betweenSubjectSimilarity is reported instead.",
+      "No familiarisation pass was discarded and participants' prior knowledge of the real MyCourses app varies, so think-time differences carry familiarity as well as identity (§2.3)."
+    ]
+  },
+  "subtasks": [
+    {
+      "subtaskId": "1.1",
+      "kept": 10,
+      "droppedLost": 0,
+      "droppedShort": 2,
+      "medianSeconds": 8.949,
+      "medianStrokes": 6,
+      "betweenSubjectSimilarity": 0.6555650641595527,
+      "betweenSubjectSpread": 0.17521428296592886
+    },
+    {
+      "subtaskId": "1.2",
+      "kept": 9,
+      "droppedLost": 1,
+      "droppedShort": 2,
+      "medianSeconds": 11.378,
+      "medianStrokes": 5,
+      "betweenSubjectSimilarity": 0.8103056431631931,
+      "betweenSubjectSpread": 0.079474036337311
+    },
+    {
+      "subtaskId": "1.3",
+      "kept": 1,
+      "droppedLost": 1,
+      "droppedShort": 10,
+      "medianSeconds": 4.868,
+      "medianStrokes": 5,
+      "betweenSubjectSimilarity": null,
+      "betweenSubjectSpread": null
+    },
+    {
+      "subtaskId": "1.4",
+      "kept": 6,
+      "droppedLost": 2,
+      "droppedShort": 4,
+      "medianSeconds": 5.4405,
+      "medianStrokes": 2.5,
+      "betweenSubjectSimilarity": 0.5789371502546189,
+      "betweenSubjectSpread": 0.14986091061368254
+    },
+    {
+      "subtaskId": "1.5",
+      "kept": 4,
+      "droppedLost": 1,
+      "droppedShort": 7,
+      "medianSeconds": 5.9544999999999995,
+      "medianStrokes": 3,
+      "betweenSubjectSimilarity": 0.6781804326190765,
+      "betweenSubjectSpread": 0.09757286041690713
+    },
+    {
+      "subtaskId": "2.1",
+      "kept": 3,
+      "droppedLost": 0,
+      "droppedShort": 9,
+      "medianSeconds": 2.058,
+      "medianStrokes": 2,
+      "betweenSubjectSimilarity": 0.35061382039756417,
+      "betweenSubjectSpread": 0.13556320792419227
+    },
+    {
+      "subtaskId": "2.2",
+      "kept": 12,
+      "droppedLost": 0,
+      "droppedShort": 0,
+      "medianSeconds": 3.6555,
+      "medianStrokes": 3,
+      "betweenSubjectSimilarity": 0.6627761981143685,
+      "betweenSubjectSpread": 0.16983431052547243
+    },
+    {
+      "subtaskId": "2.3",
+      "kept": 9,
+      "droppedLost": 0,
+      "droppedShort": 3,
+      "medianSeconds": 4.875,
+      "medianStrokes": 2,
+      "betweenSubjectSimilarity": 0.6845775756912041,
+      "betweenSubjectSpread": 0.1134843200725179
+    },
+    {
+      "subtaskId": "2.4",
+      "kept": 6,
+      "droppedLost": 2,
+      "droppedShort": 4,
+      "medianSeconds": 5.018,
+      "medianStrokes": 4,
+      "betweenSubjectSimilarity": 0.7998114660726441,
+      "betweenSubjectSpread": 0.06853314377517566
+    },
+    {
+      "subtaskId": "2.5",
+      "kept": 3,
+      "droppedLost": 0,
+      "droppedShort": 9,
+      "medianSeconds": 2.482,
+      "medianStrokes": 2,
+      "betweenSubjectSimilarity": 0.5838416558602616,
+      "betweenSubjectSpread": 0.15350663831880879
+    },
+    {
+      "subtaskId": "2.6",
+      "kept": 9,
+      "droppedLost": 0,
+      "droppedShort": 3,
+      "medianSeconds": 3.523,
+      "medianStrokes": 2,
+      "betweenSubjectSimilarity": 0.5941219614640696,
+      "betweenSubjectSpread": 0.19059067016549494
+    },
+    {
+      "subtaskId": "2.7",
+      "kept": 3,
+      "droppedLost": 1,
+      "droppedShort": 8,
+      "medianSeconds": 2.303,
+      "medianStrokes": 2,
+      "betweenSubjectSimilarity": 0.5349967183673212,
+      "betweenSubjectSpread": 0.02552087425832109
+    },
+    {
+      "subtaskId": "3.1",
+      "kept": 10,
+      "droppedLost": 0,
+      "droppedShort": 2,
+      "medianSeconds": 4.0845,
+      "medianStrokes": 4,
+      "betweenSubjectSimilarity": 0.6706596451369475,
+      "betweenSubjectSpread": 0.1309244545095628
+    },
+    {
+      "subtaskId": "3.2",
+      "kept": 7,
+      "droppedLost": 1,
+      "droppedShort": 4,
+      "medianSeconds": 4.255,
+      "medianStrokes": 2,
+      "betweenSubjectSimilarity": 0.6419732526118269,
+      "betweenSubjectSpread": 0.12750504173045654
+    },
+    {
+      "subtaskId": "3.3",
+      "kept": 2,
+      "droppedLost": 0,
+      "droppedShort": 10,
+      "medianSeconds": 8.7985,
+      "medianStrokes": 3.5,
+      "betweenSubjectSimilarity": 0.9041231398839666,
+      "betweenSubjectSpread": null
+    },
+    {
+      "subtaskId": "3.4",
+      "kept": 7,
+      "droppedLost": 1,
+      "droppedShort": 4,
+      "medianSeconds": 2.758,
+      "medianStrokes": 2,
+      "betweenSubjectSimilarity": 0.6271014917629838,
+      "betweenSubjectSpread": 0.14054815681295327
+    },
+    {
+      "subtaskId": "3.5",
+      "kept": 9,
+      "droppedLost": 0,
+      "droppedShort": 3,
+      "medianSeconds": 3.166,
+      "medianStrokes": 3,
+      "betweenSubjectSimilarity": 0.583107833477844,
+      "betweenSubjectSpread": 0.1535601330961297
+    },
+    {
+      "subtaskId": "3.6",
+      "kept": 4,
+      "droppedLost": 0,
+      "droppedShort": 8,
+      "medianSeconds": 1.9985,
+      "medianStrokes": 2.5,
+      "betweenSubjectSimilarity": 0.4804211888006394,
+      "betweenSubjectSpread": 0.11418934804314945
+    },
+    {
+      "subtaskId": "4.1",
+      "kept": 10,
+      "droppedLost": 0,
+      "droppedShort": 2,
+      "medianSeconds": 2.868,
+      "medianStrokes": 3,
+      "betweenSubjectSimilarity": 0.6395138134057212,
+      "betweenSubjectSpread": 0.16162022033533655
+    },
+    {
+      "subtaskId": "4.2",
+      "kept": 11,
+      "droppedLost": 0,
+      "droppedShort": 1,
+      "medianSeconds": 3.869,
+      "medianStrokes": 3,
+      "betweenSubjectSimilarity": 0.6025532744910513,
+      "betweenSubjectSpread": 0.15115912263568954
+    },
+    {
+      "subtaskId": "4.4",
+      "kept": 7,
+      "droppedLost": 1,
+      "droppedShort": 4,
+      "medianSeconds": 4.537,
+      "medianStrokes": 3,
+      "betweenSubjectSimilarity": 0.6248166127327858,
+      "betweenSubjectSpread": 0.17704122083174798
+    },
+    {
+      "subtaskId": "4.5",
+      "kept": 5,
+      "droppedLost": 0,
+      "droppedShort": 7,
+      "medianSeconds": 2.131,
+      "medianStrokes": 2,
+      "betweenSubjectSimilarity": 0.6336682115841137,
+      "betweenSubjectSpread": 0.11579280276219857
+    },
+    {
+      "subtaskId": "5.1",
+      "kept": 9,
+      "droppedLost": 0,
+      "droppedShort": 3,
+      "medianSeconds": 3.086,
+      "medianStrokes": 2,
+      "betweenSubjectSimilarity": 0.5790648548323816,
+      "betweenSubjectSpread": 0.20145092073573642
+    },
+    {
+      "subtaskId": "5.2",
+      "kept": 11,
+      "droppedLost": 0,
+      "droppedShort": 1,
+      "medianSeconds": 4.14,
+      "medianStrokes": 3,
+      "betweenSubjectSimilarity": 0.6577533069057665,
+      "betweenSubjectSpread": 0.1407889180319573
+    },
+    {
+      "subtaskId": "5.3",
+      "kept": 5,
+      "droppedLost": 1,
+      "droppedShort": 6,
+      "medianSeconds": 2.679,
+      "medianStrokes": 3,
+      "betweenSubjectSimilarity": 0.7133829892753532,
+      "betweenSubjectSpread": 0.1448125827122529
+    },
+    {
+      "subtaskId": "5.4",
+      "kept": 7,
+      "droppedLost": 0,
+      "droppedShort": 5,
+      "medianSeconds": 4.753,
+      "medianStrokes": 3,
+      "betweenSubjectSimilarity": 0.5549002355971877,
+      "betweenSubjectSpread": 0.18460181365860698
+    },
+    {
+      "subtaskId": "5.5",
+      "kept": 8,
+      "droppedLost": 0,
+      "droppedShort": 4,
+      "medianSeconds": 5.478999999999999,
+      "medianStrokes": 3.5,
+      "betweenSubjectSimilarity": 0.7498353217247952,
+      "betweenSubjectSpread": 0.143638763287594
+    },
+    {
+      "subtaskId": "5.6",
+      "kept": 10,
+      "droppedLost": 0,
+      "droppedShort": 2,
+      "medianSeconds": 3.0605,
+      "medianStrokes": 2.5,
+      "betweenSubjectSimilarity": 0.5692164125161194,
+      "betweenSubjectSpread": 0.19574001648876657
+    }
+  ]
+}

@@ -14,6 +14,7 @@
     "extract": "node src/cli.ts extract",
     "train": "node src/cli.ts train",
     "eval": "node src/cli.ts eval",
+    "calibrate": "node src/cli.ts calibrate",
     "export": "node src/cli.ts export",
     "all": "npm run extract && npm run train && npm run eval && npm run export"
   },

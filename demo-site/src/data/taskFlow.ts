@@ -30,8 +30,30 @@
 export type SubtaskKind =
   /** A click on the `data-trace` element. */
   | "click"
-  /** Typing until the `data-trace` field contains `expect`. */
+  /**
+   * Typing into the `data-trace` text field. *What* gets typed is deliberately
+   * not checked — a participant who fat-fingers the search term has still
+   * performed the same pointing movement and the same keystrokes, which is all
+   * the encoder sees, and gating on an exact string stranded them instead.
+   *
+   * It does take `MIN_TYPED_CHARS` characters rather than a bare focus, so the
+   * sub-task still contains the reach *and* the start of the typing, the way
+   * every recorded run so far does.
+   *
+   * The instruction still names the text, because the site reacts to it: typing
+   * "quiz" is what leaves Quiz 3 as the only timeline row, so the *next*
+   * sub-task's target is where it was in every other run.
+   */
   | "type";
+
+/**
+ * How much has to be in a `type` field before its sub-task is done.
+ *
+ * Two is enough to guarantee the segment holds real keystrokes without
+ * demanding a specific word: at one character a stray keypress would end the
+ * sub-task, and at the full string a typo strands the participant.
+ */
+export const MIN_TYPED_CHARS = 2;
 
 export type Subtask = {
   /**
@@ -44,8 +66,12 @@ export type Subtask = {
   /** `data-trace` value of the element that terminates the sub-task. */
   target: string;
   kind: SubtaskKind;
-  /** `type` sub-tasks only: the (lower-cased) text the field must contain. */
-  expect?: string;
+  /**
+   * Other elements that count as the same terminating interaction — two routes
+   * to one outcome, where the site genuinely offers both. Recorded runs still
+   * log which one was hit, in the CSV's `element` column.
+   */
+  alsoAccepts?: readonly string[];
   /**
    * Route the sub-task is performed on. Not used for matching — the card uses
    * it to tell a participant who wandered off where the step actually lives.
@@ -97,13 +123,15 @@ export const tasks: Task[] = [
         instruction: 'Type "quiz" into the timeline search box',
         target: "timeline.search",
         kind: "type",
-        expect: "quiz",
         route: "/my",
       },
       {
         id: "1.5",
-        instruction: 'Open "Quiz 3" from the timeline',
+        instruction: 'Open "Quiz 3" from the timeline — the title or the button',
         target: "timeline.item.900133",
+        // The row offers two ways to the same page, and a participant picking
+        // the wide button over the title is not off-script.
+        alsoAccepts: ["timeline.action.900133"],
         kind: "click",
         route: "/my",
       },
@@ -140,7 +168,6 @@ export const tasks: Task[] = [
         instruction: 'Question 3 — type "definite" in the answer box',
         target: "quiz.answer.q3",
         kind: "type",
-        expect: "definite",
         route: "/mod/quiz/900133",
       },
       {
@@ -183,7 +210,6 @@ export const tasks: Task[] = [
         instruction: 'Search the course list for "signal"',
         target: "courses.search",
         kind: "type",
-        expect: "signal",
         route: "/my/courses",
       },
       {

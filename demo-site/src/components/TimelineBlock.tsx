@@ -174,6 +174,7 @@ function TimelineRow({ item }: { item: TimelineItem }) {
         <SafeLink
           className="mc-btn mc-btn-outline mc-btn-sm"
           href={item.buttonHref}
+          traceId={`timeline.action.${item.activityId}`}
         >
           {item.buttonLabel}
         </SafeLink>

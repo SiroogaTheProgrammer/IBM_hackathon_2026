@@ -1,45 +1,56 @@
 /**
- * The scoring backend: per-sub-task comparison → calibrated LLR → accumulated
- * evidence → sequential decision. The *shape* here is the one `description.md`
- * §6 specifies, and it is the part that survives if everything else is cut.
+ * The §6 backend, as it runs in the demo.
+ *
+ * The primitives — AS-norm, the LLR, the SPRT boundaries — are imported from
+ * `big-boy-ts/src/shared/score.ts` rather than reimplemented, so the offline
+ * harness and the live demo cannot drift apart. What lives here is only what is
+ * specific to running the flow: the leaky accumulator, the three-way verdict,
+ * and §3.3's rule about a viewport mismatch.
  *
  * ────────────────────────────────────────────────────────────────────────────
- * PLACEHOLDER. Two pieces of §6 are stubbed, and both are meant to be replaced:
+ * WHAT IS AND IS NOT CALIBRATED
  *
- *   §6.1  `compare()` should be `cos(e_enroll[k], e_test[k])` on 128-d encoder
- *         embeddings. Until the encoder ships it is a scaled L1 distance over
- *         the handcrafted feature vector, which is a far weaker statistic.
- *   §6.2  AS-norm is missing entirely — there is no cohort yet, so a sub-task
- *         that is intrinsically hard for everyone still scores as evidence.
- *   §6.4  `GENUINE` / `IMPOSTOR` / `EVIDENCE_WEIGHT` below are hand-set, not
- *         fitted. The thresholds are therefore the textbook ones §6.3 warns
- *         against shipping unscaled.
- *
- * So: the pipeline runs end to end and the UI is honest about what it is doing,
- * but the numbers it produces are not yet an evaluated detector. Swap
- * `compare()` for the encoder and fit the three constants on the calibration
- * set (§6.4) before any of this is quoted as a result.
+ * §6.1 (per-sub-task cosine on encoder embeddings) is real and complete.
+ * §6.2 (AS-norm) runs, but against a *global* cohort from the SapiMouse set —
+ *      §6.2 wants one bank per sub-task id, and most of its value is in that
+ *      split. Needs §6.4.
+ * §6.3 (LLR + accumulation + SPRT) runs, with the genuine/impostor
+ *      distributions and the accumulation scale `w` fitted on held-out
+ *      SapiMouse identities. `big-boy-ts/README.md` is explicit that those
+ *      "should not ship" as final; they are here so the pipeline is live end to
+ *      end, and `backend.provenance` carries the caveat into the UI.
+ * §6.4 (15–20 people running this flow) has not happened. Until it does, the
+ *      verdict is a wiring check and a demo, not an evaluated detector.
  * ────────────────────────────────────────────────────────────────────────────
  */
 
-import { FEATURE_SCALE } from "@/lib/trace/capture";
+import { asNorm, cosine, logLikelihoodRatio } from "@encoder/index";
+import type { CohortIndex } from "@encoder/index";
+import { GLOBAL_SUBTASK } from "@/lib/trace/encoder";
+import type { BackendConfig } from "@/lib/trace/encoder";
+import { viewportsMatch } from "@/lib/trace/capture";
+import type { Viewport } from "@/lib/trace/capture";
 
-/** One run's feature vector for one sub-task, keyed by `Subtask["id"]`. */
-export type RunVectors = Record<string, number[]>;
+/** One run's pooled embedding per sub-task id, keyed by `Subtask["id"]`. */
+export type RunEmbeddings = Record<string, Float32Array>;
 
 export type Enrollment = {
   capturedAt: number;
-  vectors: RunVectors;
-  /** How many sub-tasks of the flow produced a usable vector. */
+  embeddings: RunEmbeddings;
+  /** How many of the flow's sub-tasks produced a usable embedding. */
   covered: number;
+  /** Geometry the template was captured under (§3.3). */
+  viewport: Viewport;
 };
 
 /** One scored sub-task of a test run. */
 export type SubtaskScore = {
   subtaskId: string;
-  /** Scaled distance from the enrollment template. Lower = more like enrollee. */
-  distance: number;
-  /** Calibrated log-likelihood ratio, in nats. Positive = evidence of genuine. */
+  /** §6.1 — cosine between the enrolled and the test embedding. */
+  raw: number;
+  /** §6.2 — the same score after adaptive normalisation. */
+  z: number;
+  /** §6.3 — calibrated log-likelihood ratio, in nats. */
   llr: number;
   /** Accumulated evidence after this sub-task. */
   evidence: number;
@@ -47,116 +58,117 @@ export type SubtaskScore = {
 
 export type Verdict = "running" | "verified" | "inconclusive" | "locked";
 
-/* -------------------------------------------------------- calibration --- */
-
-/**
- * Distributions of `distance` — §6.4 items 1 and 2. NOT fitted: these come from
- * the arithmetic of `compare()` under ideal scales, not from data. If every
- * entry of `FEATURE_SCALE` were the true within-user spread, the per-feature
- * z of a genuine pair would have E[z²] = 2 (a difference of two draws), giving
- * an RMS near √2; a between-user spread of ~2.5× within-user puts the impostor
- * RMS near √(2 + 2.5²) ≈ 2.9. Everything downstream inherits that assumption,
- * which is why §6.4's calibration run replaces both of these first.
- */
-const GENUINE = { mean: 1.41, std: 0.40 };
-const IMPOSTOR = { mean: 2.90, std: 0.90 };
-
-/**
- * §6.3's `w`. Sub-task scores are correlated (a slow user is slow everywhere),
- * so the raw sum overstates the evidence; this shrinks each contribution.
- */
-const EVIDENCE_WEIGHT = 0.5;
-
-/** Leak, so one anomalous sub-task cannot doom a genuine run (§6.3). */
-const LEAK = 0.97;
-
-/** α = false lockout rate, β = missed impostor rate. */
-const ALPHA = 0.02;
-const BETA = 0.05;
-
-export const UPPER_THRESHOLD = Math.log((1 - BETA) / ALPHA);
-export const LOWER_THRESHOLD = Math.log(BETA / (1 - ALPHA));
-
 /**
  * The run shows no trust indicator until this many sub-tasks have scored —
  * §2.2: a live percentage off two comparisons is a high-variance estimator and
- * makes the demo look unreliable even when it is right.
+ * invites the participant to game it.
  */
 export const MIN_SCORED_FOR_INDICATOR = 6;
 
 /** A lockout needs a floor of evidence behind it, not one bad sub-task. */
 const MIN_SCORED_FOR_LOCKOUT = 4;
 
-/* ------------------------------------------------------------ scoring --- */
-
 /**
- * Stand-in for §6.1's cosine between encoder embeddings: a diagonal
- * Mahalanobis distance — the RMS of the per-feature z-scores, each feature
- * divided by its expected within-user spread. Roughly "how many
- * typical-person-to-themselves deviations apart are these two runs of the same
- * sub-task".
+ * How far to widen both SPRT boundaries when the test run's viewport does not
+ * match the enrollment's.
  *
- * RMS rather than a plain mean on purpose. Only a handful of the ~17 features
- * separate any given pair of people, and averaging absolute deviations buries
- * those few under the dozen that agree — measured on this flow, a deliberately
- * different movement profile landed inside the genuine range under a mean and
- * outside it under an RMS. Squaring keeps the informative features audible.
- * The encoder replaces this outright; §6.2's AS-norm is the principled fix for
- * the same problem.
+ * §3.3 says to treat a geometry mismatch "as a reason to widen the decision
+ * thresholds rather than as evidence of an impostor". The factor itself is a
+ * judgement call, not a measurement — a resized window moves every target, so
+ * every sub-task's score degrades at once, which is exactly the failure mode
+ * that would otherwise read as a confident lockout.
  */
-export function compare(test: number[], enroll: number[]): number | null {
-  if (test.length !== enroll.length || test.length === 0) return null;
+const MISMATCH_WIDENING = 1.75;
 
-  let total = 0;
-  for (let i = 0; i < test.length; i += 1) {
-    const scale = FEATURE_SCALE[i] ?? 1;
-    const z = ((test[i] ?? 0) - (enroll[i] ?? 0)) / scale;
-    total += z * z;
-  }
+export type Thresholds = { upper: number; lower: number; widened: boolean };
 
-  return Math.sqrt(total / test.length);
+/**
+ * `null` when the backend carries no operating thresholds — §6.3 fits them
+ * against a genuine distribution, and §6.4 has not produced one yet.
+ */
+export function thresholdsFor(
+  backend: BackendConfig,
+  enrollment: Viewport,
+  current: Viewport,
+): Thresholds | null {
+  if (!backend.thresholds) return null;
+
+  const matched = viewportsMatch(enrollment, current);
+  const scale = matched ? 1 : MISMATCH_WIDENING;
+  return {
+    upper: backend.thresholds.upper * scale,
+    lower: backend.thresholds.lower * scale,
+    widened: !matched,
+  };
 }
 
-function logDensity(value: number, dist: { mean: number; std: number }): number {
-  const z = (value - dist.mean) / dist.std;
-  return -0.5 * z * z - Math.log(dist.std);
+/* ------------------------------------------------------------- scoring --- */
+
+/**
+ * §6.2, with the fallback the shipped cohort forces.
+ *
+ * `asNorm` returns the raw score untouched when the bank for a sub-task id is
+ * missing or too small, so a per-sub-task cohort can be dropped in later
+ * without changing this call site — it will simply stop falling through to the
+ * global bucket.
+ */
+function normalize(
+  raw: number,
+  testEmbedding: Float32Array,
+  cohort: CohortIndex,
+  subtaskId: string,
+  topN: number,
+): number {
+  const perSubtask = asNorm(raw, testEmbedding, cohort, subtaskId, topN);
+  if (perSubtask !== raw) return perSubtask;
+  return asNorm(raw, testEmbedding, cohort, GLOBAL_SUBTASK, topN);
 }
 
-/** `log p(d | same user) − log p(d | different user)`, shrunk by `w`. */
-export function logLikelihoodRatio(distance: number): number {
-  return (
-    EVIDENCE_WEIGHT * (logDensity(distance, GENUINE) - logDensity(distance, IMPOSTOR))
-  );
-}
-
-/** `S ← LEAK·S + llr` (§6.3), which also makes a mid-run handover detectable. */
-export function accumulate(previous: number, llr: number): number {
-  return LEAK * previous + llr;
+/** `S ← leak·S + llr` (§6.3), which is also what makes a handover detectable. */
+export function accumulate(previous: number, llr: number, leak: number): number {
+  return leak * previous + llr;
 }
 
 /**
- * Score one sub-task of a test run against the enrollment. Returns `null` when
- * the sub-task has no template or produced no usable vector — §6.1 skips those.
+ * Score one sub-task of a test run against the enrollment.
+ *
+ * Returns `null` when the sub-task has no template or produced no embedding —
+ * §6.1 skips those rather than scoring them noisily, and with this flow that is
+ * a routine outcome for the short hops: a menu item directly below its trigger
+ * simply does not contain two strokes.
  */
 export function scoreSubtask(
   subtaskId: string,
-  vector: number[] | null,
+  embedding: Float32Array | null,
   enrollment: Enrollment,
   evidenceSoFar: number,
+  backend: BackendConfig,
+  cohort: CohortIndex,
 ): SubtaskScore | null {
-  const template = enrollment.vectors[subtaskId];
-  if (!vector || !template) return null;
+  const template = enrollment.embeddings[subtaskId];
+  if (!embedding || !template) return null;
 
-  const distance = compare(vector, template);
-  if (distance === null) return null;
+  const raw = cosine(template, embedding);
+  const z = normalize(raw, embedding, cohort, subtaskId, backend.cohort.topN);
 
-  const llr = logLikelihoodRatio(distance);
+  /*
+   * §6.1 and §6.2 are fully calibrated on demo runs; §6.3 is not, because the
+   * LLR needs a genuine distribution and nobody has recorded the flow twice.
+   * The comparison is still real and still recorded — only the likelihood
+   * ratio, and therefore the decision, is withheld.
+   */
+  if (!backend.llr) {
+    return { subtaskId, raw, z, llr: 0, evidence: evidenceSoFar };
+  }
+
+  const llr = logLikelihoodRatio(z, backend.llr);
 
   return {
     subtaskId,
-    distance,
+    raw,
+    z,
     llr,
-    evidence: accumulate(evidenceSoFar, llr),
+    evidence: accumulate(evidenceSoFar, llr, backend.accumulator.leak),
   };
 }
 
@@ -165,26 +177,27 @@ export function scoreSubtask(
  *
  * The two boundaries are not symmetric in what they *do*, on purpose (§2.2):
  * crossing the lower one locks the run out there and then, while crossing the
- * upper one only latches the verdict — a verified participant finishes the
- * flow normally rather than having it yanked away mid-task. Hence `previous`,
- * which carries a verdict already reached forward.
+ * upper one only latches the verdict — a verified participant finishes the flow
+ * normally rather than having it yanked away mid-task. Hence `previous`, which
+ * carries a verdict already reached forward.
  */
 export function decide(
   scores: SubtaskScore[],
   flowComplete: boolean,
+  thresholds: Thresholds,
   previous: Verdict = "running",
 ): Verdict {
   const last = scores[scores.length - 1];
   if (!last) return flowComplete ? "inconclusive" : "running";
 
   if (
-    last.evidence <= LOWER_THRESHOLD &&
+    last.evidence <= thresholds.lower &&
     scores.length >= MIN_SCORED_FOR_LOCKOUT
   ) {
     return "locked";
   }
 
-  if (previous === "verified" || last.evidence >= UPPER_THRESHOLD) {
+  if (previous === "verified" || last.evidence >= thresholds.upper) {
     return "verified";
   }
 
@@ -193,11 +206,12 @@ export function decide(
 
 /**
  * Accumulated evidence as a 0–100 "looks like the enrolled user" number, for
- * the end-of-run summary only. It is a monotone squash of `S`, not a
- * probability — never present it as one.
+ * the end-of-run summary only. It is a monotone squash of `S` between the two
+ * SPRT boundaries, not a probability — never present it as one.
  */
-export function trustScore(evidence: number): number {
-  const span = UPPER_THRESHOLD - LOWER_THRESHOLD;
-  const centred = (evidence - (UPPER_THRESHOLD + LOWER_THRESHOLD) / 2) / (span / 6);
+export function trustScore(evidence: number, thresholds: Thresholds): number {
+  const span = thresholds.upper - thresholds.lower;
+  const mid = (thresholds.upper + thresholds.lower) / 2;
+  const centred = (evidence - mid) / (span / 6);
   return Math.round(100 / (1 + Math.exp(-centred)));
 }

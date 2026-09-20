@@ -2209,3 +2209,242 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 3px;
 }
+
+/* ---------------------------------------- live evidence chart + lockout --- */
+
+.trace-chart {
+  padding: 8px 10px 6px 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: var(--trace-radius);
+}
+
+.trace-chart-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--trace-muted);
+}
+
+.trace-chart-value {
+  font-size: 15px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.trace-chart-value.is-ok {
+  color: #4ade80;
+}
+.trace-chart-value.is-watch {
+  color: #fbbf24;
+}
+.trace-chart-value.is-alarm {
+  color: #f87171;
+}
+
+.trace-chart-svg {
+  display: block;
+  width: 100%;
+  height: 72px;
+  margin-top: 4px;
+  overflow: visible;
+  border-radius: 3px;
+}
+
+/* The SPRT bands. Faint — they are a scale, not the data. */
+.trace-band.is-ok {
+  fill: rgba(74, 222, 128, 0.1);
+}
+.trace-band.is-watch {
+  fill: rgba(251, 191, 36, 0.08);
+}
+.trace-band.is-alarm {
+  fill: rgba(248, 113, 113, 0.12);
+}
+
+.trace-chart-line {
+  fill: none;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.trace-chart-line.is-ok {
+  stroke: #4ade80;
+}
+.trace-chart-line.is-watch {
+  stroke: #fbbf24;
+}
+.trace-chart-line.is-alarm {
+  stroke: #f87171;
+}
+
+.trace-chart-area {
+  stroke: none;
+}
+
+.trace-chart-area.is-ok {
+  fill: rgba(74, 222, 128, 0.18);
+}
+.trace-chart-area.is-watch {
+  fill: rgba(251, 191, 36, 0.16);
+}
+.trace-chart-area.is-alarm {
+  fill: rgba(248, 113, 113, 0.2);
+}
+
+.trace-chart-dot.is-ok {
+  fill: #4ade80;
+}
+.trace-chart-dot.is-watch {
+  fill: #fbbf24;
+}
+.trace-chart-dot.is-alarm {
+  fill: #f87171;
+}
+
+.trace-chart-foot {
+  margin: 4px 0 0 0;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: var(--trace-muted);
+}
+
+/* ------------------------------------------------------------- lockout --- */
+
+/*
+ * Sits above the Trace card in the same corner, in the card's own colours: it
+ * is the same system speaking, not a page-level error.
+ */
+.trace-lockout {
+  --trace-bg: #0f1114;
+  --trace-line: rgba(255, 255, 255, 0.13);
+  --trace-muted: rgba(255, 255, 255, 0.62);
+  --trace-radius: 8px;
+
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2100;
+  width: 340px;
+  max-width: calc(100vw - 32px);
+  padding: 14px;
+  color: #fff;
+  background-color: var(--trace-bg);
+  border: 1px solid rgba(248, 113, 113, 0.5);
+  border-radius: var(--trace-radius);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  line-height: 1.45;
+  animation: trace-lockout-in 180ms ease-out;
+}
+
+@keyframes trace-lockout-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trace-lockout {
+    animation: none;
+  }
+}
+
+.trace-lockout-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.trace-lockout-icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background-color: #e5484d;
+  border-radius: var(--trace-radius);
+}
+
+.trace-lockout-title {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.trace-lockout-title strong {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f87171;
+}
+
+.trace-lockout-title span {
+  font-size: 12px;
+  color: var(--trace-muted);
+}
+
+.trace-lockout-close {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--trace-muted);
+  background: none;
+  border: 1px solid var(--trace-line);
+  border-radius: var(--trace-radius);
+  cursor: pointer;
+}
+
+.trace-lockout-close:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.trace-lockout-body {
+  margin: 10px 0 0 0;
+  font-size: 12px;
+  color: var(--trace-muted);
+}
+
+.trace-lockout-action {
+  display: block;
+  margin-top: 12px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #e5484d;
+  border-radius: var(--trace-radius);
+}
+
+.trace-lockout-action:hover {
+  background-color: #cf3a3f;
+}
+
+/* The card steps aside so both are readable at once. */
+.trace-lockout ~ .trace-card,
+.trace-card:has(~ .trace-lockout) {
+  bottom: 16px;
+  right: 372px;
+}
+
+@media (max-width: 760px) {
+  .trace-card:has(~ .trace-lockout) {
+    display: none;
+  }
+}

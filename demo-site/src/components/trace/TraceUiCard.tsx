@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import TraceEvidenceChart from "@/components/trace/TraceEvidenceChart";
 import TraceLogo from "@/components/trace/TraceLogo";
 import { useTrace } from "@/components/trace/TraceProvider";
 import { FLOW_LENGTH, taskOffsets, tasks } from "@/data/taskFlow";
-import { LOWER_THRESHOLD, UPPER_THRESHOLD } from "@/lib/trace/score";
 
 /**
  * The study overlay: the only part of this site that is not a MyCourses clone.
@@ -50,15 +50,11 @@ export default function TraceUiCard() {
           {phase === "finished" ? <ResultBody /> : null}
           {phase === "collected" ? <CollectedBody /> : null}
 
+          {collectionMode ? null : <EncoderStatusLine />}
+
           <Controls />
 
-          {collectionMode ? null : (
-            <p className="trace-foot">
-              Heuristic baseline — the trained encoder and AS-norm cohort are
-              not wired up yet, so treat the verdict as a wiring check, not a
-              result.
-            </p>
-          )}
+          {collectionMode ? null : <CalibrationCaveat />}
         </div>
       )}
 
@@ -78,7 +74,8 @@ function IdleBody() {
     <>
       <p className="trace-lede">
         Trace checks whether the person at the mouse is the person who enrolled
-        — from cursor movement alone, never from what you click.
+        — from cursor movement alone, never from what you click. The encoder
+        runs in this browser; no trajectory ever leaves the device.
       </p>
 
       <ol className="trace-steps">
@@ -106,8 +103,9 @@ function EnrolledBody({ covered }: { covered: number }) {
   return (
     <>
       <p className="trace-lede">
-        Enrolled. {covered} of {FLOW_LENGTH} steps produced a usable movement
-        template.
+        Enrolled. {covered} of {FLOW_LENGTH} steps produced a 128-d embedding;
+        the rest held too little free cursor movement to describe and are
+        skipped rather than scored noisily (§6.1).
       </p>
       <p className="trace-note">
         A test run walks the same 5 tasks. Hand the mouse to someone else
@@ -154,13 +152,23 @@ function RunBody() {
         </p>
       ) : null}
 
-      {phase === "testing" ? <TestIndicator scored={scores.length} /> : null}
+      {phase === "testing" ? (
+        <>
+          <TraceEvidenceChart />
+          <TestIndicator scored={scores.length} />
+        </>
+      ) : null}
     </>
   );
 }
 
 function ResultBody() {
-  const { verdict, index, scores, evidence, trust } = useTrace();
+  const { verdict, index, scores, evidence, trust, thresholds, backend } =
+    useTrace();
+
+  if (backend && !backend.llr) {
+    return <NoDecisionBody />;
+  }
 
   const copy: Record<string, { title: string; note: string }> = {
     verified: {
@@ -194,6 +202,8 @@ function ResultBody() {
 
       <p className="trace-note">{result?.note}</p>
 
+      <TraceEvidenceChart />
+
       <dl className="trace-readout">
         <div>
           <dt>Evidence S</dt>
@@ -202,7 +212,9 @@ function ResultBody() {
         <div>
           <dt>Thresholds</dt>
           <dd>
-            {LOWER_THRESHOLD.toFixed(2)} / {UPPER_THRESHOLD.toFixed(2)}
+            {thresholds
+              ? `${thresholds.lower.toFixed(2)} / ${thresholds.upper.toFixed(2)}`
+              : "—"}
           </dd>
         </div>
         <div>
@@ -211,7 +223,21 @@ function ResultBody() {
             {scores.length} of {index}
           </dd>
         </div>
+        {backend ? (
+          <div>
+            <dt>Backend</dt>
+            <dd>{backend.provenance.source}</dd>
+          </div>
+        ) : null}
       </dl>
+
+      {thresholds?.widened ? (
+        <p className="trace-note">
+          The window changed size since enrollment, so every target moved.
+          Thresholds were widened rather than counting that as an impostor
+          (§3.3).
+        </p>
+      ) : null}
     </>
   );
 }
@@ -329,6 +355,146 @@ function CollectionToggle() {
   );
 }
 
+/**
+ * The encoder's own state. Worth surfacing: the first run of a session pays for
+ * ~660 KB of model, weights and AS-norm cohort, and a failure there means
+ * embeddings — not just the verdict — are missing.
+ */
+function EncoderStatusLine() {
+  const { encoderStatus, encoderError, pending, phase } = useTrace();
+
+  if (encoderStatus === "failed") {
+    return (
+      <p className="trace-indicator is-watch">Encoder unavailable — {encoderError}</p>
+    );
+  }
+
+  if (encoderStatus === "loading") {
+    return <p className="trace-indicator is-waiting">Loading encoder…</p>;
+  }
+
+  const settling = pending > 0 && (phase === "finished" || phase === "enrolled");
+  if (settling) {
+    return (
+      <p className="trace-indicator is-waiting">
+        Embedding {pending} more sub-task{pending === 1 ? "" : "s"}…
+      </p>
+    );
+  }
+
+  return null;
+}
+
+/**
+ * §6.4 has not happened, and the difference between "the pipeline runs" and
+ * "the detector is calibrated" is the whole difference between a demo and a
+ * result. The card says which one it is.
+ */
+function CalibrationCaveat() {
+  const { backend, encoderStatus } = useTrace();
+
+  // Nothing is loaded until the first run starts, so "no backend" before that
+  // would be a claim about a file we have not looked at yet.
+  if (encoderStatus !== "ready") {
+    return (
+      <p className="trace-foot">
+        The encoder loads on the first run (~660 KB) and stays in this tab. Its
+        decision layer is calibrated on public data, not on this flow yet — see
+        §6.4.
+      </p>
+    );
+  }
+
+  if (!backend) {
+    return (
+      <p className="trace-foot">
+        No fitted backend shipped — embeddings are produced but nothing turns
+        them into a verdict. Run <code>npm run calibrate</code> then{" "}
+        <code>npm run export</code> in <code>big-boy-ts</code>.
+      </p>
+    );
+  }
+
+  // Calibrated on demo runs, but only as far as the collection allows: without
+  // a repeat run from any participant there is no genuine distribution, hence
+  // no likelihood ratio and no decision (§6.4 items 1 and 4).
+  if (!backend.llr) {
+    return (
+      <p className="trace-foot">
+        Per-sub-task AS-norm cohort calibrated on {String(backend.provenance.runs ?? "?")}{" "}
+        demo runs. No verdict yet: the likelihood ratio needs a genuine score
+        distribution, and that needs one participant to run the flow twice
+        (§6.4). Scores are shown, decisions are not.
+      </p>
+    );
+  }
+
+  if (backend.assumedGenuine) {
+    return (
+      <p className="trace-foot">
+        Cohort and impostor distribution measured on{" "}
+        {String(backend.provenance.runs ?? "?")} demo runs. The genuine
+        distribution is <strong>assumed</strong> (d′ borrowed from the offline
+        harness) because nobody has run the flow twice — so the verdict is a
+        working decision layer, not a validated one (§6.4).
+      </p>
+    );
+  }
+
+  return (
+    <p className="trace-foot">
+      Encoder live, backend calibrated on{" "}
+      {String(backend.provenance.source)}. Treat the verdict as good as that
+      calibration and no better.
+    </p>
+  );
+}
+
+/**
+ * End of a test run with §6.1 and §6.2 calibrated but §6.3 not.
+ *
+ * The comparisons are real, so they are worth showing; a verdict would not be,
+ * so there isn't one. Mean normalised score is the honest summary: positive
+ * means this run looked more like the enrolled template than the cohort does.
+ */
+function NoDecisionBody() {
+  const { scores, index } = useTrace();
+  const mean =
+    scores.length > 0
+      ? scores.reduce((sum, score) => sum + score.z, 0) / scores.length
+      : 0;
+
+  return (
+    <>
+      <div className="trace-verdict is-inconclusive">
+        <span className="trace-verdict-title">No decision</span>
+        <span className="trace-verdict-score">
+          z̄ {mean >= 0 ? "+" : ""}
+          {mean.toFixed(2)}
+        </span>
+      </div>
+
+      <p className="trace-note">
+        Sub-task similarity was measured and normalised against the demo cohort,
+        but nothing is calibrated to turn it into accept or reject.
+      </p>
+
+      <dl className="trace-readout">
+        <div>
+          <dt>Sub-tasks scored</dt>
+          <dd>
+            {scores.length} of {index}
+          </dd>
+        </div>
+        <div>
+          <dt>Mean AS-norm z</dt>
+          <dd>{mean.toFixed(3)}</dd>
+        </div>
+      </dl>
+    </>
+  );
+}
+
 /* -------------------------------------------------------------- pieces --- */
 
 function TaskProgress({ index }: { index: number }) {
@@ -359,7 +525,16 @@ function TaskProgress({ index }: { index: number }) {
  * and never a number while it is still accumulating.
  */
 function TestIndicator({ scored }: { scored: number }) {
-  const { evidence } = useTrace();
+  const { evidence, backend } = useTrace();
+
+  if (backend && !backend.llr) {
+    return (
+      <p className="trace-indicator is-waiting">
+        Measuring — {scored} sub-task{scored === 1 ? "" : "s"} compared, no
+        decision layer calibrated
+      </p>
+    );
+  }
 
   if (evidence === null) {
     return (

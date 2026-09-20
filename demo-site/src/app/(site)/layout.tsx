@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import TraceLockout from "@/components/trace/TraceLockout";
 import TraceProvider from "@/components/trace/TraceProvider";
 import TraceUiCard from "@/components/trace/TraceUiCard";
 import { getCurrentUser } from "@/data/currentUser";
@@ -30,6 +31,7 @@ export default async function SiteLayout({
       <div className="mc-content">{children}</div>
       <Footer user={user} />
       <TraceUiCard />
+      <TraceLockout />
     </TraceProvider>
   );
 }

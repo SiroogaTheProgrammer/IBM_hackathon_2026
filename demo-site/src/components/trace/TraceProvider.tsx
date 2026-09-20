@@ -12,7 +12,24 @@ import {
   useSyncExternalStore,
 } from "react";
 import type { ReactNode } from "react";
-import { SubtaskRecorder, extractFeatures } from "@/lib/trace/capture";
+import { SubtaskRecorder, readViewport } from "@/lib/trace/capture";
+import type { Viewport } from "@/lib/trace/capture";
+import { loadEncoder } from "@/lib/trace/encoder";
+import type { BackendConfig, LoadedEncoder } from "@/lib/trace/encoder";
+import type { RunEmbeddings } from "@/lib/trace/score";
+import {
+  MIN_SCORED_FOR_INDICATOR,
+  decide,
+  scoreSubtask,
+  thresholdsFor,
+  trustScore,
+} from "@/lib/trace/score";
+import type {
+  Enrollment,
+  SubtaskScore,
+  Thresholds,
+  Verdict,
+} from "@/lib/trace/score";
 import {
   SessionLogger,
   advanceParticipant,
@@ -25,33 +42,34 @@ import {
   subscribeParticipant,
 } from "@/lib/trace/collect";
 import type { SavedRun } from "@/lib/trace/collect";
-import type { RunVectors } from "@/lib/trace/score";
-import {
-  MIN_SCORED_FOR_INDICATOR,
-  decide,
-  scoreSubtask,
-  trustScore,
-} from "@/lib/trace/score";
-import type { Enrollment, SubtaskScore, Verdict } from "@/lib/trace/score";
 import {
   FLOW_LENGTH,
   FLOW_START_ROUTE,
+  MIN_TYPED_CHARS,
   flowSubtasks,
   locate,
 } from "@/data/taskFlow";
 import type { Subtask } from "@/data/taskFlow";
 
 /**
- * The run engine. It lives in the root layout, so it survives every in-app
- * navigation the flow makes — a run is one continuous recording from "Start"
- * to the last sub-task, not one per page.
+ * The run engine. It lives in the `(site)` layout, so it survives every in-app
+ * navigation the flow makes — a run is one continuous recording from "Start" to
+ * the last sub-task, not one per page.
  *
  * Responsibilities, and nothing else:
  *   - drive the fixed flow (`@/data/taskFlow`) one sub-task at a time,
- *   - record the trajectory of the sub-task in progress (`@/lib/trace/capture`),
- *   - on enrollment, keep each sub-task's vector as that user's template,
- *   - on a test run, score each sub-task and stop the run on a lockout
- *     (`@/lib/trace/score`).
+ *   - record the raw pointer stream of the sub-task in progress,
+ *   - hand it to the shared pipeline: segment → features → encoder → one
+ *     128-d embedding per sub-task (§3.4, §4, §5.1),
+ *   - on enrollment, keep that embedding as the template for its sub-task id,
+ *   - on a test run, score it through the §6 backend and stop the run on a
+ *     lockout.
+ *
+ * **Inference never blocks the participant.** The flow advances the moment a
+ * sub-task's terminating interaction fires; segmentation and the forward pass
+ * happen on a serial queue behind it. A lockout can therefore land a beat after
+ * the sub-task that caused it, which is both unavoidable and true to §2.2's
+ * "within 20–40 s of the handover".
  *
  * Everything is in memory: a reload clears the enrollment, which is the right
  * default for a study kiosk and means no trajectory is ever persisted.
@@ -73,6 +91,8 @@ export type Phase =
   /** Data-collection run written to disk — see `lastSave`. */
   | "collected";
 
+export type EncoderStatus = "idle" | "loading" | "ready" | "failed";
+
 export type TraceState = {
   phase: Phase;
   /** Index into `flowSubtasks`, or `FLOW_LENGTH` once the flow is done. */
@@ -84,6 +104,14 @@ export type TraceState = {
   collectionMode: boolean;
   /** The file the last collection run produced. */
   lastSave: SavedRun | null;
+  encoderStatus: EncoderStatus;
+  encoderError: string;
+  /** The shipped §6 parameters, once loaded. `null` means "no decision". */
+  backend: BackendConfig | null;
+  /** Geometry of the run in progress, or of the last one (§3.3). */
+  runViewport: Viewport | null;
+  /** Sub-tasks whose embedding is still being computed. */
+  pending: number;
 };
 
 export type TraceApi = TraceState & {
@@ -91,6 +119,8 @@ export type TraceApi = TraceState & {
   position: ReturnType<typeof locate>;
   /** The participant is not on the route this sub-task lives on. */
   offTrack: boolean;
+  /** SPRT boundaries in force for this run, widened on a viewport mismatch. */
+  thresholds: Thresholds | null;
   /** Accumulated evidence, withheld until enough sub-tasks have scored (§2.2). */
   evidence: number | null;
   trust: number | null;
@@ -128,6 +158,11 @@ const INITIAL: TraceState = {
   verdict: "running",
   collectionMode: false,
   lastSave: null,
+  encoderStatus: "idle",
+  encoderError: "",
+  backend: null,
+  runViewport: null,
+  pending: 0,
 };
 
 const subscribeNothing = () => () => {};
@@ -138,18 +173,28 @@ export default function TraceProvider({ children }: { children: ReactNode }) {
 
   const [state, setState] = useState<TraceState>(INITIAL);
 
-  /** Trajectory of the sub-task in progress. */
+  /** Raw pointer stream of the sub-task in progress. */
   const recorder = useRef<SubtaskRecorder | null>(null);
-  /** When the current sub-task became current. */
-  const subtaskStart = useRef<number>(0);
+  /** Geometry the run in progress is being captured under. */
+  const viewport = useRef<Viewport | null>(null);
+  /** Pointer hardware last seen, carried into the run's viewport metadata. */
+  const pointerType = useRef("unknown");
   /** Last pointer position, used as the landing point for typed sub-tasks. */
   const lastPoint = useRef<{ x: number; y: number } | null>(null);
-  /** Vectors captured so far by the run in progress. */
-  const vectors = useRef<RunVectors>({});
+  /** Embeddings produced so far by the run in progress. */
+  const embeddings = useRef<RunEmbeddings>({});
   /** Raw SapiMouse-shaped log, live only during a collection run. */
   const logger = useRef<SessionLogger | null>(null);
   /** Identifies the save in flight, so a late response cannot clobber a newer one. */
   const saveId = useRef(0);
+
+  /**
+   * Serial queue for the encoder. One forward pass per sub-task, in flow order,
+   * so the accumulator sees the sub-tasks in the order they happened.
+   */
+  const queue = useRef<Promise<void>>(Promise.resolve());
+  /** Discriminates jobs of the current run from stragglers of an aborted one. */
+  const runId = useRef(0);
 
   const collectionAvailable = useSyncExternalStore(
     subscribeNothing,
@@ -163,18 +208,13 @@ export default function TraceProvider({ children }: { children: ReactNode }) {
   );
 
   /**
-   * Mirrors `state` for the DOM listeners, which are registered once and must
-   * not be torn down and rebuilt on every sub-task. Every writer below updates
-   * it in the same breath as `setState`, so a click can never read a snapshot
-   * that is one sub-task behind.
+   * Mirrors `state` for the DOM listeners and the queued jobs, which are
+   * registered once and must not be rebuilt on every sub-task. Every writer
+   * below updates it in the same breath as `setState`.
    */
   const live = useRef(state);
 
-  /**
-   * Whether the run has reached the start route and sub-task 1.1 is live. A
-   * ref rather than state: only the listeners read it, and re-rendering on it
-   * would buy nothing.
-   */
+  /** Whether the run has reached the start route and sub-task 1.1 is live. */
   const armed = useRef(false);
 
   /** The one place run state changes, so the mirror can never drift. */
@@ -191,25 +231,44 @@ export default function TraceProvider({ children }: { children: ReactNode }) {
   const beginSubtask = useCallback((index: number) => {
     const subtask = flowSubtasks[index];
     if (!subtask) return;
-    subtaskStart.current = performance.now();
-    recorder.current = new SubtaskRecorder(subtask.id, subtaskStart.current);
+    recorder.current = new SubtaskRecorder(subtask.id, performance.now());
   }, []);
+
+  const enqueue = useCallback(
+    (job: () => Promise<void>) => {
+      queue.current = queue.current.then(job).catch((error: unknown) => {
+        commit({
+          ...live.current,
+          encoderStatus: "failed",
+          encoderError:
+            error instanceof Error ? error.message : "encoder failed",
+        });
+      });
+    },
+    [commit],
+  );
 
   /* ------------------------------------------------------------- start --- */
 
   const start = useCallback(
     (phase: "training" | "testing" | "collecting") => {
       recorder.current = null;
-      vectors.current = {};
+      embeddings.current = {};
       armed.current = false;
+      runId.current += 1;
 
       logger.current?.stop();
       logger.current = null;
 
+      const runViewport = readViewport(pointerType.current);
+      viewport.current = runViewport;
+
       if (phase === "collecting") {
         /*
          * The logger reads the flow position per sample instead of being told
-         * when it changes, so it can start before the run is even armed.
+         * when it changes, so it can start before the run is even armed. This
+         * path deliberately never touches the encoder: a collection run is raw
+         * data capture and nothing else.
          */
         const session = new SessionLogger(() => {
           const here = locate(live.current.index);
@@ -222,13 +281,48 @@ export default function TraceProvider({ children }: { children: ReactNode }) {
         logger.current = session;
       }
 
+      const needsEncoder = phase !== "collecting";
+
       commit({
         ...live.current,
         phase,
         index: 0,
         scores: [],
         verdict: "running",
+        runViewport,
+        pending: 0,
+        encoderStatus: needsEncoder
+          ? live.current.encoderStatus === "ready"
+            ? "ready"
+            : "loading"
+          : live.current.encoderStatus,
+        encoderError: "",
       });
+
+      if (needsEncoder) {
+        // Kick the download off now so the first sub-task is not also the first
+        // 660 KB of model weights.
+        loadEncoder().then(
+          (loaded) => {
+            commit({
+              ...live.current,
+              encoderStatus: "ready",
+              backend: loaded.backend,
+            });
+          },
+          (error: unknown) => {
+            commit({
+              ...live.current,
+              encoderStatus: "failed",
+              encoderError:
+                error instanceof Error
+                  ? error.message
+                  : "encoder failed to load",
+            });
+          },
+        );
+      }
+
       router.push(FLOW_START_ROUTE);
     },
     [commit, router],
@@ -240,8 +334,9 @@ export default function TraceProvider({ children }: { children: ReactNode }) {
 
   const abort = useCallback(() => {
     recorder.current = null;
-    vectors.current = {};
+    embeddings.current = {};
     armed.current = false;
+    runId.current += 1;
 
     /* An abandoned collection run is discarded, not written out. */
     logger.current?.stop();
@@ -258,13 +353,35 @@ export default function TraceProvider({ children }: { children: ReactNode }) {
       enrollment: previous.enrollment,
       collectionMode: previous.collectionMode,
       lastSave: previous.lastSave,
+      encoderStatus: previous.encoderStatus,
+      backend: previous.backend,
     });
   }, [commit]);
 
-  /**
-   * Fire the write and fold the outcome back into state. Guarded by `saveId`
-   * because the participant can start the next run before this settles.
-   */
+  const setCollectionMode = useCallback(
+    (on: boolean) => {
+      if (on && !isLocalhost()) return;
+      logger.current?.stop();
+      logger.current = null;
+      recorder.current = null;
+      embeddings.current = {};
+      armed.current = false;
+      runId.current += 1;
+      commit({
+        ...INITIAL,
+        enrollment: live.current.enrollment,
+        phase: !on && live.current.enrollment ? "enrolled" : "idle",
+        collectionMode: on,
+        lastSave: live.current.lastSave,
+        encoderStatus: live.current.encoderStatus,
+        backend: live.current.backend,
+      });
+    },
+    [commit],
+  );
+
+  /* -------------------------------------------------------- saving runs --- */
+
   const writeRun = useCallback(
     (run: SavedRun) => {
       postRun(run.participant, run.csv).then(
@@ -311,25 +428,6 @@ export default function TraceProvider({ children }: { children: ReactNode }) {
     if (saved) downloadCsv(`user-${saved.participant}.csv`, saved.csv);
   }, []);
 
-  const setCollectionMode = useCallback(
-    (on: boolean) => {
-      if (on && !isLocalhost()) return;
-      logger.current?.stop();
-      logger.current = null;
-      recorder.current = null;
-      vectors.current = {};
-      armed.current = false;
-      commit({
-        ...INITIAL,
-        enrollment: live.current.enrollment,
-        phase: !on && live.current.enrollment ? "enrolled" : "idle",
-        collectionMode: on,
-        lastSave: live.current.lastSave,
-      });
-    },
-    [commit],
-  );
-
   /**
    * A run only starts counting once the browser is actually on the start
    * route, so the router's own latency never lands inside sub-task 1.1.
@@ -344,133 +442,224 @@ export default function TraceProvider({ children }: { children: ReactNode }) {
 
   /* ---------------------------------------------------------- advancing --- */
 
-  /**
-   * Close the sub-task in progress: turn its trajectory into a feature vector,
-   * file it (enrollment) or score it (test run), then move on — or finish.
-   */
-  const advance = useCallback(
-    (endPoint: { x: number; y: number } | null, targetRect: DOMRect | null) => {
+  /** Turn one finished sub-task into its embedding, then file it or score it. */
+  const processSubtask = useCallback(
+    async (
+      subtaskId: string,
+      finished: SubtaskRecorder,
+      runViewport: Viewport,
+      job: number,
+    ): Promise<void> => {
+      if (job !== runId.current) return;
+
+      const loaded: LoadedEncoder = await loadEncoder();
+      const strokes = finished.strokes(runViewport);
+      // §6.1: fewer than two strokes is skipped, not scored noisily.
+      const embedding = await loaded.encoder.encodeSubtask(
+        strokes.map((entry) => entry.features),
+      );
+
+      if (job !== runId.current) return;
       const snapshot = live.current;
-      const subtask = flowSubtasks[snapshot.index];
-      if (!subtask) return;
+      const pending = Math.max(0, snapshot.pending - 1);
 
-      const nextIndex = snapshot.index + 1;
-      const flowComplete = nextIndex >= FLOW_LENGTH;
-
-      /*
-       * A collection run scores nothing and enrols nothing — it only walks the
-       * flow so the raw log is segmented by sub-task, then writes the file.
-       */
-      if (snapshot.phase === "collecting") {
-        if (!flowComplete) {
-          commit({ ...snapshot, index: nextIndex });
-          return;
-        }
-
-        const session = logger.current;
-        logger.current = null;
-        session?.stop();
-
-        const run = session
-          ? pendingRun(session, getParticipant(), (saveId.current += 1))
-          : null;
-
-        commit({
-          ...snapshot,
-          phase: "collected",
-          index: FLOW_LENGTH,
-          lastSave: run,
-        });
-
-        if (run) writeRun(run);
-        return;
-      }
-
-      const endedAt = performance.now();
-      const active = recorder.current;
-
-      const vector = active
-        ? extractFeatures({
-            samples: active.trajectory(),
-            startedAt: subtaskStart.current,
-            endedAt,
-            endPoint,
-            targetRect,
-            viewport: { width: window.innerWidth, height: window.innerHeight },
-          })
-        : null;
-
-      if (vector) vectors.current[subtask.id] = vector;
+      if (embedding) embeddings.current[subtaskId] = embedding;
 
       if (snapshot.phase === "training") {
-        if (!flowComplete) {
-          beginSubtask(nextIndex);
-          commit({ ...snapshot, index: nextIndex });
-          return;
-        }
-
-        const captured = { ...vectors.current };
-        recorder.current = null;
-        commit({
-          ...snapshot,
-          phase: "enrolled",
-          index: FLOW_LENGTH,
-          enrollment: {
-            capturedAt: Date.now(),
-            vectors: captured,
-            covered: Object.keys(captured).length,
-          },
-        });
+        commit({ ...snapshot, pending });
         return;
       }
 
-      /* test run */
-      const enrollment = snapshot.enrollment;
-      if (!enrollment) return;
+      if (snapshot.phase !== "testing") return;
 
+      const { enrollment, backend } = snapshot;
+
+      // No fitted backend means no decision — the embeddings are still real,
+      // there is simply nothing calibrated to turn them into a verdict.
+      if (!enrollment || !backend) {
+        commit({ ...snapshot, pending });
+        return;
+      }
+
+      const thresholds = thresholdsFor(
+        backend,
+        enrollment.viewport,
+        runViewport,
+      );
       const previousEvidence =
         snapshot.scores[snapshot.scores.length - 1]?.evidence ?? 0;
       const score = scoreSubtask(
-        subtask.id,
-        vector,
+        subtaskId,
+        embedding,
         enrollment,
         previousEvidence,
+        backend,
+        loaded.cohort,
       );
       const scores = score ? [...snapshot.scores, score] : snapshot.scores;
-      const verdict = decide(scores, flowComplete, snapshot.verdict);
 
-      /* Only a lockout ends the run early; a verified run plays out (§2.2). */
-      if (verdict !== "locked" && !flowComplete) {
-        beginSubtask(nextIndex);
-        commit({ ...snapshot, index: nextIndex, scores, verdict });
+      /*
+       * Without thresholds there is no decision to make. The comparisons are
+       * still real and still accumulate on screen — §6.3's boundaries are the
+       * only missing piece, and they need §6.4's genuine distribution.
+       */
+      if (!thresholds) {
+        commit({ ...snapshot, scores, pending });
         return;
       }
 
-      recorder.current = null;
+      const verdict = decide(scores, false, thresholds, snapshot.verdict);
+
+      /* Only a lockout ends the run early; a verified run plays out (§2.2). */
+      if (verdict === "locked") {
+        runId.current += 1;
+        recorder.current = null;
+        commit({ ...snapshot, phase: "finished", scores, verdict, pending: 0 });
+        return;
+      }
+
+      commit({ ...snapshot, scores, verdict, pending });
+    },
+    [commit],
+  );
+
+  /**
+   * Close the sub-task in progress and move on.
+   *
+   * The state change is synchronous; the encoder work is queued. The
+   * participant is never waiting on a forward pass.
+   */
+  const advance = useCallback(() => {
+    const snapshot = live.current;
+    const subtask = flowSubtasks[snapshot.index];
+    if (!subtask) return;
+
+    const nextIndex = snapshot.index + 1;
+    const flowComplete = nextIndex >= FLOW_LENGTH;
+
+    /*
+     * A collection run scores nothing and enrols nothing — it only walks the
+     * flow so the raw log is segmented by sub-task, then writes the file.
+     */
+    if (snapshot.phase === "collecting") {
+      if (!flowComplete) {
+        commit({ ...snapshot, index: nextIndex });
+        return;
+      }
+
+      const session = logger.current;
+      logger.current = null;
+      session?.stop();
+
+      const run = session
+        ? pendingRun(session, getParticipant(), (saveId.current += 1))
+        : null;
+
       commit({
         ...snapshot,
-        phase: "finished",
-        index: flowComplete ? FLOW_LENGTH : nextIndex,
-        scores,
-        verdict,
+        phase: "collected",
+        index: FLOW_LENGTH,
+        lastSave: run,
       });
-    },
-    [beginSubtask, commit, writeRun],
-  );
+
+      if (run) writeRun(run);
+      return;
+    }
+
+    const finished = recorder.current;
+    const runViewport = viewport.current ?? readViewport(pointerType.current);
+    const job = runId.current;
+
+    if (flowComplete) recorder.current = null;
+    else beginSubtask(nextIndex);
+
+    commit({
+      ...snapshot,
+      index: flowComplete ? FLOW_LENGTH : nextIndex,
+      pending: snapshot.pending + (finished ? 1 : 0),
+    });
+
+    if (finished) {
+      enqueue(() => processSubtask(subtask.id, finished, runViewport, job));
+    }
+
+    if (flowComplete) {
+      // Queued after every per-sub-task job, so the enrollment is only sealed
+      // once every embedding that is going to arrive has arrived.
+      enqueue(async () => {
+        if (job !== runId.current) return;
+        const snap = live.current;
+
+        if (snap.phase === "training") {
+          const captured = { ...embeddings.current };
+          commit({
+            ...snap,
+            phase: "enrolled",
+            pending: 0,
+            enrollment: {
+              capturedAt: Date.now(),
+              embeddings: captured,
+              covered: Object.keys(captured).length,
+              viewport: runViewport,
+            },
+          });
+          return;
+        }
+
+        if (snap.phase === "testing") {
+          const thresholds =
+            snap.enrollment && snap.backend
+              ? thresholdsFor(
+                  snap.backend,
+                  snap.enrollment.viewport,
+                  runViewport,
+                )
+              : null;
+          commit({
+            ...snap,
+            phase: "finished",
+            pending: 0,
+            verdict: thresholds
+              ? decide(snap.scores, true, thresholds, snap.verdict)
+              : "inconclusive",
+          });
+        }
+      });
+    }
+  }, [beginSubtask, commit, enqueue, processSubtask, writeRun]);
 
   /* ---------------------------------------------------------- listeners --- */
 
   useEffect(() => {
     if (!running) return;
 
+    const overUi = (target: EventTarget | null): boolean =>
+      target instanceof Element && target.closest(`[${UI_ATTRIBUTE}]`) !== null;
+
     const onPointerMove = (event: PointerEvent) => {
-      const target = event.target;
-      if (target instanceof Element && target.closest(`[${UI_ATTRIBUTE}]`)) {
-        return;
-      }
+      if (overUi(event.target)) return;
+      if (event.pointerType) pointerType.current = event.pointerType;
       lastPoint.current = { x: event.clientX, y: event.clientY };
-      recorder.current?.add(event);
+      recorder.current?.addMove(event);
     };
+
+    const onPointerDown = (event: PointerEvent) => {
+      if (overUi(event.target)) return;
+      recorder.current?.addDown(event);
+    };
+
+    const onPointerUp = (event: PointerEvent) => {
+      if (overUi(event.target)) return;
+      recorder.current?.addUp(event);
+    };
+
+    /** Does this element end the sub-task — as its target, or as an alias? */
+    const terminates = (
+      subtask: Subtask,
+      value: string | undefined,
+    ): boolean =>
+      value !== undefined &&
+      (value === subtask.target || (subtask.alsoAccepts?.includes(value) ?? false));
 
     /**
      * Capture phase, so the sub-task is closed before `next/link` unmounts the
@@ -484,36 +673,46 @@ export default function TraceProvider({ children }: { children: ReactNode }) {
       if (!(event.target instanceof Element)) return;
 
       const hit = event.target.closest<HTMLElement>("[data-trace]");
-      if (!hit || hit.dataset.trace !== subtask.target) return;
+      if (!hit || !terminates(subtask, hit.dataset.trace)) return;
 
-      advance(
-        { x: event.clientX, y: event.clientY },
-        hit.getBoundingClientRect(),
-      );
+      advance();
     };
 
-    const onInput = (event: Event) => {
+    /**
+     * A text sub-task ends once the field holds a couple of characters. The
+     * string itself is not checked — only that the participant reached the
+     * right field and actually started typing in it.
+     */
+    const onTypeInField = (event: Event) => {
       if (!armed.current) return;
 
       const subtask = flowSubtasks[live.current.index];
-      if (!subtask || subtask.kind !== "type" || !subtask.expect) return;
-      if (!(event.target instanceof HTMLInputElement)) return;
+      if (!subtask || subtask.kind !== "type") return;
 
       const field = event.target;
-      if (field.dataset.trace !== subtask.target) return;
-      if (!field.value.trim().toLowerCase().includes(subtask.expect)) return;
+      if (
+        !(field instanceof HTMLInputElement || field instanceof HTMLTextAreaElement)
+      ) {
+        return;
+      }
+      if (!terminates(subtask, field.dataset.trace)) return;
+      if (field.value.trim().length < MIN_TYPED_CHARS) return;
 
-      advance(lastPoint.current, field.getBoundingClientRect());
+      advance();
     };
 
     window.addEventListener("pointermove", onPointerMove, { passive: true });
+    window.addEventListener("pointerdown", onPointerDown, { passive: true });
+    window.addEventListener("pointerup", onPointerUp, { passive: true });
     document.addEventListener("click", onClick, true);
-    document.addEventListener("input", onInput, true);
+    document.addEventListener("input", onTypeInField, true);
 
     return () => {
       window.removeEventListener("pointermove", onPointerMove);
+      window.removeEventListener("pointerdown", onPointerDown);
+      window.removeEventListener("pointerup", onPointerUp);
       document.removeEventListener("click", onClick, true);
-      document.removeEventListener("input", onInput, true);
+      document.removeEventListener("input", onTypeInField, true);
     };
   }, [running, advance]);
 
@@ -522,10 +721,19 @@ export default function TraceProvider({ children }: { children: ReactNode }) {
   const api = useMemo<TraceApi>(() => {
     const current = flowSubtasks[state.index] ?? null;
 
+    const thresholds =
+      state.backend && state.enrollment && state.runViewport
+        ? thresholdsFor(
+            state.backend,
+            state.enrollment.viewport,
+            state.runViewport,
+          )
+        : null;
+
     const evidence =
       state.scores.length >= MIN_SCORED_FOR_INDICATOR ||
       state.phase === "finished"
-        ? state.scores[state.scores.length - 1]?.evidence ?? 0
+        ? (state.scores[state.scores.length - 1]?.evidence ?? 0)
         : null;
 
     const isRunning =
@@ -545,8 +753,12 @@ export default function TraceProvider({ children }: { children: ReactNode }) {
         isRunning && state.index > 0 && current
           ? pathname !== current.route
           : false,
+      thresholds,
       evidence,
-      trust: evidence === null ? null : trustScore(evidence),
+      trust:
+        evidence === null || !thresholds
+          ? null
+          : trustScore(evidence, thresholds),
       startTraining,
       startTest,
       abort,

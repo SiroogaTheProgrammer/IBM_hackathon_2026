@@ -63,6 +63,7 @@ npm install
 npm run extract     # CSVs → stroke features, cached under cache/
 npm run train       # AAM-softmax over the training identities
 npm run eval        # replay held-out identities through the §6 backend
+npm run calibrate   # fit §6.4 from runs recorded on the demo site
 npm run export      # copy encoder + scaler into demo-site/public/
 ```
 
@@ -118,6 +119,76 @@ n = 12 it cannot be measured to better than ±8 points.
    §6.4's 15–20 users on the demo site.
 3. **A "block" here is six strokes**, not a sub-task. Median detection in two
    blocks is roughly twelve strokes of mouse movement, not twelve sub-tasks.
+
+---
+
+## Calibration from demo runs (§6.4)
+
+`npm run calibrate` reads `demo-site/data/collected/*.csv` — runs recorded by
+real participants through the actual flow — and fits what that collection
+supports. On the twelve runs collected so far:
+
+```
+12 runs, 12 subjects, viewport 1710x856
+embedded 197/348 sub-task instances  (dropped 12 lost, 139 under two strokes)
+cohort: 197 embeddings across 28 sub-task ids  (1–12 per id)
+impostor comparisons  1440    z ~ N(-0.028, 1.332)
+genuine comparisons      0    NOT FITTABLE
+```
+
+**Half of §6.4 is now real and half cannot be**, and the split is structural,
+not a matter of effort:
+
+| §6.4 product | State |
+|---|---|
+| 1. Genuine score distribution | **Not fittable.** Every participant recorded one run, so no same-person pair exists. |
+| 2. Impostor score distribution | Fitted: 1440 comparisons over 12 subjects. |
+| 3. Cohort embeddings per sub-task id | Shipped, 197 embeddings, 100 KB. This is the piece SapiMouse structurally cannot provide. |
+| 4. Accumulation scale `w`, thresholds | **Not fittable** — §6.3 fits `w` so genuine runs cross the lower boundary at the intended rate. |
+| 5. Per-sub-task d′ weights | **Not fittable** (needs both distributions). `betweenSubjectSimilarity` is reported instead. |
+
+So `backend.json` ships `llr: null` and `thresholds: null`, and the demo reports
+"no decision" while still showing the per-sub-task scores. Borrowing the
+SapiMouse distributions would be worse than nothing: they were fitted under a
+*different cohort*, so they live on a different z-scale — the measured demo
+impostor is N(-0.03, 1.33) against SapiMouse's N(-10.9, 10.8).
+
+**The AS-norm sanity check passes.** With a correct cohort the impostor
+distribution should come out near N(0, 1) by construction, because the cohort
+*is* impostors. Measured: N(-0.028, 1.332). The 1.33 rather than 1.0 is the
+thin banks — several sub-tasks have fewer than four embeddings left after both
+sides of a comparison are held out, so AS-norm falls through to the global bank.
+
+### What the collection says about the flow (§6.4 item 5)
+
+Calibration doubles as a design loop, and this one is blunt:
+
+- **40% of sub-task instances produce no embedding** — 139 of 348 held fewer
+  than two strokes. The flow is mostly single point-and-click hops, and §6.1's
+  two-stroke minimum eliminates them. This is the finding to act on.
+- **Sub-task 4.3 yielded zero usable embeddings across all twelve runs.** It is
+  a menu item directly below its trigger: no free cursor movement, no strokes,
+  no signal. §6.4 predicts exactly this ("usually the ones with short travel
+  distance or no free cursor movement") and says to redesign or drop it.
+- Nine more sub-tasks have banks too thin for AS-norm to engage: 1.3, 3.3, 2.1,
+  2.5, 2.7, 1.5, 3.6, 4.5, 5.3.
+- Separating best (lowest between-subject cosine, n ≥ 6): 5.4 (0.555), 5.6
+  (0.569), 1.4 (0.579), 5.1 (0.579). Worst: 1.2 (0.810), 2.4 (0.800), 5.5
+  (0.750) — long dwells where people mostly read rather than move.
+
+### What one more collection round would unlock
+
+A single repeat run from each participant — 12 × 3 min — turns items 1, 4 and 5
+on: the genuine distribution, `w`, the operating thresholds, and real d′
+weights. §6.4 asks for runs spaced apart (ideally ≥30 min) so within-user drift
+is represented rather than hidden.
+
+Two caveats to carry into that round. No familiarisation pass was discarded
+here, and participants' prior familiarity with the real MyCourses app varies
+widely, so think-time differences currently carry familiarity as well as
+identity — §2.3's confound, uncontrolled. And the QC threshold (drop a sub-task
+past max(12 s, 4× its median)) is a judgement call that removed 12 instances;
+it is `--qc-multiple` / `--qc-floor` if you want to see the sensitivity.
 
 ---
 
@@ -199,6 +270,15 @@ absolute scale in the first place.
 `npm run export` writes `model.json`, `weights.bin` and `scaler.json` (437 KB
 total) to `demo-site/public/models/stroke-encoder/`.
 
+If `npm run eval` has been run first it also ships the §6 backend —
+`backend.json` (the AS-norm cohort's shape, the fitted genuine/impostor
+distributions, `w`, and the SPRT boundaries) and `cohort.bin` (439 embeddings,
+224 KB, §6.2's "a few hundred KB"). **Those distributions are fitted on held-out
+SapiMouse identities, not on demo-site runs**, and `backend.provenance` says so
+in the file so the demo can show the caveat rather than presenting them as
+calibrated. The encoder works without them; the demo then produces embeddings
+and reports no decision.
+
 ```ts
 import * as tf from "@tensorflow/tfjs";
 import {
@@ -240,7 +320,19 @@ invalidates the feature cache.
   SPRT boundaries, but the cohort, the fitted genuine/impostor distributions and
   the accumulation scale `w` have to come from 15–20 people running the actual
   demo flow. The harness fits them on held-out SapiMouse identities so the
-  ablations mean something; those values should not ship.
+  ablations mean something; those values are exported so the demo runs end to
+  end, carry `provenance.source: "sapimouse-holdout"`, and are not a result.
+
+  Measured on the live demo with those values: a genuine second run verifies
+  (S = +4.0, crossing the +3.86 boundary) and a mid-flow handover lands on the
+  step-up challenge (S = −0.9) rather than the −2.98 lockout. The direction is
+  right and the magnitude is not, which is exactly the gap §6.4 closes — the
+  browser's normalised scores swing over roughly ±15 while the fitted genuine
+  distribution has σ ≈ 3.
+
+- **A per-sub-task cohort (§6.2).** SapiMouse has no task structure, so the
+  shipped cohort is one global bank keyed `"*"`. §6.2 puts most of AS-norm's
+  value in the per-sub-task split, and that needs demo-flow runs.
 - **Per-sub-task informativeness weights (§6.4 item 5).** Needs the demo flow.
 - **The raw-trajectory CNN branch (§5.2, §7).** Explicitly a stretch goal.
 - **Balabit robustness check (§5.3).** The loader is dataset-specific; pointing
