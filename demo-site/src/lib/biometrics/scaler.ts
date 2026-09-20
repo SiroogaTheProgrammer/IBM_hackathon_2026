@@ -6,15 +6,28 @@
  */
 
 import mouseScalerJson from "./model/mouseScaler.json";
+import mouseScalerBigJson from "./model/mouseScalerBig.json";
 import { clip, signedLog1p } from "./math";
 
 type ScalerData = { mean: number[]; scale: number[]; clip: number };
 
 const scaler = mouseScalerJson as ScalerData;
+// Matching scaler for the big/combined-dataset encoder (`embedBig` in
+// encoder.ts) - fitted on that model's own training data, so it must not be
+// mixed with the default `scaler` above.
+const scalerBig = mouseScalerBigJson as ScalerData;
+
+function runScaler(s: ScalerData, features: number[]): number[] {
+  return features.map((v, i) => {
+    const z = (signedLog1p(v) - s.mean[i]) / s.scale[i];
+    return clip(z, -s.clip, s.clip);
+  });
+}
 
 export function scaleFeatures(features: number[]): number[] {
-  return features.map((v, i) => {
-    const z = (signedLog1p(v) - scaler.mean[i]) / scaler.scale[i];
-    return clip(z, -scaler.clip, scaler.clip);
-  });
+  return runScaler(scaler, features);
+}
+
+export function scaleFeaturesBig(features: number[]): number[] {
+  return runScaler(scalerBig, features);
 }

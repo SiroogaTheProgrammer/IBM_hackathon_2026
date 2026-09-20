@@ -1,0 +1,17 @@
+# Defense-in-depth alongside .gitignore: if Vercel ever deploys via direct
+# upload (`vercel` CLI) instead of a Git-connected build, or if "Include files
+# outside of the Root Directory" is enabled for this monorepo, these large
+# local-only dataset/cache folders must not be uploaded either. They are not
+# deleted - just excluded from what gets shipped to Vercel. The demo-site app
+# only needs the small exported JSON weights under
+# demo-site/src/lib/biometrics/model/, not any of this.
+Keystrokes/
+training_files/
+test_files/
+main_trainset/
+Bogazici_cleaned/
+encoder2/
+encoder3/
+artifacts/cache/
+.cache_train.npz
+*.parquet

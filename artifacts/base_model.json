@@ -13,8 +13,8 @@
     "entertainment",
     "gaming"
   ],
-  "n_train_windows": 619744,
-  "n_train_sessions": 4322,
+  "n_train_windows": 11658671,
+  "n_train_sessions": 117230,
   "train_users": [
     "bogazici_user1",
     "bogazici_user10",
@@ -47,5 +47,5 @@
     "user9"
   ],
   "epochs": 30,
-  "embedding_spread": 0.4643198847770691
+  "embedding_spread": 0.2506341338157654
 }

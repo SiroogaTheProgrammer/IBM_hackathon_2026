@@ -14,11 +14,12 @@ import { randomUUID } from "crypto";
 import { getRedis } from "./redis";
 import { ADDON_CONFIG, BACKGROUND_SIZE, TARGET_FALSE_ALARM } from "./config";
 import { extractWindowFeatures, countMovementEvents, MIN_MOVE_EVENTS } from "./featureExtractor";
-import { scaleFeatures } from "./scaler";
-import { embed } from "./encoder";
+import { scaleFeatures, scaleFeaturesBig } from "./scaler";
+import { embed, embedBig } from "./encoder";
 import { distanceStats } from "./distanceStats";
 import { fitRiskModel, riskScore, smoothRisk, trailingMeanSeries, calibrateThreshold, type RiskModel } from "./riskModel";
 import mouseBackgroundJson from "./model/mouseBackground.json";
+import mouseBackgroundBigJson from "./model/mouseBackgroundBig.json";
 import { initTabNavState, updateTabNavigation, type TabNavState } from "./tabNavigation";
 import { initKeystrokeState, updateKeystroke, type KeystrokeState } from "./keystroke";
 import { updateComposite, type CompositeState } from "./composite";
@@ -40,6 +41,13 @@ type SessionDoc = {
   riskModel: RiskModel | null;
   threshold: number;
   rawHistoryTail: number[];
+  // Separate warm-up state for the "big" combined-dataset encoder - its
+  // embeddings live in a different space, so they cannot share a gallery or
+  // fitted risk model with the default engine's fields above.
+  galleryBig: number[][];
+  riskModelBig: RiskModel | null;
+  thresholdBig: number;
+  rawHistoryTailBig: number[];
   streak: number;
   escalated: boolean;
   tabNav: TabNavState;
@@ -52,6 +60,10 @@ function freshSession(): SessionDoc {
     riskModel: null,
     threshold: 0.8,
     rawHistoryTail: [],
+    galleryBig: [],
+    riskModelBig: null,
+    thresholdBig: 0.8,
+    rawHistoryTailBig: [],
     streak: 0,
     escalated: false,
     tabNav: initTabNavState(),
@@ -151,6 +163,23 @@ function fitGallery(session: SessionDoc): void {
   session.threshold = calibrateThreshold(smoothedSeries, TARGET_FALSE_ALARM);
 }
 
+/** Same calibration as `fitGallery`, against the big model's own background
+ * bank and gallery/threshold fields. */
+function fitGalleryBig(session: SessionDoc): void {
+  const backgroundAll = (mouseBackgroundBigJson as { vectors: number[][] }).vectors;
+  const idx = sampleIndices(backgroundAll.length, BACKGROUND_SIZE);
+  const background = idx.map((i) => backgroundAll[i]);
+
+  const genuine = session.galleryBig.map((_, i) => distanceStats(session.galleryBig[i], session.galleryBig, i));
+  const impostor = background.map((v) => distanceStats(v, session.galleryBig));
+  const model = fitRiskModel(genuine, impostor);
+  session.riskModelBig = model;
+
+  const calibrationScores = genuine.map((stats) => riskScore(model, stats));
+  const smoothedSeries = trailingMeanSeries(calibrationScores, SMOOTHING_WINDOW);
+  session.thresholdBig = calibrateThreshold(smoothedSeries, TARGET_FALSE_ALARM);
+}
+
 function runMouseModule(session: SessionDoc, events: TickPayload["events"]): ModuleResult {
   const window = events ?? [];
   const nMoves = countMovementEvents(window);
@@ -209,6 +238,66 @@ function runMouseModule(session: SessionDoc, events: TickPayload["events"]): Mod
   };
 }
 
+/** Same warm-up/scoring flow as `runMouseModule`, using the big model's
+ * encoder/scaler and its own gallery/threshold state. */
+function runMouseModuleBig(session: SessionDoc, events: TickPayload["events"]): ModuleResult {
+  const window = events ?? [];
+  const nMoves = countMovementEvents(window);
+  if (nMoves < MIN_MOVE_EVENTS) {
+    return {
+      plugin_id: "mouse_base_big_v1",
+      risk_score: 0,
+      confidence: 0,
+      status: "inactive",
+      detail: { reason: `only ${nMoves} movement samples (need ${MIN_MOVE_EVENTS})` },
+    };
+  }
+
+  const features = extractWindowFeatures(window);
+  const scaled = scaleFeaturesBig(features);
+  const vector = embedBig(scaled);
+
+  if (session.galleryBig.length < WARMUP_SIZE) {
+    session.galleryBig.push(vector);
+    const remaining = Math.max(0, WARMUP_SIZE - session.galleryBig.length);
+    if (remaining === 0) fitGalleryBig(session);
+    return {
+      plugin_id: "mouse_base_big_v1",
+      risk_score: 0,
+      confidence: 0,
+      status: "warming",
+      detail: { gallery_size: session.galleryBig.length, warmup_remaining: remaining, seconds_remaining: remaining },
+    };
+  }
+
+  const model = session.riskModelBig;
+  if (!model) {
+    // Defensive: should be unreachable (gallery full implies fitGalleryBig ran).
+    return { plugin_id: "mouse_base_big_v1", risk_score: 0, confidence: 0, status: "warming", detail: { reason: "risk model not fitted yet" } };
+  }
+
+  const stats = distanceStats(vector, session.galleryBig);
+  const raw = riskScore(model, stats);
+  session.rawHistoryTailBig.push(raw);
+  if (session.rawHistoryTailBig.length > SMOOTHING_WINDOW) session.rawHistoryTailBig.shift();
+  const smoothed = smoothRisk(session.rawHistoryTailBig, SMOOTHING_WINDOW);
+
+  return {
+    plugin_id: "mouse_base_big_v1",
+    risk_score: smoothed,
+    confidence: 1.0,
+    status: "active",
+    detail: {
+      raw_risk: raw,
+      threshold: session.thresholdBig,
+      gallery_size: session.galleryBig.length,
+      cos_min: stats[0],
+      cos_mean: stats[4],
+      cos_centroid: stats[6],
+    },
+  };
+}
+
 function sessionInfo(engine: MouseEngine, gallerySize: number) {
   // Each engine fills its gallery at a different rate, so the progress bar has
   // to know which target it is counting towards.
@@ -245,7 +334,9 @@ export async function processTick(payload: TickPayload): Promise<TickResponse> {
         ? await runSapimouseModule(sid, payload.events)
         : engine === "little_boy"
           ? await runLittleBoyModule(sid, payload.events)
-          : runMouseModule(session, payload.events);
+          : engine === "balabit_features_embed_big"
+            ? runMouseModuleBig(session, payload.events)
+            : runMouseModule(session, payload.events);
   const tabOutcome = updateTabNavigation(
     session.tabNav,
     (payload.nav ?? []).map((v) => ({ tab: String(v.tab ?? ""), dwell: Number(v.dwell ?? 0) })),
@@ -282,7 +373,9 @@ export async function processTick(payload: TickPayload): Promise<TickResponse> {
         ? (typeof mouseResult.detail.threshold === "number"
             ? mouseResult.detail.threshold
             : ADDON_CONFIG.session.threshold)
-        : session.threshold;
+        : engine === "balabit_features_embed_big"
+          ? session.thresholdBig
+          : session.threshold;
 
   const compositeState: CompositeState = { streak: session.streak, escalated: session.escalated };
   const outcome = updateComposite(
@@ -293,6 +386,7 @@ export async function processTick(payload: TickPayload): Promise<TickResponse> {
         mouse_autoencoder_v1: ADDON_CONFIG.modules.mouse_autoencoder_v1.weight,
         mouse_sapimouse_v1: ADDON_CONFIG.modules.mouse_sapimouse_v1.weight,
         mouse_littleboy_v1: ADDON_CONFIG.modules.mouse_littleboy_v1.weight,
+        mouse_base_big_v1: ADDON_CONFIG.modules.mouse_base_big_v1.weight,
         tab_navigation_v1: ADDON_CONFIG.modules.tab_navigation_v1.weight,
         keystroke_v1: ADDON_CONFIG.modules.keystroke_v1.weight,
       },
@@ -332,7 +426,9 @@ export async function processTick(payload: TickPayload): Promise<TickResponse> {
           ? (await sapimouseProgress(sid)).size
           : engine === "little_boy"
             ? (await littleBoyProgress(sid)).size
-            : session.gallery.length,
+            : engine === "balabit_features_embed_big"
+              ? session.galleryBig.length
+              : session.gallery.length,
     ),
   };
 }
@@ -360,6 +456,13 @@ export function getConfigPayload() {
         weight: ADDON_CONFIG.modules.mouse_littleboy_v1.weight,
         is_base: true,
         hard_trigger: ADDON_CONFIG.modules.mouse_littleboy_v1.hardTrigger,
+      },
+      {
+        plugin_id: "mouse_base_big_v1",
+        display_name: ADDON_CONFIG.modules.mouse_base_big_v1.displayName,
+        weight: ADDON_CONFIG.modules.mouse_base_big_v1.weight,
+        is_base: true,
+        hard_trigger: ADDON_CONFIG.modules.mouse_base_big_v1.hardTrigger,
       },
       {
         plugin_id: "tab_navigation_v1",

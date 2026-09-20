@@ -20,7 +20,8 @@ type MouseEngine =
   | "balabit_features_embed"
   | "balabit_autoencoder"
   | "sapimouse_features_embed"
-  | "little_boy";
+  | "little_boy"
+  | "balabit_features_embed_big";
 
 /** `pluginId` is the `plugin_id` that engine's module reports in `modules[]`,
  * so the panel can show that model's own estimate alongside composite risk. */
@@ -48,6 +49,12 @@ const ENGINES: { id: MouseEngine; label: string; blurb: string; pluginId: string
     label: "little_boy",
     pluginId: "mouse_littleboy_v1",
     blurb: "ML_Models/train_pipeline_1.py ported to TensorFlow.js: one row per raw event (x, y, time_delta, button/state one-hots) → 32-16-8 autoencoder trained on ~90s of your own clicking and moving, scored by reconstruction error",
+  },
+  {
+    id: "balabit_features_embed_big",
+    label: "balabit_features_embed_big",
+    pluginId: "mouse_base_big_v1",
+    blurb: "Same 32-feature siamese encoder as balabit_features_embed, but retrained on a much larger combined dataset (Balabit + ~135k Bogazici sessions, 11.6M windows) - scored against your own embedding gallery, kept separate from the default model's gallery",
   },
 ];
 

@@ -47,6 +47,14 @@ export type DeviceSample = {
  *   StandardScaler, the original 32-16-8 bottleneck. Same reconstruction-error
  *   idea as `balabit_autoencoder`, but on per-event rows rather than window
  *   aggregates, and trained on a longer (~90 s) capture.
+ * - `balabit_features_embed_big`: identical pipeline to
+ *   `balabit_features_embed` (same 32-feature extractor, same siamese
+ *   architecture, same gallery/distance scoring), but the encoder/scaler were
+ *   retrained on a much larger combined dataset (Balabit + ~135k Bogazici
+ *   sessions - see `train_base_model.py`'s `train_combined`). Kept as a
+ *   separate selectable engine (rather than replacing the default) so both
+ *   can be compared side by side; it keeps its own gallery, since embeddings
+ *   from the two encoders are not comparable.
  *
  * Only the mouse module differs; tab-navigation and keystroke run the same
  * whichever is selected, so composite risk stays comparable between them.
@@ -55,7 +63,8 @@ export type MouseEngine =
   | "balabit_features_embed"
   | "balabit_autoencoder"
   | "sapimouse_features_embed"
-  | "little_boy";
+  | "little_boy"
+  | "balabit_features_embed_big";
 
 export const DEFAULT_ENGINE: MouseEngine = "balabit_features_embed";
 

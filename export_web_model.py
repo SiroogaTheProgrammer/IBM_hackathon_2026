@@ -6,10 +6,24 @@ large for a serverless function's size limit) or LightGBM.
 Re-run this after retraining the base model:
 
     python export_web_model.py
+
+To export a second, separately-selectable model variant (e.g. a model
+retrained on a bigger/combined dataset) without overwriting the default
+`mouseEncoder.json` / `mouseScaler.json` / `mouseBackground.json` files, pass
+`--suffix` and (optionally) `--artifacts-dir` if the variant's artifacts live
+somewhere other than the default `artifacts/` directory:
+
+    python export_web_model.py --suffix Big --artifacts-dir artifacts
+
+This writes `mouseEncoderBig.json`, `mouseScalerBig.json` and
+`mouseBackgroundBig.json` instead. See `demo-site/src/lib/biometrics/encoder.ts`
+/ `scaler.ts` for the matching `embedBig` / `scaleFeaturesBig` loaders, and
+`session.ts` for how the `balabit_features_embed_big` engine uses them.
 """
 
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 
@@ -59,15 +73,30 @@ def export_background(background: np.ndarray, out_path: Path, seed: int = 0) -> 
     print(f"  wrote {out_path.relative_to(ROOT)} ({n} vectors)")
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--artifacts-dir", type=Path, default=DEFAULT_ARTIFACTS,
+        help="directory holding encoder.pt/scaler.npz/base_model.json (default: artifacts/)",
+    )
+    parser.add_argument(
+        "--suffix", default="",
+        help='appended to the output filenames, e.g. "Big" -> mouseEncoderBig.json',
+    )
+    return parser.parse_args()
+
+
 def main() -> None:
-    encoder, scaler, background, _background_users, meta = load_base_model(DEFAULT_ARTIFACTS)
+    args = parse_args()
+    encoder, scaler, background, _background_users, meta = load_base_model(args.artifacts_dir)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     print(f"exporting mouse base model (input_dim={meta['input_dim']}, "
-          f"embedding_dim={meta['embedding_dim']}) -> {OUT_DIR}")
-    export_encoder(encoder, OUT_DIR / "mouseEncoder.json")
-    export_scaler(scaler, OUT_DIR / "mouseScaler.json")
-    export_background(background, OUT_DIR / "mouseBackground.json")
+          f"embedding_dim={meta['embedding_dim']}) -> {OUT_DIR} (suffix={args.suffix!r})")
+    export_encoder(encoder, OUT_DIR / f"mouseEncoder{args.suffix}.json")
+    export_scaler(scaler, OUT_DIR / f"mouseScaler{args.suffix}.json")
+    export_background(background, OUT_DIR / f"mouseBackground{args.suffix}.json")
 
 
 if __name__ == "__main__":
     main()
+
