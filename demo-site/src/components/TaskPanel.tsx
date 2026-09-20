@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { useEffect, useSyncExternalStore } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore, type PointerEvent as ReactPointerEvent } from "react";
 import { taskRuns, type Task } from "@/data/tasks";
 import {
   completeVisit,
@@ -34,10 +34,101 @@ import {
 const DIM = "#8b949e";
 const OK = "#3fb950";
 const WARN = "#d29922";
+const POS_STORAGE_KEY = "task_panel_pos";
+
+type PanelPos = { left: number; top: number };
+
+/** Last dragged-to position, so the panel doesn't jump back to the corner on
+ * navigation/reload. `null` means "use the default top-left spot". */
+function readStoredPos(): PanelPos | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = window.localStorage.getItem(POS_STORAGE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as Partial<PanelPos>;
+    if (typeof parsed.left === "number" && typeof parsed.top === "number") return parsed as PanelPos;
+  } catch {
+    // ignore malformed/blocked storage
+  }
+  return null;
+}
 
 export default function TaskPanel() {
   const pathname = usePathname();
   const state = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+
+  // Draggable positioning: `null` means "use the default top-left spot" (via
+  // CSS), otherwise an explicit viewport-pixel `left`/`top` the user dragged
+  // the panel to. Persisted across reloads/navigation, shared between the
+  // collapsed pill and the expanded panel so it doesn't jump when toggled.
+  const [pos, setPos] = useState<PanelPos | null>(readStoredPos);
+  const [isDragging, setIsDragging] = useState(false);
+  const panelRef = useRef<HTMLElement | null>(null);
+  const dragStart = useRef<{ pointerX: number; pointerY: number; left: number; top: number } | null>(null);
+  // Whether the just-finished pointer interaction moved enough to count as a
+  // drag rather than a click; read (and cleared) by the collapsed pill's
+  // onClick so finishing a drag on top of it doesn't also toggle it open.
+  const dragMoved = useRef(false);
+
+  const clampPos = (left: number, top: number): PanelPos => {
+    const el = panelRef.current;
+    const w = el?.offsetWidth ?? 0;
+    const h = el?.offsetHeight ?? 0;
+    const maxLeft = Math.max(0, window.innerWidth - w);
+    const maxTop = Math.max(0, window.innerHeight - h);
+    return { left: Math.min(Math.max(0, left), maxLeft), top: Math.min(Math.max(0, top), maxTop) };
+  };
+
+  const handleDragPointerDown = (e: ReactPointerEvent<HTMLElement>) => {
+    if (e.button !== 0 && e.pointerType === "mouse") return;
+    const el = panelRef.current;
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    dragStart.current = { pointerX: e.clientX, pointerY: e.clientY, left: rect.left, top: rect.top };
+    dragMoved.current = false;
+    el.setPointerCapture(e.pointerId);
+  };
+
+  const handleDragPointerMove = (e: ReactPointerEvent<HTMLElement>) => {
+    const start = dragStart.current;
+    if (!start) return;
+    const dx = e.clientX - start.pointerX;
+    const dy = e.clientY - start.pointerY;
+    if (!dragMoved.current && Math.hypot(dx, dy) < 4) return;
+    dragMoved.current = true;
+    setIsDragging(true);
+    setPos(clampPos(start.left + dx, start.top + dy));
+  };
+
+  const handleDragPointerUp = (e: ReactPointerEvent<HTMLElement>) => {
+    const el = panelRef.current;
+    if (el?.hasPointerCapture(e.pointerId)) el.releasePointerCapture(e.pointerId);
+    dragStart.current = null;
+    setIsDragging(false);
+    if (dragMoved.current) {
+      setPos((p) => {
+        if (p && typeof window !== "undefined") {
+          try {
+            window.localStorage.setItem(POS_STORAGE_KEY, JSON.stringify(p));
+          } catch {
+            // ignore blocked/full storage
+          }
+        }
+        return p;
+      });
+    }
+  };
+
+  // Keep the panel on-screen if the viewport shrinks (e.g. rotating a tablet).
+  useEffect(() => {
+    if (!pos) return;
+    const onResize = () => setPos((p) => (p ? clampPos(p.left, p.top) : p));
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pos !== null]);
+
+  const posStyle = pos ? { left: pos.left, top: pos.top } : undefined;
 
   // A route task completes by arriving, and a route change is only visible
   // after the render that caused it.
@@ -76,11 +167,24 @@ export default function TaskPanel() {
   if (collapsed) {
     return (
       <button
+        ref={(el) => { panelRef.current = el; }}
         type="button"
-        onClick={() => setCollapsed(false)}
-        title="Show the task list"
-        className="fixed left-4 top-[60px] z-50 flex max-w-[22rem] items-center gap-2 rounded-full bg-[#161b22]/95 py-2 pl-3 pr-4 text-left text-[12px] text-[#e6edf3] shadow-xl ring-1 ring-white/10"
-        style={{ fontFamily: "system-ui, sans-serif" }}
+        onClick={() => {
+          if (dragMoved.current) {
+            dragMoved.current = false;
+            return;
+          }
+          setCollapsed(false);
+        }}
+        onPointerDown={handleDragPointerDown}
+        onPointerMove={handleDragPointerMove}
+        onPointerUp={handleDragPointerUp}
+        onPointerCancel={handleDragPointerUp}
+        title="Show the task list (drag to move)"
+        className={`fixed z-50 flex max-w-[22rem] touch-none items-center gap-2 rounded-full bg-[#161b22]/95 py-2 pl-3 pr-4 text-left text-[12px] text-[#e6edf3] shadow-xl ring-1 ring-white/10 ${
+          pos ? "" : "left-4 top-[60px]"
+        } ${isDragging ? "cursor-grabbing" : "cursor-grab"}`}
+        style={{ fontFamily: "system-ui, sans-serif", ...posStyle }}
       >
         <span
           className="h-2.5 w-2.5 shrink-0 rounded-full"
@@ -99,11 +203,21 @@ export default function TaskPanel() {
 
   return (
     <div
-      className="fixed left-4 top-[60px] z-50 w-72 select-none rounded-lg border border-white/10 bg-[#161b22] p-3 text-[12px] text-[#e6edf3] shadow-xl"
-      style={{ fontFamily: "system-ui, sans-serif" }}
+      ref={(el) => { panelRef.current = el; }}
+      className={`fixed z-50 w-72 select-none rounded-lg border border-white/10 bg-[#161b22] p-3 text-[12px] text-[#e6edf3] shadow-xl ${
+        pos ? "" : "left-4 top-[60px]"
+      }`}
+      style={{ fontFamily: "system-ui, sans-serif", ...posStyle }}
     >
       <div className="mb-1 flex items-center justify-between gap-2">
-        <span className="flex items-center gap-2 font-semibold">
+        <span
+          className={`flex touch-none items-center gap-2 font-semibold ${isDragging ? "cursor-grabbing" : "cursor-grab"}`}
+          title="Drag to move"
+          onPointerDown={handleDragPointerDown}
+          onPointerMove={handleDragPointerMove}
+          onPointerUp={handleDragPointerUp}
+          onPointerCancel={handleDragPointerUp}
+        >
           <span
             className="h-2.5 w-2.5 shrink-0 rounded-full"
             style={{ background: accent }}

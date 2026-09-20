@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState, type ReactNode, type PointerEvent as ReactPointerEvent } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { emitTaskSignal } from "@/lib/tasks/signals";
 
 /**
@@ -94,7 +94,6 @@ type TickResponse = {
 
 const TICK_MS = 1000;
 const ENGINE_STORAGE_KEY = "bio_engine";
-const WIDGET_POS_STORAGE_KEY = "bio_widget_pos";
 
 /**
  * Last-used engine, so a client-side navigation does not silently flip back to
@@ -105,23 +104,6 @@ function readStoredEngine(): MouseEngine {
   if (typeof window === "undefined") return "balabit_features_embed";
   const saved = window.localStorage.getItem(ENGINE_STORAGE_KEY) as MouseEngine | null;
   return saved && ENGINES.some((e) => e.id === saved) ? saved : "balabit_features_embed";
-}
-
-type WidgetPos = { left: number; top: number };
-
-/** Last dragged-to position, so the blob doesn't jump back to the corner on
- * navigation/reload. `null` means "use the default bottom-right corner". */
-function readStoredPos(): WidgetPos | null {
-  if (typeof window === "undefined") return null;
-  try {
-    const raw = window.localStorage.getItem(WIDGET_POS_STORAGE_KEY);
-    if (!raw) return null;
-    const parsed = JSON.parse(raw) as Partial<WidgetPos>;
-    if (typeof parsed.left === "number" && typeof parsed.top === "number") return parsed as WidgetPos;
-  } catch {
-    // ignore malformed/blocked storage
-  }
-  return null;
 }
 const API_BASE = "/api/biometrics";
 const DIM = "#8b949e";
@@ -203,76 +185,6 @@ export default function BiometricsWidget() {
   // 1 s interval. Without this guard two ticks would race to train, and the
   // loser's work would be thrown away.
   const inFlight = useRef(false);
-
-  // Draggable positioning: `null` means "use the default bottom-right corner"
-  // (via CSS), otherwise an explicit viewport-pixel `left`/`top` the user
-  // dragged the blob to. Persisted across reloads/navigation.
-  const [pos, setPos] = useState<WidgetPos | null>(readStoredPos);
-  const [isDragging, setIsDragging] = useState(false);
-  const widgetRef = useRef<HTMLDivElement>(null);
-  const dragStart = useRef<{ pointerX: number; pointerY: number; left: number; top: number } | null>(null);
-  // Whether the just-finished pointer interaction moved enough to count as a
-  // drag rather than a click; read (and cleared) by the toggle button's
-  // onClick so finishing a drag on top of it doesn't also flip the panel.
-  const dragMoved = useRef(false);
-
-  const clampPos = (left: number, top: number): WidgetPos => {
-    const el = widgetRef.current;
-    const w = el?.offsetWidth ?? 0;
-    const h = el?.offsetHeight ?? 0;
-    const maxLeft = Math.max(0, window.innerWidth - w);
-    const maxTop = Math.max(0, window.innerHeight - h);
-    return { left: Math.min(Math.max(0, left), maxLeft), top: Math.min(Math.max(0, top), maxTop) };
-  };
-
-  const handleDragPointerDown = (e: ReactPointerEvent<HTMLDivElement>) => {
-    if (e.button !== 0 && e.pointerType === "mouse") return;
-    const el = widgetRef.current;
-    if (!el) return;
-    const rect = el.getBoundingClientRect();
-    dragStart.current = { pointerX: e.clientX, pointerY: e.clientY, left: rect.left, top: rect.top };
-    dragMoved.current = false;
-    el.setPointerCapture(e.pointerId);
-  };
-
-  const handleDragPointerMove = (e: ReactPointerEvent<HTMLDivElement>) => {
-    const start = dragStart.current;
-    if (!start) return;
-    const dx = e.clientX - start.pointerX;
-    const dy = e.clientY - start.pointerY;
-    if (!dragMoved.current && Math.hypot(dx, dy) < 4) return;
-    dragMoved.current = true;
-    setIsDragging(true);
-    setPos(clampPos(start.left + dx, start.top + dy));
-  };
-
-  const handleDragPointerUp = (e: ReactPointerEvent<HTMLDivElement>) => {
-    const el = widgetRef.current;
-    if (el?.hasPointerCapture(e.pointerId)) el.releasePointerCapture(e.pointerId);
-    dragStart.current = null;
-    setIsDragging(false);
-    if (dragMoved.current) {
-      setPos((p) => {
-        if (p && typeof window !== "undefined") {
-          try {
-            window.localStorage.setItem(WIDGET_POS_STORAGE_KEY, JSON.stringify(p));
-          } catch {
-            // ignore blocked/full storage
-          }
-        }
-        return p;
-      });
-    }
-  };
-
-  // Keep the blob on-screen if the viewport shrinks (e.g. rotating a tablet).
-  useEffect(() => {
-    if (!pos) return;
-    const onResize = () => setPos((p) => (p ? clampPos(p.left, p.top) : p));
-    window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pos !== null]);
 
   const mouseBuf = useRef<MouseSample[]>([]);
   const keyBuf = useRef<KeySample[]>([]);
@@ -507,11 +419,8 @@ export default function BiometricsWidget() {
   const ringBackground = `conic-gradient(${coreColor} ${ringPct}%, rgba(255,255,255,.12) 0)`;
 
   return (
-    <div
-      ref={widgetRef}
-      className={`z-50 flex select-none flex-col items-end gap-2 ${pos ? "fixed" : "fixed bottom-5 right-5"}`}
-      style={{ fontFamily: "system-ui, sans-serif", ...(pos ? { left: pos.left, top: pos.top } : {}) }}
-    >
+    <div className="fixed bottom-5 right-5 z-50 flex select-none flex-col items-end gap-2"
+         style={{ fontFamily: "system-ui, sans-serif" }}>
       {expanded && (
         <ExpandedPanel>
           <div className="mb-2 flex items-center justify-between gap-2">
@@ -598,16 +507,7 @@ export default function BiometricsWidget() {
         </ExpandedPanel>
       )}
 
-      <div
-        className={`flex touch-none items-center gap-2 rounded-full bg-[#161b22]/90 p-2 pl-3 shadow-xl ring-1 ring-white/10 ${
-          isDragging ? "cursor-grabbing" : "cursor-grab"
-        }`}
-        title="Drag to move"
-        onPointerDown={handleDragPointerDown}
-        onPointerMove={handleDragPointerMove}
-        onPointerUp={handleDragPointerUp}
-        onPointerCancel={handleDragPointerUp}
-      >
+      <div className="flex items-center gap-2 rounded-full bg-[#161b22]/90 p-2 pl-3 shadow-xl ring-1 ring-white/10">
         <div className="w-32 overflow-hidden rounded-full bg-white/10" title="Composite detection rate">
           <div
             className="h-2 rounded-full transition-all duration-300"
@@ -618,13 +518,7 @@ export default function BiometricsWidget() {
           type="button"
           aria-label="Behavioral biometrics status"
           title={phaseLabel}
-          onClick={() => {
-            if (dragMoved.current) {
-              dragMoved.current = false;
-              return;
-            }
-            setExpanded((v) => !v);
-          }}
+          onClick={() => setExpanded((v) => !v)}
           className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full p-[3px] transition-transform duration-200 ${
             expanded ? "scale-110" : "scale-100"
           }`}
